@@ -1,0 +1,62 @@
+name: User story
+description: Mô tả một nhu cầu của người học theo dạng user story
+title: "[Story] "
+labels: ["user-story"]
+body:
+  - type: input
+    id: role
+    attributes:
+      label: Vai trò người dùng
+      description: Ai cần tính năng này?
+      placeholder: người học N4
+    validations:
+      required: true
+  - type: textarea
+    id: want
+    attributes:
+      label: Mong muốn
+      placeholder: tôi muốn…
+    validations:
+      required: true
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Mục đích
+      placeholder: để…
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Tiêu chí chấp nhận
+      description: Dùng dạng Given/When/Then hoặc danh sách kiểm tra được.
+      placeholder: |
+        - Given … When … Then …
+        - [ ] …
+    validations:
+      required: true
+  - type: input
+    id: requirement
+    attributes:
+      label: Mã yêu cầu liên quan
+      placeholder: FR-05
+    validations:
+      required: false
+  - type: dropdown
+    id: jlpt
+    attributes:
+      label: Cấp JLPT
+      options:
+        - Không áp dụng
+        - N5
+        - N4
+        - N3
+      default: 0
+    validations:
+      required: false
+  - type: textarea
+    id: design
+    attributes:
+      label: Ghi chú thiết kế / link Figma
+    validations:
+      required: false
