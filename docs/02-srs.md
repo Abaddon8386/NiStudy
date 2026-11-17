@@ -168,7 +168,7 @@ Cột "Nguồn" chỉ persona (Minh, Lan, Hùng) hoặc mục trong `docs/01-vis
 
 | Mã | Tên | Mô tả | Ưu tiên | Nguồn |
 |---|---|---|---|---|
-| FR-21 | Dashboard | Hệ thống phải hiển thị trên trang chính: số thẻ đến hạn hôm nay, tiến độ thẻ mới so với mục tiêu, chuỗi ngày, tổng số ngày đã học, XP, và đếm ngược ngày thi nếu có. Từ trang này người dùng phải vào được phiên ôn trong một thao tác bấm. | Phải có | Lan, V7 |
+| FR-21 | Dashboard | Hệ thống phải hiển thị trên trang chính: số thẻ đến hạn hôm nay, thời gian ôn ước tính (số thẻ trong hàng đợi × trung vị giây mỗi lượt ôn của người học trong 7 ngày, mặc định 20 giây khi chưa đủ dữ liệu, làm tròn lên theo phút), tiến độ thẻ mới so với mục tiêu, chuỗi ngày, tổng số ngày đã học, tổng XP và XP hôm nay, và đếm ngược ngày thi nếu có. Từ trang này người dùng phải vào được phiên ôn trong một thao tác bấm. | Phải có | Lan, V7 |
 | FR-22 | Chuỗi ngày | Hệ thống phải tính một ngày học (theo `study_date`) là "có học" khi có ít nhất một lượt ôn; học thẻ mới cũng là một lượt ôn (xem FR-13). Hôm nay chưa học nhưng hôm qua có học thì chuỗi vẫn giữ nguyên. Chuỗi về 0 chỉ khi đã qua trọn một ngày học không có lượt ôn nào. Hệ thống phải hiển thị "tổng số ngày đã học" là con số chính, nổi bật hơn chuỗi, và không được trừ tổng này khi mất chuỗi. Hệ thống không gửi thông báo đẩy. | Phải có | Minh, V6d |
 | FR-23 | Tính XP | Hệ thống phải cộng XP: +1 cho mỗi lượt ôn thẻ (gồm lượt đầu khi học thẻ mới), +1 cho mỗi câu trắc nghiệm đúng, +5 khi số thẻ mới đã học trong ngày học (theo `study_date`) đạt hoặc vượt mục tiêu hiện tại. Mốc +5 chỉ cộng tối đa một lần mỗi ngày học; hệ thống phải lưu mốc đã nhận. Hệ thống không có bảng xếp hạng. | Phải có | V6d, V7 |
 | FR-24 | Đếm ngược ngày thi | Hệ thống phải hiển thị số ngày còn lại đến ngày thi nếu người dùng đã đặt. Ngày thi là hôm nay thì hệ thống phải hiển thị "Hôm nay thi". Chưa đặt thì hệ thống phải không hiển thị mục này. Quá ngày thi thì hệ thống phải mời đặt ngày mới hoặc xóa. | Nên có | Lan, V7 |
@@ -659,7 +659,7 @@ Các điểm mở khi viết bản nháp đã được chốt và đưa vào yê
 3. **Giới hạn và thứ tự trong phiên:** giới hạn 100 chỉ áp cho thẻ đến hạn; thẻ kana mới tính vào mục tiêu thẻ mới; thẻ đến hạn hiển thị trước thẻ mới (FR-13, FR-16).
 4. **Bảng kana:** mỗi bộ gồm 46 chữ cơ bản, 25 âm đục và bán đục, 33 âm ghép; mỗi mục là một thẻ (FR-10).
 5. **Nhiều âm Hán Việt:** một âm chính (mặc định âm đầu trong KANJIDIC2, sửa tay được), các âm khác hiển thị phụ (FR-14).
-6. **Trắc nghiệm:** 10 câu mỗi bài, từ thẻ đã học, đáp án nhiễu cùng loại cùng cấp; mở khi có ít nhất 10 thẻ đã học (FR-19).
+6. **Trắc nghiệm:** 10 câu mỗi bài, từ thẻ đã học, đáp án nhiễu cùng loại cùng cấp; mở khi tạo được ít nhất 10 câu hợp lệ (FR-19).
 7. **Mật khẩu và liên kết:** mật khẩu tối thiểu 8 ký tự; liên kết xác nhận và đặt lại hết hạn sau 1 giờ; thông báo không tiết lộ email đã đăng ký (FR-01, FR-04).
 
 8. **Dữ liệu cục bộ theo tài khoản:** mọi bản ghi trên thiết bị gắn `user_id`, chỉ gửi khi khớp phiên hiện tại. Đăng xuất khi còn lượt chưa gửi thì cảnh báo, có mạng thì gửi trước, offline mà vẫn đăng xuất thì xóa (chấp nhận mất, ưu tiên riêng tư máy dùng chung). Đăng xuất và xóa tài khoản xóa hết dữ liệu cục bộ, gồm cache service worker (FR-30, FR-03, FR-05).
