@@ -7,10 +7,12 @@ Web học tiếng Nhật cho người Việt: học kanji qua âm Hán Việt, �
 - Mục tiêu MVP: đầu tháng 3/2027.
 - Tài liệu này là bản gốc của kế hoạch. Đổi kế hoạch thì sửa file này qua PR.
 
-## Câu hỏi còn mở
+## Quyết định định hướng (17/11/2026)
 
-- Vị trí nhắm tới: frontend, fullstack hay BA/UX? Câu trả lời quyết định nên đầu tư sâu vào phần nào.
-- Có thi JLPT ngày 6/12/2026 không? Nếu có, ôn bằng bản demo HTML đã có, dự án vẫn chạy theo lịch dài hạn.
+- Vị trí nhắm tới: **fullstack**. Đầu tư sâu vào schema Postgres, Row Level Security, luồng dữ liệu JMdict/KANJIDIC và logic FSRS, bên cạnh giao diện.
+- Đã biết: HTML/CSS/JavaScript, SQL/Postgres/Supabase. Chưa biết React, TypeScript, Next.js: dành thời gian học ở giai đoạn 3–4, trước sprint 1.
+- Thời gian: 10–15 giờ mỗi tuần, đúng giả định ở trên.
+- Thi JLPT N4/N5 ngày 6/12/2026: tuần 24/11–6/12 giảm tải dự án, ôn bằng bản demo HTML đã có. Dời lịch giai đoạn 1–2 hay giữ mốc MVP và cắt phạm vi: CẦN QUYẾT, xem `docs/01-vision.md` mục 10.
 
 ## Giai đoạn 0: Định hướng (tuần 1, 17/11)
 
