@@ -50,4 +50,5 @@ Cách giao việc:
 - 17/11/2026: đã tạo nhãn `user-story`, `task` trên GitHub cho template issue.
 - 17/11/2026: đã chốt 11 quyết định giai đoạn 0 (`docs/01-vision.md` mục 10): MVP chỉ N5–N4, nghĩa tiếng Việt tự biên soạn (JMdict không có tiếng Việt), Hán Việt từ KANJIDIC2, danh sách JLPT từ tanos.co.uk, giai đoạn 1–4 lùi một tuần (MVP khoảng 9/3/2027), LICENSE MIT; repo chuyển public ở giai đoạn 7.
 - 17/11/2026: đã xác nhận KANJIDIC2 có âm Hán Việt (`r_type="vietnam"`) và danh sách tanos là CC BY (qua repo mirror; tên miền gốc không truy cập được). Ngày trong plan là mốc muộn nhất: xong giai đoạn nào thì chuyển ngay sang giai đoạn sau.
-- Tiếp theo: giai đoạn 1 (`docs/02-srs.md`), làm nhẹ trong tuần thi 24/11–6/12. Người dùng tự dùng thử Mazii.
+- 17/11/2026: viết và review `docs/02-srs.md` v0.2: 30 FR, 25 NFR, 6 UC, 16 US, ma trận truy vết; mục 9 ghi 22 quyết định chi tiết (dữ liệu cục bộ gắn user_id, chống trùng theo (user_id, review_id), `study_date` tính lúc chấm, FSRS tính ở thiết bị, xóa tài khoản phía máy chủ).
+- Tiếp theo: phần còn lại của giai đoạn 1 là backlog GitHub (mỗi US một issue, nhãn, milestone; chưa tạo, cần người dùng cho phép). Sau đó giai đoạn 2 (thiết kế UX/UI). Người dùng tự dùng thử Mazii.
