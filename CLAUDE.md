@@ -49,4 +49,5 @@ Cách giao việc:
 - 17/11/2026: đã đưa lên `main` bản nháp `docs/01-vision.md`, README, CONTRIBUTING, `.gitignore`, template issue/PR. Bỏ quy trình PR, push thẳng `main`.
 - 17/11/2026: đã tạo nhãn `user-story`, `task` trên GitHub cho template issue.
 - 17/11/2026: đã chốt 11 quyết định giai đoạn 0 (`docs/01-vision.md` mục 10): MVP chỉ N5–N4, nghĩa tiếng Việt tự biên soạn (JMdict không có tiếng Việt), Hán Việt từ KANJIDIC2, danh sách JLPT từ tanos.co.uk, giai đoạn 1–4 lùi một tuần (MVP khoảng 9/3/2027), LICENSE MIT; repo chuyển public ở giai đoạn 7.
-- Tiếp theo (tuần 24/11–6/12, làm nhẹ): kiểm chứng Mazii và đối thủ, xác nhận giấy phép tanos.co.uk, đọc định dạng JMdict/KANJIDIC2. Sau đó giai đoạn 1 (`docs/02-srs.md`) từ 1/12.
+- 17/11/2026: đã xác nhận KANJIDIC2 có âm Hán Việt (`r_type="vietnam"`) và danh sách tanos là CC BY (qua repo mirror; tên miền gốc không truy cập được). Ngày trong plan là mốc muộn nhất: xong giai đoạn nào thì chuyển ngay sang giai đoạn sau.
+- Tiếp theo: giai đoạn 1 (`docs/02-srs.md`), làm nhẹ trong tuần thi 24/11–6/12. Người dùng tự dùng thử Mazii.

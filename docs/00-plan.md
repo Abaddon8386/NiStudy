@@ -6,6 +6,7 @@ Web học tiếng Nhật cho người Việt: học kanji qua âm Hán Việt, �
 - Giả định: một người làm, 10–15 giờ mỗi tuần, khoảng 16 tuần ra MVP (đã cộng 1 tuần nghỉ Tết, khoảng 6/2/2027, và 1 tuần lùi vì kỳ thi JLPT).
 - Mục tiêu MVP: đầu tháng 3/2027 (khoảng 9/3). Phạm vi MVP: JLPT N5–N4.
 - Tài liệu này là bản gốc của kế hoạch. Đổi kế hoạch thì sửa file này bằng một commit riêng.
+- Ngày tháng trong các giai đoạn là mốc muộn nhất, không phải lịch cố định. Xong giai đoạn nào thì chuyển ngay sang giai đoạn sau.
 
 ## Quyết định định hướng (17/11/2026)
 
@@ -15,11 +16,11 @@ Web học tiếng Nhật cho người Việt: học kanji qua âm Hán Việt, �
 - Thi JLPT N4/N5 ngày 6/12/2026: tuần 24/11–6/12 giảm tải dự án, ôn bằng bản demo HTML đã có. Giai đoạn 1–4 lùi một tuần; mốc MVP giữ nhờ thu hẹp phạm vi còn N5–N4.
 - Các quyết định sản phẩm khác (nguồn dữ liệu, PWA, dữ liệu người dùng, chỉ số, giấy phép): xem `docs/01-vision.md` mục 10.
 
-## Tuần 2: việc nhẹ trong tuần thi (24/11–6/12)
+## Việc nhẹ trong tuần thi (24/11–6/12)
 
 - Kiểm chứng đối thủ, nhất là Mazii; ghi ngày kiểm tra vào `docs/01-vision.md`.
-- Xác nhận giấy phép danh sách JLPT của tanos.co.uk.
 - Đọc tài liệu định dạng JMdict/KANJIDIC2.
+- Đã xong 17/11: xác nhận âm Hán Việt trong KANJIDIC2 và giấy phép danh sách tanos (xem `docs/01-vision.md` mục 10).
 
 ## Giai đoạn 0: Định hướng (tuần 1, 17/11)
 

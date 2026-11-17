@@ -200,8 +200,14 @@ Với 10–20 người beta, các mục tiêu dưới đây chỉ là ngưỡng 
 10. **Giấy phép.** Code dùng MIT. Dữ liệu dẫn xuất từ JMdict/KANJIDIC2 giữ CC BY-SA; câu ví dụ Tatoeba giữ CC BY.
 11. **Repo public.** Chuyển repo sang public trước khi đưa vào hồ sơ, để nhà tuyển dụng xem được.
 
+### Kết quả kiểm chứng nguồn dữ liệu (17/11/2026)
+
+- **KANJIDIC2 có âm Hán Việt.** File dữ liệu hiện hành có thẻ `<reading r_type="vietnam">`, ví dụ 毎 → "Mỗi", 敬 → "Kính" (thấy trong các bản trích KANJIDIC2 trên GitHub). Tài liệu DTD cũ trên trang EDRDG chưa liệt kê giá trị này. Chữ đầu viết hoa, cần chuẩn hóa khi nhập.
+- **Trường `<jlpt>` của KANJIDIC2 theo 4 cấp cũ.** DTD ghi rõ: cấp JLPT cũ, giá trị 1 đến 4. Xác nhận quyết định 3: không dùng trường này.
+- **Danh sách tanos.co.uk dùng CC BY của Jonathan Waller.** Hai repo dùng lại dữ liệu ghi cùng một nội dung: GitHub `Bluskyo/JLPT_Vocabulary` có JSON/CSV, giấy phép repo MIT; và `oysteikt/tanos-japanese-word-books`. Ngày 17/11/2026 không truy cập được tên miền tanos.co.uk để đọc giấy phép gốc. Cách làm: dùng bản JSON/CSV từ repo trên, ghi nguồn "Jonathan Waller, tanos.co.uk, CC BY" và ghi ngày tải.
+
 ### Còn cần kiểm chứng
 
-- Giấy phép danh sách tanos.co.uk (theo hiểu biết hiện tại là CC BY), xác nhận trên trang trước khi dùng.
-- Độ phủ và độ chính xác âm Hán Việt trong KANJIDIC2 cho kanji N5–N4.
-- Tính năng hiện tại của Mazii và các app Nhật–Việt khác (mục 5).
+- Độ phủ âm Hán Việt trong KANJIDIC2 cho kanji N5–N4: đếm khi nhập dữ liệu.
+- Kanji có nhiều âm Hán Việt: chọn âm nào hiển thị đầu tiên.
+- Tính năng hiện tại của Mazii và các app Nhật–Việt khác (mục 5): người dùng dùng thử.
