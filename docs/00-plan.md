@@ -5,7 +5,7 @@ Web học tiếng Nhật cho người Việt: học kanji qua âm Hán Việt, �
 - Bắt đầu: 17/11/2026
 - Giả định: một người làm, 10–15 giờ mỗi tuần, khoảng 15 tuần ra MVP (đã cộng 1 tuần nghỉ Tết, khoảng 6/2/2027).
 - Mục tiêu MVP: đầu tháng 3/2027.
-- Tài liệu này là bản gốc của kế hoạch. Đổi kế hoạch thì sửa file này qua PR.
+- Tài liệu này là bản gốc của kế hoạch. Đổi kế hoạch thì sửa file này bằng một commit riêng.
 
 ## Quyết định định hướng (17/11/2026)
 
@@ -63,10 +63,10 @@ Bản quyền: JMdict và KANJIDIC dùng CC BY-SA, phải ghi nguồn. Không ch
 ## Giai đoạn 4: Dựng repo chuẩn (tuần 6, 22/12)
 
 - README: giới thiệu, ảnh chụp, link demo, cách chạy, công nghệ, lộ trình.
-- Nhánh: `main` được bảo vệ; mọi thay đổi qua PR từ `feature/...`, `fix/...`, `docs/...`.
+- Nhánh: dự án cá nhân, commit và push thẳng lên `main`; nhánh `feature/...`, `fix/...`, `docs/...` chỉ cho việc dài hoặc thử nghiệm.
 - Commit theo Conventional Commits, ví dụ `feat: add flashcard review`.
 - Template issue và PR, `CONTRIBUTING.md`, `LICENSE`.
-- GitHub Actions: lint, kiểm tra kiểu, test, build cho mỗi PR.
+- GitHub Actions: lint, kiểm tra kiểu, test, build cho mỗi lần push lên `main`.
 
 ## Giai đoạn 5: Code MVP theo sprint (tuần 7–13, 29/12–15/2, có tuần nghỉ Tết)
 
@@ -104,4 +104,4 @@ Ngữ pháp, luyện nghe, đề thi thử tự soạn, bộ thẻ cộng đồn
 
 ## Nhà tuyển dụng sẽ nhìn
 
-Link demo chạy được, README rõ ràng, lịch sử commit và PR gắn với issue, CI xanh có test, tài liệu SRS, ADR và link Figma.
+Link demo chạy được, README rõ ràng, lịch sử commit rõ ràng gắn với issue, CI xanh có test, tài liệu SRS, ADR và link Figma.

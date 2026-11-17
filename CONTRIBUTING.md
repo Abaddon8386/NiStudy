@@ -1,18 +1,15 @@
 # Đóng góp cho Nihongo
 
-Tài liệu này mô tả cách làm việc trong repo. Dự án đang ở giai đoạn 0, một số bước (CI, bảo vệ nhánh) sẽ có sau.
+Tài liệu này mô tả cách làm việc trong repo. Dự án đang ở giai đoạn 0, CI sẽ có sau.
 
 ## 1. Quy trình
 
+Đây là dự án cá nhân, một người làm. Commit và push thẳng lên `main`, không bắt buộc PR.
+
 1. Mỗi việc tính năng hoặc sửa lỗi bắt đầu từ một issue. Việc tài liệu nhỏ có thể không cần issue.
-2. Tạo nhánh từ `main` mới nhất.
-3. Làm việc, commit, đẩy nhánh.
-4. Mở PR vào `main`.
-5. PR liên kết issue bằng `Closes #<số>` (bỏ dòng này nếu không có issue).
-
-`main` chỉ nhận PR.
-
-> CẦN QUYẾT: repo private trên gói GitHub Free có thể không hỗ trợ bảo vệ nhánh. Chọn: tự giữ kỷ luật, chuyển repo public, hoặc nâng gói.
+2. Commit lên `main`. Commit liên quan issue thì ghi `Closes #<số>` hoặc `Refs #<số>` trong phần thân commit.
+3. Việc dài hoặc thử nghiệm thì làm trên nhánh riêng, xong đưa vào `main` bằng fast-forward.
+4. Trước khi push: tự đọc lại diff, chạy kiểm tra liên quan.
 
 ## 2. Đặt tên nhánh
 
@@ -45,7 +42,9 @@ Thay đổi phá vỡ tương thích thì thêm `!` sau type hoặc scope, ví d
 
 Mỗi commit một ý.
 
-## 4. Pull request
+## 4. Pull request (không bắt buộc)
+
+Chỉ dùng khi muốn tách một thay đổi lớn để tự soát lại.
 
 - Một PR một mục tiêu, nhỏ.
 - Điền template PR.

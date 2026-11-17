@@ -22,17 +22,17 @@ Công nhân nằm trong `.claude/agents/`:
 
 Cách giao việc:
 - Việc nhỏ, cần kết quả ngay trong lượt: gọi subagent (công cụ Agent) với tên agent.
-- Việc dài, tự đứng được, ra một nhánh/PR riêng: mở phiên riêng, mỗi phiên một nhánh và một worktree.
+- Việc dài, tự đứng được, cần tách khỏi `main`: mở phiên riêng, mỗi phiên một nhánh và một worktree.
 - Lời giao việc phải đủ để công nhân làm mà không cần đọc lại cả cuộc trò chuyện: mục tiêu, file, ràng buộc, tiêu chí xong, lệnh kiểm thử.
 - Hai công nhân không sửa cùng file cùng lúc.
 - Kết quả công nhân là báo cáo, chưa phải bằng chứng: bộ não đọc diff và chạy kiểm tra trước khi báo xong.
 
 ## Git
 
-- `main` chỉ nhận PR. Nhánh: `feature/<so-issue>-<mo-ta>`, `fix/...`, `docs/...`.
+- Dự án cá nhân: commit và push thẳng lên `main`, không cần PR (quyết định 17/11/2026). Nhánh `feature/<so-issue>-<mo-ta>`, `fix/...`, `docs/...` chỉ dùng cho việc dài hoặc thử nghiệm; xong thì đưa vào `main` bằng fast-forward.
 - Commit theo Conventional Commits.
 - Không đưa tên AI, model hay công cụ AI vào tên nhánh, tác giả, co-author hay nội dung commit/PR.
-- Chỉ commit/push/tạo PR/merge khi người dùng cho phép.
+- Chỉ commit/push khi người dùng cho phép.
 - Worktree đặt tại `C:/Users/hai/.local/share/project-worktrees/nihongo/<nhanh>`; tối đa 2 worktree có `node_modules` cùng lúc vì ổ đĩa còn ít.
 
 ## Kỹ thuật
@@ -46,6 +46,6 @@ Cách giao việc:
 ## Đang làm
 
 - 17/11/2026: đã trả lời câu hỏi mở (fullstack; biết HTML/CSS/JS + SQL/Supabase, chưa biết React/TS/Next; 10–15 giờ/tuần; thi JLPT N4/N5 ngày 6/12), ghi vào `docs/00-plan.md`.
-- Nhánh `docs/vision-and-repo-setup` (worktree `C:/Users/hai/.local/share/project-worktrees/nihongo/docs-vision-and-repo-setup`): bản nháp `docs/01-vision.md`, README, CONTRIBUTING, `.gitignore`, template issue/PR. Đã review, commit cục bộ; chờ người dùng xem trước khi push và tạo PR.
-- Sau khi merge: tạo nhãn `user-story`, `task` trên GitHub (template issue dùng hai nhãn này).
-- Tiếp theo: chốt các điểm CẦN QUYẾT trong `docs/01-vision.md` mục 10 (ưu tiên: lịch tuần thi JLPT, nguồn Hán Việt, danh sách JLPT, phạm vi kanji, LICENSE, bảo vệ nhánh), kiểm chứng đối thủ (nhất là Mazii), rồi giai đoạn 1 (`docs/02-srs.md`).
+- 17/11/2026: đã đưa lên `main` bản nháp `docs/01-vision.md`, README, CONTRIBUTING, `.gitignore`, template issue/PR. Bỏ quy trình PR, push thẳng `main`.
+- Cần làm: tạo nhãn `user-story`, `task` trên GitHub (template issue dùng hai nhãn này).
+- Tiếp theo: chốt các điểm CẦN QUYẾT trong `docs/01-vision.md` mục 10 (ưu tiên: lịch tuần thi JLPT, nguồn Hán Việt, danh sách JLPT, phạm vi kanji, LICENSE), kiểm chứng đối thủ (nhất là Mazii), rồi giai đoạn 1 (`docs/02-srs.md`).
