@@ -1,12 +1,12 @@
 # Tầm nhìn sản phẩm Nihongo
 
-Trạng thái: Bản nháp — 17/11/2026
+Trạng thái: Đã chốt quyết định giai đoạn 0 — 17/11/2026. Một số dữ kiện còn cần kiểm chứng (mục 10).
 
 Tài liệu này thuộc giai đoạn 0 (Định hướng) của `docs/00-plan.md`.
 
 ## 1. Tóm tắt
 
-Nihongo là web học tiếng Nhật dành cho người Việt. Sản phẩm dạy kanji qua âm Hán Việt, ôn tập bằng thuật toán lặp lại ngắt quãng FSRS và bám lộ trình JLPT từ N5 đến N3. Giao diện và lời giải thích hoàn toàn bằng tiếng Việt. Sản phẩm có cơ chế giữ động lực lành mạnh: chuỗi ngày, XP, đếm ngược ngày thi và mục tiêu hằng ngày nhỏ. Mục tiêu là ra bản MVP đầu tháng 3/2027.
+Nihongo là web học tiếng Nhật dành cho người Việt. Sản phẩm dạy kanji qua âm Hán Việt, ôn tập bằng thuật toán lặp lại ngắt quãng FSRS và bám lộ trình JLPT từ N5 đến N3 (MVP gồm N5–N4, N3 làm sau). Giao diện và lời giải thích hoàn toàn bằng tiếng Việt. Sản phẩm có cơ chế giữ động lực lành mạnh: chuỗi ngày, XP, đếm ngược ngày thi và mục tiêu hằng ngày nhỏ. Mục tiêu là ra bản MVP đầu tháng 3/2027.
 
 ## 2. Vấn đề
 
@@ -72,6 +72,8 @@ Người Việt học tiếng Nhật gặp bốn vấn đề chính.
 | Câu nói minh họa (hư cấu) | "Mình chưa biết gì cả. Chỉ cần ai đó chỉ từng bước bằng tiếng Việt." |
 | Nhu cầu với sản phẩm | Bắt đầu từ kana. Lộ trình từng bước. Giải thích bằng tiếng Việt. Dùng âm Hán Việt để làm quen kanji. |
 
+> Ghi chú phạm vi: MVP chỉ có N5–N4, nên persona Minh (ôn N3) mới được phục vụ một phần (ôn lại nền N5–N4). Nội dung N3 có sau MVP.
+
 ## 5. Phân tích đối thủ
 
 Bảng dưới chỉ ghi đặc điểm phổ biến của từng sản phẩm. Chưa so sánh giá hay số liệu.
@@ -104,7 +106,7 @@ Mỗi kanji đi kèm âm Hán Việt, nghĩa tiếng Việt và ví dụ. Ngư�
 
 ### (c) Lộ trình JLPT N5→N3 với lịch ôn FSRS
 
-Nội dung xếp theo cấp N5, N4, N3. Mỗi thẻ được lên lịch ôn bằng FSRS. Người học không phải tự chọn bộ thẻ hay chỉnh cấu hình. Mỗi ngày họ biết cần ôn bao nhiêu thẻ.
+Nội dung xếp theo cấp N5, N4, N3; MVP gồm N5 và N4. Mỗi thẻ được lên lịch ôn bằng FSRS. Người học không phải tự chọn bộ thẻ hay chỉnh cấu hình. Mỗi ngày họ biết cần ôn bao nhiêu thẻ.
 
 ### (d) Giữ động lực lành mạnh
 
@@ -117,12 +119,14 @@ Sản phẩm có chuỗi ngày, XP, đếm ngược ngày thi và mục tiêu h�
 | Hạng mục | Lý do |
 |---|---|
 | Đăng nhập (Supabase Auth) | Cần để lưu tiến độ và lịch ôn theo từng người dùng. |
+| Chọn cấp bắt đầu (N5/N4) và hỏi "đã biết kana chưa" | Thay cho bài kiểm tra trình độ: rẻ, đủ để xếp người học vào đúng chỗ. |
 | Học và ôn kana | Người mới như Hùng cần bắt đầu từ kana. |
-| Thẻ từ vựng N5–N3 ôn theo FSRS | Đây là lõi của sản phẩm: lịch ôn tự động theo cấp JLPT. |
-| Kanji kèm âm Hán Việt, nghĩa tiếng Việt, ví dụ | Đây là điểm khác biệt chính so với đối thủ. |
+| Thẻ từ vựng N5–N4 ôn theo FSRS | Đây là lõi của sản phẩm: lịch ôn tự động theo cấp JLPT. |
+| Kanji N5–N4 kèm âm Hán Việt, nghĩa tiếng Việt, ví dụ | Đây là điểm khác biệt chính so với đối thủ. |
 | Trắc nghiệm ngắn | Giúp kiểm tra nhanh và đa dạng cách ôn. |
 | Dashboard: chuỗi ngày, XP, đếm ngược ngày thi, số thẻ đến hạn | Cho người học thấy tiến bộ và việc cần làm hôm nay. |
-| Giao diện tốt trên điện thoại, PWA cơ bản | Cả ba persona đều học trên điện thoại (giả định, cần kiểm chứng). |
+| Giao diện tốt trên điện thoại, PWA cài được; mất mạng thì báo rõ và giữ thẻ đang ôn dở | Cả ba persona đều học trên điện thoại (giả định, cần kiểm chứng). |
+| Xóa tài khoản và dữ liệu | Người dùng làm chủ dữ liệu của mình. |
 | Ghi nguồn dữ liệu | Giấy phép CC BY-SA của JMdict và KANJIDIC, và CC BY của câu ví dụ Tatoeba, yêu cầu ghi nguồn. |
 
 ### Để sau
@@ -137,25 +141,23 @@ Sản phẩm có chuỗi ngày, XP, đếm ngược ngày thi và mục tiêu h�
 | App native | PWA đủ cho MVP và tiết kiệm công sức. |
 | Tính năng xã hội, bảng xếp hạng | Không cần để kiểm chứng giá trị cốt lõi, có thể tạo áp lực. |
 | Tính năng AI | Tăng độ phức tạp và rủi ro, chưa cần thiết cho MVP. |
-
-> CẦN QUYẾT: MVP có bài kiểm tra trình độ đầu vào không (xem mục 10, điểm 4).
-> CẦN QUYẾT: MVP gồm kanji đến N3 hay chỉ đến N4 (xem mục 10, điểm 5).
-> CẦN QUYẾT: PWA hoạt động offline đến mức nào (xem mục 10, điểm 6).
+| Từ vựng và kanji N3 | Nghĩa tiếng Việt phải tự biên soạn; thêm N3 làm khối biên soạn tăng nhiều lần. Code dùng chung, sau này chỉ thêm dữ liệu. |
+| Bài kiểm tra trình độ đầu vào | Màn chọn cấp bắt đầu đủ cho MVP. |
+| Ôn offline hoàn toàn | Cần đồng bộ trạng thái FSRS và xử lý xung đột. |
+| Thu phí, quảng cáo | Sản phẩm miễn phí. |
 
 ## 8. Chỉ số thành công
 
-Các chỉ số dưới đây là đề xuất. Mọi mục tiêu số đều chưa quyết định.
+Với 10–20 người beta, các mục tiêu dưới đây chỉ là ngưỡng tham khảo, không có ý nghĩa thống kê.
 
 | Chỉ số | Cách đo | Mục tiêu |
 |---|---|---|
-| Tỉ lệ người dùng beta quay lại sau 7 ngày | Số người có phiên học ở ngày 7–8 chia tổng số người đăng ký, từ thống kê truy cập | CẦN QUYẾT |
-| Số thẻ ôn mỗi người mỗi ngày | Trung bình số lượt ôn từ bảng log ôn tập | CẦN QUYẾT |
-| Thời gian một phiên ôn | Trung vị thời gian từ lúc mở phiên đến lúc kết thúc | CẦN QUYẾT |
-| Tỉ lệ hoàn thành mục tiêu hằng ngày | Số ngày đạt mục tiêu chia số ngày có học | CẦN QUYẾT |
-| Điểm Lighthouse (hiệu năng, khả năng truy cập, PWA) | Chạy Lighthouse trên các trang chính | CẦN QUYẾT |
-| Số lỗi nghiêm trọng trên Sentry trong thời gian beta | Đếm trong Sentry | CẦN QUYẾT |
-
-> CẦN QUYẾT: giá trị mục tiêu cho từng chỉ số (xem mục 10, điểm 9). Với 10–20 người beta, số liệu chỉ mang tính tham khảo, không có ý nghĩa thống kê.
+| Tỉ lệ người dùng beta quay lại sau 7 ngày | Số người có phiên học ở ngày 7–8 chia tổng số người đăng ký, từ log ôn tập | ≥ 40% |
+| Số thẻ ôn mỗi người mỗi ngày | Trung vị số lượt ôn từ bảng log ôn tập | ≥ 20 thẻ |
+| Thời gian một phiên ôn | Trung vị thời gian từ lúc mở phiên đến lúc kết thúc | ≤ 10 phút |
+| Tỉ lệ hoàn thành mục tiêu hằng ngày | Số ngày đạt mục tiêu chia số ngày có học | Theo dõi, chưa đặt ngưỡng |
+| Điểm Lighthouse | Chạy Lighthouse trên các trang chính | Hiệu năng ≥ 90, khả năng truy cập ≥ 95, PWA cài được |
+| Lỗi nghiêm trọng trên Sentry trong thời gian beta | Đếm trong Sentry | 0 lỗi nghiêm trọng còn mở khi kết thúc beta |
 
 ## 9. Ràng buộc và rủi ro
 
@@ -166,14 +168,16 @@ Các chỉ số dưới đây là đề xuất. Mọi mục tiêu số đều ch
 - **Lịch cá nhân:** tác giả thi JLPT N4/N5 ngày 6/12/2026, nên tuần 24/11–6/12 giảm tải.
 - **Máy làm việc:** ổ đĩa còn ít, không cài Docker, dùng Supabase bản cloud, dùng `pnpm`.
 - **Giấy phép dữ liệu:** JMdict và KANJIDIC dùng CC BY-SA, câu ví dụ Tatoeba dùng CC BY; đều phải ghi nguồn. Không chép đề JLPT thật.
-- **Mốc thời gian:** MVP đầu tháng 3/2027, đã tính một tuần nghỉ Tết.
+- **Mốc thời gian:** MVP đầu tháng 3/2027 (khoảng 9/3), đã tính một tuần nghỉ Tết và lùi một tuần vì kỳ thi JLPT.
+- **Dữ liệu tiếng Việt:** JMdict không có nghĩa tiếng Việt. Nghĩa tiếng Việt của từ vựng và kanji phải tự biên soạn.
 
 ### Rủi ro
 
 | Rủi ro | Ảnh hưởng | Cách giảm |
 |---|---|---|
-| Học React/TypeScript/Next.js chậm hơn dự kiến | Trễ sprint 1–2 | Làm bản nhỏ trước, dùng tài liệu chính thức. Đề xuất: ưu tiên cắt phạm vi trước khi dời mốc. |
-| Tuần thi JLPT 24/11–6/12 giảm tải | Trễ SRS và thiết kế | Xếp việc nhẹ vào tuần này; xem điểm CẦN QUYẾT số 8. |
+| Biên soạn nghĩa tiếng Việt tốn nhiều công hơn dự kiến | Trễ sprint, dữ liệu sai nghĩa | MVP chỉ N5–N4; biên soạn dần theo sprint; mỗi mục ghi nguồn tham khảo; soát ngẫu nhiên. |
+| Học React/TypeScript/Next.js chậm hơn dự kiến | Trễ sprint 1–2 | Làm bản nhỏ trước, dùng tài liệu chính thức. Ưu tiên cắt phạm vi trước khi dời mốc. |
+| Tuần thi JLPT 24/11–6/12 giảm tải | Trễ SRS và thiết kế | Chỉ làm việc nhẹ; giai đoạn 1–4 lùi một tuần. |
 | Dữ liệu âm Hán Việt thiếu hoặc sai | Mất điểm khác biệt chính | Kiểm tra độ phủ sớm; chuẩn bị nguồn bổ sung. |
 | Không có danh sách JLPT chính thức | Nội dung theo cấp có thể lệch | Chọn danh sách không chính thức, ghi rõ nguồn và giới hạn. |
 | Vi phạm giấy phép dữ liệu | Rủi ro pháp lý, mất uy tín | Ghi nguồn trong sản phẩm; kiểm tra giấy phép từng nguồn. |
@@ -182,15 +186,22 @@ Các chỉ số dưới đây là đề xuất. Mọi mục tiêu số đều ch
 | Hết dung lượng ổ đĩa | Không build được | Dùng `pnpm`, tối đa 2 bản checkout có `node_modules`, chừa ít nhất 5 GB. |
 | Ít người beta | Số liệu khó dùng | Phỏng vấn định tính, coi số liệu là tham khảo. |
 
-## 10. Điểm CẦN QUYẾT
+## 10. Quyết định đã chốt (17/11/2026)
 
-1. **Tên sản phẩm chính thức.** Hiện tạm dùng "Nihongo".
-2. **Nguồn âm Hán Việt cho kanji.** KANJIDIC2 có trường đọc tiếng Việt, nhưng độ phủ và độ chính xác cần kiểm tra. Cần quyết định có dùng nguồn bổ sung không, và giấy phép của nguồn đó.
-3. **Nguồn danh sách từ vựng và kanji theo cấp JLPT.** JLPT không công bố danh sách chính thức kể từ kỳ thi mới năm 2010. Phải chọn một danh sách không chính thức và kiểm tra giấy phép.
-4. **Bài kiểm tra trình độ đầu vào.** MVP có làm không? Luồng ở giai đoạn 2 có nhắc đến.
-5. **Phạm vi kanji của MVP.** Đến N3 hay chỉ đến N4, với quỹ 10–15 giờ mỗi tuần và việc phải học React/TypeScript.
-6. **PWA offline đến mức nào.** Chỉ cài đặt được, hay ôn được khi không có mạng.
-7. **Mô hình kinh doanh và dữ liệu người dùng.** Miễn phí hoàn toàn hay có kế hoạch thu phí. Lưu những dữ liệu người dùng nào.
-8. **Lịch và tuần thi JLPT.** Tuần 24/11–6/12 giảm tải trùng giai đoạn 1 (SRS) và đầu giai đoạn 2 (thiết kế). Chọn: dời giai đoạn 1–2 khoảng một tuần và dời mốc MVP theo, hay giữ mốc MVP đầu tháng 3/2027 và cắt phạm vi.
-9. **Mục tiêu số cho chỉ số thành công** ở mục 8.
-10. **Giấy phép mã nguồn của repo** (`LICENSE`).
+1. **Tên sản phẩm.** Giữ "Nihongo" làm tên tạm. Chốt tên chính thức trước khi ra mắt (giai đoạn 7).
+2. **Nguồn âm Hán Việt.** Lấy trường đọc tiếng Việt của KANJIDIC2 làm nguồn chính. Giai đoạn 3 đo độ phủ trên danh sách kanji N5–N4. Kanji thiếu thì tự bổ sung bằng tay và đánh dấu nguồn. Không lấy dữ liệu từ ứng dụng hay trang web có giấy phép không rõ.
+3. **Danh sách theo cấp JLPT.** JLPT không công bố danh sách chính thức kể từ kỳ thi mới năm 2010. Dùng danh sách của tanos.co.uk (Jonathan Waller). Không dùng trường JLPT của KANJIDIC2 vì trường này theo 4 cấp cũ trước 2010.
+4. **Kiểm tra trình độ đầu vào.** Không làm trong MVP. Thay bằng màn chọn cấp bắt đầu (N5/N4) và câu hỏi "đã biết kana chưa".
+5. **Phạm vi MVP.** Từ vựng và kanji chỉ đến N4. N3 làm sau MVP.
+6. **PWA.** Cài được; mất mạng thì báo rõ và giữ thẻ đang ôn dở. Chưa ôn offline hoàn toàn.
+7. **Mô hình và dữ liệu người dùng.** Miễn phí, không quảng cáo. Chỉ lưu email đăng nhập, trạng thái thẻ FSRS, lịch sử ôn, ngày thi và mục tiêu hằng ngày. Có chức năng xóa tài khoản. Thống kê truy cập không dùng cookie theo dõi.
+8. **Lịch.** Tuần 24/11–6/12 chỉ làm việc nhẹ (kiểm chứng đối thủ, đọc tài liệu dữ liệu). Giai đoạn 1–4 lùi một tuần. Mốc MVP giữ đầu tháng 3/2027 (khoảng 9/3) nhờ cắt N3.
+9. **Mục tiêu chỉ số.** Như bảng ở mục 8.
+10. **Giấy phép.** Code dùng MIT. Dữ liệu dẫn xuất từ JMdict/KANJIDIC2 giữ CC BY-SA; câu ví dụ Tatoeba giữ CC BY.
+11. **Repo public.** Chuyển repo sang public trước khi đưa vào hồ sơ, để nhà tuyển dụng xem được.
+
+### Còn cần kiểm chứng
+
+- Giấy phép danh sách tanos.co.uk (theo hiểu biết hiện tại là CC BY), xác nhận trên trang trước khi dùng.
+- Độ phủ và độ chính xác âm Hán Việt trong KANJIDIC2 cho kanji N5–N4.
+- Tính năng hiện tại của Mazii và các app Nhật–Việt khác (mục 5).

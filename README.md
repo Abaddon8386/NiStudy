@@ -21,15 +21,16 @@ Chi tiết xem [docs/01-vision.md](docs/01-vision.md).
 
 ## Tính năng dự kiến cho MVP
 
-Tất cả mục dưới đây đều là dự kiến, chưa có trong mã nguồn.
+Tất cả mục dưới đây đều là dự kiến, chưa có trong mã nguồn. MVP gồm cấp JLPT N5–N4; N3 làm sau.
 
-- Đăng nhập.
+- Đăng nhập, chọn cấp bắt đầu.
 - Học và ôn kana.
-- Thẻ từ vựng N5–N3 ôn theo FSRS.
-- Kanji kèm âm Hán Việt.
+- Thẻ từ vựng N5–N4 ôn theo FSRS, nghĩa tiếng Việt.
+- Kanji N5–N4 kèm âm Hán Việt.
 - Trắc nghiệm.
 - Dashboard: chuỗi ngày, XP, đếm ngược ngày thi.
-- Giao diện dùng tốt trên điện thoại, có PWA.
+- Giao diện dùng tốt trên điện thoại, PWA cài được.
+- Miễn phí, chỉ lưu dữ liệu cần cho việc học, xóa được tài khoản.
 
 ## Công nghệ dự kiến
 
@@ -46,20 +47,19 @@ Công cụ quản lý gói: `pnpm`.
 
 ## Lộ trình
 
-Bắt đầu 17/11/2026. Mục tiêu MVP: đầu tháng 3/2027.
+Bắt đầu 17/11/2026. Mục tiêu MVP: đầu tháng 3/2027 (khoảng 9/3).
 
 | Giai đoạn | Nội dung | Mốc |
 |---|---|---|
 | 0 | Định hướng | Tuần 1, 17/11 |
-| 1 | Yêu cầu và SRS | Tuần 2–3, 24/11–7/12 |
-| 2 | Thiết kế UX/UI trên Figma | Tuần 3–5, 1/12–21/12 |
-| 3 | Kiến trúc kỹ thuật | Tuần 5–6, 15/12–28/12 |
-| 4 | Dựng repo chuẩn | Tuần 6, 22/12 |
-| 5 | Code MVP theo sprint | Tuần 7–13, 29/12–15/2 (có tuần nghỉ Tết) |
-| 6 | Kiểm thử và chất lượng | Song song, chốt tuần 14 |
-| 7 | Ra mắt và hồ sơ | Tuần 15, đầu 3/2027 |
-
-Tuần 24/11–6/12 giảm tải vì tác giả thi JLPT; lịch giai đoạn 1–2 có thể điều chỉnh.
+| — | Việc nhẹ trong tuần thi JLPT | Tuần 2, 24/11–30/11 |
+| 1 | Yêu cầu và SRS | Tuần 3–4, 1/12–14/12 |
+| 2 | Thiết kế UX/UI trên Figma | Tuần 4–6, 8/12–28/12 |
+| 3 | Kiến trúc kỹ thuật | Tuần 6–7, 22/12–4/1 |
+| 4 | Dựng repo chuẩn | Tuần 7, 29/12 |
+| 5 | Code MVP theo sprint | Tuần 8–14, 5/1–22/2 (có tuần nghỉ Tết) |
+| 6 | Kiểm thử và chất lượng | Song song, chốt tuần 15 |
+| 7 | Ra mắt và hồ sơ | Tuần 16, khoảng 9/3/2027 |
 
 ## Cách chạy
 
@@ -83,8 +83,7 @@ Xem [CONTRIBUTING.md](CONTRIBUTING.md).
 
 - JMdict và KANJIDIC2 là của EDRDG, theo giấy phép CC BY-SA. Phải ghi nguồn khi dùng. Xem https://www.edrdg.org/edrdg/licence.html.
 - Câu ví dụ lấy từ Tatoeba (https://tatoeba.org), giấy phép CC BY.
+- Nghĩa tiếng Việt do dự án tự biên soạn.
 - Câu hỏi luyện thi do dự án tự soạn. Không dùng đề JLPT thật.
 
-Giấy phép mã nguồn:
-
-> CẦN QUYẾT: chọn giấy phép mã nguồn (LICENSE).
+Mã nguồn dùng giấy phép MIT, xem [LICENSE](LICENSE). Giấy phép MIT không áp dụng cho dữ liệu dẫn xuất từ JMdict/KANJIDIC2 (giữ CC BY-SA) và câu ví dụ Tatoeba (giữ CC BY).
