@@ -2,7 +2,7 @@
 
 Trạng thái: Đã chốt quyết định — 17/11/2026
 
-Link Figma: sẽ bổ sung khi có.
+Figma: [Nihongo — Wireframe MVP](https://www.figma.com/design/3HNM618F5H30e56BehGuqS). Trang "Wireframe điện thoại" có biến màu "Nihongo màu", component nút và nút chấm, cùng 5 khung 390px: S-06 Trang chính, S-07 Phiên ôn (mặt sau thẻ kanji, và bản mất mạng), S-10 Trắc nghiệm, S-12 Cài đặt. Các màn còn lại và bản máy tính chưa dựng. Số liệu trên khung là dữ liệu mẫu.
 
 Tài liệu này thuộc giai đoạn 2 (Thiết kế UX/UI) của `docs/00-plan.md`. Nó dựa trên `docs/01-vision.md` (persona) và `docs/02-srs.md` (FR, NFR, US, mục 9). Mã `FR-xx`, `NFR-xx`, `US-xx` trỏ về SRS.
 
