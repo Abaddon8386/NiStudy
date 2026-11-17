@@ -47,5 +47,5 @@ Cách giao việc:
 
 - 17/11/2026: đã trả lời câu hỏi mở (fullstack; biết HTML/CSS/JS + SQL/Supabase, chưa biết React/TS/Next; 10–15 giờ/tuần; thi JLPT N4/N5 ngày 6/12), ghi vào `docs/00-plan.md`.
 - 17/11/2026: đã đưa lên `main` bản nháp `docs/01-vision.md`, README, CONTRIBUTING, `.gitignore`, template issue/PR. Bỏ quy trình PR, push thẳng `main`.
-- Cần làm: tạo nhãn `user-story`, `task` trên GitHub (template issue dùng hai nhãn này).
+- 17/11/2026: đã tạo nhãn `user-story`, `task` trên GitHub cho template issue.
 - Tiếp theo: chốt các điểm CẦN QUYẾT trong `docs/01-vision.md` mục 10 (ưu tiên: lịch tuần thi JLPT, nguồn Hán Việt, danh sách JLPT, phạm vi kanji, LICENSE), kiểm chứng đối thủ (nhất là Mazii), rồi giai đoạn 1 (`docs/02-srs.md`).
