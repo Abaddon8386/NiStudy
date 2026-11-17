@@ -2,7 +2,7 @@
 
 Trạng thái: Đã chốt quyết định — 17/11/2026
 
-Figma: [Nihongo — Wireframe MVP](https://www.figma.com/design/3HNM618F5H30e56BehGuqS). Trang "Wireframe điện thoại" có biến màu "Nihongo màu", component nút và nút chấm, cùng 5 khung 390px: S-06 Trang chính, S-07 Phiên ôn (mặt sau thẻ kanji, và bản mất mạng), S-10 Trắc nghiệm, S-12 Cài đặt. Các màn còn lại và bản máy tính chưa dựng. Số liệu trên khung là dữ liệu mẫu.
+Figma: [Nihongo — Wireframe MVP](https://www.figma.com/design/3HNM618F5H30e56BehGuqS). Trang "Wireframe điện thoại" có biến màu "Nihongo màu", component nút và nút chấm, cùng 5 khung 390px: S-06 Trang chính, S-07 Phiên ôn (mặt sau thẻ kanji, và bản mất mạng), S-10 Trắc nghiệm, S-12 Cài đặt. Trang "Wireframe máy tính" có 4 khung 1440px: S-06 (thanh bên 224px, tờ nội dung, lưới 12 cột 1100px), S-07 và S-10 (chế độ tập trung, cột 640px, gợi ý phím tắt), S-12 (hai cột 420 + 700px, cột nhãn tóm tắt giá trị hiện tại). Bản máy tính S-06 thêm dòng phân loại thẻ đến hạn ("Từ vựng 14 · Kanji 7 · Kana 3"). Các màn còn lại chưa dựng. Số liệu trên khung là dữ liệu mẫu.
 
 Tài liệu này thuộc giai đoạn 2 (Thiết kế UX/UI) của `docs/00-plan.md`. Nó dựa trên `docs/01-vision.md` (persona) và `docs/02-srs.md` (FR, NFR, US, mục 9). Mã `FR-xx`, `NFR-xx`, `US-xx` trỏ về SRS.
 
