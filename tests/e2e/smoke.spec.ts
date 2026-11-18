@@ -51,3 +51,28 @@ test("service worker đăng ký và kích hoạt với phạm vi /", async ({ pa
   });
   expect(scope).toBe("http://localhost:3100/");
 });
+
+test("offline: mở lại vỏ ứng dụng và trang đã cache (FR-28)", async ({ page, context }) => {
+  await page.goto("/");
+  await page.evaluate(() => navigator.serviceWorker.ready);
+  await page.waitForFunction(() => !!navigator.serviceWorker.controller);
+  // Chờ precache xong (cả "/" và "/nguon-du-lieu").
+  await page.waitForFunction(async () => {
+    const keys = await caches.keys();
+    const name = keys.find((k) => k.startsWith("serwist-precache"));
+    if (!name) return false;
+    const urls = (await (await caches.open(name)).keys()).map((r) => new URL(r.url).pathname);
+    return urls.includes("/") && urls.includes("/nguon-du-lieu");
+  });
+
+  await context.setOffline(true);
+  await page.reload();
+  await expect(page.getByRole("heading", { level: 1, name: "Nihongo" })).toBeVisible();
+
+  await page.goto("/nguon-du-lieu");
+  await expect(page.getByRole("heading", { level: 1, name: "Nguồn dữ liệu" })).toBeVisible();
+
+  // Trang chưa cache: rơi về vỏ ứng dụng.
+  await page.goto("/trang-khong-ton-tai");
+  await expect(page.getByRole("heading", { level: 1, name: "Nihongo" })).toBeVisible();
+});

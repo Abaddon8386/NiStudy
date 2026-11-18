@@ -40,7 +40,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="vi" className={`${beVietnam.variable} ${notoJp.variable} ${klee.variable}`}>
       <body>
-        <SerwistProvider swUrl="/serwist/sw.js" disable={process.env.NODE_ENV !== "production"}>
+        <SerwistProvider
+          swUrl="/serwist/sw.js"
+          disable={process.env.NODE_ENV !== "production"}
+          // Tắt reload khi có mạng lại (gây ngắt điều hướng/mất dữ liệu đang nhập) và
+          // tự cache trang vừa điều hướng (ADR-0004: không cache trang theo người dùng).
+          reloadOnOnline={false}
+          cacheOnNavigation={false}
+        >
           {children}
         </SerwistProvider>
       </body>

@@ -1,7 +1,7 @@
 /// <reference no-default-lib="true" />
 /// <reference lib="esnext" />
 /// <reference lib="webworker" />
-import { CacheFirst, ExpirationPlugin, Serwist, StaleWhileRevalidate } from "serwist";
+import { CacheFirst, ExpirationPlugin, NetworkOnly, Serwist, StaleWhileRevalidate } from "serwist";
 import type { PrecacheEntry, RuntimeCaching, SerwistGlobalConfig } from "serwist";
 
 declare global {
@@ -17,6 +17,11 @@ const sameOrigin = ({ url }: { url: URL }) => url.origin === self.location.origi
 // ADR-0004: chỉ precache vỏ ứng dụng + cache tài nguyên tĩnh cùng origin.
 // KHÔNG cache phản hồi Supabase/API hay dữ liệu cá nhân: mọi origin khác và /api/, /auth/ đi thẳng mạng.
 const runtimeCaching: RuntimeCaching[] = [
+  {
+    // Điều hướng trang chưa precache: đi mạng, không cache; lỗi (offline) thì rơi về `fallbacks`.
+    matcher: ({ request }) => request.mode === "navigate",
+    handler: new NetworkOnly(),
+  },
   {
     matcher: ({ url, sameOrigin: same }) => same && url.pathname.startsWith("/_next/static/"),
     handler: new CacheFirst({
@@ -43,6 +48,10 @@ const serwist = new Serwist({
   clientsClaim: true,
   navigationPreload: true,
   runtimeCaching,
+  // Offline mà mở trang chưa cache: trả vỏ ứng dụng "/" (đã precache).
+  fallbacks: {
+    entries: [{ url: "/", matcher: ({ request }) => request.destination === "document" }],
+  },
 });
 
 serwist.addEventListeners();
