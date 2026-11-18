@@ -8,7 +8,7 @@ Người học chấm thẻ liên tục, có thể mất mạng giữa phiên. N
 
 ## Quyết định
 
-- Client tính trạng thái FSRS mới bằng `ts-fsrs` (tham số mặc định) ngay khi chấm, qua `src/lib/domain/fsrs.ts`.
+- Client tính trạng thái FSRS mới bằng `ts-fsrs` 6.0.0, thuật toán FSRS-6 với tham số mặc định (không dùng FSRS-7 mặc định của thư viện vì cần thêm trường `stabilityFast`; cập nhật 18/11/2026) ngay khi chấm, qua `src/lib/domain/fsrs.ts`.
 - Ghim phiên bản `ts-fsrs` chính xác, không dùng khoảng phiên bản.
 - Client gửi trạng thái trước và sau kèm lượt ôn. Máy chủ lưu `state_after` vào `card_states` và tin trạng thái client gửi (không tính lại).
 - Khi cùng thẻ có lượt từ hai thiết bị, trạng thái thẻ theo lượt có `reviewed_at` mới hơn (FR-27).

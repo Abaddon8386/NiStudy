@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* Token v2: docs/03-design.md mục 5.1 (đặt tên theo vai trò). */
+:root {
+  color-scheme: light;
+  --ground: #f3f1ec;
+  --paper: #ffffff;
+  --sand: #f3f1ec;
+  --ink: #1f201d;
+  --ink-2: #636361;
+  --ring: #c9c4b8;
+  --hair: #e7e3da;
+  --teal: #1b6e66;
+  --marker: #ffd84a;
+  --seal: #d13b2e;
+  --good: #2e7d32;
+  --bad: #b42318;
+  --track: rgba(255, 255, 255, 0.25);
+  --seal-edge: rgba(255, 255, 255, 0.15);
+  --control: #8c8c88;
+}
+
+@theme inline {
+  --color-ground: var(--ground);
+  --color-paper: var(--paper);
+  --color-sand: var(--sand);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ring: var(--ring);
+  --color-hair: var(--hair);
+  --color-teal: var(--teal);
+  --color-marker: var(--marker);
+  --color-seal: var(--seal);
+  --color-good: var(--good);
+  --color-bad: var(--bad);
+  --color-track: var(--track);
+  --color-seal-edge: var(--seal-edge);
+  --color-control: var(--control);
+
+  --font-sans: var(--font-be-vietnam), system-ui, sans-serif;
+  --font-jp: var(--font-noto-jp), "Hiragino Sans", "Yu Gothic", sans-serif;
+  --font-kanji: var(--font-klee), var(--font-noto-jp), "Yu Mincho", serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 1rem; /* chữ thân 16px (NFR-07) */
+  line-height: 1.5;
+}
+
+:lang(ja) {
+  font-family: var(--font-jp);
+}
+
+:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 2px;
+}

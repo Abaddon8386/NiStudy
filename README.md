@@ -4,7 +4,7 @@ Web học tiếng Nhật cho người Việt: học kanji qua âm Hán Việt, �
 
 ## Trạng thái
 
-Đang ở giai đoạn 2 — thiết kế UX/UI. Đã có tầm nhìn, đặc tả yêu cầu và wireframe. Chưa có bản chạy thử.
+Đang ở giai đoạn 4 — dựng repo chuẩn. Đã có khung Next.js, logic miền (ngày học, FSRS), PWA và CI. Chưa có tính năng cho người dùng.
 
 Xem kế hoạch đầy đủ tại [docs/00-plan.md](docs/00-plan.md).
 
@@ -63,7 +63,26 @@ Bắt đầu 17/11/2026. Mục tiêu MVP: đầu tháng 3/2027 (khoảng 9/3).
 
 ## Cách chạy
 
-Sẽ bổ sung khi dựng khung Next.js.
+Yêu cầu: Node 20.9 trở lên (đã thử với Node 24). Không cần cài pnpm toàn cục: dùng corepack theo phiên bản ghim trong `package.json` (trường `packageManager`).
+
+```bash
+corepack pnpm@12.17.0 install        # cài gói
+corepack pnpm@12.17.0 dev            # chạy dev tại http://localhost:3000
+corepack pnpm@12.17.0 lint           # ESLint
+corepack pnpm@12.17.0 typecheck      # tsc --noEmit
+corepack pnpm@12.17.0 test           # Vitest (unit)
+corepack pnpm@12.17.0 build          # build production
+corepack pnpm@12.17.0 exec playwright install chromium   # một lần
+corepack pnpm@12.17.0 test:e2e       # Playwright (cần build trước, chạy bản `next start`)
+```
+
+Biến môi trường: sao chép `.env.example` thành `.env.local` rồi điền giá trị. Chỉ cần tên biến dưới đây; không commit `.env.local`.
+
+- `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`: công khai (có RLS bảo vệ).
+- `SUPABASE_SERVICE_ROLE_KEY`: bí mật, chỉ máy chủ, không bao giờ đặt tiền tố `NEXT_PUBLIC_`.
+- `SENTRY_DSN`: giám sát lỗi.
+
+Thiếu các biến này thì build và trang công khai (`/`, `/nguon-du-lieu`) vẫn chạy.
 
 ## Tài liệu
 

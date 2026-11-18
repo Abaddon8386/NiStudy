@@ -72,7 +72,7 @@ Giải thích ngắn:
 | Giao diện | Tailwind CSS | Token theo `docs/03-design.md` mục 5 |
 | Supabase client | `@supabase/ssr` + `@supabase/supabase-js` | `@supabase/ssr` giữ phiên đăng nhập trong cookie, dùng được ở cả máy chủ lẫn trình duyệt |
 | FSRS | `ts-fsrs` | Ghim phiên bản chính xác (không dùng `^` hay `~`) |
-| Service worker | Serwist, gói `@serwist/next` | Precache vỏ ứng dụng |
+| Service worker | Serwist, gói `@serwist/turbopack` (Next.js 16 mặc định Turbopack; `@serwist/next` chỉ chạy với webpack) | Precache vỏ ứng dụng; phục vụ tại `/serwist/sw.js`, scope `/` |
 | IndexedDB | `idb` | Bọc IndexedDB bằng Promise |
 | Unit test | Vitest | |
 | E2E | Playwright, chỉ Chromium | |
@@ -148,7 +148,7 @@ Ghi chú:
 
 - Thư mục có ngoặc như `(public)` và `(app)` là **route group**: dùng để gom trang và dùng chung layout, tên trong ngoặc không xuất hiện trong URL. `(public)` gồm trang không cần đăng nhập, kể cả `/nguon-du-lieu` (FR-29). `(app)` gồm trang cần đăng nhập và xác nhận email.
 - `src/lib/domain/` chỉ chứa hàm thuần (nhận vào dữ liệu, trả ra kết quả, không gọi mạng, không đọc giờ hệ thống trực tiếp). Nhờ vậy test bằng Vitest dễ (NFR-21).
-- `middleware` trong `src/lib/supabase/` chạy trước mỗi yêu cầu trang để làm mới phiên đăng nhập trong cookie (mẫu chuẩn của `@supabase/ssr`).
+- Next.js 16 gọi middleware là `proxy` (`src/proxy.ts`), gọi `updateSession` trong `src/lib/supabase/middleware.ts`; chạy trước mỗi yêu cầu trang để làm mới phiên đăng nhập trong cookie (mẫu chuẩn của `@supabase/ssr`).
 
 ## 5. Mô hình dữ liệu
 
@@ -556,7 +556,7 @@ Luồng đặt lại mật khẩu dùng cùng route `/auth/confirm` với `type`
 
 ## 8. Offline và PWA
 
-- **Serwist** precache vỏ ứng dụng (HTML/JS/CSS/font/biểu tượng) và các trang công khai. Service worker là file `src/sw.ts`.
+- **Serwist** precache vỏ ứng dụng (HTML/JS/CSS/font/biểu tượng) và các trang công khai. Service worker là file `src/sw.ts`, bundle bằng route `src/app/serwist/[path]/route.ts` và phục vụ tại `/serwist/sw.js`. Không dùng `defaultCache` của Serwist; runtime cache chỉ cho tài nguyên tĩnh cùng origin.
 - Service worker KHÔNG cache phản hồi API/Supabase hay dữ liệu cá nhân. Dữ liệu cá nhân chỉ nằm ở IndexedDB. Vì vậy đăng xuất xóa IndexedDB là đủ; vẫn xóa Cache Storage khi đăng xuất cho chắc (FR-30).
 - Manifest, biểu tượng và HTTPS (Vercel) đáp ứng FR-25.
 - Safari iOS không có nút cài tự động: hướng dẫn "Thêm vào màn hình chính" nằm trong Cài đặt (FR-25).
@@ -571,7 +571,7 @@ Luồng đặt lại mật khẩu dùng cùng route `/auth/confirm` với `type`
 
 ## 10. FSRS (ADR-0002)
 
-- Dùng `ts-fsrs` với tham số mặc định, ghim phiên bản chính xác. Đổi phiên bản là một thay đổi có chủ ý, vì kết quả lên lịch có thể đổi.
+- Dùng `ts-fsrs` 6.0.0 (ghim chính xác) qua API `DefaultScheduler({ version: "FSRS-6" })` với tham số mặc định của FSRS-6. Không dùng FSRS-7 (mặc định của ts-fsrs 6) vì cần thêm trường `stabilityFast`. `fsrs.ts` ánh xạ trường camelCase của thư viện sang cột `card_states`; `elapsed_days` tự tính (số ngày nguyên từ `last_review`) vì thư viện không còn trả. `grade` là hàm async nhưng không gọi mạng. Đổi phiên bản là một thay đổi có chủ ý, vì kết quả lên lịch có thể đổi.
 - Client tính trạng thái mới bằng `fsrs.ts` ngay khi chấm. Máy chủ lưu và tin trạng thái client gửi.
 - Chấp nhận rủi ro: người dùng sửa được lịch của chính mình. Không ảnh hưởng người khác, không có bảng xếp hạng.
 
@@ -659,7 +659,7 @@ Thứ tự đề xuất, theo cái dự án thật sự dùng:
 
 ## 17. Vấn đề mở
 
-Đã chốt 18/11/2026 (SRS đã sửa theo): điểm 1, 2, 3, 4 cập nhật chữ trong SRS (NFR-12, FR-27, NFR-15, mục 1.3); điểm 5 dùng bộ dữ liệu mẫu chung `tests/fixtures/streak-xp.json` chạy cho cả unit test (`streak.ts`, `xp.ts`) và test tích hợp `get_dashboard`, `get_dashboard` là nguồn chính, client chỉ cộng tạm +1 XP cho lượt còn trong outbox; điểm 6 trắc nghiệm cần mạng ở MVP; điểm 9 máy chủ suy `is_new` (mục 6.2), `p_correct` vẫn là rủi ro chấp nhận. Điểm 7, 8, 10, 11 là việc kiểm chứng ở giai đoạn 4 hoặc khi dựng màn tương ứng.
+Đã chốt 18/11/2026 (SRS đã sửa theo): điểm 1, 2, 3, 4 cập nhật chữ trong SRS (NFR-12, FR-27, NFR-15, mục 1.3); điểm 5 dùng bộ dữ liệu mẫu chung `tests/fixtures/streak-xp.json` chạy cho cả unit test (`streak.ts`, `xp.ts`) và test tích hợp `get_dashboard`, `get_dashboard` là nguồn chính, client chỉ cộng tạm +1 XP cho lượt còn trong outbox; điểm 6 trắc nghiệm cần mạng ở MVP; điểm 9 máy chủ suy `is_new` (mục 6.2), `p_correct` vẫn là rủi ro chấp nhận. Giai đoạn 4 (18/11/2026) đã kiểm chứng: điểm 8 dùng `@serwist/turbopack`, build Turbopack sinh `sw.js`, service worker đăng ký và kích hoạt (E2E); điểm 11 ts-fsrs 6.0.0 dùng FSRS-6 (mục 10). Điểm 7 và 10 còn mở, cần project `nihongo-dev`.
 
 Các điểm gốc:
 

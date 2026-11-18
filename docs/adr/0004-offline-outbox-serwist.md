@@ -8,7 +8,7 @@ Người học (ví dụ Lan trên xe buýt) mất mạng giữa phiên. FR-26 �
 
 ## Quyết định
 
-- Vỏ ứng dụng (HTML/JS/CSS/font/biểu tượng) và trang công khai được precache bằng Serwist (`@serwist/next`).
+- Vỏ ứng dụng (HTML/JS/CSS/font/biểu tượng) và trang công khai được precache bằng Serwist (`@serwist/turbopack`, vì Next.js 16 mặc định Turbopack và `@serwist/next` chỉ chạy với webpack; cập nhật 18/11/2026). Service worker phục vụ tại `/serwist/sw.js`, scope `/`.
 - Service worker KHÔNG cache phản hồi API/Supabase hay dữ liệu cá nhân.
 - Dữ liệu cá nhân (hàng đợi phiên, lượt ôn chưa gửi) chỉ nằm trong IndexedDB (qua `idb`), mỗi bản ghi gắn `user_id`.
 - Lượt ôn ghi vào outbox trong IndexedDB. Outbox gửi lô qua `submit_reviews`, thành công thì xóa. Gửi lại với khoảng chờ tăng dần 1s, 2s, 4s… tối đa 60s.
