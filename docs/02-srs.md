@@ -102,7 +102,7 @@ Chỉ có một loại tài khoản: người học. MVP không có vai trò qu�
 - `ts-fsrs` cho kết quả lên lịch đúng với 4 mức chấm.
 - Nguồn dữ liệu đã kiểm chứng ở `docs/01-vision.md` mục 10: KANJIDIC2 có âm Hán Việt (thẻ `vietnam`), danh sách tanos làm danh sách theo cấp (giấy phép CC BY theo nguồn thứ cấp, chưa đọc được trang gốc).
 - Nghĩa tiếng Việt của từ vựng và kanji do tác giả tự biên soạn vì JMdict không có.
-- Độ phủ âm Hán Việt cho kanji N5–N4 chưa đo. Kanji thiếu sẽ được bổ sung tay và đánh dấu nguồn.
+- Đo ngày 18/11/2026 (KANJIDIC2 database_version 2026-322; danh sách tanos qua mirror Bluskyo/JLPT_Vocabulary commit d29a678): N5 79/79 và N4 166/166 kanji có âm Hán Việt (100%); 75 chữ có từ 2 âm trở lên. KANJIDIC2 xếp các âm theo bảng chữ cái, không theo mức phổ biến (山: San, Sơn; 国: Quốc, Cuốc), và lưu dạng chữ hoa đầu, nhiều âm chưa chuẩn hóa NFC. Âm chính của mỗi kanji do tác giả chọn tay.
 - Từ ví dụ của kanji lấy từ danh sách từ vựng N5–N4 của dự án có chứa kanji đó. Kanji không có từ nào thì hiển thị "Chưa có từ ví dụ". Câu ví dụ Tatoeba chỉ dùng nếu được đưa vào dữ liệu.
 
 ## 3. Yêu cầu chức năng
@@ -146,7 +146,7 @@ Cột "Nguồn" chỉ persona (Minh, Lan, Hùng) hoặc mục trong `docs/01-vis
 
 | Mã | Tên | Mô tả | Ưu tiên | Nguồn |
 |---|---|---|---|---|
-| FR-14 | Thẻ kanji | Hệ thống phải hiển thị thẻ kanji gồm: chữ, âm Hán Việt, nghĩa tiếng Việt, âm on, âm kun và từ ví dụ. Từ ví dụ lấy từ danh sách từ vựng N5–N4 của dự án có chứa kanji đó; không có thì hiển thị "Chưa có từ ví dụ". Kanji có nhiều âm Hán Việt thì hiển thị một âm chính (mặc định là âm đầu tiên trong KANJIDIC2, sửa tay được khi biên soạn) và các âm còn lại ở dạng phụ. Kanji thiếu âm Hán Việt phải hiển thị chữ "Đang bổ sung" và được đánh dấu để bổ sung, không hiển thị trường trống. | Phải có | Hùng, V6b, V7 |
+| FR-14 | Thẻ kanji | Hệ thống phải hiển thị thẻ kanji gồm: chữ, âm Hán Việt, nghĩa tiếng Việt, âm on, âm kun và từ ví dụ. Từ ví dụ lấy từ danh sách từ vựng N5–N4 của dự án có chứa kanji đó; không có thì hiển thị "Chưa có từ ví dụ". Kanji có nhiều âm Hán Việt thì hiển thị một âm chính (do tác giả chọn tay khi biên soạn trong số các âm của KANJIDIC2, vì KANJIDIC2 xếp âm theo bảng chữ cái) và các âm còn lại ở dạng phụ. Kanji thiếu âm Hán Việt phải hiển thị chữ "Đang bổ sung" và được đánh dấu để bổ sung, không hiển thị trường trống. | Phải có | Hùng, V6b, V7 |
 
 ### 3.6 Ôn tập FSRS
 
@@ -658,7 +658,7 @@ Các điểm mở khi viết bản nháp đã được chốt và đưa vào yê
 2. **Thứ tự thẻ mới:** kana trước nếu chưa biết; sau đó xen kẽ 1 kanji : 2 từ vựng theo thứ tự danh sách nguồn (FR-13).
 3. **Giới hạn và thứ tự trong phiên:** giới hạn 100 chỉ áp cho thẻ đến hạn; thẻ kana mới tính vào mục tiêu thẻ mới; thẻ đến hạn hiển thị trước thẻ mới (FR-13, FR-16).
 4. **Bảng kana:** mỗi bộ gồm 46 chữ cơ bản, 25 âm đục và bán đục, 33 âm ghép; mỗi mục là một thẻ (FR-10).
-5. **Nhiều âm Hán Việt:** một âm chính (mặc định âm đầu trong KANJIDIC2, sửa tay được), các âm khác hiển thị phụ (FR-14).
+5. **Nhiều âm Hán Việt:** một âm chính do tác giả chọn tay (KANJIDIC2 xếp âm theo bảng chữ cái nên không lấy âm đầu), các âm khác hiển thị phụ (FR-14).
 6. **Trắc nghiệm:** 10 câu mỗi bài, từ thẻ đã học, đáp án nhiễu cùng loại cùng cấp; mở khi tạo được ít nhất 10 câu hợp lệ (FR-19).
 7. **Mật khẩu và liên kết:** mật khẩu tối thiểu 8 ký tự; liên kết xác nhận và đặt lại hết hạn sau 1 giờ; thông báo không tiết lộ email đã đăng ký (FR-01, FR-04).
 

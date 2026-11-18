@@ -66,7 +66,7 @@ Sản phẩm: link Figma trong README, `docs/03-design.md`.
 
 Sản phẩm: `docs/04-architecture.md` (sơ đồ hệ thống, ERD, API), `docs/adr/` (quyết định kiến trúc).
 
-Dữ liệu: đo độ phủ âm Hán Việt của KANJIDIC2 cho kanji N5–N4 (data-worker). JMdict không có nghĩa tiếng Việt, nên lên kế hoạch biên soạn nghĩa tiếng Việt theo sprint.
+Dữ liệu: đã đo độ phủ âm Hán Việt của KANJIDIC2 cho kanji N5–N4 ngày 18/11/2026: 245/245 chữ có âm (xem `docs/04-architecture.md` mục 11); âm chính chọn tay. JMdict không có nghĩa tiếng Việt, nên lên kế hoạch biên soạn nghĩa tiếng Việt theo sprint.
 
 Bản quyền: JMdict và KANJIDIC dùng CC BY-SA, Tatoeba dùng CC BY, phải ghi nguồn. Không chép đề JLPT thật; câu hỏi luyện thi tự soạn.
 

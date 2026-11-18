@@ -208,6 +208,6 @@ Với 10–20 người beta, các mục tiêu dưới đây chỉ là ngưỡng 
 
 ### Còn cần kiểm chứng
 
-- Độ phủ âm Hán Việt trong KANJIDIC2 cho kanji N5–N4: đếm khi nhập dữ liệu.
+- Độ phủ âm Hán Việt trong KANJIDIC2 cho kanji N5–N4: đã đo 18/11/2026, 245/245 chữ (N5 79, N4 166) có âm; âm chính phải chọn tay vì KANJIDIC2 xếp âm theo bảng chữ cái.
 - Kanji có nhiều âm Hán Việt: chọn âm nào hiển thị đầu tiên.
 - Tính năng hiện tại của Mazii và các app Nhật–Việt khác (mục 5): người dùng dùng thử.
