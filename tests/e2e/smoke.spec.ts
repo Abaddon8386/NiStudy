@@ -1,7 +1,9 @@
 import { expect, test } from "@playwright/test";
+import { loginViaForm, mockLoggedInBackend } from "./helpers";
 
 const pages = [
-  { path: "/", title: /Nihongo/, heading: "Nihongo" },
+  { path: "/dang-nhap", title: /Đăng nhập/, heading: "Đăng nhập" },
+  { path: "/dang-ky", title: /Đăng ký/, heading: "Đăng ký" },
   { path: "/nguon-du-lieu", title: /Nguồn dữ liệu/, heading: "Nguồn dữ liệu" },
 ];
 
@@ -52,18 +54,25 @@ test("service worker đăng ký và kích hoạt với phạm vi /", async ({ pa
   expect(scope).toBe("http://localhost:3100/");
 });
 
+// Guard cần phiên: đăng nhập bằng phản hồi Supabase giả để có phiên cục bộ (cookie), rồi thử offline.
+// Phiên đọc từ cookie nên guard chạy được khi offline; vỏ "/" do service worker phục vụ.
 test("offline: mở lại vỏ ứng dụng và trang đã cache (FR-28)", async ({ page, context }) => {
-  await page.goto("/");
+  await mockLoggedInBackend(page);
+  await loginViaForm(page);
+  await expect(page.getByRole("heading", { level: 1, name: "Nihongo" })).toBeVisible();
   await page.evaluate(() => navigator.serviceWorker.ready);
-  await page.waitForFunction(() => !!navigator.serviceWorker.controller);
-  // Chờ precache xong (cả "/" và "/nguon-du-lieu").
+  await page.waitForFunction(() => !!navigator.serviceWorker.controller || true);
+  // Chờ precache xong ("/", "/nguon-du-lieu", "/khoi-dau", "/cai-dat").
   await page.waitForFunction(async () => {
     const keys = await caches.keys();
     const name = keys.find((k) => k.startsWith("serwist-precache"));
     if (!name) return false;
     const urls = (await (await caches.open(name)).keys()).map((r) => new URL(r.url).pathname);
-    return urls.includes("/") && urls.includes("/nguon-du-lieu");
+    return ["/", "/nguon-du-lieu", "/khoi-dau", "/cai-dat"].every((u) => urls.includes(u));
   });
+  // Tải lại một lần để trang được service worker kiểm soát.
+  await page.reload();
+  await page.waitForFunction(() => !!navigator.serviceWorker.controller);
 
   await context.setOffline(true);
   await page.reload();
@@ -72,7 +81,26 @@ test("offline: mở lại vỏ ứng dụng và trang đã cache (FR-28)", async
   await page.goto("/nguon-du-lieu");
   await expect(page.getByRole("heading", { level: 1, name: "Nguồn dữ liệu" })).toBeVisible();
 
+  await page.goto("/cai-dat");
+  await expect(page.getByRole("heading", { level: 1, name: "Cài đặt" })).toBeVisible();
+
   // Trang chưa cache: rơi về vỏ ứng dụng.
   await page.goto("/trang-khong-ton-tai");
   await expect(page.getByRole("heading", { level: 1, name: "Nihongo" })).toBeVisible();
+});
+
+test("offline không có phiên: vỏ được phục vụ rồi chuyển /dang-nhap (không có dữ liệu cá nhân)", async ({ page, context }) => {
+  await page.goto("/nguon-du-lieu");
+  await page.waitForFunction(async () => {
+    const name = (await caches.keys()).find((k) => k.startsWith("serwist-precache"));
+    if (!name) return false;
+    const urls = (await (await caches.open(name)).keys()).map((r) => new URL(r.url).pathname);
+    return urls.includes("/");
+  });
+  await page.reload();
+  await page.waitForFunction(() => !!navigator.serviceWorker.controller);
+  await context.setOffline(true);
+  await page.goto("/");
+  // Không có phiên: guard không hiện nội dung "Nihongo" của trang chính.
+  await expect(page.getByRole("heading", { level: 1, name: "Nihongo" })).toHaveCount(0);
 });

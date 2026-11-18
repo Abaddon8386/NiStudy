@@ -11,6 +11,8 @@ export const { dynamic, dynamicParams, revalidate, generateStaticParams, GET } =
   additionalPrecacheEntries: [
     { url: "/", revision },
     { url: "/nguon-du-lieu", revision },
+    { url: "/khoi-dau", revision },
+    { url: "/cai-dat", revision },
   ],
   swSrc: "src/sw.ts",
   useNativeEsbuild: true,
