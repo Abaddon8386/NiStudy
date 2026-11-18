@@ -2,7 +2,7 @@
 
 Trạng thái: Đã chốt quyết định — 17/11/2026
 
-**Hướng v2 "sống động" (18/11/2026, chờ người dùng duyệt).** Người dùng thấy bản v1 hơi chán và có nhiều chữ giải thích nhỏ. Hướng v2 thay đổi: khối màu đậm phẳng (hero nền #1b6e66 chữ trắng), số rất to (96px), vệt dạ quang #ffd84a sau từ khóa, lịch ngày học bằng dấu triện đỏ son #d13b2e chữ 学 xoay nghiêng, bỏ chữ giải thích nhỏ, nút chấm có màu (Được: teal, Dễ: vàng). Chuyển động có chủ đích: lật thẻ 3D, vệt dạ quang quét, thẻ bay theo điểm chấm, đóng dấu triện khi xong phiên; mọi chuyển động có bản tĩnh cho `prefers-reduced-motion`. Tham khảo tinh thần (không chép) từ ximitech.vn: chữ hiển thị lớn, vệt highlight, chuyển động gắn nội dung. Tương phản đã đo: trắng/#1b6e66 6,05; mực/#ffd84a 11,83; #d13b2e/trắng 4,80; vàng/teal 4,37 (chỉ cho số ≥ 24px đậm). Prototype HTML bấm thử: [Nihongo v2](https://claude.ai/artifact/KtKAptQvmsrvRqVz3g9taj) (riêng tư), bản lưu ngoài repo `C:/Users/hai/.local/share/nihongo-prototype/v2/index.html`. Khi được duyệt, mục 5 (token) và các màn sẽ cập nhật theo v2. Hai màn mẫu v2 sinh trên Stitch bị trắng trơn; thiết kế động không thể hiện được trên Stitch/Figma nên prototype HTML là nguồn chính cho v2.
+**Hướng v2 "sống động" (đã duyệt 18/11/2026).** Token mục 5 đã cập nhật theo v2. Người dùng thấy bản v1 hơi chán và có nhiều chữ giải thích nhỏ. Hướng v2 thay đổi: khối màu đậm phẳng (hero nền #1b6e66 chữ trắng), số rất to (96px), vệt dạ quang #ffd84a sau từ khóa, lịch ngày học bằng dấu triện đỏ son #d13b2e chữ 学 xoay nghiêng, bỏ chữ giải thích nhỏ, nút chấm có màu (Được: teal, Dễ: vàng). Chuyển động có chủ đích: lật thẻ 3D, vệt dạ quang quét, thẻ bay theo điểm chấm, đóng dấu triện khi xong phiên; mọi chuyển động có bản tĩnh cho `prefers-reduced-motion`. Tham khảo tinh thần (không chép) từ ximitech.vn: chữ hiển thị lớn, vệt highlight, chuyển động gắn nội dung. Tương phản đã đo: trắng/#1b6e66 6,05; mực/#ffd84a 11,83; #d13b2e/trắng 4,80; vàng/teal 4,37 (chỉ cho số ≥ 24px đậm). Prototype HTML bấm thử: [Nihongo v2](https://claude.ai/artifact/KtKAptQvmsrvRqVz3g9taj) (riêng tư), bản lưu ngoài repo `C:/Users/hai/.local/share/nihongo-prototype/v2/index.html`. Các màn ở mục 4 vẫn mô tả bố cục v1; hình thức v2 theo prototype. Hai màn mẫu v2 sinh trên Stitch bị trắng trơn; thiết kế động không thể hiện được trên Stitch/Figma nên prototype HTML là nguồn chính cho v2.
 
 **Bản thiết kế v1: Google Stitch** — project [Nihongo — Wireframe MVP](https://stitch.google.com/projects/8460357221411495285) (tài khoản Google đã kết nối Stitch MCP; trong trình duyệt là tài khoản thứ hai, `/u/1/`). Có đủ 14 màn điện thoại (S-01 đến S-14, S-07 có thêm bản mất mạng) và 4 màn máy tính (S-06, S-07, S-10, S-12), sinh từ đặc tả trong tài liệu này và design system "Nihongo". Đã soát bằng mắt trên canvas: S-06, S-07 (cả bản mất mạng), S-08, S-09, S-10, S-11, S-12, S-13, S-14 bản điện thoại và S-06 bản máy tính; đã sửa chữ dưới 14px, màu chữ phụ #73796e (4,14–4,48:1, không đạt AA) thành #636361, nội dung bịa ở nền S-13, màu sai ở S-11/S-12, tràn cột ở S-06/S-12 máy tính. Chưa soát bằng mắt: S-01 đến S-05 bản điện thoại, S-07/S-10/S-12 bản máy tính. Lưu ý: khi sinh màn, Stitch tự viết lại design system thành bộ "Atelier Crisp" (chữ 11–13px); quy tắc thật nằm ở tài liệu này, mỗi lệnh sinh phải ghi rõ cỡ chữ và màu. Trên canvas còn 4 bản máy tính thừa của S-01 đến S-04 (sinh nhầm khổ), cần xóa tay.
 
@@ -382,125 +382,146 @@ Mục "Ứng dụng" (hướng dẫn cài PWA, FR-25) nằm trong Cài đặt.
 
 ### 5.1 Màu
 
-Tỉ lệ tương phản là số đã đo (NFR-09). Vẫn đo lại bằng công cụ khi dựng giao diện thật.
+Token v2 lấy từ khối `:root` của prototype v2 (nguồn sự thật). Tỉ lệ tương phản là số đã đo (NFR-09); ô ghi "chưa đo" cần đo lại bằng công cụ khi dựng giao diện thật.
 
 | Token | Giá trị | Vai trò | Tương phản đã đo |
 |---|---|---|---|
-| `--ground` | #ffffff | Tờ nội dung | Nền |
-| `--chrome` | #f7f6f2 | Sidebar, thanh trên (tông giấy ấm) | Nền |
-| `--surface` | #f9f9f9 | Bảng một nấc khác nền (bảng Cài đặt dùng token này) | Nền |
-| `--raised` | #ffffff | Khối nổi trên nền surface | Nền |
-| `--active` | #eeeeee | Mục đang chọn trong sidebar | Nền |
-| `--border` | #eaeaea | Viền tờ nội dung và khối; không dùng cho điều khiển | Trang trí |
-| `--rule` | #f3f3f3 | Đường kẻ rất nhạt giữa hàng | Trang trí |
-| `--control` | #8c8c88 | Viền ô nhập và điều khiển, rãnh công tắc tắt | 3,39:1 trên #ffffff (đạt WCAG 1.4.11, ≥ 3:1) |
-| `--text` | #1f201d | Chữ chính | 16,37:1 trên #ffffff |
-| `--muted` | #636361 | Chữ phụ | 6,02:1 trên #ffffff; 5,57:1 trên #f7f6f2; 5,72:1 trên #f9f9f9; 5,19:1 trên #eeeeee |
-| `--primary` | #1f201d | Nút chính (chữ trắng) | 16,37:1 (#ffffff trên #1f201d) |
-| `--accent` | #1b6e66 | Xanh mòng két đậm: ô ngày đã học, dấu nhận diện, thanh tiến độ thẻ mới | 6,05:1 trên #ffffff; 5,60:1 trên #f7f6f2 |
-| `--positive` | #2e7d32 | Chữ nhãn "Đúng" (chỉ trong trắc nghiệm) | 5,13:1 trên #ffffff |
-| `--negative` | #b42318 | Chữ nhãn "Sai", nút xóa tài khoản | 6,57:1 trên #ffffff |
+| `--ground` | #f3f1ec | Nền ngoài cột app (giấy ấm); nền màn phiên ôn | Nền |
+| `--paper` | #ffffff | Cột app, mặt thẻ, nút và khối trắng; chữ trên nền tối | Nền |
+| `--sand` | #f3f1ec | Khối phụ (ô số nhỏ, khung ví dụ). Cùng giá trị `--ground`, tách tên theo vai trò | Nền |
+| `--ink` | #1f201d | Chữ chính, viền khối 2px, nút tối, mục điều hướng đang chọn | 16,37:1 trên #ffffff; 11,83:1 trên #ffd84a |
+| `--ink-2` | #636361 | Chữ phụ (≥ 14px) | 6,02:1 trên #ffffff; trên `--ground`/`--sand`: chưa đo |
+| `--ring` | #c9c4b8 | Viền vòng ngày chưa học (trang trí); chữ gợi ý "Space" trên nút tối | Trang trí. Không đạt 3:1 trên trắng nên không dùng làm viền điều khiển |
+| `--hair` | #e7e3da | Đường kẻ mảnh (viền thanh điều hướng, nền rãnh thanh tiến độ phiên ôn) | Trang trí |
+| `--teal` | #1b6e66 | Khối hero, nút chấm "Được", mặt nhấn chính | 6,05:1 chữ trắng trên teal |
+| `--marker` | #ffd84a | Vệt dạ quang, nút chính trên hero, nút chấm "Dễ", nhãn "Thẻ mới", thanh tiến độ thẻ mới | 11,83:1 chữ `--ink` trên vàng; 4,37:1 vàng trên teal (chỉ cho chữ lớn ≥ 24px hoặc đậm ≥ 19px) |
+| `--seal` | #d13b2e | Dấu triện (chữ 学), vòng mực ở tổng kết | 4,80:1 trên #ffffff; chữ trắng trên seal: cùng cặp 4,80:1 |
+| `--good` | #2e7d32 | Chữ nhãn "Đúng" (chỉ trong trắc nghiệm) | 5,13:1 trên #ffffff |
+| `--bad` | #b42318 | Chữ nhãn "Sai", nút xóa tài khoản | 6,57:1 trên #ffffff |
+| `--track` | rgba(255,255,255,.25) | Rãnh thanh tiến độ trên nền teal | Trang trí |
+| `--seal-edge` | rgba(255,255,255,.15) | Viền trong mờ của dấu triện | Trang trí |
+| `--control` | #8c8c88 | Viền ô nhập và điều khiển, rãnh công tắc tắt. Prototype v2 chưa có ô nhập nên chưa dùng; giữ từ v1 | 3,39:1 trên #ffffff (đạt WCAG 1.4.11, ≥ 3:1) |
 
-Dải cảnh báo: nền #fffbeb, viền #fde68a, chữ #92400e (6,84:1 trên #fffbeb).
+Cấm dùng #73796e cho chữ (4,14 đến 4,48:1, không đạt AA).
 
-Viên trạng thái nhạt:
+Token v1 bỏ (không còn trong v2): `--chrome` #f7f6f2, `--surface` #f9f9f9, `--raised`, `--active` #eeeeee, `--border` #eaeaea, `--rule` #f3f3f3, `--primary`, `--accent`. Nền trắng `#ffffff` của v1 nay là `--paper`; `--text`, `--muted`, `--positive`, `--negative` đổi tên thành `--ink`, `--ink-2`, `--good`, `--bad`, giá trị giữ nguyên.
 
-| Loại | Nền | Chữ | Tương phản đã đo |
-|---|---|---|---|
-| Tích cực | #dcfae5 | #04250e | 14,77:1 |
-| Tiêu cực | #fdecea | #7a1d14 | 9,12:1 |
-| Trung tính | #f3f3f3 | #3d3d3a | 9,82:1 |
+Chưa chốt (prototype không có): dải cảnh báo mất mạng, viên trạng thái nhạt, màu viền hover và disabled. Tạm giữ giá trị v1 (dải cảnh báo nền #fffbeb, viền #fde68a, chữ #92400e; viên tích cực #dcfae5/#04250e; tiêu cực #fdecea/#7a1d14; trung tính #f3f3f3/#3d3d3a) cho tới khi dựng màn tương ứng ở v2.
 
 Quy tắc dùng màu:
-- Màu nhấn `--accent` dùng dưới 2% điểm ảnh.
-- Không dùng tím hay chàm. Không dùng kem kết hợp đất nung.
-- Công tắc dùng #1f201d khi bật, không dùng màu nhấn.
-- Mọi trạng thái đều có chữ đi kèm, không chỉ màu (NFR-09).
+- Khối màu đậm phẳng: teal cho hero, ink cho nút, vàng cho điểm nhấn. Vàng và đỏ son chỉ là điểm nhỏ.
+- Chữ trắng trên teal: được. Chữ vàng trên teal: chỉ chữ lớn ≥ 24px hoặc đậm ≥ 19px.
+- Không dùng tím hay chàm.
+- Mọi trạng thái đều có chữ đi kèm, không chỉ màu (NFR-09). Nút chấm luôn có nhãn Lại, Khó, Được, Dễ.
 
-Chế độ tối để sau MVP. Token đặt tên theo vai trò để thêm sau được.
+Chế độ tối để sau MVP (prototype khai báo `color-scheme: light`). Token đặt tên theo vai trò để thêm sau được.
 
 ### 5.2 Kiểu chữ
 
 | Vai trò | Font | Ghi chú |
 |---|---|---|
-| Giao diện | Be Vietnam Pro (Google Fonts, SIL OFL, thiết kế cho tiếng Việt) | Độ đậm 400, 500, 600. Số dạng tabular cho mọi con số cập nhật |
-| Lời chào | Noto Serif (đề xuất, OFL, hỗ trợ tiếng Việt) | Chỉ cho h1 lời chào trang chính |
-| Từ vựng và kana | Noto Sans JP (OFL) | `lang="ja"` (NFR-11) |
-| Kanji cỡ lớn trên thẻ kanji | Klee One (OFL, nét gần chữ viết tay sách giáo khoa) | `lang="ja"` |
+| Giao diện và số lớn | Be Vietnam Pro (Google Fonts, SIL OFL, thiết kế cho tiếng Việt) | Prototype nạp độ đậm 400, 500, 700, 800. Số lớn, lời chào và tiêu đề dùng 800. Số dạng tabular cho mọi con số cập nhật (chưa có trong prototype, đề xuất) |
+| Từ vựng, kana, âm đọc | Noto Sans JP (OFL) | Độ đậm 400, 500, 700. `lang="ja"` (NFR-11) |
+| Kanji cỡ lớn | Klee One (OFL, nét gần chữ viết tay sách giáo khoa) | Độ đậm 600. Dự phòng Noto Sans JP. `lang="ja"`. Cũng dùng cho chữ 学 trên dấu triện lớn |
 
-Thang cỡ chữ:
+Noto Serif (lời chào v1): đã bỏ. Lời chào v2 dùng Be Vietnam Pro 800.
+
+Thang cỡ chữ (đọc từ CSS prototype):
 
 | Cỡ | Dùng cho |
 |---|---|
-| 14px | Chữ phụ, nhãn (tối thiểu) |
-| 16px | Chữ thân |
-| 20px | Nghĩa trên thẻ |
-| 24px | Tiêu đề màn |
-| 32px | Số chính |
-| 40px | Lời chào trên máy tính (28px trên điện thoại) |
-| 48px | Từ vựng trên thẻ |
-| 96px | Kana trên thẻ |
-| 120px | Kanji trên thẻ |
+| 14px | Chữ phụ, nhãn, phím tắt, khoảng ôn kế tiếp, nhãn "Thẻ mới" (tối thiểu) |
+| 15px | Chữ 学 trong ô dấu triện 32px |
+| 16px | Chữ thân; âm đọc; ví dụ |
+| 18px | Nút chính và nút chấm (đậm 700); tên thương hiệu |
+| 20px | Nghĩa trên thẻ; chữ bên cạnh số lớn; câu ví dụ tiếng Nhật; đoạn phụ ở tổng kết |
+| 32px | Lời chào trang chính (800, dòng 1,15) |
+| 40px | Số nhỏ ở ô đôi và ở tổng kết (800); từ đọc/âm Hán Việt ở mặt sau thẻ (800) |
+| 48px | Tiêu đề tổng kết (800, dòng 1,1) |
+| 56px | Số ngày đã học (800) |
+| 72px | Chữ 学 trên dấu triện lớn ở tổng kết (Klee One 600) |
+| 88px | Chữ trên mặt sau thẻ (kanji, từ vựng, kana) |
+| 96px | Số thẻ đến hạn ở hero (800, dòng 0,9, giãn chữ -2px); từ vựng ở mặt trước thẻ (Noto Sans JP 500) |
+| 160px | Kanji (Klee One 600) và kana (Noto Sans JP 500) ở mặt trước thẻ |
 
-- Không chữ nào dưới 14px.
+- Không chữ nào dưới 14px; chữ thân 16px.
 - Không dùng chữ hoa giãn cách cho nhãn. Âm Hán Việt viết HOA là ngoại lệ có chủ đích và không giãn cách.
 - Kiểm hiển thị dấu tiếng Việt, kana và kanji trên cả bốn trình duyệt (NFR-10). Chuẩn bị font dự phòng cho kanji nếu Klee One thiếu chữ.
+- Chưa chốt: cỡ chữ riêng cho desktop (prototype chỉ có cột 440px); cỡ chữ trắc nghiệm, cài đặt (chưa dựng).
 
 **Nạp font** (để đạt LCP ≤ 2,5 giây, NFR-01):
 - Dùng `next/font`, tự host khi build, `font-display: swap`.
-- Be Vietnam Pro và Noto Serif: tập con latin và vietnamese.
+- Be Vietnam Pro: tập con latin và vietnamese.
 - Noto Sans JP: nạp theo `unicode-range`.
-- Klee One: chỉ tải ở màn phiên ôn.
+- Klee One: chỉ tải ở màn phiên ôn và tổng kết.
 
 ### 5.3 Khoảng cách và hình khối
 
-- Lưới 4px. Khe 16px. Đệm khối 20px.
-- Bo khối 22px. Bo tờ nội dung 16px. Nút bo tròn hoàn toàn (999px).
-- Điều khiển cao 44px. Nút chính cao 48px. Hàng danh sách cao 63px.
-- Không bóng đổ trên phần tử đứng yên.
+- Cột app tối đa 440px, căn giữa. Từ 480px trở lên: nền `--ground` bao quanh, cột app bo 32px, đệm ngang 20px (dưới 480px: lề 16px). Bố cục máy tính chưa chốt.
+- Khe giữa khối 16px (ô đôi 12px, nút chấm 8px). Đệm khối: hero 24px, khối ngày 20px, ô nhỏ 16px.
+- Bo góc: hero và khối ngày 28px; thẻ 32px; ô nhỏ 22px; nút chấm 20px; khung ví dụ 16px; vệt dạ quang 6px; nhãn "Thẻ mới" 8px; nút và thanh tiến độ tròn hoàn toàn (99px); dấu triện tròn (50%).
+- Viền khối: 2px `--ink` (khối ngày, thẻ, nút chấm). Hero không viền.
+- Điều khiển cao tối thiểu 44px. Nút chính và nút lật thẻ cao 56px. Nút chấm cao 72px. Thanh điều hướng dưới cao 64px.
+- Không bóng đổ ngoài. Ngoại lệ duy nhất: viền trong mờ của dấu triện (`--seal-edge`). Chiều sâu của chồng thẻ dùng thẻ phía dưới thu nhỏ 0,96 và 0,92, dịch xuống 8px và 16px.
 
 ### 5.4 Focus
 
-- Vòng 2px màu #1f201d, cách phần tử 2px.
-- Luôn nhìn thấy, trên cả nền trắng, nền #f7f6f2 và trên nút nền gần đen (khe 2px cho vòng không chìm vào nút).
-- Thứ tự focus theo thứ tự đọc (NFR-06).
+- Vòng 3px màu `--ink`, cách phần tử 2px.
+- Trên hero và nút chấm "Được" (nền teal) vòng đổi sang `--paper` để không chìm.
+- Luôn nhìn thấy trên nền trắng, nền `--ground` và trên nút nền ink (khe 2px).
+- Thứ tự focus theo thứ tự đọc (NFR-06). Mặt thẻ chưa hiện bị vô hiệu (`inert`) để focus không rơi vào đó.
 
 ### 5.5 Thành phần
 
 Trạng thái chung: hover (đổi nền một nấc, không đổi màu chữ), focus (vòng ở mục 5.4), disabled (chữ và viền nhạt hơn, `aria-disabled`, có dòng giải thích khi cần).
 
 **Nút.**
-- Chính: nền #1f201d, chữ trắng, cao 48px, bo 999px. Mỗi màn chỉ một nút chính.
-- Phụ: nền xám nhạt, chữ #1f201d, cao 44px.
-- Chữ: không nền, gạch chân khi hover, vùng bấm vẫn tối thiểu 44×44px.
-- Nguy hiểm: viền và chữ #b42318, nền trắng. Chỉ dùng cho xóa tài khoản và "Đăng xuất và xóa".
+- Chính trên khối teal (nút "Bắt đầu ôn"): nền `--marker`, chữ `--ink` 18px đậm 700, cao 56px, bo 99px. Khi bấm thu về 0,97 (xem mục 5.6).
+- Chính trên nền trắng ("Lật thẻ", "Về trang chính"): nền `--ink`, chữ `--paper` 18px đậm 700, cao 56px, bo 99px. Nút lật thẻ có thêm gợi ý phím "Space" 14px màu `--ring`.
+- Mỗi màn chỉ một nút chính.
+- Chữ ("Thoát", "Cài đặt"): không nền, chữ 16px, vùng bấm tối thiểu 44×44px. "Thoát" đậm 500, "Cài đặt" màu `--ink-2`.
+- Điều hướng dưới: bốn mục, cao tối thiểu 44px, bo 99px, chữ 14px. Mục đang chọn nền `--ink`, chữ trắng đậm 700.
+- Phụ, nguy hiểm: prototype chưa có. Tạm giữ v1: nguy hiểm viền và chữ `--bad`, nền trắng, chỉ cho xóa tài khoản và "Đăng xuất và xóa". Nút phụ: chưa chốt.
 
 **Ô nhập.**
 - Nhãn ở trên, 14px độ đậm 500.
-- Viền `--control` (#8c8c88, 3,39:1 trên trắng), cao 44px.
+- Viền `--control` (#8c8c88, 3,39:1 trên trắng; `--ring` #c9c4b8 không đạt 3:1 nên không dùng), cao 44px. Prototype v2 chưa có ô nhập; giá trị giữ từ v1.
 - Lỗi hiện dưới ô, chữ #b42318, gắn `aria-describedby` và `aria-invalid`.
 - Hover: viền đậm một nấc. Focus: vòng focus. Disabled: nền #f3f3f3.
 
 **Công tắc.**
-- Màu bật #1f201d (không dùng màu nhấn). Rãnh tắt `--control` (#8c8c88).
+- Màu bật `--ink` (#1f201d). Rãnh tắt `--control` (#8c8c88). Prototype v2 chưa dựng công tắc; giữ từ v1.
 - Vùng bấm tối thiểu 44×44px. Có nhãn chữ "Bật" hoặc "Tắt" hoặc nhãn của chính mục đó, để không chỉ dựa vào vị trí.
 
 **Thẻ học (3 loại).**
-- Từ vựng, kanji, kana. Kích thước chữ theo mục 4.2.
-- Mặt trước chỉ có chữ cần nhớ. Mặt sau thêm thông tin. Chuyển mặt không dùng hiệu ứng lật quay; đổi nội dung tức thì (tôn trọng `prefers-reduced-motion`).
+- Từ vựng, kanji, kana. Cỡ chữ theo mục 5.2 (mặt trước 96 hoặc 160px, mặt sau 88px).
+- Thẻ nền `--paper`, viền 2px `--ink`, bo 32px, không bóng. Chồng thẻ: tối đa hai thẻ phía dưới, thu nhỏ dần (xem mục 5.3), ẩn khi hết thẻ.
+- Mặt trước chỉ có chữ cần nhớ và nút "Lật thẻ". Nhãn "Thẻ mới" (nền `--marker`, 14px đậm, bo 8px) ở góc trên trái nếu là thẻ mới.
+- Mặt sau thêm thông tin: từ khóa (âm Hán Việt HOA ở thẻ kanji; cách đọc ở thẻ từ vựng; chữ La-tinh ở thẻ kana) 40px đậm, có vệt dạ quang `.hl`; nghĩa 20px; âm đọc 16px `--ink-2`; khung ví dụ nền `--sand`, bo 16px.
+- Lật thẻ bằng hiệu ứng 3D (mục 5.6). Bản `prefers-reduced-motion`: đổi mặt tức thì.
 - Thẻ kanji luôn có dòng âm Hán Việt (HOA) hoặc "Đang bổ sung".
-- Vùng thẻ không có bóng, viền 1px #eaeaea, bo 22px.
+
+**Vệt dạ quang `.mark` / `.hl`.**
+- Một thanh nền `--marker` nằm sau chữ: cao 45% dòng, bo 6px, nghiêng -2°, thò ra hai bên 3px (`.mark`) hoặc 4px (`.hl`), nằm sát đáy chữ.
+- `.mark` dùng cho cụm từ khóa ở lời chào (tĩnh). `.hl` dùng ở mặt sau thẻ (quét khi lật).
+- Chữ luôn là `--ink` (11,83:1 trên vàng). Không dùng vệt cho cả đoạn dài.
+
+**Dấu triện.**
+- Tròn, nền `--seal`, chữ 学 trắng (Noto Sans JP 15px trong ô 32px; Klee One 72px trong dấu 160px ở tổng kết), viền trong mờ `--seal-edge`.
+- Mỗi dấu xoay nghiêng một góc riêng, từ -10° đến 10° (prototype dùng danh sách góc cố định; góc khi dựng thật chưa chốt cách chọn).
+- Dấu lớn ở tổng kết xoay -8°.
 
 **Nút chấm 4 mức.**
-- Lại, Khó, Được, Dễ. Cao tối thiểu 56px, cùng hàng, mỗi nút chiếm một phần tư bề rộng.
-- Nhãn và khoảng ôn kế tiếp (14px). "Được" nền gần đen. Ba nút còn lại nền xám nhạt.
-- Hiện số phím (1 đến 4) trên máy tính.
-- Disabled: trước khi lật thẻ, các nút này không hiện (chỉ có "Lật thẻ").
+- Lại, Khó, Được, Dễ. Cao 72px, bo 20px, viền 2px, cùng hàng, mỗi nút chiếm một phần tư bề rộng, khe 8px.
+- Nhãn 18px đậm; khoảng ôn kế tiếp 14px; số phím (1 đến 4) 14px ở góc trên trái. Nhãn đọc cho trình đọc màn hình gồm tên mức, khoảng ôn và phím.
+- Màu: Lại và Khó nền `--paper`, viền `--ink`, chữ `--ink`. Được nền `--teal`, chữ trắng (6,05:1). Dễ nền `--marker`, chữ `--ink` (11,83:1).
+- Trước khi lật thẻ, các nút này ẩn (chỉ có "Lật thẻ"). Hiện ra khi lật (mục 5.6).
 
 **Dải ngày học.**
-- Lưới ô vuông 5 tuần (35 ô). Hàng là tuần, cột là thứ trong tuần.
-- Ô có học tô `--accent`. Ô không học để trống, chỉ có viền `--rule`. Ngày hôm nay có viền đậm.
-- Có chữ thay thế tổng quát (xem mục 4.1). Mỗi ô có nhãn ngày cho trình đọc màn hình.
+- Lưới 5 tuần (35 ô), 7 cột, ô tròn 32px, khe dọc 8px, hàng là tuần.
+- Ô đã học: dấu triện 学 (xem trên). Ô chưa học: vòng tròn viền 1,5px `--ring`, nền trống. Hôm nay chưa học: vòng viền 2px nét đứt `--ink`. Hôm nay đã học: dấu triện mới (đóng xuống, mục 5.6).
+- Khối chứa: nền `--paper`, viền 2px `--ink`, bo 28px, đệm 20px; đầu khối là số ngày đã học 56px và đơn vị 20px, dưới là chuỗi ngày 14px `--ink-2`.
+- Ô là trang trí (`aria-hidden`); cả lưới có `role="img"` và chữ thay thế tổng quát, ví dụ "Đã học 18 trong 35 ngày gần nhất, hôm nay chưa học" (xem mục 4.1).
 
 **Dải thông báo.**
 - Mất mạng: màu cảnh báo (nền #fffbeb, viền #fde68a, chữ #92400e).
@@ -518,6 +539,30 @@ Trạng thái chung: hover (đổi nền một nấc, không đổi màu chữ),
 - Rỗng: một câu nói rõ việc kế tiếp, kèm một nút nếu có hành động.
 - Đang tải: thanh xám đúng kích thước nội dung sẽ đến, tránh nhảy bố cục.
 - Lỗi: một câu nói chuyện gì xảy ra và nút "Thử lại". Không hiện mã lỗi kỹ thuật.
+
+### 5.6 Chuyển động
+
+Thời lượng và easing lấy từ CSS/JS của prototype v2. Quy tắc chung: chuyển động gắn với nội dung, không trang trí rời; chỉ animate `transform` và `opacity` (trừ độ rộng thanh tiến độ); không chuyển động nào là cách duy nhất truyền thông tin.
+
+| Hiệu ứng | Thời lượng, easing | Chi tiết | Khi `prefers-reduced-motion: reduce` |
+|---|---|---|---|
+| Khối trượt lên lần lượt (trang chính) | 420ms, `cubic-bezier(.2,.8,.3,1)`; trễ 70ms × số thứ tự khối (0 đến 4) | Từ dịch xuống 16px, độ mờ 0,4 về vị trí gốc, mờ 1. Chạy một lần lúc vào trang (lớp `.intro` gỡ sau 1900ms) | Không chạy; hiện ngay |
+| Dấu triện đóng xuống lịch | 420ms, `cubic-bezier(.34,1.56,.64,1)` (nảy nhẹ) | Từ phóng 1,25 và mờ 0,5 về cỡ gốc, giữ góc xoay riêng. Lúc vào trang: trễ 450ms + 25ms × thứ tự dấu. Khi xong phiên: dấu hôm nay đóng ngay | Dấu hiện sẵn, không chuyển động |
+| Thanh tiến độ thẻ mới (hero) | Độ rộng 600ms, ease-out | Đổi độ rộng khi số thẻ mới đổi | Đổi tức thì |
+| Nút "Bắt đầu ôn" khi bấm | 120ms, ease-out | Thu về 0,97; chờ 140ms rồi vào phiên ôn | Vào phiên ôn ngay, không thu nhỏ |
+| Thanh tiến độ phiên ôn | 300ms, ease-out | Đổi độ rộng sau mỗi lần chấm | Đổi tức thì |
+| Lật thẻ 3D | 480ms, `cubic-bezier(.4,.1,.2,1)` | Xoay quanh trục dọc 180°, thấu kính 1200px, hai mặt ẩn mặt sau (`backface-visibility`). Mặt không hiện bị `inert`. Thẻ mới tải không chạy hiệu ứng lật ngược | Đổi mặt tức thì |
+| Vệt dạ quang quét | 380ms, ease-out, trễ 300ms | Thanh vàng phóng từ 0 đến 1 theo chiều ngang, gốc bên trái; bắt đầu sau khi thẻ lật gần xong | Vệt hiện sẵn (không còn chuyển động) |
+| Nút chấm hiện ra | 200ms, ease-out | Từ dịch xuống 12px và mờ về vị trí gốc khi thẻ lật; ẩn lại khi chấm | Chỉ đổi độ mờ, 150ms tuyến tính, không dịch chuyển |
+| Nút chấm nảy khi chọn | 240ms, ease-out | Phóng 1 → 1,08 → 1 | Không chạy |
+| Thẻ bay theo điểm | 360ms, ease-in | Chấm Được hoặc Dễ: thẻ bay sang phải (dịch 120%, xoay 12°). Chấm Lại hoặc Khó: sang trái (-120%, -12°). Sau đó thẻ kế tiếp nâng lên 240ms ease-out (từ dịch 8px, thu 0,96) | Thẻ mờ dần 150ms, không bay; thẻ kế tiếp hiện ngay |
+| Dấu triện lớn ở tổng kết | 420ms, `cubic-bezier(.2,.9,.3,1.3)` | Từ phóng 2,2 và mờ 0 về cỡ gốc, giữ xoay -8° | Dấu hiện sẵn |
+| Vòng mực ở tổng kết | 600ms, ease-out | Vòng viền 3px `--seal` phóng từ 1 đến 1,6 và tan dần (0,7 về 0) | Ẩn hẳn |
+
+Ghi chú:
+- Prototype không có hiệu ứng "số tăng dần": số ở hero và tổng kết hiện thẳng giá trị. Nếu muốn thêm khi dựng thật thì phải có bản tĩnh dưới `prefers-reduced-motion`. Chưa chốt.
+- Quy tắc `prefers-reduced-motion` toàn cục của prototype: tắt mọi `animation` và `transition`, sau đó cho phép riêng thẻ bay (mờ 150ms), nút chấm (mờ 150ms) và ẩn vòng mực. Thời gian chờ trước khi sang thẻ kế tiếp giảm từ 360ms xuống 150ms.
+- Trạng thái cuối của mỗi hiệu ứng phải đọc được khi không có chuyển động (ví dụ: vệt dạ quang hiện sẵn, dấu triện hiện sẵn).
 
 ## 6. Thử nghiệm prototype
 
