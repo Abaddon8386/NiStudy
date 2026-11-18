@@ -71,8 +71,8 @@ Sẽ bổ sung khi dựng khung Next.js.
 - [docs/01-vision.md](docs/01-vision.md): tầm nhìn, người dùng, phạm vi MVP.
 - [docs/02-srs.md](docs/02-srs.md): đặc tả yêu cầu phần mềm (FR, NFR, use case, user story).
 - [docs/03-design.md](docs/03-design.md): thiết kế UX/UI, design token. Wireframe trên [Google Stitch](https://stitch.google.com/projects/8460357221411495285) (bản cũ trên [Figma](https://www.figma.com/design/3HNM618F5H30e56BehGuqS)).
-- `docs/04-architecture.md` (sắp có): kiến trúc kỹ thuật.
-- `docs/adr/` (sắp có): các quyết định kiến trúc.
+- [docs/04-architecture.md](docs/04-architecture.md): kiến trúc kỹ thuật.
+- [docs/adr/](docs/adr/README.md): các quyết định kiến trúc.
 - `docs/05-test-plan.md` (sắp có): kế hoạch kiểm thử.
 
 ## Đóng góp
