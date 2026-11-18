@@ -594,7 +594,7 @@ flowchart LR
 Ghi chú:
 
 - Nghĩa tiếng Việt biên soạn dần theo sprint. Thẻ chưa có nghĩa thì `published = false` và chưa vào hàng đợi thẻ mới.
-- Độ phủ âm Hán Việt (`r_type="vietnam"`): Đo ngày 18/11/2026 (KANJIDIC2 database_version 2026-322; danh sách tanos qua mirror Bluskyo/JLPT_Vocabulary commit d29a678): N5 79/79 và N4 166/166 kanji có âm Hán Việt (100%); 75 chữ có từ 2 âm trở lên. KANJIDIC2 xếp các âm theo bảng chữ cái, không theo mức phổ biến (山: San, Sơn; 国: Quốc, Cuốc), và lưu dạng chữ hoa đầu, nhiều âm chưa chuẩn hóa NFC. Pipeline phải chuẩn hóa NFC mọi chuỗi Hán Việt; `han_viet_main` chọn tay trong `data/vi/kanji.csv` (cột `han_viet_main`), kanji chưa chọn âm chính thì `published = false`; hiển thị viết HOA ở giao diện, lưu dạng gốc đã NFC. Kanji thiếu thì bổ sung tay, `han_viet_source = 'manual'`.
+- Độ phủ âm Hán Việt (`r_type="vietnam"`): Đo ngày 18/11/2026 (KANJIDIC2 database_version 2026-322; danh sách tanos qua mirror Bluskyo/JLPT_Vocabulary commit d29a678): N5 79/79 và N4 166/166 kanji có âm Hán Việt (100%); 75 chữ có từ 2 âm trở lên. KANJIDIC2 xếp các âm theo bảng chữ cái, không theo mức phổ biến (山: San, Sơn; 国: Quốc, Cuốc), và lưu dạng chữ hoa đầu, nhiều âm chưa chuẩn hóa NFC. Pipeline phải chuẩn hóa NFC mọi chuỗi Hán Việt; `han_viet_main` chọn tay trong `data/vi/kanji.csv` (cột `han_viet_main`; 75 kanji nhiều âm đã được duyệt 18/11/2026), kanji chỉ có một âm thì lấy âm đó, kanji nhiều âm chưa chọn thì `published = false`; hiển thị viết HOA ở giao diện, lưu dạng gốc đã NFC. Kanji thiếu thì bổ sung tay, `han_viet_source = 'manual'`.
 - Bản gốc không commit; dữ liệu dẫn xuất giữ CC BY-SA, tách khỏi giấy phép MIT của mã nguồn.
 
 ### 11.1 Nhập `data_sources`
