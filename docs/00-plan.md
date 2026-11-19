@@ -1,6 +1,6 @@
 # Kế hoạch dự án Nihongo
 
-Web học tiếng Nhật cho người Việt: học kanji qua âm Hán Việt, ôn tập theo thuật toán lặp lại ngắt quãng (FSRS), bám lộ trình JLPT và có cơ chế giữ động lực.
+Web học tiếng Nhật toàn diện N5–N4 cho người Việt: thẻ ôn theo thuật toán lặp lại ngắt quãng (FSRS) cho kana, kanji (qua âm Hán Việt) và từ vựng; về sau thêm ngữ pháp và bốn kỹ năng nghe, đọc, nói, kaiwa (xem "Mở rộng phạm vi"). Bám lộ trình JLPT và có cơ chế giữ động lực.
 
 - Bắt đầu: 17/11/2026
 - Giả định: một người làm, 10–15 giờ mỗi tuần, khoảng 16 tuần ra MVP (đã cộng 1 tuần nghỉ Tết, khoảng 6/2/2027, và 1 tuần lùi vì kỳ thi JLPT).
@@ -103,9 +103,38 @@ Sản phẩm: `docs/05-test-plan.md`
 - 10–20 người dùng beta, góp ý chuyển thành issue.
 - Case study: vấn đề → nghiên cứu → thiết kế → kỹ thuật → kết quả → bài học.
 
+## Mở rộng phạm vi (19/11/2026)
+
+Sau khi chạy thử app, tác giả yêu cầu app đa dạng hơn: học được từ vựng, ngữ pháp, nghe, đọc, nói, kaiwa, không chỉ thẻ kana/kanji. Quyết định:
+
+- Làm lâu dài, đúng và chắc. Kỳ thi 6/12/2026 của tác giả không phải mốc của app.
+- Phạm vi nội dung vẫn là N5–N4 (N3 vẫn để sau).
+- Mốc MVP 9/3/2027 giữ cho giai đoạn A + B (+ C nếu kịp). D–G là giai đoạn sau MVP.
+- Lý do và quyết định đánh số: `docs/01-vision.md` mục 10 (quyết định 12–16). Yêu cầu dự kiến: `docs/02-srs.md` mục 10. Âm thanh và giọng nói: `docs/adr/0008-am-thanh-va-giong-noi.md`.
+
+Ước lượng dưới đây là số tuần làm việc thô, theo 10–15 giờ/tuần của một người, chưa kiểm chứng bằng thực tế. Không phải cam kết.
+
+| GĐ | Mục tiêu | Nội dung chính | Phụ thuộc | Ước lượng thô | Mốc |
+|---|---|---|---|---|---|
+| A | Sửa các điểm khó chịu khi dùng thật | Giao diện máy tính (thanh bên, lưới rộng). Thứ tự thẻ mới: giai đoạn đầu chỉ hiragana cơ bản; sau đó xen kẽ 1 kana : 1 kanji : 2 từ vựng; đã biết kana thì 1 kanji : 2 từ vựng (SRS FR-13). Thông báo rõ khi liên kết xác nhận email lỗi hoặc hết hạn. | Không cần dữ liệu mới. Sửa hàng đợi thẻ mới và giao diện. | 1–2 tuần | Trong MVP |
+| B | Hoàn tất lõi MVP (sprint 3 cũ) | Dashboard (chuỗi ngày, XP, đếm ngược ngày thi), trắc nghiệm, outbox IndexedDB, xóa tài khoản, hướng dẫn cài PWA, trang nguồn dữ liệu. | RPC và bảng đã thiết kế ở `docs/04-architecture.md`. Cần dữ liệu từ vựng/kanji đủ để ra 10 câu trắc nghiệm. | 3–4 tuần | Trong MVP |
+| C | Âm thanh | Nút phát âm tiếng Nhật trên mọi thẻ và câu ví dụ bằng `speechSynthesis` (giọng `ja-JP` của hệ điều hành; không có giọng thì ẩn nút và báo). Dạng thẻ "nghe → chọn nghĩa". | ADR-0008. Cần kiểm giọng `ja-JP` trên Windows, Android, iOS. Dạng thẻ mới cần mở rộng lược đồ thẻ. | 1–2 tuần | Trong MVP nếu kịp; nếu không thì ngay sau MVP |
+| D | Ngữ pháp N5 rồi N4 | Mỗi điểm ngữ pháp có bài giải thích tiếng Việt, mẫu câu, ví dụ (tự soạn, hoặc Tatoeba CC BY nếu đưa vào dữ liệu), bài tập điền/chọn đưa vào lịch ôn FSRS như loại thẻ mới. Nội dung soạn nháp, tác giả duyệt. | Lược đồ dữ liệu ngữ pháp chưa thiết kế (`docs/04-architecture.md` mục 17). Khối soạn nội dung lớn nhất. | N5: 4–6 tuần; N4: 4–6 tuần | Sau MVP |
+| E | Đọc | Đoạn ngắn tự soạn theo cấp, furigana bật/tắt, câu hỏi hiểu bài. Không chép đề JLPT. | Lược đồ bài đọc chưa thiết kế. Cách hiển thị furigana. Nội dung tự soạn. | 4–6 tuần | Sau MVP |
+| F | Nghe hội thoại | Kịch bản hội thoại tự soạn, đọc bằng TTS (giai đoạn C), kèm câu hỏi. | Giai đoạn C. Chất lượng giọng TTS đủ cho bài nghe (cần thử). | 3–4 tuần | Sau MVP |
+| G | Nói/kaiwa bản miễn phí | Shadowing: nghe mẫu bằng TTS, ghi âm bằng MediaRecorder, lưu cục bộ để tự nghe lại, không tải lên. Hội thoại theo kịch bản, người học chọn câu trả lời. | ADR-0008. Quyền micro. Giai đoạn C. | 3–4 tuần | Sau MVP |
+
+Phương án TƯƠNG LAI, chưa làm, cần quyết định riêng về chi phí và quyền riêng tư: nhận dạng giọng nói (Chrome gửi âm thanh lên Google) và hội thoại với AI (API trả phí, khóa phía máy chủ). Xem ADR-0008.
+
+Ghi chú:
+
+- Thứ tự A → B → C → D → E → F → G là thứ tự ưu tiên của bộ não; có thể đổi sau khi người dùng thật thử.
+- Mỗi giai đoạn sau MVP chỉ bắt đầu khi giai đoạn trước xong, theo nguyên tắc "xong thì chuyển ngay" ở đầu tài liệu.
+- Cộng A + B (4–6 tuần) cho thấy MVP 9/3/2027 còn dư thời gian cho C, nhưng ước lượng chưa kiểm chứng.
+
 ## Sau MVP
 
-Từ vựng và kanji N3, ôn offline hoàn toàn, ngữ pháp, luyện nghe, đề thi thử tự soạn, bộ thẻ cộng đồng, giao diện đa ngôn ngữ.
+Giai đoạn D–G ở mục "Mở rộng phạm vi". Ngoài ra: từ vựng và kanji N3, ôn offline hoàn toàn, đề thi thử tự soạn, bộ thẻ cộng đồng, giao diện đa ngôn ngữ.
 
 ## Ràng buộc máy làm việc (laptop)
 

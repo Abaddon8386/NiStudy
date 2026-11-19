@@ -13,6 +13,7 @@ ADR (Architecture Decision Record) ghi lại một quyết định kiến trúc:
 | [0005](0005-pipeline-du-lieu-giay-phep.md) | Pipeline dữ liệu nội dung và giấy phép | Đã chấp nhận, 18/11/2026 |
 | [0006](0006-xoa-tai-khoan-route-handler.md) | Xóa tài khoản qua Route Handler dùng service role | Đã chấp nhận, 18/11/2026 |
 | [0007](0007-hai-project-supabase.md) | Hai project Supabase (dev, prod), migration bằng CLI | Đã chấp nhận, 18/11/2026 |
+| [0008](0008-am-thanh-va-giong-noi.md) | Âm thanh và giọng nói: `speechSynthesis` + MediaRecorder cục bộ | Đã chấp nhận, 19/11/2026 |
 
 ## Mẫu
 

@@ -376,19 +376,21 @@ Quy tắc chung cho mọi RPC:
 - `due`: thẻ có `due < p_day_end`, sắp `due` tăng dần (quá hạn lâu nhất trước), giới hạn `review_limit`, kèm nội dung thẻ và trạng thái.
 - `new_done_today`: số lượt `is_new` trong `p_study_date`.
 - `new_candidates`: tối đa `new_per_day` thẻ chưa học cho mỗi loại: kana (nếu chưa biết kana); kanji và vocab theo `level` và `sort_order`, chỉ thẻ `published`.
-- Việc xen kẽ 1 kanji : 2 từ vựng và "kana trước" (FR-13) làm ở client trong `queue.ts` (hàm thuần, test được). Client cũng cắt số thẻ mới còn lại = `new_per_day` − `new_done_today`.
+- Thứ tự thẻ mới theo FR-13 (sửa 19/11/2026) làm ở client trong `queue.ts` (hàm thuần, test được). Chưa biết kana: giai đoạn đầu chỉ lấy hiragana cơ bản (46 thẻ) cho đến khi học hết; sau đó lặp vòng 1 kana : 1 kanji : 2 từ vựng. Đã biết kana: 1 kanji : 2 từ vựng. Loại nào hết thì lấy các loại còn lại. Client nhận ra giai đoạn đầu qua `details.script = 'hira'` và `details.grp = 'basic'` của thẻ kana đầu tiên trong `new_candidates` (cột có sẵn trong `kana_details`, `card_payload` đã trả về). Client cũng cắt số thẻ mới còn lại = `new_per_day` − `new_done_today`.
 - `p_study_date` và `p_day_end` do client tính theo giờ thiết bị (FR-09). Máy chủ không biết múi giờ người dùng.
 
-**`get_dashboard(p_study_date date) returns jsonb`**
+**`get_dashboard(p_study_date date, p_day_end timestamptz) returns jsonb`** (chữ ký mới 19/11/2026)
 
-Trả: `due_count`, `new_done_today`, `new_per_day`, `streak`, `total_days`, `xp_total`, `xp_today`, `median_seconds_7d`, `exam_date`.
+Trả: `due_count`, `new_done_today`, `new_per_day`, `review_limit`, `studied_today`, `streak`, `total_days`, `xp_total`, `xp_today`, `median_seconds_7d`, `exam_date`.
 
-- `median_seconds_7d`: trung vị chênh lệch `reviewed_at` giữa hai lượt liên tiếp trong cùng `session_id`, trên 7 ngày học gần nhất. Null nếu chưa đủ dữ liệu; khi đó client dùng 20 giây (FR-21).
-- Chuỗi và tổng ngày tính từ `study_date` khác nhau của `review_logs` theo FR-22: hôm nay chưa học nhưng hôm qua có học thì chuỗi giữ.
+- `due_count`: số thẻ có `due < p_day_end`, không cắt theo `review_limit` (client tự so với `review_limit` khi cần).
+- `studied_today`: hôm nay (`p_study_date`) đã có ít nhất một lượt ôn.
+- `median_seconds_7d`: trung vị chênh lệch `reviewed_at` giữa hai lượt liên tiếp trong cùng `session_id`, trên 7 ngày học gần nhất. Bỏ các khoảng > 300 giây. Null khi có ít hơn 10 khoảng; khi đó client dùng 20 giây (FR-21).
+- Chuỗi và tổng ngày tính từ `study_date` khác nhau của `review_logs` theo FR-22: hôm nay chưa học nhưng hôm qua có học thì chuỗi giữ. Chỉ ngày có lượt ôn mới tính; trắc nghiệm không tính vào chuỗi.
 
-**`submit_quiz(p_quiz_id uuid, p_study_date date, p_correct int)`**
+**`submit_quiz(p_quiz_id uuid, p_study_date date, p_correct int) returns text`**
 
-Idempotent theo (`user_id`, `quiz_id`). Không chạm `card_states` hay `review_logs` (FR-20). Trắc nghiệm cần mạng ở MVP: khi offline, màn trắc nghiệm hiện thông báo FR-26 và không mở bài mới.
+Trả `'accepted'` hoặc `'duplicate'`. `p_correct` trong khoảng 0..10. `p_study_date` lệch không quá 2 ngày so với ngày UTC hiện tại, ngoài khoảng đó bị từ chối. Idempotent theo (`user_id`, `quiz_id`). Không chạm `card_states` hay `review_logs` (FR-20). Trắc nghiệm cần mạng ở MVP: khi offline, màn trắc nghiệm hiện thông báo FR-26 và không mở bài mới.
 
 ### 6.3 Route Handler (chạy trên Vercel)
 
@@ -680,3 +682,5 @@ Các điểm gốc:
 10. **Hành vi đăng ký email trùng (FR-01).** Việc Supabase Auth trả cùng phản hồi cho email đã tồn tại phụ thuộc cấu hình project. Cần kiểm tra thực tế trên `nihongo-dev` khi dựng màn đăng ký.
    Kết quả 18/11/2026: `nihongo-dev` (vùng Singapore) bật xác nhận email (`mailer_autoconfirm: false`), chỉ bật nhà cung cấp email. Đăng ký thử bằng địa chỉ `@example.com` bị từ chối `email_address_invalid` nên chưa đo được phản hồi email trùng. SMTP mặc định của Supabase chỉ gửi tới địa chỉ thành viên tổ chức và giới hạn số thư mỗi giờ, nên trước khi có người dùng thật cần SMTP riêng. **Chưa kết luận.**
 11. **Tham số `ts-fsrs` và tên cột.** Cột `learning_steps` khớp phiên bản `ts-fsrs` có trường này. Khi ghim phiên bản phải đối chiếu tên trường của đối tượng thẻ với cột `card_states`.
+12. **Lược đồ dữ liệu cho ngữ pháp và bài đọc (thêm 19/11/2026).** Giai đoạn D–F (`docs/00-plan.md` mục "Mở rộng phạm vi") cần bảng/nguồn nội dung cho điểm ngữ pháp, bài tập, đoạn đọc, kịch bản nghe, và loại thẻ mới trong `card_states`/log ôn (hiện thiết kế cho kana, kanji, từ vựng). Chưa thiết kế. Cần quyết định trước giai đoạn D: nội dung nằm trong CSDL hay file tĩnh trong repo, và cách ghi trạng thái "nháp/đã duyệt".
+13. **Giọng `ja-JP` trên các nền tảng (thêm 19/11/2026).** ADR-0008 dựa vào giọng `ja-JP` có sẵn của hệ điều hành. Chưa kiểm giọng này có sẵn và chất lượng chấp nhận được trên Windows, Android, iOS (Safari), kể cả hành vi phát âm cần thao tác bấm và danh sách giọng nạp chậm. Cần thử trên máy thật trước giai đoạn C.

@@ -1,12 +1,12 @@
 # Tầm nhìn sản phẩm Nihongo
 
-Trạng thái: Đã chốt quyết định giai đoạn 0 — 17/11/2026. Một số dữ kiện còn cần kiểm chứng (mục 10).
+Trạng thái: Đã chốt quyết định giai đoạn 0 — 17/11/2026; mở rộng định vị và phạm vi — 19/11/2026 (mục 10, quyết định 12–16). Một số dữ kiện còn cần kiểm chứng (mục 10).
 
 Tài liệu này thuộc giai đoạn 0 (Định hướng) của `docs/00-plan.md`.
 
 ## 1. Tóm tắt
 
-Nihongo là web học tiếng Nhật dành cho người Việt. Sản phẩm dạy kanji qua âm Hán Việt, ôn tập bằng thuật toán lặp lại ngắt quãng FSRS và bám lộ trình JLPT từ N5 đến N3 (MVP gồm N5–N4, N3 làm sau). Giao diện và lời giải thích hoàn toàn bằng tiếng Việt. Sản phẩm có cơ chế giữ động lực lành mạnh: chuỗi ngày, XP, đếm ngược ngày thi và mục tiêu hằng ngày nhỏ. Mục tiêu là ra bản MVP đầu tháng 3/2027.
+Nihongo là web học tiếng Nhật toàn diện cho người Việt ở trình độ N5–N4: thẻ SRS (kana, kanji, từ vựng), ngữ pháp và bốn kỹ năng nghe, đọc, nói, kaiwa. Sản phẩm dạy kanji qua âm Hán Việt, ôn tập bằng thuật toán lặp lại ngắt quãng FSRS và bám lộ trình JLPT. Từ 19/11/2026, định vị này thay cho "chỉ thẻ kana/kanji/từ vựng" (quyết định 13). MVP gồm lõi thẻ SRS ở N5–N4; ngữ pháp và bốn kỹ năng là các giai đoạn sau MVP (`docs/00-plan.md`, mục "Mở rộng phạm vi"); N3 làm sau cùng. Giao diện và lời giải thích hoàn toàn bằng tiếng Việt. Sản phẩm có cơ chế giữ động lực lành mạnh: chuỗi ngày, XP, đếm ngược ngày thi và mục tiêu hằng ngày nhỏ. Mục tiêu là ra bản MVP đầu tháng 3/2027.
 
 ## 2. Vấn đề
 
@@ -133,14 +133,15 @@ Sản phẩm có chuỗi ngày, XP, đếm ngược ngày thi và mục tiêu h�
 
 | Hạng mục | Lý do |
 |---|---|
-| Ngữ pháp | Cần thiết kế nội dung riêng, vượt quỹ thời gian MVP. |
-| Luyện nghe | Cần dữ liệu âm thanh và giấy phép riêng. |
+| Ngữ pháp | Cần thiết kế nội dung riêng, vượt quỹ thời gian MVP. Đã đưa vào lộ trình giai đoạn D sau MVP (quyết định 13). |
+| Luyện nghe | Phát âm bằng TTS của trình duyệt (giai đoạn C) có thể vào MVP nếu kịp; nghe hội thoại là giai đoạn F sau MVP (quyết định 13, 14). Không dùng file âm thanh thu sẵn ở giai đoạn này. |
+| Đọc, nói/kaiwa | Giai đoạn E và G sau MVP (quyết định 13, 15). |
 | Đề thi thử tự soạn | Tốn công soạn và không được chép đề JLPT thật. |
 | Bộ thẻ cộng đồng | Cần kiểm duyệt nội dung và quản lý quyền. |
 | Giao diện đa ngôn ngữ | MVP tập trung vào người Việt. |
 | App native | PWA đủ cho MVP và tiết kiệm công sức. |
 | Tính năng xã hội, bảng xếp hạng | Không cần để kiểm chứng giá trị cốt lõi, có thể tạo áp lực. |
-| Tính năng AI | Tăng độ phức tạp và rủi ro, chưa cần thiết cho MVP. |
+| Tính năng AI | Tăng độ phức tạp và rủi ro, chưa cần thiết cho MVP. Hội thoại AI là hướng tương lai, cần quyết định riêng về chi phí và quyền riêng tư (quyết định 15). |
 | Từ vựng và kanji N3 | Nghĩa tiếng Việt phải tự biên soạn; thêm N3 làm khối biên soạn tăng nhiều lần. Code dùng chung, sau này chỉ thêm dữ liệu. |
 | Bài kiểm tra trình độ đầu vào | Màn chọn cấp bắt đầu đủ cho MVP. |
 | Ôn offline hoàn toàn | Cần đồng bộ trạng thái FSRS và xử lý xung đột. |
@@ -199,6 +200,17 @@ Với 10–20 người beta, các mục tiêu dưới đây chỉ là ngưỡng 
 9. **Mục tiêu chỉ số.** Như bảng ở mục 8.
 10. **Giấy phép.** Code dùng MIT. Dữ liệu dẫn xuất từ JMdict/KANJIDIC2 giữ CC BY-SA; câu ví dụ Tatoeba giữ CC BY.
 11. **Repo public.** Chuyển repo sang public trước khi đưa vào hồ sơ, để nhà tuyển dụng xem được.
+
+### Quyết định bổ sung (19/11/2026)
+
+Sau khi tác giả chạy thử app và yêu cầu app đa dạng hơn ("đặt vào vai người dùng"). Không xóa quyết định cũ; quyết định nào bị thay thì ghi rõ.
+
+12. **Làm lâu dài.** Ưu tiên làm đúng và chắc. Kỳ thi JLPT ngày 6/12/2026 của tác giả không phải mốc của app. (Bổ sung cho quyết định 8: mốc MVP 9/3/2027 vẫn giữ, xem quyết định 16.)
+13. **Định vị và phạm vi mở rộng.** App học toàn diện N5–N4 cho người Việt: thẻ SRS + ngữ pháp + bốn kỹ năng (nghe, đọc, nói, kaiwa). Phạm vi cấp vẫn N5–N4 (quyết định 5 còn hiệu lực về cấp). Thứ tự giai đoạn: A sửa ngay (giao diện máy tính, thứ tự thẻ mới, thông báo lỗi liên kết xác nhận); B hoàn tất lõi MVP; C âm thanh; D ngữ pháp N5 rồi N4; E đọc; F nghe hội thoại; G nói/kaiwa bản miễn phí. Chi tiết và ước lượng: `docs/00-plan.md`. Quyết định này thay mục "Để sau" cho ngữ pháp, luyện nghe: các mục đó thành giai đoạn D, C/F sau MVP, không còn là "chưa quyết".
+14. **Thứ tự thẻ mới.** Giai đoạn đầu chỉ hiragana cơ bản. Sau đó xen kẽ 1 kana : 1 kanji : 2 từ vựng. Người đã biết kana thì 1 kanji : 2 từ vựng. Thay thứ tự "học hết kana trước rồi xen kẽ 1 kanji : 2 từ vựng" ở `docs/02-srs.md` mục 9 điểm 2 (sửa FR-13).
+15. **Âm thanh và giọng nói bản miễn phí.** Phát âm bằng Web Speech API `speechSynthesis` (giọng `ja-JP` của hệ điều hành); shadowing bằng MediaRecorder, ghi âm lưu cục bộ, không tải lên. Miễn phí, không gửi dữ liệu ra ngoài. Nhận dạng giọng nói (Chrome gửi âm thanh lên Google) và hội thoại AI (API trả phí, khóa phía máy chủ) là phương án tương lai, cần quyết định riêng về chi phí và quyền riêng tư; chưa làm. Chi tiết: `docs/adr/0008-am-thanh-va-giong-noi.md`. Quyết định này thay dòng "Tính năng AI" ở mục "Để sau" chỉ ở chỗ: bản miễn phí không dùng AI, và AI vẫn là phương án tương lai.
+16. **Mốc.** Mốc MVP 9/3/2027 giữ cho giai đoạn A + B (+ C nếu kịp). D–G sau MVP, ước lượng thô theo 10–15 giờ/tuần của tác giả (`docs/00-plan.md`). Nội dung ngữ pháp, bài đọc, kịch bản nghe tự soạn nháp và tác giả duyệt; không chép đề JLPT.
+17. **Thẻ "nghe → chọn nghĩa" không vào FSRS.** Đây là dạng luyện tập như trắc nghiệm (FR-19/FR-20): chỉ cộng XP theo số câu đúng, không đổi `card_states`, không ghi `review_logs`. Lý do: tránh nhân đôi khối lượng ôn. (Chốt 19/11/2026, cho giai đoạn C.)
 
 ### Kết quả kiểm chứng nguồn dữ liệu (17/11/2026)
 

@@ -1,8 +1,8 @@
 # Đặc tả yêu cầu phần mềm (SRS) — Nihongo MVP
 
-Trạng thái: Đã review, chốt quyết định — 17/11/2026
+Trạng thái: Đã review, chốt quyết định — 17/11/2026; sửa FR-13 và thêm mục 10 (yêu cầu dự kiến) — 19/11/2026
 
-Phiên bản: 0.2
+Phiên bản: 0.3
 
 Tài liệu này thuộc giai đoạn 1 (Yêu cầu và SRS) của `docs/00-plan.md`.
 
@@ -140,7 +140,7 @@ Cột "Nguồn" chỉ persona (Minh, Lan, Hùng) hoặc mục trong `docs/01-vis
 | Mã | Tên | Mô tả | Ưu tiên | Nguồn |
 |---|---|---|---|---|
 | FR-12 | Thẻ từ vựng | Hệ thống phải hiển thị thẻ từ vựng gồm: từ, cách đọc bằng kana, nghĩa tiếng Việt, và câu ví dụ nếu có dữ liệu (câu Tatoeba chỉ dùng nếu được đưa vào dữ liệu). Thẻ phải thuộc đúng cấp N5 hoặc N4 theo danh sách tanos. | Phải có | Lan, V7, V10 |
-| FR-13 | Giới thiệu thẻ mới | Hệ thống phải đưa thẻ mới vào hôm nay theo mục tiêu hằng ngày ở FR-08. Hệ thống không được đưa quá số thẻ mới đã đặt trong một ngày học. Thẻ kana mới tính vào mục tiêu này. Thứ tự: nếu người học chưa biết kana thì học hết thẻ kana trước; sau đó xen kẽ 1 kanji : 2 từ vựng, mỗi loại theo thứ tự danh sách nguồn trong cấp. Khi một loại thẻ mới (kanji hoặc từ vựng) đã hết thì hệ thống lấy loại còn lại. Học thẻ mới là lượt ôn đầu tiên của thẻ: người học chấm 4 mức như thẻ khác, hệ thống khởi tạo trạng thái FSRS, ghi log và cộng +1 XP. Khi đạt mục tiêu, hệ thống phải thông báo đã xong mục tiêu thẻ mới. Ghi chú: bảng kana có 208 thẻ; với mục tiêu 10 thì khoảng 21 ngày, người học có thể nâng mục tiêu lên đến 30. | Phải có | Lan, Minh |
+| FR-13 | Giới thiệu thẻ mới | Hệ thống phải đưa thẻ mới vào hôm nay theo mục tiêu hằng ngày ở FR-08. Hệ thống không được đưa quá số thẻ mới đã đặt trong một ngày học. Thẻ kana mới tính vào mục tiêu này. Thứ tự (sửa 19/11/2026, xem mục 9 điểm 24): nếu người học chưa biết kana thì giai đoạn đầu chỉ đưa thẻ hiragana cơ bản (46 chữ), chưa đưa kanji hay từ vựng; học hết 46 thẻ này thì sang giai đoạn xen kẽ. Giai đoạn xen kẽ: lặp theo vòng 1 kana : 1 kanji : 2 từ vựng, mỗi loại theo thứ tự trong bộ thẻ (kana: các thẻ kana còn lại theo thứ tự bảng; kanji và từ vựng: theo thứ tự danh sách nguồn trong cấp). Nếu người học đã biết kana (FR-07) thì không có giai đoạn đầu và không có thẻ kana mới; xen kẽ 1 kanji : 2 từ vựng. Khi một loại thẻ mới đã hết thì hệ thống lấy các loại còn lại, giữ tỉ lệ tương đối giữa chúng. Học thẻ mới là lượt ôn đầu tiên của thẻ: người học chấm 4 mức như thẻ khác, hệ thống khởi tạo trạng thái FSRS, ghi log và cộng +1 XP. Khi đạt mục tiêu, hệ thống phải thông báo đã xong mục tiêu thẻ mới. Ghi chú: bảng kana có 208 thẻ. Giai đoạn đầu (46 hiragana cơ bản) với mục tiêu 10 mất khoảng 5 ngày; người học có thể nâng mục tiêu lên đến 30. Phần kana còn lại học xen kẽ nên kéo dài hơn so với học liền một mạch. | Phải có | Lan, Minh |
 
 ### 3.5 Kanji
 
@@ -318,7 +318,7 @@ Tác nhân chung là "Người học". Mọi use case, trừ UC-01 và phần đ
 ### UC-03 Học kanji mới
 
 - Tác nhân: Người học (ví dụ Hùng).
-- Tiền điều kiện: đã đăng nhập, còn thẻ kanji mới trong cấp đã chọn, chưa đạt mục tiêu thẻ mới hôm nay, đang có mạng.
+- Tiền điều kiện: đã đăng nhập, còn thẻ kanji mới trong cấp đã chọn, chưa đạt mục tiêu thẻ mới hôm nay, đang có mạng; người chưa biết kana đã học hết 46 hiragana cơ bản (FR-13).
 - Luồng chính:
   1. Người học bắt đầu từ dashboard hoặc từ phiên ôn.
   2. Hệ thống giới thiệu một thẻ kanji mới: chữ, âm Hán Việt, nghĩa tiếng Việt, on/kun, từ ví dụ.
@@ -328,7 +328,8 @@ Tác nhân chung là "Người học". Mọi use case, trừ UC-01 và phần đ
 - Luồng thay thế và ngoại lệ:
   - 2a. Kanji thiếu âm Hán Việt: hệ thống hiển thị "Đang bổ sung" và đánh dấu thiếu dữ liệu theo FR-14. Kanji không có từ ví dụ: hiển thị "Chưa có từ ví dụ".
   - 2b. Mất mạng: hệ thống không tải thẻ mới và báo rõ (FR-28).
-  - 5a. Đã hết thẻ kanji mới trong cấp: hệ thống lấy thẻ từ vựng mới (FR-13). Hết thẻ mới mọi loại: hệ thống báo đã học hết nội dung hiện có và đề nghị chuyển cấp (FR-06).
+  - 1a. Thẻ mới được đưa theo thứ tự FR-13: người chưa biết kana học 46 hiragana cơ bản trước (chưa có kanji); sau đó vòng 1 kana : 1 kanji : 2 từ vựng; người đã biết kana thì 1 kanji : 2 từ vựng. Thẻ kanji mới xuất hiện đúng lượt của nó trong vòng này.
+  - 5a. Đã hết thẻ kanji mới trong cấp: hệ thống lấy các loại thẻ mới còn lại (FR-13). Hết thẻ mới mọi loại: hệ thống báo đã học hết nội dung hiện có và đề nghị chuyển cấp (FR-06).
 - Hậu điều kiện: thẻ kanji mới có lịch ôn; tiến độ thẻ mới tăng.
 - FR liên quan: FR-06, FR-13, FR-14, FR-15, FR-17, FR-18, FR-23, FR-28.
 
@@ -610,7 +611,7 @@ Bảng này nối mỗi yêu cầu chức năng với user story và use case. D
 | FR-10 | US-04 | UC-01 |
 | FR-11 | US-03, US-04 | UC-01 |
 | FR-12 | US-06 | UC-01, UC-02 |
-| FR-13 | US-05, US-08 | UC-01, UC-02, UC-03 |
+| FR-13 | US-04, US-05, US-08 | UC-01, UC-02, UC-03 |
 | FR-14 | US-08 | UC-03 |
 | FR-15 | US-04, US-06 | UC-02, UC-03 |
 | FR-16 | US-06, US-07 | UC-02 |
@@ -633,10 +634,11 @@ Ghi chú: FR-04, FR-24, FR-25 và FR-29 chưa có use case riêng vì luồng đ
 
 ## 8. Ngoài phạm vi MVP
 
-Lấy từ `docs/01-vision.md` mục 7, phần "Để sau".
+Lấy từ `docs/01-vision.md` mục 7, phần "Để sau". Cập nhật 19/11/2026: ngữ pháp, nghe, đọc, nói đã có lộ trình sau MVP (mục 10, chưa chốt); âm thanh phát bằng TTS (giai đoạn C) có thể vào MVP nếu kịp.
 
 - Ngữ pháp.
 - Luyện nghe.
+- Luyện đọc, nói/kaiwa.
 - Đề thi thử tự soạn.
 - Bộ thẻ cộng đồng.
 - Giao diện đa ngôn ngữ.
@@ -655,7 +657,7 @@ Ngoài ra, theo quyết định ở mục 2 của tài liệu này: không đăn
 Các điểm mở khi viết bản nháp đã được chốt và đưa vào yêu cầu tương ứng:
 
 1. **Chọn N4:** thẻ mới chỉ lấy từ N4, không lên lịch N5. Học hết N5 thì đề nghị chuyển N4 (FR-06).
-2. **Thứ tự thẻ mới:** kana trước nếu chưa biết; sau đó xen kẽ 1 kanji : 2 từ vựng theo thứ tự danh sách nguồn (FR-13).
+2. **Thứ tự thẻ mới:** kana trước nếu chưa biết; sau đó xen kẽ 1 kanji : 2 từ vựng theo thứ tự danh sách nguồn (FR-13). *Đã thay bởi điểm 24.*
 3. **Giới hạn và thứ tự trong phiên:** giới hạn 100 chỉ áp cho thẻ đến hạn; thẻ kana mới tính vào mục tiêu thẻ mới; thẻ đến hạn hiển thị trước thẻ mới (FR-13, FR-16).
 4. **Bảng kana:** mỗi bộ gồm 46 chữ cơ bản, 25 âm đục và bán đục, 33 âm ghép; mỗi mục là một thẻ (FR-10).
 5. **Nhiều âm Hán Việt:** một âm chính do tác giả chọn tay (KANJIDIC2 xếp âm theo bảng chữ cái nên không lấy âm đầu), các âm khác hiển thị phụ (FR-14).
@@ -667,7 +669,7 @@ Các điểm mở khi viết bản nháp đã được chốt và đưa vào yê
 10. **Thời gian và ngày học:** mỗi lượt ôn lưu `reviewed_at` (UTC) và `study_date` (tính trên thiết bị lúc chấm, mốc 4:00). Chuỗi ngày, số thẻ mới trong ngày và mốc +5 XP theo `study_date`; đổi múi giờ không tính lại quá khứ; lượt offline gửi muộn vẫn theo `study_date` lúc chấm (FR-09, FR-17, FR-22, FR-23).
 11. **Chuỗi ngày:** hôm qua có học thì chuỗi giữ nguyên dù hôm nay chưa học; về 0 chỉ khi qua trọn một ngày học không có lượt ôn. Tổng số ngày đã học là con số chính, nổi bật hơn chuỗi. Điều kiện "có học" là có ít nhất một lượt ôn (FR-22, US-11).
 12. **Đổi cấp:** thẻ đã học luôn đến hạn dù chọn cấp nào; đổi cấp chỉ đổi nguồn thẻ mới. Hết một loại thẻ mới thì lấy loại còn lại. Đề nghị chuyển cấp khi hết thẻ mới mọi loại (FR-06, FR-13).
-13. **Mục tiêu và giới hạn:** thẻ mới 5–30 (mặc định 10), giới hạn ôn 50–500 (mặc định 100). Đổi giữa ngày có hiệu lực ngay; hạ mục tiêu dưới số đã học chỉ ngừng đưa thêm thẻ mới. +5 XP khi số thẻ mới trong ngày ≥ mục tiêu hiện tại, tối đa một lần mỗi ngày học, lưu mốc đã nhận. Bảng kana 208 thẻ, khoảng 21 ngày ở mục tiêu 10 (FR-08, FR-13, US-05).
+13. **Mục tiêu và giới hạn:** thẻ mới 5–30 (mặc định 10), giới hạn ôn 50–500 (mặc định 100). Đổi giữa ngày có hiệu lực ngay; hạ mục tiêu dưới số đã học chỉ ngừng đưa thêm thẻ mới. +5 XP khi số thẻ mới trong ngày ≥ mục tiêu hiện tại, tối đa một lần mỗi ngày học, lưu mốc đã nhận. Bảng kana 208 thẻ; "khoảng 21 ngày ở mục tiêu 10" không còn đúng sau điểm 24 (FR-08, FR-13, US-05).
 14. **Trắc nghiệm:** từ → nghĩa, nghĩa → từ (từ vựng); kanji → âm Hán Việt (kanji); không có kana. Câu hỏi từ thẻ đã học; đáp án nhiễu từ toàn bộ bộ thẻ cùng loại, cùng cấp (kể cả chưa học), loại giá trị hiển thị trùng. Mở khi tạo được ít nhất 10 câu hợp lệ. Trắc nghiệm không đổi số log ôn và trạng thái FSRS (FR-19, US-09, UC-04).
 15. **Phiên ôn và mất mạng:** đầu phiên tải toàn bộ hàng đợi về thiết bị; lịch FSRS tính ở thiết bị bằng `ts-fsrs` khi chấm; thẻ "Lại" có thể quay lại trong phiên. MVP coi một người ôn trên một thiết bị tại một thời điểm; nếu có hai thiết bị thì log giữ cả hai, trạng thái thẻ theo `reviewed_at` mới hơn. Mở lại offline thì tiếp tục phiên đã lưu nếu cùng tài khoản và cùng ngày học. Thẻ vượt giới hạn giữ nguyên `due`, thẻ quá hạn lâu nhất chọn trước (FR-15, FR-16, FR-18, FR-27, FR-28, UC-05).
 16. **Email và đăng nhập:** tài khoản chưa xác nhận nhận cùng lỗi chung như sai thông tin, kèm liên kết "Chưa nhận email xác nhận?"; gửi lại luôn cùng một thông báo. Có giới hạn tần suất cho đăng ký, đăng nhập, gửi lại email, quên mật khẩu theo Supabase Auth (FR-02, NFR-24).
@@ -680,4 +682,62 @@ Các điểm mở khi viết bản nháp đã được chốt và đưa vào yê
 
 23. **Đối chiếu kiến trúc (18/11/2026):** "đến hạn hôm nay" tính đến cuối ngày học (mục 1.3); RLS bảng dữ liệu học chỉ đọc, ghi qua hàm máy chủ (NFR-12); máy chủ kiểm `study_date` và tự suy thẻ mới (FR-27); trắc nghiệm cần mạng ở MVP (FR-19); NFR-15 kể rõ dữ liệu trắc nghiệm. Xem `docs/04-architecture.md`.
 
-Không còn điểm CẦN QUYẾT.
+24. **Thứ tự thẻ mới mới (19/11/2026):** thay điểm 2. Chưa biết kana: giai đoạn đầu chỉ 46 hiragana cơ bản; sau đó vòng 1 kana : 1 kanji : 2 từ vựng. Đã biết kana: 1 kanji : 2 từ vựng. Loại nào hết thì lấy các loại còn lại (FR-13, FR-06, UC-03). Xem `docs/01-vision.md` mục 10, quyết định 14.
+
+Không còn điểm CẦN QUYẾT cho phạm vi MVP. Các yêu cầu dự kiến sau MVP nằm ở mục 10, chưa chốt.
+
+## 10. Yêu cầu dự kiến (chưa chốt)
+
+Thêm 19/11/2026 theo `docs/00-plan.md` mục "Mở rộng phạm vi" và `docs/01-vision.md` mục 10 (quyết định 12–16). Mã `FR-C1`, `FR-D1`… là mã tạm theo giai đoạn. Chưa có tiêu chí chấp nhận, chưa vào ma trận truy vết (mục 7), chưa tính vào 30 FR của MVP. Khi chốt sẽ đánh mã `FR-xx` chính thức.
+
+### Giai đoạn C: âm thanh
+
+| Mã tạm | Yêu cầu dự kiến |
+|---|---|
+| FR-C1 | Mỗi thẻ và câu ví dụ có nút phát âm tiếng Nhật bằng `speechSynthesis` (giọng `ja-JP`). |
+| FR-C2 | Nếu thiết bị không có giọng `ja-JP`, hệ thống ẩn nút phát âm và báo rõ cho người học. |
+| FR-C3 | Dạng thẻ "nghe → chọn nghĩa": phát âm, người học chọn nghĩa đúng. |
+| FR-C4 | Hệ thống không gửi nội dung âm thanh hay văn bản phát âm ra máy chủ của dự án. |
+
+Đã chốt 19/11/2026 (`docs/01-vision.md` mục 10, quyết định 17): FR-C3 là dạng luyện tập như trắc nghiệm (FR-19, FR-20), không vào FSRS. Chỉ cộng XP theo số câu đúng; không đổi `card_states`, không ghi `review_logs`; không tính vào chuỗi ngày (FR-22 chỉ tính lượt ôn).
+
+### Giai đoạn D: ngữ pháp
+
+| Mã tạm | Yêu cầu dự kiến |
+|---|---|
+| FR-D1 | Mỗi điểm ngữ pháp N5/N4 có bài giải thích bằng tiếng Việt. |
+| FR-D2 | Mỗi điểm có mẫu câu và ví dụ (tự soạn, hoặc Tatoeba CC BY nếu đưa vào dữ liệu). |
+| FR-D3 | Bài tập điền/chọn cho mỗi điểm ngữ pháp. |
+| FR-D4 | Bài tập ngữ pháp được đưa vào lịch ôn FSRS như một loại thẻ mới. |
+| FR-D5 | Nội dung ngữ pháp có trạng thái "nháp" hoặc "đã duyệt"; chỉ hiển thị nội dung đã được tác giả duyệt. |
+
+### Giai đoạn E: đọc
+
+| Mã tạm | Yêu cầu dự kiến |
+|---|---|
+| FR-E1 | Hệ thống có đoạn đọc ngắn tự soạn theo cấp N5/N4. |
+| FR-E2 | Người học bật/tắt furigana trong đoạn đọc. |
+| FR-E3 | Mỗi đoạn có câu hỏi hiểu bài và hệ thống báo đúng/sai. |
+| FR-E4 | Nội dung không chép từ đề JLPT thật. |
+
+### Giai đoạn F: nghe hội thoại
+
+| Mã tạm | Yêu cầu dự kiến |
+|---|---|
+| FR-F1 | Hệ thống có kịch bản hội thoại tự soạn, đọc bằng `speechSynthesis`. |
+| FR-F2 | Mỗi hội thoại có câu hỏi nghe hiểu và hệ thống báo đúng/sai. |
+| FR-F3 | Người học xem được kịch bản sau khi trả lời. |
+
+### Giai đoạn G: nói/kaiwa bản miễn phí
+
+| Mã tạm | Yêu cầu dự kiến |
+|---|---|
+| FR-G1 | Shadowing: hệ thống phát câu mẫu bằng TTS để người học nhại theo. |
+| FR-G2 | Người học ghi âm bằng MediaRecorder và nghe lại; bản ghi chỉ lưu cục bộ trên thiết bị, không tải lên. |
+| FR-G3 | Hệ thống xin quyền micro khi cần và hiển thị rõ khi bị từ chối. |
+| FR-G4 | Hội thoại theo kịch bản: người học chọn câu trả lời trong các lựa chọn. |
+| FR-G5 | Người học xóa được bản ghi âm cục bộ; đăng xuất và xóa tài khoản xóa luôn bản ghi (nhất quán với mục 9 điểm 8). |
+
+### Ngoài phạm vi hiện tại (phương án tương lai)
+
+Nhận dạng giọng nói (Chrome gửi âm thanh lên Google) và hội thoại với AI (API trả phí, khóa phía máy chủ) chưa làm. Cần quyết định riêng về chi phí và quyền riêng tư. Xem `docs/adr/0008-am-thanh-va-giong-noi.md`.
