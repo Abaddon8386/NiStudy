@@ -1,0 +1,60 @@
+{
+  "due": [
+    {
+      "card": { "id": "vocab:1", "kind": "vocab", "level": "N5" },
+      "details": {
+        "jmdict_seq": 1,
+        "word": "学生",
+        "reading": "がくせい",
+        "meaning_vi": "sinh viên",
+        "example_ja": null,
+        "example_vi": null,
+        "tatoeba_id": null
+      },
+      "state": {
+        "due": "2026-11-17T22:00:00+00:00",
+        "stability": 2.5,
+        "difficulty": 5,
+        "elapsed_days": 1,
+        "scheduled_days": 1,
+        "learning_steps": 0,
+        "reps": 1,
+        "lapses": 0,
+        "state": 2,
+        "last_review": "2026-11-16T22:00:00+00:00"
+      }
+    }
+  ],
+  "new_done_today": 2,
+  "new_candidates": [
+    {
+      "card": { "id": "kana:hira:i", "kind": "kana", "level": null },
+      "details": { "script": "hira", "kana": "い", "romaji": "i", "grp": "basic" }
+    },
+    {
+      "card": { "id": "kanji:学", "kind": "kanji", "level": "N5" },
+      "details": {
+        "kanji": "学",
+        "han_viet_main": "HỌC",
+        "han_viet_other": [],
+        "han_viet_source": "kanjidic2",
+        "meaning_vi": "học",
+        "on_readings": ["ガク"],
+        "kun_readings": ["まな.ぶ"],
+        "examples": [{ "word": "学生", "reading": "がくせい", "meaning_vi": "sinh viên" }]
+      }
+    },
+    {
+      "card": { "id": "vocab:6", "kind": "vocab", "level": "N5" },
+      "details": {
+        "jmdict_seq": 6,
+        "word": "本",
+        "reading": "ほん",
+        "meaning_vi": "sách",
+        "example_ja": null,
+        "example_vi": null,
+        "tatoeba_id": null
+      }
+    }
+  ]
+}

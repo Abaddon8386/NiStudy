@@ -1,0 +1,6682 @@
+[
+  {
+    "card_id": "vocab:1000320",
+    "jmdict_seq": 1000320,
+    "word": "あそこ",
+    "reading": "あそこ",
+    "meaning_vi": "đằng kia; chỗ đó",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1000420",
+    "jmdict_seq": 1000420,
+    "word": "あの",
+    "reading": "あの",
+    "meaning_vi": "kia; đó (đứng trước danh từ)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1000430",
+    "jmdict_seq": 1000430,
+    "word": "あの",
+    "reading": "あの",
+    "meaning_vi": "này; ừm; xin lỗi (gọi ai đó)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1000580",
+    "jmdict_seq": 1000580,
+    "word": "あれ",
+    "reading": "あれ",
+    "meaning_vi": "cái kia; người kia; lúc đó",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1001140",
+    "jmdict_seq": 1001140,
+    "word": "ええ",
+    "reading": "ええ",
+    "meaning_vi": "vâng; dạ; ừ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1001710",
+    "jmdict_seq": 1001710,
+    "word": "お菓子",
+    "reading": "おかし",
+    "meaning_vi": "bánh kẹo; đồ ngọt",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1001820",
+    "jmdict_seq": 1001820,
+    "word": "お金",
+    "reading": "おかね",
+    "meaning_vi": "tiền",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1001830",
+    "jmdict_seq": 1001830,
+    "word": "お兄さん",
+    "reading": "おにいさん",
+    "meaning_vi": "anh trai; anh (gọi người trẻ hơn mình một chút)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1001990",
+    "jmdict_seq": 1001990,
+    "word": "お姉さん",
+    "reading": "おねえさん",
+    "meaning_vi": "chị gái; chị (gọi người con gái trẻ)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1002100",
+    "jmdict_seq": 1002100,
+    "word": "お手洗い",
+    "reading": "おてあらい",
+    "meaning_vi": "nhà vệ sinh",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1002120",
+    "jmdict_seq": 1002120,
+    "word": "おまわりさん",
+    "reading": "おまわりさん",
+    "meaning_vi": "cảnh sát (cách gọi thân mật)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1002320",
+    "jmdict_seq": 1002320,
+    "word": "お祖父さん",
+    "reading": "おじいさん",
+    "meaning_vi": "ông (nội, ngoại); ông lão",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1002330",
+    "jmdict_seq": 1002330,
+    "word": "おばあさん",
+    "reading": "おばあさん",
+    "meaning_vi": "bà; bà lão",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1002430",
+    "jmdict_seq": 1002430,
+    "word": "お茶",
+    "reading": "おちゃ",
+    "meaning_vi": "trà",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1002590",
+    "jmdict_seq": 1002590,
+    "word": "お父さん",
+    "reading": "おとうさん",
+    "meaning_vi": "bố; cha",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1002610",
+    "jmdict_seq": 1002610,
+    "word": "おなか",
+    "reading": "おなか",
+    "meaning_vi": "bụng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1002650",
+    "jmdict_seq": 1002650,
+    "word": "お母さん",
+    "reading": "おかあさん",
+    "meaning_vi": "mẹ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1004500",
+    "jmdict_seq": 1004500,
+    "word": "こちら",
+    "reading": "こちら",
+    "meaning_vi": "phía này; đằng này; ở đây (lịch sự)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1004880",
+    "jmdict_seq": 1004880,
+    "word": "こんな",
+    "reading": "こんな",
+    "meaning_vi": "như thế này; kiểu này",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1005110",
+    "jmdict_seq": 1005110,
+    "word": "さあ",
+    "reading": "さあ",
+    "meaning_vi": "nào; thôi nào; ừm",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1005900",
+    "jmdict_seq": 1005900,
+    "word": "じゃ",
+    "reading": "じゃ",
+    "meaning_vi": "vậy thì; thế thì",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1006670",
+    "jmdict_seq": 1006670,
+    "word": "そこ",
+    "reading": "そこ",
+    "meaning_vi": "ở đó; chỗ đó",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1006730",
+    "jmdict_seq": 1006730,
+    "word": "そして",
+    "reading": "そして",
+    "meaning_vi": "và; rồi; và rồi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1006780",
+    "jmdict_seq": 1006780,
+    "word": "そちら",
+    "reading": "そちら",
+    "meaning_vi": "phía đó; đằng đó (lịch sự)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1006830",
+    "jmdict_seq": 1006830,
+    "word": "その",
+    "reading": "その",
+    "meaning_vi": "đó; ... đó",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1006970",
+    "jmdict_seq": 1006970,
+    "word": "それ",
+    "reading": "それ",
+    "meaning_vi": "cái đó; đó",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1006980",
+    "jmdict_seq": 1006980,
+    "word": "それから",
+    "reading": "それから",
+    "meaning_vi": "rồi thì; sau đó",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1008190",
+    "jmdict_seq": 1008190,
+    "word": "つまらない",
+    "reading": "つまらない",
+    "meaning_vi": "chán; vô vị; tầm thường",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1008450",
+    "jmdict_seq": 1008450,
+    "word": "では",
+    "reading": "では",
+    "meaning_vi": "vậy thì; thế thì",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1008460",
+    "jmdict_seq": 1008460,
+    "word": "でも",
+    "reading": "でも",
+    "meaning_vi": "nhưng; tuy nhiên",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1008630",
+    "jmdict_seq": 1008630,
+    "word": "とても",
+    "reading": "とても",
+    "meaning_vi": "rất; vô cùng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1008910",
+    "jmdict_seq": 1008910,
+    "word": "どう",
+    "reading": "どう",
+    "meaning_vi": "thế nào; ra sao",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1009000",
+    "jmdict_seq": 1009000,
+    "word": "どうも",
+    "reading": "どうも",
+    "meaning_vi": "cảm ơn; rất (xin lỗi)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1009290",
+    "jmdict_seq": 1009290,
+    "word": "どれ",
+    "reading": "どれ",
+    "meaning_vi": "cái nào (ba cái trở lên)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1010080",
+    "jmdict_seq": 1010080,
+    "word": "はい",
+    "reading": "はい",
+    "meaning_vi": "vâng; dạ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1012480",
+    "jmdict_seq": 1012480,
+    "word": "もう",
+    "reading": "もう",
+    "meaning_vi": "đã; sắp; nữa",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1012620",
+    "jmdict_seq": 1012620,
+    "word": "もっと",
+    "reading": "もっと",
+    "meaning_vi": "hơn nữa; thêm nữa",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1012980",
+    "jmdict_seq": 1012980,
+    "word": "やる",
+    "reading": "やる",
+    "meaning_vi": "làm; chơi; cho; gửi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1013050",
+    "jmdict_seq": 1013050,
+    "word": "ゆっくり",
+    "reading": "ゆっくり",
+    "meaning_vi": "chậm rãi; thong thả",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1013190",
+    "jmdict_seq": 1013190,
+    "word": "より",
+    "reading": "より",
+    "meaning_vi": "hơn (so sánh); thay vì",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1017760",
+    "jmdict_seq": 1017760,
+    "word": "アパート",
+    "reading": "アパート",
+    "meaning_vi": "nhà tập thể; căn hộ chung cư",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1030630",
+    "jmdict_seq": 1030630,
+    "word": "エレベーター",
+    "reading": "エレベーター",
+    "meaning_vi": "thang máy",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1037670",
+    "jmdict_seq": 1037670,
+    "word": "カップ",
+    "reading": "カップ",
+    "meaning_vi": "cái cốc; cái tách",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1038350",
+    "jmdict_seq": 1038350,
+    "word": "カメラ",
+    "reading": "カメラ",
+    "meaning_vi": "máy ảnh",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1039140",
+    "jmdict_seq": 1039140,
+    "word": "カレー",
+    "reading": "カレー",
+    "meaning_vi": "cà ri",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1039220",
+    "jmdict_seq": 1039220,
+    "word": "カレンダー",
+    "reading": "カレンダー",
+    "meaning_vi": "lịch",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1042610",
+    "jmdict_seq": 1042610,
+    "word": "キロ",
+    "reading": "キロ",
+    "meaning_vi": "ki-lô; ki-lô-gam",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1042620",
+    "jmdict_seq": 1042620,
+    "word": "キログラム",
+    "reading": "キログラム",
+    "meaning_vi": "ki-lô-gam",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1042650",
+    "jmdict_seq": 1042650,
+    "word": "キロメートル",
+    "reading": "キロメートル",
+    "meaning_vi": "ki-lô-mét",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1042820",
+    "jmdict_seq": 1042820,
+    "word": "ギター",
+    "reading": "ギター",
+    "meaning_vi": "đàn ghi-ta",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1044070",
+    "jmdict_seq": 1044070,
+    "word": "クラス",
+    "reading": "クラス",
+    "meaning_vi": "lớp học; lớp",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1046810",
+    "jmdict_seq": 1046810,
+    "word": "グラム",
+    "reading": "グラム",
+    "meaning_vi": "gam; gram",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1049000",
+    "jmdict_seq": 1049000,
+    "word": "コート",
+    "reading": "コート",
+    "meaning_vi": "áo khoác (coat)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1049180",
+    "jmdict_seq": 1049180,
+    "word": "コーヒー",
+    "reading": "コーヒー",
+    "meaning_vi": "cà phê",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1050390",
+    "jmdict_seq": 1050390,
+    "word": "コップ",
+    "reading": "コップ",
+    "meaning_vi": "cái cốc; ly (thủy tinh)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1050590",
+    "jmdict_seq": 1050590,
+    "word": "コピー",
+    "reading": "コピー",
+    "meaning_vi": "bản sao; photocopy",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1061520",
+    "jmdict_seq": 1061520,
+    "word": "シャツ",
+    "reading": "シャツ",
+    "meaning_vi": "áo sơ mi; áo lót",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1061820",
+    "jmdict_seq": 1061820,
+    "word": "シャワー",
+    "reading": "シャワー",
+    "meaning_vi": "vòi hoa sen; tắm vòi sen",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1067470",
+    "jmdict_seq": 1067470,
+    "word": "スカート",
+    "reading": "スカート",
+    "meaning_vi": "váy",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1070790",
+    "jmdict_seq": 1070790,
+    "word": "ストーブ",
+    "reading": "ストーブ",
+    "meaning_vi": "lò sưởi; bếp lò",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1072590",
+    "jmdict_seq": 1072590,
+    "word": "スプーン",
+    "reading": "スプーン",
+    "meaning_vi": "cái thìa",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1073210",
+    "jmdict_seq": 1073210,
+    "word": "スポーツ",
+    "reading": "スポーツ",
+    "meaning_vi": "thể thao",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1073900",
+    "jmdict_seq": 1073900,
+    "word": "スリッパ",
+    "reading": "スリッパ",
+    "meaning_vi": "dép đi trong nhà",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1074260",
+    "jmdict_seq": 1074260,
+    "word": "ズボン",
+    "reading": "ズボン",
+    "meaning_vi": "quần dài",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1074270",
+    "jmdict_seq": 1074270,
+    "word": "セーター",
+    "reading": "セーター",
+    "meaning_vi": "áo len",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1076190",
+    "jmdict_seq": 1076190,
+    "word": "タクシー",
+    "reading": "タクシー",
+    "meaning_vi": "taxi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1078630",
+    "jmdict_seq": 1078630,
+    "word": "テーブル",
+    "reading": "テーブル",
+    "meaning_vi": "cái bàn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1078750",
+    "jmdict_seq": 1078750,
+    "word": "テープ",
+    "reading": "テープ",
+    "meaning_vi": "băng; băng ghi âm",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1078810",
+    "jmdict_seq": 1078810,
+    "word": "テープレコーダー",
+    "reading": "テープレコーダー",
+    "meaning_vi": "máy ghi âm",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1079760",
+    "jmdict_seq": 1079760,
+    "word": "テスト",
+    "reading": "テスト",
+    "meaning_vi": "bài kiểm tra; thi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1080510",
+    "jmdict_seq": 1080510,
+    "word": "テレビ",
+    "reading": "テレビ",
+    "meaning_vi": "ti vi; truyền hình",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1083590",
+    "jmdict_seq": 1083590,
+    "word": "デパート",
+    "reading": "デパート",
+    "meaning_vi": "cửa hàng bách hóa",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1084810",
+    "jmdict_seq": 1084810,
+    "word": "トイレ",
+    "reading": "トイレ",
+    "meaning_vi": "nhà vệ sinh",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1087820",
+    "jmdict_seq": 1087820,
+    "word": "ドア",
+    "reading": "ドア",
+    "meaning_vi": "cửa",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1089890",
+    "jmdict_seq": 1089890,
+    "word": "ナイフ",
+    "reading": "ナイフ",
+    "meaning_vi": "con dao",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1091500",
+    "jmdict_seq": 1091500,
+    "word": "ニュース",
+    "reading": "ニュース",
+    "meaning_vi": "tin tức",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1092820",
+    "jmdict_seq": 1092820,
+    "word": "ネクタイ",
+    "reading": "ネクタイ",
+    "meaning_vi": "cà vạt",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1093450",
+    "jmdict_seq": 1093450,
+    "word": "ノート",
+    "reading": "ノート",
+    "meaning_vi": "vở; sổ tay",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1096420",
+    "jmdict_seq": 1096420,
+    "word": "ハンカチ",
+    "reading": "ハンカチ",
+    "meaning_vi": "khăn tay",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1098390",
+    "jmdict_seq": 1098390,
+    "word": "バス",
+    "reading": "バス",
+    "meaning_vi": "xe buýt",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1098620",
+    "jmdict_seq": 1098620,
+    "word": "バター",
+    "reading": "バター",
+    "meaning_vi": "bơ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1100760",
+    "jmdict_seq": 1100760,
+    "word": "パーティー",
+    "reading": "パーティー",
+    "meaning_vi": "bữa tiệc; tiệc",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1103090",
+    "jmdict_seq": 1103090,
+    "word": "パン",
+    "reading": "パン",
+    "meaning_vi": "bánh mì",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1109380",
+    "jmdict_seq": 1109380,
+    "word": "フィルム",
+    "reading": "フィルム",
+    "meaning_vi": "phim (nhựa); cuộn phim",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1110110",
+    "jmdict_seq": 1110110,
+    "word": "フォーク",
+    "reading": "フォーク",
+    "meaning_vi": "cái nĩa",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1115150",
+    "jmdict_seq": 1115150,
+    "word": "プール",
+    "reading": "プール",
+    "meaning_vi": "bể bơi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1119650",
+    "jmdict_seq": 1119650,
+    "word": "ベッド",
+    "reading": "ベッド",
+    "meaning_vi": "giường",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1120410",
+    "jmdict_seq": 1120410,
+    "word": "ページ",
+    "reading": "ページ",
+    "meaning_vi": "trang (sách)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1120990",
+    "jmdict_seq": 1120990,
+    "word": "ペット",
+    "reading": "ペット",
+    "meaning_vi": "thú cưng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1121380",
+    "jmdict_seq": 1121380,
+    "word": "ペン",
+    "reading": "ペン",
+    "meaning_vi": "cây bút",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1122650",
+    "jmdict_seq": 1122650,
+    "word": "ホテル",
+    "reading": "ホテル",
+    "meaning_vi": "khách sạn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1123590",
+    "jmdict_seq": 1123590,
+    "word": "ボールペン",
+    "reading": "ボールペン",
+    "meaning_vi": "bút bi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1123880",
+    "jmdict_seq": 1123880,
+    "word": "ボタン",
+    "reading": "ボタン",
+    "meaning_vi": "cái nút; nút bấm",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1124970",
+    "jmdict_seq": 1124970,
+    "word": "ポケット",
+    "reading": "ポケット",
+    "meaning_vi": "túi (quần áo)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1125150",
+    "jmdict_seq": 1125150,
+    "word": "ポスト",
+    "reading": "ポスト",
+    "meaning_vi": "hòm thư; bưu điện",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1128430",
+    "jmdict_seq": 1128430,
+    "word": "マッチ",
+    "reading": "マッチ",
+    "meaning_vi": "que diêm",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1132570",
+    "jmdict_seq": 1132570,
+    "word": "メートル",
+    "reading": "メートル",
+    "meaning_vi": "mét",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1138860",
+    "jmdict_seq": 1138860,
+    "word": "ラジオ",
+    "reading": "ラジオ",
+    "meaning_vi": "radio; đài",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1138900",
+    "jmdict_seq": 1138900,
+    "word": "ラジオカセット",
+    "reading": "ラジオカセット",
+    "meaning_vi": "máy cát-xét radio",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1138960",
+    "jmdict_seq": 1138960,
+    "word": "ラジカセ",
+    "reading": "ラジカセ",
+    "meaning_vi": "máy cát-xét radio",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1144940",
+    "jmdict_seq": 1144940,
+    "word": "レコード",
+    "reading": "レコード",
+    "meaning_vi": "đĩa nhạc; kỷ lục",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1145310",
+    "jmdict_seq": 1145310,
+    "word": "レストラン",
+    "reading": "レストラン",
+    "meaning_vi": "nhà hàng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1148640",
+    "jmdict_seq": 1148640,
+    "word": "ワイシャツ",
+    "reading": "ワイシャツ",
+    "meaning_vi": "áo sơ mi (công sở)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1151260",
+    "jmdict_seq": 1151260,
+    "word": "悪い",
+    "reading": "わるい",
+    "meaning_vi": "xấu; tệ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1153520",
+    "jmdict_seq": 1153520,
+    "word": "飴",
+    "reading": "あめ",
+    "meaning_vi": "kẹo (cứng)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1153670",
+    "jmdict_seq": 1153670,
+    "word": "安い",
+    "reading": "やすい",
+    "meaning_vi": "rẻ; yên bình",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1154330",
+    "jmdict_seq": 1154330,
+    "word": "暗い",
+    "reading": "くらい",
+    "meaning_vi": "tối; u ám; buồn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1156800",
+    "jmdict_seq": 1156800,
+    "word": "意味",
+    "reading": "いみ",
+    "meaning_vi": "ý nghĩa",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1157000",
+    "jmdict_seq": 1157000,
+    "word": "易しい",
+    "reading": "やさしい",
+    "meaning_vi": "dễ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1157070",
+    "jmdict_seq": 1157070,
+    "word": "いす",
+    "reading": "いす",
+    "meaning_vi": "ghế",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1157170",
+    "jmdict_seq": 1157170,
+    "word": "する",
+    "reading": "する",
+    "meaning_vi": "làm; thực hiện",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1158880",
+    "jmdict_seq": 1158880,
+    "word": "違う",
+    "reading": "ちがう",
+    "meaning_vi": "khác; sai; không đúng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1159980",
+    "jmdict_seq": 1159980,
+    "word": "医者",
+    "reading": "いしゃ",
+    "meaning_vi": "bác sĩ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1160790",
+    "jmdict_seq": 1160790,
+    "word": "一",
+    "reading": "いち",
+    "meaning_vi": "một; 1",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1160820",
+    "jmdict_seq": 1160820,
+    "word": "一つ",
+    "reading": "ひとつ",
+    "meaning_vi": "một cái; một",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1162130",
+    "jmdict_seq": 1162130,
+    "word": "一月",
+    "reading": "ひとつき",
+    "meaning_vi": "một tháng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1163400",
+    "jmdict_seq": 1163400,
+    "word": "一緒",
+    "reading": "いっしょ",
+    "meaning_vi": "cùng nhau; cùng; giống nhau",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1163940",
+    "jmdict_seq": 1163940,
+    "word": "ちょっと",
+    "reading": "ちょっと",
+    "meaning_vi": "một chút; một lát; hơi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1165970",
+    "jmdict_seq": 1165970,
+    "word": "いちばん",
+    "reading": "いちばん",
+    "meaning_vi": "nhất; số một",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1169250",
+    "jmdict_seq": 1169250,
+    "word": "引く",
+    "reading": "ひく",
+    "meaning_vi": "kéo; chơi (kéo)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1169870",
+    "jmdict_seq": 1169870,
+    "word": "飲む",
+    "reading": "のむ",
+    "meaning_vi": "uống; nuốt",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1171010",
+    "jmdict_seq": 1171010,
+    "word": "右",
+    "reading": "みぎ",
+    "meaning_vi": "bên phải",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1171900",
+    "jmdict_seq": 1171900,
+    "word": "雨",
+    "reading": "あめ",
+    "meaning_vi": "mưa",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1173720",
+    "jmdict_seq": 1173720,
+    "word": "映画",
+    "reading": "えいが",
+    "meaning_vi": "phim; điện ảnh",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1173750",
+    "jmdict_seq": 1173750,
+    "word": "映画館",
+    "reading": "えいがかん",
+    "meaning_vi": "rạp chiếu phim",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1174340",
+    "jmdict_seq": 1174340,
+    "word": "泳ぐ",
+    "reading": "およぐ",
+    "meaning_vi": "bơi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1174420",
+    "jmdict_seq": 1174420,
+    "word": "英語",
+    "reading": "えいご",
+    "meaning_vi": "tiếng Anh",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1175140",
+    "jmdict_seq": 1175140,
+    "word": "駅",
+    "reading": "えき",
+    "meaning_vi": "nhà ga",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1177800",
+    "jmdict_seq": 1177800,
+    "word": "遠い",
+    "reading": "とおい",
+    "meaning_vi": "xa",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1178590",
+    "jmdict_seq": 1178590,
+    "word": "鉛筆",
+    "reading": "えんぴつ",
+    "meaning_vi": "bút chì",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1178940",
+    "jmdict_seq": 1178940,
+    "word": "汚い",
+    "reading": "きたない",
+    "meaning_vi": "bẩn; dơ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1179330",
+    "jmdict_seq": 1179330,
+    "word": "奥さん",
+    "reading": "おくさん",
+    "meaning_vi": "vợ (người khác); bà; phu nhân",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1180470",
+    "jmdict_seq": 1180470,
+    "word": "押す",
+    "reading": "おす",
+    "meaning_vi": "đẩy; ấn; nhấn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1180570",
+    "jmdict_seq": 1180570,
+    "word": "横",
+    "reading": "よこ",
+    "meaning_vi": "chiều ngang; bên cạnh",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1182030",
+    "jmdict_seq": 1182030,
+    "word": "黄色い",
+    "reading": "きいろい",
+    "meaning_vi": "vàng; màu vàng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1183300",
+    "jmdict_seq": 1183300,
+    "word": "温い",
+    "reading": "ぬるい",
+    "meaning_vi": "âm ấm; hơi nguội",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1183720",
+    "jmdict_seq": 1183720,
+    "word": "音楽",
+    "reading": "おんがく",
+    "meaning_vi": "âm nhạc",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1184140",
+    "jmdict_seq": 1184140,
+    "word": "下",
+    "reading": "した",
+    "meaning_vi": "dưới; phía dưới",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1184270",
+    "jmdict_seq": 1184270,
+    "word": "ください",
+    "reading": "ください",
+    "meaning_vi": "xin hãy cho tôi; xin hãy...",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1185200",
+    "jmdict_seq": 1185200,
+    "word": "下手",
+    "reading": "へた",
+    "meaning_vi": "vụng; kém",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1188760",
+    "jmdict_seq": 1188760,
+    "word": "いつ",
+    "reading": "いつ",
+    "meaning_vi": "khi nào; bao giờ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1188890",
+    "jmdict_seq": 1188890,
+    "word": "いつも",
+    "reading": "いつも",
+    "meaning_vi": "luôn luôn; lúc nào cũng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1189130",
+    "jmdict_seq": 1189130,
+    "word": "どうぞ",
+    "reading": "どうぞ",
+    "meaning_vi": "xin mời; xin hãy",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1189360",
+    "jmdict_seq": 1189360,
+    "word": "どちら",
+    "reading": "どちら",
+    "meaning_vi": "phía nào; đằng nào; cái nào (hai cái)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1189370",
+    "jmdict_seq": 1189370,
+    "word": "どなた",
+    "reading": "どなた",
+    "meaning_vi": "ai (lịch sự)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1191320",
+    "jmdict_seq": 1191320,
+    "word": "夏",
+    "reading": "なつ",
+    "meaning_vi": "mùa hè",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1191420",
+    "jmdict_seq": 1191420,
+    "word": "夏休み",
+    "reading": "なつやすみ",
+    "meaning_vi": "kỳ nghỉ hè",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1191730",
+    "jmdict_seq": 1191730,
+    "word": "家",
+    "reading": "いえ",
+    "meaning_vi": "nhà; gia đình",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1192150",
+    "jmdict_seq": 1192150,
+    "word": "家族",
+    "reading": "かぞく",
+    "meaning_vi": "gia đình",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1192280",
+    "jmdict_seq": 1192280,
+    "word": "家庭",
+    "reading": "かてい",
+    "meaning_vi": "gia đình; nhà",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1193060",
+    "jmdict_seq": 1193060,
+    "word": "果物",
+    "reading": "くだもの",
+    "meaning_vi": "trái cây; hoa quả",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1193180",
+    "jmdict_seq": 1193180,
+    "word": "歌",
+    "reading": "うた",
+    "meaning_vi": "bài hát; ca khúc; thơ waka",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1194290",
+    "jmdict_seq": 1194290,
+    "word": "火曜日",
+    "reading": "かようび",
+    "meaning_vi": "thứ ba",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1194500",
+    "jmdict_seq": 1194500,
+    "word": "花",
+    "reading": "はな",
+    "meaning_vi": "hoa",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1194870",
+    "jmdict_seq": 1194870,
+    "word": "花瓶",
+    "reading": "かびん",
+    "meaning_vi": "bình hoa",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1195430",
+    "jmdict_seq": 1195430,
+    "word": "荷物",
+    "reading": "にもつ",
+    "meaning_vi": "hành lý",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1198180",
+    "jmdict_seq": 1198180,
+    "word": "会う",
+    "reading": "あう",
+    "meaning_vi": "gặp; gặp gỡ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1198550",
+    "jmdict_seq": 1198550,
+    "word": "会社",
+    "reading": "かいしゃ",
+    "meaning_vi": "công ty",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1201190",
+    "jmdict_seq": 1201190,
+    "word": "海",
+    "reading": "うみ",
+    "meaning_vi": "biển",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1201940",
+    "jmdict_seq": 1201940,
+    "word": "灰皿",
+    "reading": "はいざら",
+    "meaning_vi": "gạt tàn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1202150",
+    "jmdict_seq": 1202150,
+    "word": "みんな",
+    "reading": "みんな",
+    "meaning_vi": "mọi người; tất cả",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1202170",
+    "jmdict_seq": 1202170,
+    "word": "皆さん",
+    "reading": "みなさん",
+    "meaning_vi": "mọi người (lịch sự)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1202270",
+    "jmdict_seq": 1202270,
+    "word": "絵",
+    "reading": "え",
+    "meaning_vi": "bức tranh; tranh vẽ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1202450",
+    "jmdict_seq": 1202450,
+    "word": "開ける",
+    "reading": "あける",
+    "meaning_vi": "mở (cửa); mở ra",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1203090",
+    "jmdict_seq": 1203090,
+    "word": "階段",
+    "reading": "かいだん",
+    "meaning_vi": "cầu thang",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1203250",
+    "jmdict_seq": 1203250,
+    "word": "外",
+    "reading": "そと",
+    "meaning_vi": "bên ngoài",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1203260",
+    "jmdict_seq": 1203260,
+    "word": "ほか",
+    "reading": "ほか",
+    "meaning_vi": "nơi khác; ngoài ra; khác",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1203620",
+    "jmdict_seq": 1203620,
+    "word": "外国",
+    "reading": "がいこく",
+    "meaning_vi": "nước ngoài",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1203650",
+    "jmdict_seq": 1203650,
+    "word": "外国人",
+    "reading": "がいこくじん",
+    "meaning_vi": "người nước ngoài",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1206050",
+    "jmdict_seq": 1206050,
+    "word": "覚える",
+    "reading": "おぼえる",
+    "meaning_vi": "nhớ; học thuộc; cảm thấy",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1206110",
+    "jmdict_seq": 1206110,
+    "word": "角",
+    "reading": "かど",
+    "meaning_vi": "góc; góc phố",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1206730",
+    "jmdict_seq": 1206730,
+    "word": "学校",
+    "reading": "がっこう",
+    "meaning_vi": "trường học",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1206900",
+    "jmdict_seq": 1206900,
+    "word": "学生",
+    "reading": "がくせい",
+    "meaning_vi": "học sinh; sinh viên",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1207240",
+    "jmdict_seq": 1207240,
+    "word": "楽しい",
+    "reading": "たのしい",
+    "meaning_vi": "vui; thú vị",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1207590",
+    "jmdict_seq": 1207590,
+    "word": "かかる",
+    "reading": "かかる",
+    "meaning_vi": "mất (thời gian, tiền); treo",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1207610",
+    "jmdict_seq": 1207610,
+    "word": "かける",
+    "reading": "かける",
+    "meaning_vi": "treo; mắc; đeo (kính); gọi (điện thoại)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1208910",
+    "jmdict_seq": 1208910,
+    "word": "かばん",
+    "reading": "かばん",
+    "meaning_vi": "cặp; túi xách",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1210360",
+    "jmdict_seq": 1210360,
+    "word": "寒い",
+    "reading": "さむい",
+    "meaning_vi": "lạnh (thời tiết)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1213170",
+    "jmdict_seq": 1213170,
+    "word": "漢字",
+    "reading": "かんじ",
+    "meaning_vi": "chữ Hán; kanji",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1213400",
+    "jmdict_seq": 1213400,
+    "word": "甘い",
+    "reading": "あまい",
+    "meaning_vi": "ngọt; dễ dãi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1218380",
+    "jmdict_seq": 1218380,
+    "word": "危ない",
+    "reading": "あぶない",
+    "meaning_vi": "nguy hiểm",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1219960",
+    "jmdict_seq": 1219960,
+    "word": "いくつ",
+    "reading": "いくつ",
+    "meaning_vi": "mấy; bao nhiêu (số đếm); mấy tuổi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1219980",
+    "jmdict_seq": 1219980,
+    "word": "いくら",
+    "reading": "いくら",
+    "meaning_vi": "bao nhiêu (giá, số lượng)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1220210",
+    "jmdict_seq": 1220210,
+    "word": "机",
+    "reading": "つくえ",
+    "meaning_vi": "bàn học; cái bàn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1221270",
+    "jmdict_seq": 1221270,
+    "word": "帰る",
+    "reading": "かえる",
+    "meaning_vi": "về; trở về",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1223615",
+    "jmdict_seq": 1223615,
+    "word": "あなた",
+    "reading": "あなた",
+    "meaning_vi": "bạn; anh; chị",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1223640",
+    "jmdict_seq": 1223640,
+    "word": "起きる",
+    "reading": "おきる",
+    "meaning_vi": "thức dậy; dậy; xảy ra",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1226440",
+    "jmdict_seq": 1226440,
+    "word": "喫茶店",
+    "reading": "きっさてん",
+    "meaning_vi": "quán cà phê",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1227500",
+    "jmdict_seq": 1227500,
+    "word": "休み",
+    "reading": "やすみ",
+    "meaning_vi": "nghỉ; ngày nghỉ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1227560",
+    "jmdict_seq": 1227560,
+    "word": "休む",
+    "reading": "やすむ",
+    "meaning_vi": "nghỉ; nghỉ ngơi; vắng mặt",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1228260",
+    "jmdict_seq": 1228260,
+    "word": "吸う",
+    "reading": "すう",
+    "meaning_vi": "hít; hút (thuốc); mút",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1231580",
+    "jmdict_seq": 1231580,
+    "word": "牛肉",
+    "reading": "ぎゅうにく",
+    "meaning_vi": "thịt bò",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1231590",
+    "jmdict_seq": 1231590,
+    "word": "牛乳",
+    "reading": "ぎゅうにゅう",
+    "meaning_vi": "sữa bò",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1231690",
+    "jmdict_seq": 1231690,
+    "word": "去年",
+    "reading": "きょねん",
+    "meaning_vi": "năm ngoái",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1236070",
+    "jmdict_seq": 1236070,
+    "word": "強い",
+    "reading": "つよい",
+    "meaning_vi": "mạnh; khỏe; giỏi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1236900",
+    "jmdict_seq": 1236900,
+    "word": "教える",
+    "reading": "おしえる",
+    "meaning_vi": "dạy; chỉ cho biết",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1237150",
+    "jmdict_seq": 1237150,
+    "word": "教室",
+    "reading": "きょうしつ",
+    "meaning_vi": "phòng học; lớp học",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1237410",
+    "jmdict_seq": 1237410,
+    "word": "橋",
+    "reading": "はし",
+    "meaning_vi": "cây cầu",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1237680",
+    "jmdict_seq": 1237680,
+    "word": "狭い",
+    "reading": "せまい",
+    "meaning_vi": "hẹp; chật",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1239730",
+    "jmdict_seq": 1239730,
+    "word": "曲る",
+    "reading": "まがる",
+    "meaning_vi": "cong; rẽ; quẹo",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1240825",
+    "jmdict_seq": 1240825,
+    "word": "勤める",
+    "reading": "つとめる",
+    "meaning_vi": "làm việc (ở); công tác",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1242130",
+    "jmdict_seq": 1242130,
+    "word": "近い",
+    "reading": "ちかい",
+    "meaning_vi": "gần",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1242160",
+    "jmdict_seq": 1242160,
+    "word": "近く",
+    "reading": "ちかく",
+    "meaning_vi": "gần; vùng lân cận",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1243320",
+    "jmdict_seq": 1243320,
+    "word": "金曜日",
+    "reading": "きんようび",
+    "meaning_vi": "thứ sáu",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1243490",
+    "jmdict_seq": 1243490,
+    "word": "銀行",
+    "reading": "ぎんこう",
+    "meaning_vi": "ngân hàng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1243600",
+    "jmdict_seq": 1243600,
+    "word": "九つ",
+    "reading": "ここのつ",
+    "meaning_vi": "chín cái; chín tuổi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1243850",
+    "jmdict_seq": 1243850,
+    "word": "九日",
+    "reading": "ここのか",
+    "meaning_vi": "ngày mùng 9; chín ngày",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1245290",
+    "jmdict_seq": 1245290,
+    "word": "空",
+    "reading": "そら",
+    "meaning_vi": "bầu trời; không trung",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1246700",
+    "jmdict_seq": 1246700,
+    "word": "靴",
+    "reading": "くつ",
+    "meaning_vi": "giày",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1246740",
+    "jmdict_seq": 1246740,
+    "word": "靴下",
+    "reading": "くつした",
+    "meaning_vi": "tất; vớ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1249900",
+    "jmdict_seq": 1249900,
+    "word": "兄",
+    "reading": "あに",
+    "meaning_vi": "anh trai",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1249960",
+    "jmdict_seq": 1249960,
+    "word": "兄弟",
+    "reading": "きょうだい",
+    "meaning_vi": "anh chị em",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1252330",
+    "jmdict_seq": 1252330,
+    "word": "警官",
+    "reading": "けいかん",
+    "meaning_vi": "cảnh sát",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1252560",
+    "jmdict_seq": 1252560,
+    "word": "軽い",
+    "reading": "かるい",
+    "meaning_vi": "nhẹ; nhẹ nhàng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1253020",
+    "jmdict_seq": 1253020,
+    "word": "とり肉",
+    "reading": "とりにく",
+    "meaning_vi": "thịt gà",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1254760",
+    "jmdict_seq": 1254760,
+    "word": "結構",
+    "reading": "けっこう",
+    "meaning_vi": "tốt; được rồi; khá",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1254790",
+    "jmdict_seq": 1254790,
+    "word": "結婚",
+    "reading": "けっこん",
+    "meaning_vi": "kết hôn; hôn nhân",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1255890",
+    "jmdict_seq": 1255890,
+    "word": "月曜日",
+    "reading": "げつようび",
+    "meaning_vi": "thứ hai",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1257240",
+    "jmdict_seq": 1257240,
+    "word": "嫌い",
+    "reading": "きらい",
+    "meaning_vi": "ghét; không thích",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1257540",
+    "jmdict_seq": 1257540,
+    "word": "建物",
+    "reading": "たてもの",
+    "meaning_vi": "tòa nhà",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1258330",
+    "jmdict_seq": 1258330,
+    "word": "犬",
+    "reading": "いぬ",
+    "meaning_vi": "con chó",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1259210",
+    "jmdict_seq": 1259210,
+    "word": "見せる",
+    "reading": "みせる",
+    "meaning_vi": "cho xem; cho thấy",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1259290",
+    "jmdict_seq": 1259290,
+    "word": "見る",
+    "reading": "みる",
+    "meaning_vi": "nhìn; xem",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1260490",
+    "jmdict_seq": 1260490,
+    "word": "かぎ",
+    "reading": "かぎ",
+    "meaning_vi": "chìa khóa; ổ khóa",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1260720",
+    "jmdict_seq": 1260720,
+    "word": "元気",
+    "reading": "げんき",
+    "meaning_vi": "khỏe; khỏe mạnh; sôi nổi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1263400",
+    "jmdict_seq": 1263400,
+    "word": "玄関",
+    "reading": "げんかん",
+    "meaning_vi": "cửa ra vào; sảnh vào nhà",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1264540",
+    "jmdict_seq": 1264540,
+    "word": "言葉",
+    "reading": "ことば",
+    "meaning_vi": "từ; lời nói; ngôn ngữ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1265070",
+    "jmdict_seq": 1265070,
+    "word": "古い",
+    "reading": "ふるい",
+    "meaning_vi": "cũ; xưa",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1266440",
+    "jmdict_seq": 1266440,
+    "word": "呼ぶ",
+    "reading": "よぶ",
+    "meaning_vi": "gọi; mời",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1266970",
+    "jmdict_seq": 1266970,
+    "word": "戸",
+    "reading": "と",
+    "meaning_vi": "cánh cửa (kiểu Nhật)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1268060",
+    "jmdict_seq": 1268060,
+    "word": "五",
+    "reading": "ご",
+    "meaning_vi": "năm; 5",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1268070",
+    "jmdict_seq": 1268070,
+    "word": "五つ",
+    "reading": "いつつ",
+    "meaning_vi": "năm cái; năm tuổi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1268570",
+    "jmdict_seq": 1268570,
+    "word": "五日",
+    "reading": "いつか",
+    "meaning_vi": "ngày mùng 5; năm ngày",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1268990",
+    "jmdict_seq": 1268990,
+    "word": "午後",
+    "reading": "ごご",
+    "meaning_vi": "buổi chiều",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1269060",
+    "jmdict_seq": 1269060,
+    "word": "午前",
+    "reading": "ごぜん",
+    "meaning_vi": "buổi sáng (trước 12 giờ trưa)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1269320",
+    "jmdict_seq": 1269320,
+    "word": "後",
+    "reading": "あと",
+    "meaning_vi": "sau; sau này; phía sau",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1269410",
+    "jmdict_seq": 1269410,
+    "word": "後ろ",
+    "reading": "うしろ",
+    "meaning_vi": "phía sau; đằng sau",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1270590",
+    "jmdict_seq": 1270590,
+    "word": "御飯",
+    "reading": "ごはん",
+    "meaning_vi": "cơm; bữa ăn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1272500",
+    "jmdict_seq": 1272500,
+    "word": "交番",
+    "reading": "こうばん",
+    "meaning_vi": "đồn cảnh sát nhỏ (koban)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1273270",
+    "jmdict_seq": 1273270,
+    "word": "公園",
+    "reading": "こうえん",
+    "meaning_vi": "công viên",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1275320",
+    "jmdict_seq": 1275320,
+    "word": "厚い",
+    "reading": "あつい",
+    "meaning_vi": "dày; nồng hậu",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1275640",
+    "jmdict_seq": 1275640,
+    "word": "口",
+    "reading": "くち",
+    "meaning_vi": "miệng; cửa; lối ra",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1277140",
+    "jmdict_seq": 1277140,
+    "word": "向こう",
+    "reading": "むこう",
+    "meaning_vi": "phía bên kia; đằng kia",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1277450",
+    "jmdict_seq": 1277450,
+    "word": "好き",
+    "reading": "すき",
+    "meaning_vi": "thích; yêu thích",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1278410",
+    "jmdict_seq": 1278410,
+    "word": "広い",
+    "reading": "ひろい",
+    "meaning_vi": "rộng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1280770",
+    "jmdict_seq": 1280770,
+    "word": "紅茶",
+    "reading": "こうちゃ",
+    "meaning_vi": "hồng trà; trà đen",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1282790",
+    "jmdict_seq": 1282790,
+    "word": "降る",
+    "reading": "ふる",
+    "meaning_vi": "rơi (mưa, tuyết)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1283190",
+    "jmdict_seq": 1283190,
+    "word": "高い",
+    "reading": "たかい",
+    "meaning_vi": "cao; đắt",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1287410",
+    "jmdict_seq": 1287410,
+    "word": "黒",
+    "reading": "くろ",
+    "meaning_vi": "màu đen; đen",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1287420",
+    "jmdict_seq": 1287420,
+    "word": "黒い",
+    "reading": "くろい",
+    "meaning_vi": "đen",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1288810",
+    "jmdict_seq": 1288810,
+    "word": "ここ",
+    "reading": "ここ",
+    "meaning_vi": "ở đây; chỗ này",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1288850",
+    "jmdict_seq": 1288850,
+    "word": "今",
+    "reading": "いま",
+    "meaning_vi": "bây giờ; hiện nay",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1289100",
+    "jmdict_seq": 1289100,
+    "word": "今月",
+    "reading": "こんげつ",
+    "meaning_vi": "tháng này",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1289220",
+    "jmdict_seq": 1289220,
+    "word": "今週",
+    "reading": "こんしゅう",
+    "meaning_vi": "tuần này",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1289470",
+    "jmdict_seq": 1289470,
+    "word": "今晩",
+    "reading": "こんばん",
+    "meaning_vi": "tối nay",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1289590",
+    "jmdict_seq": 1289590,
+    "word": "困る",
+    "reading": "こまる",
+    "meaning_vi": "gặp khó khăn; bối rối",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1290800",
+    "jmdict_seq": 1290800,
+    "word": "左",
+    "reading": "ひだり",
+    "meaning_vi": "bên trái",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1291330",
+    "jmdict_seq": 1291330,
+    "word": "差す",
+    "reading": "さす",
+    "meaning_vi": "chiếu (nắng); giương (ô); ánh lên",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1291600",
+    "jmdict_seq": 1291600,
+    "word": "砂糖",
+    "reading": "さとう",
+    "meaning_vi": "đường (gia vị)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1291800",
+    "jmdict_seq": 1291800,
+    "word": "座る",
+    "reading": "すわる",
+    "meaning_vi": "ngồi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1293660",
+    "jmdict_seq": 1293660,
+    "word": "さ来年",
+    "reading": "さらいねん",
+    "meaning_vi": "hai năm sau; năm sau nữa",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1295510",
+    "jmdict_seq": 1295510,
+    "word": "細い",
+    "reading": "ほそい",
+    "meaning_vi": "mảnh; thon; nhỏ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1296400",
+    "jmdict_seq": 1296400,
+    "word": "ある",
+    "reading": "ある",
+    "meaning_vi": "có; tồn tại; ở (vật không sống)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1296970",
+    "jmdict_seq": 1296970,
+    "word": "財布",
+    "reading": "さいふ",
+    "meaning_vi": "ví; bóp",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1297210",
+    "jmdict_seq": 1297210,
+    "word": "咲く",
+    "reading": "さく",
+    "meaning_vi": "nở (hoa)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1297960",
+    "jmdict_seq": 1297960,
+    "word": "作文",
+    "reading": "さくぶん",
+    "meaning_vi": "bài văn; viết văn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1298790",
+    "jmdict_seq": 1298790,
+    "word": "撮る",
+    "reading": "とる",
+    "meaning_vi": "chụp (ảnh); quay (phim)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1299400",
+    "jmdict_seq": 1299400,
+    "word": "雑誌",
+    "reading": "ざっし",
+    "meaning_vi": "tạp chí",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1299685",
+    "jmdict_seq": 1299685,
+    "word": "お皿",
+    "reading": "おさら",
+    "meaning_vi": "đĩa",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1299740",
+    "jmdict_seq": 1299740,
+    "word": "三つ",
+    "reading": "みっつ",
+    "meaning_vi": "ba cái; ba tuổi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1301330",
+    "jmdict_seq": 1301330,
+    "word": "三日",
+    "reading": "みっか",
+    "meaning_vi": "ngày mùng 3; ba ngày",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1301940",
+    "jmdict_seq": 1301940,
+    "word": "傘",
+    "reading": "かさ",
+    "meaning_vi": "cái ô; cái dù",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1302680",
+    "jmdict_seq": 1302680,
+    "word": "山",
+    "reading": "やま",
+    "meaning_vi": "núi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1303620",
+    "jmdict_seq": 1303620,
+    "word": "散歩",
+    "reading": "さんぽ",
+    "meaning_vi": "đi dạo; tản bộ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1304970",
+    "jmdict_seq": 1304970,
+    "word": "仕事",
+    "reading": "しごと",
+    "meaning_vi": "công việc",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1305990",
+    "jmdict_seq": 1305990,
+    "word": "使う",
+    "reading": "つかう",
+    "meaning_vi": "dùng; sử dụng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1307040",
+    "jmdict_seq": 1307040,
+    "word": "四つ",
+    "reading": "よっつ",
+    "meaning_vi": "bốn cái; bốn tuổi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1307320",
+    "jmdict_seq": 1307320,
+    "word": "四日",
+    "reading": "よっか",
+    "meaning_vi": "ngày mùng 4; bốn ngày",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1307500",
+    "jmdict_seq": 1307500,
+    "word": "始まる",
+    "reading": "はじまる",
+    "meaning_vi": "bắt đầu; được bắt đầu",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1307630",
+    "jmdict_seq": 1307630,
+    "word": "姉",
+    "reading": "あね",
+    "meaning_vi": "chị gái",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1307850",
+    "jmdict_seq": 1307850,
+    "word": "子供",
+    "reading": "こども",
+    "meaning_vi": "trẻ em; con cái",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1310620",
+    "jmdict_seq": 1310620,
+    "word": "止まる",
+    "reading": "とまる",
+    "meaning_vi": "dừng lại; ngừng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1310730",
+    "jmdict_seq": 1310730,
+    "word": "死ぬ",
+    "reading": "しぬ",
+    "meaning_vi": "chết",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1311110",
+    "jmdict_seq": 1311110,
+    "word": "私",
+    "reading": "わたし",
+    "meaning_vi": "tôi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1311530",
+    "jmdict_seq": 1311530,
+    "word": "紙",
+    "reading": "かみ",
+    "meaning_vi": "giấy",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1313000",
+    "jmdict_seq": 1313000,
+    "word": "歯",
+    "reading": "は",
+    "meaning_vi": "răng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1315140",
+    "jmdict_seq": 1315140,
+    "word": "字引",
+    "reading": "じびき",
+    "meaning_vi": "từ điển",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1315720",
+    "jmdict_seq": 1315720,
+    "word": "持つ",
+    "reading": "もつ",
+    "meaning_vi": "cầm; mang; có",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1315920",
+    "jmdict_seq": 1315920,
+    "word": "時間",
+    "reading": "じかん",
+    "meaning_vi": "thời gian; giờ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1316140",
+    "jmdict_seq": 1316140,
+    "word": "時計",
+    "reading": "とけい",
+    "meaning_vi": "đồng hồ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1316380",
+    "jmdict_seq": 1316380,
+    "word": "次",
+    "reading": "つぎ",
+    "meaning_vi": "kế tiếp; tiếp theo",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1317170",
+    "jmdict_seq": 1317170,
+    "word": "耳",
+    "reading": "みみ",
+    "meaning_vi": "tai",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1318290",
+    "jmdict_seq": 1318290,
+    "word": "自転車",
+    "reading": "じてんしゃ",
+    "meaning_vi": "xe đạp",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1318400",
+    "jmdict_seq": 1318400,
+    "word": "自動車",
+    "reading": "じどうしゃ",
+    "meaning_vi": "xe hơi; ô tô",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1318610",
+    "jmdict_seq": 1318610,
+    "word": "自分",
+    "reading": "じぶん",
+    "meaning_vi": "bản thân; tự mình; mình",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1318970",
+    "jmdict_seq": 1318970,
+    "word": "辞書",
+    "reading": "じしょ",
+    "meaning_vi": "từ điển",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1319210",
+    "jmdict_seq": 1319210,
+    "word": "七",
+    "reading": "しち",
+    "meaning_vi": "bảy; 7",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1319220",
+    "jmdict_seq": 1319220,
+    "word": "七つ",
+    "reading": "ななつ",
+    "meaning_vi": "bảy cái; bảy tuổi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1320760",
+    "jmdict_seq": 1320760,
+    "word": "質問",
+    "reading": "しつもん",
+    "meaning_vi": "câu hỏi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1321900",
+    "jmdict_seq": 1321900,
+    "word": "写真",
+    "reading": "しゃしん",
+    "meaning_vi": "ảnh; bức ảnh",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1323080",
+    "jmdict_seq": 1323080,
+    "word": "車",
+    "reading": "くるま",
+    "meaning_vi": "xe hơi; xe; bánh xe",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1323560",
+    "jmdict_seq": 1323560,
+    "word": "借りる",
+    "reading": "かりる",
+    "meaning_vi": "mượn; thuê",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1324300",
+    "jmdict_seq": 1324300,
+    "word": "若い",
+    "reading": "わかい",
+    "meaning_vi": "trẻ; trẻ trung",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1324520",
+    "jmdict_seq": 1324520,
+    "word": "弱い",
+    "reading": "よわい",
+    "meaning_vi": "yếu",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1326980",
+    "jmdict_seq": 1326980,
+    "word": "取る",
+    "reading": "とる",
+    "meaning_vi": "lấy; cầm; nhận",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1327190",
+    "jmdict_seq": 1327190,
+    "word": "手",
+    "reading": "て",
+    "meaning_vi": "tay; bàn tay",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1327720",
+    "jmdict_seq": 1327720,
+    "word": "手紙",
+    "reading": "てがみ",
+    "meaning_vi": "thư; lá thư",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1329015",
+    "jmdict_seq": 1329015,
+    "word": "お酒",
+    "reading": "おさけ",
+    "meaning_vi": "rượu; rượu sake",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1330290",
+    "jmdict_seq": 1330290,
+    "word": "授業",
+    "reading": "じゅぎょう",
+    "meaning_vi": "giờ học; buổi học",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1332650",
+    "jmdict_seq": 1332650,
+    "word": "秋",
+    "reading": "あき",
+    "meaning_vi": "mùa thu",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1333070",
+    "jmdict_seq": 1333070,
+    "word": "習う",
+    "reading": "ならう",
+    "meaning_vi": "học (từ thầy); được dạy",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1334040",
+    "jmdict_seq": 1334040,
+    "word": "住む",
+    "reading": "すむ",
+    "meaning_vi": "sống; cư trú",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1335000",
+    "jmdict_seq": 1335000,
+    "word": "十日",
+    "reading": "とおか",
+    "meaning_vi": "ngày mùng 10; mười ngày",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1335750",
+    "jmdict_seq": 1335750,
+    "word": "重い",
+    "reading": "おもい",
+    "meaning_vi": "nặng; nặng nề",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1337270",
+    "jmdict_seq": 1337270,
+    "word": "宿題",
+    "reading": "しゅくだい",
+    "meaning_vi": "bài tập về nhà",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1338180",
+    "jmdict_seq": 1338180,
+    "word": "出す",
+    "reading": "だす",
+    "meaning_vi": "lấy ra; đưa ra; nộp",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1338240",
+    "jmdict_seq": 1338240,
+    "word": "出る",
+    "reading": "でる",
+    "meaning_vi": "ra; đi ra; xuất hiện",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1338850",
+    "jmdict_seq": 1338850,
+    "word": "出口",
+    "reading": "でぐち",
+    "meaning_vi": "lối ra",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1340450",
+    "jmdict_seq": 1340450,
+    "word": "できる",
+    "reading": "できる",
+    "meaning_vi": "có thể; làm được; hoàn thành",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1341000",
+    "jmdict_seq": 1341000,
+    "word": "春",
+    "reading": "はる",
+    "meaning_vi": "mùa xuân",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1342540",
+    "jmdict_seq": 1342540,
+    "word": "初め",
+    "reading": "はじめ",
+    "meaning_vi": "lúc đầu; ban đầu",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1342550",
+    "jmdict_seq": 1342550,
+    "word": "初めて",
+    "reading": "はじめて",
+    "meaning_vi": "lần đầu tiên",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1343100",
+    "jmdict_seq": 1343100,
+    "word": "所",
+    "reading": "ところ",
+    "meaning_vi": "nơi; chỗ; địa chỉ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1343460",
+    "jmdict_seq": 1343460,
+    "word": "暑い",
+    "reading": "あつい",
+    "meaning_vi": "nóng (thời tiết); oi bức",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1343950",
+    "jmdict_seq": 1343950,
+    "word": "書く",
+    "reading": "かく",
+    "meaning_vi": "viết; vẽ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1344930",
+    "jmdict_seq": 1344930,
+    "word": "女",
+    "reading": "おんな",
+    "meaning_vi": "phụ nữ; nữ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1344970",
+    "jmdict_seq": 1344970,
+    "word": "女の子",
+    "reading": "おんなのこ",
+    "meaning_vi": "bé gái; con gái",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1347750",
+    "jmdict_seq": 1347750,
+    "word": "小さい",
+    "reading": "ちいさい",
+    "meaning_vi": "nhỏ; bé",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1348870",
+    "jmdict_seq": 1348870,
+    "word": "少し",
+    "reading": "すこし",
+    "meaning_vi": "một chút; một ít",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1348910",
+    "jmdict_seq": 1348910,
+    "word": "少ない",
+    "reading": "すくない",
+    "meaning_vi": "ít; hiếm",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1350040",
+    "jmdict_seq": 1350040,
+    "word": "消える",
+    "reading": "きえる",
+    "meaning_vi": "biến mất; tắt",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1350110",
+    "jmdict_seq": 1350110,
+    "word": "消す",
+    "reading": "けす",
+    "meaning_vi": "tắt (đèn, TV); xóa",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1352130",
+    "jmdict_seq": 1352130,
+    "word": "上",
+    "reading": "うえ",
+    "meaning_vi": "trên; phía trên",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1352320",
+    "jmdict_seq": 1352320,
+    "word": "上げる",
+    "reading": "あげる",
+    "meaning_vi": "nâng lên; đưa lên; tăng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1352570",
+    "jmdict_seq": 1352570,
+    "word": "登る",
+    "reading": "のぼる",
+    "meaning_vi": "leo; trèo lên",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1353320",
+    "jmdict_seq": 1353320,
+    "word": "上手",
+    "reading": "じょうず",
+    "meaning_vi": "giỏi; khéo",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1355120",
+    "jmdict_seq": 1355120,
+    "word": "乗る",
+    "reading": "のる",
+    "meaning_vi": "lên (tàu, xe); cưỡi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1357600",
+    "jmdict_seq": 1357600,
+    "word": "色",
+    "reading": "いろ",
+    "meaning_vi": "màu sắc",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1358280",
+    "jmdict_seq": 1358280,
+    "word": "食べる",
+    "reading": "たべる",
+    "meaning_vi": "ăn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1358340",
+    "jmdict_seq": 1358340,
+    "word": "食べ物",
+    "reading": "たべもの",
+    "meaning_vi": "đồ ăn; thức ăn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1358550",
+    "jmdict_seq": 1358550,
+    "word": "食堂",
+    "reading": "しょくどう",
+    "meaning_vi": "nhà ăn; căng tin",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1360010",
+    "jmdict_seq": 1360010,
+    "word": "寝る",
+    "reading": "ねる",
+    "meaning_vi": "ngủ; đi ngủ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1361490",
+    "jmdict_seq": 1361490,
+    "word": "新しい",
+    "reading": "あたらしい",
+    "meaning_vi": "mới",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1362360",
+    "jmdict_seq": 1362360,
+    "word": "新聞",
+    "reading": "しんぶん",
+    "meaning_vi": "báo; tờ báo",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1365850",
+    "jmdict_seq": 1365850,
+    "word": "辛い",
+    "reading": "からい",
+    "meaning_vi": "cay; mặn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1370420",
+    "jmdict_seq": 1370420,
+    "word": "図書館",
+    "reading": "としょかん",
+    "meaning_vi": "thư viện",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1370760",
+    "jmdict_seq": 1370760,
+    "word": "吹く",
+    "reading": "ふく",
+    "meaning_vi": "thổi (gió); thổi hơi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1371260",
+    "jmdict_seq": 1371260,
+    "word": "水",
+    "reading": "みず",
+    "meaning_vi": "nước",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1372190",
+    "jmdict_seq": 1372190,
+    "word": "水曜日",
+    "reading": "すいようび",
+    "meaning_vi": "thứ tư",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1375610",
+    "jmdict_seq": 1375610,
+    "word": "なる",
+    "reading": "なる",
+    "meaning_vi": "trở thành; trở nên",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1376460",
+    "jmdict_seq": 1376460,
+    "word": "晴れ",
+    "reading": "はれ",
+    "meaning_vi": "trời quang; trời nắng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1376470",
+    "jmdict_seq": 1376470,
+    "word": "晴れる",
+    "reading": "はれる",
+    "meaning_vi": "quang đãng; tạnh mưa",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1378690",
+    "jmdict_seq": 1378690,
+    "word": "生まれる",
+    "reading": "うまれる",
+    "meaning_vi": "được sinh ra",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1379380",
+    "jmdict_seq": 1379380,
+    "word": "生徒",
+    "reading": "せいと",
+    "meaning_vi": "học sinh",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1380440",
+    "jmdict_seq": 1380440,
+    "word": "声",
+    "reading": "こえ",
+    "meaning_vi": "giọng nói; tiếng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1380840",
+    "jmdict_seq": 1380840,
+    "word": "西",
+    "reading": "にし",
+    "meaning_vi": "phía tây",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1381380",
+    "jmdict_seq": 1381380,
+    "word": "青",
+    "reading": "あお",
+    "meaning_vi": "màu xanh dương; màu xanh lá",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1381390",
+    "jmdict_seq": 1381390,
+    "word": "青い",
+    "reading": "あおい",
+    "meaning_vi": "xanh (dương); xanh lá",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1381820",
+    "jmdict_seq": 1381820,
+    "word": "静か",
+    "reading": "しずか",
+    "meaning_vi": "yên tĩnh; im lặng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1382590",
+    "jmdict_seq": 1382590,
+    "word": "せっけん",
+    "reading": "せっけん",
+    "meaning_vi": "xà phòng; xà bông",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1383240",
+    "jmdict_seq": 1383240,
+    "word": "赤い",
+    "reading": "あかい",
+    "meaning_vi": "đỏ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1384830",
+    "jmdict_seq": 1384830,
+    "word": "切る",
+    "reading": "きる",
+    "meaning_vi": "cắt; chặt",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1385070",
+    "jmdict_seq": 1385070,
+    "word": "切手",
+    "reading": "きって",
+    "meaning_vi": "tem (bưu chính)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1385170",
+    "jmdict_seq": 1385170,
+    "word": "切符",
+    "reading": "きっぷ",
+    "meaning_vi": "vé",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1386500",
+    "jmdict_seq": 1386500,
+    "word": "雪",
+    "reading": "ゆき",
+    "meaning_vi": "tuyết",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1387210",
+    "jmdict_seq": 1387210,
+    "word": "先",
+    "reading": "さき",
+    "meaning_vi": "phía trước; đầu; mũi (nhọn); trước",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1387500",
+    "jmdict_seq": 1387500,
+    "word": "先月",
+    "reading": "せんげつ",
+    "meaning_vi": "tháng trước",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1387870",
+    "jmdict_seq": 1387870,
+    "word": "先週",
+    "reading": "せんしゅう",
+    "meaning_vi": "tuần trước",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1387990",
+    "jmdict_seq": 1387990,
+    "word": "先生",
+    "reading": "せんせい",
+    "meaning_vi": "giáo viên; thầy; cô",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1388740",
+    "jmdict_seq": 1388740,
+    "word": "千",
+    "reading": "せん",
+    "meaning_vi": "nghìn; 1.000",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1390020",
+    "jmdict_seq": 1390020,
+    "word": "川",
+    "reading": "かわ",
+    "meaning_vi": "sông; con sông",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1390930",
+    "jmdict_seq": 1390930,
+    "word": "洗う",
+    "reading": "あらう",
+    "meaning_vi": "rửa; giặt",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1390980",
+    "jmdict_seq": 1390980,
+    "word": "洗濯",
+    "reading": "せんたく",
+    "meaning_vi": "giặt giũ; giặt quần áo",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1392580",
+    "jmdict_seq": 1392580,
+    "word": "前",
+    "reading": "まえ",
+    "meaning_vi": "phía trước; trước",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1396130",
+    "jmdict_seq": 1396130,
+    "word": "全部",
+    "reading": "ぜんぶ",
+    "meaning_vi": "tất cả; toàn bộ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1399790",
+    "jmdict_seq": 1399790,
+    "word": "掃除",
+    "reading": "そうじ",
+    "meaning_vi": "dọn dẹp; quét dọn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1401400",
+    "jmdict_seq": 1401400,
+    "word": "窓",
+    "reading": "まど",
+    "meaning_vi": "cửa sổ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1402540",
+    "jmdict_seq": 1402540,
+    "word": "走る",
+    "reading": "はしる",
+    "meaning_vi": "chạy",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1403830",
+    "jmdict_seq": 1403830,
+    "word": "そば",
+    "reading": "そば",
+    "meaning_vi": "bên cạnh; gần",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1404630",
+    "jmdict_seq": 1404630,
+    "word": "足",
+    "reading": "あし",
+    "meaning_vi": "chân; bàn chân",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1404975",
+    "jmdict_seq": 1404975,
+    "word": "早い",
+    "reading": "はやい",
+    "meaning_vi": "nhanh; sớm",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1406050",
+    "jmdict_seq": 1406050,
+    "word": "それでは",
+    "reading": "それでは",
+    "meaning_vi": "vậy thì; thế thì",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1406820",
+    "jmdict_seq": 1406820,
+    "word": "村",
+    "reading": "むら",
+    "meaning_vi": "làng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1407460",
+    "jmdict_seq": 1407460,
+    "word": "多い",
+    "reading": "おおい",
+    "meaning_vi": "nhiều",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1407980",
+    "jmdict_seq": 1407980,
+    "word": "たぶん",
+    "reading": "たぶん",
+    "meaning_vi": "có lẽ; chắc là",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1408180",
+    "jmdict_seq": 1408180,
+    "word": "太い",
+    "reading": "ふとい",
+    "meaning_vi": "to; dày; béo",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1409140",
+    "jmdict_seq": 1409140,
+    "word": "体",
+    "reading": "からだ",
+    "meaning_vi": "cơ thể; thân thể",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1410590",
+    "jmdict_seq": 1410590,
+    "word": "待つ",
+    "reading": "まつ",
+    "meaning_vi": "chờ; đợi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1411160",
+    "jmdict_seq": 1411160,
+    "word": "貸す",
+    "reading": "かす",
+    "meaning_vi": "cho mượn; cho thuê",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1412640",
+    "jmdict_seq": 1412640,
+    "word": "台所",
+    "reading": "だいどころ",
+    "meaning_vi": "nhà bếp; bếp",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1412890",
+    "jmdict_seq": 1412890,
+    "word": "大きな",
+    "reading": "おおきな",
+    "meaning_vi": "to; lớn (đứng trước danh từ)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1413240",
+    "jmdict_seq": 1413240,
+    "word": "大学",
+    "reading": "だいがく",
+    "meaning_vi": "đại học",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1413660",
+    "jmdict_seq": 1413660,
+    "word": "大好き",
+    "reading": "だいすき",
+    "meaning_vi": "rất thích; yêu thích",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1413890",
+    "jmdict_seq": 1413890,
+    "word": "大使館",
+    "reading": "たいしかん",
+    "meaning_vi": "đại sứ quán",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1414150",
+    "jmdict_seq": 1414150,
+    "word": "大丈夫",
+    "reading": "だいじょうぶ",
+    "meaning_vi": "không sao; ổn; chắc chắn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1414170",
+    "jmdict_seq": 1414170,
+    "word": "大人",
+    "reading": "おとな",
+    "meaning_vi": "người lớn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1414220",
+    "jmdict_seq": 1414220,
+    "word": "大勢",
+    "reading": "おおぜい",
+    "meaning_vi": "đông người; nhiều người",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1414340",
+    "jmdict_seq": 1414340,
+    "word": "大切",
+    "reading": "たいせつ",
+    "meaning_vi": "quan trọng; quý giá",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1415000",
+    "jmdict_seq": 1415000,
+    "word": "たいへん",
+    "reading": "たいへん",
+    "meaning_vi": "rất; vô cùng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1415870",
+    "jmdict_seq": 1415870,
+    "word": "たくさん",
+    "reading": "たくさん",
+    "meaning_vi": "nhiều; thật nhiều",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1416400",
+    "jmdict_seq": 1416400,
+    "word": "脱ぐ",
+    "reading": "ぬぐ",
+    "meaning_vi": "cởi (quần áo, giày)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1416830",
+    "jmdict_seq": 1416830,
+    "word": "誰",
+    "reading": "だれ",
+    "meaning_vi": "ai",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1416840",
+    "jmdict_seq": 1416840,
+    "word": "誰か",
+    "reading": "だれか",
+    "meaning_vi": "ai đó; người nào đó",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1418620",
+    "jmdict_seq": 1418620,
+    "word": "短い",
+    "reading": "みじかい",
+    "meaning_vi": "ngắn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1419110",
+    "jmdict_seq": 1419110,
+    "word": "誕生日",
+    "reading": "たんじょうび",
+    "meaning_vi": "sinh nhật",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1419370",
+    "jmdict_seq": 1419370,
+    "word": "弾く",
+    "reading": "ひく",
+    "meaning_vi": "chơi (nhạc cụ dây, phím)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1419990",
+    "jmdict_seq": 1419990,
+    "word": "男",
+    "reading": "おとこ",
+    "meaning_vi": "đàn ông; nam",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1420010",
+    "jmdict_seq": 1420010,
+    "word": "男の子",
+    "reading": "おとこのこ",
+    "meaning_vi": "bé trai; con trai",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1420470",
+    "jmdict_seq": 1420470,
+    "word": "知る",
+    "reading": "しる",
+    "meaning_vi": "biết",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1420900",
+    "jmdict_seq": 1420900,
+    "word": "地下鉄",
+    "reading": "ちかてつ",
+    "meaning_vi": "tàu điện ngầm",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1421290",
+    "jmdict_seq": 1421290,
+    "word": "地図",
+    "reading": "ちず",
+    "meaning_vi": "bản đồ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1421700",
+    "jmdict_seq": 1421700,
+    "word": "池",
+    "reading": "いけ",
+    "meaning_vi": "ao",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1421850",
+    "jmdict_seq": 1421850,
+    "word": "置く",
+    "reading": "おく",
+    "meaning_vi": "đặt; để",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1421970",
+    "jmdict_seq": 1421970,
+    "word": "遅い",
+    "reading": "おそい",
+    "meaning_vi": "chậm; muộn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1422720",
+    "jmdict_seq": 1422720,
+    "word": "茶色",
+    "reading": "ちゃいろ",
+    "meaning_vi": "màu nâu",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1422970",
+    "jmdict_seq": 1422970,
+    "word": "着く",
+    "reading": "つく",
+    "meaning_vi": "đến; tới nơi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1423000",
+    "jmdict_seq": 1423000,
+    "word": "着る",
+    "reading": "きる",
+    "meaning_vi": "mặc (áo); mặc vào",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1423310",
+    "jmdict_seq": 1423310,
+    "word": "中",
+    "reading": "なか",
+    "meaning_vi": "bên trong; trong số",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1426250",
+    "jmdict_seq": 1426250,
+    "word": "昼",
+    "reading": "ひる",
+    "meaning_vi": "buổi trưa; ban ngày",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1427340",
+    "jmdict_seq": 1427340,
+    "word": "ちょうど",
+    "reading": "ちょうど",
+    "meaning_vi": "vừa đúng; đúng lúc",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1427900",
+    "jmdict_seq": 1427900,
+    "word": "貼る",
+    "reading": "はる",
+    "meaning_vi": "dán",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1428280",
+    "jmdict_seq": 1428280,
+    "word": "朝",
+    "reading": "あさ",
+    "meaning_vi": "buổi sáng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1429700",
+    "jmdict_seq": 1429700,
+    "word": "飛ぶ",
+    "reading": "とぶ",
+    "meaning_vi": "bay; nhảy",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1429750",
+    "jmdict_seq": 1429750,
+    "word": "長い",
+    "reading": "ながい",
+    "meaning_vi": "dài",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1430250",
+    "jmdict_seq": 1430250,
+    "word": "鳥",
+    "reading": "とり",
+    "meaning_vi": "con chim; chim",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1430620",
+    "jmdict_seq": 1430620,
+    "word": "すぐに",
+    "reading": "すぐに",
+    "meaning_vi": "ngay lập tức; ngay",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1432680",
+    "jmdict_seq": 1432680,
+    "word": "痛い",
+    "reading": "いたい",
+    "meaning_vi": "đau",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1434180",
+    "jmdict_seq": 1434180,
+    "word": "低い",
+    "reading": "ひくい",
+    "meaning_vi": "thấp",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1436130",
+    "jmdict_seq": 1436130,
+    "word": "庭",
+    "reading": "にわ",
+    "meaning_vi": "khu vườn; sân",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1436560",
+    "jmdict_seq": 1436560,
+    "word": "閉まる",
+    "reading": "しまる",
+    "meaning_vi": "đóng; bị đóng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1436570",
+    "jmdict_seq": 1436570,
+    "word": "締める",
+    "reading": "しめる",
+    "meaning_vi": "thắt; buộc; đeo (cà vạt)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1438690",
+    "jmdict_seq": 1438690,
+    "word": "天気",
+    "reading": "てんき",
+    "meaning_vi": "thời tiết",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1443000",
+    "jmdict_seq": 1443000,
+    "word": "電気",
+    "reading": "でんき",
+    "meaning_vi": "điện; đèn điện",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1443530",
+    "jmdict_seq": 1443530,
+    "word": "電車",
+    "reading": "でんしゃ",
+    "meaning_vi": "tàu điện",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1443840",
+    "jmdict_seq": 1443840,
+    "word": "電話",
+    "reading": "でんわ",
+    "meaning_vi": "điện thoại; cuộc gọi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1444610",
+    "jmdict_seq": 1444610,
+    "word": "渡す",
+    "reading": "わたす",
+    "meaning_vi": "đưa; trao; bắc qua",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1444680",
+    "jmdict_seq": 1444680,
+    "word": "渡る",
+    "reading": "わたる",
+    "meaning_vi": "băng qua; đi qua",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1445590",
+    "jmdict_seq": 1445590,
+    "word": "土曜日",
+    "reading": "どようび",
+    "meaning_vi": "thứ bảy",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1446070",
+    "jmdict_seq": 1446070,
+    "word": "冬",
+    "reading": "ふゆ",
+    "meaning_vi": "mùa đông",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1447440",
+    "jmdict_seq": 1447440,
+    "word": "東",
+    "reading": "ひがし",
+    "meaning_vi": "phía đông",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1449540",
+    "jmdict_seq": 1449540,
+    "word": "答える",
+    "reading": "こたえる",
+    "meaning_vi": "trả lời; đáp lại",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1451150",
+    "jmdict_seq": 1451150,
+    "word": "働く",
+    "reading": "はたらく",
+    "meaning_vi": "làm việc",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1451470",
+    "jmdict_seq": 1451470,
+    "word": "動物",
+    "reading": "どうぶつ",
+    "meaning_vi": "động vật",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1451750",
+    "jmdict_seq": 1451750,
+    "word": "同じ",
+    "reading": "おなじ",
+    "meaning_vi": "giống nhau; cùng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1454080",
+    "jmdict_seq": 1454080,
+    "word": "道",
+    "reading": "みち",
+    "meaning_vi": "con đường; đường",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1456360",
+    "jmdict_seq": 1456360,
+    "word": "読む",
+    "reading": "よむ",
+    "meaning_vi": "đọc",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1457440",
+    "jmdict_seq": 1457440,
+    "word": "豚肉",
+    "reading": "ぶたにく",
+    "meaning_vi": "thịt lợn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1457560",
+    "jmdict_seq": 1457560,
+    "word": "曇る",
+    "reading": "くもる",
+    "meaning_vi": "có mây; mờ đi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1459870",
+    "jmdict_seq": 1459870,
+    "word": "南",
+    "reading": "みなみ",
+    "meaning_vi": "phía nam",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1460850",
+    "jmdict_seq": 1460850,
+    "word": "難しい",
+    "reading": "むずかしい",
+    "meaning_vi": "khó",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1461140",
+    "jmdict_seq": 1461140,
+    "word": "二",
+    "reading": "に",
+    "meaning_vi": "hai; 2",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1461160",
+    "jmdict_seq": 1461160,
+    "word": "二つ",
+    "reading": "ふたつ",
+    "meaning_vi": "hai cái; hai",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1462900",
+    "jmdict_seq": 1462900,
+    "word": "二日",
+    "reading": "ふつか",
+    "meaning_vi": "ngày mùng 2; hai ngày",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1463480",
+    "jmdict_seq": 1463480,
+    "word": "賑やか",
+    "reading": "にぎやか",
+    "meaning_vi": "náo nhiệt; nhộn nhịp",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1463520",
+    "jmdict_seq": 1463520,
+    "word": "肉",
+    "reading": "にく",
+    "meaning_vi": "thịt",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1464900",
+    "jmdict_seq": 1464900,
+    "word": "日曜日",
+    "reading": "にちようび",
+    "meaning_vi": "chủ nhật",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1465590",
+    "jmdict_seq": 1465590,
+    "word": "入る",
+    "reading": "はいる",
+    "meaning_vi": "vào; bước vào",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1465610",
+    "jmdict_seq": 1465610,
+    "word": "入れる",
+    "reading": "いれる",
+    "meaning_vi": "cho vào; bỏ vào; cho (ai) vào",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1466940",
+    "jmdict_seq": 1466940,
+    "word": "どうして",
+    "reading": "どうして",
+    "meaning_vi": "tại sao; làm thế nào",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1467640",
+    "jmdict_seq": 1467640,
+    "word": "猫",
+    "reading": "ねこ",
+    "meaning_vi": "con mèo",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1467720",
+    "jmdict_seq": 1467720,
+    "word": "熱い",
+    "reading": "あつい",
+    "meaning_vi": "nóng (khi chạm vào)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1468060",
+    "jmdict_seq": 1468060,
+    "word": "年",
+    "reading": "とし",
+    "meaning_vi": "năm; tuổi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1472740",
+    "jmdict_seq": 1472740,
+    "word": "背広",
+    "reading": "せびろ",
+    "meaning_vi": "com-lê; bộ vest",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1473740",
+    "jmdict_seq": 1473740,
+    "word": "買う",
+    "reading": "かう",
+    "meaning_vi": "mua",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1473950",
+    "jmdict_seq": 1473950,
+    "word": "売る",
+    "reading": "うる",
+    "meaning_vi": "bán",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1474900",
+    "jmdict_seq": 1474900,
+    "word": "白",
+    "reading": "しろ",
+    "meaning_vi": "màu trắng; trắng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1474910",
+    "jmdict_seq": 1474910,
+    "word": "白い",
+    "reading": "しろい",
+    "meaning_vi": "trắng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1475480",
+    "jmdict_seq": 1475480,
+    "word": "薄い",
+    "reading": "うすい",
+    "meaning_vi": "mỏng; nhạt",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1476920",
+    "jmdict_seq": 1476920,
+    "word": "八日",
+    "reading": "ようか",
+    "meaning_vi": "ngày mùng 8; tám ngày",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1476960",
+    "jmdict_seq": 1476960,
+    "word": "八百屋",
+    "reading": "やおや",
+    "meaning_vi": "cửa hàng rau quả",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1478750",
+    "jmdict_seq": 1478750,
+    "word": "半",
+    "reading": "はん",
+    "meaning_vi": "nửa; rưỡi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1479890",
+    "jmdict_seq": 1479890,
+    "word": "半分",
+    "reading": "はんぶん",
+    "meaning_vi": "một nửa",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1481920",
+    "jmdict_seq": 1481920,
+    "word": "煩い",
+    "reading": "うるさい",
+    "meaning_vi": "ồn ào; phiền phức",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1482110",
+    "jmdict_seq": 1482110,
+    "word": "晩",
+    "reading": "ばん",
+    "meaning_vi": "buổi tối; tối",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1482290",
+    "jmdict_seq": 1482290,
+    "word": "番号",
+    "reading": "ばんごう",
+    "meaning_vi": "số; dãy số",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1483185",
+    "jmdict_seq": 1483185,
+    "word": "あちら",
+    "reading": "あちら",
+    "meaning_vi": "phía đó; đằng kia; kia (lịch sự)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1483740",
+    "jmdict_seq": 1483740,
+    "word": "疲れる",
+    "reading": "つかれる",
+    "meaning_vi": "mệt; mệt mỏi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1485470",
+    "jmdict_seq": 1485470,
+    "word": "飛行機",
+    "reading": "ひこうき",
+    "meaning_vi": "máy bay",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1486650",
+    "jmdict_seq": 1486650,
+    "word": "おいしい",
+    "reading": "おいしい",
+    "meaning_vi": "ngon",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1486720",
+    "jmdict_seq": 1486720,
+    "word": "鼻",
+    "reading": "はな",
+    "meaning_vi": "mũi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1488000",
+    "jmdict_seq": 1488000,
+    "word": "百",
+    "reading": "ひゃく",
+    "meaning_vi": "trăm; 100",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1490220",
+    "jmdict_seq": 1490220,
+    "word": "病院",
+    "reading": "びょういん",
+    "meaning_vi": "bệnh viện",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1490230",
+    "jmdict_seq": 1490230,
+    "word": "病気",
+    "reading": "びょうき",
+    "meaning_vi": "bệnh; ốm",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1495000",
+    "jmdict_seq": 1495000,
+    "word": "まずい",
+    "reading": "まずい",
+    "meaning_vi": "dở; không ngon",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1495770",
+    "jmdict_seq": 1495770,
+    "word": "つける",
+    "reading": "つける",
+    "meaning_vi": "bật (đèn); gắn; gắn vào; thêm",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1499320",
+    "jmdict_seq": 1499320,
+    "word": "部屋",
+    "reading": "へや",
+    "meaning_vi": "căn phòng; phòng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1499690",
+    "jmdict_seq": 1499690,
+    "word": "封筒",
+    "reading": "ふうとう",
+    "meaning_vi": "phong bì",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1499720",
+    "jmdict_seq": 1499720,
+    "word": "風",
+    "reading": "かぜ",
+    "meaning_vi": "gió",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1500100",
+    "jmdict_seq": 1500100,
+    "word": "ふろ",
+    "reading": "ふろ",
+    "meaning_vi": "bồn tắm; việc tắm; nhà tắm công cộng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1500940",
+    "jmdict_seq": 1500940,
+    "word": "服",
+    "reading": "ふく",
+    "meaning_vi": "quần áo; trang phục",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1502390",
+    "jmdict_seq": 1502390,
+    "word": "物",
+    "reading": "もの",
+    "meaning_vi": "đồ vật; thứ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1505470",
+    "jmdict_seq": 1505470,
+    "word": "文章",
+    "reading": "ぶんしょう",
+    "meaning_vi": "bài văn; câu văn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1505990",
+    "jmdict_seq": 1505990,
+    "word": "しかし",
+    "reading": "しかし",
+    "meaning_vi": "tuy nhiên; nhưng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1508380",
+    "jmdict_seq": 1508380,
+    "word": "並ぶ",
+    "reading": "ならぶ",
+    "meaning_vi": "xếp hàng; sắp hàng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1508390",
+    "jmdict_seq": 1508390,
+    "word": "並べる",
+    "reading": "ならべる",
+    "meaning_vi": "xếp; bày ra",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1508590",
+    "jmdict_seq": 1508590,
+    "word": "閉める",
+    "reading": "しめる",
+    "meaning_vi": "đóng (cửa)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1512070",
+    "jmdict_seq": 1512070,
+    "word": "辺",
+    "reading": "へん",
+    "meaning_vi": "vùng; khu vực",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1512130",
+    "jmdict_seq": 1512130,
+    "word": "返す",
+    "reading": "かえす",
+    "meaning_vi": "trả lại; hoàn lại",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1512610",
+    "jmdict_seq": 1512610,
+    "word": "便利",
+    "reading": "べんり",
+    "meaning_vi": "tiện lợi; tiện dụng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1512670",
+    "jmdict_seq": 1512670,
+    "word": "勉強",
+    "reading": "べんきょう",
+    "meaning_vi": "học; học tập; chăm chỉ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1513065",
+    "jmdict_seq": 1513065,
+    "word": "お弁当",
+    "reading": "おべんとう",
+    "meaning_vi": "cơm hộp",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1514320",
+    "jmdict_seq": 1514320,
+    "word": "歩く",
+    "reading": "あるく",
+    "meaning_vi": "đi bộ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1516925",
+    "jmdict_seq": 1516925,
+    "word": "方",
+    "reading": "かた",
+    "meaning_vi": "phía; hướng; vị (người, kính ngữ)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1516930",
+    "jmdict_seq": 1516930,
+    "word": "方",
+    "reading": "ほう",
+    "meaning_vi": "phía; bên; hướng (dùng để so sánh)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1519170",
+    "jmdict_seq": 1519170,
+    "word": "帽子",
+    "reading": "ぼうし",
+    "meaning_vi": "mũ; nón",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1519210",
+    "jmdict_seq": 1519210,
+    "word": "忘れる",
+    "reading": "わすれる",
+    "meaning_vi": "quên",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1519290",
+    "jmdict_seq": 1519290,
+    "word": "忙しい",
+    "reading": "いそがしい",
+    "meaning_vi": "bận; bận rộn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1520670",
+    "jmdict_seq": 1520670,
+    "word": "北",
+    "reading": "きた",
+    "meaning_vi": "phía bắc; hướng bắc",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1522150",
+    "jmdict_seq": 1522150,
+    "word": "本",
+    "reading": "ほん",
+    "meaning_vi": "sách; quyển sách",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1522980",
+    "jmdict_seq": 1522980,
+    "word": "本棚",
+    "reading": "ほんだな",
+    "meaning_vi": "giá sách; tủ sách",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1523060",
+    "jmdict_seq": 1523060,
+    "word": "ほんとう",
+    "reading": "ほんとう",
+    "meaning_vi": "thật; sự thật; thật sự",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1523940",
+    "jmdict_seq": 1523940,
+    "word": "磨く",
+    "reading": "みがく",
+    "meaning_vi": "đánh bóng; chải (răng); rèn luyện",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1524590",
+    "jmdict_seq": 1524590,
+    "word": "妹",
+    "reading": "いもうと",
+    "meaning_vi": "em gái",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1524690",
+    "jmdict_seq": 1524690,
+    "word": "毎週",
+    "reading": "まいしゅう",
+    "meaning_vi": "mỗi tuần",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1524700",
+    "jmdict_seq": 1524700,
+    "word": "毎朝",
+    "reading": "まいあさ",
+    "meaning_vi": "mỗi sáng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1524720",
+    "jmdict_seq": 1524720,
+    "word": "毎日",
+    "reading": "まいにち",
+    "meaning_vi": "mỗi ngày",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1524730",
+    "jmdict_seq": 1524730,
+    "word": "毎晩",
+    "reading": "まいばん",
+    "meaning_vi": "mỗi tối",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1524930",
+    "jmdict_seq": 1524930,
+    "word": "また",
+    "reading": "また",
+    "meaning_vi": "lại; lần nữa; cũng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1526360",
+    "jmdict_seq": 1526360,
+    "word": "万年筆",
+    "reading": "まんねんひつ",
+    "meaning_vi": "bút máy",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1527110",
+    "jmdict_seq": 1527110,
+    "word": "まだ",
+    "reading": "まだ",
+    "meaning_vi": "vẫn còn; chưa",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1529530",
+    "jmdict_seq": 1529530,
+    "word": "無くす",
+    "reading": "なくす",
+    "meaning_vi": "làm mất; đánh mất; loại bỏ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1531710",
+    "jmdict_seq": 1531710,
+    "word": "名前",
+    "reading": "なまえ",
+    "meaning_vi": "tên",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1532350",
+    "jmdict_seq": 1532350,
+    "word": "明い",
+    "reading": "あかるい",
+    "meaning_vi": "sáng; sáng sủa; vui vẻ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1532870",
+    "jmdict_seq": 1532870,
+    "word": "鳴く",
+    "reading": "なく",
+    "meaning_vi": "kêu; hót (chim, thú)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1533580",
+    "jmdict_seq": 1533580,
+    "word": "おもしろい",
+    "reading": "おもしろい",
+    "meaning_vi": "thú vị; hay; buồn cười",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1534520",
+    "jmdict_seq": 1534520,
+    "word": "木",
+    "reading": "き",
+    "meaning_vi": "cây; gỗ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1534890",
+    "jmdict_seq": 1534890,
+    "word": "木曜日",
+    "reading": "もくようび",
+    "meaning_vi": "thứ năm",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1536010",
+    "jmdict_seq": 1536010,
+    "word": "問題",
+    "reading": "もんだい",
+    "meaning_vi": "vấn đề; câu hỏi (bài thi)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1536350",
+    "jmdict_seq": 1536350,
+    "word": "夜",
+    "reading": "よる",
+    "meaning_vi": "ban đêm; buổi tối",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1537370",
+    "jmdict_seq": 1537370,
+    "word": "野菜",
+    "reading": "やさい",
+    "meaning_vi": "rau; rau củ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1538160",
+    "jmdict_seq": 1538160,
+    "word": "薬",
+    "reading": "くすり",
+    "meaning_vi": "thuốc",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1540170",
+    "jmdict_seq": 1540170,
+    "word": "友達",
+    "reading": "ともだち",
+    "meaning_vi": "bạn bè",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1541620",
+    "jmdict_seq": 1541620,
+    "word": "有名",
+    "reading": "ゆうめい",
+    "meaning_vi": "nổi tiếng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1542160",
+    "jmdict_seq": 1542160,
+    "word": "遊ぶ",
+    "reading": "あそぶ",
+    "meaning_vi": "chơi; vui chơi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1542430",
+    "jmdict_seq": 1542430,
+    "word": "郵便局",
+    "reading": "ゆうびんきょく",
+    "meaning_vi": "bưu điện",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1542640",
+    "jmdict_seq": 1542640,
+    "word": "昨夜",
+    "reading": "ゆうべ",
+    "meaning_vi": "tối qua; đêm qua",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1542790",
+    "jmdict_seq": 1542790,
+    "word": "夕方",
+    "reading": "ゆうがた",
+    "meaning_vi": "chiều tối; xế chiều",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1546020",
+    "jmdict_seq": 1546020,
+    "word": "洋服",
+    "reading": "ようふく",
+    "meaning_vi": "quần áo kiểu Tây",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1546590",
+    "jmdict_seq": 1546590,
+    "word": "葉書",
+    "reading": "はがき",
+    "meaning_vi": "bưu thiếp",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1546640",
+    "jmdict_seq": 1546640,
+    "word": "要る",
+    "reading": "いる",
+    "meaning_vi": "cần; cần thiết",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1547330",
+    "jmdict_seq": 1547330,
+    "word": "欲しい",
+    "reading": "ほしい",
+    "meaning_vi": "muốn có; muốn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1547450",
+    "jmdict_seq": 1547450,
+    "word": "あびる",
+    "reading": "あびる",
+    "meaning_vi": "tắm; dội; hứng (nắng)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1547720",
+    "jmdict_seq": 1547720,
+    "word": "来る",
+    "reading": "くる",
+    "meaning_vi": "đến; tới",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1547900",
+    "jmdict_seq": 1547900,
+    "word": "来月",
+    "reading": "らいげつ",
+    "meaning_vi": "tháng sau",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1548010",
+    "jmdict_seq": 1548010,
+    "word": "来週",
+    "reading": "らいしゅう",
+    "meaning_vi": "tuần sau",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1548220",
+    "jmdict_seq": 1548220,
+    "word": "来年",
+    "reading": "らいねん",
+    "meaning_vi": "năm sau",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1548370",
+    "jmdict_seq": 1548370,
+    "word": "頼む",
+    "reading": "たのむ",
+    "meaning_vi": "nhờ; yêu cầu; gọi (món)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1549140",
+    "jmdict_seq": 1549140,
+    "word": "卵",
+    "reading": "たまご",
+    "meaning_vi": "trứng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1551790",
+    "jmdict_seq": 1551790,
+    "word": "りっぱ",
+    "reading": "りっぱ",
+    "meaning_vi": "tuyệt vời; đáng khen; lộng lẫy",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1552750",
+    "jmdict_seq": 1552750,
+    "word": "留学生",
+    "reading": "りゅうがくせい",
+    "meaning_vi": "du học sinh",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1553170",
+    "jmdict_seq": 1553170,
+    "word": "旅行",
+    "reading": "りょこう",
+    "meaning_vi": "du lịch; chuyến đi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1554310",
+    "jmdict_seq": 1554310,
+    "word": "料理",
+    "reading": "りょうり",
+    "meaning_vi": "nấu ăn; món ăn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1554370",
+    "jmdict_seq": 1554370,
+    "word": "涼しい",
+    "reading": "すずしい",
+    "meaning_vi": "mát; mát mẻ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1555300",
+    "jmdict_seq": 1555300,
+    "word": "緑",
+    "reading": "みどり",
+    "meaning_vi": "màu xanh lá; cây xanh",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1555830",
+    "jmdict_seq": 1555830,
+    "word": "隣",
+    "reading": "となり",
+    "meaning_vi": "bên cạnh; nhà bên cạnh",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1556730",
+    "jmdict_seq": 1556730,
+    "word": "冷たい",
+    "reading": "つめたい",
+    "meaning_vi": "lạnh (khi chạm vào); lạnh lùng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1557110",
+    "jmdict_seq": 1557110,
+    "word": "冷蔵庫",
+    "reading": "れいぞうこ",
+    "meaning_vi": "tủ lạnh",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1557630",
+    "jmdict_seq": 1557630,
+    "word": "零",
+    "reading": "れい",
+    "meaning_vi": "số không",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1559160",
+    "jmdict_seq": 1559160,
+    "word": "練習",
+    "reading": "れんしゅう",
+    "meaning_vi": "luyện tập",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1560670",
+    "jmdict_seq": 1560670,
+    "word": "廊下",
+    "reading": "ろうか",
+    "meaning_vi": "hành lang",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1561470",
+    "jmdict_seq": 1561470,
+    "word": "六日",
+    "reading": "むいか",
+    "meaning_vi": "ngày mùng 6; sáu ngày",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1562350",
+    "jmdict_seq": 1562350,
+    "word": "話す",
+    "reading": "はなす",
+    "meaning_vi": "nói chuyện; nói",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1565560",
+    "jmdict_seq": 1565560,
+    "word": "はし",
+    "reading": "はし",
+    "meaning_vi": "mỏ (chim)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1576050",
+    "jmdict_seq": 1576050,
+    "word": "一昨日",
+    "reading": "おととい",
+    "meaning_vi": "hôm kia",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1576060",
+    "jmdict_seq": 1576060,
+    "word": "一昨年",
+    "reading": "おととし",
+    "meaning_vi": "năm kia",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1576150",
+    "jmdict_seq": 1576150,
+    "word": "一人",
+    "reading": "ひとり",
+    "meaning_vi": "một người",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1576260",
+    "jmdict_seq": 1576260,
+    "word": "一日",
+    "reading": "いちにち",
+    "meaning_vi": "một ngày; cả ngày",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1576630",
+    "jmdict_seq": 1576630,
+    "word": "塩",
+    "reading": "しお",
+    "meaning_vi": "muối",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1576760",
+    "jmdict_seq": 1576760,
+    "word": "黄色",
+    "reading": "きいろ",
+    "meaning_vi": "màu vàng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1577100",
+    "jmdict_seq": 1577100,
+    "word": "何",
+    "reading": "なに",
+    "meaning_vi": "cái gì; gì",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1577120",
+    "jmdict_seq": 1577120,
+    "word": "なぜ",
+    "reading": "なぜ",
+    "meaning_vi": "tại sao",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1577140",
+    "jmdict_seq": 1577140,
+    "word": "どこ",
+    "reading": "どこ",
+    "meaning_vi": "ở đâu; chỗ nào",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1577200",
+    "jmdict_seq": 1577200,
+    "word": "かわいい",
+    "reading": "かわいい",
+    "meaning_vi": "dễ thương; đáng yêu",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1577280",
+    "jmdict_seq": 1577280,
+    "word": "暇",
+    "reading": "ひま",
+    "meaning_vi": "rảnh rỗi; thời gian rảnh",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1577670",
+    "jmdict_seq": 1577670,
+    "word": "眼鏡",
+    "reading": "めがね",
+    "meaning_vi": "kính (đeo mắt)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1577980",
+    "jmdict_seq": 1577980,
+    "word": "居る",
+    "reading": "いる",
+    "meaning_vi": "có; ở (người, động vật)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1578010",
+    "jmdict_seq": 1578010,
+    "word": "魚",
+    "reading": "さかな",
+    "meaning_vi": "cá",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1578150",
+    "jmdict_seq": 1578150,
+    "word": "九",
+    "reading": "きゅう",
+    "meaning_vi": "chín; 9",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1578850",
+    "jmdict_seq": 1578850,
+    "word": "行く",
+    "reading": "いく",
+    "meaning_vi": "đi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1579100",
+    "jmdict_seq": 1579100,
+    "word": "今朝",
+    "reading": "けさ",
+    "meaning_vi": "sáng nay",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1579110",
+    "jmdict_seq": 1579110,
+    "word": "今日",
+    "reading": "きょう",
+    "meaning_vi": "hôm nay; ngày nay",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1579130",
+    "jmdict_seq": 1579130,
+    "word": "今年",
+    "reading": "ことし",
+    "meaning_vi": "năm nay",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1579260",
+    "jmdict_seq": 1579260,
+    "word": "昨日",
+    "reading": "きのう",
+    "meaning_vi": "hôm qua",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1579350",
+    "jmdict_seq": 1579350,
+    "word": "三",
+    "reading": "さん",
+    "meaning_vi": "ba; 3",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1579470",
+    "jmdict_seq": 1579470,
+    "word": "四",
+    "reading": "し",
+    "meaning_vi": "bốn; 4",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1579630",
+    "jmdict_seq": 1579630,
+    "word": "七日",
+    "reading": "なのか",
+    "meaning_vi": "ngày mùng 7; bảy ngày",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1579840",
+    "jmdict_seq": 1579840,
+    "word": "十",
+    "reading": "じゅう",
+    "meaning_vi": "mười; 10",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1580340",
+    "jmdict_seq": 1580340,
+    "word": "上着",
+    "reading": "うわぎ",
+    "meaning_vi": "áo khoác ngoài; áo ngoài",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1580480",
+    "jmdict_seq": 1580480,
+    "word": "丈夫",
+    "reading": "じょうぶ",
+    "meaning_vi": "khỏe mạnh; chắc chắn; bền",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1580600",
+    "jmdict_seq": 1580600,
+    "word": "まっすぐ",
+    "reading": "まっすぐ",
+    "meaning_vi": "thẳng; đi thẳng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1580640",
+    "jmdict_seq": 1580640,
+    "word": "人",
+    "reading": "ひと",
+    "meaning_vi": "người",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1581930",
+    "jmdict_seq": 1581930,
+    "word": "弟",
+    "reading": "おとうと",
+    "meaning_vi": "em trai",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1582120",
+    "jmdict_seq": 1582120,
+    "word": "店",
+    "reading": "みせ",
+    "meaning_vi": "cửa hàng; quán",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1582300",
+    "jmdict_seq": 1582300,
+    "word": "など",
+    "reading": "など",
+    "meaning_vi": "v.v.; chẳng hạn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1582310",
+    "jmdict_seq": 1582310,
+    "word": "頭",
+    "reading": "あたま",
+    "meaning_vi": "đầu",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1582670",
+    "jmdict_seq": 1582670,
+    "word": "二人",
+    "reading": "ふたり",
+    "meaning_vi": "hai người",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1582820",
+    "jmdict_seq": 1582820,
+    "word": "入口",
+    "reading": "いりぐち",
+    "meaning_vi": "lối vào; cửa vào",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1582920",
+    "jmdict_seq": 1582920,
+    "word": "この",
+    "reading": "この",
+    "meaning_vi": "này; ... này",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1583090",
+    "jmdict_seq": 1583090,
+    "word": "八",
+    "reading": "はち",
+    "meaning_vi": "tám; 8",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1583095",
+    "jmdict_seq": 1583095,
+    "word": "八つ",
+    "reading": "やっつ",
+    "meaning_vi": "tám cái; tám tuổi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1583250",
+    "jmdict_seq": 1583250,
+    "word": "いいえ",
+    "reading": "いいえ",
+    "meaning_vi": "không; không có chi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1583720",
+    "jmdict_seq": 1583720,
+    "word": "風邪",
+    "reading": "かぜ",
+    "meaning_vi": "cảm; cảm cúm",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1584350",
+    "jmdict_seq": 1584350,
+    "word": "毎月",
+    "reading": "まいげつ",
+    "meaning_vi": "mỗi tháng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1584360",
+    "jmdict_seq": 1584360,
+    "word": "毎年",
+    "reading": "まいねん",
+    "meaning_vi": "mỗi năm",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1584460",
+    "jmdict_seq": 1584460,
+    "word": "万",
+    "reading": "まん",
+    "meaning_vi": "mười nghìn; vạn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1584640",
+    "jmdict_seq": 1584640,
+    "word": "あさって",
+    "reading": "あさって",
+    "meaning_vi": "ngày kia; ngày mốt",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1584660",
+    "jmdict_seq": 1584660,
+    "word": "明日",
+    "reading": "あした",
+    "meaning_vi": "ngày mai",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1584800",
+    "jmdict_seq": 1584800,
+    "word": "門",
+    "reading": "もん",
+    "meaning_vi": "cổng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1584910",
+    "jmdict_seq": 1584910,
+    "word": "夕飯",
+    "reading": "ゆうはん",
+    "meaning_vi": "bữa tối",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1584930",
+    "jmdict_seq": 1584930,
+    "word": "あまり",
+    "reading": "あまり",
+    "meaning_vi": "không... lắm; quá; phần còn lại",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1585310",
+    "jmdict_seq": 1585310,
+    "word": "六",
+    "reading": "ろく",
+    "meaning_vi": "sáu; 6",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1585315",
+    "jmdict_seq": 1585315,
+    "word": "六つ",
+    "reading": "むっつ",
+    "meaning_vi": "sáu cái; sáu tuổi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1585650",
+    "jmdict_seq": 1585650,
+    "word": "箱",
+    "reading": "はこ",
+    "meaning_vi": "cái hộp",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1586270",
+    "jmdict_seq": 1586270,
+    "word": "開く",
+    "reading": "あく",
+    "meaning_vi": "mở (cửa); mở ra",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1586330",
+    "jmdict_seq": 1586330,
+    "word": "朝御飯",
+    "reading": "あさごはん",
+    "meaning_vi": "bữa sáng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1586420",
+    "jmdict_seq": 1586420,
+    "word": "暖かい",
+    "reading": "あたたかい",
+    "meaning_vi": "ấm; ấm áp",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1587040",
+    "jmdict_seq": 1587040,
+    "word": "言う",
+    "reading": "いう",
+    "meaning_vi": "nói; gọi là",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1587610",
+    "jmdict_seq": 1587610,
+    "word": "嫌",
+    "reading": "いや",
+    "meaning_vi": "ghét; không thích; khó chịu",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1587850",
+    "jmdict_seq": 1587850,
+    "word": "いろいろ",
+    "reading": "いろいろ",
+    "meaning_vi": "đủ loại; nhiều thứ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1588120",
+    "jmdict_seq": 1588120,
+    "word": "歌う",
+    "reading": "うたう",
+    "meaning_vi": "hát",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1588880",
+    "jmdict_seq": 1588880,
+    "word": "大きい",
+    "reading": "おおきい",
+    "meaning_vi": "to; lớn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1589500",
+    "jmdict_seq": 1589500,
+    "word": "降りる",
+    "reading": "おりる",
+    "meaning_vi": "xuống (xe, núi); đi xuống",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1589600",
+    "jmdict_seq": 1589600,
+    "word": "終る",
+    "reading": "おわる",
+    "meaning_vi": "kết thúc; xong",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1589730",
+    "jmdict_seq": 1589730,
+    "word": "買い物",
+    "reading": "かいもの",
+    "meaning_vi": "mua sắm; đồ đã mua",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1591110",
+    "jmdict_seq": 1591110,
+    "word": "聞く",
+    "reading": "きく",
+    "meaning_vi": "nghe; hỏi; lắng nghe",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1591900",
+    "jmdict_seq": 1591900,
+    "word": "きれい",
+    "reading": "きれい",
+    "meaning_vi": "đẹp; sạch sẽ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1592250",
+    "jmdict_seq": 1592250,
+    "word": "国",
+    "reading": "くに",
+    "meaning_vi": "đất nước; quốc gia; quê hương",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1592340",
+    "jmdict_seq": 1592340,
+    "word": "曇り",
+    "reading": "くもり",
+    "meaning_vi": "trời nhiều mây; âm u",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1592970",
+    "jmdict_seq": 1592970,
+    "word": "交差点",
+    "reading": "こうさてん",
+    "meaning_vi": "ngã tư",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1595020",
+    "jmdict_seq": 1595020,
+    "word": "しょうゆ",
+    "reading": "しょうゆ",
+    "meaning_vi": "nước tương; xì dầu",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1597040",
+    "jmdict_seq": 1597040,
+    "word": "立つ",
+    "reading": "たつ",
+    "meaning_vi": "đứng; đứng dậy",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1597150",
+    "jmdict_seq": 1597150,
+    "word": "たばこ",
+    "reading": "たばこ",
+    "meaning_vi": "thuốc lá",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1597350",
+    "jmdict_seq": 1597350,
+    "word": "だんだん",
+    "reading": "だんだん",
+    "meaning_vi": "dần dần; ngày càng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1597530",
+    "jmdict_seq": 1597530,
+    "word": "ちゃわん",
+    "reading": "ちゃわん",
+    "meaning_vi": "bát cơm; chén trà",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1597890",
+    "jmdict_seq": 1597890,
+    "word": "作る",
+    "reading": "つくる",
+    "meaning_vi": "làm; chế tạo; nấu",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1598550",
+    "jmdict_seq": 1598550,
+    "word": "出かける",
+    "reading": "でかける",
+    "meaning_vi": "ra ngoài; đi ra ngoài",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1598680",
+    "jmdict_seq": 1598680,
+    "word": "時々",
+    "reading": "ときどき",
+    "meaning_vi": "thỉnh thoảng",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1600430",
+    "jmdict_seq": 1600430,
+    "word": "飲み物",
+    "reading": "のみもの",
+    "meaning_vi": "đồ uống",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1600790",
+    "jmdict_seq": 1600790,
+    "word": "二十歳",
+    "reading": "はたち",
+    "meaning_vi": "hai mươi tuổi",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1600850",
+    "jmdict_seq": 1600850,
+    "word": "二十日",
+    "reading": "はつか",
+    "meaning_vi": "ngày mùng 20; hai mươi ngày",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1600900",
+    "jmdict_seq": 1600900,
+    "word": "話",
+    "reading": "はなし",
+    "meaning_vi": "câu chuyện; chuyện",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1601340",
+    "jmdict_seq": 1601340,
+    "word": "晩御飯",
+    "reading": "ばんごはん",
+    "meaning_vi": "bữa tối",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1602340",
+    "jmdict_seq": 1602340,
+    "word": "昼御飯",
+    "reading": "ひるごはん",
+    "meaning_vi": "bữa trưa",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1602710",
+    "jmdict_seq": 1602710,
+    "word": "両親",
+    "reading": "りょうしん",
+    "meaning_vi": "bố mẹ; cha mẹ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1603990",
+    "jmdict_seq": 1603990,
+    "word": "町",
+    "reading": "まち",
+    "meaning_vi": "thị trấn; phố",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1604230",
+    "jmdict_seq": 1604230,
+    "word": "丸い",
+    "reading": "まるい",
+    "meaning_vi": "tròn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1604890",
+    "jmdict_seq": 1604890,
+    "word": "目",
+    "reading": "め",
+    "meaning_vi": "mắt",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1605820",
+    "jmdict_seq": 1605820,
+    "word": "よい",
+    "reading": "よい",
+    "meaning_vi": "tốt; được; ổn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1605870",
+    "jmdict_seq": 1605870,
+    "word": "よく",
+    "reading": "よく",
+    "meaning_vi": "hay; thường; giỏi; kỹ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1606560",
+    "jmdict_seq": 1606560,
+    "word": "分かる",
+    "reading": "わかる",
+    "meaning_vi": "hiểu; biết; rõ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1607260",
+    "jmdict_seq": 1607260,
+    "word": "はく",
+    "reading": "はく",
+    "meaning_vi": "mang; mặc (quần, giày dép)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1612860",
+    "jmdict_seq": 1612860,
+    "word": "そうして",
+    "reading": "そうして",
+    "meaning_vi": "và; rồi thì",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1628530",
+    "jmdict_seq": 1628530,
+    "word": "これ",
+    "reading": "これ",
+    "meaning_vi": "cái này; đây",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:1920240",
+    "jmdict_seq": 1920240,
+    "word": "どの",
+    "reading": "どの",
+    "meaning_vi": "nào; ... nào",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:2005860",
+    "jmdict_seq": 2005860,
+    "word": "もう一度",
+    "reading": "もういちど",
+    "meaning_vi": "một lần nữa",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:2013900",
+    "jmdict_seq": 2013900,
+    "word": "赤",
+    "reading": "あか",
+    "meaning_vi": "màu đỏ",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:2081610",
+    "jmdict_seq": 2081610,
+    "word": "たて",
+    "reading": "たて",
+    "meaning_vi": "vừa mới (làm xong); mới",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:2136180",
+    "jmdict_seq": 2136180,
+    "word": "小さな",
+    "reading": "ちいさな",
+    "meaning_vi": "nhỏ; bé (đứng trước danh từ)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:2147990",
+    "jmdict_seq": 2147990,
+    "word": "背",
+    "reading": "せ",
+    "meaning_vi": "lưng; chiều cao",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:2220600",
+    "jmdict_seq": 2220600,
+    "word": "お風呂",
+    "reading": "おふろ",
+    "meaning_vi": "bồn tắm; việc tắm",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:2225040",
+    "jmdict_seq": 2225040,
+    "word": "一日",
+    "reading": "ついたち",
+    "meaning_vi": "ngày mùng 1",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:2261490",
+    "jmdict_seq": 2261490,
+    "word": "伯父さん",
+    "reading": "おじさん",
+    "meaning_vi": "chú; bác (trai); ông chú",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:2261500",
+    "jmdict_seq": 2261500,
+    "word": "伯母さん",
+    "reading": "おばさん",
+    "meaning_vi": "cô; dì; bác (gái)",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:2820690",
+    "jmdict_seq": 2820690,
+    "word": "いい",
+    "reading": "いい",
+    "meaning_vi": "tốt; được; ổn",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:2839962",
+    "jmdict_seq": 2839962,
+    "word": "ゼロ",
+    "reading": "ゼロ",
+    "meaning_vi": "số không; zero",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:2842390",
+    "jmdict_seq": 2842390,
+    "word": "私",
+    "reading": "わたくし",
+    "meaning_vi": "tôi (trang trọng); riêng tư",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:2845606",
+    "jmdict_seq": 2845606,
+    "word": "いかが",
+    "reading": "いかが",
+    "meaning_vi": "thế nào; ra sao",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  },
+  {
+    "card_id": "vocab:2846738",
+    "jmdict_seq": 2846738,
+    "word": "何",
+    "reading": "なん",
+    "meaning_vi": "cái gì; gì (dạng \"nan\")",
+    "example_ja": null,
+    "example_vi": null,
+    "tatoeba_id": null
+  }
+]

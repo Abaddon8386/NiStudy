@@ -1,0 +1,4125 @@
+[
+  {
+    "card_id": "kanji:一",
+    "kanji": "一",
+    "han_viet_main": "Nhất",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "một",
+    "on_readings": [
+      "イチ",
+      "イツ"
+    ],
+    "kun_readings": [
+      "ひと-",
+      "ひと.つ"
+    ]
+  },
+  {
+    "card_id": "kanji:七",
+    "kanji": "七",
+    "han_viet_main": "Thất",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "bảy",
+    "on_readings": [
+      "シチ"
+    ],
+    "kun_readings": [
+      "なな",
+      "なな.つ",
+      "なの"
+    ]
+  },
+  {
+    "card_id": "kanji:万",
+    "kanji": "万",
+    "han_viet_main": "Vạn",
+    "han_viet_other": [
+      "Mặc"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "vạn; mười nghìn",
+    "on_readings": [
+      "マン",
+      "バン"
+    ],
+    "kun_readings": [
+      "よろず"
+    ]
+  },
+  {
+    "card_id": "kanji:三",
+    "kanji": "三",
+    "han_viet_main": "Tam",
+    "han_viet_other": [
+      "Tám"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "ba",
+    "on_readings": [
+      "サン",
+      "ゾウ"
+    ],
+    "kun_readings": [
+      "み",
+      "み.つ",
+      "みっ.つ"
+    ]
+  },
+  {
+    "card_id": "kanji:上",
+    "kanji": "上",
+    "han_viet_main": "Thượng",
+    "han_viet_other": [
+      "Thướng"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "trên; lên",
+    "on_readings": [
+      "ジョウ",
+      "ショウ",
+      "シャン"
+    ],
+    "kun_readings": [
+      "うえ",
+      "-うえ",
+      "うわ-",
+      "かみ",
+      "あ.げる",
+      "-あ.げる",
+      "あ.がる",
+      "-あ.がる",
+      "あ.がり",
+      "-あ.がり",
+      "のぼ.る",
+      "のぼ.り",
+      "のぼ.せる",
+      "のぼ.す",
+      "たてまつ.る"
+    ]
+  },
+  {
+    "card_id": "kanji:下",
+    "kanji": "下",
+    "han_viet_main": "Hạ",
+    "han_viet_other": [
+      "Há"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "dưới; xuống",
+    "on_readings": [
+      "カ",
+      "ゲ"
+    ],
+    "kun_readings": [
+      "した",
+      "しも",
+      "もと",
+      "さ.げる",
+      "さ.がる",
+      "くだ.る",
+      "くだ.り",
+      "くだ.す",
+      "-くだ.す",
+      "くだ.さる",
+      "お.ろす",
+      "お.りる"
+    ]
+  },
+  {
+    "card_id": "kanji:不",
+    "kanji": "不",
+    "han_viet_main": "Bất",
+    "han_viet_other": [
+      "Phầu",
+      "Phủ",
+      "Phi"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "không; bất; xấu",
+    "on_readings": [
+      "フ",
+      "ブ"
+    ],
+    "kun_readings": []
+  },
+  {
+    "card_id": "kanji:世",
+    "kanji": "世",
+    "han_viet_main": "Thế",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "thế gian; đời; thế hệ",
+    "on_readings": [
+      "セイ",
+      "セ",
+      "ソウ"
+    ],
+    "kun_readings": [
+      "よ"
+    ]
+  },
+  {
+    "card_id": "kanji:中",
+    "kanji": "中",
+    "han_viet_main": "Trung",
+    "han_viet_other": [
+      "Trúng"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "trong; giữa",
+    "on_readings": [
+      "チュウ"
+    ],
+    "kun_readings": [
+      "なか",
+      "うち",
+      "あた.る"
+    ]
+  },
+  {
+    "card_id": "kanji:主",
+    "kanji": "主",
+    "han_viet_main": "Chủ",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "chủ; chính",
+    "on_readings": [
+      "シュ",
+      "ス",
+      "シュウ"
+    ],
+    "kun_readings": [
+      "ぬし",
+      "おも",
+      "あるじ"
+    ]
+  },
+  {
+    "card_id": "kanji:九",
+    "kanji": "九",
+    "han_viet_main": "Cửu",
+    "han_viet_other": [
+      "Cưu"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "chín",
+    "on_readings": [
+      "キュウ",
+      "ク"
+    ],
+    "kun_readings": [
+      "ここの",
+      "ここの.つ"
+    ]
+  },
+  {
+    "card_id": "kanji:事",
+    "kanji": "事",
+    "han_viet_main": "Sự",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "việc; sự việc",
+    "on_readings": [
+      "ジ",
+      "ズ"
+    ],
+    "kun_readings": [
+      "こと",
+      "つか.う",
+      "つか.える"
+    ]
+  },
+  {
+    "card_id": "kanji:二",
+    "kanji": "二",
+    "han_viet_main": "Nhị",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "hai",
+    "on_readings": [
+      "ニ",
+      "ジ"
+    ],
+    "kun_readings": [
+      "ふた",
+      "ふた.つ",
+      "ふたたび"
+    ]
+  },
+  {
+    "card_id": "kanji:五",
+    "kanji": "五",
+    "han_viet_main": "Ngũ",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "năm",
+    "on_readings": [
+      "ゴ"
+    ],
+    "kun_readings": [
+      "いつ",
+      "いつ.つ"
+    ]
+  },
+  {
+    "card_id": "kanji:京",
+    "kanji": "京",
+    "han_viet_main": "Kinh",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "kinh đô; thủ đô",
+    "on_readings": [
+      "キョウ",
+      "ケイ",
+      "キン"
+    ],
+    "kun_readings": [
+      "みやこ"
+    ]
+  },
+  {
+    "card_id": "kanji:人",
+    "kanji": "人",
+    "han_viet_main": "Nhân",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "người",
+    "on_readings": [
+      "ジン",
+      "ニン"
+    ],
+    "kun_readings": [
+      "ひと",
+      "-り",
+      "-と"
+    ]
+  },
+  {
+    "card_id": "kanji:今",
+    "kanji": "今",
+    "han_viet_main": "Kim",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nay; bây giờ",
+    "on_readings": [
+      "コン",
+      "キン"
+    ],
+    "kun_readings": [
+      "いま"
+    ]
+  },
+  {
+    "card_id": "kanji:仕",
+    "kanji": "仕",
+    "han_viet_main": "Sĩ",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "làm việc; phục vụ",
+    "on_readings": [
+      "シ",
+      "ジ"
+    ],
+    "kun_readings": [
+      "つか.える"
+    ]
+  },
+  {
+    "card_id": "kanji:代",
+    "kanji": "代",
+    "han_viet_main": "Đại",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "thay thế; đời; thời đại",
+    "on_readings": [
+      "ダイ",
+      "タイ"
+    ],
+    "kun_readings": [
+      "か.わる",
+      "かわ.る",
+      "かわ.り",
+      "か.わり",
+      "-がわ.り",
+      "-が.わり",
+      "か.える",
+      "よ",
+      "しろ"
+    ]
+  },
+  {
+    "card_id": "kanji:以",
+    "kanji": "以",
+    "han_viet_main": "Dĩ",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "bằng; từ; lấy",
+    "on_readings": [
+      "イ"
+    ],
+    "kun_readings": [
+      "もっ.て"
+    ]
+  },
+  {
+    "card_id": "kanji:休",
+    "kanji": "休",
+    "han_viet_main": "Hưu",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nghỉ; nghỉ ngơi",
+    "on_readings": [
+      "キュウ"
+    ],
+    "kun_readings": [
+      "やす.む",
+      "やす.まる",
+      "やす.める"
+    ]
+  },
+  {
+    "card_id": "kanji:会",
+    "kanji": "会",
+    "han_viet_main": "Hội",
+    "han_viet_other": [
+      "Cối",
+      "Hụi"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "họp; gặp; hội",
+    "on_readings": [
+      "カイ",
+      "エ"
+    ],
+    "kun_readings": [
+      "あ.う",
+      "あ.わせる",
+      "あつ.まる"
+    ]
+  },
+  {
+    "card_id": "kanji:住",
+    "kanji": "住",
+    "han_viet_main": "Trụ",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "ở; cư trú",
+    "on_readings": [
+      "ジュウ",
+      "ヂュウ",
+      "チュウ"
+    ],
+    "kun_readings": [
+      "す.む",
+      "す.まう",
+      "-ず.まい"
+    ]
+  },
+  {
+    "card_id": "kanji:体",
+    "kanji": "体",
+    "han_viet_main": "Thể",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "thân thể; cơ thể",
+    "on_readings": [
+      "タイ",
+      "テイ"
+    ],
+    "kun_readings": [
+      "からだ",
+      "かたち"
+    ]
+  },
+  {
+    "card_id": "kanji:何",
+    "kanji": "何",
+    "han_viet_main": "Hà",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "gì; cái gì",
+    "on_readings": [
+      "カ"
+    ],
+    "kun_readings": [
+      "なに",
+      "なん",
+      "なに-",
+      "なん-"
+    ]
+  },
+  {
+    "card_id": "kanji:作",
+    "kanji": "作",
+    "han_viet_main": "Tác",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "làm; chế tạo",
+    "on_readings": [
+      "サク",
+      "サ"
+    ],
+    "kun_readings": [
+      "つく.る",
+      "つく.り",
+      "-づく.り"
+    ]
+  },
+  {
+    "card_id": "kanji:使",
+    "kanji": "使",
+    "han_viet_main": "Sử",
+    "han_viet_other": [
+      "Sứ"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "dùng; sử dụng",
+    "on_readings": [
+      "シ"
+    ],
+    "kun_readings": [
+      "つか.う",
+      "つか.い",
+      "-つか.い",
+      "-づか.い"
+    ]
+  },
+  {
+    "card_id": "kanji:借",
+    "kanji": "借",
+    "han_viet_main": "Tá",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "mượn; vay",
+    "on_readings": [
+      "シャク"
+    ],
+    "kun_readings": [
+      "か.りる"
+    ]
+  },
+  {
+    "card_id": "kanji:元",
+    "kanji": "元",
+    "han_viet_main": "Nguyên",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "gốc; nguồn gốc; khỏe",
+    "on_readings": [
+      "ゲン",
+      "ガン"
+    ],
+    "kun_readings": [
+      "もと"
+    ]
+  },
+  {
+    "card_id": "kanji:兄",
+    "kanji": "兄",
+    "han_viet_main": "Huynh",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "anh trai",
+    "on_readings": [
+      "ケイ",
+      "キョウ"
+    ],
+    "kun_readings": [
+      "あに"
+    ]
+  },
+  {
+    "card_id": "kanji:先",
+    "kanji": "先",
+    "han_viet_main": "Tiên",
+    "han_viet_other": [
+      "Tiến"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "trước; tiên",
+    "on_readings": [
+      "セン"
+    ],
+    "kun_readings": [
+      "さき",
+      "ま.ず"
+    ]
+  },
+  {
+    "card_id": "kanji:入",
+    "kanji": "入",
+    "han_viet_main": "Nhập",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "vào; nhập",
+    "on_readings": [
+      "ニュウ",
+      "ジュ"
+    ],
+    "kun_readings": [
+      "い.る",
+      "-い.る",
+      "-い.り",
+      "い.れる",
+      "-い.れ",
+      "はい.る"
+    ]
+  },
+  {
+    "card_id": "kanji:八",
+    "kanji": "八",
+    "han_viet_main": "Bát",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "tám",
+    "on_readings": [
+      "ハチ",
+      "ハツ"
+    ],
+    "kun_readings": [
+      "や",
+      "や.つ",
+      "やっ.つ",
+      "よう"
+    ]
+  },
+  {
+    "card_id": "kanji:公",
+    "kanji": "公",
+    "han_viet_main": "Công",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "công; chung",
+    "on_readings": [
+      "コウ",
+      "ク"
+    ],
+    "kun_readings": [
+      "おおやけ"
+    ]
+  },
+  {
+    "card_id": "kanji:六",
+    "kanji": "六",
+    "han_viet_main": "Lục",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "sáu",
+    "on_readings": [
+      "ロク",
+      "リク"
+    ],
+    "kun_readings": [
+      "む",
+      "む.つ",
+      "むっ.つ",
+      "むい"
+    ]
+  },
+  {
+    "card_id": "kanji:円",
+    "kanji": "円",
+    "han_viet_main": "Viên",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "tròn; yên (tiền Nhật)",
+    "on_readings": [
+      "エン"
+    ],
+    "kun_readings": [
+      "まる.い",
+      "まる",
+      "まど",
+      "まど.か",
+      "まろ.やか"
+    ]
+  },
+  {
+    "card_id": "kanji:写",
+    "kanji": "写",
+    "han_viet_main": "Tả",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "chép; chụp ảnh",
+    "on_readings": [
+      "シャ",
+      "ジャ"
+    ],
+    "kun_readings": [
+      "うつ.す",
+      "うつ.る",
+      "うつ-",
+      "うつ.し"
+    ]
+  },
+  {
+    "card_id": "kanji:冬",
+    "kanji": "冬",
+    "han_viet_main": "Đông",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "mùa đông",
+    "on_readings": [
+      "トウ"
+    ],
+    "kun_readings": [
+      "ふゆ"
+    ]
+  },
+  {
+    "card_id": "kanji:出",
+    "kanji": "出",
+    "han_viet_main": "Xuất",
+    "han_viet_other": [
+      "Xúy"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "ra; xuất",
+    "on_readings": [
+      "シュツ",
+      "スイ"
+    ],
+    "kun_readings": [
+      "で.る",
+      "-で",
+      "だ.す",
+      "-だ.す",
+      "い.でる",
+      "い.だす"
+    ]
+  },
+  {
+    "card_id": "kanji:切",
+    "kanji": "切",
+    "han_viet_main": "Thiết",
+    "han_viet_other": [
+      "Thế"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "cắt; thiết",
+    "on_readings": [
+      "セツ",
+      "サイ"
+    ],
+    "kun_readings": [
+      "き.る",
+      "-き.る",
+      "き.り",
+      "-き.り",
+      "-ぎ.り",
+      "き.れる",
+      "-き.れる",
+      "き.れ",
+      "-き.れ",
+      "-ぎ.れ"
+    ]
+  },
+  {
+    "card_id": "kanji:別",
+    "kanji": "別",
+    "han_viet_main": "Biệt",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "riêng; khác; chia tay",
+    "on_readings": [
+      "ベツ"
+    ],
+    "kun_readings": [
+      "わか.れる",
+      "わ.ける"
+    ]
+  },
+  {
+    "card_id": "kanji:前",
+    "kanji": "前",
+    "han_viet_main": "Tiền",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "trước; phía trước",
+    "on_readings": [
+      "ゼン"
+    ],
+    "kun_readings": [
+      "まえ",
+      "-まえ"
+    ]
+  },
+  {
+    "card_id": "kanji:力",
+    "kanji": "力",
+    "han_viet_main": "Lực",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "sức; lực",
+    "on_readings": [
+      "リョク",
+      "リキ",
+      "リイ"
+    ],
+    "kun_readings": [
+      "ちから"
+    ]
+  },
+  {
+    "card_id": "kanji:勉",
+    "kanji": "勉",
+    "han_viet_main": "Miễn",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "cố gắng; chăm chỉ",
+    "on_readings": [
+      "ベン"
+    ],
+    "kun_readings": [
+      "つと.める"
+    ]
+  },
+  {
+    "card_id": "kanji:動",
+    "kanji": "動",
+    "han_viet_main": "Động",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "động; chuyển động",
+    "on_readings": [
+      "ドウ"
+    ],
+    "kun_readings": [
+      "うご.く",
+      "うご.かす"
+    ]
+  },
+  {
+    "card_id": "kanji:北",
+    "kanji": "北",
+    "han_viet_main": "Bắc",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "bắc",
+    "on_readings": [
+      "ホク"
+    ],
+    "kun_readings": [
+      "きた"
+    ]
+  },
+  {
+    "card_id": "kanji:医",
+    "kanji": "医",
+    "han_viet_main": "Y",
+    "han_viet_other": [
+      "Ế",
+      "Ỷ",
+      "I",
+      "Ỉ"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "y học; thầy thuốc",
+    "on_readings": [
+      "イ"
+    ],
+    "kun_readings": [
+      "い.やす",
+      "い.する",
+      "くすし"
+    ]
+  },
+  {
+    "card_id": "kanji:十",
+    "kanji": "十",
+    "han_viet_main": "Thập",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "mười",
+    "on_readings": [
+      "ジュウ",
+      "ジッ",
+      "ジュッ"
+    ],
+    "kun_readings": [
+      "とお",
+      "と",
+      "そ"
+    ]
+  },
+  {
+    "card_id": "kanji:千",
+    "kanji": "千",
+    "han_viet_main": "Thiên",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nghìn",
+    "on_readings": [
+      "セン"
+    ],
+    "kun_readings": [
+      "ち"
+    ]
+  },
+  {
+    "card_id": "kanji:午",
+    "kanji": "午",
+    "han_viet_main": "Ngọ",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "trưa; giờ Ngọ",
+    "on_readings": [
+      "ゴ"
+    ],
+    "kun_readings": [
+      "うま"
+    ]
+  },
+  {
+    "card_id": "kanji:半",
+    "kanji": "半",
+    "han_viet_main": "Bán",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nửa",
+    "on_readings": [
+      "ハン"
+    ],
+    "kun_readings": [
+      "なか.ば"
+    ]
+  },
+  {
+    "card_id": "kanji:南",
+    "kanji": "南",
+    "han_viet_main": "Nam",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nam",
+    "on_readings": [
+      "ナン",
+      "ナ"
+    ],
+    "kun_readings": [
+      "みなみ"
+    ]
+  },
+  {
+    "card_id": "kanji:去",
+    "kanji": "去",
+    "han_viet_main": "Khứ",
+    "han_viet_other": [
+      "Khu"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "đi qua; qua đi; rời",
+    "on_readings": [
+      "キョ",
+      "コ"
+    ],
+    "kun_readings": [
+      "さ.る",
+      "-さ.る"
+    ]
+  },
+  {
+    "card_id": "kanji:友",
+    "kanji": "友",
+    "han_viet_main": "Hữu",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "bạn",
+    "on_readings": [
+      "ユウ"
+    ],
+    "kun_readings": [
+      "とも"
+    ]
+  },
+  {
+    "card_id": "kanji:口",
+    "kanji": "口",
+    "han_viet_main": "Khẩu",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "miệng",
+    "on_readings": [
+      "コウ",
+      "ク"
+    ],
+    "kun_readings": [
+      "くち"
+    ]
+  },
+  {
+    "card_id": "kanji:古",
+    "kanji": "古",
+    "han_viet_main": "Cổ",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "cũ; xưa",
+    "on_readings": [
+      "コ"
+    ],
+    "kun_readings": [
+      "ふる.い",
+      "ふる-",
+      "-ふる.す"
+    ]
+  },
+  {
+    "card_id": "kanji:台",
+    "kanji": "台",
+    "han_viet_main": "Đài",
+    "han_viet_other": [
+      "Thai",
+      "Di"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "bệ; đài; đếm máy móc, xe",
+    "on_readings": [
+      "ダイ",
+      "タイ"
+    ],
+    "kun_readings": [
+      "うてな",
+      "われ",
+      "つかさ"
+    ]
+  },
+  {
+    "card_id": "kanji:右",
+    "kanji": "右",
+    "han_viet_main": "Hữu",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "phải; bên phải",
+    "on_readings": [
+      "ウ",
+      "ユウ"
+    ],
+    "kun_readings": [
+      "みぎ"
+    ]
+  },
+  {
+    "card_id": "kanji:同",
+    "kanji": "同",
+    "han_viet_main": "Đồng",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "giống; cùng",
+    "on_readings": [
+      "ドウ"
+    ],
+    "kun_readings": [
+      "おな.じ"
+    ]
+  },
+  {
+    "card_id": "kanji:名",
+    "kanji": "名",
+    "han_viet_main": "Danh",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "tên; danh tiếng",
+    "on_readings": [
+      "メイ",
+      "ミョウ"
+    ],
+    "kun_readings": [
+      "な",
+      "-な"
+    ]
+  },
+  {
+    "card_id": "kanji:味",
+    "kanji": "味",
+    "han_viet_main": "Vị",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "vị; mùi vị",
+    "on_readings": [
+      "ミ"
+    ],
+    "kun_readings": [
+      "あじ",
+      "あじ.わう"
+    ]
+  },
+  {
+    "card_id": "kanji:品",
+    "kanji": "品",
+    "han_viet_main": "Phẩm",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "hàng hóa; phẩm chất",
+    "on_readings": [
+      "ヒン",
+      "ホン"
+    ],
+    "kun_readings": [
+      "しな"
+    ]
+  },
+  {
+    "card_id": "kanji:員",
+    "kanji": "員",
+    "han_viet_main": "Viên",
+    "han_viet_other": [
+      "Vân"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nhân viên; thành viên",
+    "on_readings": [
+      "イン"
+    ],
+    "kun_readings": []
+  },
+  {
+    "card_id": "kanji:問",
+    "kanji": "問",
+    "han_viet_main": "Vấn",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "hỏi; vấn đề",
+    "on_readings": [
+      "モン"
+    ],
+    "kun_readings": [
+      "と.う",
+      "と.い",
+      "とん"
+    ]
+  },
+  {
+    "card_id": "kanji:四",
+    "kanji": "四",
+    "han_viet_main": "Tứ",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "bốn",
+    "on_readings": [
+      "シ"
+    ],
+    "kun_readings": [
+      "よ",
+      "よ.つ",
+      "よっ.つ",
+      "よん"
+    ]
+  },
+  {
+    "card_id": "kanji:図",
+    "kanji": "図",
+    "han_viet_main": "Đồ",
+    "han_viet_other": [
+      "Vi"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "bản vẽ; bản đồ; hình",
+    "on_readings": [
+      "ズ",
+      "ト"
+    ],
+    "kun_readings": [
+      "え",
+      "はか.る"
+    ]
+  },
+  {
+    "card_id": "kanji:国",
+    "kanji": "国",
+    "han_viet_main": "Quốc",
+    "han_viet_other": [
+      "Cuốc"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nước; quốc gia",
+    "on_readings": [
+      "コク"
+    ],
+    "kun_readings": [
+      "くに"
+    ]
+  },
+  {
+    "card_id": "kanji:土",
+    "kanji": "土",
+    "han_viet_main": "Thổ",
+    "han_viet_other": [
+      "Độ",
+      "Đỗ"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "đất",
+    "on_readings": [
+      "ド",
+      "ト"
+    ],
+    "kun_readings": [
+      "つち"
+    ]
+  },
+  {
+    "card_id": "kanji:地",
+    "kanji": "地",
+    "han_viet_main": "Địa",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "đất; mặt đất; địa",
+    "on_readings": [
+      "チ",
+      "ジ"
+    ],
+    "kun_readings": []
+  },
+  {
+    "card_id": "kanji:堂",
+    "kanji": "堂",
+    "han_viet_main": "Đường",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "sảnh; đại sảnh",
+    "on_readings": [
+      "ドウ"
+    ],
+    "kun_readings": []
+  },
+  {
+    "card_id": "kanji:場",
+    "kanji": "場",
+    "han_viet_main": "Trường",
+    "han_viet_other": [
+      "Tràng"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nơi chốn; địa điểm",
+    "on_readings": [
+      "ジョウ",
+      "チョウ"
+    ],
+    "kun_readings": [
+      "ば"
+    ]
+  },
+  {
+    "card_id": "kanji:売",
+    "kanji": "売",
+    "han_viet_main": "Mại",
+    "han_viet_other": [
+      "Xác",
+      "Xạc"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "bán",
+    "on_readings": [
+      "バイ"
+    ],
+    "kun_readings": [
+      "う.る",
+      "う.れる"
+    ]
+  },
+  {
+    "card_id": "kanji:夏",
+    "kanji": "夏",
+    "han_viet_main": "Hạ",
+    "han_viet_other": [
+      "Giạ",
+      "Giá"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "mùa hè",
+    "on_readings": [
+      "カ",
+      "ガ",
+      "ゲ"
+    ],
+    "kun_readings": [
+      "なつ"
+    ]
+  },
+  {
+    "card_id": "kanji:夕",
+    "kanji": "夕",
+    "han_viet_main": "Tịch",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "chiều tối",
+    "on_readings": [
+      "セキ"
+    ],
+    "kun_readings": [
+      "ゆう"
+    ]
+  },
+  {
+    "card_id": "kanji:外",
+    "kanji": "外",
+    "han_viet_main": "Ngoại",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "ngoài; ngoại",
+    "on_readings": [
+      "ガイ",
+      "ゲ"
+    ],
+    "kun_readings": [
+      "そと",
+      "ほか",
+      "はず.す",
+      "はず.れる",
+      "と-"
+    ]
+  },
+  {
+    "card_id": "kanji:多",
+    "kanji": "多",
+    "han_viet_main": "Đa",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nhiều",
+    "on_readings": [
+      "タ"
+    ],
+    "kun_readings": [
+      "おお.い",
+      "まさ.に",
+      "まさ.る"
+    ]
+  },
+  {
+    "card_id": "kanji:夜",
+    "kanji": "夜",
+    "han_viet_main": "Dạ",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "đêm",
+    "on_readings": [
+      "ヤ"
+    ],
+    "kun_readings": [
+      "よ",
+      "よる"
+    ]
+  },
+  {
+    "card_id": "kanji:大",
+    "kanji": "大",
+    "han_viet_main": "Đại",
+    "han_viet_other": [
+      "Thái"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "to; lớn",
+    "on_readings": [
+      "ダイ",
+      "タイ"
+    ],
+    "kun_readings": [
+      "おお-",
+      "おお.きい",
+      "-おお.いに"
+    ]
+  },
+  {
+    "card_id": "kanji:天",
+    "kanji": "天",
+    "han_viet_main": "Thiên",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "trời; thiên",
+    "on_readings": [
+      "テン"
+    ],
+    "kun_readings": [
+      "あまつ",
+      "あめ",
+      "あま-"
+    ]
+  },
+  {
+    "card_id": "kanji:女",
+    "kanji": "女",
+    "han_viet_main": "Nữ",
+    "han_viet_other": [
+      "Nứ",
+      "Nhữ"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nữ; phụ nữ",
+    "on_readings": [
+      "ジョ",
+      "ニョ",
+      "ニョウ"
+    ],
+    "kun_readings": [
+      "おんな",
+      "め"
+    ]
+  },
+  {
+    "card_id": "kanji:妹",
+    "kanji": "妹",
+    "han_viet_main": "Muội",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "em gái",
+    "on_readings": [
+      "マイ"
+    ],
+    "kun_readings": [
+      "いもうと"
+    ]
+  },
+  {
+    "card_id": "kanji:姉",
+    "kanji": "姉",
+    "han_viet_main": "Tỷ",
+    "han_viet_other": [
+      "Tỉ",
+      "Chị"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "chị gái",
+    "on_readings": [
+      "シ"
+    ],
+    "kun_readings": [
+      "あね",
+      "はは"
+    ]
+  },
+  {
+    "card_id": "kanji:始",
+    "kanji": "始",
+    "han_viet_main": "Thủy",
+    "han_viet_other": [
+      "Thí"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "bắt đầu",
+    "on_readings": [
+      "シ"
+    ],
+    "kun_readings": [
+      "はじ.める",
+      "-はじ.める",
+      "はじ.まる"
+    ]
+  },
+  {
+    "card_id": "kanji:子",
+    "kanji": "子",
+    "han_viet_main": "Tử",
+    "han_viet_other": [
+      "Tý"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "con; trẻ em",
+    "on_readings": [
+      "シ",
+      "ス",
+      "ツ"
+    ],
+    "kun_readings": [
+      "こ",
+      "-こ",
+      "ね"
+    ]
+  },
+  {
+    "card_id": "kanji:字",
+    "kanji": "字",
+    "han_viet_main": "Tự",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "chữ; ký tự",
+    "on_readings": [
+      "ジ"
+    ],
+    "kun_readings": [
+      "あざ",
+      "あざな",
+      "-な"
+    ]
+  },
+  {
+    "card_id": "kanji:学",
+    "kanji": "学",
+    "han_viet_main": "Học",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "học; học tập",
+    "on_readings": [
+      "ガク"
+    ],
+    "kun_readings": [
+      "まな.ぶ"
+    ]
+  },
+  {
+    "card_id": "kanji:安",
+    "kanji": "安",
+    "han_viet_main": "An",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "yên; rẻ; an toàn",
+    "on_readings": [
+      "アン"
+    ],
+    "kun_readings": [
+      "やす.い",
+      "やす.まる",
+      "やす",
+      "やす.らか"
+    ]
+  },
+  {
+    "card_id": "kanji:室",
+    "kanji": "室",
+    "han_viet_main": "Thất",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "phòng",
+    "on_readings": [
+      "シツ"
+    ],
+    "kun_readings": [
+      "むろ"
+    ]
+  },
+  {
+    "card_id": "kanji:家",
+    "kanji": "家",
+    "han_viet_main": "Gia",
+    "han_viet_other": [
+      "Cô"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nhà; gia đình",
+    "on_readings": [
+      "カ",
+      "ケ"
+    ],
+    "kun_readings": [
+      "いえ",
+      "や",
+      "うち"
+    ]
+  },
+  {
+    "card_id": "kanji:小",
+    "kanji": "小",
+    "han_viet_main": "Tiểu",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nhỏ; bé",
+    "on_readings": [
+      "ショウ"
+    ],
+    "kun_readings": [
+      "ちい.さい",
+      "こ-",
+      "お-",
+      "さ-"
+    ]
+  },
+  {
+    "card_id": "kanji:少",
+    "kanji": "少",
+    "han_viet_main": "Thiểu",
+    "han_viet_other": [
+      "Thiếu"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "ít; thiếu",
+    "on_readings": [
+      "ショウ"
+    ],
+    "kun_readings": [
+      "すく.ない",
+      "すこ.し"
+    ]
+  },
+  {
+    "card_id": "kanji:屋",
+    "kanji": "屋",
+    "han_viet_main": "Ốc",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nhà; cửa hàng; mái nhà",
+    "on_readings": [
+      "オク"
+    ],
+    "kun_readings": [
+      "や"
+    ]
+  },
+  {
+    "card_id": "kanji:山",
+    "kanji": "山",
+    "han_viet_main": "Sơn",
+    "han_viet_other": [
+      "San"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "núi",
+    "on_readings": [
+      "サン",
+      "セン"
+    ],
+    "kun_readings": [
+      "やま"
+    ]
+  },
+  {
+    "card_id": "kanji:川",
+    "kanji": "川",
+    "han_viet_main": "Xuyên",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "sông",
+    "on_readings": [
+      "セン"
+    ],
+    "kun_readings": [
+      "かわ"
+    ]
+  },
+  {
+    "card_id": "kanji:工",
+    "kanji": "工",
+    "han_viet_main": "Công",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "công việc; thợ; công nghiệp",
+    "on_readings": [
+      "コウ",
+      "ク",
+      "グ"
+    ],
+    "kun_readings": []
+  },
+  {
+    "card_id": "kanji:左",
+    "kanji": "左",
+    "han_viet_main": "Tả",
+    "han_viet_other": [
+      "Tá"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "trái; bên trái",
+    "on_readings": [
+      "サ",
+      "シャ"
+    ],
+    "kun_readings": [
+      "ひだり"
+    ]
+  },
+  {
+    "card_id": "kanji:帰",
+    "kanji": "帰",
+    "han_viet_main": "Quy",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "về; trở về",
+    "on_readings": [
+      "キ"
+    ],
+    "kun_readings": [
+      "かえ.る",
+      "かえ.す",
+      "おく.る",
+      "とつ.ぐ"
+    ]
+  },
+  {
+    "card_id": "kanji:年",
+    "kanji": "年",
+    "han_viet_main": "Niên",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "năm; tuổi",
+    "on_readings": [
+      "ネン"
+    ],
+    "kun_readings": [
+      "とし"
+    ]
+  },
+  {
+    "card_id": "kanji:広",
+    "kanji": "広",
+    "han_viet_main": "Quảng",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "rộng",
+    "on_readings": [
+      "コウ"
+    ],
+    "kun_readings": [
+      "ひろ.い",
+      "ひろ.まる",
+      "ひろ.める",
+      "ひろ.がる",
+      "ひろ.げる"
+    ]
+  },
+  {
+    "card_id": "kanji:店",
+    "kanji": "店",
+    "han_viet_main": "Điếm",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "cửa hàng; tiệm",
+    "on_readings": [
+      "テン"
+    ],
+    "kun_readings": [
+      "みせ",
+      "たな"
+    ]
+  },
+  {
+    "card_id": "kanji:度",
+    "kanji": "度",
+    "han_viet_main": "Độ",
+    "han_viet_other": [
+      "Đạc"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "độ; lần",
+    "on_readings": [
+      "ド",
+      "ト",
+      "タク"
+    ],
+    "kun_readings": [
+      "たび",
+      "-た.い"
+    ]
+  },
+  {
+    "card_id": "kanji:建",
+    "kanji": "建",
+    "han_viet_main": "Kiến",
+    "han_viet_other": [
+      "Kiển"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "xây; dựng",
+    "on_readings": [
+      "ケン",
+      "コン"
+    ],
+    "kun_readings": [
+      "た.てる",
+      "た.て",
+      "-だ.て",
+      "た.つ"
+    ]
+  },
+  {
+    "card_id": "kanji:弟",
+    "kanji": "弟",
+    "han_viet_main": "Đệ",
+    "han_viet_other": [
+      "Đễ"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "em trai",
+    "on_readings": [
+      "テイ",
+      "ダイ",
+      "デ"
+    ],
+    "kun_readings": [
+      "おとうと"
+    ]
+  },
+  {
+    "card_id": "kanji:強",
+    "kanji": "強",
+    "han_viet_main": "Cường",
+    "han_viet_other": [
+      "Cưỡng",
+      "Càng",
+      "Cướng",
+      "Cượng",
+      "Gàn",
+      "Gàng",
+      "Gắng",
+      "Gương",
+      "Gượng",
+      "Ngượng"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "mạnh; cường",
+    "on_readings": [
+      "キョウ",
+      "ゴウ"
+    ],
+    "kun_readings": [
+      "つよ.い",
+      "つよ.まる",
+      "つよ.める",
+      "し.いる",
+      "こわ.い"
+    ]
+  },
+  {
+    "card_id": "kanji:待",
+    "kanji": "待",
+    "han_viet_main": "Đãi",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "đợi; chờ",
+    "on_readings": [
+      "タイ"
+    ],
+    "kun_readings": [
+      "ま.つ",
+      "-ま.ち"
+    ]
+  },
+  {
+    "card_id": "kanji:後",
+    "kanji": "後",
+    "han_viet_main": "Hậu",
+    "han_viet_other": [
+      "Hấu"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "sau; phía sau",
+    "on_readings": [
+      "ゴ",
+      "コウ"
+    ],
+    "kun_readings": [
+      "のち",
+      "うし.ろ",
+      "うしろ",
+      "あと",
+      "おく.れる"
+    ]
+  },
+  {
+    "card_id": "kanji:心",
+    "kanji": "心",
+    "han_viet_main": "Tâm",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "tim; tâm; lòng",
+    "on_readings": [
+      "シン"
+    ],
+    "kun_readings": [
+      "こころ",
+      "-ごころ"
+    ]
+  },
+  {
+    "card_id": "kanji:思",
+    "kanji": "思",
+    "han_viet_main": "Tư",
+    "han_viet_other": [
+      "Tứ",
+      "Tai"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nghĩ",
+    "on_readings": [
+      "シ"
+    ],
+    "kun_readings": [
+      "おも.う",
+      "おもえら.く",
+      "おぼ.す"
+    ]
+  },
+  {
+    "card_id": "kanji:急",
+    "kanji": "急",
+    "han_viet_main": "Cấp",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "vội; gấp; khẩn cấp",
+    "on_readings": [
+      "キュウ"
+    ],
+    "kun_readings": [
+      "いそ.ぐ",
+      "いそ.ぎ",
+      "せ.く"
+    ]
+  },
+  {
+    "card_id": "kanji:悪",
+    "kanji": "悪",
+    "han_viet_main": "Ác",
+    "han_viet_other": [
+      "Ố",
+      "Óc"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "xấu; ác",
+    "on_readings": [
+      "アク",
+      "オ"
+    ],
+    "kun_readings": [
+      "わる.い",
+      "わる-",
+      "あ.し",
+      "にく.い",
+      "-にく.い",
+      "ああ",
+      "いずくに",
+      "いずくんぞ",
+      "にく.む"
+    ]
+  },
+  {
+    "card_id": "kanji:意",
+    "kanji": "意",
+    "han_viet_main": "Ý",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "ý; ý nghĩ",
+    "on_readings": [
+      "イ"
+    ],
+    "kun_readings": []
+  },
+  {
+    "card_id": "kanji:手",
+    "kanji": "手",
+    "han_viet_main": "Thủ",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "tay",
+    "on_readings": [
+      "シュ",
+      "ズ"
+    ],
+    "kun_readings": [
+      "て",
+      "て-",
+      "-て",
+      "た-"
+    ]
+  },
+  {
+    "card_id": "kanji:持",
+    "kanji": "持",
+    "han_viet_main": "Trì",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "cầm; có; mang",
+    "on_readings": [
+      "ジ"
+    ],
+    "kun_readings": [
+      "も.つ",
+      "-も.ち",
+      "も.てる"
+    ]
+  },
+  {
+    "card_id": "kanji:教",
+    "kanji": "教",
+    "han_viet_main": "Giáo",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "dạy; giáo",
+    "on_readings": [
+      "キョウ"
+    ],
+    "kun_readings": [
+      "おし.える",
+      "おそ.わる"
+    ]
+  },
+  {
+    "card_id": "kanji:文",
+    "kanji": "文",
+    "han_viet_main": "Văn",
+    "han_viet_other": [
+      "Vấn"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "văn; câu văn; chữ",
+    "on_readings": [
+      "ブン",
+      "モン"
+    ],
+    "kun_readings": [
+      "ふみ",
+      "あや"
+    ]
+  },
+  {
+    "card_id": "kanji:料",
+    "kanji": "料",
+    "han_viet_main": "Liệu",
+    "han_viet_other": [
+      "Liêu"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "phí; nguyên liệu",
+    "on_readings": [
+      "リョウ"
+    ],
+    "kun_readings": []
+  },
+  {
+    "card_id": "kanji:新",
+    "kanji": "新",
+    "han_viet_main": "Tân",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "mới; tân",
+    "on_readings": [
+      "シン"
+    ],
+    "kun_readings": [
+      "あたら.しい",
+      "あら.た",
+      "あら-",
+      "にい-"
+    ]
+  },
+  {
+    "card_id": "kanji:方",
+    "kanji": "方",
+    "han_viet_main": "Phương",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "phương hướng; phía; người (kính ngữ)",
+    "on_readings": [
+      "ホウ"
+    ],
+    "kun_readings": [
+      "かた",
+      "-かた",
+      "-がた"
+    ]
+  },
+  {
+    "card_id": "kanji:旅",
+    "kanji": "旅",
+    "han_viet_main": "Lữ",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "chuyến đi; lữ hành",
+    "on_readings": [
+      "リョ"
+    ],
+    "kun_readings": [
+      "たび"
+    ]
+  },
+  {
+    "card_id": "kanji:族",
+    "kanji": "族",
+    "han_viet_main": "Tộc",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "gia tộc; dân tộc",
+    "on_readings": [
+      "ゾク"
+    ],
+    "kun_readings": []
+  },
+  {
+    "card_id": "kanji:日",
+    "kanji": "日",
+    "han_viet_main": "Nhật",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "ngày; mặt trời; Nhật",
+    "on_readings": [
+      "ニチ",
+      "ジツ"
+    ],
+    "kun_readings": [
+      "ひ",
+      "-び",
+      "-か"
+    ]
+  },
+  {
+    "card_id": "kanji:早",
+    "kanji": "早",
+    "han_viet_main": "Tảo",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "sớm; nhanh",
+    "on_readings": [
+      "ソウ",
+      "サッ"
+    ],
+    "kun_readings": [
+      "はや.い",
+      "はや",
+      "はや-",
+      "はや.まる",
+      "はや.める",
+      "さ-"
+    ]
+  },
+  {
+    "card_id": "kanji:明",
+    "kanji": "明",
+    "han_viet_main": "Minh",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "sáng; minh",
+    "on_readings": [
+      "メイ",
+      "ミョウ",
+      "ミン"
+    ],
+    "kun_readings": [
+      "あ.かり",
+      "あか.るい",
+      "あか.るむ",
+      "あか.らむ",
+      "あき.らか",
+      "あ.ける",
+      "-あ.け",
+      "あ.く",
+      "あ.くる",
+      "あ.かす"
+    ]
+  },
+  {
+    "card_id": "kanji:映",
+    "kanji": "映",
+    "han_viet_main": "Ánh",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "chiếu; phản chiếu",
+    "on_readings": [
+      "エイ"
+    ],
+    "kun_readings": [
+      "うつ.る",
+      "うつ.す",
+      "は.える",
+      "-ば.え"
+    ]
+  },
+  {
+    "card_id": "kanji:春",
+    "kanji": "春",
+    "han_viet_main": "Xuân",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "mùa xuân",
+    "on_readings": [
+      "シュン"
+    ],
+    "kun_readings": [
+      "はる"
+    ]
+  },
+  {
+    "card_id": "kanji:昼",
+    "kanji": "昼",
+    "han_viet_main": "Trú",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "ban ngày; trưa",
+    "on_readings": [
+      "チュウ"
+    ],
+    "kun_readings": [
+      "ひる"
+    ]
+  },
+  {
+    "card_id": "kanji:時",
+    "kanji": "時",
+    "han_viet_main": "Thời",
+    "han_viet_other": [
+      "Thì"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "giờ; thời gian",
+    "on_readings": [
+      "ジ"
+    ],
+    "kun_readings": [
+      "とき",
+      "-どき"
+    ]
+  },
+  {
+    "card_id": "kanji:曜",
+    "kanji": "曜",
+    "han_viet_main": "Diệu",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "ngày trong tuần",
+    "on_readings": [
+      "ヨウ"
+    ],
+    "kun_readings": []
+  },
+  {
+    "card_id": "kanji:書",
+    "kanji": "書",
+    "han_viet_main": "Thư",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "viết; sách",
+    "on_readings": [
+      "ショ"
+    ],
+    "kun_readings": [
+      "か.く",
+      "-が.き",
+      "-がき"
+    ]
+  },
+  {
+    "card_id": "kanji:月",
+    "kanji": "月",
+    "han_viet_main": "Nguyệt",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "tháng; mặt trăng",
+    "on_readings": [
+      "ゲツ",
+      "ガツ"
+    ],
+    "kun_readings": [
+      "つき"
+    ]
+  },
+  {
+    "card_id": "kanji:有",
+    "kanji": "有",
+    "han_viet_main": "Hữu",
+    "han_viet_other": [
+      "Dựu"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "có; sở hữu",
+    "on_readings": [
+      "ユウ",
+      "ウ"
+    ],
+    "kun_readings": [
+      "あ.る"
+    ]
+  },
+  {
+    "card_id": "kanji:服",
+    "kanji": "服",
+    "han_viet_main": "Phục",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "quần áo; phục",
+    "on_readings": [
+      "フク"
+    ],
+    "kun_readings": []
+  },
+  {
+    "card_id": "kanji:朝",
+    "kanji": "朝",
+    "han_viet_main": "Triều",
+    "han_viet_other": [
+      "Triêu"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "buổi sáng; triều đại",
+    "on_readings": [
+      "チョウ"
+    ],
+    "kun_readings": [
+      "あさ"
+    ]
+  },
+  {
+    "card_id": "kanji:木",
+    "kanji": "木",
+    "han_viet_main": "Mộc",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "cây; gỗ",
+    "on_readings": [
+      "ボク",
+      "モク"
+    ],
+    "kun_readings": [
+      "き",
+      "こ-"
+    ]
+  },
+  {
+    "card_id": "kanji:本",
+    "kanji": "本",
+    "han_viet_main": "Bản",
+    "han_viet_other": [
+      "Bổn"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "sách; gốc; chính",
+    "on_readings": [
+      "ホン"
+    ],
+    "kun_readings": [
+      "もと"
+    ]
+  },
+  {
+    "card_id": "kanji:来",
+    "kanji": "来",
+    "han_viet_main": "Lai",
+    "han_viet_other": [
+      "Lãi",
+      "Lay",
+      "Lơi",
+      "Ray",
+      "Rơi"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "đến",
+    "on_readings": [
+      "ライ",
+      "タイ"
+    ],
+    "kun_readings": [
+      "く.る",
+      "きた.る",
+      "きた.す",
+      "き.たす",
+      "き.たる",
+      "き",
+      "こ"
+    ]
+  },
+  {
+    "card_id": "kanji:東",
+    "kanji": "東",
+    "han_viet_main": "Đông",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "đông",
+    "on_readings": [
+      "トウ"
+    ],
+    "kun_readings": [
+      "ひがし"
+    ]
+  },
+  {
+    "card_id": "kanji:校",
+    "kanji": "校",
+    "han_viet_main": "Hiệu",
+    "han_viet_other": [
+      "Giáo",
+      "Hào"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "trường học; hiệu",
+    "on_readings": [
+      "コウ",
+      "キョウ"
+    ],
+    "kun_readings": []
+  },
+  {
+    "card_id": "kanji:業",
+    "kanji": "業",
+    "han_viet_main": "Nghiệp",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nghề; nghiệp; công việc",
+    "on_readings": [
+      "ギョウ",
+      "ゴウ"
+    ],
+    "kun_readings": [
+      "わざ"
+    ]
+  },
+  {
+    "card_id": "kanji:楽",
+    "kanji": "楽",
+    "han_viet_main": "Lạc",
+    "han_viet_other": [
+      "Nhạc"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "vui; nhạc; dễ chịu",
+    "on_readings": [
+      "ガク",
+      "ラク",
+      "ゴウ"
+    ],
+    "kun_readings": [
+      "たの.しい",
+      "たの.しむ",
+      "この.む"
+    ]
+  },
+  {
+    "card_id": "kanji:歌",
+    "kanji": "歌",
+    "han_viet_main": "Ca",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "bài hát; hát",
+    "on_readings": [
+      "カ"
+    ],
+    "kun_readings": [
+      "うた",
+      "うた.う"
+    ]
+  },
+  {
+    "card_id": "kanji:止",
+    "kanji": "止",
+    "han_viet_main": "Chỉ",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "dừng; ngừng",
+    "on_readings": [
+      "シ"
+    ],
+    "kun_readings": [
+      "と.まる",
+      "-ど.まり",
+      "と.める",
+      "-と.める",
+      "-ど.め",
+      "とど.める",
+      "とど.め",
+      "とど.まる",
+      "や.める",
+      "や.む",
+      "-や.む",
+      "よ.す",
+      "-さ.す",
+      "-さ.し"
+    ]
+  },
+  {
+    "card_id": "kanji:正",
+    "kanji": "正",
+    "han_viet_main": "Chính",
+    "han_viet_other": [
+      "Chánh"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "đúng; chính",
+    "on_readings": [
+      "セイ",
+      "ショウ"
+    ],
+    "kun_readings": [
+      "ただ.しい",
+      "ただ.す",
+      "まさ",
+      "まさ.に"
+    ]
+  },
+  {
+    "card_id": "kanji:歩",
+    "kanji": "歩",
+    "han_viet_main": "Bộ",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "đi bộ; bước",
+    "on_readings": [
+      "ホ",
+      "ブ",
+      "フ"
+    ],
+    "kun_readings": [
+      "ある.く",
+      "あゆ.む"
+    ]
+  },
+  {
+    "card_id": "kanji:死",
+    "kanji": "死",
+    "han_viet_main": "Tử",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "chết; tử",
+    "on_readings": [
+      "シ"
+    ],
+    "kun_readings": [
+      "し.ぬ",
+      "し.に-"
+    ]
+  },
+  {
+    "card_id": "kanji:母",
+    "kanji": "母",
+    "han_viet_main": "Mẫu",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "mẹ",
+    "on_readings": [
+      "ボ"
+    ],
+    "kun_readings": [
+      "はは",
+      "も"
+    ]
+  },
+  {
+    "card_id": "kanji:毎",
+    "kanji": "毎",
+    "han_viet_main": "Mỗi",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "mỗi",
+    "on_readings": [
+      "マイ"
+    ],
+    "kun_readings": [
+      "ごと",
+      "-ごと.に"
+    ]
+  },
+  {
+    "card_id": "kanji:気",
+    "kanji": "気",
+    "han_viet_main": "Khí",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "khí; tinh thần; không khí",
+    "on_readings": [
+      "キ",
+      "ケ"
+    ],
+    "kun_readings": [
+      "いき",
+      "き"
+    ]
+  },
+  {
+    "card_id": "kanji:水",
+    "kanji": "水",
+    "han_viet_main": "Thủy",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nước",
+    "on_readings": [
+      "スイ"
+    ],
+    "kun_readings": [
+      "みず",
+      "みず-"
+    ]
+  },
+  {
+    "card_id": "kanji:注",
+    "kanji": "注",
+    "han_viet_main": "Chú",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "rót; đổ; chú ý",
+    "on_readings": [
+      "チュウ"
+    ],
+    "kun_readings": [
+      "そそ.ぐ",
+      "さ.す",
+      "つ.ぐ"
+    ]
+  },
+  {
+    "card_id": "kanji:洋",
+    "kanji": "洋",
+    "han_viet_main": "Dương",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "đại dương; phương Tây",
+    "on_readings": [
+      "ヨウ"
+    ],
+    "kun_readings": []
+  },
+  {
+    "card_id": "kanji:海",
+    "kanji": "海",
+    "han_viet_main": "Hải",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "biển",
+    "on_readings": [
+      "カイ"
+    ],
+    "kun_readings": [
+      "うみ"
+    ]
+  },
+  {
+    "card_id": "kanji:漢",
+    "kanji": "漢",
+    "han_viet_main": "Hán",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "Hán; Trung Hoa",
+    "on_readings": [
+      "カン"
+    ],
+    "kun_readings": []
+  },
+  {
+    "card_id": "kanji:火",
+    "kanji": "火",
+    "han_viet_main": "Hỏa",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "lửa",
+    "on_readings": [
+      "カ"
+    ],
+    "kun_readings": [
+      "ひ",
+      "-び",
+      "ほ-"
+    ]
+  },
+  {
+    "card_id": "kanji:父",
+    "kanji": "父",
+    "han_viet_main": "Phụ",
+    "han_viet_other": [
+      "Phủ"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "bố; cha",
+    "on_readings": [
+      "フ"
+    ],
+    "kun_readings": [
+      "ちち"
+    ]
+  },
+  {
+    "card_id": "kanji:牛",
+    "kanji": "牛",
+    "han_viet_main": "Ngưu",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "bò; trâu",
+    "on_readings": [
+      "ギュウ"
+    ],
+    "kun_readings": [
+      "うし"
+    ]
+  },
+  {
+    "card_id": "kanji:物",
+    "kanji": "物",
+    "han_viet_main": "Vật",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "vật; đồ vật",
+    "on_readings": [
+      "ブツ",
+      "モツ"
+    ],
+    "kun_readings": [
+      "もの",
+      "もの-"
+    ]
+  },
+  {
+    "card_id": "kanji:特",
+    "kanji": "特",
+    "han_viet_main": "Đặc",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "đặc biệt",
+    "on_readings": [
+      "トク"
+    ],
+    "kun_readings": []
+  },
+  {
+    "card_id": "kanji:犬",
+    "kanji": "犬",
+    "han_viet_main": "Khuyển",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "chó",
+    "on_readings": [
+      "ケン"
+    ],
+    "kun_readings": [
+      "いぬ",
+      "いぬ-"
+    ]
+  },
+  {
+    "card_id": "kanji:理",
+    "kanji": "理",
+    "han_viet_main": "Lý",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "lý; lý lẽ; lý do",
+    "on_readings": [
+      "リ"
+    ],
+    "kun_readings": [
+      "ことわり"
+    ]
+  },
+  {
+    "card_id": "kanji:生",
+    "kanji": "生",
+    "han_viet_main": "Sinh",
+    "han_viet_other": [
+      "Sanh"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "sống; sinh; học trò",
+    "on_readings": [
+      "セイ",
+      "ショウ"
+    ],
+    "kun_readings": [
+      "い.きる",
+      "い.かす",
+      "い.ける",
+      "う.まれる",
+      "うま.れる",
+      "う.まれ",
+      "うまれ",
+      "う.む",
+      "お.う",
+      "は.える",
+      "は.やす",
+      "き",
+      "なま",
+      "なま-",
+      "な.る",
+      "な.す",
+      "む.す",
+      "-う"
+    ]
+  },
+  {
+    "card_id": "kanji:用",
+    "kanji": "用",
+    "han_viet_main": "Dụng",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "dùng; việc; công dụng",
+    "on_readings": [
+      "ヨウ"
+    ],
+    "kun_readings": [
+      "もち.いる"
+    ]
+  },
+  {
+    "card_id": "kanji:田",
+    "kanji": "田",
+    "han_viet_main": "Điền",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "ruộng lúa",
+    "on_readings": [
+      "デン"
+    ],
+    "kun_readings": [
+      "た"
+    ]
+  },
+  {
+    "card_id": "kanji:男",
+    "kanji": "男",
+    "han_viet_main": "Nam",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "đàn ông; nam",
+    "on_readings": [
+      "ダン",
+      "ナン"
+    ],
+    "kun_readings": [
+      "おとこ",
+      "お"
+    ]
+  },
+  {
+    "card_id": "kanji:町",
+    "kanji": "町",
+    "han_viet_main": "Đinh",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "phố; thị trấn",
+    "on_readings": [
+      "チョウ"
+    ],
+    "kun_readings": [
+      "まち"
+    ]
+  },
+  {
+    "card_id": "kanji:画",
+    "kanji": "画",
+    "han_viet_main": "Hoạch",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "tranh; vẽ; nét",
+    "on_readings": [
+      "ガ",
+      "カク",
+      "エ",
+      "カイ"
+    ],
+    "kun_readings": [
+      "えが.く",
+      "かく.する",
+      "かぎ.る",
+      "はかりごと",
+      "はか.る"
+    ]
+  },
+  {
+    "card_id": "kanji:界",
+    "kanji": "界",
+    "han_viet_main": "Giới",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "giới; ranh giới; thế giới",
+    "on_readings": [
+      "カイ"
+    ],
+    "kun_readings": []
+  },
+  {
+    "card_id": "kanji:病",
+    "kanji": "病",
+    "han_viet_main": "Bệnh",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "bệnh; ốm",
+    "on_readings": [
+      "ビョウ",
+      "ヘイ"
+    ],
+    "kun_readings": [
+      "や.む",
+      "-や.み",
+      "やまい"
+    ]
+  },
+  {
+    "card_id": "kanji:発",
+    "kanji": "発",
+    "han_viet_main": "Phát",
+    "han_viet_other": [
+      "Bát"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "phát; xuất phát",
+    "on_readings": [
+      "ハツ",
+      "ホツ"
+    ],
+    "kun_readings": [
+      "た.つ",
+      "あば.く",
+      "おこ.る",
+      "つか.わす",
+      "はな.つ"
+    ]
+  },
+  {
+    "card_id": "kanji:白",
+    "kanji": "白",
+    "han_viet_main": "Bạch",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "trắng",
+    "on_readings": [
+      "ハク",
+      "ビャク"
+    ],
+    "kun_readings": [
+      "しろ",
+      "しら-",
+      "しろ.い"
+    ]
+  },
+  {
+    "card_id": "kanji:百",
+    "kanji": "百",
+    "han_viet_main": "Bách",
+    "han_viet_other": [
+      "Bá",
+      "Mạch"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "trăm",
+    "on_readings": [
+      "ヒャク",
+      "ビャク"
+    ],
+    "kun_readings": [
+      "もも"
+    ]
+  },
+  {
+    "card_id": "kanji:目",
+    "kanji": "目",
+    "han_viet_main": "Mục",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "mắt; mục",
+    "on_readings": [
+      "モク",
+      "ボク"
+    ],
+    "kun_readings": [
+      "め",
+      "-め",
+      "ま-"
+    ]
+  },
+  {
+    "card_id": "kanji:真",
+    "kanji": "真",
+    "han_viet_main": "Chân",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "thật; chân",
+    "on_readings": [
+      "シン"
+    ],
+    "kun_readings": [
+      "ま",
+      "ま-",
+      "まこと"
+    ]
+  },
+  {
+    "card_id": "kanji:着",
+    "kanji": "着",
+    "han_viet_main": "Khán",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "mặc; đến; dính",
+    "on_readings": [
+      "チャク",
+      "ジャク"
+    ],
+    "kun_readings": [
+      "き.る",
+      "き.せる",
+      "つ.く",
+      "つ.ける"
+    ]
+  },
+  {
+    "card_id": "kanji:知",
+    "kanji": "知",
+    "han_viet_main": "Tri",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "biết; tri thức",
+    "on_readings": [
+      "チ"
+    ],
+    "kun_readings": [
+      "し.る",
+      "し.らせる"
+    ]
+  },
+  {
+    "card_id": "kanji:研",
+    "kanji": "研",
+    "han_viet_main": "Nghiên",
+    "han_viet_other": [
+      "Nghiễn",
+      "Nghiến",
+      "Nghiền",
+      "Nghiện"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "mài; nghiên cứu",
+    "on_readings": [
+      "ケン"
+    ],
+    "kun_readings": [
+      "と.ぐ"
+    ]
+  },
+  {
+    "card_id": "kanji:社",
+    "kanji": "社",
+    "han_viet_main": "Xã",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "công ty; xã; đền thờ",
+    "on_readings": [
+      "シャ"
+    ],
+    "kun_readings": [
+      "やしろ"
+    ]
+  },
+  {
+    "card_id": "kanji:私",
+    "kanji": "私",
+    "han_viet_main": "Tư",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "tôi; riêng tư",
+    "on_readings": [
+      "シ"
+    ],
+    "kun_readings": [
+      "わたくし",
+      "わたし"
+    ]
+  },
+  {
+    "card_id": "kanji:秋",
+    "kanji": "秋",
+    "han_viet_main": "Thu",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "mùa thu",
+    "on_readings": [
+      "シュウ"
+    ],
+    "kun_readings": [
+      "あき",
+      "とき"
+    ]
+  },
+  {
+    "card_id": "kanji:究",
+    "kanji": "究",
+    "han_viet_main": "Cứu",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nghiên cứu; cứu xét",
+    "on_readings": [
+      "キュウ",
+      "ク"
+    ],
+    "kun_readings": [
+      "きわ.める"
+    ]
+  },
+  {
+    "card_id": "kanji:空",
+    "kanji": "空",
+    "han_viet_main": "Không",
+    "han_viet_other": [
+      "Khống",
+      "Khổng"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "trống; bầu trời; không",
+    "on_readings": [
+      "クウ"
+    ],
+    "kun_readings": [
+      "そら",
+      "あ.く",
+      "あ.き",
+      "あ.ける",
+      "から",
+      "す.く",
+      "す.かす",
+      "むな.しい"
+    ]
+  },
+  {
+    "card_id": "kanji:立",
+    "kanji": "立",
+    "han_viet_main": "Lập",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "đứng; dựng lên",
+    "on_readings": [
+      "リツ",
+      "リュウ",
+      "リットル"
+    ],
+    "kun_readings": [
+      "た.つ",
+      "-た.つ",
+      "た.ち-",
+      "た.てる",
+      "-た.てる",
+      "た.て-",
+      "たて-",
+      "-た.て",
+      "-だ.て",
+      "-だ.てる"
+    ]
+  },
+  {
+    "card_id": "kanji:答",
+    "kanji": "答",
+    "han_viet_main": "Đáp",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "trả lời; đáp án",
+    "on_readings": [
+      "トウ"
+    ],
+    "kun_readings": [
+      "こた.える",
+      "こた.え"
+    ]
+  },
+  {
+    "card_id": "kanji:紙",
+    "kanji": "紙",
+    "han_viet_main": "Chỉ",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "giấy",
+    "on_readings": [
+      "シ"
+    ],
+    "kun_readings": [
+      "かみ"
+    ]
+  },
+  {
+    "card_id": "kanji:終",
+    "kanji": "終",
+    "han_viet_main": "Chung",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "kết thúc; chung",
+    "on_readings": [
+      "シュウ"
+    ],
+    "kun_readings": [
+      "お.わる",
+      "-お.わる",
+      "おわ.る",
+      "お.える",
+      "つい",
+      "つい.に"
+    ]
+  },
+  {
+    "card_id": "kanji:習",
+    "kanji": "習",
+    "han_viet_main": "Tập",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "học; tập; luyện tập",
+    "on_readings": [
+      "シュウ",
+      "ジュ"
+    ],
+    "kun_readings": [
+      "なら.う",
+      "なら.い"
+    ]
+  },
+  {
+    "card_id": "kanji:考",
+    "kanji": "考",
+    "han_viet_main": "Khảo",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "suy nghĩ; khảo",
+    "on_readings": [
+      "コウ"
+    ],
+    "kun_readings": [
+      "かんが.える",
+      "かんが.え"
+    ]
+  },
+  {
+    "card_id": "kanji:者",
+    "kanji": "者",
+    "han_viet_main": "Giả",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "người",
+    "on_readings": [
+      "シャ"
+    ],
+    "kun_readings": [
+      "もの"
+    ]
+  },
+  {
+    "card_id": "kanji:聞",
+    "kanji": "聞",
+    "han_viet_main": "Văn",
+    "han_viet_other": [
+      "Vấn",
+      "Vặn"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nghe; hỏi",
+    "on_readings": [
+      "ブン",
+      "モン"
+    ],
+    "kun_readings": [
+      "き.く",
+      "き.こえる"
+    ]
+  },
+  {
+    "card_id": "kanji:肉",
+    "kanji": "肉",
+    "han_viet_main": "Nhục",
+    "han_viet_other": [
+      "Nhụ",
+      "Nậu"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "thịt",
+    "on_readings": [
+      "ニク"
+    ],
+    "kun_readings": [
+      "しし"
+    ]
+  },
+  {
+    "card_id": "kanji:自",
+    "kanji": "自",
+    "han_viet_main": "Tự",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "tự; bản thân",
+    "on_readings": [
+      "ジ",
+      "シ"
+    ],
+    "kun_readings": [
+      "みずか.ら",
+      "おの.ずから",
+      "おの.ずと"
+    ]
+  },
+  {
+    "card_id": "kanji:色",
+    "kanji": "色",
+    "han_viet_main": "Sắc",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "màu sắc",
+    "on_readings": [
+      "ショク",
+      "シキ"
+    ],
+    "kun_readings": [
+      "いろ"
+    ]
+  },
+  {
+    "card_id": "kanji:花",
+    "kanji": "花",
+    "han_viet_main": "Hoa",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "hoa",
+    "on_readings": [
+      "カ",
+      "ケ"
+    ],
+    "kun_readings": [
+      "はな"
+    ]
+  },
+  {
+    "card_id": "kanji:英",
+    "kanji": "英",
+    "han_viet_main": "Anh",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nước Anh; tiếng Anh; anh tài",
+    "on_readings": [
+      "エイ"
+    ],
+    "kun_readings": [
+      "はなぶさ"
+    ]
+  },
+  {
+    "card_id": "kanji:茶",
+    "kanji": "茶",
+    "han_viet_main": "Trà",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "trà",
+    "on_readings": [
+      "チャ",
+      "サ"
+    ],
+    "kun_readings": []
+  },
+  {
+    "card_id": "kanji:行",
+    "kanji": "行",
+    "han_viet_main": "Hành",
+    "han_viet_other": [
+      "Hạnh",
+      "Hàng",
+      "Hạng"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "đi; hành",
+    "on_readings": [
+      "コウ",
+      "ギョウ",
+      "アン"
+    ],
+    "kun_readings": [
+      "い.く",
+      "ゆ.く",
+      "-ゆ.き",
+      "-ゆき",
+      "-い.き",
+      "-いき",
+      "おこな.う",
+      "おこ.なう"
+    ]
+  },
+  {
+    "card_id": "kanji:西",
+    "kanji": "西",
+    "han_viet_main": "Tây",
+    "han_viet_other": [
+      "Tê"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "tây",
+    "on_readings": [
+      "セイ",
+      "サイ",
+      "ス"
+    ],
+    "kun_readings": [
+      "にし"
+    ]
+  },
+  {
+    "card_id": "kanji:見",
+    "kanji": "見",
+    "han_viet_main": "Kiến",
+    "han_viet_other": [
+      "Hiện"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nhìn; thấy",
+    "on_readings": [
+      "ケン"
+    ],
+    "kun_readings": [
+      "み.る",
+      "み.える",
+      "み.せる"
+    ]
+  },
+  {
+    "card_id": "kanji:親",
+    "kanji": "親",
+    "han_viet_main": "Thân",
+    "han_viet_other": [
+      "Thấn"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "cha mẹ; thân thiết",
+    "on_readings": [
+      "シン"
+    ],
+    "kun_readings": [
+      "おや",
+      "おや-",
+      "した.しい",
+      "した.しむ"
+    ]
+  },
+  {
+    "card_id": "kanji:言",
+    "kanji": "言",
+    "han_viet_main": "Ngôn",
+    "han_viet_other": [
+      "Ngân"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nói; lời nói",
+    "on_readings": [
+      "ゲン",
+      "ゴン"
+    ],
+    "kun_readings": [
+      "い.う",
+      "こと"
+    ]
+  },
+  {
+    "card_id": "kanji:計",
+    "kanji": "計",
+    "han_viet_main": "Kế",
+    "han_viet_other": [
+      "Kê"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "đo; kế hoạch; tính",
+    "on_readings": [
+      "ケイ"
+    ],
+    "kun_readings": [
+      "はか.る",
+      "はか.らう"
+    ]
+  },
+  {
+    "card_id": "kanji:試",
+    "kanji": "試",
+    "han_viet_main": "Thí",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "thử; thi",
+    "on_readings": [
+      "シ"
+    ],
+    "kun_readings": [
+      "こころ.みる",
+      "ため.す"
+    ]
+  },
+  {
+    "card_id": "kanji:話",
+    "kanji": "話",
+    "han_viet_main": "Thoại",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nói chuyện; câu chuyện",
+    "on_readings": [
+      "ワ"
+    ],
+    "kun_readings": [
+      "はな.す",
+      "はなし"
+    ]
+  },
+  {
+    "card_id": "kanji:語",
+    "kanji": "語",
+    "han_viet_main": "Ngữ",
+    "han_viet_other": [
+      "Ngứ"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "từ; tiếng; ngôn ngữ",
+    "on_readings": [
+      "ゴ"
+    ],
+    "kun_readings": [
+      "かた.る",
+      "かた.らう"
+    ]
+  },
+  {
+    "card_id": "kanji:読",
+    "kanji": "読",
+    "han_viet_main": "Độc",
+    "han_viet_other": [
+      "Đậu"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "đọc",
+    "on_readings": [
+      "ドク",
+      "トク",
+      "トウ"
+    ],
+    "kun_readings": [
+      "よ.む",
+      "-よ.み"
+    ]
+  },
+  {
+    "card_id": "kanji:買",
+    "kanji": "買",
+    "han_viet_main": "Mãi",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "mua",
+    "on_readings": [
+      "バイ"
+    ],
+    "kun_readings": [
+      "か.う"
+    ]
+  },
+  {
+    "card_id": "kanji:貸",
+    "kanji": "貸",
+    "han_viet_main": "Thải",
+    "han_viet_other": [
+      "Thắc"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "cho mượn; cho thuê",
+    "on_readings": [
+      "タイ"
+    ],
+    "kun_readings": [
+      "か.す",
+      "か.し-",
+      "かし-"
+    ]
+  },
+  {
+    "card_id": "kanji:質",
+    "kanji": "質",
+    "han_viet_main": "Chất",
+    "han_viet_other": [
+      "Chí"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "chất; chất lượng",
+    "on_readings": [
+      "シツ",
+      "シチ",
+      "チ"
+    ],
+    "kun_readings": [
+      "たち",
+      "ただ.す",
+      "もと",
+      "わりふ"
+    ]
+  },
+  {
+    "card_id": "kanji:赤",
+    "kanji": "赤",
+    "han_viet_main": "Xích",
+    "han_viet_other": [
+      "Thích"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "đỏ",
+    "on_readings": [
+      "セキ",
+      "シャク"
+    ],
+    "kun_readings": [
+      "あか",
+      "あか-",
+      "あか.い",
+      "あか.らむ",
+      "あか.らめる"
+    ]
+  },
+  {
+    "card_id": "kanji:走",
+    "kanji": "走",
+    "han_viet_main": "Tẩu",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "chạy",
+    "on_readings": [
+      "ソウ"
+    ],
+    "kun_readings": [
+      "はし.る"
+    ]
+  },
+  {
+    "card_id": "kanji:起",
+    "kanji": "起",
+    "han_viet_main": "Khởi",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "dậy; khởi; xảy ra",
+    "on_readings": [
+      "キ"
+    ],
+    "kun_readings": [
+      "お.きる",
+      "お.こる",
+      "お.こす",
+      "おこ.す",
+      "た.つ"
+    ]
+  },
+  {
+    "card_id": "kanji:足",
+    "kanji": "足",
+    "han_viet_main": "Túc",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "chân; đủ",
+    "on_readings": [
+      "ソク"
+    ],
+    "kun_readings": [
+      "あし",
+      "た.りる",
+      "た.る",
+      "た.す"
+    ]
+  },
+  {
+    "card_id": "kanji:車",
+    "kanji": "車",
+    "han_viet_main": "Xa",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "xe",
+    "on_readings": [
+      "シャ"
+    ],
+    "kun_readings": [
+      "くるま"
+    ]
+  },
+  {
+    "card_id": "kanji:転",
+    "kanji": "転",
+    "han_viet_main": "Chuyển",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "xoay; chuyển; ngã",
+    "on_readings": [
+      "テン"
+    ],
+    "kun_readings": [
+      "ころ.がる",
+      "ころ.げる",
+      "ころ.がす",
+      "ころ.ぶ",
+      "まろ.ぶ",
+      "うたた",
+      "うつ.る",
+      "くる.めく"
+    ]
+  },
+  {
+    "card_id": "kanji:近",
+    "kanji": "近",
+    "han_viet_main": "Cận",
+    "han_viet_other": [
+      "Cấn",
+      "Ký"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "gần",
+    "on_readings": [
+      "キン",
+      "コン"
+    ],
+    "kun_readings": [
+      "ちか.い"
+    ]
+  },
+  {
+    "card_id": "kanji:送",
+    "kanji": "送",
+    "han_viet_main": "Tống",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "gửi; tiễn",
+    "on_readings": [
+      "ソウ"
+    ],
+    "kun_readings": [
+      "おく.る"
+    ]
+  },
+  {
+    "card_id": "kanji:通",
+    "kanji": "通",
+    "han_viet_main": "Thông",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "đi qua; thông; đi lại",
+    "on_readings": [
+      "ツウ",
+      "ツ"
+    ],
+    "kun_readings": [
+      "とお.る",
+      "とお.り",
+      "-とお.り",
+      "-どお.り",
+      "とお.す",
+      "とお.し",
+      "-どお.し",
+      "かよ.う"
+    ]
+  },
+  {
+    "card_id": "kanji:週",
+    "kanji": "週",
+    "han_viet_main": "Chu",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "tuần",
+    "on_readings": [
+      "シュウ"
+    ],
+    "kun_readings": []
+  },
+  {
+    "card_id": "kanji:運",
+    "kanji": "運",
+    "han_viet_main": "Vận",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "vận chuyển; vận may",
+    "on_readings": [
+      "ウン"
+    ],
+    "kun_readings": [
+      "はこ.ぶ"
+    ]
+  },
+  {
+    "card_id": "kanji:道",
+    "kanji": "道",
+    "han_viet_main": "Đạo",
+    "han_viet_other": [
+      "Đáo"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "đường; đạo",
+    "on_readings": [
+      "ドウ",
+      "トウ"
+    ],
+    "kun_readings": [
+      "みち",
+      "いう"
+    ]
+  },
+  {
+    "card_id": "kanji:重",
+    "kanji": "重",
+    "han_viet_main": "Trọng",
+    "han_viet_other": [
+      "Trùng"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nặng; quan trọng",
+    "on_readings": [
+      "ジュウ",
+      "チョウ"
+    ],
+    "kun_readings": [
+      "え",
+      "おも.い",
+      "おも.り",
+      "おも.なう",
+      "かさ.ねる",
+      "かさ.なる",
+      "おも"
+    ]
+  },
+  {
+    "card_id": "kanji:野",
+    "kanji": "野",
+    "han_viet_main": "Dã",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "cánh đồng; đồng nội",
+    "on_readings": [
+      "ヤ",
+      "ショ"
+    ],
+    "kun_readings": [
+      "の",
+      "の-"
+    ]
+  },
+  {
+    "card_id": "kanji:金",
+    "kanji": "金",
+    "han_viet_main": "Kim",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "vàng; tiền; kim loại",
+    "on_readings": [
+      "キン",
+      "コン",
+      "ゴン"
+    ],
+    "kun_readings": [
+      "かね",
+      "かな-",
+      "-がね"
+    ]
+  },
+  {
+    "card_id": "kanji:銀",
+    "kanji": "銀",
+    "han_viet_main": "Ngân",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "bạc; ngân",
+    "on_readings": [
+      "ギン"
+    ],
+    "kun_readings": [
+      "しろがね"
+    ]
+  },
+  {
+    "card_id": "kanji:長",
+    "kanji": "長",
+    "han_viet_main": "Trường",
+    "han_viet_other": [
+      "Trưởng",
+      "Trướng"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "dài; trưởng",
+    "on_readings": [
+      "チョウ"
+    ],
+    "kun_readings": [
+      "なが.い",
+      "おさ"
+    ]
+  },
+  {
+    "card_id": "kanji:開",
+    "kanji": "開",
+    "han_viet_main": "Khai",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "mở",
+    "on_readings": [
+      "カイ"
+    ],
+    "kun_readings": [
+      "ひら.く",
+      "ひら.き",
+      "-びら.き",
+      "ひら.ける",
+      "あ.く",
+      "あ.ける"
+    ]
+  },
+  {
+    "card_id": "kanji:間",
+    "kanji": "間",
+    "han_viet_main": "Gian",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "khoảng giữa; gian",
+    "on_readings": [
+      "カン",
+      "ケン"
+    ],
+    "kun_readings": [
+      "あいだ",
+      "ま",
+      "あい"
+    ]
+  },
+  {
+    "card_id": "kanji:院",
+    "kanji": "院",
+    "han_viet_main": "Viện",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "viện; cơ sở; chùa",
+    "on_readings": [
+      "イン"
+    ],
+    "kun_readings": []
+  },
+  {
+    "card_id": "kanji:集",
+    "kanji": "集",
+    "han_viet_main": "Tập",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "tập hợp; thu thập",
+    "on_readings": [
+      "シュウ"
+    ],
+    "kun_readings": [
+      "あつ.まる",
+      "あつ.める",
+      "つど.う"
+    ]
+  },
+  {
+    "card_id": "kanji:雨",
+    "kanji": "雨",
+    "han_viet_main": "Vũ",
+    "han_viet_other": [
+      "Vú"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "mưa",
+    "on_readings": [
+      "ウ"
+    ],
+    "kun_readings": [
+      "あめ",
+      "あま-",
+      "-さめ"
+    ]
+  },
+  {
+    "card_id": "kanji:電",
+    "kanji": "電",
+    "han_viet_main": "Điện",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "điện",
+    "on_readings": [
+      "デン"
+    ],
+    "kun_readings": []
+  },
+  {
+    "card_id": "kanji:青",
+    "kanji": "青",
+    "han_viet_main": "Thanh",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "xanh",
+    "on_readings": [
+      "セイ",
+      "ショウ"
+    ],
+    "kun_readings": [
+      "あお",
+      "あお-",
+      "あお.い"
+    ]
+  },
+  {
+    "card_id": "kanji:音",
+    "kanji": "音",
+    "han_viet_main": "Âm",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "âm thanh",
+    "on_readings": [
+      "オン",
+      "イン",
+      "-ノン"
+    ],
+    "kun_readings": [
+      "おと",
+      "ね"
+    ]
+  },
+  {
+    "card_id": "kanji:題",
+    "kanji": "題",
+    "han_viet_main": "Đề",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "đề; chủ đề",
+    "on_readings": [
+      "ダイ"
+    ],
+    "kun_readings": []
+  },
+  {
+    "card_id": "kanji:風",
+    "kanji": "風",
+    "han_viet_main": "Phong",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "gió; phong cách",
+    "on_readings": [
+      "フウ",
+      "フ"
+    ],
+    "kun_readings": [
+      "かぜ",
+      "かざ-"
+    ]
+  },
+  {
+    "card_id": "kanji:食",
+    "kanji": "食",
+    "han_viet_main": "Thực",
+    "han_viet_other": [
+      "Tự"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "ăn; thức ăn",
+    "on_readings": [
+      "ショク",
+      "ジキ"
+    ],
+    "kun_readings": [
+      "く.う",
+      "く.らう",
+      "た.べる",
+      "は.む"
+    ]
+  },
+  {
+    "card_id": "kanji:飯",
+    "kanji": "飯",
+    "han_viet_main": "Phạn",
+    "han_viet_other": [
+      "Phãn"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "cơm; bữa ăn",
+    "on_readings": [
+      "ハン"
+    ],
+    "kun_readings": [
+      "めし"
+    ]
+  },
+  {
+    "card_id": "kanji:飲",
+    "kanji": "飲",
+    "han_viet_main": "Ẩm",
+    "han_viet_other": [
+      "Ấm",
+      "Hẩm",
+      "Ỡm"
+    ],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "uống",
+    "on_readings": [
+      "イン",
+      "オン"
+    ],
+    "kun_readings": [
+      "の.む",
+      "-の.み"
+    ]
+  },
+  {
+    "card_id": "kanji:館",
+    "kanji": "館",
+    "han_viet_main": "Quán",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "tòa nhà lớn; quán; viện",
+    "on_readings": [
+      "カン"
+    ],
+    "kun_readings": [
+      "やかた",
+      "たて"
+    ]
+  },
+  {
+    "card_id": "kanji:駅",
+    "kanji": "駅",
+    "han_viet_main": "Dịch",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "nhà ga",
+    "on_readings": [
+      "エキ"
+    ],
+    "kun_readings": []
+  },
+  {
+    "card_id": "kanji:験",
+    "kanji": "験",
+    "han_viet_main": "Nghiệm",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "thử nghiệm; kiểm nghiệm",
+    "on_readings": [
+      "ケン",
+      "ゲン"
+    ],
+    "kun_readings": [
+      "あかし",
+      "しるし",
+      "ため.す",
+      "ためし"
+    ]
+  },
+  {
+    "card_id": "kanji:高",
+    "kanji": "高",
+    "han_viet_main": "Cao",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "cao; đắt",
+    "on_readings": [
+      "コウ"
+    ],
+    "kun_readings": [
+      "たか.い",
+      "たか",
+      "-だか",
+      "たか.まる",
+      "たか.める"
+    ]
+  },
+  {
+    "card_id": "kanji:魚",
+    "kanji": "魚",
+    "han_viet_main": "Ngư",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "cá",
+    "on_readings": [
+      "ギョ"
+    ],
+    "kun_readings": [
+      "うお",
+      "さかな",
+      "-ざかな"
+    ]
+  },
+  {
+    "card_id": "kanji:鳥",
+    "kanji": "鳥",
+    "han_viet_main": "Điểu",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "chim",
+    "on_readings": [
+      "チョウ"
+    ],
+    "kun_readings": [
+      "とり"
+    ]
+  },
+  {
+    "card_id": "kanji:黒",
+    "kanji": "黒",
+    "han_viet_main": "Hắc",
+    "han_viet_other": [],
+    "han_viet_source": "kanjidic2",
+    "meaning_vi": "đen",
+    "on_readings": [
+      "コク"
+    ],
+    "kun_readings": [
+      "くろ",
+      "くろ.ずむ",
+      "くろ.い"
+    ]
+  }
+]

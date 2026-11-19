@@ -14,7 +14,10 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "data:build": "node scripts/data/build.mjs",
+    "data:check": "node scripts/data/check.mjs",
+    "data:import": "node scripts/data/import.mjs"
   },
   "dependencies": {
     "@serwist/turbopack": "9.5.13",

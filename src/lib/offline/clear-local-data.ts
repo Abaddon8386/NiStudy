@@ -1,9 +1,11 @@
+import { clearOutbox } from "@/lib/learning/outbox";
+
 /**
  * Xóa dữ liệu cục bộ của ứng dụng khi đăng xuất / xóa tài khoản (FR-03, FR-30).
- * TODO (FR-30): khi có outbox lượt ôn, phải cảnh báo/gửi trước khi gọi hàm này; nếu offline mà người dùng
- * vẫn đăng xuất thì mới xóa. Hiện chưa có outbox nên xóa thẳng.
+ * Nơi gọi phải cảnh báo/gửi hàng chờ lượt ôn trước (xem SignOutButton); hàm này xóa sạch hàng chờ trong bộ nhớ.
  */
 export async function clearLocalData(): Promise<void> {
+  clearOutbox();
   try {
     sessionStorage.clear();
   } catch {

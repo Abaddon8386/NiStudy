@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Danh sách kanji JLPT N5, N4 (tanos.co.uk)",
+    "author": "Jonathan Waller",
+    "license": "CC BY (theo nguồn thứ cấp)",
+    "url": "https://github.com/Bluskyo/JLPT_Vocabulary (commit d29a678, mirror của tanos.co.uk)",
+    "downloaded_on": "2026-11-18",
+    "note": "Cấp JLPT của kanji; lấy qua mirror, chưa đọc được trang gốc"
+  },
+  {
+    "name": "Danh sách từ vựng JLPT N5, N4 (tanos.co.uk)",
+    "author": "Jonathan Waller",
+    "license": "CC BY (theo nguồn thứ cấp)",
+    "url": "https://github.com/Bluskyo/JLPT_Vocabulary (commit d29a678, mirror của tanos.co.uk)",
+    "downloaded_on": "2026-11-18",
+    "note": "Cấp JLPT và thứ tự của từ vựng; lấy qua mirror, chưa đọc được trang gốc"
+  },
+  {
+    "name": "JMdict_e",
+    "author": "Electronic Dictionary Research and Development Group (EDRDG)",
+    "license": "CC BY-SA 4.0",
+    "url": "https://www.edrdg.org/jmdict/j_jmdict.html",
+    "downloaded_on": "2026-11-18",
+    "note": "JMdict created 2026-11-18; mã mục, cách đọc, nghĩa tiếng Anh làm gốc dịch"
+  },
+  {
+    "name": "KANJIDIC2",
+    "author": "Electronic Dictionary Research and Development Group (EDRDG)",
+    "license": "CC BY-SA 4.0",
+    "url": "https://www.edrdg.org/kanjidic/kanjd2index.html",
+    "downloaded_on": "2026-11-18",
+    "note": "database_version 2026-322; âm Hán Việt, âm on/kun, nghĩa tiếng Anh làm gốc dịch"
+  }
+]

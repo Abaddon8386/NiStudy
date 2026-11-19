@@ -1,0 +1,1458 @@
+[
+  {
+    "card_id": "kana:hira:a",
+    "script": "hira",
+    "kana": "あ",
+    "romaji": "a",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:ba",
+    "script": "hira",
+    "kana": "ば",
+    "romaji": "ba",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:be",
+    "script": "hira",
+    "kana": "べ",
+    "romaji": "be",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:bi",
+    "script": "hira",
+    "kana": "び",
+    "romaji": "bi",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:bo",
+    "script": "hira",
+    "kana": "ぼ",
+    "romaji": "bo",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:bu",
+    "script": "hira",
+    "kana": "ぶ",
+    "romaji": "bu",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:bya",
+    "script": "hira",
+    "kana": "びゃ",
+    "romaji": "bya",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:byo",
+    "script": "hira",
+    "kana": "びょ",
+    "romaji": "byo",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:byu",
+    "script": "hira",
+    "kana": "びゅ",
+    "romaji": "byu",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:cha",
+    "script": "hira",
+    "kana": "ちゃ",
+    "romaji": "cha",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:chi",
+    "script": "hira",
+    "kana": "ち",
+    "romaji": "chi",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:cho",
+    "script": "hira",
+    "kana": "ちょ",
+    "romaji": "cho",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:chu",
+    "script": "hira",
+    "kana": "ちゅ",
+    "romaji": "chu",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:da",
+    "script": "hira",
+    "kana": "だ",
+    "romaji": "da",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:de",
+    "script": "hira",
+    "kana": "で",
+    "romaji": "de",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:di",
+    "script": "hira",
+    "kana": "ぢ",
+    "romaji": "ji",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:do",
+    "script": "hira",
+    "kana": "ど",
+    "romaji": "do",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:du",
+    "script": "hira",
+    "kana": "づ",
+    "romaji": "zu",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:e",
+    "script": "hira",
+    "kana": "え",
+    "romaji": "e",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:fu",
+    "script": "hira",
+    "kana": "ふ",
+    "romaji": "fu",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:ga",
+    "script": "hira",
+    "kana": "が",
+    "romaji": "ga",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:ge",
+    "script": "hira",
+    "kana": "げ",
+    "romaji": "ge",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:gi",
+    "script": "hira",
+    "kana": "ぎ",
+    "romaji": "gi",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:go",
+    "script": "hira",
+    "kana": "ご",
+    "romaji": "go",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:gu",
+    "script": "hira",
+    "kana": "ぐ",
+    "romaji": "gu",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:gya",
+    "script": "hira",
+    "kana": "ぎゃ",
+    "romaji": "gya",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:gyo",
+    "script": "hira",
+    "kana": "ぎょ",
+    "romaji": "gyo",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:gyu",
+    "script": "hira",
+    "kana": "ぎゅ",
+    "romaji": "gyu",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:ha",
+    "script": "hira",
+    "kana": "は",
+    "romaji": "ha",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:he",
+    "script": "hira",
+    "kana": "へ",
+    "romaji": "he",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:hi",
+    "script": "hira",
+    "kana": "ひ",
+    "romaji": "hi",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:ho",
+    "script": "hira",
+    "kana": "ほ",
+    "romaji": "ho",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:hya",
+    "script": "hira",
+    "kana": "ひゃ",
+    "romaji": "hya",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:hyo",
+    "script": "hira",
+    "kana": "ひょ",
+    "romaji": "hyo",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:hyu",
+    "script": "hira",
+    "kana": "ひゅ",
+    "romaji": "hyu",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:i",
+    "script": "hira",
+    "kana": "い",
+    "romaji": "i",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:ja",
+    "script": "hira",
+    "kana": "じゃ",
+    "romaji": "ja",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:ji",
+    "script": "hira",
+    "kana": "じ",
+    "romaji": "ji",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:jo",
+    "script": "hira",
+    "kana": "じょ",
+    "romaji": "jo",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:ju",
+    "script": "hira",
+    "kana": "じゅ",
+    "romaji": "ju",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:ka",
+    "script": "hira",
+    "kana": "か",
+    "romaji": "ka",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:ke",
+    "script": "hira",
+    "kana": "け",
+    "romaji": "ke",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:ki",
+    "script": "hira",
+    "kana": "き",
+    "romaji": "ki",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:ko",
+    "script": "hira",
+    "kana": "こ",
+    "romaji": "ko",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:ku",
+    "script": "hira",
+    "kana": "く",
+    "romaji": "ku",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:kya",
+    "script": "hira",
+    "kana": "きゃ",
+    "romaji": "kya",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:kyo",
+    "script": "hira",
+    "kana": "きょ",
+    "romaji": "kyo",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:kyu",
+    "script": "hira",
+    "kana": "きゅ",
+    "romaji": "kyu",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:ma",
+    "script": "hira",
+    "kana": "ま",
+    "romaji": "ma",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:me",
+    "script": "hira",
+    "kana": "め",
+    "romaji": "me",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:mi",
+    "script": "hira",
+    "kana": "み",
+    "romaji": "mi",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:mo",
+    "script": "hira",
+    "kana": "も",
+    "romaji": "mo",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:mu",
+    "script": "hira",
+    "kana": "む",
+    "romaji": "mu",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:mya",
+    "script": "hira",
+    "kana": "みゃ",
+    "romaji": "mya",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:myo",
+    "script": "hira",
+    "kana": "みょ",
+    "romaji": "myo",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:myu",
+    "script": "hira",
+    "kana": "みゅ",
+    "romaji": "myu",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:n",
+    "script": "hira",
+    "kana": "ん",
+    "romaji": "n",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:na",
+    "script": "hira",
+    "kana": "な",
+    "romaji": "na",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:ne",
+    "script": "hira",
+    "kana": "ね",
+    "romaji": "ne",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:ni",
+    "script": "hira",
+    "kana": "に",
+    "romaji": "ni",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:no",
+    "script": "hira",
+    "kana": "の",
+    "romaji": "no",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:nu",
+    "script": "hira",
+    "kana": "ぬ",
+    "romaji": "nu",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:nya",
+    "script": "hira",
+    "kana": "にゃ",
+    "romaji": "nya",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:nyo",
+    "script": "hira",
+    "kana": "にょ",
+    "romaji": "nyo",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:nyu",
+    "script": "hira",
+    "kana": "にゅ",
+    "romaji": "nyu",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:o",
+    "script": "hira",
+    "kana": "お",
+    "romaji": "o",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:pa",
+    "script": "hira",
+    "kana": "ぱ",
+    "romaji": "pa",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:pe",
+    "script": "hira",
+    "kana": "ぺ",
+    "romaji": "pe",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:pi",
+    "script": "hira",
+    "kana": "ぴ",
+    "romaji": "pi",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:po",
+    "script": "hira",
+    "kana": "ぽ",
+    "romaji": "po",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:pu",
+    "script": "hira",
+    "kana": "ぷ",
+    "romaji": "pu",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:pya",
+    "script": "hira",
+    "kana": "ぴゃ",
+    "romaji": "pya",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:pyo",
+    "script": "hira",
+    "kana": "ぴょ",
+    "romaji": "pyo",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:pyu",
+    "script": "hira",
+    "kana": "ぴゅ",
+    "romaji": "pyu",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:ra",
+    "script": "hira",
+    "kana": "ら",
+    "romaji": "ra",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:re",
+    "script": "hira",
+    "kana": "れ",
+    "romaji": "re",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:ri",
+    "script": "hira",
+    "kana": "り",
+    "romaji": "ri",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:ro",
+    "script": "hira",
+    "kana": "ろ",
+    "romaji": "ro",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:ru",
+    "script": "hira",
+    "kana": "る",
+    "romaji": "ru",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:rya",
+    "script": "hira",
+    "kana": "りゃ",
+    "romaji": "rya",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:ryo",
+    "script": "hira",
+    "kana": "りょ",
+    "romaji": "ryo",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:ryu",
+    "script": "hira",
+    "kana": "りゅ",
+    "romaji": "ryu",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:sa",
+    "script": "hira",
+    "kana": "さ",
+    "romaji": "sa",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:se",
+    "script": "hira",
+    "kana": "せ",
+    "romaji": "se",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:sha",
+    "script": "hira",
+    "kana": "しゃ",
+    "romaji": "sha",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:shi",
+    "script": "hira",
+    "kana": "し",
+    "romaji": "shi",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:sho",
+    "script": "hira",
+    "kana": "しょ",
+    "romaji": "sho",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:shu",
+    "script": "hira",
+    "kana": "しゅ",
+    "romaji": "shu",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:hira:so",
+    "script": "hira",
+    "kana": "そ",
+    "romaji": "so",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:su",
+    "script": "hira",
+    "kana": "す",
+    "romaji": "su",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:ta",
+    "script": "hira",
+    "kana": "た",
+    "romaji": "ta",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:te",
+    "script": "hira",
+    "kana": "て",
+    "romaji": "te",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:to",
+    "script": "hira",
+    "kana": "と",
+    "romaji": "to",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:tsu",
+    "script": "hira",
+    "kana": "つ",
+    "romaji": "tsu",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:u",
+    "script": "hira",
+    "kana": "う",
+    "romaji": "u",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:wa",
+    "script": "hira",
+    "kana": "わ",
+    "romaji": "wa",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:wo",
+    "script": "hira",
+    "kana": "を",
+    "romaji": "wo",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:ya",
+    "script": "hira",
+    "kana": "や",
+    "romaji": "ya",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:yo",
+    "script": "hira",
+    "kana": "よ",
+    "romaji": "yo",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:yu",
+    "script": "hira",
+    "kana": "ゆ",
+    "romaji": "yu",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:hira:za",
+    "script": "hira",
+    "kana": "ざ",
+    "romaji": "za",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:ze",
+    "script": "hira",
+    "kana": "ぜ",
+    "romaji": "ze",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:zo",
+    "script": "hira",
+    "kana": "ぞ",
+    "romaji": "zo",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:hira:zu",
+    "script": "hira",
+    "kana": "ず",
+    "romaji": "zu",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:a",
+    "script": "kata",
+    "kana": "ア",
+    "romaji": "a",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:ba",
+    "script": "kata",
+    "kana": "バ",
+    "romaji": "ba",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:be",
+    "script": "kata",
+    "kana": "ベ",
+    "romaji": "be",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:bi",
+    "script": "kata",
+    "kana": "ビ",
+    "romaji": "bi",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:bo",
+    "script": "kata",
+    "kana": "ボ",
+    "romaji": "bo",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:bu",
+    "script": "kata",
+    "kana": "ブ",
+    "romaji": "bu",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:bya",
+    "script": "kata",
+    "kana": "ビャ",
+    "romaji": "bya",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:byo",
+    "script": "kata",
+    "kana": "ビョ",
+    "romaji": "byo",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:byu",
+    "script": "kata",
+    "kana": "ビュ",
+    "romaji": "byu",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:cha",
+    "script": "kata",
+    "kana": "チャ",
+    "romaji": "cha",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:chi",
+    "script": "kata",
+    "kana": "チ",
+    "romaji": "chi",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:cho",
+    "script": "kata",
+    "kana": "チョ",
+    "romaji": "cho",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:chu",
+    "script": "kata",
+    "kana": "チュ",
+    "romaji": "chu",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:da",
+    "script": "kata",
+    "kana": "ダ",
+    "romaji": "da",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:de",
+    "script": "kata",
+    "kana": "デ",
+    "romaji": "de",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:di",
+    "script": "kata",
+    "kana": "ヂ",
+    "romaji": "ji",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:do",
+    "script": "kata",
+    "kana": "ド",
+    "romaji": "do",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:du",
+    "script": "kata",
+    "kana": "ヅ",
+    "romaji": "zu",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:e",
+    "script": "kata",
+    "kana": "エ",
+    "romaji": "e",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:fu",
+    "script": "kata",
+    "kana": "フ",
+    "romaji": "fu",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:ga",
+    "script": "kata",
+    "kana": "ガ",
+    "romaji": "ga",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:ge",
+    "script": "kata",
+    "kana": "ゲ",
+    "romaji": "ge",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:gi",
+    "script": "kata",
+    "kana": "ギ",
+    "romaji": "gi",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:go",
+    "script": "kata",
+    "kana": "ゴ",
+    "romaji": "go",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:gu",
+    "script": "kata",
+    "kana": "グ",
+    "romaji": "gu",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:gya",
+    "script": "kata",
+    "kana": "ギャ",
+    "romaji": "gya",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:gyo",
+    "script": "kata",
+    "kana": "ギョ",
+    "romaji": "gyo",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:gyu",
+    "script": "kata",
+    "kana": "ギュ",
+    "romaji": "gyu",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:ha",
+    "script": "kata",
+    "kana": "ハ",
+    "romaji": "ha",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:he",
+    "script": "kata",
+    "kana": "ヘ",
+    "romaji": "he",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:hi",
+    "script": "kata",
+    "kana": "ヒ",
+    "romaji": "hi",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:ho",
+    "script": "kata",
+    "kana": "ホ",
+    "romaji": "ho",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:hya",
+    "script": "kata",
+    "kana": "ヒャ",
+    "romaji": "hya",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:hyo",
+    "script": "kata",
+    "kana": "ヒョ",
+    "romaji": "hyo",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:hyu",
+    "script": "kata",
+    "kana": "ヒュ",
+    "romaji": "hyu",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:i",
+    "script": "kata",
+    "kana": "イ",
+    "romaji": "i",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:ja",
+    "script": "kata",
+    "kana": "ジャ",
+    "romaji": "ja",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:ji",
+    "script": "kata",
+    "kana": "ジ",
+    "romaji": "ji",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:jo",
+    "script": "kata",
+    "kana": "ジョ",
+    "romaji": "jo",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:ju",
+    "script": "kata",
+    "kana": "ジュ",
+    "romaji": "ju",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:ka",
+    "script": "kata",
+    "kana": "カ",
+    "romaji": "ka",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:ke",
+    "script": "kata",
+    "kana": "ケ",
+    "romaji": "ke",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:ki",
+    "script": "kata",
+    "kana": "キ",
+    "romaji": "ki",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:ko",
+    "script": "kata",
+    "kana": "コ",
+    "romaji": "ko",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:ku",
+    "script": "kata",
+    "kana": "ク",
+    "romaji": "ku",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:kya",
+    "script": "kata",
+    "kana": "キャ",
+    "romaji": "kya",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:kyo",
+    "script": "kata",
+    "kana": "キョ",
+    "romaji": "kyo",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:kyu",
+    "script": "kata",
+    "kana": "キュ",
+    "romaji": "kyu",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:ma",
+    "script": "kata",
+    "kana": "マ",
+    "romaji": "ma",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:me",
+    "script": "kata",
+    "kana": "メ",
+    "romaji": "me",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:mi",
+    "script": "kata",
+    "kana": "ミ",
+    "romaji": "mi",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:mo",
+    "script": "kata",
+    "kana": "モ",
+    "romaji": "mo",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:mu",
+    "script": "kata",
+    "kana": "ム",
+    "romaji": "mu",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:mya",
+    "script": "kata",
+    "kana": "ミャ",
+    "romaji": "mya",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:myo",
+    "script": "kata",
+    "kana": "ミョ",
+    "romaji": "myo",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:myu",
+    "script": "kata",
+    "kana": "ミュ",
+    "romaji": "myu",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:n",
+    "script": "kata",
+    "kana": "ン",
+    "romaji": "n",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:na",
+    "script": "kata",
+    "kana": "ナ",
+    "romaji": "na",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:ne",
+    "script": "kata",
+    "kana": "ネ",
+    "romaji": "ne",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:ni",
+    "script": "kata",
+    "kana": "ニ",
+    "romaji": "ni",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:no",
+    "script": "kata",
+    "kana": "ノ",
+    "romaji": "no",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:nu",
+    "script": "kata",
+    "kana": "ヌ",
+    "romaji": "nu",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:nya",
+    "script": "kata",
+    "kana": "ニャ",
+    "romaji": "nya",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:nyo",
+    "script": "kata",
+    "kana": "ニョ",
+    "romaji": "nyo",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:nyu",
+    "script": "kata",
+    "kana": "ニュ",
+    "romaji": "nyu",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:o",
+    "script": "kata",
+    "kana": "オ",
+    "romaji": "o",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:pa",
+    "script": "kata",
+    "kana": "パ",
+    "romaji": "pa",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:pe",
+    "script": "kata",
+    "kana": "ペ",
+    "romaji": "pe",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:pi",
+    "script": "kata",
+    "kana": "ピ",
+    "romaji": "pi",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:po",
+    "script": "kata",
+    "kana": "ポ",
+    "romaji": "po",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:pu",
+    "script": "kata",
+    "kana": "プ",
+    "romaji": "pu",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:pya",
+    "script": "kata",
+    "kana": "ピャ",
+    "romaji": "pya",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:pyo",
+    "script": "kata",
+    "kana": "ピョ",
+    "romaji": "pyo",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:pyu",
+    "script": "kata",
+    "kana": "ピュ",
+    "romaji": "pyu",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:ra",
+    "script": "kata",
+    "kana": "ラ",
+    "romaji": "ra",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:re",
+    "script": "kata",
+    "kana": "レ",
+    "romaji": "re",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:ri",
+    "script": "kata",
+    "kana": "リ",
+    "romaji": "ri",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:ro",
+    "script": "kata",
+    "kana": "ロ",
+    "romaji": "ro",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:ru",
+    "script": "kata",
+    "kana": "ル",
+    "romaji": "ru",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:rya",
+    "script": "kata",
+    "kana": "リャ",
+    "romaji": "rya",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:ryo",
+    "script": "kata",
+    "kana": "リョ",
+    "romaji": "ryo",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:ryu",
+    "script": "kata",
+    "kana": "リュ",
+    "romaji": "ryu",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:sa",
+    "script": "kata",
+    "kana": "サ",
+    "romaji": "sa",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:se",
+    "script": "kata",
+    "kana": "セ",
+    "romaji": "se",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:sha",
+    "script": "kata",
+    "kana": "シャ",
+    "romaji": "sha",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:shi",
+    "script": "kata",
+    "kana": "シ",
+    "romaji": "shi",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:sho",
+    "script": "kata",
+    "kana": "ショ",
+    "romaji": "sho",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:shu",
+    "script": "kata",
+    "kana": "シュ",
+    "romaji": "shu",
+    "grp": "yoon"
+  },
+  {
+    "card_id": "kana:kata:so",
+    "script": "kata",
+    "kana": "ソ",
+    "romaji": "so",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:su",
+    "script": "kata",
+    "kana": "ス",
+    "romaji": "su",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:ta",
+    "script": "kata",
+    "kana": "タ",
+    "romaji": "ta",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:te",
+    "script": "kata",
+    "kana": "テ",
+    "romaji": "te",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:to",
+    "script": "kata",
+    "kana": "ト",
+    "romaji": "to",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:tsu",
+    "script": "kata",
+    "kana": "ツ",
+    "romaji": "tsu",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:u",
+    "script": "kata",
+    "kana": "ウ",
+    "romaji": "u",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:wa",
+    "script": "kata",
+    "kana": "ワ",
+    "romaji": "wa",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:wo",
+    "script": "kata",
+    "kana": "ヲ",
+    "romaji": "wo",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:ya",
+    "script": "kata",
+    "kana": "ヤ",
+    "romaji": "ya",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:yo",
+    "script": "kata",
+    "kana": "ヨ",
+    "romaji": "yo",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:yu",
+    "script": "kata",
+    "kana": "ユ",
+    "romaji": "yu",
+    "grp": "basic"
+  },
+  {
+    "card_id": "kana:kata:za",
+    "script": "kata",
+    "kana": "ザ",
+    "romaji": "za",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:ze",
+    "script": "kata",
+    "kana": "ゼ",
+    "romaji": "ze",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:zo",
+    "script": "kata",
+    "kana": "ゾ",
+    "romaji": "zo",
+    "grp": "dakuten"
+  },
+  {
+    "card_id": "kana:kata:zu",
+    "script": "kata",
+    "kana": "ズ",
+    "romaji": "zu",
+    "grp": "dakuten"
+  }
+]

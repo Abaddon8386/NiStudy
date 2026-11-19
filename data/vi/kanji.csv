@@ -1,76 +1,246 @@
-card_id,level,han_viet_main,meaning_vi,ghi_chu,nguoi_bien_soan
-kanji:本,N5,Bản,,căn bản 根本,"tác giả, duyệt 18/11/2026"
-kanji:長,N5,Trường,,trường thành 長城,"tác giả, duyệt 18/11/2026"
-kanji:行,N5,Hành,,hành động 行動,"tác giả, duyệt 18/11/2026"
-kanji:子,N5,Tử,,nam tử 男子,"tác giả, duyệt 18/11/2026"
-kanji:国,N5,Quốc,,quốc gia 国家,"tác giả, duyệt 18/11/2026"
-kanji:大,N5,Đại,,đại học 大学,"tác giả, duyệt 18/11/2026"
-kanji:中,N5,Trung,,trung tâm 中心,"tác giả, duyệt 18/11/2026"
-kanji:出,N5,Xuất,,xuất khẩu 出口,"tác giả, duyệt 18/11/2026"
-kanji:三,N5,Tam,,tam giác 三角,"tác giả, duyệt 18/11/2026"
-kanji:時,N5,Thời,,thời gian 時間,"tác giả, duyệt 18/11/2026"
-kanji:見,N5,Kiến,,ý kiến 意見,"tác giả, duyệt 18/11/2026"
-kanji:後,N5,Hậu,,hậu quả 後果,"tác giả, duyệt 18/11/2026"
-kanji:生,N5,Sinh,,sinh viên 学生,"tác giả, duyệt 18/11/2026"
-kanji:上,N5,Thượng,,thượng đế 上帝,"tác giả, duyệt 18/11/2026"
-kanji:九,N5,Cửu,,cửu long 九龍,"tác giả, duyệt 18/11/2026"
-kanji:下,N5,Hạ,,hạ cấp 下級,"tác giả, duyệt 18/11/2026"
-kanji:来,N5,Lai,,tương lai 将来,"tác giả, duyệt 18/11/2026"
-kanji:山,N5,Sơn,,sơn hà 山河,"tác giả, duyệt 18/11/2026"
-kanji:女,N5,Nữ,,phụ nữ 婦女,"tác giả, duyệt 18/11/2026"
-kanji:百,N5,Bách,,bách khoa 百科,"tác giả, duyệt 18/11/2026"
-kanji:先,N5,Tiên,,tiên sinh 先生,"tác giả, duyệt 18/11/2026"
-kanji:西,N5,Tây,,phương Tây 西方,"tác giả, duyệt 18/11/2026"
-kanji:校,N5,Hiệu,,hiệu trưởng 校長,"tác giả, duyệt 18/11/2026"
-kanji:語,N5,Ngữ,,ngôn ngữ 言語,"tác giả, duyệt 18/11/2026"
-kanji:土,N5,Thổ,,thổ địa 土地,"tác giả, duyệt 18/11/2026"
-kanji:聞,N5,Văn,,tân văn 新聞,"tác giả, duyệt 18/11/2026"
-kanji:食,N5,Thực,,thực phẩm 食品,"tác giả, duyệt 18/11/2026"
-kanji:万,N5,Vạn,,vạn vật 万物,"tác giả, duyệt 18/11/2026"
-kanji:読,N5,Độc,,độc giả 読者,"tác giả, duyệt 18/11/2026"
-kanji:左,N5,Tả,,tả hữu 左右,"tác giả, duyệt 18/11/2026"
-kanji:父,N5,Phụ,,phụ mẫu 父母,"tác giả, duyệt 18/11/2026"
-kanji:雨,N5,Vũ,,vũ lượng 雨量,"tác giả, duyệt 18/11/2026"
-kanji:使,N4,Sử,,sử dụng 使用,"tác giả, duyệt 18/11/2026"
-kanji:朝,N4,Triều,,triều đại 朝代,"tác giả, duyệt 18/11/2026"
-kanji:台,N4,Đài,,Đài Loan 台湾,"tác giả, duyệt 18/11/2026"
-kanji:少,N4,Thiểu,,thiểu số 少数,"tác giả, duyệt 18/11/2026"
-kanji:楽,N4,Lạc,,khoái lạc 快楽,"tác giả, duyệt 18/11/2026"
-kanji:貸,N4,Thải,,,"tác giả, duyệt 18/11/2026"
-kanji:姉,N4,Tỷ,,tỷ muội 姉妹,"tác giả, duyệt 18/11/2026"
-kanji:会,N4,Hội,,hội nghị 会議,"tác giả, duyệt 18/11/2026"
-kanji:発,N4,Phát,,phát triển 発展,"tác giả, duyệt 18/11/2026"
-kanji:場,N4,Trường,,hội trường 会場,"tác giả, duyệt 18/11/2026"
-kanji:員,N4,Viên,,nhân viên 人員,"tác giả, duyệt 18/11/2026"
-kanji:言,N4,Ngôn,,ngôn ngữ 言語,"tác giả, duyệt 18/11/2026"
-kanji:不,N4,Bất,,bất công 不公,"tác giả, duyệt 18/11/2026"
-kanji:度,N4,Độ,,nhiệt độ 温度,"tác giả, duyệt 18/11/2026"
-kanji:強,N4,Cường,,cường quốc 強国,"tác giả, duyệt 18/11/2026"
-kanji:思,N4,Tư,,tư tưởng 思想,"tác giả, duyệt 18/11/2026"
-kanji:家,N4,Gia,,gia đình 家庭,"tác giả, duyệt 18/11/2026"
-kanji:正,N4,Chính,,chính xác 正確,"tác giả, duyệt 18/11/2026"
-kanji:文,N4,Văn,,văn học 文学,"tác giả, duyệt 18/11/2026"
-kanji:重,N4,Trọng,,trọng lượng 重量,"tác giả, duyệt 18/11/2026"
-kanji:近,N4,Cận,,cận đại 近代,"tác giả, duyệt 18/11/2026"
-kanji:売,N4,Mại,,thương mại 商売,"tác giả, duyệt 18/11/2026"
-kanji:道,N4,Đạo,,đạo lý 道理,"tác giả, duyệt 18/11/2026"
-kanji:計,N4,Kế,,kế hoạch 計画,"tác giả, duyệt 18/11/2026"
-kanji:始,N4,Thủy,,nguyên thủy 原始,"tác giả, duyệt 18/11/2026"
-kanji:有,N4,Hữu,,hữu ích 有益,"tác giả, duyệt 18/11/2026"
-kanji:料,N4,Liệu,,nguyên liệu 原料,"tác giả, duyệt 18/11/2026"
-kanji:建,N4,Kiến,,kiến trúc 建築,"tác giả, duyệt 18/11/2026"
-kanji:空,N4,Không,,hàng không 航空,"tác giả, duyệt 18/11/2026"
-kanji:切,N4,Thiết,,thân thiết 親切,"tác giả, duyệt 18/11/2026"
-kanji:研,N4,Nghiên,,nghiên cứu 研究,"tác giả, duyệt 18/11/2026"
-kanji:質,N4,Chất,,chất lượng 質量,"tác giả, duyệt 18/11/2026"
-kanji:親,N4,Thân,,thân thiết 親切,"tác giả, duyệt 18/11/2026"
-kanji:医,N4,Y,,y học 医学,"tác giả, duyệt 18/11/2026"
-kanji:去,N4,Khứ,,quá khứ 過去,"tác giả, duyệt 18/11/2026"
-kanji:悪,N4,Ác,,ác quỷ 悪鬼,"tác giả, duyệt 18/11/2026"
-kanji:図,N4,Đồ,,bản đồ 地図,"tác giả, duyệt 18/11/2026"
-kanji:赤,N4,Xích,,xích đạo 赤道,"tác giả, duyệt 18/11/2026"
-kanji:夏,N4,Hạ,,hạ chí 夏至,"tác giả, duyệt 18/11/2026"
-kanji:飲,N4,Ẩm,,ẩm thực 飲食,"tác giả, duyệt 18/11/2026"
-kanji:肉,N4,Nhục,,cốt nhục 骨肉,"tác giả, duyệt 18/11/2026"
-kanji:飯,N4,Phạn,,phạn điếm 飯店,"tác giả, duyệt 18/11/2026"
-kanji:弟,N4,Đệ,,huynh đệ 兄弟,"tác giả, duyệt 18/11/2026"
+card_id,level,han_viet_main,meaning_vi,ghi_chu,nguoi_bien_soan,trang_thai
+kanji:本,N5,Bản,sách; gốc; chính,căn bản 根本,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:長,N5,Trường,dài; trưởng,trường thành 長城,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:行,N5,Hành,đi; hành,hành động 行動,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:子,N5,Tử,con; trẻ em,nam tử 男子,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:国,N5,Quốc,nước; quốc gia,quốc gia 国家,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:大,N5,Đại,to; lớn,đại học 大学,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:中,N5,Trung,trong; giữa,trung tâm 中心,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:出,N5,Xuất,ra; xuất,xuất khẩu 出口,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:三,N5,Tam,ba,tam giác 三角,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:時,N5,Thời,giờ; thời gian,thời gian 時間,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:見,N5,Kiến,nhìn; thấy,ý kiến 意見,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:後,N5,Hậu,sau; phía sau,hậu quả 後果,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:生,N5,Sinh,sống; sinh; học trò,sinh viên 学生,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:上,N5,Thượng,trên; lên,thượng đế 上帝,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:九,N5,Cửu,chín,cửu long 九龍,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:下,N5,Hạ,dưới; xuống,hạ cấp 下級,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:来,N5,Lai,đến,tương lai 将来,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:山,N5,Sơn,núi,sơn hà 山河,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:女,N5,Nữ,nữ; phụ nữ,phụ nữ 婦女,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:百,N5,Bách,trăm,bách khoa 百科,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:先,N5,Tiên,trước; tiên,tiên sinh 先生,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:西,N5,Tây,tây,phương Tây 西方,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:校,N5,Hiệu,trường học; hiệu,hiệu trưởng 校長,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:語,N5,Ngữ,từ; tiếng; ngôn ngữ,ngôn ngữ 言語,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:土,N5,Thổ,đất,thổ địa 土地,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:聞,N5,Văn,nghe; hỏi,tân văn 新聞,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:食,N5,Thực,ăn; thức ăn,thực phẩm 食品,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:万,N5,Vạn,vạn; mười nghìn,vạn vật 万物,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:読,N5,Độc,đọc,độc giả 読者,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:左,N5,Tả,trái; bên trái,tả hữu 左右,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:父,N5,Phụ,bố; cha,phụ mẫu 父母,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:雨,N5,Vũ,mưa,vũ lượng 雨量,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:使,N4,Sử,dùng; sử dụng,sử dụng 使用,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:朝,N4,Triều,buổi sáng; triều đại,triều đại 朝代,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:台,N4,Đài,"bệ; đài; đếm máy móc, xe",Đài Loan 台湾,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:少,N4,Thiểu,ít; thiếu,thiểu số 少数,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:楽,N4,Lạc,vui; nhạc; dễ chịu,khoái lạc 快楽,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:貸,N4,Thải,cho mượn; cho thuê,,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:姉,N4,Tỷ,chị gái,tỷ muội 姉妹,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:会,N4,Hội,họp; gặp; hội,hội nghị 会議,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:発,N4,Phát,phát; xuất phát,phát triển 発展,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:場,N4,Trường,nơi chốn; địa điểm,hội trường 会場,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:員,N4,Viên,nhân viên; thành viên,nhân viên 人員,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:言,N4,Ngôn,nói; lời nói,ngôn ngữ 言語,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:不,N4,Bất,không; bất; xấu,bất công 不公,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:度,N4,Độ,độ; lần,nhiệt độ 温度,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:強,N4,Cường,mạnh; cường,cường quốc 強国,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:思,N4,Tư,nghĩ,tư tưởng 思想,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:家,N4,Gia,nhà; gia đình,gia đình 家庭,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:正,N4,Chính,đúng; chính,chính xác 正確,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:文,N4,Văn,văn; câu văn; chữ,văn học 文学,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:重,N4,Trọng,nặng; quan trọng,trọng lượng 重量,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:近,N4,Cận,gần,cận đại 近代,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:売,N4,Mại,bán,thương mại 商売,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:道,N4,Đạo,đường; đạo,đạo lý 道理,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:計,N4,Kế,đo; kế hoạch; tính,kế hoạch 計画,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:始,N4,Thủy,bắt đầu,nguyên thủy 原始,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:有,N4,Hữu,có; sở hữu,hữu ích 有益,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:料,N4,Liệu,phí; nguyên liệu,nguyên liệu 原料,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:建,N4,Kiến,xây; dựng,kiến trúc 建築,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:空,N4,Không,trống; bầu trời; không,hàng không 航空,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:切,N4,Thiết,cắt; thiết,thân thiết 親切,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:研,N4,Nghiên,mài; nghiên cứu,nghiên cứu 研究,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:質,N4,Chất,chất; chất lượng,chất lượng 質量,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:親,N4,Thân,cha mẹ; thân thiết,thân thiết 親切,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:医,N4,Y,y học; thầy thuốc,y học 医学,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:去,N4,Khứ,đi qua; qua đi; rời,quá khứ 過去,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:悪,N4,Ác,xấu; ác,ác quỷ 悪鬼,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:図,N4,Đồ,bản vẽ; bản đồ; hình,bản đồ 地図,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:赤,N4,Xích,đỏ,xích đạo 赤道,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:夏,N4,Hạ,mùa hè,hạ chí 夏至,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:飲,N4,Ẩm,uống,ẩm thực 飲食,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:肉,N4,Nhục,thịt,cốt nhục 骨肉,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:飯,N4,Phạn,cơm; bữa ăn,phạn điếm 飯店,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:弟,N4,Đệ,em trai,huynh đệ 兄弟,"âm Hán Việt chính: tác giả, duyệt 18/11/2026; nghĩa: nháp tự động, chờ tác giả duyệt",nhap
+kanji:日,N5,,ngày; mặt trời; Nhật,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:一,N5,,một,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:人,N5,,người,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:年,N5,,năm; tuổi,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:十,N5,,mười,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:二,N5,,hai,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:月,N5,,tháng; mặt trăng,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:前,N5,,trước; phía trước,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:五,N5,,năm,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:間,N5,,khoảng giữa; gian,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:東,N5,,đông,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:四,N5,,bốn,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:今,N5,,nay; bây giờ,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:金,N5,,vàng; tiền; kim loại,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:入,N5,,vào; nhập,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:学,N5,,học; học tập,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:高,N5,,cao; đắt,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:円,N5,,tròn; yên (tiền Nhật),,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:外,N5,,ngoài; ngoại,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:八,N5,,tám,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:六,N5,,sáu,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:気,N5,,khí; tinh thần; không khí,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:小,N5,,nhỏ; bé,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:七,N5,,bảy,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:話,N5,,nói chuyện; câu chuyện,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:北,N5,,bắc,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:午,N5,,trưa; giờ Ngọ,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:書,N5,,viết; sách,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:名,N5,,tên; danh tiếng,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:川,N5,,sông,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:千,N5,,nghìn,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:水,N5,,nước,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:半,N5,,nửa,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:男,N5,,đàn ông; nam,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:電,N5,,điện,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:木,N5,,cây; gỗ,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:車,N5,,xe,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:何,N5,,gì; cái gì,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:南,N5,,nam,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:毎,N5,,mỗi,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:白,N5,,trắng,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:天,N5,,trời; thiên,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:母,N5,,mẹ,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:火,N5,,lửa,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:右,N5,,phải; bên phải,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:友,N5,,bạn,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:休,N5,,nghỉ; nghỉ ngơi,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:同,N4,,giống; cùng,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:事,N4,,việc; sự việc,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:自,N4,,tự; bản thân,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:社,N4,,công ty; xã; đền thờ,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:者,N4,,người,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:地,N4,,đất; mặt đất; địa,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:業,N4,,nghề; nghiệp; công việc,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:方,N4,,phương hướng; phía; người (kính ngữ),,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:新,N4,,mới; tân,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:立,N4,,đứng; dựng lên,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:開,N4,,mở,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:手,N4,,tay,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:力,N4,,sức; lực,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:問,N4,,hỏi; vấn đề,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:代,N4,,thay thế; đời; thời đại,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:明,N4,,sáng; minh,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:動,N4,,động; chuyển động,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:京,N4,,kinh đô; thủ đô,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:目,N4,,mắt; mục,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:通,N4,,đi qua; thông; đi lại,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:理,N4,,lý; lý lẽ; lý do,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:体,N4,,thân thể; cơ thể,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:田,N4,,ruộng lúa,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:主,N4,,chủ; chính,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:題,N4,,đề; chủ đề,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:意,N4,,ý; ý nghĩ,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:作,N4,,làm; chế tạo,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:用,N4,,dùng; việc; công dụng,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:公,N4,,công; chung,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:持,N4,,cầm; có; mang,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:野,N4,,cánh đồng; đồng nội,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:以,N4,,bằng; từ; lấy,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:世,N4,,thế gian; đời; thế hệ,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:多,N4,,nhiều,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:安,N4,,yên; rẻ; an toàn,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:院,N4,,viện; cơ sở; chùa,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:心,N4,,tim; tâm; lòng,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:界,N4,,giới; ranh giới; thế giới,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:教,N4,,dạy; giáo,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:元,N4,,gốc; nguồn gốc; khỏe,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:考,N4,,suy nghĩ; khảo,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:画,N4,,tranh; vẽ; nét,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:海,N4,,biển,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:知,N4,,biết; tri thức,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:集,N4,,tập hợp; thu thập,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:別,N4,,riêng; khác; chia tay,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:物,N4,,vật; đồ vật,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:品,N4,,hàng hóa; phẩm chất,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:死,N4,,chết; tử,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:特,N4,,đặc biệt,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:私,N4,,tôi; riêng tư,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:運,N4,,vận chuyển; vận may,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:終,N4,,kết thúc; chung,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:広,N4,,rộng,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:住,N4,,ở; cư trú,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:真,N4,,thật; chân,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:口,N4,,miệng,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:町,N4,,phố; thị trấn,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:工,N4,,công việc; thợ; công nghiệp,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:急,N4,,vội; gấp; khẩn cấp,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:止,N4,,dừng; ngừng,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:送,N4,,gửi; tiễn,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:転,N4,,xoay; chuyển; ngã,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:足,N4,,chân; đủ,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:究,N4,,nghiên cứu; cứu xét,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:起,N4,,dậy; khởi; xảy ra,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:着,N4,,mặc; đến; dính,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:店,N4,,cửa hàng; tiệm,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:病,N4,,bệnh; ốm,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:待,N4,,đợi; chờ,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:試,N4,,thử; thi,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:族,N4,,gia tộc; dân tộc,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:銀,N4,,bạc; ngân,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:早,N4,,sớm; nhanh,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:映,N4,,chiếu; phản chiếu,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:験,N4,,thử nghiệm; kiểm nghiệm,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:英,N4,,nước Anh; tiếng Anh; anh tài,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:仕,N4,,làm việc; phục vụ,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:味,N4,,vị; mùi vị,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:写,N4,,chép; chụp ảnh,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:字,N4,,chữ; ký tự,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:答,N4,,trả lời; đáp án,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:夜,N4,,đêm,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:音,N4,,âm thanh,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:注,N4,,rót; đổ; chú ý,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:帰,N4,,về; trở về,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:古,N4,,cũ; xưa,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:歌,N4,,bài hát; hát,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:買,N4,,mua,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:週,N4,,tuần,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:室,N4,,phòng,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:歩,N4,,đi bộ; bước,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:風,N4,,gió; phong cách,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:紙,N4,,giấy,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:黒,N4,,đen,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:花,N4,,hoa,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:春,N4,,mùa xuân,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:青,N4,,xanh,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:館,N4,,tòa nhà lớn; quán; viện,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:屋,N4,,nhà; cửa hàng; mái nhà,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:色,N4,,màu sắc,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:走,N4,,chạy,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:秋,N4,,mùa thu,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:習,N4,,học; tập; luyện tập,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:駅,N4,,nhà ga,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:洋,N4,,đại dương; phương Tây,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:旅,N4,,chuyến đi; lữ hành,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:服,N4,,quần áo; phục,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:夕,N4,,chiều tối,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:借,N4,,mượn; vay,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:曜,N4,,ngày trong tuần,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:堂,N4,,sảnh; đại sảnh,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:鳥,N4,,chim,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:勉,N4,,cố gắng; chăm chỉ,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:冬,N4,,mùa đông,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:昼,N4,,ban ngày; trưa,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:茶,N4,,trà,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:牛,N4,,bò; trâu,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:魚,N4,,cá,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:兄,N4,,anh trai,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:犬,N4,,chó,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:妹,N4,,em gái,,"nháp tự động, chờ tác giả duyệt",nhap
+kanji:漢,N4,,Hán; Trung Hoa,,"nháp tự động, chờ tác giả duyệt",nhap

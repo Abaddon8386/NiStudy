@@ -2,6 +2,7 @@
 
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { clearOutbox } from "@/lib/learning/outbox";
 import { createClient } from "@/lib/supabase/client";
 
 /**
@@ -47,7 +48,10 @@ export function AuthGuard({ children }: { children: React.ReactNode }) {
     });
 
     const { data: sub } = supabase.auth.onAuthStateChange((event) => {
-      if (event === "SIGNED_OUT") router.replace("/dang-nhap");
+      if (event === "SIGNED_OUT") {
+        clearOutbox();
+        router.replace("/dang-nhap");
+      }
     });
     return () => {
       cancelled = true;
