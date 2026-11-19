@@ -59,7 +59,7 @@ test("service worker đăng ký và kích hoạt với phạm vi /", async ({ pa
 test("offline: mở lại vỏ ứng dụng và trang đã cache (FR-28)", async ({ page, context }) => {
   await mockLoggedInBackend(page);
   await loginViaForm(page);
-  await expect(page.getByRole("heading", { level: 1, name: "Nihongo" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Bắt đầu ôn" })).toBeVisible();
   await page.evaluate(() => navigator.serviceWorker.ready);
   await page.waitForFunction(() => !!navigator.serviceWorker.controller || true);
   // Chờ precache xong ("/", "/nguon-du-lieu", "/khoi-dau", "/cai-dat").
@@ -76,7 +76,7 @@ test("offline: mở lại vỏ ứng dụng và trang đã cache (FR-28)", async
 
   await context.setOffline(true);
   await page.reload();
-  await expect(page.getByRole("heading", { level: 1, name: "Nihongo" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Bắt đầu ôn" })).toBeVisible();
 
   await page.goto("/nguon-du-lieu");
   await expect(page.getByRole("heading", { level: 1, name: "Nguồn dữ liệu" })).toBeVisible();
@@ -86,7 +86,7 @@ test("offline: mở lại vỏ ứng dụng và trang đã cache (FR-28)", async
 
   // Trang chưa cache: rơi về vỏ ứng dụng.
   await page.goto("/trang-khong-ton-tai");
-  await expect(page.getByRole("heading", { level: 1, name: "Nihongo" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Bắt đầu ôn" })).toBeVisible();
 });
 
 test("offline không có phiên: vỏ được phục vụ rồi chuyển /dang-nhap (không có dữ liệu cá nhân)", async ({ page, context }) => {
@@ -102,5 +102,5 @@ test("offline không có phiên: vỏ được phục vụ rồi chuyển /dang-
   await context.setOffline(true);
   await page.goto("/");
   // Không có phiên: guard không hiện nội dung "Nihongo" của trang chính.
-  await expect(page.getByRole("heading", { level: 1, name: "Nihongo" })).toHaveCount(0);
+  await expect(page.getByRole("link", { name: "Bắt đầu ôn" })).toHaveCount(0);
 });

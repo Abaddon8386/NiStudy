@@ -8,10 +8,29 @@ export const inputClass =
 
 export function AuthShell({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-[400px] flex-col justify-center px-6 py-10">
-      <p className="text-[18px] font-extrabold text-teal">Nihongo</p>
-      <h1 className="mt-2 mb-6 text-[32px] leading-[1.15] font-extrabold">{title}</h1>
-      {children}
+    <main id="noi-dung" tabIndex={-1} className="min-h-dvh lg:grid lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
+      <div className="hidden flex-col justify-between bg-teal p-12 text-white lg:flex">
+        <p className="text-[24px] font-extrabold">Nihongo</p>
+        <div>
+          <span
+            aria-hidden="true"
+            lang="ja"
+            className="mb-8 flex size-32 items-center justify-center rounded-full border-[3px] border-seal-edge bg-seal font-kanji text-[64px] font-semibold"
+          >
+            日
+          </span>
+          <p className="max-w-[360px] text-[24px] leading-snug font-bold">
+            Học kanji qua âm Hán Việt, ôn tập theo FSRS, bám lộ trình JLPT N5–N4.
+          </p>
+        </div>
+      </div>
+      <div className="lg:flex lg:items-center lg:justify-center lg:p-8">
+        <div className="mx-auto flex min-h-dvh w-full max-w-[400px] flex-col justify-center px-6 py-10 lg:min-h-0 lg:max-w-[440px] lg:rounded-[28px] lg:border lg:border-hair lg:bg-paper lg:px-10 lg:py-12">
+          <p className="text-[18px] font-extrabold text-teal lg:hidden">Nihongo</p>
+          <h1 className="mt-2 mb-6 text-[32px] leading-[1.15] font-extrabold lg:mt-0">{title}</h1>
+          {children}
+        </div>
+      </div>
     </main>
   );
 }
@@ -39,7 +58,7 @@ export function Notice({ kind, children }: { kind: "error" | "info"; children: R
   return (
     <p
       role={kind === "error" ? "alert" : "status"}
-      className={`mt-4 text-base ${kind === "error" ? "font-medium text-bad" : "rounded-[14px] bg-paper p-3 text-ink"}`}
+      className={`mt-4 text-base ${kind === "error" ? "font-medium text-bad" : "rounded-[14px] bg-paper p-3 text-ink lg:bg-sand"}`}
     >
       {children}
     </p>

@@ -73,7 +73,7 @@ test.describe("đăng nhập", () => {
     await mockLoggedInBackend(page);
     await loginViaForm(page);
     await expect(page).toHaveURL(/\/$/);
-    await expect(page.getByRole("heading", { level: 1, name: "Nihongo" })).toBeVisible();
+    await expect(page.getByRole("link", { name: "Bắt đầu ôn" })).toBeVisible();
 
     await page.getByRole("link", { name: "Cài đặt" }).click();
     await expect(page.getByRole("heading", { level: 1, name: "Cài đặt" })).toBeVisible();
@@ -117,7 +117,7 @@ test.describe("quên mật khẩu và gửi lại", () => {
 });
 
 test.describe("/auth/confirm", () => {
-  test("thiếu token, type lạ hoặc có error: về đăng nhập kèm báo hết hạn", async ({ page }) => {
+  test("xác nhận email lỗi: về đăng nhập kèm câu hướng dẫn", async ({ page }) => {
     const queries = [
       "",
       "?token_hash=abc&type=magiclink&next=https://evil.example",
@@ -126,9 +126,19 @@ test.describe("/auth/confirm", () => {
     ];
     for (const q of queries) {
       await page.goto(`/auth/confirm${q}`);
-      await expect(page).toHaveURL(/\/dang-nhap\?loi=lien-ket-het-han$/);
-      await expect(page.locator("main").getByRole("alert")).toContainText("hết hạn");
+      await expect(page).toHaveURL(/\/dang-nhap\?loi=xac-nhan$/);
+      await expect(page.locator("main").getByRole("alert")).toContainText(
+        "Email của bạn có thể đã được xác nhận. Hãy đăng nhập bằng mật khẩu. Nếu chưa vào được, hãy gửi lại email xác nhận và mở liên kết bằng chính trình duyệt đã dùng để đăng ký.",
+      );
+      await expect(page.getByRole("link", { name: "Gửi lại email xác nhận" })).toHaveAttribute("href", "/kiem-tra-hop-thu");
     }
+  });
+
+  test("đặt lại mật khẩu lỗi: báo liên kết hết hạn, có liên kết quên mật khẩu", async ({ page }) => {
+    await page.goto("/auth/confirm?luong=dat-lai&error_code=otp_expired");
+    await expect(page).toHaveURL(/\/dang-nhap\?loi=lien-ket-het-han$/);
+    await expect(page.locator("main").getByRole("alert")).toContainText("hết hạn");
+    await expect(page.getByRole("link", { name: "Quên mật khẩu", exact: true })).toHaveAttribute("href", "/quen-mat-khau");
   });
 });
 

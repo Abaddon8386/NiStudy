@@ -39,7 +39,7 @@ const sources = [
 
 export default function DataSourcesPage() {
   return (
-    <main className="mx-auto w-full max-w-[640px] bg-paper px-6 py-10">
+    <main id="noi-dung" tabIndex={-1} className="mx-auto w-full max-w-[640px] bg-paper px-6 py-10">
       <h1 className="text-[32px] leading-[1.15] font-extrabold">Nguồn dữ liệu</h1>
       <p className="mt-4 text-base">
         Nihongo dùng dữ liệu mở của các dự án dưới đây. Cảm ơn những người đã tạo ra chúng.

@@ -1,0 +1,58 @@
+{
+  "today": "2026-11-19",
+  "note": "Dùng chung cho unit test TS (streak.ts, xp.ts) và test SQL supabase/tests/dashboard_quiz.sql (chép tay số liệu). Trắc nghiệm không tính vào chuỗi; XP = số lượt ôn + số câu đúng + 5 x số mốc thưởng.",
+  "cases": [
+    {
+      "name": "trống",
+      "reviewDates": [], "quizzes": [], "bonusDates": [],
+      "expected": { "streak": 0, "total_days": 0, "xp_total": 0, "xp_today": 0 }
+    },
+    {
+      "name": "chỉ hôm nay",
+      "reviewDates": ["2026-11-19"], "quizzes": [], "bonusDates": [],
+      "expected": { "streak": 1, "total_days": 1, "xp_total": 1, "xp_today": 1 }
+    },
+    {
+      "name": "hôm qua có, hôm nay chưa",
+      "reviewDates": ["2026-11-18", "2026-11-17", "2026-11-16"], "quizzes": [], "bonusDates": [],
+      "expected": { "streak": 3, "total_days": 3, "xp_total": 3, "xp_today": 0 }
+    },
+    {
+      "name": "gãy 1 ngày",
+      "reviewDates": ["2026-11-19", "2026-11-18", "2026-11-16", "2026-11-15"], "quizzes": [], "bonusDates": [],
+      "expected": { "streak": 2, "total_days": 4, "xp_total": 4, "xp_today": 1 }
+    },
+    {
+      "name": "chuỗi dài 5",
+      "reviewDates": ["2026-11-15", "2026-11-16", "2026-11-17", "2026-11-18", "2026-11-19"], "quizzes": [], "bonusDates": [],
+      "expected": { "streak": 5, "total_days": 5, "xp_total": 5, "xp_today": 1 }
+    },
+    {
+      "name": "nhiều lượt cùng ngày",
+      "reviewDates": ["2026-11-19", "2026-11-19", "2026-11-19", "2026-11-18", "2026-11-18"], "quizzes": [], "bonusDates": [],
+      "expected": { "streak": 2, "total_days": 2, "xp_total": 5, "xp_today": 3 }
+    },
+    {
+      "name": "có trắc nghiệm (không tính vào chuỗi)",
+      "reviewDates": ["2026-11-19"],
+      "quizzes": [{ "studyDate": "2026-11-19", "correct": 7 }, { "studyDate": "2026-11-18", "correct": 3 }],
+      "bonusDates": [],
+      "expected": { "streak": 1, "total_days": 1, "xp_total": 11, "xp_today": 8 }
+    },
+    {
+      "name": "có mốc thưởng",
+      "reviewDates": ["2026-11-19", "2026-11-19", "2026-11-18"], "quizzes": [], "bonusDates": ["2026-11-19", "2026-11-18"],
+      "expected": { "streak": 2, "total_days": 2, "xp_total": 13, "xp_today": 7 }
+    },
+    {
+      "name": "hôm qua vắng thì chuỗi về 0",
+      "reviewDates": ["2026-11-17", "2026-11-15", "2026-11-14"], "quizzes": [], "bonusDates": [],
+      "expected": { "streak": 0, "total_days": 3, "xp_total": 3, "xp_today": 0 }
+    },
+    {
+      "name": "chỉ trắc nghiệm, không có lượt ôn",
+      "reviewDates": [], "quizzes": [{ "studyDate": "2026-11-19", "correct": 10 }], "bonusDates": [],
+      "expected": { "streak": 0, "total_days": 0, "xp_total": 10, "xp_today": 10 }
+    }
+  ]
+}

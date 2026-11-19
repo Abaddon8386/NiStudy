@@ -123,8 +123,19 @@ export function SettingsForm() {
   if (!loaded) return <p className="mt-6 text-base text-ink-2">Đang tải…</p>;
 
   return (
-    <>
-      <section aria-labelledby="learn-h" className="mt-8">
+    <div className="lg:grid lg:grid-cols-[minmax(0,420px)_minmax(0,1fr)] lg:gap-12">
+      <section aria-labelledby="summary-h" className="mt-8 hidden lg:block">
+        <h2 id="summary-h" className="text-[24px] font-extrabold">
+          Đang áp dụng
+        </h2>
+        <p className="mt-3 text-base">
+          Học {level}, {knowsKana ? "đã biết kana" : "chưa biết kana"}. Mỗi ngày {newPerDay} thẻ mới, tối đa{" "}
+          {reviewLimit} lượt ôn. {examDate ? `Thi ngày ${examDate}.` : "Chưa đặt ngày thi."}
+        </p>
+        <p className="mt-3 text-sm text-ink-2">Mỗi thay đổi được tự lưu ngay khi bạn chỉnh.</p>
+      </section>
+      <div className="lg:mt-8 lg:rounded-2xl lg:bg-sand lg:p-8">
+      <section aria-labelledby="learn-h" className="mt-8 lg:mt-0">
         <h2 id="learn-h" className="text-[24px] font-extrabold">
           Học tập
         </h2>
@@ -214,6 +225,7 @@ export function SettingsForm() {
           Nguồn dữ liệu
         </Link>
       </p>
-    </>
+      </div>
+    </div>
   );
 }

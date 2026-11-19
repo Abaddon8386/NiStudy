@@ -10,7 +10,7 @@ const RATINGS = [
 
 export function ReviewSummary({ summary, pending }: { summary: SessionSummary; pending: number }) {
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-[440px] flex-col bg-paper px-5 py-8">
+    <main id="noi-dung" tabIndex={-1} className="mx-auto flex min-h-dvh w-full max-w-[440px] flex-col bg-paper px-5 py-8 lg:max-w-[640px] lg:my-8 lg:min-h-0 lg:rounded-[28px] lg:border lg:border-hair lg:px-10 lg:py-12">
       <div
         aria-hidden="true"
         className="stamp-in mb-6 flex size-[160px] items-center justify-center self-center rounded-full border-[3px] border-seal-edge bg-seal font-kanji text-[72px] font-semibold text-white"

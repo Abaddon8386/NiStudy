@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "../ui/motion/motion.css";
 
 /* Token v2: docs/03-design.md mục 5.1 (đặt tên theo vai trò). */
 :root {
@@ -59,8 +60,33 @@ body {
 }
 
 :focus-visible {
-  outline: 3px solid var(--ink);
+  outline: 2px solid var(--ink); /* tương phản ≥3:1 với nền sáng; nền teal dùng focus-visible:outline-paper */
   outline-offset: 2px;
+}
+
+/* Skip link: ẩn ngoài màn hình, hiện khi nhận focus. Đích là <main id="noi-dung">. */
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 110;
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 9999px;
+  background: var(--ink);
+  color: var(--paper);
+  font-weight: 700;
+  transform: translateY(-200%);
+}
+.skip-link:focus-visible {
+  transform: none;
+  outline-color: var(--marker);
+}
+/* Main chỉ nhận focus khi nhảy từ skip link: không vẽ viền quanh cả trang. */
+#noi-dung:focus {
+  outline: none;
 }
 
 /* Thẻ học lật 3D (docs/03-design.md mục 5.5, 5.6). Mặt không hiện bị ẩn hẳn (visibility) sau nửa vòng lật. */
@@ -71,7 +97,7 @@ body {
 .flip-inner {
   display: grid;
   transform-style: preserve-3d;
-  transition: transform 480ms cubic-bezier(0.4, 0.1, 0.2, 1);
+  transition: transform var(--dur-1) var(--ease-in-out); /* lật ≤160ms (NFR-03) */
 }
 .flip-inner[data-flipped="true"] {
   transform: rotateY(180deg);
@@ -80,7 +106,7 @@ body {
   grid-area: 1 / 1;
   backface-visibility: hidden;
   visibility: hidden;
-  transition: visibility 0s linear 240ms;
+  transition: visibility 0s linear 80ms; /* nửa lúc lật */
 }
 .flip-face[data-active="true"] {
   visibility: visible;
@@ -98,7 +124,7 @@ body {
   margin: 0 -4px;
 }
 .flip-inner[data-flipped="true"] .hl {
-  animation: hl-sweep 380ms ease-out 300ms both;
+  animation: hl-sweep var(--dur-1) var(--ease-out) 80ms both;
 }
 @keyframes hl-sweep {
   from {
@@ -110,7 +136,7 @@ body {
 }
 
 .rating-in {
-  animation: rating-in 200ms ease-out both;
+  animation: rating-in var(--dur-1) var(--ease-out) both;
 }
 @keyframes rating-in {
   from {
@@ -133,11 +159,50 @@ body {
   transition: width 300ms ease-out;
 }
 
+/* Thanh tiến độ chạy từ 0 tới giá trị (trang chính). */
+.bar-fill {
+  transition: width var(--dur-3) var(--ease-out);
+}
+
+/* Thẻ kế vào: fade + trượt 12px trong 150ms, không chặn tương tác. */
+.card-in {
+  animation: card-in var(--dur-1) var(--ease-out) both;
+}
+@keyframes card-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+
+.fade-in {
+  animation: fade-in var(--dur-1) var(--ease-out) both;
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+/* Phản hồi nhấn cho nút lớn. */
+.press {
+  transition: transform 100ms var(--ease-out);
+}
+.press:active {
+  transform: scale(0.97);
+}
+
 @media (prefers-reduced-motion: reduce) {
   .flip-inner,
   .flip-face,
-  .progress-fill {
+  .progress-fill,
+  .bar-fill,
+  .press {
     transition: none;
+  }
+  .card-in,
+  .fade-in {
+    animation: none;
   }
   .flip-inner[data-flipped="true"] .hl,
   .stamp-in {

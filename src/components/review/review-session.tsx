@@ -22,7 +22,7 @@ const RATING_BUTTONS: { rating: FsrsRating; label: string; cls: string }[] = [
 
 type Load = { kind: "loading" } | { kind: "error" } | { kind: "ready"; session: SessionState };
 
-const shell = "mx-auto flex min-h-dvh w-full max-w-[440px] flex-col bg-ground px-4 pt-3 pb-6";
+const shell = "mx-auto flex min-h-dvh w-full max-w-[440px] flex-col bg-ground px-4 pt-3 pb-6 lg:max-w-[640px] lg:px-0 lg:pt-6";
 const primaryBtn =
   "inline-flex min-h-14 items-center justify-center rounded-full bg-ink px-8 text-[18px] font-bold text-paper";
 
@@ -153,7 +153,7 @@ export function ReviewSession() {
 
   if (load.kind === "loading") {
     return (
-      <main className={shell} aria-busy="true">
+      <main id="noi-dung" tabIndex={-1} className={shell} aria-busy="true">
         <h1 className="sr-only">Phiên ôn</h1>
         <p role="status" className="my-auto text-center text-base text-ink-2">
           Đang tải thẻ…
@@ -164,7 +164,7 @@ export function ReviewSession() {
 
   if (load.kind === "error") {
     return (
-      <main className={shell}>
+      <main id="noi-dung" tabIndex={-1} className={shell}>
         <h1 className="sr-only">Phiên ôn</h1>
         <div className="my-auto text-center">
           <p role="alert" className="text-[20px] leading-snug">
@@ -186,7 +186,7 @@ export function ReviewSession() {
   const s = load.session;
   if (s.cards.length === 0) {
     return (
-      <main className={shell}>
+      <main id="noi-dung" tabIndex={-1} className={shell}>
         <h1 className="sr-only">Phiên ôn</h1>
         <div className="my-auto text-center">
           <p className="text-[24px] leading-snug font-bold">Hôm nay không còn thẻ cần ôn.</p>
@@ -204,7 +204,7 @@ export function ReviewSession() {
 
   const total = s.cards.length;
   return (
-    <main className={shell}>
+    <main id="noi-dung" tabIndex={-1} className={shell}>
       <h1 className="sr-only">Phiên ôn</h1>
       <header className="flex items-center justify-between">
         <Link href="/" className="inline-flex min-h-11 min-w-11 items-center px-2 text-base font-medium">
@@ -234,7 +234,7 @@ export function ReviewSession() {
               Thẻ mới
             </span>
           ) : null}
-          <div key={cardKey} className="flip-card">
+          <div key={cardKey} className="flip-card card-in">
             <div className="flip-inner" data-flipped={flipped}>
               <div
                 className="flip-face rounded-[32px] border-2 border-ink bg-paper p-6"
@@ -267,7 +267,7 @@ export function ReviewSession() {
             ref={flipBtn}
             type="button"
             onClick={flip}
-            className="flex min-h-14 w-full items-center justify-center gap-3 rounded-full bg-ink px-6 text-[18px] font-bold text-paper"
+            className="press flex min-h-14 w-full items-center justify-center gap-3 rounded-full bg-ink px-6 text-[18px] font-bold text-paper"
           >
             Lật thẻ
             <span className="text-sm font-normal text-ring">Space</span>
@@ -280,7 +280,7 @@ export function ReviewSession() {
                 type="button"
                 onClick={() => void onGrade(rating)}
                 aria-keyshortcuts={String(rating)}
-                className={`relative flex min-h-[72px] flex-col items-center justify-center rounded-[20px] border-2 border-ink px-1 pt-4 pb-1 ${cls}`}
+                className={`press relative flex min-h-[72px] flex-col items-center justify-center rounded-[20px] border-2 border-ink px-1 pt-4 pb-1 ${cls}`}
               >
                 <span aria-hidden="true" className="absolute top-1 left-2 text-sm">
                   {rating}
@@ -299,6 +299,11 @@ export function ReviewSession() {
           </div>
         )}
       </div>
+      <p className="mt-3 hidden text-center text-sm text-ink-2 lg:block" data-testid="shortcut-hint">
+        Phím tắt: <kbd className="font-sans font-bold">Space</kbd> lật thẻ · <kbd className="font-sans font-bold">1</kbd>{" "}
+        Lại · <kbd className="font-sans font-bold">2</kbd> Khó · <kbd className="font-sans font-bold">3</kbd> Được ·{" "}
+        <kbd className="font-sans font-bold">4</kbd> Dễ
+      </p>
     </main>
   );
 }

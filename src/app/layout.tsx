@@ -1,6 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Be_Vietnam_Pro, Klee_One, Noto_Sans_JP } from "next/font/google";
 import { SerwistProvider } from "@serwist/turbopack/react";
+import { MotionBoot } from "@/ui/motion/motion-boot";
+import { NavProgress } from "@/ui/motion/NavProgress";
 import "./globals.css";
 
 const beVietnam = Be_Vietnam_Pro({
@@ -34,12 +36,18 @@ export const viewport: Viewport = {
   themeColor: "#1b6e66",
   width: "device-width",
   initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="vi" className={`${beVietnam.variable} ${notoJp.variable} ${klee.variable}`}>
       <body>
+        <a href="#noi-dung" className="skip-link">
+          Bỏ qua tới nội dung chính
+        </a>
+        <MotionBoot />
+        <NavProgress />
         <SerwistProvider
           swUrl="/serwist/sw.js"
           disable={process.env.NODE_ENV !== "production"}

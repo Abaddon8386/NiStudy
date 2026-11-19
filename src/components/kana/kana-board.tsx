@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { createClient } from "@/lib/supabase/client";
 
@@ -27,9 +26,9 @@ const TABS: { script: Script; label: string }[] = [
 ];
 
 const GROUPS: { grp: Group; label: string; cols: string }[] = [
-  { grp: "basic", label: "Cơ bản", cols: "grid-cols-5" },
-  { grp: "dakuten", label: "Âm đục", cols: "grid-cols-5" },
-  { grp: "yoon", label: "Âm ghép", cols: "grid-cols-3" },
+  { grp: "basic", label: "Cơ bản", cols: "grid-cols-5 lg:grid-cols-10" },
+  { grp: "dakuten", label: "Âm đục", cols: "grid-cols-5 lg:grid-cols-10" },
+  { grp: "yoon", label: "Âm ghép", cols: "grid-cols-3 lg:grid-cols-6" },
 ];
 
 /** FR-10: đọc bảng cards + kana_details (nội dung công khai, RLS cho phép SELECT). */
@@ -92,13 +91,10 @@ export function KanaBoard() {
   }
 
   return (
-    <main className="mx-auto flex min-h-dvh w-full max-w-[480px] flex-col bg-paper px-4 pt-3 pb-8">
-      <Link href="/" className="inline-flex min-h-11 w-fit items-center px-2 text-base font-medium">
-        Trang chính
-      </Link>
-      <h1 className="mt-2 text-[32px] leading-[1.15] font-extrabold">Bảng kana</h1>
+    <main id="noi-dung" tabIndex={-1} className="flex flex-col px-4 pt-6 pb-8 lg:px-10 lg:pt-10">
+      <h1 className="text-[32px] leading-[1.15] font-extrabold lg:text-[40px]">Bảng kana</h1>
 
-      <div role="tablist" aria-label="Bộ chữ" onKeyDown={onTabKey} className="mt-4 flex gap-2">
+      <div role="tablist" aria-label="Bộ chữ" onKeyDown={onTabKey} className="mt-4 flex gap-2 lg:max-w-[420px]">
         {TABS.map((t) => {
           const active = t.script === script;
           return (
@@ -124,14 +120,19 @@ export function KanaBoard() {
         })}
       </div>
 
-      <div id="kana-panel" role="tabpanel" aria-labelledby={`tab-${script}`} className="mt-4">
+      <div
+        id="kana-panel"
+        role="tabpanel"
+        aria-labelledby={`tab-${script}`}
+        className="mt-4 lg:grid lg:grid-cols-[minmax(0,1fr)_320px] lg:items-start lg:gap-10"
+      >
         <div
           aria-live="polite"
-          className="flex min-h-[140px] items-center justify-center gap-6 rounded-[28px] border-2 border-ink bg-sand p-4"
+          className="flex min-h-[140px] items-center justify-center gap-6 rounded-[28px] border-2 border-ink bg-sand p-4 lg:sticky lg:top-6 lg:order-2 lg:min-h-[260px] lg:flex-col lg:gap-4"
           data-testid="kana-detail"
         >
           {chosen ? (
-            <>
+            <div key={chosen.id} className="fade-in flex items-center justify-center gap-6 lg:flex-col lg:gap-4">
               <span lang="ja" className="font-jp text-[96px] leading-none font-medium">
                 {chosen.kana}
               </span>
@@ -139,12 +140,13 @@ export function KanaBoard() {
                 <span className="sr-only">Đọc là </span>
                 {chosen.romaji}
               </span>
-            </>
+            </div>
           ) : (
             <p className="text-center text-base text-ink-2">Chọn một chữ để xem cách đọc.</p>
           )}
         </div>
 
+        <div className="lg:order-1">
         {failed ? (
           <div className="mt-6 text-center">
             <p role="alert" className="text-base">
@@ -180,7 +182,7 @@ export function KanaBoard() {
                         aria-pressed={i.id === selected}
                         aria-label={`${i.kana}, ${i.romaji}`}
                         onClick={() => setSelected(i.id)}
-                        className={`font-jp min-h-14 w-full rounded-[14px] border-2 border-ink text-[24px] font-medium ${
+                        className={`font-jp min-h-14 w-full rounded-[14px] border-2 border-ink text-[24px] font-medium transition-colors duration-150 ${
                           i.id === selected ? "bg-marker" : "bg-paper"
                         }`}
                       >
@@ -193,6 +195,7 @@ export function KanaBoard() {
             );
           })
         )}
+        </div>
       </div>
     </main>
   );

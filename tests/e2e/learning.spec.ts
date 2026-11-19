@@ -14,10 +14,17 @@ interface Queue {
 }
 
 const sample = JSON.parse(readFileSync("tests/fixtures/queue-sample.json", "utf8")) as Queue;
-/** 1 thẻ đến hạn (vocab), 1 kana mới, 1 kanji mới có từ ví dụ. */
+/**
+ * 1 thẻ đến hạn (vocab), 1 kana mới, 1 kanji mới có từ ví dụ. Kana ở nhóm âm đục để hết giai đoạn
+ * hiragana cơ bản của FR-13 (nếu không, thẻ mới chỉ có kana).
+ */
 const queue3: Queue = {
   ...sample,
-  new_candidates: sample.new_candidates.filter((c) => c.card.kind !== "vocab"),
+  new_candidates: sample.new_candidates
+    .filter((c) => c.card.kind !== "vocab")
+    .map((c) =>
+      c.card.kind === "kana" ? { ...c, details: { ...(c.details as object), grp: "dakuten" } } : c,
+    ) as Item[],
 };
 const STATE_KEYS = [
   "difficulty", "due", "elapsed_days", "last_review", "lapses", "learning_steps",

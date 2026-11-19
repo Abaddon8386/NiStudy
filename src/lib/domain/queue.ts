@@ -96,46 +96,47 @@ export function remainingNew(newPerDay: number, newDoneToday: number): number {
   return Math.max(0, Math.floor(newPerDay) - Math.floor(newDoneToday));
 }
 
+/** Còn hiragana nhóm cơ bản chưa học: ứng viên kana đầu tiên (đã theo sort_order) là hiragana `basic`. */
+function hasBasicHiraganaLeft(kana: readonly NewCandidate[]): boolean {
+  const d = kana[0]?.details as KanaDetails | null | undefined;
+  return d?.script === "hira" && d.grp === "basic";
+}
+
+type Slot = "kana" | "kanji" | "vocab";
+
 /**
- * Thẻ đến hạn trước (giữ thứ tự đầu vào), rồi thẻ mới: tối đa `newPerDay - newDoneToday`.
- * Chưa biết kana thì kana trước; sau đó xen 1 kanji : 2 vocab, loại nào hết thì lấy loại còn lại.
- * Thứ tự trong từng loại giữ nguyên như máy chủ trả (đã theo sort_order).
+ * Thẻ đến hạn trước (giữ thứ tự đầu vào), rồi thẻ mới: tối đa `newPerDay - newDoneToday` (FR-13).
+ * - Chưa biết kana, còn hiragana cơ bản: thẻ mới chỉ là kana.
+ * - Chưa biết kana, hết hiragana cơ bản: xen theo chu kỳ 1 kana, 1 kanji, 2 vocab.
+ * - Đã biết kana: bỏ kana, chu kỳ 1 kanji, 2 vocab.
+ * Loại nào hết thì bỏ qua trong chu kỳ. Thứ tự trong từng loại giữ nguyên như máy chủ trả (sort_order).
  */
 export function buildSession(input: BuildSessionInput): SessionCard[] {
   const session: SessionCard[] = input.due.map((d) => ({ ...d, isNew: false }));
 
   let left = remainingNew(input.newPerDay, input.newDoneToday);
-  const kana: NewCandidate[] = [];
-  const kanji: NewCandidate[] = [];
-  const vocab: NewCandidate[] = [];
+  const pools: Record<Slot, NewCandidate[]> = { kana: [], kanji: [], vocab: [] };
   for (const c of input.newCandidates) {
     if (c.card.kind === "kana") {
-      if (!input.knowsKana) kana.push(c);
-    } else if (c.card.kind === "kanji") kanji.push(c);
-    else vocab.push(c);
+      if (!input.knowsKana) pools.kana.push(c);
+    } else pools[c.card.kind].push(c);
   }
 
+  const kanaOnly = !input.knowsKana && hasBasicHiraganaLeft(pools.kana);
+  const cycle: Slot[] = kanaOnly
+    ? ["kana"]
+    : input.knowsKana
+      ? ["kanji", "vocab", "vocab"]
+      : ["kana", "kanji", "vocab", "vocab"];
+
+  const next: Record<Slot, number> = { kana: 0, kanji: 0, vocab: 0 };
   const pickedNew: NewCandidate[] = [];
-  for (const c of kana) {
-    if (left <= 0) break;
-    pickedNew.push(c);
-    left--;
-  }
-
-  let k = 0;
-  let v = 0;
-  while (left > 0 && (k < kanji.length || v < vocab.length)) {
-    // Mẫu một vòng: kanji, vocab, vocab.
-    for (const slot of ["kanji", "vocab", "vocab"] as const) {
+  while (left > 0 && cycle.some((slot) => next[slot] < pools[slot].length)) {
+    for (const slot of cycle) {
       if (left <= 0) break;
-      const takeKanji = slot === "kanji" ? k < kanji.length : v >= vocab.length && k < kanji.length;
-      if (takeKanji) {
-        pickedNew.push(kanji[k++]);
-        left--;
-      } else if (v < vocab.length) {
-        pickedNew.push(vocab[v++]);
-        left--;
-      }
+      if (next[slot] >= pools[slot].length) continue;
+      pickedNew.push(pools[slot][next[slot]++]);
+      left--;
     }
   }
 

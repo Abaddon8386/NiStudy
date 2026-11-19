@@ -23,7 +23,7 @@ test.describe("khởi đầu (S-05)", () => {
     expect(Object.keys(body).sort()).toEqual(["exam_date", "knows_kana", "level", "new_per_day", "onboarded_at"]);
     expect(body).toMatchObject({ level: "N4", knows_kana: true, new_per_day: 15, exam_date: "2099-12-06" });
     expect(typeof body.onboarded_at).toBe("string");
-    await expect(page.getByText("Cấp N4 · 15 thẻ mới mỗi ngày")).toBeVisible();
+    await expect(page.getByRole("link", { name: "Bắt đầu ôn" })).toBeVisible();
   });
 
   test("mặc định N5, chưa biết kana, 10 thẻ; số ngoài khoảng bị chặn", async ({ page }) => {
