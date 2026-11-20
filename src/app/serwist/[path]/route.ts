@@ -13,6 +13,8 @@ export const { dynamic, dynamicParams, revalidate, generateStaticParams, GET } =
     { url: "/nguon-du-lieu", revision },
     { url: "/khoi-dau", revision },
     { url: "/cai-dat", revision },
+    { url: "/on-tap", revision }, // vỏ tĩnh của phiên ôn: mở lại offline để tiếp tục phiên đã lưu (FR-28)
+    { url: "/cai-app", revision },
   ],
   swSrc: "src/sw.ts",
   useNativeEsbuild: true,

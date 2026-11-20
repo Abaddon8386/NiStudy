@@ -13,6 +13,7 @@ export function SignInForm() {
   const loi = useSearchParams().get("loi");
   const expired = loi === "lien-ket-het-han";
   const confirmFailed = loi === "xac-nhan";
+  const deleted = useSearchParams().get("da-xoa") === "1";
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -39,6 +40,7 @@ export function SignInForm() {
 
   return (
     <form onSubmit={onSubmit}>
+      {deleted && <Notice kind="info">Tài khoản đã được xóa.</Notice>}
       {expired && (
         <Notice kind="error">
           Liên kết đã hết hạn hoặc không hợp lệ. Hãy yêu cầu liên kết mới.{" "}

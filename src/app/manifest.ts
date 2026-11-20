@@ -5,6 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Nihongo: học kanji qua âm Hán Việt",
     short_name: "Nihongo",
     description: "Học kanji qua âm Hán Việt, ôn tập theo FSRS, bám lộ trình JLPT N5–N4.",
+    id: "/",
     lang: "vi",
     start_url: "/",
     scope: "/",

@@ -2,7 +2,7 @@
 
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { clearOutbox } from "@/lib/learning/outbox";
+import { clearOutbox, hydrateOutbox } from "@/lib/learning/outbox";
 import { createClient } from "@/lib/supabase/client";
 
 /**
@@ -26,6 +26,8 @@ export function AuthGuard({ children }: { children: React.ReactNode }) {
         router.replace("/dang-nhap");
         return;
       }
+      // Nạp lại lượt ôn chưa gửi của người dùng này từ IndexedDB và gửi (FR-27).
+      void hydrateOutbox();
       if (navigator.onLine && pathname !== "/khoi-dau") {
         try {
           const { data: profile, error } = await supabase

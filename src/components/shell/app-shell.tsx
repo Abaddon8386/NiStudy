@@ -62,7 +62,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       </aside>
 
       <div className="lg:pl-56">
-        <div className="mx-auto min-h-dvh w-full max-w-[480px] bg-paper pb-[calc(4.5rem+env(safe-area-inset-bottom))] lg:m-2 lg:min-h-[calc(100dvh-1rem)] lg:max-w-none lg:rounded-2xl lg:border lg:border-hair lg:pb-0">
+        <div className="mx-auto min-h-dvh w-full max-w-[480px] bg-paper lg:w-auto pb-[calc(4.5rem+env(safe-area-inset-bottom))] lg:m-2 lg:min-h-[calc(100dvh-1rem)] lg:max-w-none lg:rounded-2xl lg:border lg:border-hair lg:pb-0">
           <div className="mx-auto w-full lg:max-w-[1100px]">{children}</div>
         </div>
       </div>

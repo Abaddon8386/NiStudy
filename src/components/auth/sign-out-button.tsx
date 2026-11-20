@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { flushOutbox, pendingNow } from "@/lib/learning/outbox";
+import { flushOutbox, hydrateOutbox, pendingNow } from "@/lib/learning/outbox";
 import { clearLocalData } from "@/lib/offline/clear-local-data";
 import { createClient } from "@/lib/supabase/client";
 
@@ -24,6 +24,8 @@ export function SignOutButton() {
   }
 
   async function onClick() {
+    // Đếm cả lượt còn trong IndexedDB của người dùng hiện tại (FR-30), kể cả khi app vừa mở.
+    await hydrateOutbox();
     if (pendingNow() > 0 && navigator.onLine) {
       setPending(true);
       try {

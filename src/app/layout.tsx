@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Be_Vietnam_Pro, Klee_One, Noto_Sans_JP } from "next/font/google";
 import { SerwistProvider } from "@serwist/turbopack/react";
+import { InstallPromptListener } from "@/components/install/install-prompt-listener";
 import { MotionBoot } from "@/ui/motion/motion-boot";
 import { NavProgress } from "@/ui/motion/NavProgress";
 import "./globals.css";
@@ -48,6 +49,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         </a>
         <MotionBoot />
         <NavProgress />
+        <InstallPromptListener />
         <SerwistProvider
           swUrl="/serwist/sw.js"
           disable={process.env.NODE_ENV !== "production"}

@@ -7,9 +7,13 @@ import { formatInterval } from "@/lib/domain/interval";
 import type { SessionCard } from "@/lib/domain/queue";
 import { buildReview, cardStateFromJson } from "@/lib/domain/review";
 import { advance, currentCard, isFinished, startSession, summarize, type SessionState } from "@/lib/domain/session";
+import { canResume } from "@/lib/domain/session-resume";
+import { studyDate } from "@/lib/domain/study-day";
 import { deviceTimeZone, loadTodaySession } from "@/lib/learning/api";
 import { createClient } from "@/lib/supabase/client";
-import { getOutbox, usePendingCount } from "@/lib/learning/outbox";
+import { getOutbox, useOutboxFailing, usePendingCount, useUnpersistedCount } from "@/lib/learning/outbox";
+import { deleteSnapshot, loadSnapshot, saveSnapshot } from "@/lib/offline/db";
+import { useOnline } from "@/lib/offline/network-status";
 import { CardBack, CardFront } from "./card-faces";
 import { ReviewSummary } from "./review-summary";
 
@@ -20,9 +24,11 @@ const RATING_BUTTONS: { rating: FsrsRating; label: string; cls: string }[] = [
   { rating: 4, label: "Dễ", cls: "bg-marker text-ink" },
 ];
 
-type Load = { kind: "loading" } | { kind: "error" } | { kind: "ready"; session: SessionState };
+type Load = { kind: "loading" } | { kind: "error" } | { kind: "offline" } | { kind: "ready"; session: SessionState };
 
 const shell = "mx-auto flex min-h-dvh w-full max-w-[440px] flex-col bg-ground px-4 pt-3 pb-6 lg:max-w-[640px] lg:px-0 lg:pt-6";
+const OFFLINE_MESSAGE =
+  "Không có mạng. Không tải được thẻ mới; các lượt đã chấm sẽ được gửi khi có mạng.";
 const primaryBtn =
   "inline-flex min-h-14 items-center justify-center rounded-full bg-ink px-8 text-[18px] font-bold text-paper";
 
@@ -31,17 +37,58 @@ export function ReviewSession() {
   const [flipped, setFlipped] = useState(false);
   const [previews, setPreviews] = useState<Record<FsrsRating, string> | null>(null);
   const sessionId = useRef<string>("");
+  const studyDay = useRef<string>("");
   const busy = useRef(false);
   const flipBtn = useRef<HTMLButtonElement>(null);
   const backRef = useRef<HTMLDivElement>(null);
   const pending = usePendingCount();
+  const online = useOnline();
+  const failing = useOutboxFailing();
+  const unpersisted = useUnpersistedCount();
 
   const start = useCallback(async () => {
     setLoad({ kind: "loading" });
-    sessionId.current = crypto.randomUUID();
-    const r = await loadTodaySession();
     setFlipped(false);
-    setLoad(r.ok ? { kind: "ready", session: startSession(r.cards) } : { kind: "error" });
+    const today = studyDate(new Date(), deviceTimeZone());
+    let userId: string | undefined;
+    try {
+      userId = (await createClient().auth.getSession()).data.session?.user.id;
+    } catch {
+      /* không đọc được phiên: coi như phiên mới */
+    }
+    // Tiếp tục phiên đã lưu (cùng tài khoản, cùng ngày học, chưa xong), kể cả khi offline (FR-28).
+    if (userId) {
+      try {
+        const snap = await loadSnapshot(userId);
+        if (canResume(snap, userId, today)) {
+          sessionId.current = snap.sessionId;
+          studyDay.current = snap.studyDate;
+          setLoad({ kind: "ready", session: snap.state });
+          return;
+        }
+        if (snap) await deleteSnapshot(userId); // khác ngày hoặc đã xong: bỏ
+      } catch (e) {
+        console.warn("review: không đọc được phiên đã lưu", e);
+      }
+    }
+    if (!navigator.onLine) {
+      setLoad({ kind: "offline" });
+      return;
+    }
+    sessionId.current = crypto.randomUUID();
+    studyDay.current = today;
+    const r = await loadTodaySession();
+    if (!r.ok) {
+      setLoad({ kind: navigator.onLine ? "error" : "offline" });
+      return;
+    }
+    const session = startSession(r.cards);
+    setLoad({ kind: "ready", session });
+    if (userId && r.cards.length > 0) {
+      saveSnapshot({ userId, sessionId: sessionId.current, studyDate: today, state: session }).catch((e) =>
+        console.warn("review: không lưu được phiên", e),
+      );
+    }
   }, []);
 
   useEffect(() => {
@@ -106,12 +153,21 @@ export function ReviewSession() {
           sessionId: sessionId.current,
           timeZone: deviceTimeZone(),
         });
-        getOutbox().enqueue(payload, userId);
+        // Ghi IndexedDB trong nền (không chặn thẻ kế); snapshot chỉ ghi sau khi lượt ôn đã có bản bền (FR-27, FR-28).
+        const persisted = getOutbox().enqueue(payload, userId);
+        const next = advance(load.session, rating, payload.state_after);
+        const day = studyDay.current;
+        const sid = sessionId.current;
+        void persisted
+          .then(() =>
+            isFinished(next)
+              ? deleteSnapshot(userId)
+              : saveSnapshot({ userId, sessionId: sid, studyDate: day, state: next }),
+          )
+          .catch((e) => console.warn("review: không lưu được phiên", e));
         setPreviews(null);
         setFlipped(false);
-        setLoad((l) =>
-          l.kind === "ready" ? { kind: "ready", session: advance(l.session, rating, payload.state_after) } : l,
-        );
+        setLoad({ kind: "ready", session: next });
       } finally {
         busy.current = false;
       }
@@ -138,16 +194,25 @@ export function ReviewSession() {
     return () => window.removeEventListener("keydown", onKey);
   }, [card, flipped, flip, onGrade]);
 
-  // Cảnh báo khi đóng hoặc tải lại tab lúc còn lượt chưa gửi (hàng chờ chưa lưu bền: TODO FR-27).
+  // Chỉ cảnh báo khi đóng/tải lại tab nếu còn lượt chưa gửi VÀ chưa có bản bền (IndexedDB lỗi/không dùng được).
   useEffect(() => {
-    if (pending === 0) return;
+    if (unpersisted === 0) return;
     const h = (e: BeforeUnloadEvent) => {
       e.preventDefault();
       e.returnValue = "";
     };
     window.addEventListener("beforeunload", h);
     return () => window.removeEventListener("beforeunload", h);
-  }, [pending]);
+  }, [unpersisted]);
+
+  // Có mạng lại khi đang ở màn "không có mạng" (chưa có phiên): tự thử tải lại (FR-26).
+  const isOffline = load.kind === "offline";
+  useEffect(() => {
+    if (!isOffline) return;
+    const retry = () => void start();
+    window.addEventListener("online", retry);
+    return () => window.removeEventListener("online", retry);
+  }, [isOffline, start]);
 
   const summary = useMemo(() => (session ? summarize(session.results) : null), [session]);
 
@@ -158,6 +223,27 @@ export function ReviewSession() {
         <p role="status" className="my-auto text-center text-base text-ink-2">
           Đang tải thẻ…
         </p>
+      </main>
+    );
+  }
+
+  if (load.kind === "offline") {
+    return (
+      <main id="noi-dung" tabIndex={-1} className={shell}>
+        <h1 className="sr-only">Phiên ôn</h1>
+        <div className="my-auto text-center">
+          <p role="status" className="text-[20px] leading-snug">
+            {OFFLINE_MESSAGE}
+          </p>
+          <button type="button" onClick={() => void start()} className={`mt-4 ${primaryBtn}`}>
+            Thử lại
+          </button>
+          <p className="mt-4">
+            <Link href="/" className="inline-flex min-h-11 items-center text-base underline underline-offset-4">
+              Về trang chính
+            </Link>
+          </p>
+        </div>
       </main>
     );
   }
@@ -206,6 +292,15 @@ export function ReviewSession() {
   return (
     <main id="noi-dung" tabIndex={-1} className={shell}>
       <h1 className="sr-only">Phiên ôn</h1>
+      <div role="status" data-testid="network-banner">
+        {!online || failing ? (
+          <p className="mb-2 rounded-2xl border-2 border-ink bg-sand px-4 py-2 text-base">
+            {online
+              ? "Chưa kết nối được máy chủ. Bạn vẫn ôn tiếp được; các lượt đã chấm được lưu trên máy và sẽ tự gửi khi có mạng."
+              : "Mất kết nối mạng. Bạn vẫn ôn tiếp được; các lượt đã chấm được lưu trên máy và sẽ tự gửi khi có mạng."}
+          </p>
+        ) : null}
+      </div>
       <header className="flex items-center justify-between">
         <Link href="/" className="inline-flex min-h-11 min-w-11 items-center px-2 text-base font-medium">
           Thoát

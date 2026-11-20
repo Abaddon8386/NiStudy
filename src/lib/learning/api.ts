@@ -44,7 +44,10 @@ export async function loadTodaySession(now: Date = new Date()): Promise<LoadResu
 
 /** Gửi một lô lượt ôn. Lỗi dữ liệu (mã 22xxx) là vĩnh viễn; còn lại (mạng, phiên hết hạn) thử lại được. */
 export async function submitReviews(batch: ReviewPayload[]): Promise<SubmitResult[]> {
-  const { data, error } = await createClient().rpc("submit_reviews", { p_reviews: batch });
+  // Quá 10 giây không phản hồi coi là mất mạng (FR-26): hủy, hàng chờ thử lại sau.
+  const { data, error } = await createClient()
+    .rpc("submit_reviews", { p_reviews: batch })
+    .abortSignal(AbortSignal.timeout(10_000));
   if (error) throw new SubmitError(error.message, /^22/.test(error.code ?? ""));
   return (data ?? []) as SubmitResult[];
 }

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Notice } from "@/components/auth/ui";
+import { DeleteAccount } from "@/components/account/delete-account";
 import { SignOutButton } from "@/components/auth/sign-out-button";
 import {
   fetchProfile,
@@ -221,10 +222,17 @@ export function SettingsForm() {
       </section>
 
       <p className="mt-8">
+        <Link className="inline-flex min-h-11 items-center text-base text-ink-2 underline underline-offset-4" href="/cai-app">
+          Cài ứng dụng lên thiết bị
+        </Link>
+      </p>
+      <p>
         <Link className="inline-flex min-h-11 items-center text-base text-ink-2 underline underline-offset-4" href="/nguon-du-lieu">
           Nguồn dữ liệu
         </Link>
       </p>
+
+      <DeleteAccount />
       </div>
     </div>
   );
