@@ -16,12 +16,14 @@ import { deleteSnapshot, loadSnapshot, saveSnapshot } from "@/lib/offline/db";
 import { useOnline } from "@/lib/offline/network-status";
 import { CardBack, CardFront } from "./card-faces";
 import { ReviewSummary } from "./review-summary";
+import { Notice } from "@/ui/Notice";
+import { RatingButton } from "@/ui/RatingButton";
 
-const RATING_BUTTONS: { rating: FsrsRating; label: string; cls: string }[] = [
-  { rating: 1, label: "Lại", cls: "bg-paper text-ink" },
-  { rating: 2, label: "Khó", cls: "bg-paper text-ink" },
-  { rating: 3, label: "Được", cls: "bg-teal text-white" },
-  { rating: 4, label: "Dễ", cls: "bg-marker text-ink" },
+const RATING_LABELS: { rating: FsrsRating; label: string }[] = [
+  { rating: 1, label: "Lại" },
+  { rating: 2, label: "Khó" },
+  { rating: 3, label: "Được" },
+  { rating: 4, label: "Dễ" },
 ];
 
 type Load = { kind: "loading" } | { kind: "error" } | { kind: "offline" } | { kind: "ready"; session: SessionState };
@@ -289,110 +291,82 @@ export function ReviewSession() {
   }
 
   const total = s.cards.length;
+  const remaining = total - s.index - 1; // thẻ còn lại sau thẻ này: quyết định số lớp "chồng thẻ" phía sau
+  const face = "flip-face flex flex-col rounded-[32px] border-2 border-ink bg-paper p-6 lg:p-10";
+  const layer = "pointer-events-none absolute inset-x-0 top-0 bottom-5 origin-bottom rounded-[32px] border-2 border-ink bg-paper";
   return (
     <main id="noi-dung" tabIndex={-1} className={shell}>
       <h1 className="sr-only">Phiên ôn</h1>
       <div role="status" data-testid="network-banner">
         {!online || failing ? (
-          <p className="mb-2 rounded-2xl border-2 border-ink bg-sand px-4 py-2 text-base">
+          <Notice tone="warn" role="status" className="mb-2">
             {online
               ? "Chưa kết nối được máy chủ. Bạn vẫn ôn tiếp được; các lượt đã chấm được lưu trên máy và sẽ tự gửi khi có mạng."
               : "Mất kết nối mạng. Bạn vẫn ôn tiếp được; các lượt đã chấm được lưu trên máy và sẽ tự gửi khi có mạng."}
-          </p>
+          </Notice>
         ) : null}
       </div>
-      <header className="flex items-center justify-between">
-        <Link href="/" className="inline-flex min-h-11 min-w-11 items-center px-2 text-base font-medium">
+      <header className="flex items-center gap-3">
+        <Link href="/" className="inline-flex min-h-11 min-w-11 items-center rounded-full px-2 text-base font-medium">
           Thoát
         </Link>
-        <p aria-live="polite" className="text-base font-bold">
+        <div
+          role="progressbar"
+          aria-label="Tiến độ phiên ôn"
+          aria-valuemin={0}
+          aria-valuemax={total}
+          aria-valuenow={s.index}
+          className="h-2 min-w-0 flex-1 overflow-hidden rounded-full bg-hair"
+        >
+          <div className="progress-fill h-full rounded-full bg-teal" style={{ width: `${(s.index / total) * 100}%` }} />
+        </div>
+        <p aria-live="polite" className="min-w-14 text-right text-base font-bold tabular-nums">
           <span className="sr-only">Thẻ </span>
           {s.index + 1} / {total}
         </p>
-        <span className="min-w-11" aria-hidden="true" />
       </header>
-      <div
-        role="progressbar"
-        aria-label="Tiến độ phiên ôn"
-        aria-valuemin={0}
-        aria-valuemax={total}
-        aria-valuenow={s.index}
-        className="mt-1 h-2 w-full overflow-hidden rounded-full bg-hair"
-      >
-        <div className="progress-fill h-full rounded-full bg-teal" style={{ width: `${(s.index / total) * 100}%` }} />
-      </div>
 
-      <div className="my-4 flex flex-1 flex-col justify-center">
-        <div className="relative">
-          {card.isNew ? (
-            <span className="absolute top-3 left-3 z-10 rounded-lg bg-marker px-2 py-0.5 text-sm font-bold">
-              Thẻ mới
-            </span>
-          ) : null}
-          <div key={cardKey} className="flip-card card-in">
-            <div className="flip-inner" data-flipped={flipped}>
-              <div
-                className="flip-face rounded-[32px] border-2 border-ink bg-paper p-6"
-                data-active={!flipped}
-                inert={flipped}
-                aria-hidden={flipped}
-              >
-                <CardFront card={card} />
-              </div>
-              <div
-                ref={backRef}
-                tabIndex={-1}
-                role="group"
-                aria-label="Mặt sau của thẻ"
-                className="flip-face flip-back rounded-[32px] border-2 border-ink bg-paper p-6 outline-offset-4"
-                data-active={flipped}
-                inert={!flipped}
-                aria-hidden={!flipped}
-              >
-                <CardBack card={card} />
-              </div>
+      <div className="relative mt-4 flex min-h-[420px] flex-1 flex-col pb-5 lg:min-h-[520px]">
+        {remaining >= 2 ? <div aria-hidden="true" className={`${layer} translate-y-5 scale-[0.92]`} /> : null}
+        {remaining >= 1 ? <div aria-hidden="true" className={`${layer} translate-y-2.5 scale-[0.96]`} /> : null}
+        {card.isNew ? (
+          <span className="absolute top-4 left-4 z-20 rounded-lg bg-marker px-2 py-0.5 text-sm font-bold">Thẻ mới</span>
+        ) : null}
+        <div key={cardKey} className="flip-card card-in relative z-10 flex-1">
+          <div className="flip-inner" data-flipped={flipped}>
+            <div className={face} data-active={!flipped} inert={flipped} aria-hidden={flipped}>
+              <CardFront card={card} flipRef={flipBtn} onFlip={flip} />
+            </div>
+            <div
+              ref={backRef}
+              tabIndex={-1}
+              role="group"
+              aria-label="Mặt sau của thẻ"
+              className={`${face} flip-back focus:outline-none`}
+              data-active={flipped}
+              inert={!flipped}
+              aria-hidden={!flipped}
+            >
+              <CardBack card={card} />
             </div>
           </div>
         </div>
       </div>
 
-      <div className="min-h-[72px]">
-        {!flipped ? (
-          <button
-            ref={flipBtn}
-            type="button"
-            onClick={flip}
-            className="press flex min-h-14 w-full items-center justify-center gap-3 rounded-full bg-ink px-6 text-[18px] font-bold text-paper"
-          >
-            Lật thẻ
-            <span className="text-sm font-normal text-ring">Space</span>
-          </button>
-        ) : (
+      <div className="mt-1 min-h-[76px]">
+        {flipped ? (
           <div className="rating-in grid grid-cols-4 gap-2">
-            {RATING_BUTTONS.map(({ rating, label, cls }) => (
-              <button
+            {RATING_LABELS.map(({ rating, label }) => (
+              <RatingButton
                 key={rating}
-                type="button"
+                rating={rating}
+                label={label}
+                interval={previews ? previews[rating] : null}
                 onClick={() => void onGrade(rating)}
-                aria-keyshortcuts={String(rating)}
-                className={`press relative flex min-h-[72px] flex-col items-center justify-center rounded-[20px] border-2 border-ink px-1 pt-4 pb-1 ${cls}`}
-              >
-                <span aria-hidden="true" className="absolute top-1 left-2 text-sm">
-                  {rating}
-                </span>
-                <span className="text-[18px] leading-tight font-bold">{label}</span>
-                <span className="min-h-5 text-sm leading-tight">
-                  {previews ? (
-                    <>
-                      <span className="sr-only">, sau </span>
-                      {previews[rating]}
-                    </>
-                  ) : null}
-                </span>
-              </button>
+              />
             ))}
           </div>
-        )}
+        ) : null}
       </div>
       <p className="mt-3 hidden text-center text-sm text-ink-2 lg:block" data-testid="shortcut-hint">
         Phím tắt: <kbd className="font-sans font-bold">Space</kbd> lật thẻ · <kbd className="font-sans font-bold">1</kbd>{" "}

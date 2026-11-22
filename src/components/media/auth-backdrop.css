@@ -1,0 +1,178 @@
+/* Nền toàn trang màn auth. Chuyển động chỉ chạy khi JS gắn data-live; data-paused dừng tất cả. */
+@layer components {
+  .bd {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    overflow: hidden;
+    background: #141633;
+  }
+  .bd-layer {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 1500ms var(--ease-in-out);
+  }
+  .bd-layer[data-active] {
+    opacity: 1;
+  }
+  .bd-video,
+  .bd-petals {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .bd-video {
+    object-fit: cover;
+    background: #141633;
+  }
+  .bd-petals {
+    pointer-events: none;
+  }
+
+  /* Tranh: phủ kín; máy tính dùng slice của SVG. Màn dọc: giữ tỉ lệ 16:9 theo chiều cao, đặt núi
+     (x≈600/1600) vào giữa màn. */
+  .bd-art-svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  @media (max-aspect-ratio: 4/3) {
+    .bd-art-svg {
+      inset: 0 auto auto 50%;
+      width: auto;
+      height: 66svh;
+      aspect-ratio: 16 / 9;
+      transform: translateX(-38.75%);
+    }
+  }
+
+  /* Chuyển động của tranh */
+  .bd[data-live] .bd-cloud-far {
+    animation: bd-drift 140s linear infinite;
+  }
+  .bd[data-live] .bd-cloud-mid {
+    animation: bd-drift 80s linear infinite;
+  }
+  .bd[data-live] .bd-sky-late {
+    animation: bd-dusk 24s ease-in-out infinite alternate;
+  }
+  .bd[data-live] .bd-stars {
+    animation: bd-twinkle 24s ease-in-out infinite alternate;
+  }
+  .bd[data-live] .bd-shimmer {
+    animation: bd-shimmer 3.2s ease-in-out infinite alternate;
+  }
+  .bd-stars {
+    opacity: 0.35;
+  }
+  .bd[data-paused] * {
+    animation-play-state: paused !important;
+  }
+  @keyframes bd-drift {
+    to {
+      transform: translateX(-1600px);
+    }
+  }
+  @keyframes bd-dusk {
+    to {
+      opacity: 0.7;
+    }
+  }
+  @keyframes bd-twinkle {
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes bd-shimmer {
+    from {
+      opacity: 0.55;
+      transform: translateX(-6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(6px);
+    }
+  }
+
+  /* Chú thích + nút tạm dừng: dải tối cục bộ, chữ trắng ≥4,5:1 trên mọi nền. */
+  .bd-meta {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 100%;
+  }
+  .bd-caption {
+    margin: 0;
+    padding: 10px 14px;
+    border-radius: 14px;
+    background: rgb(16 17 30 / 0.72);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+  }
+  .bd-btn {
+    flex: none;
+    display: inline-grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 9999px;
+    background: rgb(16 17 30 / 0.72);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    color: #fff;
+  }
+  .bd-btn:focus-visible {
+    outline: 3px solid var(--marker);
+    outline-offset: 2px;
+  }
+  @media (min-width: 1024px) {
+    .bd-meta {
+      position: fixed;
+      left: 32px;
+      bottom: 24px;
+      max-width: min(560px, calc(100vw - 600px));
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .bd-layer {
+      transition: none;
+    }
+    .bd * {
+      animation: none !important;
+    }
+  }
+  html.low-power .bd * {
+    animation: none !important;
+  }
+}
+
+/* Khung màn auth: thẻ giấy nổi. Điện thoại: chú thích + nút ngay dưới logo (nửa trên là cảnh). */
+@layer components {
+  .auth-card {
+    background: rgb(255 255 255 / 0.95);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    box-shadow:
+      0 1px 2px rgb(0 0 0 / 0.12),
+      0 24px 64px -12px rgb(10 12 30 / 0.45);
+  }
+  @media (max-width: 1023.98px) {
+    .auth-page .bd-meta {
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      top: 66px;
+    }
+  }
+}

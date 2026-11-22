@@ -259,3 +259,64 @@ test.describe("trắc nghiệm (điện thoại 375px)", () => {
     await axe(page);
   });
 });
+
+test.describe("giao diện trắc nghiệm: chữ kanji lớn, không tràn, axe", () => {
+  for (const width of [375, 1280, 1440]) {
+    test(`đề, sau khi trả lời sai, kết quả, chưa đủ câu ở ${width}px`, async ({ page }) => {
+      await page.setViewportSize({ width, height: width < 768 ? 812 : 800 });
+      const over = () => page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+      const withAxe = width !== 1440;
+      await setup(page);
+      await openQuiz(page);
+      await expect(page.getByTestId("quiz-prompt")).toBeVisible();
+      for (let i = 0; i < 10; i++) {
+        await expect(page.getByText(`${i + 1} / 10`)).toBeVisible();
+        const prompt = (await page.getByTestId("quiz-prompt").innerText()).trim();
+        const isKanji = kanjiRows.some((r) => r.kanji === prompt);
+        if (isKanji) {
+          const el = page.getByTestId("quiz-prompt");
+          expect(await el.evaluate((e) => getComputedStyle(e).fontFamily)).toMatch(/klee/i);
+          expect(await el.evaluate((e) => parseFloat(getComputedStyle(e).fontSize))).toBeGreaterThanOrEqual(100);
+          const opt = page.getByTestId("opt-text").first();
+          expect(await opt.evaluate((e) => parseFloat(getComputedStyle(e).fontSize))).toBeGreaterThanOrEqual(22);
+        }
+        if (i === 0 && withAxe) await axe(page);
+        await answer(page, i === 0);
+        if (i === 0) {
+          expect(await over()).toBeLessThanOrEqual(0);
+          await expect(page.getByRole("button", { name: /Bạn chọn/ })).toBeVisible();
+          if (withAxe) await axe(page);
+        }
+        await page.keyboard.press("Enter");
+      }
+      await expect(page.getByTestId("quiz-score")).toContainText("9/10");
+      expect(await over()).toBeLessThanOrEqual(0);
+      if (withAxe) await axe(page);
+    });
+
+    test(`chưa đủ câu: thanh tiến độ, không tràn ở ${width}px`, async ({ page }) => {
+      await page.setViewportSize({ width, height: width < 768 ? 812 : 800 });
+      await setup(page, ALL_LEARNED.slice(0, 9));
+      await openQuiz(page);
+      await expect(page.getByTestId("not-enough")).toBeVisible();
+      await expect(page.getByRole("progressbar", { name: /thẻ đã học/ })).toHaveAttribute("aria-valuenow", "9");
+      await expect(page.getByText("Đã học 9/10 thẻ cần thiết")).toBeVisible();
+      expect(await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth)).toBeLessThanOrEqual(0);
+      if (width !== 1440) await axe(page);
+    });
+  }
+
+  test("10/10: kết quả có dấu triện, không câu sai", async ({ page }) => {
+    await page.setViewportSize({ width: 375, height: 812 });
+    await setup(page);
+    await openQuiz(page);
+    for (let i = 0; i < 10; i++) {
+      await answer(page, false);
+      await page.keyboard.press("Enter");
+    }
+    await expect(page.getByTestId("quiz-score")).toContainText("10/10");
+    await expect(page.getByText("Bạn trả lời đúng cả 10 câu.")).toBeVisible();
+    await expect(page.locator('[lang="ja"][aria-hidden="true"]').filter({ hasText: "満" })).toBeVisible();
+    await axe(page);
+  });
+});

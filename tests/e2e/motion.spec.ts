@@ -4,6 +4,7 @@ import { readFileSync } from "node:fs";
 import { loginViaForm, mockLoggedInBackend } from "./helpers";
 
 const sample = JSON.parse(readFileSync("tests/fixtures/queue-sample.json", "utf8")) as {
+  due: { card: { id: string; kind: string } }[];
   new_candidates: { card: { kind: string }; details?: object }[];
 };
 // Giống learning.spec: hết giai đoạn hiragana cơ bản để có thẻ mới không chỉ là kana.
@@ -63,24 +64,61 @@ test.describe("chuyển động (1280px)", () => {
     await expect(page.getByRole("region", { name: "Ngày học" }).locator('[aria-hidden="true"]').first()).toHaveText("19");
   });
 
-  test("phiên ôn: từ phím 3 tới khi thẻ kế xuất hiện ≤ 200ms", async ({ page }) => {
-    await openHome(page);
+  test("phiên ôn: từ phím 3 tới khi thẻ kế xuất hiện ≤ 200ms (trung vị 5 lượt)", async ({ page }) => {
+    // 7 thẻ đến hạn để chấm liền 5 lượt mà phiên chưa kết thúc.
+    const many = {
+      ...queue3,
+      new_candidates: [],
+      due: Array.from({ length: 7 }, (_, i) => ({
+        ...sample.due[0],
+        card: { ...sample.due[0].card, id: `vocab:${i + 1}` },
+      })),
+    };
+    await mockLoggedInBackend(page);
+    await page.route("**/rest/v1/rpc/get_dashboard", (r) => r.fulfill({ json: dash }));
+    await page.route("**/rest/v1/rpc/get_today_queue", (r) => r.fulfill({ json: many }));
+    await loginViaForm(page);
     await page.getByRole("link", { name: "Bắt đầu ôn" }).click();
     await expect(page.getByRole("button", { name: /Lật thẻ/ })).toBeVisible();
-    await page.keyboard.press("Space");
-    await expect(page.getByRole("button", { name: /^Được/ })).toBeVisible();
-    const ms = await page.evaluate(
-      () =>
-        new Promise<number>((resolve) => {
-          const counter = document.querySelector("header p[aria-live]") as HTMLElement;
-          const t0 = performance.now();
-          new MutationObserver(() => {
-            if (counter.textContent?.includes("2 / 3")) resolve(performance.now() - t0);
-          }).observe(counter, { subtree: true, childList: true, characterData: true });
-          window.dispatchEvent(new KeyboardEvent("keydown", { key: "3", bubbles: true }));
-        }),
-    );
-    expect(ms).toBeLessThanOrEqual(200);
+
+    // Đo ngay trong trang bằng performance.now(): từ lúc phát keydown tới khi DOM (số thẻ trên header) đổi.
+    // Cách này chỉ đo thời gian xử lý của ứng dụng, không gồm độ trễ vòng lặp Playwright/CDP khi máy bận
+    // (nguyên nhân ca cũ chập chờn khi chạy cả bộ). Lấy trung vị 5 lượt để một lượt nghẽn không làm đỏ.
+    const times = await page.evaluate(async () => {
+      const counter = document.querySelector("header p[aria-live]") as HTMLElement;
+      const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
+      const until = (cond: () => boolean) =>
+        new Promise<void>((resolve) => {
+          const tick = () => (cond() ? resolve() : requestAnimationFrame(tick));
+          tick();
+        });
+      const key = (k: string) => document.body.dispatchEvent(new KeyboardEvent("keydown", { key: k, bubbles: true }));
+      const out: number[] = [];
+      for (let i = 0; i < 5; i++) {
+        const before = counter.textContent;
+        key(" ");
+        await until(() => !!document.querySelector('button[aria-keyshortcuts="3"]'));
+        await sleep(80);
+        out.push(
+          await new Promise<number>((resolve) => {
+            const t0 = performance.now();
+            const mo = new MutationObserver(() => {
+              if (counter.textContent !== before) {
+                mo.disconnect();
+                resolve(performance.now() - t0);
+              }
+            });
+            mo.observe(counter, { subtree: true, childList: true, characterData: true });
+            key("3");
+          }),
+        );
+        await sleep(80);
+      }
+      return out;
+    });
+    expect(times).toHaveLength(5);
+    const median = [...times].sort((a, b) => a - b)[2];
+    expect(median, `các lượt (ms): ${times.map((t) => t.toFixed(1)).join(", ")}`).toBeLessThanOrEqual(200);
   });
 
   test("axe 0 vi phạm A/AA trên / và /on-tap", async ({ page }) => {

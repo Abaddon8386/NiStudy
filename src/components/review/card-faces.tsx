@@ -1,19 +1,8 @@
+import type { Ref } from "react";
 import type { KanaDetails, KanjiDetails, SessionCard, VocabDetails } from "@/lib/domain/queue";
-
-/** Cỡ chữ lớn theo loại và độ dài (docs/03-design.md mục 5.2), co lại để không tràn ngang 375px. */
-function frontSize(card: SessionCard): number {
-  const len = [...mainText(card)].length;
-  if (card.card.kind === "kanji") return 160;
-  if (card.card.kind === "kana") return len > 1 ? 96 : 160;
-  return len <= 2 ? 96 : len <= 4 ? 64 : 44;
-}
-
-function backSize(card: SessionCard): number {
-  const len = [...mainText(card)].length;
-  if (card.card.kind === "kana") return len > 1 ? 64 : 88;
-  if (card.card.kind === "kanji") return 88;
-  return len <= 2 ? 72 : len <= 4 ? 56 : 40;
-}
+import { buttonClasses } from "@/ui/button-styles";
+import { BigKanji } from "@/ui/BigKanji";
+import { Mark } from "@/ui/Mark";
 
 export function mainText(card: SessionCard): string {
   const d = card.details;
@@ -28,38 +17,50 @@ export function mainText(card: SessionCard): string {
   }
 }
 
-function BigText({ card, size }: { card: SessionCard; size: number }) {
-  const kanji = card.card.kind === "kanji";
-  return (
-    <p
-      lang="ja"
-      className={`leading-none [overflow-wrap:anywhere] ${kanji ? "font-kanji font-semibold" : "font-jp font-medium"}`}
-      style={{ fontSize: size }}
-    >
-      {mainText(card)}
-    </p>
-  );
+function Big({ card, variant }: { card: SessionCard; variant: "front" | "back" }) {
+  return <BigKanji text={mainText(card)} variant={variant} kanji={card.card.kind === "kanji"} />;
 }
 
-export function CardFront({ card }: { card: SessionCard }) {
+/** Mặt trước: chữ lớn giữa thẻ, nút "Lật thẻ" nằm ở đáy thẻ. */
+export function CardFront({
+  card,
+  flipRef,
+  onFlip,
+}: {
+  card: SessionCard;
+  flipRef: Ref<HTMLButtonElement>;
+  onFlip: () => void;
+}) {
   return (
-    <div className="flex flex-col items-center justify-center text-center">
-      <BigText card={card} size={frontSize(card)} />
+    <div className="flex flex-1 flex-col items-center text-center">
+      <div className="flex flex-1 items-center justify-center py-8">
+        <Big card={card} variant="front" />
+      </div>
+      <button ref={flipRef} type="button" onClick={onFlip} className={buttonClasses("primary", "lg", "w-full")}>
+        Lật thẻ
+        <kbd
+          aria-hidden="true"
+          className="hidden rounded-md bg-paper/20 px-1.5 font-sans text-[14px] font-medium [@media(hover:hover)_and_(pointer:fine)]:inline-flex"
+        >
+          Space
+        </kbd>
+      </button>
     </div>
   );
 }
 
+const exampleBox = "w-full rounded-2xl bg-sand p-4 text-left";
+
 export function CardBack({ card }: { card: SessionCard }) {
   const d = card.details;
-  const size = backSize(card);
-  if (!d) return <div className="text-center">Không có dữ liệu cho thẻ này.</div>;
+  if (!d) return <div className="m-auto text-center">Không có dữ liệu cho thẻ này.</div>;
 
   if (card.card.kind === "kana") {
     return (
-      <div className="flex flex-col items-center justify-center gap-4 text-center">
-        <BigText card={card} size={size} />
-        <p className="text-[40px] leading-tight font-extrabold">
-          <span className="hl">{(d as KanaDetails).romaji}</span>
+      <div className="flex flex-1 flex-col items-center justify-center gap-5 text-center">
+        <Big card={card} variant="back" />
+        <p className="text-[56px] leading-[1.2] font-extrabold">
+          <Mark>{(d as KanaDetails).romaji}</Mark>
         </p>
       </div>
     );
@@ -68,14 +69,14 @@ export function CardBack({ card }: { card: SessionCard }) {
   if (card.card.kind === "vocab") {
     const v = d as VocabDetails;
     return (
-      <div className="flex flex-col items-center justify-center gap-3 text-center">
-        <BigText card={card} size={size} />
-        <p lang="ja" className="font-jp text-[40px] leading-tight font-extrabold [overflow-wrap:anywhere]">
-          <span className="hl">{v.reading}</span>
+      <div className="flex flex-1 flex-col items-center justify-center gap-3 text-center">
+        <Big card={card} variant="back" />
+        <p lang="ja" className="font-jp text-[28px] leading-[1.25] font-bold [overflow-wrap:anywhere]">
+          {v.reading}
         </p>
-        <p className="text-[20px] leading-snug font-medium">{v.meaning_vi ?? "Đang bổ sung"}</p>
+        <p className="text-[22px] leading-[1.3] font-semibold">{v.meaning_vi ?? "Đang bổ sung"}</p>
         {v.example_ja ? (
-          <div className="w-full rounded-2xl bg-sand p-4 text-left">
+          <div className={`${exampleBox} mt-2`}>
             <p lang="ja" className="font-jp text-[20px] leading-snug">
               {v.example_ja}
             </p>
@@ -91,35 +92,39 @@ export function CardBack({ card }: { card: SessionCard }) {
   const others = (k.han_viet_other ?? []).map((o) => o.toLocaleUpperCase("vi"));
   const examples = k.examples ?? [];
   return (
-    <div className="flex flex-col items-center justify-center gap-3 text-center">
-      <BigText card={card} size={size} />
+    <div className="flex flex-1 flex-col items-center justify-center gap-3 text-center">
+      <Big card={card} variant="back" />
       {main ? (
-        <p className="text-[40px] leading-tight font-extrabold">
-          <span className="hl">{main}</span>
+        <p className="text-[40px] leading-[1.3] font-extrabold">
+          <Mark>{main}</Mark>
         </p>
       ) : (
         <p className="text-[20px] leading-tight font-bold text-ink-2">Đang bổ sung</p>
       )}
-      {others.length > 0 ? <p className="text-sm text-ink-2">Âm khác: {others.join(", ")}</p> : null}
-      <p className="text-[20px] leading-snug font-medium">{k.meaning_vi ?? "Đang bổ sung"}</p>
-      <p className="text-base">
-        <span className="text-ink-2">On </span>
-        <span lang="ja" className="font-jp">
-          {k.on_readings.length ? k.on_readings.join("、") : "—"}
+      {others.length > 0 ? <p className="text-[14px] text-ink-2">Âm khác: {others.join(", ")}</p> : null}
+      <p className="text-[22px] leading-[1.3] font-semibold">{k.meaning_vi ?? "Đang bổ sung"}</p>
+      <p className="flex flex-wrap items-baseline justify-center gap-x-4 gap-y-1">
+        <span>
+          <span className="text-[14px] font-bold tracking-wide text-ink-2">ON </span>
+          <span lang="ja" className="font-jp text-[20px]">
+            {k.on_readings.length ? k.on_readings.join("、") : "—"}
+          </span>
         </span>
-        <span className="text-ink-2"> · Kun </span>
-        <span lang="ja" className="font-jp">
-          {k.kun_readings.length ? k.kun_readings.join("、") : "—"}
+        <span>
+          <span className="text-[14px] font-bold tracking-wide text-ink-2">KUN </span>
+          <span lang="ja" className="font-jp text-[20px]">
+            {k.kun_readings.length ? k.kun_readings.join("、") : "—"}
+          </span>
         </span>
       </p>
-      <div className="w-full rounded-2xl bg-sand p-4 text-left">
+      <div className={`${exampleBox} mt-1`}>
         {examples.length === 0 ? (
           <p className="text-base text-ink-2">Chưa có từ ví dụ</p>
         ) : (
           <ul className="space-y-1">
             {examples.map((e) => (
               <li key={e.word} className="text-base">
-                <span lang="ja" className="font-jp text-[20px]">
+                <span lang="ja" className="font-jp text-[22px] font-medium">
                   {e.word}
                 </span>{" "}
                 <span lang="ja" className="font-jp text-ink-2">

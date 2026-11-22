@@ -12,7 +12,7 @@ test("không đăng nhập vẫn mở được; đủ 4 nguồn kèm giấy phé
   await page.goto("/nguon-du-lieu");
   await expect(page).toHaveURL(/\/nguon-du-lieu$/);
   await expect(page.getByRole("heading", { level: 1, name: "Nguồn dữ liệu" })).toBeVisible();
-  const items = page.locator("main ul > li");
+  const items = page.locator("main > ul > li");
   await expect(items).toHaveCount(4);
   for (const s of SOURCES) {
     const item = items.filter({ has: page.getByRole("heading", { level: 2, name: s.name, exact: true }) });
@@ -32,7 +32,7 @@ test("liên kết giấy phép đúng URL, liên kết ngoài có rel an toàn",
   const bySa = page.locator('a[href="https://creativecommons.org/licenses/by-sa/4.0/"]');
   const by = page.locator('a[href="https://creativecommons.org/licenses/by/4.0/"]');
   expect(await bySa.count()).toBeGreaterThanOrEqual(3); // KANJIDIC2, JMdict, đoạn dữ liệu tự biên soạn
-  await expect(by).toHaveCount(2); // hai danh sách tanos
+  await expect(by).toHaveCount(3); // hai danh sách tanos + clip tàu (mục Hình ảnh và video)
   for (const a of await page.locator('main a[href^="http"]').all()) {
     await expect(a).toHaveAttribute("rel", /noopener/);
     await expect(a).toHaveAttribute("rel", /noreferrer/);

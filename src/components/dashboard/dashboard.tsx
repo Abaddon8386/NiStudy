@@ -1,98 +1,334 @@
 "use client";
 
 import Link from "next/link";
+import type { CSSProperties } from "react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { loadDashboard } from "@/lib/learning/dashboard";
 import { usePendingCount } from "@/lib/learning/outbox";
-import { buildDashboardView, type DashboardData, type DashboardView } from "@/lib/domain/dashboard-view";
+import {
+  buildDashboardView,
+  shouldStamp,
+  studyGrid,
+  type DashboardData,
+  type DashboardView,
+} from "@/lib/domain/dashboard-view";
+import { Button } from "@/ui/Button";
+import { Card } from "@/ui/Card";
+import { Mark } from "@/ui/Mark";
+import { Notice } from "@/ui/Notice";
 import { CountUp } from "@/ui/motion/CountUp";
 import { Reveal } from "@/ui/motion/Reveal";
-import { SplitWords } from "@/ui/motion/SplitWords";
 import { useInView } from "@/ui/motion/use-in-view";
+import "./dashboard.css";
 
 interface Loaded {
   data: DashboardData;
   today: string;
+  /** Dấu triện hôm nay đóng lần đầu trong ngày (vừa học xong). */
+  fresh: boolean;
 }
 
+const STAMP_KEY = "nihongo:home-stamped";
 const nf = new Intl.NumberFormat("vi-VN");
-const card = "rounded-[24px] border border-hair bg-paper p-6 tabular-nums";
-const label = "text-base font-bold text-ink-2";
+// Độ nghiêng của từng dấu triện (cố định theo vị trí để không nhảy giữa các lần vẽ).
+const ROTS = [-8, 5, -3, 9, -6, 2, 7, -10, 4, -2, 8, -5, 3, -9, 6, -4, 10, -1];
 
-function longDate(today: string) {
-  const d = new Date(`${today}T00:00:00Z`);
-  return new Intl.DateTimeFormat("vi-VN", {
-    timeZone: "UTC",
-    weekday: "long",
-    day: "numeric",
-    month: "numeric",
-    year: "numeric",
-  }).format(d);
+function readStamped(): string | null {
+  try {
+    return localStorage.getItem(STAMP_KEY);
+  } catch {
+    return null;
+  }
+}
+function writeStamped(today: string) {
+  try {
+    localStorage.setItem(STAMP_KEY, today);
+  } catch {
+    /* không lưu được thì lần sau đóng lại, không sao */
+  }
 }
 
-function headline(v: DashboardView): string {
+function fmtDate(iso: string, opts: Intl.DateTimeFormatOptions) {
+  return new Intl.DateTimeFormat("vi-VN", { timeZone: "UTC", ...opts }).format(new Date(`${iso}T00:00:00Z`));
+}
+
+function accessibleHeadline(v: DashboardView): string {
   if (v.done) return "Hôm nay đã xong";
   return `Hôm nay: ${v.total} thẻ, khoảng ${v.minutes} phút`;
 }
 
-const startClass =
-  "flex min-h-14 w-full items-center justify-center rounded-full bg-marker px-6 text-[18px] font-bold text-ink focus-visible:outline-paper lg:inline-flex lg:w-auto lg:min-w-[280px]";
-
-function StartLink() {
+/** H1 hai dòng; trình đọc màn hình nghe một câu liền (bản sr-only). */
+function Headline({ view }: { view: DashboardView | null }) {
+  const cls = "text-[28px] leading-[1.15] min-[400px]:text-[32px] font-extrabold tracking-[-0.5px] lg:text-[48px] lg:leading-[1.1]";
+  if (!view) return <h1 className={cls}>Hôm nay</h1>;
   return (
-    <Link href="/on-tap" className={startClass}>
-      Bắt đầu ôn
-    </Link>
+    <h1 className={cls}>
+      <span className="sr-only">{accessibleHeadline(view)}</span>
+      <span aria-hidden="true" className="dash-line block">
+        Hôm nay
+      </span>
+      <span aria-hidden="true" className="dash-line block" style={{ "--i": 1 } as CSSProperties}>
+        {view.done ? (
+          <Mark>đã xong.</Mark>
+        ) : (
+          <>
+            {nf.format(view.total)} thẻ, <Mark>{`khoảng ${view.minutes} phút.`}</Mark>
+          </>
+        )}
+      </span>
+    </h1>
   );
 }
 
 function Skeleton() {
+  const bone = "rounded-[28px] bg-hair";
   return (
-    <div aria-busy="true" aria-label="Đang tải số liệu" className="flex flex-col gap-4 lg:grid lg:grid-cols-12">
-      <div className="h-[300px] rounded-[24px] bg-hair lg:col-span-9" />
-      <div className="h-[200px] rounded-[24px] bg-hair lg:col-span-3 lg:h-[300px]" />
-      <div className="h-[120px] rounded-[24px] bg-hair lg:col-span-12" />
+    <div aria-busy="true" aria-label="Đang tải số liệu" className="grid grid-cols-2 gap-4 lg:grid-cols-12 lg:gap-6">
+      <div className={`${bone} col-span-2 h-[316px] lg:col-span-8 lg:h-[380px]`} />
+      <div className={`${bone} col-span-2 h-[372px] lg:col-span-4 lg:h-[380px]`} />
+      <div className="h-[132px] rounded-[22px] bg-hair lg:col-span-4 lg:h-[148px]" />
+      <div className="h-[132px] rounded-[22px] bg-hair lg:col-span-4 lg:h-[148px]" />
+      <div className="col-span-2 h-16 rounded-full bg-hair lg:col-span-4 lg:h-[148px] lg:rounded-[28px]" />
     </div>
   );
 }
 
-/** Thanh tiến độ chạy từ 0 tới giá trị khi vào khung nhìn (450ms, ease-out). */
+/** Thanh tiến độ thẻ mới: chạy từ 0 tới giá trị khi vào khung nhìn. */
 function NewBar({ pct, done, goal }: { pct: number; done: number; goal: number }) {
   const [ref, inView] = useInView<HTMLDivElement>();
   return (
     <div
       ref={ref}
       role="progressbar"
-      aria-labelledby="new-progress-label"
+      aria-label="Thẻ mới hôm nay"
       aria-valuemin={0}
       aria-valuemax={goal}
       aria-valuenow={Math.min(done, goal)}
-      className="mt-2 h-3 overflow-hidden rounded-full bg-track"
+      className="h-2.5 overflow-hidden rounded-full bg-track"
     >
-      <div className="bar-fill h-full rounded-full bg-marker" style={{ width: `${inView ? pct : 0}%` }} />
+      <div className="dash-bar h-full rounded-full bg-marker" style={{ width: `${inView ? pct : 0}%` }} />
     </div>
   );
 }
 
-function ExamBlock({ exam }: { exam: NonNullable<DashboardView["exam"]> }) {
+function SealGlyph({ className, style, fresh }: { className: string; style?: CSSProperties; fresh?: boolean }) {
   return (
-    <section aria-labelledby="blk-exam" className={`${card} h-full`}>
-      <h2 id="blk-exam" className={label}>
-        Ngày thi
-      </h2>
-      {exam.kind === "days" && (
-        <p className="mt-2 text-[32px] leading-tight font-extrabold">Còn {nf.format(exam.days)} ngày</p>
-      )}
-      {exam.kind === "today" && <p className="mt-2 text-[32px] leading-tight font-extrabold">Hôm nay thi</p>}
-      {exam.kind === "past" && (
-        <p className="mt-2 text-base">
-          Ngày thi đã qua.{" "}
-          <Link href="/cai-dat" className="inline-flex min-h-11 items-center font-bold underline underline-offset-4">
-            Đặt ngày mới hoặc xóa trong Cài đặt
-          </Link>
+    <span
+      aria-hidden="true"
+      lang="ja"
+      data-fresh={fresh ? "" : undefined}
+      style={style}
+      className={`dash-seal inline-flex items-center justify-center rounded-full bg-seal font-kanji font-semibold text-white shadow-[inset_0_0_0_2px_var(--seal-edge)] ${className}`}
+    >
+      学
+    </span>
+  );
+}
+
+function HeroDeco() {
+  return (
+    <>
+      <span aria-hidden="true" className="dash-deco dash-waves" />
+      {/* Chữ vẽ bằng ::before (không phải nút văn bản) để công cụ đo tương phản bỏ qua phần trang trí. */}
+      <span aria-hidden="true" lang="ja" className="dash-deco dash-kanji font-kanji" />
+    </>
+  );
+}
+
+function Hero({ view, studiedToday, fresh }: { view: DashboardView; studiedToday: boolean; fresh: boolean }) {
+  if (view.done) {
+    return (
+      <Reveal as="section" index={0} aria-label="Ôn hôm nay" className="col-span-2 lg:col-span-8">
+        <Card tone="hero" className="dash-hero flex h-full flex-col gap-6 lg:flex-row lg:items-center lg:gap-10 lg:p-10">
+          <HeroDeco />
+          {studiedToday ? (
+            <span
+              aria-hidden="true"
+              lang="ja"
+              data-fresh={fresh ? "" : undefined}
+              className="dash-seal-big inline-flex size-28 shrink-0 -rotate-8 items-center justify-center rounded-full bg-seal font-kanji text-[60px] font-semibold text-white shadow-[inset_0_0_0_4px_var(--seal-edge)] lg:size-40 lg:text-[84px]"
+            >
+              学
+            </span>
+          ) : (
+            <p className="text-[96px] leading-[0.95] font-extrabold tracking-[-2px] tabular-nums">0</p>
+          )}
+          <div>
+            <p className="text-[28px] leading-[1.2] font-extrabold lg:text-[36px]">Xong rồi. Hẹn mai.</p>
+            <p className="mt-2 text-base">Không còn thẻ nào cần ôn hôm nay.</p>
+            <div className="mt-6 flex flex-wrap gap-3">
+              <Button href="/kana" variant="onHero" size="lg">
+                Ôn thêm kana
+              </Button>
+            </div>
+          </div>
+        </Card>
+      </Reveal>
+    );
+  }
+
+  const p = view.newProgress;
+  return (
+    <Reveal as="section" index={0} aria-label="Ôn hôm nay" className="col-span-2 lg:col-span-8">
+      <Card tone="hero" className="dash-hero flex h-full flex-col lg:p-10">
+        <HeroDeco />
+        <div className="flex items-center gap-4">
+          <p className="text-[96px] leading-[0.9] font-extrabold tracking-[-2px] tabular-nums lg:text-[120px]">
+            <CountUp value={view.dueToday} />
+          </p>
+          <p className="max-w-[7ch] text-[20px] leading-[1.25] font-medium lg:text-[24px]">thẻ đến hạn</p>
+        </div>
+        <p className="mt-3 text-[18px] font-bold tabular-nums">+ {nf.format(view.newRemaining)} thẻ mới</p>
+        <div className="mt-3 max-w-[440px]">
+          <NewBar pct={p.pct} done={p.done} goal={p.goal} />
+          <p className="mt-2 text-base tabular-nums">
+            {nf.format(p.done)} / {nf.format(p.goal)} thẻ mới
+          </p>
+        </div>
+        <div className="mt-6 lg:mt-auto lg:pt-8">
+          <Button href="/on-tap" variant="onHero" size="lg" className="w-full lg:w-auto lg:min-w-[280px]">
+            Bắt đầu ôn
+          </Button>
+        </div>
+      </Card>
+    </Reveal>
+  );
+}
+
+function StudyDays({ d, today, fresh }: { d: DashboardData; today: string; fresh: boolean }) {
+  const grid = d.studyDays ? studyGrid(d.studyDays, today, d.studiedToday) : null;
+  let s = 0;
+  return (
+    <Reveal as="section" index={1} aria-labelledby="blk-days" className="dash-days col-span-2 lg:col-span-4">
+      <Card tone="outlined" className="flex h-full flex-col p-5 lg:p-6">
+        <h2 id="blk-days" className="sr-only">
+          Ngày học
+        </h2>
+        <p className="flex items-baseline gap-2">
+          <span className="text-[56px] leading-none font-extrabold tracking-[-1px]">
+            <CountUp value={d.totalDays} />
+          </span>
+          <span className="text-[20px]">ngày đã học</span>
         </p>
-      )}
-    </section>
+        <p className="mt-1 text-[14px] text-ink-2">
+          {d.streak > 0 ? `Chuỗi ${nf.format(d.streak)} ngày` : "Bắt đầu chuỗi mới hôm nay"}
+        </p>
+        {grid && (
+          <div
+            role="img"
+            aria-label={`Đã học ${grid.studied} trong 35 ngày gần nhất, hôm nay ${d.studiedToday ? "đã học" : "chưa học"}`}
+            className="mt-5 grid grid-cols-7 gap-x-1.5 gap-y-2 lg:mt-auto lg:pt-5"
+          >
+            {grid.cells.map((c, i) => {
+              if (!c.studied) {
+                return (
+                  <span
+                    key={c.date}
+                    aria-hidden="true"
+                    className={`dash-cell ${c.today ? "dash-cell-today" : "dash-cell-empty"}`}
+                  />
+                );
+              }
+              const style = {
+                transform: `rotate(${ROTS[i % ROTS.length]}deg)`,
+                "--s": s++,
+              } as CSSProperties;
+              return (
+                <span key={c.date} aria-hidden="true" className="dash-cell">
+                  <SealGlyph
+                    className="text-[15px] lg:text-[17px]"
+                    style={style}
+                    fresh={c.today && fresh}
+                  />
+                </span>
+              );
+            })}
+          </div>
+        )}
+      </Card>
+    </Reveal>
+  );
+}
+
+function ExamTile({ view, d }: { view: DashboardView; d: DashboardData }) {
+  const level = d.level;
+  const exam = view.exam;
+  const tile = "flex h-full flex-col justify-between tabular-nums lg:p-6";
+  const label = "text-[14px] leading-[1.3] text-ink-2";
+  const name = `Thi JLPT${level ? ` ${level}` : ""}`;
+  if (!exam) {
+    return (
+      <Reveal index={2} className="lg:col-span-4">
+        <Card tone="sand" className={tile}>
+          <p className={label}>{name}</p>
+          <Link
+            href="/cai-dat"
+            className="mt-2 inline-flex min-h-11 items-center text-[18px] leading-[1.25] font-bold underline decoration-2 underline-offset-4"
+          >
+            Đặt ngày thi để đếm ngược
+          </Link>
+        </Card>
+      </Reveal>
+    );
+  }
+  return (
+    <Reveal as="section" index={2} aria-labelledby="blk-exam" className="lg:col-span-4">
+      <Card tone="sand" className={tile}>
+        <h2 id="blk-exam" className={label}>
+          {exam.kind === "days" ? `${name} còn` : name}
+        </h2>
+        {exam.kind === "days" && (
+          <>
+            <p className="text-[40px] leading-[1.15] font-extrabold">
+              <CountUp value={exam.days} />
+              <small className="ml-1.5 text-base font-normal">ngày</small>
+            </p>
+            <p className={label}>{fmtDate(d.examDate ?? "", { day: "numeric", month: "numeric", year: "numeric" })}</p>
+          </>
+        )}
+        {exam.kind === "today" && <p className="text-[32px] leading-[1.15] font-extrabold">Hôm nay thi</p>}
+        {exam.kind === "past" && (
+          <p className="text-base">
+            Ngày thi đã qua.{" "}
+            <Link href="/cai-dat" className="inline-flex min-h-11 items-center font-bold underline underline-offset-4">
+              Đặt ngày mới trong Cài đặt
+            </Link>
+          </p>
+        )}
+      </Card>
+    </Reveal>
+  );
+}
+
+function XpTile({ d }: { d: DashboardData }) {
+  return (
+    <Reveal as="section" index={3} aria-labelledby="blk-xp" className="lg:col-span-4">
+      <Card tone="sand" className="flex h-full flex-col justify-between tabular-nums lg:p-6">
+        <h2 id="blk-xp" className="text-[14px] leading-[1.3] text-ink-2">
+          Điểm XP
+        </h2>
+        <p className="text-[40px] leading-[1.15] font-extrabold">
+          <CountUp value={d.xpTotal} />
+        </p>
+        <p className="text-[14px] leading-[1.3] text-ink-2">hôm nay +{nf.format(d.xpToday)}</p>
+      </Card>
+    </Reveal>
+  );
+}
+
+function QuizEntry() {
+  return (
+    <Reveal index={4} className="col-span-2 lg:col-span-4">
+      <Link
+        href="/trac-nghiem"
+        className="dash-quiz flex min-h-16 w-full items-center justify-between gap-4 rounded-full border-2 border-ink bg-paper px-6 text-[18px] font-bold lg:h-full lg:flex-col lg:items-start lg:rounded-[28px] lg:p-6"
+      >
+        <span>Trắc nghiệm · 10 câu</span>
+        <span aria-hidden="true" className="text-[24px] leading-none lg:self-end lg:text-[32px]">
+          →
+        </span>
+      </Link>
+    </Reveal>
   );
 }
 
@@ -123,7 +359,14 @@ export function Dashboard() {
       if (id !== seq.current) return;
       if (r.ok) {
         hasData.current = true;
-        setLoaded({ data: r.data, today: r.today });
+        const fresh = shouldStamp(r.data.studiedToday, r.today, readStamped());
+        if (fresh) writeStamped(r.today);
+        setLoaded((prev) => ({
+          data: r.data,
+          today: r.today,
+          // Giữ hiệu ứng nếu lần tải trước của cùng ngày đã bật (tránh tắt giữa chừng khi tải lại nhanh).
+          fresh: fresh || (prev?.today === r.today && prev.fresh),
+        }));
         setFailed(false);
       } else if (!hasData.current) {
         setFailed(true);
@@ -135,126 +378,48 @@ export function Dashboard() {
   const d = loaded?.data;
 
   return (
-    <main id="noi-dung" tabIndex={-1} className="flex flex-col gap-6 px-4 py-6 lg:p-8">
+    <main id="noi-dung" tabIndex={-1} className="dash flex flex-col gap-6 px-4 py-6 lg:gap-8 lg:px-8 lg:py-10">
       <header>
-        <SplitWords
-          as="h1"
-          key={view ? headline(view) : "Hôm nay"}
-          text={view ? headline(view) : "Hôm nay"}
-          className="text-[28px] leading-[1.2] font-extrabold lg:text-[40px]"
-        />
-        {loaded && <p className="mt-1 text-base text-ink-2 first-letter:uppercase">{longDate(loaded.today)}</p>}
-        {pending > 0 && (
-          <p role="status" className="mt-1 text-sm text-ink-2 tabular-nums">
-            Đang đồng bộ {pending} lượt ôn
+        <Headline key={view ? accessibleHeadline(view) : "loading"} view={view} />
+        {loaded && (
+          <p className="mt-2 text-base text-ink-2 first-letter:uppercase">
+            {fmtDate(loaded.today, { weekday: "long", day: "numeric", month: "numeric", year: "numeric" })}
           </p>
+        )}
+        {pending > 0 && (
+          <Notice tone="info" className="mt-3 w-fit py-2 text-[14px] tabular-nums">
+            Đang đồng bộ {nf.format(pending)} lượt ôn
+          </Notice>
         )}
       </header>
 
       {!loaded && !failed && <Skeleton />}
 
       {!loaded && failed && (
-        <section className="rounded-[24px] bg-teal p-6 text-white">
-          <p role="alert" className="text-base">
-            Chưa tải được số liệu.
-          </p>
-          <div className="mt-4 flex flex-col gap-3 lg:flex-row">
-            <button
-              type="button"
-              onClick={retry}
-              className="min-h-11 rounded-full border-2 border-white px-6 text-base font-bold focus-visible:outline-paper"
-            >
+        <div className="flex flex-col gap-4">
+          <Notice tone="error">Chưa tải được số liệu. Bạn vẫn có thể bắt đầu ôn.</Notice>
+          <div className="flex flex-col gap-3 sm:flex-row">
+            <Button variant="secondary" onClick={retry}>
               Thử lại
-            </button>
-            <StartLink />
+            </Button>
+            <Button href="/on-tap" variant="primary">
+              Bắt đầu ôn
+            </Button>
           </div>
-        </section>
-      )}
-
-      {view && d && (
-        <div className="flex flex-col gap-4 lg:grid lg:grid-cols-12">
-          <Reveal
-            as="section"
-            index={0}
-            aria-labelledby="blk-today"
-            className="rounded-[24px] bg-teal p-6 text-white tabular-nums lg:col-span-9 lg:p-10"
-          >
-            <h2 id="blk-today" className="text-base font-bold">
-              Ôn hôm nay
-            </h2>
-            {view.done ? (
-              <>
-                <p className="mt-3 text-[20px] leading-snug font-bold">Không còn thẻ nào cần ôn.</p>
-                <p className="mt-2 text-base">Hẹn gặp lại vào ngày mai.</p>
-                <Link
-                  href="/kana"
-                  className="mt-6 inline-flex min-h-11 items-center text-base font-bold underline underline-offset-4 focus-visible:outline-paper"
-                >
-                  Xem bảng kana
-                </Link>
-              </>
-            ) : (
-              <>
-                <p className="mt-3 text-[56px] leading-none font-extrabold lg:text-[72px]">
-                  <CountUp value={view.total} />
-                  <span className="ml-3 text-[20px] font-bold">thẻ cần ôn</span>
-                </p>
-                <p className="mt-3 text-base">
-                  {nf.format(view.dueToday)} thẻ đến hạn · {nf.format(view.newRemaining)} thẻ mới · khoảng{" "}
-                  {view.minutes} phút
-                </p>
-                <div className="mt-6">
-                  <div className="flex items-baseline justify-between text-base">
-                    <span id="new-progress-label">Thẻ mới hôm nay</span>
-                    <span>
-                      {view.newProgress.done} / {view.newProgress.goal}
-                    </span>
-                  </div>
-                  <NewBar pct={view.newProgress.pct} done={view.newProgress.done} goal={view.newProgress.goal} />
-                </div>
-                <div className="mt-8">
-                  <StartLink />
-                </div>
-              </>
-            )}
-          </Reveal>
-
-          <Reveal as="section" index={1} aria-labelledby="blk-days" className={`${card} lg:col-span-3`}>
-            <h2 id="blk-days" className={label}>
-              Ngày học
-            </h2>
-            <p className="mt-2 text-[48px] leading-none font-extrabold lg:text-[56px]"><CountUp value={d.totalDays} />
-            </p>
-            <p className="mt-1 text-base text-ink-2">ngày đã học</p>
-            <p className="mt-4 text-base">
-              {d.streak > 0 ? `Chuỗi ${nf.format(d.streak)} ngày` : "Bắt đầu chuỗi mới hôm nay"}
-            </p>
-          </Reveal>
-
-          {view.exam && (
-            <Reveal index={2} className="lg:col-span-6">
-              <ExamBlock exam={view.exam} />
-            </Reveal>
-          )}
-
-          <Reveal
-            as="section"
-            index={3}
-            aria-labelledby="blk-xp"
-            className={`${card} ${view.exam ? "lg:col-span-6" : "lg:col-span-12"}`}
-          >
-            <h2 id="blk-xp" className={label}>
-              XP
-            </h2>
-            <p className="mt-2 text-[32px] leading-tight font-extrabold">
-              <CountUp value={d.xpTotal} />
-            </p>
-            <p className="text-base text-ink-2">hôm nay +{nf.format(d.xpToday)}</p>
-          </Reveal>
         </div>
       )}
 
-      <p className="px-2 text-base text-ink-2">
+      {view && d && loaded && (
+        <div className="grid grid-cols-2 gap-4 lg:grid-cols-12 lg:gap-6">
+          <Hero view={view} studiedToday={d.studiedToday} fresh={loaded.fresh} />
+          <StudyDays d={d} today={loaded.today} fresh={loaded.fresh} />
+          <ExamTile view={view} d={d} />
+          <XpTile d={d} />
+          <QuizEntry />
+        </div>
+      )}
+
+      <p className="text-base text-ink-2">
         <a className="inline-flex min-h-11 items-center underline underline-offset-4" href="/nguon-du-lieu">
           Nguồn dữ liệu và giấy phép
         </a>

@@ -4,7 +4,10 @@ import { useState, useSyncExternalStore } from "react";
 import { AUTH_MESSAGES, classifyAuthError } from "@/lib/auth/errors";
 import { getPendingEmail, setPendingEmail } from "@/lib/auth/pending-email";
 import { createClient } from "@/lib/supabase/client";
-import { Field, Notice, SubmitButton, TextLink } from "./ui";
+import { emailProblem } from "@/lib/auth/validate";
+import { Button } from "@/ui/Button";
+import { Notice } from "@/ui/Notice";
+import { TextField } from "@/ui/TextField";
 
 const subscribeNone = () => () => {};
 
@@ -16,11 +19,15 @@ export function CheckInbox() {
   const email = known ? saved : typed;
   const setEmail = setTyped;
   const [message, setMessage] = useState<{ kind: "error" | "info"; text: string } | null>(null);
+  const [emailError, setEmailError] = useState("");
   const [pending, setPending] = useState(false);
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     setMessage(null);
+    const problem = emailProblem(email);
+    setEmailError(problem);
+    if (problem) return;
     setPending(true);
     try {
       const { error } = await createClient().auth.resend({
@@ -42,22 +49,27 @@ export function CheckInbox() {
   }
 
   return (
-    <form onSubmit={onSubmit}>
-      <p className="text-base">
-        Chúng tôi đã gửi liên kết xác nhận tới email của bạn. Liên kết hết hạn sau 1 giờ.
-      </p>
+    <form onSubmit={onSubmit} noValidate className="flex flex-col gap-4">
       {known ? (
-        <p className="mt-3 text-base font-medium break-all">{email}</p>
+        <p className="rounded-[16px] bg-sand px-4 py-3 text-base font-medium break-all">{email}</p>
       ) : (
-        <Field label="Email" name="email" value={email} onChange={setEmail} autoComplete="email" />
+        <TextField
+          label="Email"
+          name="email"
+          type="email"
+          value={email}
+          onChange={setEmail}
+          autoComplete="email"
+          error={emailError}
+        />
       )}
-      {message && <Notice kind={message.kind}>{message.text}</Notice>}
-      <SubmitButton pending={pending} variant="secondary">
+      {message && <Notice tone={message.kind === "error" ? "error" : "info"}>{message.text}</Notice>}
+      <Button type="submit" size="lg" loading={pending} className="mt-2 w-full">
         Gửi lại email
-      </SubmitButton>
-      <p className="mt-4">
-        <TextLink href="/dang-nhap">Quay lại đăng nhập</TextLink>
-      </p>
+      </Button>
+      <Button href="/dang-nhap" variant="ghost" className="self-center">
+        Quay lại đăng nhập
+      </Button>
     </form>
   );
 }

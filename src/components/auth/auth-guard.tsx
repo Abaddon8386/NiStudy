@@ -23,7 +23,8 @@ export function AuthGuard({ children }: { children: React.ReactNode }) {
       const { data } = await supabase.auth.getSession();
       if (cancelled) return;
       if (!data.session) {
-        router.replace("/dang-nhap");
+        // Khách mới vào trang chính thì xem trang giới thiệu; các trang app khác về đăng nhập.
+        router.replace(pathname === "/" ? "/gioi-thieu" : "/dang-nhap");
         return;
       }
       // Nạp lại lượt ôn chưa gửi của người dùng này từ IndexedDB và gửi (FR-27).

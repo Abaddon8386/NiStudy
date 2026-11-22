@@ -6,7 +6,12 @@ import { useState } from "react";
 import { AUTH_MESSAGES, classifyAuthError } from "@/lib/auth/errors";
 import { setPendingEmail } from "@/lib/auth/pending-email";
 import { createClient } from "@/lib/supabase/client";
-import { Field, Notice, SourceLink, SubmitButton, TextLink } from "./ui";
+import { emailProblem, PASSWORD_REQUIRED_MESSAGE } from "@/lib/auth/validate";
+import { Button } from "@/ui/Button";
+import { Notice } from "@/ui/Notice";
+import { PasswordField } from "@/ui/PasswordField";
+import { TextField } from "@/ui/TextField";
+import { SourceLink } from "./ui";
 
 export function SignInForm() {
   const router = useRouter();
@@ -17,11 +22,18 @@ export function SignInForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
+  const [emailError, setEmailError] = useState("");
+  const [passwordError, setPasswordError] = useState("");
   const [pending, setPending] = useState(false);
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError("");
+    const eProblem = emailProblem(email);
+    const pProblem = password ? "" : PASSWORD_REQUIRED_MESSAGE;
+    setEmailError(eProblem);
+    setPasswordError(pProblem);
+    if (eProblem || pProblem) return;
     setPending(true);
     try {
       const { error: err } = await createClient().auth.signInWithPassword({ email, password });
@@ -39,10 +51,10 @@ export function SignInForm() {
   }
 
   return (
-    <form onSubmit={onSubmit}>
-      {deleted && <Notice kind="info">Tài khoản đã được xóa.</Notice>}
+    <form onSubmit={onSubmit} noValidate className="flex flex-col gap-4">
+      {deleted && <Notice tone="success">Tài khoản đã được xóa.</Notice>}
       {expired && (
-        <Notice kind="error">
+        <Notice tone="error">
           Liên kết đã hết hạn hoặc không hợp lệ. Hãy yêu cầu liên kết mới.{" "}
           <Link className="underline underline-offset-4" href="/quen-mat-khau">
             Quên mật khẩu
@@ -50,7 +62,7 @@ export function SignInForm() {
         </Notice>
       )}
       {confirmFailed && (
-        <Notice kind="error">
+        <Notice tone="error">
           Email của bạn có thể đã được xác nhận. Hãy đăng nhập bằng mật khẩu. Nếu chưa vào được, hãy gửi lại email xác
           nhận và mở liên kết bằng chính trình duyệt đã dùng để đăng ký.{" "}
           <Link className="underline underline-offset-4" href="/kiem-tra-hop-thu">
@@ -58,28 +70,41 @@ export function SignInForm() {
           </Link>
         </Notice>
       )}
-      <Field label="Email" name="email" value={email} onChange={setEmail} autoComplete="email" />
-      <Field
+      <TextField
+        label="Email"
+        name="email"
+        type="email"
+        value={email}
+        onChange={setEmail}
+        autoComplete="email"
+        error={emailError}
+      />
+      <PasswordField
         label="Mật khẩu"
         name="password"
-        type="password"
         value={password}
         onChange={setPassword}
         autoComplete="current-password"
+        error={passwordError}
+        labelAside={
+          <Link
+            href="/quen-mat-khau"
+            className="inline-flex min-h-11 items-center text-[14px] font-medium underline underline-offset-4"
+          >
+            Quên mật khẩu?
+          </Link>
+        }
       />
-      {error && <Notice kind="error">{error}</Notice>}
-      <SubmitButton pending={pending}>Đăng nhập</SubmitButton>
-      <ul className="mt-4 list-none p-0">
-        <li>
-          <TextLink href="/quen-mat-khau">Quên mật khẩu?</TextLink>
-        </li>
-        <li>
-          <TextLink href="/kiem-tra-hop-thu">Chưa nhận email xác nhận?</TextLink>
-        </li>
-        <li>
-          <TextLink href="/dang-ky">Chưa có tài khoản? Đăng ký</TextLink>
-        </li>
-      </ul>
+      {error && <Notice tone="error">{error}</Notice>}
+      <Button type="submit" size="lg" loading={pending} className="mt-2 w-full">
+        Đăng nhập
+      </Button>
+      <Button href="/dang-ky" size="lg" variant="secondary" className="w-full">
+        Chưa có tài khoản? Đăng ký
+      </Button>
+      <Button href="/kiem-tra-hop-thu" variant="ghost" className="self-center text-[14px]">
+        Chưa nhận email xác nhận?
+      </Button>
       <SourceLink />
     </form>
   );

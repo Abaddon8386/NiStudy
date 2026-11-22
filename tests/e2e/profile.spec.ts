@@ -153,3 +153,73 @@ test.describe("cài đặt (S-12)", () => {
     expect(overflow).toBeLessThanOrEqual(0);
   });
 });
+
+test.describe("trình bày mới", () => {
+  const AXE_TAGS = ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"];
+
+  test("cài đặt: Switch bằng phím Space lưu ngay, ChipRow bằng mũi tên đổi cấp", async ({ page }) => {
+    const backend = await mockLoggedInBackend(page, true);
+    await loginViaForm(page);
+    await page.getByRole("link", { name: "Cài đặt" }).click();
+    const sw = page.getByRole("switch", { name: "Đã biết kana" });
+    await expect(sw).not.toBeChecked();
+    await sw.focus();
+    await page.keyboard.press("Space");
+    await expect(sw).toBeChecked();
+    await expect.poll(() => backend.patches.length).toBe(1);
+    expect(backend.patches[0]).toEqual({ knows_kana: true });
+
+    const n5 = page.getByRole("radio", { name: "N5" });
+    await n5.focus();
+    await page.keyboard.press("ArrowRight");
+    await expect(page.getByRole("radio", { name: "N4" })).toBeChecked();
+    await expect.poll(() => backend.patches.length).toBe(2);
+    expect(backend.patches[1]).toEqual({ level: "N4" });
+  });
+
+  for (const [w, h] of [
+    [1280, 800],
+    [375, 812],
+  ] as const) {
+    test(`cài đặt ${w}px: axe 0 vi phạm, không tràn ngang${w >= 1024 ? ", hai cột đều có nhóm" : ""}`, async ({ page }) => {
+      await page.setViewportSize({ width: w, height: h });
+      await mockLoggedInBackend(page, true);
+      await loginViaForm(page);
+      await page.getByRole("link", { name: "Cài đặt" }).first().click();
+      await expect(page.getByRole("heading", { level: 1, name: "Cài đặt" })).toBeVisible();
+      await expect(page.getByLabel("Thẻ mới mỗi ngày")).toBeVisible();
+      for (const name of ["Học tập", "Tài khoản", "Ứng dụng", "Thông tin", "Vùng nguy hiểm"]) {
+        await expect(page.getByRole("heading", { level: 2, name })).toBeVisible();
+      }
+      if (w >= 1024) {
+        const learn = await page.getByRole("heading", { level: 2, name: "Học tập" }).boundingBox();
+        const account = await page.getByRole("heading", { level: 2, name: "Tài khoản" }).boundingBox();
+        expect(account!.x).toBeGreaterThan(learn!.x + 200); // cột phải thật, không để cột trái trống
+        expect(Math.abs(account!.y - learn!.y)).toBeLessThan(4);
+      } else {
+        await expect(page.getByRole("link", { name: "Trang chính" }).first()).toHaveAttribute("href", "/");
+      }
+      const r = await new AxeBuilder({ page }).withTags(AXE_TAGS).analyze();
+      expect(r.violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target).join(" | ")}`)).toEqual([]);
+      const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+      expect(overflow).toBeLessThanOrEqual(0);
+    });
+  }
+
+  test("khởi đầu 1280px: ba thẻ bước có dấu triện, axe 0 vi phạm, chọn kana bằng phím", async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 900 });
+    await mockLoggedInBackend(page, false);
+    await loginViaForm(page);
+    await expect(page.getByRole("button", { name: "Bắt đầu học" })).toBeVisible();
+    await expect(page.locator('main [lang="ja"][aria-hidden="true"]')).toHaveCount(5); // 一 二 三 + あ ア
+    const no = page.getByRole("radio", { name: "Chưa biết" });
+    await no.focus();
+    await page.keyboard.press("ArrowRight");
+    await expect(page.getByRole("radio", { name: "Đã biết" })).toBeChecked();
+    await page.waitForTimeout(900); // chờ hiện dần xong rồi mới đo tương phản
+    const r = await new AxeBuilder({ page }).withTags(AXE_TAGS).analyze();
+    expect(r.violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target).join(" | ")}`)).toEqual([]);
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    expect(overflow).toBeLessThanOrEqual(0);
+  });
+});

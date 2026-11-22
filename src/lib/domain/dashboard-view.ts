@@ -13,6 +13,10 @@ export interface DashboardData {
   medianSeconds: number | null;
   examDate: string | null;
   studiedToday: boolean;
+  /** Cấp đang học (ô "Thi JLPT N_"); null khi RPC cũ chưa trả. */
+  level: "N5" | "N4" | null;
+  /** Ngày học trong 35 ngày gần nhất ("YYYY-MM-DD"); null khi RPC cũ chưa trả (ẩn lưới). */
+  studyDays: string[] | null;
 }
 
 export interface DashboardView {
@@ -47,6 +51,7 @@ export function buildDashboardView(d: DashboardData, today: string): DashboardVi
   };
 }
 
+const ISO_DAY = /^\d{4}-\d{2}-\d{2}$/;
 const num = (v: unknown, fallback = 0) => (typeof v === "number" && Number.isFinite(v) ? v : fallback);
 
 /** Chuyển JSON RPC (snake_case) sang kiểu có định nghĩa; null nếu không phải đối tượng. */
@@ -66,5 +71,43 @@ export function parseDashboard(raw: unknown): DashboardData | null {
     medianSeconds: typeof r.median_seconds_7d === "number" ? r.median_seconds_7d : null,
     examDate: typeof r.exam_date === "string" ? r.exam_date : null,
     studiedToday: r.studied_today === true,
+    level: r.level === "N5" || r.level === "N4" ? r.level : null,
+    studyDays: Array.isArray(r.study_days_35)
+      ? r.study_days_35.filter((x): x is string => typeof x === "string" && ISO_DAY.test(x))
+      : null,
   };
+}
+
+const DAY_MS = 86_400_000;
+export const GRID_DAYS = 35;
+
+export interface StudyCell {
+  date: string;
+  studied: boolean;
+  today: boolean;
+}
+
+/**
+ * Lưới dải ngày học (S-06): 35 ô từ cũ đến mới, ô cuối là hôm nay. Ô hôm nay lấy theo `studiedToday`
+ * (khớp chuỗi ngày ở máy chủ). Cả `today` và phần tử `days` là "YYYY-MM-DD".
+ */
+export function studyGrid(
+  days: readonly string[],
+  today: string,
+  studiedToday: boolean,
+): { cells: StudyCell[]; studied: number } {
+  const set = new Set(days);
+  const t = Date.parse(`${today}T00:00:00Z`);
+  const cells: StudyCell[] = [];
+  for (let i = GRID_DAYS - 1; i >= 0; i--) {
+    const date = new Date(t - i * DAY_MS).toISOString().slice(0, 10);
+    const isToday = i === 0;
+    cells.push({ date, today: isToday, studied: isToday ? studiedToday : set.has(date) });
+  }
+  return { cells, studied: cells.filter((c) => c.studied).length };
+}
+
+/** Dấu triện hôm nay "đóng" đúng một lần mỗi ngày: đã học hôm nay và chưa đóng cho ngày này. */
+export function shouldStamp(studiedToday: boolean, today: string, lastStamped: string | null): boolean {
+  return studiedToday && lastStamped !== today;
 }

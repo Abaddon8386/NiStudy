@@ -4,6 +4,10 @@ import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
 import { buildQuiz, QUIZ_LENGTH, scoreQuiz, type QuizQuestion } from "@/lib/domain/quiz";
 import { loadQuizData, submitQuiz } from "@/lib/learning/quiz";
+import { BigKanji } from "@/ui/BigKanji";
+import { buttonClasses } from "@/ui/button-styles";
+import { EmptyState } from "@/ui/EmptyState";
+import { Notice } from "@/ui/Notice";
 import { QuizResult, type SaveState } from "./quiz-result";
 
 type Phase =
@@ -186,17 +190,46 @@ export function QuizSession() {
   }
 
   if (phase.kind === "not-enough") {
+    const have = Math.min(phase.available, QUIZ_LENGTH);
     return (
-      <main id="noi-dung" tabIndex={-1} className={shell}>
+      <main
+        id="noi-dung"
+        tabIndex={-1}
+        className="mx-auto flex min-h-dvh w-full max-w-[440px] flex-col bg-paper px-4 py-6 lg:max-w-[640px] lg:bg-ground lg:px-0 lg:py-10"
+      >
         <h1 className="sr-only">Trắc nghiệm</h1>
-        <div className="my-auto px-4 text-center">
-          <p className="text-[24px] leading-snug font-bold" data-testid="not-enough">
-            Bạn cần học thêm thẻ để làm trắc nghiệm (cần ít nhất {QUIZ_LENGTH} câu, hiện có {phase.available}).
-          </p>
-          <Link href="/on-tap" className={`mt-6 ${primaryBtn}`}>
-            Ôn tập
-          </Link>
-          <p className="mt-4">
+        <div className="my-auto [&>div>div:last-child]:self-stretch">
+          <EmptyState
+            title="Chưa đủ thẻ để làm trắc nghiệm"
+            body={
+              <span data-testid="not-enough">
+                Bạn cần học thêm thẻ để làm trắc nghiệm (cần ít nhất {QUIZ_LENGTH} câu, hiện có {phase.available}).
+              </span>
+            }
+            action={
+              <div className="flex flex-col gap-4">
+                <div>
+                  <p className="text-base font-medium">
+                    Đã học {have}/{QUIZ_LENGTH} thẻ cần thiết
+                  </p>
+                  <div
+                    role="progressbar"
+                    aria-label="Số thẻ đã học so với số thẻ cần thiết"
+                    aria-valuemin={0}
+                    aria-valuemax={QUIZ_LENGTH}
+                    aria-valuenow={have}
+                    className="mt-2 h-3 w-full overflow-hidden rounded-full bg-hair"
+                  >
+                    <div className="progress-fill h-full rounded-full bg-teal" style={{ width: `${(have / QUIZ_LENGTH) * 100}%` }} />
+                  </div>
+                </div>
+                <Link href="/on-tap" className={buttonClasses("primary", "lg")}>
+                  Ôn tập
+                </Link>
+              </div>
+            }
+          />
+          <p className="mt-4 text-center">
             <Link href="/" className={linkBtn}>
               Về trang chính
             </Link>
@@ -213,59 +246,62 @@ export function QuizSession() {
   if (!q || !questions) return null;
   const total = questions.length;
   const correct = answered && chosen === q.correctIndex;
-  const bigCls =
-    q.type === "kanji-hanviet"
-      ? "font-kanji text-[96px] leading-none font-semibold"
-      : q.type === "vocab-meaning"
-        ? "text-[56px] leading-tight font-medium"
-        : "text-[32px] leading-tight font-extrabold";
+  const hanViet = q.type === "kanji-hanviet";
+  const optText = hanViet
+    ? "text-[22px] leading-[1.25] font-extrabold lg:text-[24px]"
+    : q.optionsAreJapanese
+      ? "text-[20px] leading-[1.3] font-medium"
+      : "text-[18px] leading-[1.3] font-medium";
 
   return (
     <main id="noi-dung" tabIndex={-1} className={shell}>
       <h1 className="sr-only">Trắc nghiệm</h1>
-      <header className="flex items-center justify-between">
-        <Link href="/" className="inline-flex min-h-11 min-w-11 items-center px-2 text-base font-medium">
+      <header className="flex items-center gap-3">
+        <Link href="/" className="inline-flex min-h-11 min-w-11 items-center rounded-full px-2 text-base font-medium">
           Thoát
         </Link>
-        <p aria-live="polite" className="text-base font-bold">
+        <div
+          role="progressbar"
+          aria-label="Tiến độ trắc nghiệm"
+          aria-valuemin={0}
+          aria-valuemax={total}
+          aria-valuenow={index}
+          className="h-2 min-w-0 flex-1 overflow-hidden rounded-full bg-hair"
+        >
+          <div className="progress-fill h-full rounded-full bg-teal" style={{ width: `${(index / total) * 100}%` }} />
+        </div>
+        <p aria-live="polite" className="min-w-14 text-right text-base font-bold tabular-nums">
           <span className="sr-only">Câu </span>
           {index + 1} / {total}
         </p>
-        <span className="min-w-11" aria-hidden="true" />
       </header>
-      <div
-        role="progressbar"
-        aria-label="Tiến độ trắc nghiệm"
-        aria-valuemin={0}
-        aria-valuemax={total}
-        aria-valuenow={index}
-        className="mt-1 h-2 w-full overflow-hidden rounded-full bg-hair"
-      >
-        <div className="progress-fill h-full rounded-full bg-teal" style={{ width: `${(index / total) * 100}%` }} />
-      </div>
       {!online ? (
-        <p role="status" className="mt-3 rounded-2xl bg-sand px-4 py-2 text-base">
+        <Notice tone="warn" className="mt-3">
           Đang mất mạng. Bạn vẫn làm tiếp được, kết quả sẽ gửi khi có mạng.
-        </p>
+        </Notice>
       ) : null}
 
-      <div className="my-4 flex flex-1 flex-col justify-center gap-4">
+      <div className="my-4 flex flex-1 flex-col justify-center gap-5">
         <div
           key={index}
           ref={promptRef}
           tabIndex={-1}
           role="group"
           aria-label={`Câu ${index + 1} trên ${total}`}
-          className="rounded-[32px] border-2 border-ink bg-paper px-6 py-8 text-center outline-offset-4"
+          className="card-in flex flex-col items-center px-2 py-4 text-center focus:outline-none"
         >
-          <p className="text-[18px] font-bold text-ink-2">
+          <p className="text-base font-bold text-ink-2">
             {q.type === "vocab-meaning" ? "Từ này nghĩa là gì?" : q.type === "vocab-word" ? "Nghĩa này là từ nào?" : "Âm Hán Việt của chữ này?"}
           </p>
-          <p lang={q.promptIsJapanese ? "ja" : undefined} data-testid="quiz-prompt" className={`mt-3 ${bigCls}`}>
-            {q.prompt}
-          </p>
+          {q.promptIsJapanese ? (
+            <BigKanji text={q.prompt} variant="quiz" kanji={hanViet} testId="quiz-prompt" className="mt-4" />
+          ) : (
+            <p data-testid="quiz-prompt" className="mt-4 text-[32px] leading-[1.25] font-extrabold">
+              {q.prompt}
+            </p>
+          )}
           {q.promptReading ? (
-            <p lang="ja" className="mt-2 text-[24px] leading-snug text-ink-2">
+            <p lang="ja" className="mt-3 text-[24px] leading-snug text-ink-2">
               {q.promptReading}
             </p>
           ) : null}
@@ -282,24 +318,41 @@ export function QuizSession() {
                 onClick={() => choose(i)}
                 aria-disabled={answered}
                 aria-keyshortcuts={String(i + 1)}
-                className={`flex min-h-14 w-full items-center gap-3 rounded-[20px] border-2 px-4 py-2 text-left text-[18px] ${
+                className={`press flex ${hanViet ? "min-h-16" : "min-h-14"} w-full items-center gap-3 rounded-[20px] border-2 px-4 py-2 text-left ${
                   isRight
-                    ? "border-ink bg-marker font-bold"
+                    ? "border-ink bg-marker"
                     : isWrong
-                      ? "border-bad bg-paper font-bold text-bad"
+                      ? "border-bad bg-paper text-bad"
                       : answered
                         ? "border-ring bg-paper text-ink-2"
                         : "border-ink bg-paper hover:bg-sand"
                 } ${answered ? "cursor-default" : ""}`}
               >
-                <span aria-hidden="true" className="flex size-8 flex-none items-center justify-center rounded-lg bg-sand text-sm font-bold text-ink-2">
+                <span
+                  aria-hidden="true"
+                  className="hidden size-8 flex-none items-center justify-center rounded-lg bg-sand text-[14px] font-bold text-ink-2 [@media(hover:hover)_and_(pointer:fine)]:flex"
+                >
                   {i + 1}
                 </span>
-                <span lang={q.optionsAreJapanese ? "ja" : undefined} data-testid="opt-text" className="min-w-0 flex-1 break-words">
+                <span lang={q.optionsAreJapanese ? "ja" : undefined} data-testid="opt-text" className={`min-w-0 flex-1 break-words ${optText}`}>
                   {opt}
                 </span>
-                {isRight ? <span className="flex-none rounded-full bg-paper px-3 py-0.5 text-base font-bold">Đáp án đúng</span> : null}
-                {isWrong ? <span className="flex-none rounded-full bg-paper px-3 py-0.5 text-base font-bold">Bạn chọn</span> : null}
+                {isRight ? (
+                  <>
+                    <span aria-hidden="true" className="flex size-7 flex-none items-center justify-center rounded-full bg-good text-base font-bold text-white">
+                      ✓
+                    </span>
+                    <span className="flex-none rounded-full bg-paper px-3 py-0.5 text-base font-bold">Đáp án đúng</span>
+                  </>
+                ) : null}
+                {isWrong ? (
+                  <>
+                    <span aria-hidden="true" className="flex size-7 flex-none items-center justify-center rounded-full bg-bad text-base font-bold text-white">
+                      ✕
+                    </span>
+                    <span className="flex-none rounded-full bg-paper px-3 py-0.5 text-base font-bold">Bạn chọn</span>
+                  </>
+                ) : null}
               </button>
             );
           })}
@@ -308,10 +361,12 @@ export function QuizSession() {
         <p aria-live="assertive" data-testid="answer-feedback" className="min-h-7 text-[20px] font-bold">
           {answered ? (
             correct ? (
-              <span className="text-good">Đúng!</span>
+              <span className="text-good">
+                <span aria-hidden="true">✓ </span>Đúng!
+              </span>
             ) : (
               <span className="text-bad">
-                Sai. Đáp án đúng:{" "}
+                <span aria-hidden="true">✕ </span>Sai. Đáp án đúng:{" "}
                 <span lang={q.optionsAreJapanese ? "ja" : undefined}>{q.options[q.correctIndex]}</span>
               </span>
             )
@@ -321,14 +376,14 @@ export function QuizSession() {
 
       <div className="min-h-14">
         {answered ? (
-          <button
-            ref={nextBtn}
-            type="button"
-            onClick={next}
-            className="flex min-h-14 w-full items-center justify-center gap-3 rounded-full bg-ink px-6 text-[18px] font-bold text-paper"
-          >
+          <button ref={nextBtn} type="button" onClick={next} className={buttonClasses("primary", "lg", "w-full")}>
             {index + 1 >= total ? "Xem kết quả" : "Câu tiếp"}
-            <span className="hidden text-sm font-normal text-ring lg:inline">Enter</span>
+            <kbd
+              aria-hidden="true"
+              className="hidden rounded-md bg-paper/20 px-1.5 font-sans text-[14px] font-medium [@media(hover:hover)_and_(pointer:fine)]:inline-flex"
+            >
+              Enter
+            </kbd>
           </button>
         ) : null}
       </div>

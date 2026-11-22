@@ -80,8 +80,9 @@ test.describe("đăng nhập", () => {
     await page.getByRole("button", { name: "Đăng xuất" }).click();
     await expect(page).toHaveURL(/\/dang-nhap$/);
 
+    // Đã đăng xuất: trang chính đưa khách tới trang giới thiệu.
     await page.goto("/");
-    await expect(page).toHaveURL(/\/dang-nhap$/);
+    await expect(page).toHaveURL(/\/gioi-thieu$/);
   });
 
   test("chưa khởi đầu (onboarded_at null) thì chuyển sang /khoi-dau", async ({ page }) => {
@@ -143,7 +144,11 @@ test.describe("/auth/confirm", () => {
 });
 
 test.describe("chặn trang cần đăng nhập", () => {
-  for (const path of ["/", "/cai-dat", "/khoi-dau"]) {
+  test("chưa đăng nhập mở / thì tới trang giới thiệu", async ({ page }) => {
+    await page.goto("/");
+    await expect(page).toHaveURL(/\/gioi-thieu$/);
+  });
+  for (const path of ["/cai-dat", "/khoi-dau"]) {
     test(`chưa đăng nhập mở ${path} bị đưa về /dang-nhap`, async ({ page }) => {
       await page.goto(path);
       await expect(page).toHaveURL(/\/dang-nhap$/);

@@ -9,6 +9,7 @@ const kanaRows = [
   { id: "kana:hira:ga", sort_order: 2, kana_details: { script: "hira", kana: "が", romaji: "ga", grp: "dakuten" } },
 ];
 const NAV_NAMES = ["Trang chính", "Ôn tập", "Trắc nghiệm", "Bảng kana", "Cài đặt"];
+const BOTTOM_NAMES = ["Hôm nay", "Ôn tập", "Kiểm tra", "Kana"];
 
 async function login(page: Page) {
   await mockLoggedInBackend(page);
@@ -87,19 +88,20 @@ test.describe("khung điều hướng (máy tính 1280px)", () => {
 test.describe("khung điều hướng (điện thoại 375px)", () => {
   test.use({ viewport: { width: 375, height: 812 } });
 
-  test("thanh điều hướng đáy 5 mục, vùng bấm ≥ 44px, không tràn ngang", async ({ page }) => {
+  test("thanh điều hướng đáy 4 mục, vùng bấm ≥ 44px, không tràn ngang", async ({ page }) => {
     await login(page);
     const nav = page.getByRole("navigation", { name: "Điều hướng chính" });
     await expect(nav).toHaveCount(1);
     await expect(nav).toBeVisible();
     const links = nav.getByRole("link");
-    await expect(links).toHaveText(NAV_NAMES);
+    await expect(links).toHaveText(BOTTOM_NAMES);
     for (const l of await links.all()) {
       const box = await l.boundingBox();
       expect(box?.height).toBeGreaterThanOrEqual(44);
       expect(box?.width).toBeGreaterThanOrEqual(44);
     }
-    await expect(nav.getByRole("link", { name: "Trang chính" })).toHaveAttribute("aria-current", "page");
+    await expect(nav.getByRole("link", { name: "Hôm nay" })).toHaveAttribute("aria-current", "page");
+    await expect(page.getByRole("link", { name: "Cài đặt" })).toBeVisible();
     const navBox = await nav.boundingBox();
     expect(Math.round((navBox?.y ?? 0) + (navBox?.height ?? 0))).toBe(812);
     for (const path of ["/", "/kana", "/cai-dat"]) {

@@ -28,13 +28,35 @@ test.describe("xóa tài khoản (S-13)", () => {
     await expect(dialog.getByLabel("Nhập lại mật khẩu")).toBeFocused();
     await expect(dialog.getByLabel("Nhập lại mật khẩu")).toHaveAttribute("autocomplete", "current-password");
     const del = dialog.getByRole("button", { name: "Xóa vĩnh viễn" });
-    await expect(del).toBeDisabled();
+    await expect(del).toHaveAttribute("aria-disabled", "true");
+    await expect(del).not.toHaveAttribute("disabled"); // aria-disabled, không phải disabled: vẫn focus được
+    await expect(dialog.getByText("Nhập mật khẩu để mở nút xóa.")).toBeVisible();
+    await del.click({ force: true });
+    await expect(dialog).toBeVisible(); // bấm khi chưa nhập không gửi gì
     await dialog.getByLabel("Nhập lại mật khẩu").fill("abc");
-    await expect(del).toBeEnabled();
+    await expect(del).not.toHaveAttribute("aria-disabled", "true");
+    await expect(dialog.getByText("Nhập mật khẩu để mở nút xóa.")).toHaveCount(0);
 
     await page.keyboard.press("Escape");
     await expect(dialog).toBeHidden();
     await expect(page.getByRole("button", { name: "Xóa tài khoản" })).toBeFocused();
+  });
+
+  test("đang gửi: nút bận (disabled + aria-busy), khác với trạng thái chưa nhập", async ({ page }) => {
+    await openSettings(page);
+    await page.route("**/api/account/delete", async (route) => {
+      await new Promise((r) => setTimeout(r, 800));
+      await route.fulfill({ status: 500, json: { error: "khong-xoa-duoc" } });
+    });
+    const dialog = await openDialog(page);
+    await dialog.getByLabel("Nhập lại mật khẩu").fill("abc");
+    const del = dialog.getByRole("button", { name: "Xóa vĩnh viễn" });
+    await del.click();
+    await expect(del).toBeDisabled();
+    await expect(del).toHaveAttribute("aria-busy", "true");
+    await expect(del).not.toHaveAttribute("aria-disabled", "true");
+    await expect(dialog.getByRole("alert")).toHaveText(FAILED);
+    await expect(del).not.toHaveAttribute("disabled");
   });
 
   test("Tab và Shift+Tab không thoát khỏi hộp", async ({ page }) => {

@@ -116,8 +116,8 @@ test.describe("phiên ôn (S-07, S-08)", () => {
     await flip(page);
     await page.keyboard.press("3");
 
-    await expect(page.getByRole("heading", { name: "Xong phiên ôn" })).toBeVisible();
-    await expect(page.getByText("Bạn đã ôn 4 lượt, trong đó 2 thẻ mới.")).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Xong rồi." })).toBeVisible();
+    await expect(page.getByText("4 lượt ôn · 2 thẻ mới")).toBeVisible();
     const counts = page.locator("dl > div");
     await expect(counts.nth(0)).toContainText("Lại1");
     await expect(counts.nth(1)).toContainText("Khó0");
@@ -160,7 +160,7 @@ test.describe("phiên ôn (S-07, S-08)", () => {
     await page.getByRole("link", { name: "Bắt đầu ôn" }).click();
     await flip(page);
     await page.keyboard.press("3");
-    await expect(page.getByRole("heading", { name: "Xong phiên ôn" })).toBeVisible();
+    await expect(page.getByRole("heading", { name: "Xong rồi." })).toBeVisible();
     await expect(page.getByTestId("send-status")).toHaveText("Còn 1 lượt chưa gửi, sẽ thử lại.");
     expect(submitted).toHaveLength(0);
 
@@ -234,6 +234,58 @@ test.describe("phiên ôn (S-07, S-08)", () => {
     expect(await overflow()).toBeLessThanOrEqual(0);
     await axe(page);
   });
+});
+
+const WIDTHS = [375, 1280, 1440];
+const AXE_WIDTHS = [375, 1280];
+
+test.describe("giao diện phiên ôn: không tràn, Klee One, axe mọi mặt", () => {
+  for (const width of WIDTHS) {
+    test(`thẻ vocab, kana, kanji, tổng kết ở ${width}px`, async ({ page }) => {
+      await page.setViewportSize({ width, height: width < 768 ? 812 : 800 });
+      await openReview(page, queue3);
+      const overflow = () =>
+        page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+      const checkAxe = AXE_WIDTHS.includes(width);
+
+      // Thẻ 1: vocab. Mặt trước, mặt sau.
+      await progress(page, "1 / 3");
+      expect(await overflow()).toBeLessThanOrEqual(0);
+      if (checkAxe) await axe(page);
+      await flip(page);
+      expect(await overflow()).toBeLessThanOrEqual(0);
+      if (checkAxe) await axe(page);
+      await page.keyboard.press("3");
+
+      // Thẻ 2: kana.
+      await progress(page, "2 / 3");
+      await flip(page);
+      expect(await overflow()).toBeLessThanOrEqual(0);
+      if (checkAxe) await axe(page);
+      await page.keyboard.press("3");
+
+      // Thẻ 3: kanji, chữ lớn dùng Klee One ở cả hai mặt.
+      await progress(page, "3 / 3");
+      const bigFront = page.locator('p[lang="ja"]:visible').first();
+      expect(await bigFront.evaluate((e) => getComputedStyle(e).fontFamily)).toMatch(/klee/i);
+      expect(await bigFront.evaluate((e) => parseFloat(getComputedStyle(e).fontSize))).toBeGreaterThanOrEqual(160);
+      if (checkAxe) await axe(page);
+      await flip(page);
+      const bigBack = page.getByRole("group", { name: "Mặt sau của thẻ" }).locator('p[lang="ja"]').first();
+      expect(await bigBack.evaluate((e) => getComputedStyle(e).fontFamily)).toMatch(/klee/i);
+      expect(await overflow()).toBeLessThanOrEqual(0);
+      if (checkAxe) await axe(page);
+      for (const b of await page.locator("button[aria-keyshortcuts]").all()) {
+        expect((await b.boundingBox())?.height).toBeGreaterThanOrEqual(44);
+      }
+      await page.keyboard.press("3");
+
+      await expect(page.getByRole("heading", { name: "Xong rồi." })).toBeVisible();
+      await expect(page.getByRole("link", { name: "Làm trắc nghiệm" })).toHaveAttribute("href", "/trac-nghiem");
+      expect(await overflow()).toBeLessThanOrEqual(0);
+      if (checkAxe) await axe(page);
+    });
+  }
 });
 
 const kanaRows = [

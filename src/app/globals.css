@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "../ui/motion/motion.css";
+@import "../ui/ui.css";
 
 /* Token v2: docs/03-design.md mục 5.1 (đặt tên theo vai trò). */
 :root {
@@ -55,8 +56,11 @@ body {
   line-height: 1.5;
 }
 
-:lang(ja) {
-  font-family: var(--font-jp);
+/* Trong @layer base để utility `font-kanji` (Klee One) thắng; ngoài layer thì đè mất mọi utility. */
+@layer base {
+  :lang(ja) {
+    font-family: var(--font-jp);
+  }
 }
 
 :focus-visible {

@@ -1,5 +1,10 @@
-import Link from "next/link";
 import type { SessionSummary } from "@/lib/domain/session";
+import { Button } from "@/ui/Button";
+import { Card } from "@/ui/Card";
+import { HeroBlock } from "@/ui/HeroBlock";
+import { Notice } from "@/ui/Notice";
+import { Seal } from "@/ui/Seal";
+import { CountUp } from "@/ui/motion/CountUp";
 
 const RATINGS = [
   [1, "Lại"],
@@ -8,37 +13,55 @@ const RATINGS = [
   [4, "Dễ"],
 ] as const;
 
+/** Tổng kết phiên ôn (S-08): thành quả trước (XP phiên = số lượt), phân bố Lại/Khó/Được/Dễ nhỏ bên dưới. */
 export function ReviewSummary({ summary, pending }: { summary: SessionSummary; pending: number }) {
   return (
-    <main id="noi-dung" tabIndex={-1} className="mx-auto flex min-h-dvh w-full max-w-[440px] flex-col bg-paper px-5 py-8 lg:max-w-[640px] lg:my-8 lg:min-h-0 lg:rounded-[28px] lg:border lg:border-hair lg:px-10 lg:py-12">
-      <div
-        aria-hidden="true"
-        className="stamp-in mb-6 flex size-[160px] items-center justify-center self-center rounded-full border-[3px] border-seal-edge bg-seal font-kanji text-[72px] font-semibold text-white"
-        lang="ja"
-      >
-        学
+    <main
+      id="noi-dung"
+      tabIndex={-1}
+      className="mx-auto flex min-h-dvh w-full max-w-[440px] flex-col justify-center gap-5 bg-ground px-4 py-8 lg:max-w-[640px] lg:px-0"
+    >
+      <div className="flex flex-col items-center gap-3">
+        <Seal char="学" size={112} rotate={-8} stamp />
+        <h1 className="text-[40px] leading-[1.15] font-extrabold">Xong rồi.</h1>
       </div>
-      <h1 className="text-[48px] leading-[1.1] font-extrabold">Xong phiên ôn</h1>
-      <p className="mt-3 text-[20px] leading-snug">
-        Bạn đã ôn {summary.total} lượt, trong đó {summary.newCards} thẻ mới.
-      </p>
-      <dl className="mt-6 grid grid-cols-4 gap-2">
+
+      <HeroBlock
+        eyebrow="Phiên ôn hôm nay"
+        bigNumber={
+          <>
+            +<CountUp value={summary.total} />
+          </>
+        }
+        unit="XP"
+        sub={`${summary.total} lượt ôn · ${summary.newCards} thẻ mới`}
+      />
+
+      <dl className="grid grid-cols-4 gap-2">
         {RATINGS.map(([r, label]) => (
-          <div key={r} className="rounded-[22px] bg-sand p-3 text-center">
-            <dt className="text-sm text-ink-2">{label}</dt>
-            <dd className="text-[32px] leading-tight font-extrabold">{summary.byRating[r]}</dd>
-          </div>
+          <Card key={r} tone="plain" className="rounded-[16px] border border-hair px-2 py-3 text-center">
+            <dt className="text-[14px] leading-tight text-ink-2">{label}</dt>
+            <dd className="text-[24px] leading-tight font-bold">{summary.byRating[r]}</dd>
+          </Card>
         ))}
       </dl>
-      <p aria-live="polite" className="mt-6 min-h-6 text-base text-ink-2" data-testid="send-status">
-        {pending === 0 ? "Đã lưu hết." : `Còn ${pending} lượt chưa gửi, sẽ thử lại.`}
-      </p>
-      <Link
-        href="/"
-        className="mt-6 inline-flex min-h-14 items-center justify-center rounded-full bg-ink px-6 text-[18px] font-bold text-paper"
-      >
-        Về trang chính
-      </Link>
+
+      <div data-testid="send-status">
+        {pending === 0 ? (
+          <Notice tone="success">Đã lưu hết.</Notice>
+        ) : (
+          <Notice tone="warn">{`Còn ${pending} lượt chưa gửi, sẽ thử lại.`}</Notice>
+        )}
+      </div>
+
+      <div className="flex flex-col gap-3">
+        <Button href="/" size="lg">
+          Về trang chính
+        </Button>
+        <Button href="/trac-nghiem" size="lg" variant="secondary">
+          Làm trắc nghiệm
+        </Button>
+      </div>
     </main>
   );
 }

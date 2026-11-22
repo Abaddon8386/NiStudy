@@ -5,12 +5,18 @@ import { useState } from "react";
 import { AUTH_MESSAGES, MIN_PASSWORD_LENGTH, classifyAuthError } from "@/lib/auth/errors";
 import { setPendingEmail } from "@/lib/auth/pending-email";
 import { createClient } from "@/lib/supabase/client";
-import { Field, Notice, SourceLink, SubmitButton, TextLink } from "./ui";
+import { emailProblem } from "@/lib/auth/validate";
+import { Button } from "@/ui/Button";
+import { Notice } from "@/ui/Notice";
+import { PasswordField } from "@/ui/PasswordField";
+import { TextField } from "@/ui/TextField";
+import { SourceLink } from "./ui";
 
 export function SignUpForm() {
   const router = useRouter();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [emailError, setEmailError] = useState("");
   const [pwError, setPwError] = useState("");
   const [formError, setFormError] = useState("");
   const [pending, setPending] = useState(false);
@@ -18,11 +24,11 @@ export function SignUpForm() {
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     setFormError("");
-    if (password.length < MIN_PASSWORD_LENGTH) {
-      setPwError(AUTH_MESSAGES.passwordTooShort);
-      return;
-    }
-    setPwError("");
+    const eProblem = emailProblem(email);
+    const tooShort = password.length < MIN_PASSWORD_LENGTH;
+    setEmailError(eProblem);
+    setPwError(tooShort ? AUTH_MESSAGES.passwordTooShort : "");
+    if (eProblem || tooShort) return;
     setPending(true);
     try {
       const { error } = await createClient().auth.signUp({
@@ -45,23 +51,32 @@ export function SignUpForm() {
   }
 
   return (
-    <form onSubmit={onSubmit}>
-      <Field label="Email" name="email" value={email} onChange={setEmail} autoComplete="email" />
-      <Field
+    <form onSubmit={onSubmit} noValidate className="flex flex-col gap-4">
+      <TextField
+        label="Email"
+        name="email"
+        type="email"
+        value={email}
+        onChange={setEmail}
+        autoComplete="email"
+        error={emailError}
+      />
+      <PasswordField
         label="Mật khẩu"
         name="password"
-        type="password"
         value={password}
         onChange={setPassword}
         autoComplete="new-password"
         hint="Tối thiểu 8 ký tự"
         error={pwError}
       />
-      {formError && <Notice kind="error">{formError}</Notice>}
-      <SubmitButton pending={pending}>Tạo tài khoản</SubmitButton>
-      <p className="mt-4">
-        <TextLink href="/dang-nhap">Đã có tài khoản? Đăng nhập</TextLink>
-      </p>
+      {formError && <Notice tone="error">{formError}</Notice>}
+      <Button type="submit" size="lg" loading={pending} className="mt-2 w-full">
+        Tạo tài khoản
+      </Button>
+      <Button href="/dang-nhap" size="lg" variant="secondary" className="w-full">
+        Đã có tài khoản? Đăng nhập
+      </Button>
       <SourceLink />
     </form>
   );

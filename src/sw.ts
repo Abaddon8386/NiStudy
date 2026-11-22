@@ -34,6 +34,7 @@ const runtimeCaching: RuntimeCaching[] = [
       sameOrigin(ctx) &&
       !ctx.url.pathname.startsWith("/api/") &&
       !ctx.url.pathname.startsWith("/auth/") &&
+      !ctx.url.pathname.startsWith("/media/") && // ảnh/clip trang giới thiệu: không cache
       /\.(?:woff2?|svg|png|ico|webp)$/i.test(ctx.url.pathname),
     handler: new StaleWhileRevalidate({
       cacheName: "static-assets",

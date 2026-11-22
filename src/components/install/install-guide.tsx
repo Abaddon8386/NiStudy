@@ -9,16 +9,24 @@ import {
   promptInstall,
   subscribeInstall,
 } from "./install-store";
+import { Button } from "@/ui/Button";
+import { Card } from "@/ui/Card";
 
 const noopSubscribe = () => () => {};
-const btn =
-  "inline-flex min-h-11 items-center justify-center rounded-full bg-ink px-6 text-base font-bold text-paper";
 
 function Steps({ items }: { items: string[] }) {
   return (
-    <ol className="mt-3 list-decimal space-y-2 pl-6 text-base">
-      {items.map((s) => (
-        <li key={s}>{s}</li>
+    <ol className="mt-3 flex list-none flex-col gap-3 p-0 text-base">
+      {items.map((s, i) => (
+        <li key={s} className="flex items-start gap-3">
+          <span
+            aria-hidden="true"
+            className="mt-0.5 flex size-7 shrink-0 items-center justify-center rounded-full bg-ink text-[14px] leading-none font-bold text-paper"
+          >
+            {i + 1}
+          </span>
+          <span className="min-w-0">{s}</span>
+        </li>
       ))}
     </ol>
   );
@@ -26,8 +34,14 @@ function Steps({ items }: { items: string[] }) {
 
 function Guide({ title, items }: { title: string; items: string[] }) {
   return (
-    <details className="border-2 border-ink bg-paper p-4">
-      <summary className="flex min-h-11 cursor-pointer items-center text-base font-bold">{title}</summary>
+    <details className="group rounded-[22px] bg-sand p-4 lg:bg-paper">
+      <summary className="flex min-h-11 cursor-pointer list-none items-center justify-between gap-3 text-base font-bold [&::-webkit-details-marker]:hidden">
+        {title}
+        <span aria-hidden="true" className="relative size-5 shrink-0">
+          <i className="absolute inset-x-0 top-1/2 h-0.5 -translate-y-1/2 rounded-full bg-ink" />
+          <i className="absolute inset-y-0 left-1/2 w-0.5 -translate-x-1/2 rounded-full bg-ink transition-transform duration-150 group-open:rotate-90" />
+        </span>
+      </summary>
       <Steps items={items} />
     </details>
   );
@@ -57,8 +71,8 @@ export function InstallGuide() {
   const standalone = env === "standalone" || store.installed;
 
   return (
-    <div className="mt-6 max-w-[640px]">
-      <div role="status" aria-live="polite" className="border-2 border-ink bg-paper p-4">
+    <div className="mt-8 max-w-[640px]">
+      <Card tone="outlined" role="status" aria-live="polite">
         {env === "unknown" ? (
           <p className="text-base">Đang kiểm tra trình duyệt của bạn…</p>
         ) : standalone ? (
@@ -68,9 +82,9 @@ export function InstallGuide() {
         ) : store.deferred ? (
           <>
             <p className="text-base">Trình duyệt này cho phép cài Nihongo lên máy, mở như một ứng dụng.</p>
-            <button type="button" onClick={onInstall} className={`mt-3 ${btn}`}>
+            <Button className="mt-4" onClick={onInstall}>
               Cài ứng dụng
-            </button>
+            </Button>
           </>
         ) : env === "ios" ? (
           <>
@@ -95,10 +109,10 @@ export function InstallGuide() {
           </p>
         )}
         {message ? <p className="mt-3 text-base">{message}</p> : null}
-      </div>
+      </Card>
 
-      <h2 className="mt-8 text-xl font-bold">Hướng dẫn theo thiết bị</h2>
-      <div className="mt-3 space-y-3">
+      <h2 className="mt-10 border-t-2 border-ink pt-4 text-[20px] leading-[1.25] font-bold">Hướng dẫn theo thiết bị</h2>
+      <div className="mt-4 flex flex-col gap-3">
         <Guide
           title="Chrome trên Android"
           items={[
@@ -124,7 +138,7 @@ export function InstallGuide() {
           ]}
         />
       </div>
-      <p className="mt-6 text-[14px] text-ink-2">
+      <p className="mt-6 text-[14px] leading-[1.4] text-ink-2">
         Ứng dụng đã cài vẫn cần đăng nhập, và chỉ ôn offline được phần thẻ đã tải về.
       </p>
     </div>

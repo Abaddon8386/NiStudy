@@ -5,6 +5,7 @@ import { useState } from "react";
 import { flushOutbox, hydrateOutbox, pendingNow } from "@/lib/learning/outbox";
 import { clearLocalData } from "@/lib/offline/clear-local-data";
 import { createClient } from "@/lib/supabase/client";
+import { Button } from "@/ui/Button";
 
 export function SignOutButton() {
   const router = useRouter();
@@ -44,41 +45,25 @@ export function SignOutButton() {
 
   if (unsent !== null) {
     return (
-      <div role="alertdialog" aria-labelledby="signout-warn" className="mt-8 rounded-[22px] border-2 border-ink bg-paper p-4">
+      <div role="alertdialog" aria-labelledby="signout-warn" className="basis-full rounded-[22px] border-2 border-ink bg-paper p-4">
         <p id="signout-warn" className="text-base">
           Còn {unsent} lượt ôn chưa gửi. Đăng xuất bây giờ sẽ mất các lượt này.
         </p>
         <div className="mt-4 flex flex-wrap gap-3">
-          <button
-            type="button"
-            onClick={() => setUnsent(null)}
-            autoFocus
-            className="min-h-11 rounded-full bg-ink px-6 text-base font-bold text-paper"
-          >
+          <Button onClick={() => setUnsent(null)} autoFocus>
             Ở lại
-          </button>
-          <button
-            type="button"
-            onClick={() => void signOut()}
-            disabled={pending}
-            className="min-h-11 rounded-full border-2 border-bad bg-paper px-6 text-base font-bold text-bad disabled:opacity-60"
-          >
+          </Button>
+          <Button variant="danger" onClick={() => void signOut()} disabled={pending}>
             Vẫn đăng xuất
-          </button>
+          </Button>
         </div>
       </div>
     );
   }
 
   return (
-    <button
-      type="button"
-      onClick={() => void onClick()}
-      disabled={pending}
-      aria-busy={pending}
-      className="mt-8 min-h-11 rounded-full border-2 border-ink bg-paper px-6 text-base font-bold disabled:opacity-60"
-    >
+    <Button variant="secondary" onClick={() => void onClick()} loading={pending}>
       Đăng xuất
-    </button>
+    </Button>
   );
 }

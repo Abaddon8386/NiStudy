@@ -1,13 +1,54 @@
 "use client";
 
 import { useId } from "react";
-import { inputClass } from "@/components/auth/ui";
 
 type Option<T extends string> = { value: T; label: string };
 
-/** Nhóm chọn một: fieldset/legend + radio thật, nhìn như nút lớn (vùng bấm 56px). */
-export function RadioGroup<T extends string>({
-  legend,
+const smallInput =
+  "h-11 rounded-[14px] border-2 border-ink bg-paper px-3 text-[18px] font-medium text-ink " +
+  "aria-[invalid=true]:border-bad";
+
+function Below({
+  id,
+  hint,
+  error,
+  status,
+}: {
+  id: string;
+  hint?: string;
+  error?: string;
+  status?: React.ReactNode;
+}) {
+  return (
+    <>
+      {(hint || status) && (
+        <div className="mt-1 flex items-start justify-between gap-3">
+          {hint ? (
+            <p id={`${id}-hint`} className="min-w-0 text-[14px] leading-[1.4] text-ink-2">
+              {hint}
+            </p>
+          ) : (
+            <span />
+          )}
+          {status && <div className="ml-auto shrink-0">{status}</div>}
+        </div>
+      )}
+      {error && (
+        <p id={`${id}-err`} role="alert" className="mt-1 text-[14px] leading-[1.4] font-medium text-bad">
+          {error}
+        </p>
+      )}
+    </>
+  );
+}
+
+function describedBy(id: string, hint?: string, error?: string) {
+  return [error ? `${id}-err` : "", hint ? `${id}-hint` : ""].filter(Boolean).join(" ") || undefined;
+}
+
+/** Dòng cài đặt: nhãn trái, nhóm pill nhỏ phải (radiogroup thật, vùng bấm 44px). */
+export function ChipRow<T extends string>({
+  label,
   name,
   value,
   options,
@@ -15,7 +56,7 @@ export function RadioGroup<T extends string>({
   hint,
   status,
 }: {
-  legend: string;
+  label: string;
   name: string;
   value: T;
   options: Option<T>[];
@@ -23,39 +64,38 @@ export function RadioGroup<T extends string>({
   hint?: string;
   status?: React.ReactNode;
 }) {
-  const hintId = useId();
+  const id = useId();
   return (
-    <fieldset className="mt-6 min-w-0" aria-describedby={hint ? hintId : undefined}>
-      <legend className="p-0 text-base font-bold">{legend}</legend>
-      {hint && (
-        <p id={hintId} className="mt-1 text-sm text-ink-2">
-          {hint}
-        </p>
-      )}
-      <div className="mt-2 grid grid-cols-2 gap-3">
-        {options.map((o) => (
-          <label
-            key={o.value}
-            className="flex min-h-14 cursor-pointer items-center justify-center rounded-[14px] border-2 border-ink bg-paper px-3 text-center text-[18px] font-bold has-[:checked]:bg-ink has-[:checked]:text-paper has-[:focus-visible]:outline-3 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-ink"
-          >
-            <input
-              type="radio"
-              name={name}
-              value={o.value}
-              checked={value === o.value}
-              onChange={() => onChange(o.value)}
-              className="sr-only"
-            />
-            {o.label}
-          </label>
-        ))}
+    <div className="py-4">
+      <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+        <span id={`${id}-l`} className="text-base font-medium">
+          {label}
+        </span>
+        <div role="radiogroup" aria-labelledby={`${id}-l`} aria-describedby={hint ? `${id}-hint` : undefined} className="flex gap-2">
+          {options.map((o) => (
+            <label
+              key={o.value}
+              className="press flex min-h-11 min-w-14 cursor-pointer items-center justify-center rounded-full border-2 border-ink bg-paper px-4 text-base font-bold hover:bg-hair has-[:checked]:bg-ink has-[:checked]:text-paper has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 has-[:focus-visible]:outline-ink"
+            >
+              <input
+                type="radio"
+                name={name}
+                value={o.value}
+                checked={value === o.value}
+                onChange={() => onChange(o.value)}
+                className="sr-only"
+              />
+              {o.label}
+            </label>
+          ))}
+        </div>
       </div>
-      {status && <div className="mt-1">{status}</div>}
-    </fieldset>
+      <Below id={id} hint={hint} status={status} />
+    </div>
   );
 }
 
-type InputProps = {
+interface RowProps {
   label: string;
   value: string;
   onChange: (v: string) => void;
@@ -64,62 +104,58 @@ type InputProps = {
   hint?: string;
   status?: React.ReactNode;
   children?: React.ReactNode;
-};
+}
 
-function BaseField({
-  type,
-  inputMode,
-  label,
-  value,
-  onChange,
-  onBlur,
-  error,
-  hint,
-  status,
-  children,
-}: InputProps & { type: "text" | "date"; inputMode?: "numeric" }) {
+/** Dòng cài đặt: nhãn trái, ô số nhỏ căn phải cùng dòng. */
+export function NumberRow({ label, value, onChange, onBlur, error, hint, status }: RowProps) {
   const id = useId();
-  const errId = `${id}-err`;
-  const hintId = `${id}-hint`;
-  const describedBy = [error ? errId : "", hint ? hintId : ""].filter(Boolean).join(" ") || undefined;
   return (
-    <div className="mt-6">
-      <div className="flex items-baseline justify-between gap-3">
-        <label htmlFor={id} className="block text-base font-bold">
+    <div className="py-4">
+      <div className="flex items-center justify-between gap-4">
+        <label htmlFor={id} className="text-base font-medium">
           {label}
         </label>
-        {status}
+        <input
+          id={id}
+          type="text"
+          inputMode="numeric"
+          value={value}
+          onChange={(e) => onChange(e.target.value)}
+          onBlur={onBlur}
+          aria-invalid={error ? true : undefined}
+          aria-describedby={describedBy(id, hint, error)}
+          className={`${smallInput} w-24 shrink-0 text-center`}
+        />
       </div>
-      <input
-        id={id}
-        type={type}
-        inputMode={inputMode}
-        value={value}
-        onChange={(e) => onChange(e.target.value)}
-        onBlur={onBlur}
-        aria-invalid={error ? true : undefined}
-        aria-describedby={describedBy}
-        className={`${inputClass} mt-1`}
-      />
-      {hint && (
-        <p id={hintId} className="mt-1 text-sm text-ink-2">
-          {hint}
-        </p>
-      )}
-      {error && (
-        <p id={errId} role="alert" className="mt-1 text-base font-medium text-bad">
-          {error}
-        </p>
-      )}
-      {children}
+      <Below id={id} hint={hint} error={error} status={status} />
     </div>
   );
 }
 
-export function NumberField(props: InputProps) {
-  return <BaseField type="text" inputMode="numeric" {...props} />;
-}
-
-export function DateField(props: InputProps) {
-  return <BaseField type="date" {...props} />;
+/** Dòng ngày thi: nhãn, ô ngày và nút xóa (children) cùng hàng, tự xuống dòng khi hẹp. */
+export function DateRow({ label, value, onChange, onBlur, error, hint, status, children }: RowProps) {
+  const id = useId();
+  return (
+    <div className="py-4">
+      <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+        <label htmlFor={id} className="text-base font-medium">
+          {label}
+        </label>
+        <div className="ml-auto flex flex-wrap items-center justify-end gap-2">
+          <input
+            id={id}
+            type="date"
+            value={value}
+            onChange={(e) => onChange(e.target.value)}
+            onBlur={onBlur}
+            aria-invalid={error ? true : undefined}
+            aria-describedby={describedBy(id, hint, error)}
+            className={`${smallInput} w-[11rem]`}
+          />
+          {children}
+        </div>
+      </div>
+      <Below id={id} hint={hint} error={error} status={status} />
+    </div>
+  );
 }

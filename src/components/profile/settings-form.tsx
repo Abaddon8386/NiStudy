@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Notice } from "@/components/auth/ui";
 import { DeleteAccount } from "@/components/account/delete-account";
 import { SignOutButton } from "@/components/auth/sign-out-button";
 import {
@@ -16,7 +15,12 @@ import {
   type SettingsErrors,
   type SettingsPatch,
 } from "@/lib/profile/settings";
-import { DateField, NumberField, RadioGroup } from "./fields";
+import { Button } from "@/ui/Button";
+import { Notice } from "@/ui/Notice";
+import { Panel } from "@/ui/Panel";
+import { SectionTitle } from "@/ui/SectionTitle";
+import { Switch } from "@/ui/Switch";
+import { ChipRow, DateRow, NumberRow } from "./fields";
 import { SaveStatus, type SaveState } from "./save-status";
 
 type Field = "level" | "knowsKana" | "newPerDay" | "reviewLimit" | "examDate";
@@ -110,130 +114,130 @@ export function SettingsForm() {
   if (loadError) {
     return (
       <div className="mt-6">
-        <Notice kind="error">Chưa tải được cài đặt. Kiểm tra kết nối rồi thử lại.</Notice>
-        <button
-          type="button"
-          onClick={() => void load()}
-          className="mt-4 min-h-11 rounded-full border-2 border-ink bg-paper px-6 text-base font-bold"
-        >
+        <Notice tone="error">Chưa tải được cài đặt. Kiểm tra kết nối rồi thử lại.</Notice>
+        <Button variant="secondary" className="mt-4" onClick={() => void load()}>
           Thử lại
-        </button>
+        </Button>
       </div>
     );
   }
   if (!loaded) return <p className="mt-6 text-base text-ink-2">Đang tải…</p>;
 
   return (
-    <div className="lg:grid lg:grid-cols-[minmax(0,420px)_minmax(0,1fr)] lg:gap-12">
-      <section aria-labelledby="summary-h" className="mt-8 hidden lg:block">
-        <h2 id="summary-h" className="text-[24px] font-extrabold">
-          Đang áp dụng
-        </h2>
-        <p className="mt-3 text-base">
-          Học {level}, {knowsKana ? "đã biết kana" : "chưa biết kana"}. Mỗi ngày {newPerDay} thẻ mới, tối đa{" "}
-          {reviewLimit} lượt ôn. {examDate ? `Thi ngày ${examDate}.` : "Chưa đặt ngày thi."}
-        </p>
-        <p className="mt-3 text-sm text-ink-2">Mỗi thay đổi được tự lưu ngay khi bạn chỉnh.</p>
-      </section>
-      <div className="lg:mt-8 lg:rounded-2xl lg:bg-sand lg:p-8">
-      <section aria-labelledby="learn-h" className="mt-8 lg:mt-0">
-        <h2 id="learn-h" className="text-[24px] font-extrabold">
-          Học tập
-        </h2>
-        <RadioGroup
-          legend="Cấp đang học"
-          name="level"
-          value={level}
-          options={[
-            { value: "N5", label: "N5" },
-            { value: "N4", label: "N4" },
-          ]}
-          hint="Đổi cấp chỉ đổi nguồn thẻ mới. Thẻ đã học vẫn đến hạn ôn."
-          onChange={(v) => {
-            setLevel(v);
-            void save("level", { level: v });
-          }}
-          status={statusFor("level")}
-        />
-        <RadioGroup
-          legend="Bạn đã biết kana chưa?"
-          name="knows-kana"
-          value={knowsKana ? "yes" : "no"}
-          options={[
-            { value: "no", label: "Chưa biết" },
-            { value: "yes", label: "Đã biết" },
-          ]}
-          onChange={(v) => {
-            setKnowsKana(v === "yes");
-            void save("knowsKana", { knowsKana: v === "yes" });
-          }}
-          status={statusFor("knowsKana")}
-        />
-        <NumberField
-          label="Thẻ mới mỗi ngày"
-          value={newPerDay}
-          onChange={(v) => onTextChange("newPerDay", v)}
-          onBlur={() => commit("newPerDay", newPerDay)}
-          error={errors.newPerDay}
-          hint="Từ 5 đến 30 thẻ."
-          status={statusFor("newPerDay")}
-        />
-        <NumberField
-          label="Giới hạn ôn mỗi ngày"
-          value={reviewLimit}
-          onChange={(v) => onTextChange("reviewLimit", v)}
-          onBlur={() => commit("reviewLimit", reviewLimit)}
-          error={errors.reviewLimit}
-          hint="Từ 50 đến 500 lượt."
-          status={statusFor("reviewLimit")}
-        />
-        <DateField
-          label="Ngày thi (tùy chọn)"
-          value={examDate}
-          onChange={(v) => onTextChange("examDate", v)}
-          onBlur={() => commit("examDate", examDate)}
-          error={errors.examDate}
-          status={statusFor("examDate")}
-        >
-          {examDate !== "" && (
-            <button
-              type="button"
-              onClick={() => {
-                setExamDate("");
-                commit("examDate", "");
+    <div className="mt-6 grid gap-8 lg:grid-cols-2 lg:items-start lg:gap-x-10">
+      <section aria-labelledby="learn-h" className="flex flex-col gap-4">
+        <SectionTitle id="learn-h">Học tập</SectionTitle>
+        <Panel rows>
+          <ChipRow
+            label="Cấp đang học"
+            name="level"
+            value={level}
+            options={[
+              { value: "N5", label: "N5" },
+              { value: "N4", label: "N4" },
+            ]}
+            hint="Đổi cấp chỉ đổi nguồn thẻ mới. Thẻ đã học vẫn đến hạn ôn."
+            onChange={(v) => {
+              setLevel(v);
+              void save("level", { level: v });
+            }}
+            status={statusFor("level")}
+          />
+          <div className="py-2">
+            <Switch
+              label="Đã biết kana"
+              description="Bật thì sẽ không có thẻ kana mới."
+              checked={knowsKana}
+              onChange={(v) => {
+                setKnowsKana(v);
+                void save("knowsKana", { knowsKana: v });
               }}
-              className="mt-2 min-h-11 rounded-full border-2 border-ink bg-paper px-5 text-base font-bold"
-            >
-              Xóa ngày thi
-            </button>
-          )}
-        </DateField>
+            />
+            <div className="mt-1">{statusFor("knowsKana")}</div>
+          </div>
+          <NumberRow
+            label="Thẻ mới mỗi ngày"
+            value={newPerDay}
+            onChange={(v) => onTextChange("newPerDay", v)}
+            onBlur={() => commit("newPerDay", newPerDay)}
+            error={errors.newPerDay}
+            hint="Từ 5 đến 30 thẻ."
+            status={statusFor("newPerDay")}
+          />
+          <NumberRow
+            label="Giới hạn ôn mỗi ngày"
+            value={reviewLimit}
+            onChange={(v) => onTextChange("reviewLimit", v)}
+            onBlur={() => commit("reviewLimit", reviewLimit)}
+            error={errors.reviewLimit}
+            hint="Từ 50 đến 500 lượt."
+            status={statusFor("reviewLimit")}
+          />
+          <DateRow
+            label="Ngày thi (tùy chọn)"
+            value={examDate}
+            onChange={(v) => onTextChange("examDate", v)}
+            onBlur={() => commit("examDate", examDate)}
+            error={errors.examDate}
+            status={statusFor("examDate")}
+          >
+            {examDate !== "" && (
+              <Button
+                variant="secondary"
+                onClick={() => {
+                  setExamDate("");
+                  commit("examDate", "");
+                }}
+              >
+                Xóa ngày thi
+              </Button>
+            )}
+          </DateRow>
+        </Panel>
       </section>
 
-      <section aria-labelledby="account-h" className="mt-10">
-        <h2 id="account-h" className="text-[24px] font-extrabold">
-          Tài khoản
-        </h2>
-        <p className="mt-3 text-base">
-          <span className="font-bold">Email: </span>
-          <span className="break-all">{loaded.email}</span>
-        </p>
-        <SignOutButton />
-      </section>
+      <div className="flex flex-col gap-8">
+        <section aria-labelledby="account-h" className="flex flex-col gap-4">
+          <SectionTitle id="account-h">Tài khoản</SectionTitle>
+          <Panel rows>
+            <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 py-4">
+              <span className="text-base font-medium">Email</span>
+              <span className="min-w-0 text-base break-all text-ink-2">{loaded.email}</span>
+            </div>
+            <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2 py-3">
+              <span className="text-base font-medium">Phiên đăng nhập</span>
+              <SignOutButton />
+            </div>
+          </Panel>
+        </section>
 
-      <p className="mt-8">
-        <Link className="inline-flex min-h-11 items-center text-base text-ink-2 underline underline-offset-4" href="/cai-app">
-          Cài ứng dụng lên thiết bị
-        </Link>
-      </p>
-      <p>
-        <Link className="inline-flex min-h-11 items-center text-base text-ink-2 underline underline-offset-4" href="/nguon-du-lieu">
-          Nguồn dữ liệu
-        </Link>
-      </p>
+        <section aria-labelledby="app-h" className="flex flex-col gap-4">
+          <SectionTitle id="app-h">Ứng dụng</SectionTitle>
+          <Panel rows>
+            <LinkRow href="/cai-app" label="Cài ứng dụng lên thiết bị" />
+          </Panel>
+        </section>
 
-      <DeleteAccount />
+        <section aria-labelledby="info-h" className="flex flex-col gap-4">
+          <SectionTitle id="info-h">Thông tin</SectionTitle>
+          <Panel rows>
+            <LinkRow href="/nguon-du-lieu" label="Nguồn dữ liệu" />
+          </Panel>
+        </section>
+
+        <DeleteAccount />
       </div>
     </div>
+  );
+}
+
+function LinkRow({ href, label }: { href: string; label: string }) {
+  return (
+    <Link href={href} className="press flex min-h-14 items-center justify-between gap-3 text-base font-medium">
+      {label}
+      <span aria-hidden="true" className="text-[20px] leading-none">
+        →
+      </span>
+    </Link>
   );
 }

@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "Quên mật khẩu" };
 
 export default function Page() {
   return (
-    <AuthShell title="Quên mật khẩu">
+    <AuthShell title="Quên mật khẩu" mark="mật khẩu" lead="Nhập email, chúng tôi gửi liên kết đặt lại mật khẩu (hết hạn sau 1 giờ).">
       <ForgotForm />
     </AuthShell>
   );

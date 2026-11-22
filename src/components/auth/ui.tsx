@@ -1,131 +1,81 @@
 "use client";
 
+import { Button } from "@/ui/Button";
 import Link from "next/link";
-import { useId, useState } from "react";
+import { AUTH_BACKDROP } from "@/components/media/japan-scenes";
+import { AuthBackdrop } from "@/components/media/auth-backdrop";
+import { Logo } from "@/ui/Logo";
+import { Notice as UiNotice } from "@/ui/Notice";
+import { PageHeader } from "@/ui/PageHeader";
+import { fieldInputClass } from "@/ui/TextField";
 
-export const inputClass =
-  "h-12 w-full rounded-[14px] border-2 border-ink bg-paper px-3 text-[18px] font-medium text-ink aria-[invalid=true]:border-bad";
+/** Kiểu ô nhập dùng chung (còn dùng ở form hồ sơ). */
+export const inputClass = fieldInputClass;
 
-export function AuthShell({ title, children }: { title: string; children: React.ReactNode }) {
+/**
+ * Khung các màn đăng nhập/đăng ký: nền cảnh Nhật Bản phủ kín viewport (AuthBackdrop), form nằm trong
+ * một thẻ giấy nổi (độ đục 0,95, bo 28px). Máy tính: thẻ rộng 440px lệch phải, căn giữa dọc; logo góc
+ * trên trái, chú thích + nút tạm dừng góc dưới trái. Điện thoại: thẻ gần full ngang ở nửa dưới, để lộ
+ * cảnh ở trên; chú thích nằm ngay trên thẻ.
+ * `mark`: cụm trong `title` được bôi vàng; `lead`: dòng mô tả ngắn dưới tiêu đề.
+ */
+export function AuthShell({
+  title,
+  mark,
+  lead,
+  children,
+}: {
+  title: string;
+  mark?: string;
+  lead?: string;
+  children: React.ReactNode;
+}) {
   return (
-    <main id="noi-dung" tabIndex={-1} className="min-h-dvh lg:grid lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
-      <div className="hidden flex-col justify-between bg-teal p-12 text-white lg:flex">
-        <p className="text-[24px] font-extrabold">Nihongo</p>
-        <div>
-          <span
-            aria-hidden="true"
-            lang="ja"
-            className="mb-8 flex size-32 items-center justify-center rounded-full border-[3px] border-seal-edge bg-seal font-kanji text-[64px] font-semibold"
-          >
-            日
-          </span>
-          <p className="max-w-[360px] text-[24px] leading-snug font-bold">
-            Học kanji qua âm Hán Việt, ôn tập theo FSRS, bám lộ trình JLPT N5–N4.
-          </p>
-        </div>
-      </div>
-      <div className="lg:flex lg:items-center lg:justify-center lg:p-8">
-        <div className="mx-auto flex min-h-dvh w-full max-w-[400px] flex-col justify-center px-6 py-10 lg:min-h-0 lg:max-w-[440px] lg:rounded-[28px] lg:border lg:border-hair lg:bg-paper lg:px-10 lg:py-12">
-          <p className="text-[18px] font-extrabold text-teal lg:hidden">Nihongo</p>
-          <h1 className="mt-2 mb-6 text-[32px] leading-[1.15] font-extrabold lg:mt-0">{title}</h1>
-          {children}
+    <main id="noi-dung" tabIndex={-1} className="auth-page relative min-h-dvh overflow-x-clip">
+      <AuthBackdrop scenes={AUTH_BACKDROP} />
+      <Link
+        href="/gioi-thieu"
+        className="absolute top-3 left-3 z-10 inline-flex min-h-11 items-center rounded-full bg-paper py-1 pr-4 pl-1.5 shadow-sm lg:fixed lg:top-8 lg:left-8"
+      >
+        <Logo />
+      </Link>
+      <div className="relative z-[1] flex min-h-dvh flex-col px-2 pt-[38svh] pb-2 min-[480px]:px-5 lg:items-end lg:justify-center lg:px-[max(32px,7vw)] lg:py-16">
+        <div
+          className="auth-card mx-auto w-full max-w-[440px] rounded-[28px] px-4 py-7 min-[480px]:px-8 lg:mx-0 lg:px-9 lg:py-10"
+        >
+          <PageHeader title={title} mark={mark} meta={lead} />
+          <div className="mt-6">{children}</div>
         </div>
       </div>
     </main>
   );
 }
 
+/** Liên kết nhỏ ở chân màn đăng nhập/đăng ký: giới thiệu và nguồn dữ liệu. */
 export function SourceLink() {
+  const cls = "text-[14px] font-normal text-ink-2 underline underline-offset-4";
   return (
-    <p className="mt-8">
-      <Link className="inline-flex min-h-11 items-center text-base text-ink-2 underline underline-offset-4" href="/nguon-du-lieu">
+    <p className="mt-6 flex flex-wrap justify-center gap-x-2">
+      <Button href="/gioi-thieu" variant="ghost" className={cls}>
+        Tìm hiểu Nihongo
+      </Button>
+      <Button href="/nguon-du-lieu" variant="ghost" className={cls}>
         Nguồn dữ liệu
-      </Link>
+      </Button>
     </p>
   );
 }
 
-export function TextLink({ href, children }: { href: string; children: React.ReactNode }) {
-  return (
-    <Link className="inline-flex min-h-11 items-center text-base font-medium underline underline-offset-4" href={href}>
-      {children}
-    </Link>
-  );
-}
-
-/** Thông báo: lỗi dùng role="alert", thông tin trung tính dùng role="status". */
+/** Tương thích với các form chưa làm lại (hồ sơ): ánh xạ sang Notice mới. */
 export function Notice({ kind, children }: { kind: "error" | "info"; children: React.ReactNode }) {
   return (
-    <p
-      role={kind === "error" ? "alert" : "status"}
-      className={`mt-4 text-base ${kind === "error" ? "font-medium text-bad" : "rounded-[14px] bg-paper p-3 text-ink lg:bg-sand"}`}
-    >
+    <UiNotice tone={kind === "error" ? "error" : "info"} className="mt-4">
       {children}
-    </p>
+    </UiNotice>
   );
 }
 
-type FieldProps = {
-  label: string;
-  name: string;
-  value: string;
-  onChange: (v: string) => void;
-  autoComplete: string;
-  type?: "email" | "password";
-  hint?: string;
-  error?: string;
-};
-
-export function Field({ label, name, value, onChange, autoComplete, type = "email", hint, error }: FieldProps) {
-  const id = useId();
-  const errId = `${id}-err`;
-  const hintId = `${id}-hint`;
-  const [shown, setShown] = useState(false);
-  const isPassword = type === "password";
-  const describedBy = [error ? errId : "", hint ? hintId : ""].filter(Boolean).join(" ") || undefined;
-  return (
-    <div className="mt-5">
-      <label htmlFor={id} className="block text-base font-bold">
-        {label}
-      </label>
-      <div className="mt-1 flex gap-2">
-        <input
-          id={id}
-          name={name}
-          type={isPassword && shown ? "text" : type}
-          autoComplete={autoComplete}
-          required
-          value={value}
-          onChange={(e) => onChange(e.target.value)}
-          aria-invalid={error ? true : undefined}
-          aria-describedby={describedBy}
-          className={inputClass}
-        />
-        {isPassword && (
-          <button
-            type="button"
-            onClick={() => setShown((s) => !s)}
-            aria-pressed={shown}
-            className="min-h-12 min-w-[72px] shrink-0 rounded-[14px] border-2 border-ink bg-paper px-3 text-base font-bold"
-          >
-            {shown ? "Ẩn" : "Hiện"}
-          </button>
-        )}
-      </div>
-      {hint && (
-        <p id={hintId} className="mt-1 text-sm text-ink-2">
-          {hint}
-        </p>
-      )}
-      {error && (
-        <p id={errId} role="alert" className="mt-1 text-base font-medium text-bad">
-          {error}
-        </p>
-      )}
-    </div>
-  );
-}
-
+/** Tương thích với các form chưa làm lại (hồ sơ): nút gửi lớn, primary. */
 export function SubmitButton({
   pending,
   children,
@@ -136,15 +86,8 @@ export function SubmitButton({
   variant?: "primary" | "secondary";
 }) {
   return (
-    <button
-      type="submit"
-      disabled={pending}
-      aria-busy={pending}
-      className={`mt-6 h-14 w-full rounded-full text-[18px] font-bold text-ink disabled:cursor-default disabled:opacity-60 ${
-        variant === "primary" ? "bg-marker" : "border-2 border-ink bg-paper"
-      }`}
-    >
+    <Button type="submit" size="lg" variant={variant} loading={pending} className="mt-6 w-full">
       {children}
-    </button>
+    </Button>
   );
 }

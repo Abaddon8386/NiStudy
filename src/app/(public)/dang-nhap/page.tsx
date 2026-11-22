@@ -7,7 +7,7 @@ export const metadata: Metadata = { title: "Đăng nhập" };
 
 export default function Page() {
   return (
-    <AuthShell title="Đăng nhập">
+    <AuthShell title="Đăng nhập" mark="nhập" lead="Học tiếng Nhật trọn vẹn, từ kana đến hội thoại.">
       <Suspense>
         <SignInForm />
       </Suspense>

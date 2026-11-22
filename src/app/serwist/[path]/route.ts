@@ -11,11 +11,16 @@ export const { dynamic, dynamicParams, revalidate, generateStaticParams, GET } =
   additionalPrecacheEntries: [
     { url: "/", revision },
     { url: "/nguon-du-lieu", revision },
+    // Chỉ HTML trang giới thiệu (khách chưa đăng nhập mở "/" khi offline được đưa tới đây);
+    // ảnh/clip trong /media không precache (ADR-0004).
+    { url: "/gioi-thieu", revision },
     { url: "/khoi-dau", revision },
     { url: "/cai-dat", revision },
     { url: "/on-tap", revision }, // vỏ tĩnh của phiên ôn: mở lại offline để tiếp tục phiên đã lưu (FR-28)
     { url: "/cai-app", revision },
   ],
+  // Mặc định Serwist precache mọi tệp trong public/: loại ảnh/clip trang giới thiệu (ADR-0004).
+  globIgnores: ["**/node_modules/**/*", "public/media/**/*"],
   swSrc: "src/sw.ts",
   useNativeEsbuild: true,
 });
