@@ -80,3 +80,24 @@ input:focus-visible + .ui-switch-track {
 dialog.ui-dialog::backdrop {
   background: rgb(31 32 29 / 0.6);
 }
+
+/* Nút phát âm: khi đang phát, hai vạch sóng nhấp nháy nhẹ (tắt khi reduced-motion). */
+.ui-speak[aria-pressed="true"] .ui-speak-wave {
+  animation: ui-speak-wave 700ms ease-in-out infinite alternate;
+}
+.ui-speak[aria-pressed="true"] .ui-speak-wave:nth-of-type(2) {
+  animation-delay: 150ms;
+}
+@keyframes ui-speak-wave {
+  from {
+    opacity: 0.35;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ui-speak .ui-speak-wave {
+    animation: none !important;
+  }
+}

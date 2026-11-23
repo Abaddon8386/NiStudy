@@ -20,6 +20,7 @@ import { Notice } from "@/ui/Notice";
 import { Panel } from "@/ui/Panel";
 import { SectionTitle } from "@/ui/SectionTitle";
 import { Switch } from "@/ui/Switch";
+import { SoundSettings } from "./sound-settings";
 import { ChipRow, DateRow, NumberRow } from "./fields";
 import { SaveStatus, type SaveState } from "./save-status";
 
@@ -210,6 +211,8 @@ export function SettingsForm() {
             </div>
           </Panel>
         </section>
+
+        <SoundSettings />
 
         <section aria-labelledby="app-h" className="flex flex-col gap-4">
           <SectionTitle id="app-h">Ứng dụng</SectionTitle>

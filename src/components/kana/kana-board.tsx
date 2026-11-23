@@ -5,6 +5,7 @@ import { createClient } from "@/lib/supabase/client";
 import { Button } from "@/ui/Button";
 import { Notice } from "@/ui/Notice";
 import { PageHeader } from "@/ui/PageHeader";
+import { SpeakButton } from "@/ui/SpeakButton";
 import { SectionTitle } from "@/ui/SectionTitle";
 
 type Script = "hira" | "kata";
@@ -202,6 +203,7 @@ export function KanaBoard() {
                 <span className="sr-only">Đọc là </span>
                 {chosen.romaji}
               </span>
+              <SpeakButton text={chosen.kana} className="border-paper" />
             </div>
           ) : (
             <p className="text-center text-base">Chọn một chữ để xem cách đọc.</p>

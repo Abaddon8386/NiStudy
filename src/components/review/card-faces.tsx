@@ -3,6 +3,7 @@ import type { KanaDetails, KanjiDetails, SessionCard, VocabDetails } from "@/lib
 import { buttonClasses } from "@/ui/button-styles";
 import { BigKanji } from "@/ui/BigKanji";
 import { Mark } from "@/ui/Mark";
+import { SpeakButton } from "@/ui/SpeakButton";
 
 export function mainText(card: SessionCard): string {
   const d = card.details;
@@ -62,6 +63,7 @@ export function CardBack({ card }: { card: SessionCard }) {
         <p className="text-[56px] leading-[1.2] font-extrabold">
           <Mark>{(d as KanaDetails).romaji}</Mark>
         </p>
+        <SpeakButton text={(d as KanaDetails).kana} />
       </div>
     );
   }
@@ -71,15 +73,21 @@ export function CardBack({ card }: { card: SessionCard }) {
     return (
       <div className="flex flex-1 flex-col items-center justify-center gap-3 text-center">
         <Big card={card} variant="back" />
-        <p lang="ja" className="font-jp text-[28px] leading-[1.25] font-bold [overflow-wrap:anywhere]">
-          {v.reading}
-        </p>
+        <div className="flex items-center justify-center gap-3">
+          <p lang="ja" className="font-jp text-[28px] leading-[1.25] font-bold [overflow-wrap:anywhere]">
+            {v.reading}
+          </p>
+          <SpeakButton text={v.reading || v.word} label={v.reading || v.word} />
+        </div>
         <p className="text-[22px] leading-[1.3] font-semibold">{v.meaning_vi ?? "Đang bổ sung"}</p>
         {v.example_ja ? (
           <div className={`${exampleBox} mt-2`}>
-            <p lang="ja" className="font-jp text-[20px] leading-snug">
-              {v.example_ja}
-            </p>
+            <div className="flex items-start justify-between gap-3">
+              <p lang="ja" className="font-jp text-[20px] leading-snug">
+                {v.example_ja}
+              </p>
+              <SpeakButton text={v.example_ja} />
+            </div>
             {v.example_vi ? <p className="mt-1 text-base text-ink-2">{v.example_vi}</p> : null}
           </div>
         ) : null}
@@ -123,14 +131,17 @@ export function CardBack({ card }: { card: SessionCard }) {
         ) : (
           <ul className="space-y-1">
             {examples.map((e) => (
-              <li key={e.word} className="text-base">
-                <span lang="ja" className="font-jp text-[22px] font-medium">
-                  {e.word}
-                </span>{" "}
-                <span lang="ja" className="font-jp text-ink-2">
-                  {e.reading}
+              <li key={e.word} className="flex items-center justify-between gap-3 text-base">
+                <span>
+                  <span lang="ja" className="font-jp text-[22px] font-medium">
+                    {e.word}
+                  </span>{" "}
+                  <span lang="ja" className="font-jp text-ink-2">
+                    {e.reading}
+                  </span>
+                  {e.meaning_vi ? <span> · {e.meaning_vi}</span> : null}
                 </span>
-                {e.meaning_vi ? <span> · {e.meaning_vi}</span> : null}
+                {e.reading ? <SpeakButton text={e.reading} /> : null}
               </li>
             ))}
           </ul>

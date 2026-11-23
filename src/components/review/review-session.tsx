@@ -14,6 +14,7 @@ import { createClient } from "@/lib/supabase/client";
 import { getOutbox, useOutboxFailing, usePendingCount, useUnpersistedCount } from "@/lib/learning/outbox";
 import { deleteSnapshot, loadSnapshot, saveSnapshot } from "@/lib/offline/db";
 import { useOnline } from "@/lib/offline/network-status";
+import { speak, speechTextForCard, useAutoSpeak, useJapaneseVoice } from "@/lib/speech";
 import { CardBack, CardFront } from "./card-faces";
 import { ReviewSummary } from "./review-summary";
 import { Notice } from "@/ui/Notice";
@@ -134,7 +135,17 @@ export function ReviewSession() {
     else flipBtn.current?.focus();
   }, [flipped, cardKey]);
 
-  const flip = useCallback(() => setFlipped(true), []);
+  const { status: voiceStatus, voice } = useJapaneseVoice();
+  const [autoSpeak] = useAutoSpeak();
+
+  // Tự phát gọi ngay trong thao tác bấm/phím lật (iOS chỉ cho phát trong cử chỉ người dùng); không chờ gì.
+  const flip = useCallback(() => {
+    setFlipped(true);
+    if (autoSpeak && voiceStatus === "ready" && card) {
+      const text = speechTextForCard(card);
+      if (text) speak(text, voice);
+    }
+  }, [autoSpeak, voiceStatus, voice, card]);
 
   const onGrade = useCallback(
     async (rating: FsrsRating) => {
