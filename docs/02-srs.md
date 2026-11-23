@@ -701,6 +701,14 @@ Thêm 19/11/2026 theo `docs/00-plan.md` mục "Mở rộng phạm vi" và `docs/
 
 Đã chốt 19/11/2026 (`docs/01-vision.md` mục 10, quyết định 17): FR-C3 là dạng luyện tập như trắc nghiệm (FR-19, FR-20), không vào FSRS. Chỉ cộng XP theo số câu đúng; không đổi `card_states`, không ghi `review_logs`; không tính vào chuỗi ngày (FR-22 chỉ tính lượt ôn).
 
+Trạng thái triển khai 23/11/2026 (nhánh `feature/am-thanh`): FR-C1..C4 đã code. Chưa thử trên máy thật (Windows, Android, iOS); e2e dùng `speechSynthesis` giả. Mã vẫn là mã tạm, chưa đánh mã FR chính thức. Hành vi đã chốt:
+
+- FR-C1: nút phát có ở mặt sau thẻ kana, cách đọc từ vựng, câu ví dụ, từng từ ví dụ của kanji và bảng kana. Văn bản phát ưu tiên kana/cách đọc để TTS không đọc sai kanji. Câu ví dụ phát nguyên văn, có kanji, vì chưa có cách đọc riêng cho câu. Từ ví dụ của kanji phát theo cách đọc; kanji đơn không có nút phát. Phát lượt mới thì hủy lượt trước; tốc độ 0,9.
+- FR-C1, tùy chọn thiết bị "Tự phát âm khi lật thẻ": mặc định tắt, lưu ở localStorage `nihongo:auto-speak`, không lưu máy chủ. Khi lật thẻ lúc trạng thái giọng còn "đang kiểm tra" (tối đa 1,5 giây đầu) thì không tự phát.
+- FR-C2: nút phát ẩn khi không có giọng `ja`. Mục Âm thanh trong Cài đặt hiện tên giọng, nút Nghe thử, và hướng dẫn cài giọng cho Windows, Android, iPhone khi chưa có giọng. Chọn giọng ưu tiên giọng cục bộ (`localService`), rồi giọng mặc định; chờ `voiceschanged` tối đa 1,5 giây.
+- FR-C3: màn chọn chế độ Đọc/Nghe trong trắc nghiệm; chế độ nhớ ở localStorage `nihongo:quiz-mode`. Chế độ Nghe phát cách đọc, ẩn chữ đến khi trả lời, nghe lại bằng nút hoặc phím R, loại đáp án nhiễu trùng cách đọc, và khóa khi không có giọng (kèm liên kết tới Cài đặt). Lưu qua `submit_quiz` như trắc nghiệm thường (XP); không đổi `card_states`, không ghi `review_logs`, không tính chuỗi ngày. Không có migration.
+- FR-C4: không gửi gì tới máy chủ của dự án. Lưu ý: nếu giọng `ja` duy nhất là giọng không cục bộ (ví dụ "Google 日本語" trên Chrome) thì vẫn được dùng, và văn bản phát (từ điển công khai, không phải dữ liệu người học) có thể tới nhà cung cấp trình duyệt. Xem `docs/adr/0008-am-thanh-va-giong-noi.md`, mục "Cập nhật 23/11/2026".
+
 ### Giai đoạn D: ngữ pháp
 
 | Mã tạm | Yêu cầu dự kiến |

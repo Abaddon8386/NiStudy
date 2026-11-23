@@ -23,6 +23,16 @@ Tác giả muốn app học được nghe và nói, không chỉ thẻ kana/kanj
 - Bản ghi cục bộ là dữ liệu người dùng trên thiết bị: đăng xuất và xóa tài khoản phải xóa luôn, nhất quán với `docs/02-srs.md` mục 9 điểm 8. Nếu lưu trong IndexedDB cần tính dung lượng.
 - Cần dự phòng khi `speechSynthesis` không có: toàn bộ bài học phải dùng được không cần âm thanh, nút phát âm chỉ là bổ sung.
 
+## Cập nhật 23/11/2026
+
+Giai đoạn C đã code (nhánh `feature/am-thanh`). Điều chỉnh và làm rõ khi triển khai:
+
+- **Giọng không cục bộ.** Nếu giọng `ja` duy nhất của trình duyệt là giọng mạng (ví dụ "Google 日本語" trên Chrome), vẫn dùng. Khi đó văn bản phát có thể tới nhà cung cấp trình duyệt, không qua máy chủ dự án. Văn bản này là từ điển công khai (cách đọc, câu ví dụ), không phải dữ liệu người học. Ưu tiên chọn giọng `localService` trước, rồi giọng mặc định. Điều này làm yếu câu "chạy hoàn toàn trên thiết bị" ở mục Quyết định: đúng với giọng cục bộ, chưa chắc đúng với giọng mạng.
+- **Câu ví dụ phát nguyên văn.** Chưa có cách đọc riêng cho câu nên câu được phát có kanji; TTS có thể đọc sai. Từ và kanji thì phát theo kana/cách đọc. Thêm cách đọc cho câu là việc sau.
+- **Tùy chọn tự phát lưu ở localStorage.** "Tự phát âm khi lật thẻ" (`nihongo:auto-speak`, mặc định tắt) và chế độ trắc nghiệm (`nihongo:quiz-mode`) là tùy chọn thiết bị, không lưu máy chủ. Đăng xuất không xóa vì đây không phải dữ liệu học.
+- **Trạng thái "checking".** Danh sách giọng nạp chậm nên store giọng có trạng thái đang kiểm tra, chờ `voiceschanged` tối đa 1,5 giây. Trong lúc đó không tự phát khi lật thẻ, để khỏi phát lỡ hoặc báo thiếu giọng sai.
+- **Chưa kiểm trên máy thật.** Windows, Android, iOS chưa thử; e2e dùng `speechSynthesis` giả. Việc này vẫn mở ở `docs/04-architecture.md` mục 17 điểm 13.
+
 ## Phương án đã cân nhắc
 
 - **File audio thu sẵn (người thật):** chất lượng tốt nhất nhưng cần nguồn có giấy phép phù hợp hoặc tự thu, và dung lượng lưu trữ/phân phối. Vượt sức một người và ổ đĩa hạn chế. Hoãn; có thể xem lại cho một phần nội dung quan trọng.
