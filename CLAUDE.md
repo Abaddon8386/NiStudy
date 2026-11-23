@@ -43,6 +43,24 @@ Cách giao việc:
 - JMdict/KANJIDIC là CC BY-SA, phải ghi nguồn. Không chép đề JLPT thật.
 - Giao diện: body 16px, chữ phụ tối thiểu 14px, vùng bấm 44px, hiển thị đúng tiếng Việt và tiếng Nhật.
 
+## Định hướng sản phẩm và cách làm việc
+
+- Nihongo là web học tiếng Nhật toàn diện cho người Việt (kana, từ vựng, ngữ pháp, nghe, nói, đọc, kaiwa), không phải app chỉ học kanji. Kanji qua âm Hán Việt chỉ là một điểm mạnh, không làm khẩu hiệu chính. Mảng chưa làm ghi "Sắp có", không hứa.
+- Người dùng muốn giao diện đẹp, sống động kiểu ximitech.vn (chuyển động, ảnh/video Nhật có giấy phép, hướng v2 trong `docs/03-design.md`). Màn chỉ có form trần là chưa đạt.
+- Trang công khai và auth được dùng chuyển động phong phú. Luồng học (ôn, trắc nghiệm) giữ phản hồi ≤160ms (NFR-03).
+- Không dùng cảnh anime/phim có bản quyền. Media ghi nguồn ở `public/media/credits.json`.
+- Người dùng đã nhắc nhiều lần: phiên chính chỉ quyết định và soát. Giao gần hết việc làm tay (code, test, tài liệu, chụp ảnh) cho công nhân trong `.claude/agents/`; việc độc lập thì chạy song song trên các file khác nhau.
+- Build và e2e chạy lần lượt, vì các worker dùng chung `.next` và cổng 3100.
+
+## Làm từ phiên cloud (claude.ai/code)
+
+- Phiên cloud lấy code từ GitHub `Abaddon8386/nihongo`. Không có `.env.local`, bộ nhớ riêng hay cấu hình cá nhân trên laptop của người dùng.
+- Biến môi trường đặt trong môi trường cloud: `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` (khóa publishable). KHÔNG đặt `SUPABASE_SERVICE_ROLE_KEY` trên cloud.
+- Lệnh: `corepack pnpm@12.17.0 install --frozen-lockfile`, rồi `lint`, `typecheck`, `test`, `build`, `test:e2e`. Playwright chỉ Chromium; nếu chưa có thì cài bằng `corepack pnpm@12.17.0 exec playwright install chromium`. E2E dùng phản hồi Supabase giả nên không cần mạng tới Supabase.
+- Git: tác giả commit là danh tính của người dùng (Abaddon8386). Không đặt tên AI/công cụ vào tên nhánh, commit hay PR. Nhánh theo `feature/<mo-ta>`, `fix/<mo-ta>`, `docs/<mo-ta>`. Chỉ push `main` khi người dùng cho phép; push `main` sẽ tự deploy Vercel.
+- Không làm được trên cloud, để dành về laptop: áp migration/SQL lên Supabase (cần dashboard đã đăng nhập), import dữ liệu bằng service role, xem `localhost`. Khi viết migration trên cloud, ghi trong "Đang làm" là "chưa áp dev" kèm tên file.
+- Cuối mỗi phiên cloud: cập nhật "Đang làm" (ngày, việc đã làm, nhánh/commit, việc còn dở) để phiên sau hoặc laptop tiếp tục. Về laptop thì `git pull`.
+
 ## Đang làm
 
 - 17/11/2026: đã trả lời câu hỏi mở (fullstack; biết HTML/CSS/JS + SQL/Supabase, chưa biết React/TS/Next; 10–15 giờ/tuần; thi JLPT N4/N5 ngày 6/12), ghi vào `docs/00-plan.md`.
