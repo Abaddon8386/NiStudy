@@ -83,7 +83,7 @@ export function CardBack({ card }: { card: SessionCard }) {
         {v.example_ja ? (
           <div className={`${exampleBox} mt-2`}>
             <div className="flex items-start justify-between gap-3">
-              <p lang="ja" className="font-jp text-[20px] leading-snug">
+              <p lang="ja" className="font-jp min-w-0 text-[20px] leading-snug">
                 {v.example_ja}
               </p>
               <SpeakButton text={v.example_ja} />
@@ -132,7 +132,7 @@ export function CardBack({ card }: { card: SessionCard }) {
           <ul className="space-y-1">
             {examples.map((e) => (
               <li key={e.word} className="flex items-center justify-between gap-3 text-base">
-                <span>
+                <span className="min-w-0">
                   <span lang="ja" className="font-jp text-[22px] font-medium">
                     {e.word}
                   </span>{" "}

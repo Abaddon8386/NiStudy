@@ -190,24 +190,28 @@ export function KanaBoard() {
         className="mt-4 lg:grid lg:grid-cols-[minmax(0,1fr)_340px] lg:items-start lg:gap-10"
       >
         <div
-          aria-live="polite"
           className="sticky top-2 z-10 flex min-h-[148px] items-center justify-center rounded-[28px] bg-teal p-4 text-white lg:top-6 lg:order-2 lg:min-h-[320px] lg:p-6"
           data-testid="kana-detail"
         >
-          {chosen ? (
-            <div key={chosen.id} className="fade-in flex items-baseline justify-center gap-5 lg:flex-col lg:items-center lg:gap-6">
-              <span lang="ja" className="font-kanji text-[88px] leading-none font-semibold lg:text-[160px]">
-                {chosen.kana}
-              </span>
-              <span className="text-[40px] leading-none font-extrabold text-marker">
-                <span className="sr-only">Đọc là </span>
-                {chosen.romaji}
-              </span>
-              <SpeakButton text={chosen.kana} className="border-paper" />
+          <div className="flex items-center justify-center gap-5 lg:flex-col lg:gap-6">
+            {/* Vùng aria-live chỉ chứa chữ và romaji; nút phát nằm ngoài để không bị đọc thêm mỗi lần chọn. */}
+            <div aria-live="polite" className="flex items-baseline justify-center gap-5 lg:flex-col lg:items-center lg:gap-6">
+              {chosen ? (
+                <div key={chosen.id} className="fade-in flex items-baseline justify-center gap-5 lg:flex-col lg:items-center lg:gap-6">
+                  <span lang="ja" className="font-kanji text-[88px] leading-none font-semibold lg:text-[160px]">
+                    {chosen.kana}
+                  </span>
+                  <span className="text-[40px] leading-none font-extrabold text-marker">
+                    <span className="sr-only">Đọc là </span>
+                    {chosen.romaji}
+                  </span>
+                </div>
+              ) : (
+                <p className="text-center text-base">Chọn một chữ để xem cách đọc.</p>
+              )}
             </div>
-          ) : (
-            <p className="text-center text-base">Chọn một chữ để xem cách đọc.</p>
-          )}
+            {chosen ? <SpeakButton key={chosen.id} text={chosen.kana} className="border-paper focus-visible:outline-paper" /> : null}
+          </div>
         </div>
 
         <div className="lg:order-1">

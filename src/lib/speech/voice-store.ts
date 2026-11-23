@@ -14,6 +14,7 @@ const SERVER: VoiceState = CHECKING;
 let state: VoiceState = CHECKING;
 let started = false;
 let timedOut = false;
+let timer: ReturnType<typeof setTimeout> | null = null;
 const listeners = new Set<() => void>();
 
 function set(next: VoiceState) {
@@ -38,7 +39,7 @@ function start() {
   }
   const synth = window.speechSynthesis;
   synth.addEventListener?.("voiceschanged", evaluate);
-  setTimeout(() => {
+  timer = setTimeout(() => {
     timedOut = true;
     evaluate();
   }, VOICE_WAIT_MS);
@@ -56,3 +57,14 @@ export const voiceStore = {
   getSnapshot: () => state,
   getServerSnapshot: () => SERVER,
 };
+
+/** CHỈ CHO TEST: đưa store về trạng thái ban đầu (hủy hẹn giờ, bỏ listener, quên đã khởi động). */
+export function resetVoiceStoreForTest() {
+  if (timer) clearTimeout(timer);
+  timer = null;
+  if (typeof window !== "undefined") window.speechSynthesis?.removeEventListener?.("voiceschanged", evaluate);
+  state = CHECKING;
+  started = false;
+  timedOut = false;
+  listeners.clear();
+}

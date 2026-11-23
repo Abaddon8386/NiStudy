@@ -25,14 +25,18 @@ export function SpeakButton({ text, label, className }: { text: string; label?: 
     <button
       type="button"
       aria-label={`Phát âm: ${label ?? text}`}
-      aria-pressed={playing}
+      data-playing={playing ? "true" : "false"}
       onClick={() => {
-        setPlaying(true);
+        // speak() báo kết thúc lượt trước (có thể là chính nút này) ngay trong lời gọi, nên bật sau cùng,
+        // và chỉ khi lượt mới chưa kết thúc đồng bộ (không có giọng/lỗi).
+        let ended = false;
         speak(text, voice, {
           onEnd: () => {
+            ended = true;
             if (alive.current) setPlaying(false);
           },
         });
+        if (!ended && alive.current) setPlaying(true);
       }}
       className={`ui-speak press inline-flex size-11 shrink-0 items-center justify-center rounded-full border-2 border-ink text-ink ${
         playing ? "bg-marker" : "bg-paper hover:bg-sand"
