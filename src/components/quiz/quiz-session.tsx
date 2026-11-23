@@ -2,8 +2,9 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useMemo, useRef, useState, useSyncExternalStore } from "react";
-import { buildQuiz, QUIZ_LENGTH, scoreQuiz, type QuizQuestion } from "@/lib/domain/quiz";
-import { loadQuizData, submitQuiz } from "@/lib/learning/quiz";
+import { buildQuiz, QUIZ_LENGTH, scoreQuiz, type QuizMode, type QuizQuestion } from "@/lib/domain/quiz";
+import { loadQuizData, submitQuiz, type QuizData } from "@/lib/learning/quiz";
+import { speak, useJapaneseVoice } from "@/lib/speech";
 import { BigKanji } from "@/ui/BigKanji";
 import { buttonClasses } from "@/ui/button-styles";
 import { EmptyState } from "@/ui/EmptyState";
@@ -13,8 +14,25 @@ import { QuizResult, type SaveState } from "./quiz-result";
 type Phase =
   | { kind: "loading" }
   | { kind: "offline" }
-  | { kind: "not-enough"; available: number }
+  | { kind: "menu" }
+  | { kind: "not-enough"; available: number; mode: QuizMode }
   | { kind: "playing"; questions: QuizQuestion[] };
+
+const MODE_KEY = "nihongo:quiz-mode";
+function readMode(): QuizMode {
+  try {
+    return localStorage.getItem(MODE_KEY) === "listen" ? "listen" : "read";
+  } catch {
+    return "read";
+  }
+}
+function writeMode(m: QuizMode) {
+  try {
+    localStorage.setItem(MODE_KEY, m);
+  } catch {
+    /* không ghi được thì bỏ qua */
+  }
+}
 
 const shell =
   "mx-auto flex min-h-dvh w-full max-w-[440px] flex-col bg-ground px-4 pt-3 pb-6 lg:max-w-[640px] lg:px-0 lg:pt-6";
@@ -48,21 +66,54 @@ export function QuizSession() {
   const nextBtn = useRef<HTMLButtonElement>(null);
   const promptRef = useRef<HTMLDivElement>(null);
   const online = useOnline();
+  const data = useRef<QuizData | null>(null);
+  const { status: voiceStatus, voice } = useJapaneseVoice();
+  const listenOk = voiceStatus === "ready";
+  const [pickedMode, setPickedMode] = useState<QuizMode>(readMode);
+  const mode: QuizMode = pickedMode === "listen" && listenOk ? "listen" : "read";
+  const [playing, setPlaying] = useState(false);
 
-  const start = useCallback(async () => {
-    setPhase({ kind: "loading" });
+  /** Phát cách đọc của câu nghe; phải gọi ngay trong thao tác bấm/phím (iOS). */
+  const play = useCallback(
+    (question: QuizQuestion | undefined) => {
+      if (!question || question.type !== "listen-meaning" || !question.promptReading) return;
+      setPlaying(true);
+      speak(question.promptReading, voice, { onEnd: () => setPlaying(false) });
+    },
+    [voice],
+  );
+
+  const reset = useCallback(() => {
     setIndex(0);
     setAnswers([]);
     setFinished(false);
     setSave("saving");
     sent.current = false;
     quizId.current = crypto.randomUUID();
+  }, []);
+
+  /** Dựng bài từ dữ liệu đã tải, chạy đồng bộ trong thao tác bấm để phát được âm thanh câu đầu. */
+  const begin = useCallback(
+    (m: QuizMode) => {
+      if (!data.current) return;
+      reset();
+      const b = buildQuiz(data.current.learned, data.current.pool, Math.random, m);
+      if (!b.ok) return setPhase({ kind: "not-enough", available: b.available, mode: m });
+      setPhase({ kind: "playing", questions: b.questions });
+      play(b.questions[0]);
+    },
+    [reset, play],
+  );
+
+  const start = useCallback(async () => {
+    setPhase({ kind: "loading" });
+    reset();
     if (!navigator.onLine) return setPhase({ kind: "offline" });
     const r = await loadQuizData();
     if (!r.ok) return setPhase({ kind: "offline" });
-    const b = buildQuiz(r.data.learned, r.data.pool, Math.random);
-    setPhase(b.ok ? { kind: "playing", questions: b.questions } : { kind: "not-enough", available: b.available });
-  }, []);
+    data.current = r.data;
+    setPhase({ kind: "menu" });
+  }, [reset]);
 
   useEffect(() => {
     // Tải dữ liệu khi vào trang.
@@ -98,8 +149,11 @@ export function QuizSession() {
   const next = useCallback(() => {
     if (!questions || answers[index] == null) return;
     if (index + 1 >= questions.length) setFinished(true);
-    else setIndex(index + 1);
-  }, [questions, answers, index]);
+    else {
+      setIndex(index + 1);
+      play(questions[index + 1]);
+    }
+  }, [questions, answers, index, play]);
 
   // Phím tắt: 1 đến 4 chọn, Enter sang câu tiếp (NFR-06). Enter trên nút để nút tự xử lý.
   useEffect(() => {
@@ -109,6 +163,9 @@ export function QuizSession() {
       if (["1", "2", "3", "4"].includes(e.key)) {
         e.preventDefault();
         choose(Number(e.key) - 1);
+      } else if ((e.key === "r" || e.key === "R") && q.type === "listen-meaning") {
+        e.preventDefault();
+        play(q);
       } else if (e.key === "Enter" && answers[index] != null) {
         if ((e.target as HTMLElement | null)?.closest("button, a")) return;
         e.preventDefault();
@@ -117,7 +174,7 @@ export function QuizSession() {
     };
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [q, choose, next, answers, index]);
+  }, [q, choose, next, answers, index, play]);
 
   // Chọn xong thì focus nút "Câu tiếp"; câu mới thì focus vùng đề.
   useEffect(() => {
@@ -189,6 +246,74 @@ export function QuizSession() {
     );
   }
 
+  if (phase.kind === "menu") {
+    const modes: { value: QuizMode; title: string; hint: string; locked: boolean }[] = [
+      { value: "read", title: "Đọc", hint: "Xem chữ, chọn nghĩa hoặc âm Hán Việt", locked: false },
+      { value: "listen", title: "Nghe", hint: "Nghe từ, chọn nghĩa tiếng Việt", locked: !listenOk },
+    ];
+    const noVoice = voiceStatus === "unsupported" || voiceStatus === "no-voice";
+    return (
+      <main id="noi-dung" tabIndex={-1} className={shell}>
+        <header>
+          <Link href="/" className="inline-flex min-h-11 min-w-11 items-center rounded-full px-2 text-base font-medium">
+            Thoát
+          </Link>
+        </header>
+        <div className="my-auto flex flex-col gap-5 py-6">
+          <h1 className="text-[40px] leading-[1.15] font-extrabold">Trắc nghiệm</h1>
+          <fieldset className="m-0 border-0 p-0">
+            <legend className="text-base font-bold text-ink-2">Chọn chế độ</legend>
+            <div className="mt-3 grid gap-3">
+              {modes.map((m) => {
+                const checked = m.value === mode;
+                return (
+                  <label
+                    key={m.value}
+                    className={`press flex min-h-16 items-center gap-3 rounded-[20px] border-2 px-4 py-2 has-[:focus-visible]:outline-2 has-[:focus-visible]:outline-offset-2 ${
+                      m.locked
+                        ? "cursor-not-allowed border-ring bg-hair text-ink-2"
+                        : checked
+                          ? "cursor-pointer border-ink bg-marker"
+                          : "cursor-pointer border-ink bg-paper hover:bg-sand"
+                    }`}
+                  >
+                    <input
+                      type="radio"
+                      name="quiz-mode"
+                      value={m.value}
+                      checked={checked}
+                      disabled={m.locked}
+                      onChange={() => {
+                        setPickedMode(m.value);
+                        writeMode(m.value);
+                      }}
+                      className="size-5 flex-none accent-[var(--ink)]"
+                    />
+                    <span className="min-w-0 flex-1">
+                      <span className="block text-[20px] leading-tight font-bold">{m.title}</span>
+                      <span className="block text-base">{m.hint}</span>
+                    </span>
+                  </label>
+                );
+              })}
+            </div>
+            {noVoice ? (
+              <p data-testid="listen-locked" className="mt-3 text-base text-ink-2">
+                Thiết bị chưa có giọng tiếng Nhật —{" "}
+                <Link href="/cai-dat" className="font-medium text-ink underline underline-offset-4">
+                  xem Cài đặt › Âm thanh
+                </Link>
+              </p>
+            ) : null}
+          </fieldset>
+          <button type="button" onClick={() => begin(mode)} className={`${primaryBtn} w-full`}>
+            Bắt đầu
+          </button>
+        </div>
+      </main>
+    );
+  }
+
   if (phase.kind === "not-enough") {
     const have = Math.min(phase.available, QUIZ_LENGTH);
     return (
@@ -203,7 +328,7 @@ export function QuizSession() {
             title="Chưa đủ thẻ để làm trắc nghiệm"
             body={
               <span data-testid="not-enough">
-                Bạn cần học thêm thẻ để làm trắc nghiệm (cần ít nhất {QUIZ_LENGTH} câu, hiện có {phase.available}).
+                Bạn cần học thêm thẻ để làm trắc nghiệm {phase.mode === "listen" ? "nghe (từ vựng có cách đọc) " : ""}(cần ít nhất {QUIZ_LENGTH} câu, hiện có {phase.available}).
               </span>
             }
             action={
@@ -230,6 +355,9 @@ export function QuizSession() {
             }
           />
           <p className="mt-4 text-center">
+            <button type="button" onClick={() => setPhase({ kind: "menu" })} className={`${linkBtn} mr-4`}>
+              Chọn chế độ khác
+            </button>
             <Link href="/" className={linkBtn}>
               Về trang chính
             </Link>
@@ -240,13 +368,14 @@ export function QuizSession() {
   }
 
   if (score) {
-    return <QuizResult score={score} save={save} onRetry={() => void send(score.correct)} onAgain={() => void start()} />;
+    return <QuizResult score={score} save={save} onRetry={() => void send(score.correct)} onAgain={() => begin(mode)} />;
   }
 
   if (!q || !questions) return null;
   const total = questions.length;
   const correct = answered && chosen === q.correctIndex;
   const hanViet = q.type === "kanji-hanviet";
+  const listen = q.type === "listen-meaning";
   const optText = hanViet
     ? "text-[22px] leading-[1.25] font-extrabold lg:text-[24px]"
     : q.optionsAreJapanese
@@ -291,16 +420,41 @@ export function QuizSession() {
           className="card-in flex flex-col items-center px-2 py-4 text-center focus:outline-none"
         >
           <p className="text-base font-bold text-ink-2">
-            {q.type === "vocab-meaning" ? "Từ này nghĩa là gì?" : q.type === "vocab-word" ? "Nghĩa này là từ nào?" : "Âm Hán Việt của chữ này?"}
+            {listen
+              ? "Nghe và chọn nghĩa đúng"
+              : q.type === "vocab-meaning"
+                ? "Từ này nghĩa là gì?"
+                : q.type === "vocab-word"
+                  ? "Nghĩa này là từ nào?"
+                  : "Âm Hán Việt của chữ này?"}
           </p>
-          {q.promptIsJapanese ? (
+          {listen ? (
+            <button
+              type="button"
+              aria-label="Nghe lại"
+              aria-keyshortcuts="R"
+              aria-pressed={playing}
+              data-testid="listen-replay"
+              onClick={() => play(q)}
+              className={`press mt-4 inline-flex size-16 items-center justify-center rounded-full border-2 border-ink text-ink ${
+                playing ? "bg-marker" : "bg-paper hover:bg-sand"
+              }`}
+            >
+              <svg viewBox="0 0 24 24" width="32" height="32" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M4 9.5v5h3.5L12 18.5v-13L7.5 9.5H4z" fill="currentColor" />
+                <path d="M15.5 9a4 4 0 0 1 0 6" />
+                <path d="M18 6.5a7.5 7.5 0 0 1 0 11" />
+              </svg>
+            </button>
+          ) : null}
+          {listen && !answered ? null : q.promptIsJapanese ? (
             <BigKanji text={q.prompt} variant="quiz" kanji={hanViet} testId="quiz-prompt" className="mt-4" />
           ) : (
             <p data-testid="quiz-prompt" className="mt-4 text-[32px] leading-[1.25] font-extrabold">
               {q.prompt}
             </p>
           )}
-          {q.promptReading ? (
+          {q.promptReading && !(listen && !answered) ? (
             <p lang="ja" className="mt-3 text-[24px] leading-snug text-ink-2">
               {q.promptReading}
             </p>
@@ -390,6 +544,12 @@ export function QuizSession() {
       <p className="mt-3 hidden text-center text-sm text-ink-2 lg:block" data-testid="shortcut-hint">
         Phím tắt: <kbd className="font-sans font-bold">1</kbd> đến <kbd className="font-sans font-bold">4</kbd> chọn đáp án ·{" "}
         <kbd className="font-sans font-bold">Enter</kbd> câu tiếp
+        {listen ? (
+          <>
+            {" "}
+            · <kbd className="font-sans font-bold">R</kbd> nghe lại
+          </>
+        ) : null}
       </p>
     </main>
   );

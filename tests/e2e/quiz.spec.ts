@@ -60,10 +60,12 @@ async function setup(page: Page, learned: { card_id: string }[] = ALL_LEARNED): 
   return ctl;
 }
 
-async function openQuiz(page: Page) {
+/** Mở trang; `start` false thì dừng ở màn chọn chế độ (hoặc màn lỗi), không bấm "Bắt đầu". */
+async function openQuiz(page: Page, start = true) {
   await loginViaForm(page);
   await expect(page).toHaveURL(/\/($|\?)|\/khoi-dau/);
   await page.goto("/trac-nghiem");
+  if (start) await page.getByRole("button", { name: "Bắt đầu" }).click();
 }
 
 const AXE_TAGS = ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa"];
@@ -172,7 +174,7 @@ test.describe("trắc nghiệm (máy tính 1280px)", () => {
   test("tải dữ liệu lỗi: báo cần kết nối mạng, không mở bài", async ({ page }) => {
     await setup(page);
     await page.route("**/rest/v1/vocab_details**", (r) => r.abort("failed"));
-    await openQuiz(page);
+    await openQuiz(page, false);
     // supabase-js thử lại yêu cầu GET vài lần trước khi báo lỗi, tối đa 10 giây thì app tự bỏ cuộc.
     await expect(page.getByRole("alert").filter({ hasText: "Trắc nghiệm" })).toContainText("Trắc nghiệm cần kết nối mạng", {
       timeout: 15_000,
@@ -185,7 +187,7 @@ test.describe("trắc nghiệm (máy tính 1280px)", () => {
     await page.addInitScript(() => {
       Object.defineProperty(navigator, "onLine", { configurable: true, get: () => false });
     });
-    await openQuiz(page);
+    await openQuiz(page, false);
     await expect(page.getByRole("alert").filter({ hasText: "Trắc nghiệm" })).toContainText("Trắc nghiệm cần kết nối mạng");
     await expect(page.getByTestId("quiz-prompt")).toHaveCount(0);
     expect(ctl.requests.filter((u) => u.includes("vocab_details") || u.includes("card_states"))).toEqual([]);
@@ -318,5 +320,120 @@ test.describe("giao diện trắc nghiệm: chữ kanji lớn, không tràn, axe
     await expect(page.getByText("Bạn trả lời đúng cả 10 câu.")).toBeVisible();
     await expect(page.locator('[lang="ja"][aria-hidden="true"]').filter({ hasText: "満" })).toBeVisible();
     await axe(page);
+  });
+});
+
+/** Giả speechSynthesis như speech.spec.ts: speak ghi `lang|text` vào window.__spoken. */
+async function fakeSpeech(page: Page, voices: { name: string; lang: string }[]) {
+  await page.addInitScript((voices) => {
+    const w = window as unknown as { __spoken: string[] };
+    w.__spoken = [];
+    const list = voices.map((v) => ({ ...v, localService: true, default: false, voiceURI: v.name }));
+    class FakeUtterance {
+      text: string;
+      lang = "";
+      rate = 1;
+      voice: unknown = null;
+      onend?: () => void;
+      onerror?: () => void;
+      constructor(text: string) {
+        this.text = text;
+      }
+    }
+    Object.defineProperty(window, "SpeechSynthesisUtterance", { configurable: true, value: FakeUtterance });
+    Object.defineProperty(window, "speechSynthesis", {
+      configurable: true,
+      value: {
+        getVoices: () => list,
+        speak: (u: { text: string; lang: string; onend?: () => void }) => {
+          w.__spoken.push(`${u.lang}|${u.text}`);
+          setTimeout(() => u.onend?.(), 50);
+        },
+        cancel: () => {},
+        addEventListener: () => {},
+        removeEventListener: () => {},
+      },
+    });
+  }, voices);
+}
+const spoken = (page: Page) => page.evaluate(() => (window as unknown as { __spoken: string[] }).__spoken);
+
+test.describe("trắc nghiệm nghe (FR-C3)", () => {
+  test.use({ viewport: { width: 375, height: 812 } });
+  const LISTEN_LEARNED = vocabIds.slice(0, 12).map((card_id) => ({ card_id }));
+
+  test("có giọng: chọn Nghe, phát cách đọc câu 1, chữ ẩn đến khi trả lời, đủ 10 câu, gửi submit_quiz", async ({ page }) => {
+    await fakeSpeech(page, [{ name: "Kyoko giả", lang: "ja-JP" }]);
+    const ctl = await setup(page, LISTEN_LEARNED);
+    await openQuiz(page, false);
+    const listenRadio = page.getByRole("radio", { name: /Nghe/ });
+    await expect(listenRadio).toBeEnabled();
+    await expect(page.getByTestId("listen-locked")).toHaveCount(0);
+    await axe(page);
+    await listenRadio.check();
+    await page.getByRole("button", { name: "Bắt đầu" }).click();
+
+    for (let i = 0; i < 10; i++) {
+      await expect(page.getByText(`${i + 1} / 10`)).toBeVisible();
+      const log = await spoken(page);
+      // Mỗi câu phát một lần khi bấm; câu 1 được nghe lại hai lần (nút và phím R).
+      expect(log).toHaveLength(i === 0 ? 1 : i + 3);
+      const last = log[log.length - 1];
+      const reading = last.split("|")[1];
+      expect(last.startsWith("ja-JP|")).toBe(true);
+      const card = vocabRows.find((r) => r.reading === reading)!;
+      expect(card, `cách đọc ${reading} thuộc bộ mẫu`).toBeTruthy();
+      // Chưa trả lời: không lộ chữ lẫn cách đọc.
+      await expect(page.getByTestId("quiz-prompt")).toHaveCount(0);
+      await expect(page.getByText(card.word)).toHaveCount(0);
+      await expect(page.getByText(reading)).toHaveCount(0);
+      const replay = page.getByRole("button", { name: "Nghe lại" });
+      const box = await replay.boundingBox();
+      expect(box!.width).toBeGreaterThanOrEqual(56);
+      expect(box!.height).toBeGreaterThanOrEqual(56);
+      if (i === 0) {
+        await replay.click();
+        await page.keyboard.press("r");
+        expect(await spoken(page)).toEqual([log[0], log[0], log[0]]);
+        await axe(page);
+      }
+      const texts = (await page.getByTestId("opt-text").allInnerTexts()).map((t) => t.trim());
+      expect(texts).toContain(card.meaning_vi);
+      const wrong = i === 3;
+      const ri = texts.indexOf(card.meaning_vi);
+      await page.keyboard.press(String(((wrong ? ri + 1 : ri) % 4) + 1));
+      await expect(page.getByTestId("quiz-prompt")).toHaveText(card.word);
+      await expect(page.getByText(reading)).toBeVisible();
+      if (i === 0) await axe(page);
+      await page.keyboard.press("Enter");
+      // Câu tiếp được phát ngay khi bấm "Câu tiếp"/Enter (trừ câu cuối).
+      if (i < 9) await expect(page.getByText(`${i + 2} / 10`)).toBeVisible();
+    }
+    await expect(page.getByRole("heading", { level: 1, name: "Xong bài" })).toBeVisible();
+    await expect(page.getByTestId("quiz-score")).toContainText("9/10");
+    const wrongItem = page.getByTestId("wrong-list").getByRole("listitem");
+    await expect(wrongItem).toHaveCount(1);
+    await expect(wrongItem).toContainText(/語\d+/);
+    await expect(wrongItem).toContainText(/ご\d+/);
+    await expect(wrongItem).toContainText(/nghĩa \d+/);
+    await expect(page.getByTestId("save-status")).toContainText("Đã lưu");
+    await axe(page);
+    expect(ctl.submits).toHaveLength(1);
+    expect(ctl.submits[0].p_correct).toBe(9);
+    expect(ctl.requests.some((u) => u.includes("review_logs") || u.includes("submit_reviews"))).toBe(false);
+  });
+
+  test("không có giọng: chế độ Nghe bị khóa, có link Cài đặt", async ({ page }) => {
+    await fakeSpeech(page, [{ name: "English", lang: "en-US" }]);
+    await setup(page, LISTEN_LEARNED);
+    await openQuiz(page, false);
+    await expect(page.getByRole("radio", { name: /Nghe/ })).toBeDisabled();
+    await expect(page.getByRole("radio", { name: /Đọc/ })).toBeChecked();
+    await expect(page.getByTestId("listen-locked")).toContainText("Thiết bị chưa có giọng tiếng Nhật");
+    await expect(page.getByRole("link", { name: /Cài đặt/ })).toHaveAttribute("href", "/cai-dat");
+    await axe(page);
+    await page.getByRole("button", { name: "Bắt đầu" }).click();
+    await expect(page.getByTestId("quiz-prompt")).toBeVisible();
+    expect(await spoken(page)).toEqual([]);
   });
 });

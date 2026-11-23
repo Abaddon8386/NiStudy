@@ -152,6 +152,62 @@ describe("buildQuiz", () => {
   });
 });
 
+describe("buildQuiz chế độ nghe (FR-C3)", () => {
+  const vocabLearned = pool.slice(0, 12);
+  const listen = (l = vocabLearned, p = pool, seed = 1) => buildQuiz(l, p, mulberry32(seed), "listen");
+
+  it("đủ 10 câu listen-meaning: đề là từ, âm thanh là cách đọc, lựa chọn là nghĩa", () => {
+    const r = listen();
+    expect(r.ok).toBe(true);
+    if (!r.ok) return;
+    expect(r.questions).toHaveLength(10);
+    for (const q of r.questions) {
+      const card = pool.find((c) => c.id === q.cardId)!;
+      expect(q.type).toBe("listen-meaning");
+      expect(q.prompt).toBe(card.text);
+      expect(q.promptReading).toBe(card.reading);
+      expect(q.promptIsJapanese).toBe(true);
+      expect(q.optionsAreJapanese).toBe(false);
+      expect(q.options).toHaveLength(4);
+      expect(new Set(q.options).size).toBe(4);
+      expect(q.options[q.correctIndex]).toBe(card.meaningVi);
+    }
+  });
+
+  it("không lẫn kanji: thẻ kanji học rồi bị bỏ", () => {
+    const r = buildQuiz([...vocabLearned.slice(0, 9), ...pool.slice(30, 40)], pool, mulberry32(2), "listen");
+    expect(r).toEqual({ ok: false, reason: "not-enough", available: 9 });
+  });
+
+  it("không đủ câu thì trả số câu hiện có", () => {
+    expect(listen(vocabLearned.slice(0, 7))).toEqual({ ok: false, reason: "not-enough", available: 7 });
+  });
+
+  it("bỏ thẻ thiếu cách đọc, từ hoặc nghĩa", () => {
+    const bad = [vocab(0, { reading: null }), vocab(1, { reading: " " }), vocab(2, { text: null }), vocab(3, { meaningVi: "" })];
+    const l = [...bad, ...pool.slice(4, 12)];
+    const p = pool.map((c) => bad.find((b) => b.id === c.id) ?? c);
+    expect(listen(l, p)).toEqual({ ok: false, reason: "not-enough", available: 8 });
+  });
+
+  it("nhiễu không có nghĩa rỗng và không đồng âm với đáp án", () => {
+    const p = pool.map((c) => (c.id === "vocab:20" ? vocab(20, { reading: "ご0" }) : c.id === "vocab:21" ? vocab(21, { meaningVi: null }) : c));
+    for (let seed = 1; seed <= 20; seed++) {
+      const r = listen(vocabLearned, p, seed);
+      if (!r.ok) throw new Error("phải đủ câu");
+      for (const q of r.questions) {
+        expect(q.options.every((o) => o !== "")).toBe(true);
+        if (q.cardId === "vocab:0") expect(q.options).not.toContain("nghĩa 20");
+        expect(q.options).not.toContain("null");
+      }
+    }
+  });
+
+  it("mặc định vẫn là chế độ đọc", () => {
+    expect(build().every((q) => q.type !== "listen-meaning")).toBe(true);
+  });
+});
+
 describe("scoreQuiz", () => {
   const q = (correctIndex: number): QuizQuestion => ({
     cardId: "c",

@@ -7,7 +7,9 @@ export const QUIZ_LENGTH = 10;
 const OPTION_COUNT = 4;
 
 export type QuizKind = "vocab" | "kanji";
-export type QuestionType = "vocab-meaning" | "vocab-word" | "kanji-hanviet";
+export type QuestionType = "vocab-meaning" | "vocab-word" | "kanji-hanviet" | "listen-meaning";
+/** "read": trắc nghiệm đọc (mặc định); "listen": nghe cách đọc rồi chọn nghĩa (FR-C3), chỉ từ vựng. */
+export type QuizMode = "read" | "listen";
 
 /** Thẻ vocab/kanji đã ghép chi tiết; giá trị thiếu là null. */
 export interface QuizCard {
@@ -27,9 +29,9 @@ export interface QuizCard {
 export interface QuizQuestion {
   cardId: string;
   type: QuestionType;
-  /** Chữ hiển thị làm đề (kanji, từ, hoặc nghĩa). */
+  /** Chữ hiển thị làm đề (kanji, từ, hoặc nghĩa). Dạng nghe: từ, chỉ hiện sau khi trả lời; âm thanh là `promptReading`. */
   prompt: string;
-  /** Cách đọc nhỏ dưới đề (chỉ dạng từ → nghĩa). */
+  /** Cách đọc nhỏ dưới đề (dạng từ → nghĩa); dạng nghe: văn bản để phát âm. */
   promptReading: string | null;
   promptIsJapanese: boolean;
   optionsAreJapanese: boolean;
@@ -58,7 +60,7 @@ function shuffle<T>(arr: readonly T[], rng: Rng): T[] {
 /** Giá trị hiển thị làm lựa chọn của thẻ theo dạng câu; null nếu thiếu. */
 function optionValue(card: QuizCard, type: QuestionType): string | null {
   const v =
-    type === "vocab-meaning" ? card.meaningVi : type === "vocab-word" ? card.text : card.hanViet?.toUpperCase();
+    type === "vocab-meaning" || type === "listen-meaning" ? card.meaningVi : type === "vocab-word" ? card.text : card.hanViet?.toUpperCase();
   const c = clean(v);
   return c === "" ? null : c;
 }
@@ -68,19 +70,27 @@ function promptValue(card: QuizCard, type: QuestionType): string | null {
   return c === "" ? null : c;
 }
 
-function typesFor(card: QuizCard): QuestionType[] {
+function typesFor(card: QuizCard, mode: QuizMode): QuestionType[] {
+  if (mode === "listen") return card.kind === "vocab" && clean(card.reading) !== "" ? ["listen-meaning"] : [];
   return card.kind === "vocab" ? ["vocab-meaning", "vocab-word"] : ["kanji-hanviet"];
 }
 
-function buildQuestion(card: QuizCard, pool: readonly QuizCard[], rng: Rng): QuizQuestion | null {
-  for (const type of shuffle(typesFor(card), rng)) {
+function buildQuestion(card: QuizCard, pool: readonly QuizCard[], rng: Rng, mode: QuizMode): QuizQuestion | null {
+  for (const type of shuffle(typesFor(card, mode), rng)) {
     const correct = optionValue(card, type);
     const prompt = promptValue(card, type);
     if (correct === null || prompt === null) continue;
 
     const seen = new Set([key(correct)]);
     const distractors: string[] = [];
-    const candidates = pool.filter((p) => p.id !== card.id && p.kind === card.kind && p.level === card.level);
+    // Dạng nghe: loại thẻ cùng cách đọc (đồng âm) vì nghe không phân biệt được.
+    const candidates = pool.filter(
+      (p) =>
+        p.id !== card.id &&
+        p.kind === card.kind &&
+        p.level === card.level &&
+        !(type === "listen-meaning" && clean(p.reading) === clean(card.reading)),
+    );
     for (const c of shuffle(candidates, rng)) {
       const v = optionValue(c, type);
       if (v === null || seen.has(key(v))) continue;
@@ -95,7 +105,7 @@ function buildQuestion(card: QuizCard, pool: readonly QuizCard[], rng: Rng): Qui
       cardId: card.id,
       type,
       prompt,
-      promptReading: type === "vocab-meaning" && clean(card.reading) !== "" ? clean(card.reading) : null,
+      promptReading: (type === "vocab-meaning" || type === "listen-meaning") && clean(card.reading) !== "" ? clean(card.reading) : null,
       promptIsJapanese: type !== "vocab-word",
       optionsAreJapanese: type === "vocab-word",
       options,
@@ -109,13 +119,18 @@ function buildQuestion(card: QuizCard, pool: readonly QuizCard[], rng: Rng): Qui
  * Dựng bài `QUIZ_LENGTH` câu từ thẻ đã học, mỗi thẻ tối đa một câu.
  * Không đủ câu hợp lệ thì trả số câu hiện tạo được (FR-19).
  */
-export function buildQuiz(learned: readonly QuizCard[], pool: readonly QuizCard[], rng: Rng): BuildQuizResult {
+export function buildQuiz(
+  learned: readonly QuizCard[],
+  pool: readonly QuizCard[],
+  rng: Rng,
+  mode: QuizMode = "read",
+): BuildQuizResult {
   const questions: QuizQuestion[] = [];
   const done = new Set<string>();
   for (const card of shuffle(learned, rng)) {
     if (done.has(card.id)) continue;
     done.add(card.id);
-    const q = buildQuestion(card, pool, rng);
+    const q = buildQuestion(card, pool, rng, mode);
     if (q) questions.push(q);
     if (questions.length === QUIZ_LENGTH) return { ok: true, questions };
   }
