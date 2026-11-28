@@ -1,0 +1,107 @@
+{
+  "id": "n5-kono-sono-ano",
+  "level": "N5",
+  "order": 7,
+  "title": "この／その／あの／どの ＋ N",
+  "pattern": "この／その／あの／どの N",
+  "meaning_vi": "N này / N đó / N kia / N nào",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "この, その, あの, どの luôn đi kèm một danh từ ngay sau: この ほん (quyển sách này). Khoảng cách giống これ／それ／あれ."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Trật tự ngược tiếng Việt: “sách này” thành この ほん. Không dùng một mình: “このは ほんです” là sai. あの cũng dùng cho người: あの ひと (người kia)."
+    }
+  ],
+  "notes": [
+    "これ = この ＋ danh từ đã hiểu ngầm: この ほんは わたしのです ≈ これは わたしの ほんです."
+  ],
+  "examples": [
+    {
+      "ja": "この 本は わたしのです。",
+      "ruby": "この 本[ほん]は わたしのです。",
+      "vi": "Quyển sách này là của tôi."
+    },
+    {
+      "ja": "その かさは 千円です。",
+      "ruby": "その かさは 千円[せんえん]です。",
+      "vi": "Cái ô đó giá 1.000 yên."
+    },
+    {
+      "ja": "あの 人は だれですか。",
+      "ruby": "あの 人[ひと]は だれですか。",
+      "vi": "Người kia là ai?"
+    },
+    {
+      "ja": "どの 車が たなかさんのですか。",
+      "ruby": "どの 車[くるま]が たなかさんのですか。",
+      "vi": "Chiếc xe nào là của anh Tanaka?"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "＿＿ ほんは わたしのです。",
+      "answer": "この",
+      "choices": [
+        "これ",
+        "ここ",
+        "こちら",
+        "この"
+      ],
+      "vi": "Quyển sách này là của tôi."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "＿＿ ひとは だれですか。",
+      "answer": "あの",
+      "choices": [
+        "あの",
+        "あれ",
+        "あそこ",
+        "あちら"
+      ],
+      "vi": "Người kia là ai?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "＿＿ かさは いくらですか。",
+      "answer": "その",
+      "choices": [
+        "それ",
+        "その",
+        "そこ",
+        "そちら"
+      ],
+      "vi": "Cái ô đó giá bao nhiêu?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "＿＿ くるまが たなかさんのですか。",
+      "answer": "どの",
+      "choices": [
+        "どれ",
+        "どこ",
+        "どの",
+        "どちら"
+      ],
+      "vi": "Chiếc xe nào là của anh Tanaka?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "＿＿ とけいは わたしのです。",
+      "answer": "この",
+      "choices": [
+        "これ",
+        "ここ",
+        "どれ",
+        "この"
+      ],
+      "vi": "Cái đồng hồ này là của tôi."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

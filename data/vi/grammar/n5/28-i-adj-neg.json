@@ -1,0 +1,107 @@
+{
+  "id": "n5-i-adj-neg",
+  "level": "N5",
+  "order": 28,
+  "title": "Tính từ い: ～くないです",
+  "pattern": "N は A(bỏ い)くないです",
+  "meaning_vi": "N không A",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Phủ định tính từ い: bỏ い, thêm くないです: たかい → たかくないです. Cách nói trang trọng hơn: たかくありません. Đặc biệt: いい → よくないです."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Lỗi hay gặp: “たかいじゃありません” — じゃありません chỉ dùng cho danh từ và tính từ な. Với いい phải đổi sang よ: “いくないです” là sai."
+    }
+  ],
+  "notes": [
+    "あまり ＋ ～くないです: không… lắm."
+  ],
+  "examples": [
+    {
+      "ja": "この かばんは 高くないです。",
+      "ruby": "この かばんは 高[たか]くないです。",
+      "vi": "Cái cặp này không đắt."
+    },
+    {
+      "ja": "今日は さむくないです。",
+      "ruby": "今日[きょう]は さむくないです。",
+      "vi": "Hôm nay không lạnh."
+    },
+    {
+      "ja": "あの レストランは あまり おいしくないです。",
+      "ruby": "あの レストランは あまり おいしくないです。",
+      "vi": "Nhà hàng kia không ngon lắm."
+    },
+    {
+      "ja": "天気は よくないです。",
+      "ruby": "天気[てんき]は よくないです。",
+      "vi": "Thời tiết không tốt."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "この かばんは ＿＿。",
+      "answer": "たかくないです",
+      "choices": [
+        "たかくないです",
+        "たかいじゃありません",
+        "たかいないです",
+        "たかくです"
+      ],
+      "vi": "Cái cặp này không đắt."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きょうは ＿＿。",
+      "answer": "さむくないです",
+      "choices": [
+        "さむいじゃありません",
+        "さむくないです",
+        "さむないです",
+        "さむくじゃないです"
+      ],
+      "vi": "Hôm nay không lạnh."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "てんきは ＿＿。",
+      "answer": "よくないです",
+      "choices": [
+        "いくないです",
+        "いいじゃありません",
+        "よくないです",
+        "よいないです"
+      ],
+      "vi": "Thời tiết không tốt."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あの レストランは あまり ＿＿。",
+      "answer": "おいしくないです",
+      "choices": [
+        "おいしいです",
+        "おいしいじゃないです",
+        "おいしくです",
+        "おいしくないです"
+      ],
+      "vi": "Nhà hàng kia không ngon lắm."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "この へやは ＿＿。せまいです。",
+      "answer": "ひろくないです",
+      "choices": [
+        "ひろくないです",
+        "ひろいです",
+        "ひろいじゃありません",
+        "ひろないです"
+      ],
+      "vi": "Căn phòng này không rộng. Nó hẹp."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

@@ -1,0 +1,124 @@
+{
+  "id": "n5-arimasu-imasu",
+  "level": "N5",
+  "order": 36,
+  "title": "～が あります／います",
+  "pattern": "N が あります ／ N が います",
+  "meaning_vi": "Có N (tồn tại)",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "あります dùng cho đồ vật, cây cối, sự kiện (không tự di chuyển); います dùng cho người và động vật. Vật/người được nhắc đến lần đầu dùng が: こうえんに いぬが います."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Tiếng Việt chỉ có một chữ “có”, nên người Việt hay nhầm “ねこが あります”. Cây cối dùng あります dù là sinh vật. Sự kiện (テスト, パーティー) cũng dùng あります."
+    }
+  ],
+  "notes": [
+    "Hỏi “ai”: だれが いますか; hỏi “cái gì”: なにが ありますか."
+  ],
+  "examples": [
+    {
+      "ja": "こうえんに いぬが います。",
+      "ruby": "こうえんに いぬが います。",
+      "vi": "Ở công viên có con chó."
+    },
+    {
+      "ja": "つくえの 上に 本が あります。",
+      "ruby": "つくえの 上[うえ]に 本[ほん]が あります。",
+      "vi": "Trên bàn có quyển sách."
+    },
+    {
+      "ja": "きょうしつに 学生が 五人 います。",
+      "ruby": "きょうしつに 学生[がくせい]が 五人[ごにん] います。",
+      "vi": "Trong phòng học có năm học sinh."
+    },
+    {
+      "ja": "あした テストが あります。",
+      "ruby": "あした テストが あります。",
+      "vi": "Ngày mai có bài kiểm tra."
+    },
+    {
+      "ja": "にわに 大きい 木が あります。",
+      "ruby": "にわに 大[おお]きい 木[き]が あります。",
+      "vi": "Trong vườn có một cái cây to."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "こうえんに いぬが ＿＿。",
+      "answer": "います",
+      "choices": [
+        "います",
+        "あります",
+        "です",
+        "します"
+      ],
+      "vi": "Ở công viên có con chó."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "つくえの うえに ほんが ＿＿。",
+      "answer": "あります",
+      "choices": [
+        "います",
+        "あります",
+        "です",
+        "します"
+      ],
+      "vi": "Trên bàn có quyển sách."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あした テストが ＿＿。",
+      "answer": "あります",
+      "choices": [
+        "います",
+        "です",
+        "あります",
+        "なります"
+      ],
+      "vi": "Ngày mai có bài kiểm tra."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "にわに おおきい きが ＿＿。",
+      "answer": "あります",
+      "choices": [
+        "います",
+        "です",
+        "します",
+        "あります"
+      ],
+      "vi": "Trong vườn có một cái cây to."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きょうしつに だれが ＿＿か。",
+      "answer": "います",
+      "choices": [
+        "います",
+        "あります",
+        "です",
+        "します"
+      ],
+      "vi": "Trong phòng học có ai?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "へやに ねこ＿＿ います。",
+      "answer": "が",
+      "choices": [
+        "を",
+        "が",
+        "で",
+        "へ"
+      ],
+      "vi": "Trong phòng có con mèo."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

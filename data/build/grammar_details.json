@@ -1,0 +1,7550 @@
+[
+  {
+    "card_id": "grammar:n5-adj-noun",
+    "point_id": "n5-adj-noun",
+    "level": "N5",
+    "sort": 30,
+    "title": "Tính từ ＋ danh từ",
+    "pattern": "Aい N ／ Aな N",
+    "meaning_vi": "N (mà) A",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Tính từ đứng TRƯỚC danh từ để bổ nghĩa: tính từ い giữ nguyên (たかい やま: núi cao), tính từ な giữ な (しずかな こうえん: công viên yên tĩnh)."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Trật tự ngược tiếng Việt: “núi cao” → たかい やま. Lỗi hay gặp: “しずか こうえん” (thiếu な), “たかいな やま” (thừa な)."
+      }
+    ],
+    "notes": [
+      "おおきな／ちいさな cũng đứng trước danh từ: おおきな き (cái cây to)."
+    ],
+    "examples": [
+      {
+        "ja": "あれは 高い 山です。",
+        "ruby": "あれは 高[たか]い 山[やま]です。",
+        "vi": "Kia là ngọn núi cao."
+      },
+      {
+        "ja": "ここは しずかな こうえんです。",
+        "ruby": "ここは しずかな こうえんです。",
+        "vi": "Đây là công viên yên tĩnh."
+      },
+      {
+        "ja": "きのう おもしろい えいがを 見ました。",
+        "ruby": "きのう おもしろい えいがを 見[み]ました。",
+        "vi": "Hôm qua tôi đã xem một bộ phim hay."
+      },
+      {
+        "ja": "リンさんは きれいな 人です。",
+        "ruby": "リンさんは きれいな 人[ひと]です。",
+        "vi": "Chị Linh là người đẹp."
+      },
+      {
+        "ja": "あたらしい 車を かいました。",
+        "ruby": "あたらしい 車[くるま]を かいました。",
+        "vi": "Tôi đã mua xe ô tô mới."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "あれは ＿＿ やまです。",
+        "answer": "たかい",
+        "choices": [
+          "たかいな",
+          "たかな",
+          "たかい",
+          "たかく"
+        ],
+        "vi": "Kia là ngọn núi cao."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ここは ＿＿ こうえんです。",
+        "answer": "しずかな",
+        "choices": [
+          "しずか",
+          "しずかい",
+          "しずかの",
+          "しずかな"
+        ],
+        "vi": "Đây là công viên yên tĩnh."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きのう ＿＿ えいがを みました。",
+        "answer": "おもしろい",
+        "choices": [
+          "おもしろい",
+          "おもしろいな",
+          "おもしろな",
+          "おもしろく"
+        ],
+        "vi": "Hôm qua tôi đã xem một bộ phim hay."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "リンさんは ＿＿ ひとです。",
+        "answer": "きれいな",
+        "choices": [
+          "きれい",
+          "きれいな",
+          "きれいい",
+          "きれいの"
+        ],
+        "vi": "Chị Linh là người đẹp."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ハノイは ＿＿ まちです。",
+        "answer": "にぎやかな",
+        "choices": [
+          "にぎやか",
+          "にぎやかい",
+          "にぎやかな",
+          "にぎやかの"
+        ],
+        "vi": "Hà Nội là thành phố nhộn nhịp."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "＿＿ くるまを かいました。",
+        "answer": "あたらしい",
+        "choices": [
+          "あたらしいな",
+          "あたらしな",
+          "あたらしの",
+          "あたらしい"
+        ],
+        "vi": "Tôi đã mua xe ô tô mới."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-adj-past",
+    "point_id": "n5-adj-past",
+    "level": "N5",
+    "sort": 31,
+    "title": "Tính từ quá khứ: ～かったです／～でした",
+    "pattern": "Aい → Aかったです ／ Aな → Aでした",
+    "meaning_vi": "(đã) A — quá khứ của tính từ",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Tính từ い: bỏ い + かったです (さむい → さむかったです); phủ định: bỏ い + くなかったです. Tính từ な và danh từ: でした (しずかでした); phủ định: じゃありませんでした. Đặc biệt: いい → よかったです."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Lỗi rất hay gặp: “さむいでした”. Với tính từ い, です giữ nguyên, phần い mới đổi. Với tính từ な thì ngược lại: chia です thành でした."
+      }
+    ],
+    "notes": [
+      "Tiếng Việt có thể chỉ thêm “hôm qua”, tiếng Nhật bắt buộc đổi tính từ sang quá khứ."
+    ],
+    "examples": [
+      {
+        "ja": "きのうは さむかったです。",
+        "ruby": "きのうは さむかったです。",
+        "vi": "Hôm qua trời lạnh."
+      },
+      {
+        "ja": "りょこうは とても たのしかったです。",
+        "ruby": "りょこうは とても たのしかったです。",
+        "vi": "Chuyến du lịch rất vui."
+      },
+      {
+        "ja": "パーティーは にぎやかでした。",
+        "ruby": "パーティーは にぎやかでした。",
+        "vi": "Bữa tiệc đã rất náo nhiệt."
+      },
+      {
+        "ja": "テストは あまり むずかしくなかったです。",
+        "ruby": "テストは あまり むずかしくなかったです。",
+        "vi": "Bài kiểm tra không khó lắm."
+      },
+      {
+        "ja": "きのうの 天気は よくなかったです。",
+        "ruby": "きのうの 天気[てんき]は よくなかったです。",
+        "vi": "Thời tiết hôm qua không tốt."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "きのうは ＿＿。",
+        "answer": "さむかったです",
+        "choices": [
+          "さむいでした",
+          "さむかったでした",
+          "さむいかったです",
+          "さむかったです"
+        ],
+        "vi": "Hôm qua trời lạnh."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "りょこうは とても ＿＿。",
+        "answer": "たのしかったです",
+        "choices": [
+          "たのしかったです",
+          "たのしいでした",
+          "たのしでした",
+          "たのしいかったです"
+        ],
+        "vi": "Chuyến du lịch rất vui."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "パーティーは ＿＿。",
+        "answer": "にぎやかでした",
+        "choices": [
+          "にぎやかかったです",
+          "にぎやかでした",
+          "にぎやかだでした",
+          "にぎやかなでした"
+        ],
+        "vi": "Bữa tiệc đã rất náo nhiệt."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "テストは あまり ＿＿。",
+        "answer": "むずかしくなかったです",
+        "choices": [
+          "むずかしかったです",
+          "むずかしいじゃありませんでした",
+          "むずかしくなかったです",
+          "むずかしくないでした"
+        ],
+        "vi": "Bài kiểm tra không khó lắm."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きのうの てんきは ＿＿。",
+        "answer": "よくなかったです",
+        "choices": [
+          "いくなかったです",
+          "いいじゃなかったです",
+          "よいでした",
+          "よくなかったです"
+        ],
+        "vi": "Thời tiết hôm qua không tốt."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ホテルは ＿＿。",
+        "answer": "しずかじゃありませんでした",
+        "choices": [
+          "しずかじゃありませんでした",
+          "しずかくなかったです",
+          "しずかなかったです",
+          "しずかでした"
+        ],
+        "vi": "Khách sạn đã không yên tĩnh."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-arimasu-imasu",
+    "point_id": "n5-arimasu-imasu",
+    "level": "N5",
+    "sort": 36,
+    "title": "～が あります／います",
+    "pattern": "N が あります ／ N が います",
+    "meaning_vi": "Có N (tồn tại)",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "あります dùng cho đồ vật, cây cối, sự kiện (không tự di chuyển); います dùng cho người và động vật. Vật/người được nhắc đến lần đầu dùng が: こうえんに いぬが います."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Tiếng Việt chỉ có một chữ “có”, nên người Việt hay nhầm “ねこが あります”. Cây cối dùng あります dù là sinh vật. Sự kiện (テスト, パーティー) cũng dùng あります."
+      }
+    ],
+    "notes": [
+      "Hỏi “ai”: だれが いますか; hỏi “cái gì”: なにが ありますか."
+    ],
+    "examples": [
+      {
+        "ja": "こうえんに いぬが います。",
+        "ruby": "こうえんに いぬが います。",
+        "vi": "Ở công viên có con chó."
+      },
+      {
+        "ja": "つくえの 上に 本が あります。",
+        "ruby": "つくえの 上[うえ]に 本[ほん]が あります。",
+        "vi": "Trên bàn có quyển sách."
+      },
+      {
+        "ja": "きょうしつに 学生が 五人 います。",
+        "ruby": "きょうしつに 学生[がくせい]が 五人[ごにん] います。",
+        "vi": "Trong phòng học có năm học sinh."
+      },
+      {
+        "ja": "あした テストが あります。",
+        "ruby": "あした テストが あります。",
+        "vi": "Ngày mai có bài kiểm tra."
+      },
+      {
+        "ja": "にわに 大きい 木が あります。",
+        "ruby": "にわに 大[おお]きい 木[き]が あります。",
+        "vi": "Trong vườn có một cái cây to."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "こうえんに いぬが ＿＿。",
+        "answer": "います",
+        "choices": [
+          "います",
+          "あります",
+          "です",
+          "します"
+        ],
+        "vi": "Ở công viên có con chó."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "つくえの うえに ほんが ＿＿。",
+        "answer": "あります",
+        "choices": [
+          "います",
+          "あります",
+          "です",
+          "します"
+        ],
+        "vi": "Trên bàn có quyển sách."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あした テストが ＿＿。",
+        "answer": "あります",
+        "choices": [
+          "います",
+          "です",
+          "あります",
+          "なります"
+        ],
+        "vi": "Ngày mai có bài kiểm tra."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "にわに おおきい きが ＿＿。",
+        "answer": "あります",
+        "choices": [
+          "います",
+          "です",
+          "します",
+          "あります"
+        ],
+        "vi": "Trong vườn có một cái cây to."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きょうしつに だれが ＿＿か。",
+        "answer": "います",
+        "choices": [
+          "います",
+          "あります",
+          "です",
+          "します"
+        ],
+        "vi": "Trong phòng học có ai?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "へやに ねこ＿＿ います。",
+        "answer": "が",
+        "choices": [
+          "を",
+          "が",
+          "で",
+          "へ"
+        ],
+        "vi": "Trong phòng có con mèo."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-ato-de",
+    "point_id": "n5-ato-de",
+    "level": "N5",
+    "sort": 59,
+    "title": "V た／N の あとで",
+    "pattern": "V(thể た) あとで ／ N の あとで",
+    "meaning_vi": "Sau khi V / Sau N",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Thể た + あとで, hoặc danh từ + の + あとで: しごとが おわった あとで、えいがを みます (Sau khi xong việc tôi xem phim). Thể た chia giống thể て, chỉ đổi て → た, で → だ: かいて → かいた, よんで → よんだ, たべて → たべた."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Ngược với まえに: trước あとで luôn là thể た, kể cả khi nói về tương lai: あした しごとが おわった あとで、あいましょう."
+      }
+    ],
+    "notes": [
+      "Thể た cũng dùng trong ～たことが あります, ～たほうが いいです, ～たり."
+    ],
+    "examples": [
+      {
+        "ja": "しごとが おわった 後で、えいがを 見ます。",
+        "ruby": "しごとが おわった 後[あと]で、えいがを 見[み]ます。",
+        "vi": "Sau khi xong việc tôi sẽ xem phim."
+      },
+      {
+        "ja": "じゅぎょうの 後で、先生に しつもんしました。",
+        "ruby": "じゅぎょうの 後[あと]で、先生[せんせい]に しつもんしました。",
+        "vi": "Sau giờ học, tôi đã hỏi thầy giáo."
+      },
+      {
+        "ja": "ごはんを 食べた 後で、くすりを のみます。",
+        "ruby": "ごはんを 食[た]べた 後[あと]で、くすりを のみます。",
+        "vi": "Sau khi ăn cơm tôi uống thuốc."
+      },
+      {
+        "ja": "この 本は 読んだ 後で、かえしてください。",
+        "ruby": "この 本[ほん]は 読[よ]んだ 後[あと]で、かえしてください。",
+        "vi": "Đọc xong quyển sách này thì xin hãy trả lại."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "しごとが ＿＿ あとで、えいがを みます。",
+        "answer": "おわった",
+        "choices": [
+          "おわる",
+          "おわって",
+          "おわります",
+          "おわった"
+        ],
+        "vi": "Sau khi xong việc tôi sẽ xem phim."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "じゅぎょう＿＿ あとで、せんせいに しつもんしました。",
+        "answer": "の",
+        "choices": [
+          "の",
+          "を",
+          "が",
+          "に"
+        ],
+        "vi": "Sau giờ học, tôi đã hỏi thầy giáo."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ごはんを ＿＿ あとで、くすりを のみます。",
+        "answer": "たべた",
+        "choices": [
+          "たべる",
+          "たべた",
+          "たべて",
+          "たべます"
+        ],
+        "vi": "Sau khi ăn cơm tôi uống thuốc."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "この ほんは ＿＿ あとで、かえしてください。",
+        "answer": "よんだ",
+        "choices": [
+          "よむ",
+          "よんで",
+          "よんだ",
+          "よみた"
+        ],
+        "vi": "Đọc xong quyển sách này thì xin hãy trả lại."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "シャワーを あびた ＿＿で、ねます。",
+        "answer": "あと",
+        "choices": [
+          "まえ",
+          "うしろ",
+          "とき",
+          "あと"
+        ],
+        "vi": "Tắm xong tôi đi ngủ."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-counters",
+    "point_id": "n5-counters",
+    "level": "N5",
+    "sort": 39,
+    "title": "Số đếm và trợ số từ",
+    "pattern": "N を／が Số lượng ＋ V",
+    "meaning_vi": "Đếm số lượng (… cái, … người…)",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Tiếng Nhật đếm bằng số + từ đếm. ひとつ, ふたつ, みっつ… とお: đồ vật nói chung (đến 10). ～にん: người (đặc biệt ひとり, ふたり, よにん). ～まい: vật mỏng, phẳng (giấy, vé, áo). ～ほん: vật dài (bút, ô, chai). ～だい: máy móc, xe. Hỏi số lượng: いくつ, なんにん, なんまい…."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Tiếng Việt nói “mua ba quả trứng” (số trước danh từ), tiếng Nhật thường đặt số lượng ngay trước động từ: たまごを みっつ かいます. Biến âm của ほん: いっぽん, さんぼん, ろっぽん, はっぽん."
+      }
+    ],
+    "notes": [
+      "Gia đình có mấy người: かぞくは よにんです."
+    ],
+    "examples": [
+      {
+        "ja": "たまごを 三つ かいました。",
+        "ruby": "たまごを 三[みっ]つ かいました。",
+        "vi": "Tôi đã mua ba quả trứng."
+      },
+      {
+        "ja": "きょうしつに 学生が 十人 います。",
+        "ruby": "きょうしつに 学生[がくせい]が 十人[じゅうにん] います。",
+        "vi": "Trong phòng học có mười học sinh."
+      },
+      {
+        "ja": "きっぷを 二まい ください。",
+        "ruby": "きっぷを 二[に]まい ください。",
+        "vi": "Cho tôi hai vé."
+      },
+      {
+        "ja": "ペンが 一本 あります。",
+        "ruby": "ペンが 一本[いっぽん] あります。",
+        "vi": "Có một cây bút."
+      },
+      {
+        "ja": "うちに 車が 二だい あります。",
+        "ruby": "うちに 車[くるま]が 二[に]だい あります。",
+        "vi": "Nhà tôi có hai chiếc ô tô."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "たまごを ＿＿ かいました。",
+        "answer": "みっつ",
+        "choices": [
+          "さんにん",
+          "さんまい",
+          "さんぼん",
+          "みっつ"
+        ],
+        "vi": "Tôi đã mua ba quả trứng."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きょうしつに がくせいが ＿＿ います。",
+        "answer": "ふたり",
+        "choices": [
+          "ふたり",
+          "ふたつ",
+          "ににん",
+          "にまい"
+        ],
+        "vi": "Trong phòng học có hai học sinh."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きっぷを ＿＿ ください。",
+        "answer": "にまい",
+        "choices": [
+          "にほん",
+          "にまい",
+          "にだい",
+          "ふたり"
+        ],
+        "vi": "Cho tôi hai vé."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ペンが ＿＿ あります。",
+        "answer": "いっぽん",
+        "choices": [
+          "いちほん",
+          "いちまい",
+          "いっぽん",
+          "ひとり"
+        ],
+        "vi": "Có một cây bút."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "うちに くるまが ＿＿ あります。",
+        "answer": "にだい",
+        "choices": [
+          "にまい",
+          "にほん",
+          "ふたり",
+          "にだい"
+        ],
+        "vi": "Nhà tôi có hai chiếc ô tô."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "かぞくは ＿＿です。",
+        "answer": "よにん",
+        "choices": [
+          "よにん",
+          "よんにん",
+          "しにん",
+          "よっつ"
+        ],
+        "vi": "Gia đình tôi có bốn người."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-de-means",
+    "point_id": "n5-de-means",
+    "level": "N5",
+    "sort": 19,
+    "title": "N で (phương tiện)",
+    "pattern": "N(phương tiện) で V",
+    "meaning_vi": "làm V bằng N",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "で chỉ phương tiện, dụng cụ, ngôn ngữ dùng để làm việc gì: でんしゃで いきます (đi bằng tàu điện), はしで たべます (ăn bằng đũa), にほんごで はなします (nói bằng tiếng Nhật). Hỏi: なんで きましたか (Bạn đến bằng gì?)."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Tiếng Việt “bằng” đứng trước danh từ, còn で đứng sau. Đi bộ thì nói あるいて いきます, không dùng で."
+      }
+    ],
+    "notes": [
+      "で còn chỉ nơi xảy ra hành động (bài sau); xem danh từ đi trước để phân biệt."
+    ],
+    "examples": [
+      {
+        "ja": "毎日 電車で 学校へ 行きます。",
+        "ruby": "毎日[まいにち] 電車[でんしゃ]で 学校[がっこう]へ 行[い]きます。",
+        "vi": "Hằng ngày tôi đến trường bằng tàu điện."
+      },
+      {
+        "ja": "はしで ごはんを 食べます。",
+        "ruby": "はしで ごはんを 食[た]べます。",
+        "vi": "Tôi ăn cơm bằng đũa."
+      },
+      {
+        "ja": "日本語で てがみを 書きます。",
+        "ruby": "日本語[にほんご]で てがみを 書[か]きます。",
+        "vi": "Tôi viết thư bằng tiếng Nhật."
+      },
+      {
+        "ja": "バスで うちへ かえります。",
+        "ruby": "バスで うちへ かえります。",
+        "vi": "Tôi về nhà bằng xe buýt."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "まいにち でんしゃ＿＿ がっこうへ いきます。",
+        "answer": "で",
+        "choices": [
+          "を",
+          "に",
+          "が",
+          "で"
+        ],
+        "vi": "Hằng ngày tôi đến trường bằng tàu điện."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "はし＿＿ ごはんを たべます。",
+        "answer": "で",
+        "choices": [
+          "で",
+          "を",
+          "が",
+          "へ"
+        ],
+        "vi": "Tôi ăn cơm bằng đũa."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "にほんご＿＿ てがみを かきます。",
+        "answer": "で",
+        "choices": [
+          "を",
+          "で",
+          "が",
+          "へ"
+        ],
+        "vi": "Tôi viết thư bằng tiếng Nhật."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "バス＿＿ うちへ かえります。",
+        "answer": "で",
+        "choices": [
+          "を",
+          "が",
+          "で",
+          "へ"
+        ],
+        "vi": "Tôi về nhà bằng xe buýt."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ペン＿＿ なまえを かきます。",
+        "answer": "で",
+        "choices": [
+          "を",
+          "が",
+          "へ",
+          "で"
+        ],
+        "vi": "Tôi viết tên bằng bút."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "なん＿＿ きましたか。…じてんしゃで きました。",
+        "answer": "で",
+        "choices": [
+          "で",
+          "を",
+          "が",
+          "へ"
+        ],
+        "vi": "Bạn đến bằng gì? … Tôi đến bằng xe đạp."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-de-place",
+    "point_id": "n5-de-place",
+    "level": "N5",
+    "sort": 22,
+    "title": "N(nơi) で V",
+    "pattern": "N(nơi) で V",
+    "meaning_vi": "làm V ở / tại N",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "で sau danh từ chỉ nơi chốn cho biết nơi hành động diễn ra: としょかんで ほんを よみます (đọc sách ở thư viện)."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Người Việt hay dùng に cho mọi chữ “ở”: “としょかんに べんきょうします” là sai. Mẹo: có hành động (ăn, học, mua, đợi…) thì dùng で; chỉ sự tồn tại (あります／います) thì dùng に."
+      }
+    ],
+    "notes": [
+      "Hỏi “ở đâu”: どこで ～ますか."
+    ],
+    "examples": [
+      {
+        "ja": "としょかんで 本を 読みます。",
+        "ruby": "としょかんで 本[ほん]を 読[よ]みます。",
+        "vi": "Tôi đọc sách ở thư viện."
+      },
+      {
+        "ja": "えきで 友だちを まちます。",
+        "ruby": "えきで 友[とも]だちを まちます。",
+        "vi": "Tôi đợi bạn ở nhà ga."
+      },
+      {
+        "ja": "デパートで くつを かいました。",
+        "ruby": "デパートで くつを かいました。",
+        "vi": "Tôi đã mua giày ở cửa hàng bách hóa."
+      },
+      {
+        "ja": "学校で 日本語を べんきょうします。",
+        "ruby": "学校[がっこう]で 日本語[にほんご]を べんきょうします。",
+        "vi": "Tôi học tiếng Nhật ở trường."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "としょかん＿＿ ほんを よみます。",
+        "answer": "で",
+        "choices": [
+          "に",
+          "を",
+          "で",
+          "へ"
+        ],
+        "vi": "Tôi đọc sách ở thư viện."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "えき＿＿ ともだちを まちます。",
+        "answer": "で",
+        "choices": [
+          "に",
+          "を",
+          "が",
+          "で"
+        ],
+        "vi": "Tôi đợi bạn ở nhà ga."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "デパート＿＿ くつを かいました。",
+        "answer": "で",
+        "choices": [
+          "で",
+          "に",
+          "へ",
+          "を"
+        ],
+        "vi": "Tôi đã mua giày ở cửa hàng bách hóa."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "がっこう＿＿ にほんごを べんきょうします。",
+        "answer": "で",
+        "choices": [
+          "に",
+          "で",
+          "へ",
+          "を"
+        ],
+        "vi": "Tôi học tiếng Nhật ở trường."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "どこ＿＿ ひるごはんを たべますか。",
+        "answer": "で",
+        "choices": [
+          "に",
+          "を",
+          "で",
+          "へ"
+        ],
+        "vi": "Bạn ăn trưa ở đâu?"
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-deshou",
+    "point_id": "n5-deshou",
+    "level": "N5",
+    "sort": 69,
+    "title": "～でしょう",
+    "pattern": "V／Aい(thể thường)・Aな／N ＋ でしょう",
+    "meaning_vi": "Có lẽ … / Chắc là …",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Đặt sau thể thường của động từ, tính từ い, hoặc sau danh từ / tính từ な (không có だ) để dự đoán không chắc chắn: あしたは あめが ふるでしょう (Ngày mai có lẽ trời mưa). Hay đi với たぶん (có lẽ). Dự báo thời tiết dùng でしょう rất nhiều."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Ở N5, trước でしょう dùng thể từ điển (ふる), không dùng thể ます (ふります). Tính từ い giữ い: さむいでしょう. Nói với giọng lên ở cuối (でしょう↗) thì là xác nhận “… đúng không?”."
+      }
+    ],
+    "notes": [
+      "Mức chắc chắn: ～です／ます (chắc chắn) > ～でしょう (có lẽ)."
+    ],
+    "examples": [
+      {
+        "ja": "あしたは 雨が ふるでしょう。",
+        "ruby": "あしたは 雨[あめ]が ふるでしょう。",
+        "vi": "Ngày mai có lẽ trời mưa."
+      },
+      {
+        "ja": "たぶん リンさんも 来るでしょう。",
+        "ruby": "たぶん リンさんも 来[く]るでしょう。",
+        "vi": "Có lẽ chị Linh cũng đến."
+      },
+      {
+        "ja": "北の ほうは さむいでしょう。",
+        "ruby": "北[きた]の ほうは さむいでしょう。",
+        "vi": "Phía bắc chắc là lạnh."
+      },
+      {
+        "ja": "あの 人は たぶん 先生でしょう。",
+        "ruby": "あの 人[ひと]は たぶん 先生[せんせい]でしょう。",
+        "vi": "Người kia có lẽ là giáo viên."
+      },
+      {
+        "ja": "あしたは いい 天気でしょう。",
+        "ruby": "あしたは いい 天気[てんき]でしょう。",
+        "vi": "Ngày mai có lẽ trời đẹp."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "あしたは あめが ＿＿でしょう。",
+        "answer": "ふる",
+        "choices": [
+          "ふります",
+          "ふる",
+          "ふって",
+          "ふり"
+        ],
+        "vi": "Ngày mai có lẽ trời mưa."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "たぶん リンさんも ＿＿でしょう。",
+        "answer": "くる",
+        "choices": [
+          "きます",
+          "きて",
+          "くる",
+          "こる"
+        ],
+        "vi": "Có lẽ chị Linh cũng đến."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あしたは さむい＿＿。",
+        "answer": "でしょう",
+        "choices": [
+          "ましょう",
+          "ませんか",
+          "ください",
+          "でしょう"
+        ],
+        "vi": "Ngày mai có lẽ trời lạnh."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あの ひとは ＿＿ せんせいでしょう。",
+        "answer": "たぶん",
+        "choices": [
+          "たぶん",
+          "とても",
+          "よく",
+          "いちばん"
+        ],
+        "vi": "Người kia có lẽ là giáo viên."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あの レストランは ＿＿でしょう。",
+        "answer": "たかい",
+        "choices": [
+          "たかいだ",
+          "たかい",
+          "たかく",
+          "たかいます"
+        ],
+        "vi": "Nhà hàng đó chắc là đắt."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-desu",
+    "point_id": "n5-desu",
+    "level": "N5",
+    "sort": 1,
+    "title": "～です",
+    "pattern": "N1 は N2 です",
+    "meaning_vi": "N1 là N2",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Dùng để nói N1 là N2: giới thiệu tên, nghề nghiệp, quốc tịch… は (viết bằng chữ “ha” nhưng đọc là “wa”) đánh dấu chủ đề của câu. です đứng cuối câu, làm câu lịch sự. Tiếng Việt nói “Tôi là học sinh”, tiếng Nhật nói わたしは がくせいです (tôi – thì – học sinh – là)."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Người Việt hay quên です vì tiếng Việt không có từ nào đứng cuối câu như vậy; thiếu です câu nghe cộc lốc. です không đổi theo ngôi hay số nhiều: わたし, あなた, せんせい đều dùng です."
+      }
+    ],
+    "notes": [
+      "Khi người nghe đã hiểu đang nói về ai, có thể bỏ “わたしは”: がくせいです.",
+      "は là trợ từ nên luôn đọc “wa”, dù viết bằng chữ “ha”."
+    ],
+    "examples": [
+      {
+        "ja": "わたしは 学生です。",
+        "ruby": "わたしは 学生[がくせい]です。",
+        "vi": "Tôi là học sinh."
+      },
+      {
+        "ja": "リンさんは ベトナム人です。",
+        "ruby": "リンさんは ベトナム人[じん]です。",
+        "vi": "Chị Linh là người Việt Nam."
+      },
+      {
+        "ja": "たなかさんは 先生です。",
+        "ruby": "たなかさんは 先生[せんせい]です。",
+        "vi": "Anh Tanaka là giáo viên."
+      },
+      {
+        "ja": "やまださんは いしゃです。",
+        "ruby": "やまださんは いしゃです。",
+        "vi": "Ông Yamada là bác sĩ."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしは がくせい＿＿。",
+        "answer": "です",
+        "choices": [
+          "ます",
+          "です",
+          "か",
+          "を"
+        ],
+        "vi": "Tôi là học sinh."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "リンさんは ベトナムじん＿＿。",
+        "answer": "です",
+        "choices": [
+          "ます",
+          "が",
+          "です",
+          "に"
+        ],
+        "vi": "Chị Linh là người Việt Nam."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "たなかさん＿＿ せんせいです。",
+        "answer": "は",
+        "choices": [
+          "を",
+          "に",
+          "で",
+          "は"
+        ],
+        "vi": "Anh Tanaka là giáo viên."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "やまださん＿＿ いしゃです。",
+        "answer": "は",
+        "choices": [
+          "は",
+          "を",
+          "へ",
+          "で"
+        ],
+        "vi": "Ông Yamada là bác sĩ."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "わたし＿＿ りゅうがくせいです。",
+        "answer": "は",
+        "choices": [
+          "を",
+          "は",
+          "へ",
+          "に"
+        ],
+        "vi": "Tôi là du học sinh."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-dochira-hou",
+    "point_id": "n5-dochira-hou",
+    "level": "N5",
+    "sort": 66,
+    "title": "どちらが ～ですか／～の ほうが ～です",
+    "pattern": "N1 と N2 と どちらが A ですか ／ N の ほうが A です",
+    "meaning_vi": "N1 và N2, cái nào A hơn? / N A hơn",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Hỏi so sánh giữa hai thứ: コーヒーと おちゃと どちらが すきですか. Trả lời: N の ほうが A です (コーヒーの ほうが すきです). Như nhau: どちらも A です."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "So sánh hai thứ thì luôn dùng どちら (không dùng どれ hay なに). ほう cần の sau danh từ: “コーヒー ほうが” là sai."
+      }
+    ],
+    "notes": [
+      "Câu trả lời có thể gộp với より: コーヒーの ほうが おちゃより すきです."
+    ],
+    "examples": [
+      {
+        "ja": "コーヒーと おちゃと どちらが すきですか。…コーヒーの ほうが すきです。",
+        "ruby": "コーヒーと おちゃと どちらが すきですか。…コーヒーの ほうが すきです。",
+        "vi": "Cà phê và trà, bạn thích cái nào hơn? … Tôi thích cà phê hơn."
+      },
+      {
+        "ja": "電車と バスと どちらが はやいですか。…電車の ほうが はやいです。",
+        "ruby": "電車[でんしゃ]と バスと どちらが はやいですか。…電車[でんしゃ]の ほうが はやいです。",
+        "vi": "Tàu điện và xe buýt, cái nào nhanh hơn? … Tàu điện nhanh hơn."
+      },
+      {
+        "ja": "なつと ふゆと どちらが すきですか。…どちらも すきです。",
+        "ruby": "なつと ふゆと どちらが すきですか。…どちらも すきです。",
+        "vi": "Mùa hè và mùa đông, bạn thích mùa nào hơn? … Tôi thích cả hai."
+      },
+      {
+        "ja": "この 本の ほうが やさしいです。",
+        "ruby": "この 本[ほん]の ほうが やさしいです。",
+        "vi": "Quyển sách này dễ hơn."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "コーヒーと おちゃと ＿＿が すきですか。",
+        "answer": "どちら",
+        "choices": [
+          "どれ",
+          "なに",
+          "どちら",
+          "だれ"
+        ],
+        "vi": "Cà phê và trà, bạn thích cái nào hơn?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "コーヒー＿＿ ほうが すきです。",
+        "answer": "の",
+        "choices": [
+          "が",
+          "は",
+          "と",
+          "の"
+        ],
+        "vi": "Tôi thích cà phê hơn."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "でんしゃと バスと どちらが はやいですか。…でんしゃの ＿＿が はやいです。",
+        "answer": "ほう",
+        "choices": [
+          "ほう",
+          "より",
+          "もの",
+          "こと"
+        ],
+        "vi": "Tàu điện và xe buýt, cái nào nhanh hơn? … Tàu điện nhanh hơn."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "なつと ふゆと どちらが すきですか。…＿＿も すきです。",
+        "answer": "どちら",
+        "choices": [
+          "どれ",
+          "どちら",
+          "なに",
+          "だれ"
+        ],
+        "vi": "Mùa hè và mùa đông, bạn thích mùa nào hơn? … Tôi thích cả hai."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "でんしゃ＿＿ バスと どちらが はやいですか。",
+        "answer": "と",
+        "choices": [
+          "や",
+          "の",
+          "と",
+          "が"
+        ],
+        "vi": "Tàu điện và xe buýt, cái nào nhanh hơn?"
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-e-direction",
+    "point_id": "n5-e-direction",
+    "level": "N5",
+    "sort": 18,
+    "title": "N(nơi) へ 行きます／来ます／かえります",
+    "pattern": "N(nơi) へ 行きます／来ます／かえります",
+    "meaning_vi": "đi / đến / về (nơi) N",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "へ chỉ hướng di chuyển, dùng với いきます (đi), きます (đến), かえります (về). Hỏi: どこへ いきますか (Bạn đi đâu?). Không đi đâu cả: どこへも いきません."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "へ viết bằng chữ “he” nhưng đọc là “e”. Có thể thay へ bằng に với nghĩa gần như nhau. Không dùng を: “がっこうを いきます” là sai."
+      }
+    ],
+    "notes": [
+      "Đi bằng phương tiện gì thì dùng で (bài sau)."
+    ],
+    "examples": [
+      {
+        "ja": "あした 学校へ 行きます。",
+        "ruby": "あした 学校[がっこう]へ 行[い]きます。",
+        "vi": "Ngày mai tôi đến trường."
+      },
+      {
+        "ja": "リンさんは きょねん 日本へ 来ました。",
+        "ruby": "リンさんは きょねん 日本[にほん]へ 来[き]ました。",
+        "vi": "Chị Linh đã đến Nhật năm ngoái."
+      },
+      {
+        "ja": "七時に うちへ かえります。",
+        "ruby": "七時[しちじ]に うちへ かえります。",
+        "vi": "Tôi về nhà lúc 7 giờ."
+      },
+      {
+        "ja": "にちようびは どこへも 行きませんでした。",
+        "ruby": "にちようびは どこへも 行[い]きませんでした。",
+        "vi": "Chủ nhật tôi đã không đi đâu cả."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "あした がっこう＿＿ いきます。",
+        "answer": "へ",
+        "choices": [
+          "を",
+          "で",
+          "へ",
+          "が"
+        ],
+        "vi": "Ngày mai tôi đến trường."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きょねん にほん＿＿ きました。",
+        "answer": "へ",
+        "choices": [
+          "を",
+          "で",
+          "が",
+          "へ"
+        ],
+        "vi": "Năm ngoái tôi đã đến Nhật."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "しちじに うち＿＿ かえります。",
+        "answer": "へ",
+        "choices": [
+          "へ",
+          "を",
+          "で",
+          "が"
+        ],
+        "vi": "Tôi về nhà lúc 7 giờ."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "にちようびは どこ＿＿も いきませんでした。",
+        "answer": "へ",
+        "choices": [
+          "を",
+          "へ",
+          "で",
+          "が"
+        ],
+        "vi": "Chủ nhật tôi đã không đi đâu cả."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "どこ＿＿ いきますか。",
+        "answer": "へ",
+        "choices": [
+          "を",
+          "で",
+          "へ",
+          "が"
+        ],
+        "vi": "Bạn đi đâu?"
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-ga-but",
+    "point_id": "n5-ga-but",
+    "level": "N5",
+    "sort": 42,
+    "title": "～が (nhưng)",
+    "pattern": "Câu 1 が、Câu 2",
+    "meaning_vi": "Câu 1 nhưng câu 2",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "が nối hai vế trái ngược: この レストランは たかいですが、おいしいです. が đặt cuối vế thứ nhất, sau です／ます. Còn dùng để mở đầu lịch sự: すみませんが、… (Xin lỗi, cho tôi hỏi…)."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Đừng nhầm が “nhưng” (sau cả câu) với trợ từ が chủ ngữ (sau danh từ). でも (nhưng) thì đứng đầu câu thứ hai: たかいです。でも、おいしいです."
+      }
+    ],
+    "notes": [
+      "Thường có dấu phẩy 、 ngay sau が."
+    ],
+    "examples": [
+      {
+        "ja": "この レストランは たかいですが、おいしいです。",
+        "ruby": "この レストランは たかいですが、おいしいです。",
+        "vi": "Nhà hàng này đắt nhưng ngon."
+      },
+      {
+        "ja": "日本語は むずかしいですが、おもしろいです。",
+        "ruby": "日本語[にほんご]は むずかしいですが、おもしろいです。",
+        "vi": "Tiếng Nhật khó nhưng thú vị."
+      },
+      {
+        "ja": "きのうは 雨でしたが、今日は いい 天気です。",
+        "ruby": "きのうは 雨[あめ]でしたが、今日[きょう]は いい 天気[てんき]です。",
+        "vi": "Hôm qua trời mưa, nhưng hôm nay trời đẹp."
+      },
+      {
+        "ja": "すみませんが、えきは どこですか。",
+        "ruby": "すみませんが、えきは どこですか。",
+        "vi": "Xin lỗi, nhà ga ở đâu ạ?"
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "この レストランは たかいです＿＿、おいしいです。",
+        "answer": "が",
+        "choices": [
+          "から",
+          "を",
+          "が",
+          "に"
+        ],
+        "vi": "Nhà hàng này đắt nhưng ngon."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "にほんごは むずかしいです＿＿、おもしろいです。",
+        "answer": "が",
+        "choices": [
+          "から",
+          "を",
+          "と",
+          "が"
+        ],
+        "vi": "Tiếng Nhật khó nhưng thú vị."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きのうは あめでした＿＿、きょうは いい てんきです。",
+        "answer": "が",
+        "choices": [
+          "が",
+          "から",
+          "を",
+          "で"
+        ],
+        "vi": "Hôm qua trời mưa, nhưng hôm nay trời đẹp."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "すみません＿＿、えきは どこですか。",
+        "answer": "が",
+        "choices": [
+          "から",
+          "が",
+          "を",
+          "と"
+        ],
+        "vi": "Xin lỗi, nhà ga ở đâu ạ?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "やさいは すきです＿＿、にくは すきじゃありません。",
+        "answer": "が",
+        "choices": [
+          "から",
+          "も",
+          "が",
+          "を"
+        ],
+        "vi": "Tôi thích rau nhưng không thích thịt."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-ga-hoshii",
+    "point_id": "n5-ga-hoshii",
+    "level": "N5",
+    "sort": 35,
+    "title": "～が ほしいです",
+    "pattern": "N が ほしいです",
+    "meaning_vi": "Muốn có N",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "ほしい là tính từ い, chỉ mong muốn có một vật: あたらしい くるまが ほしいです. Đối tượng dùng が. Phủ định: ほしくないです; quá khứ: ほしかったです."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "ほしい dùng cho danh từ (đồ vật); muốn LÀM một việc thì dùng ～たいです (bài sau). Không dùng ほしい để nói thẳng mong muốn của người khác."
+      }
+    ],
+    "notes": [
+      "Hỏi người trên “～が ほしいですか” nghe hơi thẳng; nên tránh."
+    ],
+    "examples": [
+      {
+        "ja": "わたしは あたらしい 車が ほしいです。",
+        "ruby": "わたしは あたらしい 車[くるま]が ほしいです。",
+        "vi": "Tôi muốn có xe ô tô mới."
+      },
+      {
+        "ja": "今 何が いちばん ほしいですか。…カメラが ほしいです。",
+        "ruby": "今[いま] 何[なに]が いちばん ほしいですか。…カメラが ほしいです。",
+        "vi": "Bây giờ bạn muốn có gì nhất? … Tôi muốn có máy ảnh."
+      },
+      {
+        "ja": "今 何も ほしくないです。",
+        "ruby": "今[いま] 何[なに]も ほしくないです。",
+        "vi": "Bây giờ tôi không muốn có gì cả."
+      },
+      {
+        "ja": "大きい へやが ほしいです。",
+        "ruby": "大[おお]きい へやが ほしいです。",
+        "vi": "Tôi muốn có căn phòng rộng."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしは あたらしい くるま＿＿ ほしいです。",
+        "answer": "が",
+        "choices": [
+          "を",
+          "に",
+          "で",
+          "が"
+        ],
+        "vi": "Tôi muốn có xe ô tô mới."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "いま なにが いちばん ＿＿か。…カメラが ほしいです。",
+        "answer": "ほしいです",
+        "choices": [
+          "ほしいです",
+          "ほしいだ",
+          "ほしです",
+          "ほしいます"
+        ],
+        "vi": "Bây giờ bạn muốn có gì nhất? … Tôi muốn có máy ảnh."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "いま なにも ＿＿。",
+        "answer": "ほしくないです",
+        "choices": [
+          "ほしいじゃありません",
+          "ほしくないです",
+          "ほしないです",
+          "ほしいないです"
+        ],
+        "vi": "Bây giờ tôi không muốn có gì cả."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "おおきい へや＿＿ ほしいです。",
+        "answer": "が",
+        "choices": [
+          "を",
+          "に",
+          "が",
+          "の"
+        ],
+        "vi": "Tôi muốn có căn phòng rộng."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きょねん、じてんしゃが ＿＿。",
+        "answer": "ほしかったです",
+        "choices": [
+          "ほしいでした",
+          "ほしいかったです",
+          "ほしでした",
+          "ほしかったです"
+        ],
+        "vi": "Năm ngoái tôi đã muốn có xe đạp."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-ga-jouzu",
+    "point_id": "n5-ga-jouzu",
+    "level": "N5",
+    "sort": 33,
+    "title": "～が じょうずです／へたです",
+    "pattern": "N が じょうずです／へたです",
+    "meaning_vi": "Giỏi N / Kém N",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "じょうず (giỏi), へた (kém) là tính từ な, đối tượng dùng が: リンさんは りょうりが じょうずです (Linh nấu ăn giỏi)."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "じょうず dùng để khen người khác; không dùng để tự khen mình. Khi được khen, người Nhật thường đáp いいえ、まだまだです (Không, tôi còn kém lắm)."
+      }
+    ],
+    "notes": [
+      "Không dùng を: “りょうりを じょうずです” là sai."
+    ],
+    "examples": [
+      {
+        "ja": "リンさんは りょうりが じょうずです。",
+        "ruby": "リンさんは りょうりが じょうずです。",
+        "vi": "Chị Linh nấu ăn giỏi."
+      },
+      {
+        "ja": "やまださんは うたが じょうずです。",
+        "ruby": "やまださんは うたが じょうずです。",
+        "vi": "Anh Yamada hát hay."
+      },
+      {
+        "ja": "わたしは えが へたです。",
+        "ruby": "わたしは えが へたです。",
+        "vi": "Tôi vẽ kém."
+      },
+      {
+        "ja": "日本語が じょうずですね。…いいえ、まだまだです。",
+        "ruby": "日本語[にほんご]が じょうずですね。…いいえ、まだまだです。",
+        "vi": "Bạn giỏi tiếng Nhật nhỉ. … Không, tôi còn kém lắm."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "リンさんは りょうり＿＿ じょうずです。",
+        "answer": "が",
+        "choices": [
+          "を",
+          "が",
+          "で",
+          "に"
+        ],
+        "vi": "Chị Linh nấu ăn giỏi."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "やまださんは うた＿＿ じょうずです。",
+        "answer": "が",
+        "choices": [
+          "を",
+          "に",
+          "が",
+          "の"
+        ],
+        "vi": "Anh Yamada hát hay."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしは え＿＿ へたです。",
+        "answer": "が",
+        "choices": [
+          "を",
+          "で",
+          "へ",
+          "が"
+        ],
+        "vi": "Tôi vẽ kém."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "にほんごが ＿＿ね。…いいえ、まだまだです。",
+        "answer": "じょうずです",
+        "choices": [
+          "じょうずです",
+          "じょうずなです",
+          "じょうずいです",
+          "へたです"
+        ],
+        "vi": "Bạn giỏi tiếng Nhật nhỉ. … Không, tôi còn kém lắm."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ナムさんは ギター＿＿ じょうずです。",
+        "answer": "が",
+        "choices": [
+          "を",
+          "が",
+          "に",
+          "で"
+        ],
+        "vi": "Anh Nam chơi ghi-ta giỏi."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-ga-suki",
+    "point_id": "n5-ga-suki",
+    "level": "N5",
+    "sort": 32,
+    "title": "～が すきです／きらいです",
+    "pattern": "N が すきです／きらいです",
+    "meaning_vi": "Thích N / Ghét (không thích) N",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "すき (thích), きらい (ghét) là tính từ な; đối tượng được thích đánh dấu bằng が: わたしは ねこが すきです. Rất thích: だいすきです."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Lỗi hay gặp do dịch từ tiếng Việt: “ねこを すきです”. きらい nghe khá mạnh; muốn nói nhẹ nhàng dùng あまり すきじゃありません."
+      }
+    ],
+    "notes": [
+      "Phủ định của すき là すきじゃありません (tính từ な), không phải “すきくないです”."
+    ],
+    "examples": [
+      {
+        "ja": "わたしは ねこが すきです。",
+        "ruby": "わたしは ねこが すきです。",
+        "vi": "Tôi thích mèo."
+      },
+      {
+        "ja": "リンさんは 日本の えいがが だいすきです。",
+        "ruby": "リンさんは 日本[にほん]の えいがが だいすきです。",
+        "vi": "Chị Linh rất thích phim Nhật."
+      },
+      {
+        "ja": "わたしは やさいが きらいです。",
+        "ruby": "わたしは やさいが きらいです。",
+        "vi": "Tôi ghét rau."
+      },
+      {
+        "ja": "ナムさんは あまり さかなが すきじゃありません。",
+        "ruby": "ナムさんは あまり さかなが すきじゃありません。",
+        "vi": "Anh Nam không thích cá lắm."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしは ねこ＿＿ すきです。",
+        "answer": "が",
+        "choices": [
+          "が",
+          "を",
+          "に",
+          "で"
+        ],
+        "vi": "Tôi thích mèo."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "リンさんは にほんの えいが＿＿ だいすきです。",
+        "answer": "が",
+        "choices": [
+          "を",
+          "が",
+          "に",
+          "で"
+        ],
+        "vi": "Chị Linh rất thích phim Nhật."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしは やさい＿＿ きらいです。",
+        "answer": "が",
+        "choices": [
+          "を",
+          "に",
+          "が",
+          "で"
+        ],
+        "vi": "Tôi ghét rau."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ナムさんは あまり さかなが ＿＿。",
+        "answer": "すきじゃありません",
+        "choices": [
+          "すきです",
+          "すきくないです",
+          "すきないです",
+          "すきじゃありません"
+        ],
+        "vi": "Anh Nam không thích cá lắm."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしは おんがくが ＿＿。",
+        "answer": "だいすきです",
+        "choices": [
+          "だいすきです",
+          "だいすきなです",
+          "だいすきいです",
+          "すきだいです"
+        ],
+        "vi": "Tôi rất thích âm nhạc."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-ga-wakaru-aru",
+    "point_id": "n5-ga-wakaru-aru",
+    "level": "N5",
+    "sort": 34,
+    "title": "～が わかります／あります",
+    "pattern": "N が わかります ／ N が あります",
+    "meaning_vi": "Hiểu N / Có N",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Một số động từ chỉ khả năng, sở hữu dùng が cho đối tượng: にほんごが わかります (hiểu tiếng Nhật), おかねが あります (có tiền), じかんが あります (có thời gian). Mức độ: よく (rõ), すこし (một chút); あまり + phủ định (không… lắm)."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Người Việt hay nói “にほんごを わかります” vì “hiểu” trong tiếng Việt có tân ngữ trực tiếp. Không hiểu thì nói: すみません、わかりません."
+      }
+    ],
+    "notes": [
+      "よく わかりません: không hiểu rõ lắm (cách nói mềm)."
+    ],
+    "examples": [
+      {
+        "ja": "わたしは 日本語が すこし わかります。",
+        "ruby": "わたしは 日本語[にほんご]が すこし わかります。",
+        "vi": "Tôi hiểu tiếng Nhật một chút."
+      },
+      {
+        "ja": "今日は 時間が あります。",
+        "ruby": "今日[きょう]は 時間[じかん]が あります。",
+        "vi": "Hôm nay tôi có thời gian."
+      },
+      {
+        "ja": "わたしは お金が あまり ありません。",
+        "ruby": "わたしは お金[かね]が あまり ありません。",
+        "vi": "Tôi không có nhiều tiền lắm."
+      },
+      {
+        "ja": "かんじが よく わかりません。",
+        "ruby": "かんじが よく わかりません。",
+        "vi": "Tôi không hiểu rõ kanji lắm."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしは にほんご＿＿ すこし わかります。",
+        "answer": "が",
+        "choices": [
+          "を",
+          "に",
+          "が",
+          "で"
+        ],
+        "vi": "Tôi hiểu tiếng Nhật một chút."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きょうは じかん＿＿ あります。",
+        "answer": "が",
+        "choices": [
+          "を",
+          "に",
+          "で",
+          "が"
+        ],
+        "vi": "Hôm nay tôi có thời gian."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしは おかね＿＿ あまり ありません。",
+        "answer": "が",
+        "choices": [
+          "が",
+          "を",
+          "に",
+          "で"
+        ],
+        "vi": "Tôi không có nhiều tiền lắm."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "かんじが ＿＿ わかりません。",
+        "answer": "よく",
+        "choices": [
+          "どうぞ",
+          "よく",
+          "たくさん",
+          "いちばん"
+        ],
+        "vi": "Tôi không hiểu rõ kanji lắm."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "えいごが ＿＿ わかります。",
+        "answer": "すこし",
+        "choices": [
+          "あまり",
+          "いつ",
+          "すこし",
+          "どう"
+        ],
+        "vi": "Tôi hiểu tiếng Anh một chút."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-i-adj",
+    "point_id": "n5-i-adj",
+    "level": "N5",
+    "sort": 27,
+    "title": "Tính từ い ＋ です",
+    "pattern": "N は Aい です",
+    "meaning_vi": "N (thì) A",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Tính từ đuôi い (たかい, おおきい, おいしい, さむい…) đứng trước です làm vị ngữ: この ほんは たかいです (Quyển sách này đắt). とても (rất) đứng trước tính từ."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Không nói “たかいだです” hay “たかいだ”. Tiếng Việt không cần “thì/là” trước tính từ; tiếng Nhật cũng không cần, chỉ thêm です để lịch sự. きれい, きらい, ゆうめい tận cùng bằng い nhưng là tính từ な (bài sau)."
+      }
+    ],
+    "notes": [
+      "いい (tốt, đẹp) là tính từ い đặc biệt, gặp lại ở bài phủ định."
+    ],
+    "examples": [
+      {
+        "ja": "この 本は 高いです。",
+        "ruby": "この 本[ほん]は 高[たか]いです。",
+        "vi": "Quyển sách này đắt."
+      },
+      {
+        "ja": "日本の りょうりは おいしいです。",
+        "ruby": "日本[にほん]の りょうりは おいしいです。",
+        "vi": "Món ăn Nhật ngon."
+      },
+      {
+        "ja": "今日は とても さむいです。",
+        "ruby": "今日[きょう]は とても さむいです。",
+        "vi": "Hôm nay rất lạnh."
+      },
+      {
+        "ja": "あの 山は 高いですね。",
+        "ruby": "あの 山[やま]は 高[たか]いですね。",
+        "vi": "Ngọn núi kia cao nhỉ."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "この ほんは ＿＿。",
+        "answer": "たかいです",
+        "choices": [
+          "たかいます",
+          "たかだです",
+          "たかいだ",
+          "たかいです"
+        ],
+        "vi": "Quyển sách này đắt."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "にほんの りょうりは ＿＿。",
+        "answer": "おいしいです",
+        "choices": [
+          "おいしいです",
+          "おいしいます",
+          "おいしです",
+          "おいしいだ"
+        ],
+        "vi": "Món ăn Nhật ngon."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きょうは とても ＿＿。",
+        "answer": "さむいです",
+        "choices": [
+          "さむいます",
+          "さむいです",
+          "さむです",
+          "さむいだ"
+        ],
+        "vi": "Hôm nay rất lạnh."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "この へやは ＿＿。",
+        "answer": "ひろいです",
+        "choices": [
+          "ひろいます",
+          "ひろです",
+          "ひろいです",
+          "ひろいだ"
+        ],
+        "vi": "Căn phòng này rộng."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きょうは ＿＿ さむいです。",
+        "answer": "とても",
+        "choices": [
+          "あまり",
+          "なに",
+          "どう",
+          "とても"
+        ],
+        "vi": "Hôm nay rất lạnh."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-i-adj-neg",
+    "point_id": "n5-i-adj-neg",
+    "level": "N5",
+    "sort": 28,
+    "title": "Tính từ い: ～くないです",
+    "pattern": "N は A(bỏ い)くないです",
+    "meaning_vi": "N không A",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Phủ định tính từ い: bỏ い, thêm くないです: たかい → たかくないです. Cách nói trang trọng hơn: たかくありません. Đặc biệt: いい → よくないです."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Lỗi hay gặp: “たかいじゃありません” — じゃありません chỉ dùng cho danh từ và tính từ な. Với いい phải đổi sang よ: “いくないです” là sai."
+      }
+    ],
+    "notes": [
+      "あまり ＋ ～くないです: không… lắm."
+    ],
+    "examples": [
+      {
+        "ja": "この かばんは 高くないです。",
+        "ruby": "この かばんは 高[たか]くないです。",
+        "vi": "Cái cặp này không đắt."
+      },
+      {
+        "ja": "今日は さむくないです。",
+        "ruby": "今日[きょう]は さむくないです。",
+        "vi": "Hôm nay không lạnh."
+      },
+      {
+        "ja": "あの レストランは あまり おいしくないです。",
+        "ruby": "あの レストランは あまり おいしくないです。",
+        "vi": "Nhà hàng kia không ngon lắm."
+      },
+      {
+        "ja": "天気は よくないです。",
+        "ruby": "天気[てんき]は よくないです。",
+        "vi": "Thời tiết không tốt."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "この かばんは ＿＿。",
+        "answer": "たかくないです",
+        "choices": [
+          "たかくないです",
+          "たかいじゃありません",
+          "たかいないです",
+          "たかくです"
+        ],
+        "vi": "Cái cặp này không đắt."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きょうは ＿＿。",
+        "answer": "さむくないです",
+        "choices": [
+          "さむいじゃありません",
+          "さむくないです",
+          "さむないです",
+          "さむくじゃないです"
+        ],
+        "vi": "Hôm nay không lạnh."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "てんきは ＿＿。",
+        "answer": "よくないです",
+        "choices": [
+          "いくないです",
+          "いいじゃありません",
+          "よくないです",
+          "よいないです"
+        ],
+        "vi": "Thời tiết không tốt."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あの レストランは あまり ＿＿。",
+        "answer": "おいしくないです",
+        "choices": [
+          "おいしいです",
+          "おいしいじゃないです",
+          "おいしくです",
+          "おいしくないです"
+        ],
+        "vi": "Nhà hàng kia không ngon lắm."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "この へやは ＿＿。せまいです。",
+        "answer": "ひろくないです",
+        "choices": [
+          "ひろくないです",
+          "ひろいです",
+          "ひろいじゃありません",
+          "ひろないです"
+        ],
+        "vi": "Căn phòng này không rộng. Nó hẹp."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-ichi",
+    "point_id": "n5-ichi",
+    "level": "N5",
+    "sort": 38,
+    "title": "Vị trí: N の うえ／した／なか／まえ…",
+    "pattern": "N の うえ／した／なか／まえ／うしろ／となり",
+    "meaning_vi": "Trên / dưới / trong / trước / sau / bên cạnh N",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Từ chỉ vị trí đứng sau の: つくえの うえ (trên bàn). Các từ: うえ (trên), した (dưới), なか (trong), そと (ngoài), まえ (trước), うしろ (sau), となり (bên cạnh), よこ (bên), ちかく (gần), みぎ (phải), ひだり (trái). Thường đi với に あります／います hoặc で ＋ hành động."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Trật tự ngược tiếng Việt: “trên bàn” → つくえの うえ. Người Việt hay nói “うえ つくえ”. となり dùng cho hai thứ cùng loại sát nhau (nhà bên cạnh nhà); よこ chỉ bên cạnh nói chung."
+      }
+    ],
+    "notes": [
+      "Chữ kanji: 上 (うえ), 下 (した), 中 (なか), 前 (まえ), 後ろ (うしろ), 右 (みぎ), 左 (ひだり), 外 (そと)."
+    ],
+    "examples": [
+      {
+        "ja": "つくえの 上に 本が あります。",
+        "ruby": "つくえの 上[うえ]に 本[ほん]が あります。",
+        "vi": "Trên bàn có quyển sách."
+      },
+      {
+        "ja": "いすの 下に ねこが います。",
+        "ruby": "いすの 下[した]に ねこが います。",
+        "vi": "Dưới ghế có con mèo."
+      },
+      {
+        "ja": "かばんの 中に 何が ありますか。",
+        "ruby": "かばんの 中[なか]に 何[なに]が ありますか。",
+        "vi": "Trong cặp có gì?"
+      },
+      {
+        "ja": "ゆうびんきょくは ぎんこうの となりです。",
+        "ruby": "ゆうびんきょくは ぎんこうの となりです。",
+        "vi": "Bưu điện ở bên cạnh ngân hàng."
+      },
+      {
+        "ja": "学校の 後ろに 山が あります。",
+        "ruby": "学校[がっこう]の 後[うし]ろに 山[やま]が あります。",
+        "vi": "Phía sau trường có ngọn núi."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "つくえの ＿＿に ほんが あります。",
+        "answer": "うえ",
+        "choices": [
+          "した",
+          "なか",
+          "うえ",
+          "まえ"
+        ],
+        "vi": "Trên bàn có quyển sách."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "いすの ＿＿に ねこが います。",
+        "answer": "した",
+        "choices": [
+          "うえ",
+          "そと",
+          "よこ",
+          "した"
+        ],
+        "vi": "Dưới ghế có con mèo."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "かばんの ＿＿に なにが ありますか。",
+        "answer": "なか",
+        "choices": [
+          "なか",
+          "うえ",
+          "した",
+          "まえ"
+        ],
+        "vi": "Trong cặp có gì?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ゆうびんきょくは ぎんこうの ＿＿です。",
+        "answer": "となり",
+        "choices": [
+          "うしろ",
+          "となり",
+          "まえ",
+          "なか"
+        ],
+        "vi": "Bưu điện ở bên cạnh ngân hàng."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "がっこうの ＿＿に やまが あります。",
+        "answer": "うしろ",
+        "choices": [
+          "まえ",
+          "となり",
+          "うしろ",
+          "なか"
+        ],
+        "vi": "Phía sau trường có ngọn núi."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "えきの ＿＿で まちます。",
+        "answer": "まえ",
+        "choices": [
+          "うしろ",
+          "なか",
+          "うえ",
+          "まえ"
+        ],
+        "vi": "Tôi đợi ở trước nhà ga."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-ichiban",
+    "point_id": "n5-ichiban",
+    "level": "N5",
+    "sort": 67,
+    "title": "～の なかで ～が いちばん ～",
+    "pattern": "N(phạm vi) の なかで N が いちばん A です",
+    "meaning_vi": "Trong (phạm vi), N là A nhất",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "So sánh từ ba thứ trở lên: りょうりの なかで なにが いちばん すきですか (Trong các món ăn, bạn thích món nào nhất?). Trả lời: N が いちばん A です. Hỏi người: だれが; nơi: どこが; thời gian: いつが."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Khi có từ ba thứ trở lên không dùng どちら. Từ để hỏi làm chủ ngữ dùng が (なにが), không dùng は. Phạm vi là nơi/nhóm thì có thể chỉ dùng で: クラスで."
+      }
+    ],
+    "notes": [
+      "いちばん đứng ngay trước tính từ: いちばん すき, いちばん たかい."
+    ],
+    "examples": [
+      {
+        "ja": "りょうりの 中で 何が いちばん すきですか。…カレーが いちばん すきです。",
+        "ruby": "りょうりの 中[なか]で 何[なに]が いちばん すきですか。…カレーが いちばん すきです。",
+        "vi": "Trong các món ăn, bạn thích món nào nhất? … Tôi thích cà ri nhất."
+      },
+      {
+        "ja": "かぞくの 中で だれが いちばん せが 高いですか。…父です。",
+        "ruby": "かぞくの 中[なか]で だれが いちばん せが 高[たか]いですか。…父[ちち]です。",
+        "vi": "Trong gia đình, ai cao nhất? … Bố tôi."
+      },
+      {
+        "ja": "一年で いつが いちばん さむいですか。…一月です。",
+        "ruby": "一年[いちねん]で いつが いちばん さむいですか。…一月[いちがつ]です。",
+        "vi": "Trong một năm, lúc nào lạnh nhất? … Tháng 1."
+      },
+      {
+        "ja": "クラスで リンさんが いちばん 日本語が じょうずです。",
+        "ruby": "クラスで リンさんが いちばん 日本語[にほんご]が じょうずです。",
+        "vi": "Trong lớp, chị Linh giỏi tiếng Nhật nhất."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "りょうりの ＿＿で なにが いちばん すきですか。",
+        "answer": "なか",
+        "choices": [
+          "うえ",
+          "まえ",
+          "ほう",
+          "なか"
+        ],
+        "vi": "Trong các món ăn, bạn thích món nào nhất?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "かぞくの なかで だれが ＿＿ せが たかいですか。",
+        "answer": "いちばん",
+        "choices": [
+          "いちばん",
+          "どちら",
+          "より",
+          "ほう"
+        ],
+        "vi": "Trong gia đình, ai cao nhất?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "いちねんで ＿＿が いちばん さむいですか。…いちがつです。",
+        "answer": "いつ",
+        "choices": [
+          "どこ",
+          "いつ",
+          "だれ",
+          "どちら"
+        ],
+        "vi": "Trong một năm, lúc nào lạnh nhất? … Tháng 1."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "クラスで ＿＿が いちばん にほんごが じょうずですか。…リンさんです。",
+        "answer": "だれ",
+        "choices": [
+          "なに",
+          "いつ",
+          "だれ",
+          "どちら"
+        ],
+        "vi": "Trong lớp, ai giỏi tiếng Nhật nhất? … Chị Linh."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ベトナムで ＿＿が いちばん にぎやかですか。…ホーチミンです。",
+        "answer": "どこ",
+        "choices": [
+          "だれ",
+          "いつ",
+          "どちら",
+          "どこ"
+        ],
+        "vi": "Ở Việt Nam, nơi nào nhộn nhịp nhất? … TP Hồ Chí Minh."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-ikura",
+    "point_id": "n5-ikura",
+    "level": "N5",
+    "sort": 40,
+    "title": "～は いくらですか／～円です",
+    "pattern": "N は いくらですか ／ ～円です",
+    "meaning_vi": "N giá bao nhiêu? / … yên",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Hỏi giá: これは いくらですか. Trả lời bằng số + 円 (えん). Muốn mua: これを ください (Cho tôi cái này). Số lớn: 百 (ひゃく, trăm), 千 (せん, nghìn), 万 (まん, mười nghìn)."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Tiếng Nhật đếm số lớn theo nhóm bốn chữ số (万 = 10.000), khác tiếng Việt theo nhóm ba (nghìn): いちまんえん = 10.000 yên, じゅうまんえん = 100.000 yên. Biến âm: さんびゃく, ろっぴゃく, はっぴゃく, さんぜん, はっせん."
+      }
+    ],
+    "notes": [
+      "いくつ hỏi số lượng (mấy cái), いくら hỏi giá tiền."
+    ],
+    "examples": [
+      {
+        "ja": "この かばんは いくらですか。…三千円です。",
+        "ruby": "この かばんは いくらですか。…三千円[さんぜんえん]です。",
+        "vi": "Cái cặp này bao nhiêu tiền? … 3.000 yên."
+      },
+      {
+        "ja": "この 本は 八百円です。",
+        "ruby": "この 本[ほん]は 八百円[はっぴゃくえん]です。",
+        "vi": "Quyển sách này 800 yên."
+      },
+      {
+        "ja": "これを ください。",
+        "ruby": "これを ください。",
+        "vi": "Cho tôi cái này."
+      },
+      {
+        "ja": "その とけいは 一万円です。",
+        "ruby": "その とけいは 一万円[いちまんえん]です。",
+        "vi": "Cái đồng hồ đó 10.000 yên."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "この かばんは ＿＿ですか。…さんぜんえんです。",
+        "answer": "いくら",
+        "choices": [
+          "いくら",
+          "いくつ",
+          "なんにん",
+          "いつ"
+        ],
+        "vi": "Cái cặp này bao nhiêu tiền? … 3.000 yên."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "この ほんは ＿＿えんです。",
+        "answer": "はっぴゃく",
+        "choices": [
+          "はちひゃく",
+          "はっぴゃく",
+          "はちびゃく",
+          "はっひゃく"
+        ],
+        "vi": "Quyển sách này 800 yên."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "かさは ＿＿えんです。",
+        "answer": "さんびゃく",
+        "choices": [
+          "さんひゃく",
+          "さんぴゃく",
+          "さんびゃく",
+          "さっぴゃく"
+        ],
+        "vi": "Cái ô 300 yên."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "その とけいは ＿＿えんです。",
+        "answer": "いちまん",
+        "choices": [
+          "じゅうせん",
+          "いっせん",
+          "ひゃくせん",
+          "いちまん"
+        ],
+        "vi": "Cái đồng hồ đó 10.000 yên."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "これ＿＿ ください。",
+        "answer": "を",
+        "choices": [
+          "を",
+          "が",
+          "に",
+          "で"
+        ],
+        "vi": "Cho tôi cái này."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-ja-arimasen",
+    "point_id": "n5-ja-arimasen",
+    "level": "N5",
+    "sort": 2,
+    "title": "～じゃありません",
+    "pattern": "N1 は N2 じゃありません（ではありません）",
+    "meaning_vi": "N1 không phải là N2",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Dạng phủ định của です, giống “không phải là” trong tiếng Việt. じゃありません dùng trong hội thoại; ではありません trang trọng hơn, hay gặp trong văn viết."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Không nói “がくせいですません” hay “がくせいでありません”. では đọc là “dewa” (は đọc “wa”). Trong hội thoại thân mật còn nghe dạng じゃないです."
+      }
+    ],
+    "notes": [
+      "Câu trả lời phủ định thường kèm thông tin đúng: いいえ、せんせいじゃありません。がくせいです."
+    ],
+    "examples": [
+      {
+        "ja": "わたしは 先生じゃありません。",
+        "ruby": "わたしは 先生[せんせい]じゃありません。",
+        "vi": "Tôi không phải là giáo viên."
+      },
+      {
+        "ja": "ナムさんは 日本人じゃありません。ベトナム人です。",
+        "ruby": "ナムさんは 日本人[にほんじん]じゃありません。ベトナム人[じん]です。",
+        "vi": "Anh Nam không phải người Nhật. Anh ấy là người Việt Nam."
+      },
+      {
+        "ja": "やまださんは 学生ではありません。",
+        "ruby": "やまださんは 学生[がくせい]ではありません。",
+        "vi": "Anh Yamada không phải là sinh viên."
+      },
+      {
+        "ja": "今日は 休みじゃありません。",
+        "ruby": "今日[きょう]は 休[やす]みじゃありません。",
+        "vi": "Hôm nay không phải ngày nghỉ."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしは せんせい＿＿。",
+        "answer": "じゃありません",
+        "choices": [
+          "です",
+          "ます",
+          "じゃありません",
+          "ません"
+        ],
+        "vi": "Tôi không phải là giáo viên."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ナムさんは にほんじん＿＿。ベトナムじんです。",
+        "answer": "じゃありません",
+        "choices": [
+          "です",
+          "ます",
+          "ません",
+          "じゃありません"
+        ],
+        "vi": "Anh Nam không phải người Nhật. Anh ấy là người Việt Nam."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きょうは やすみ＿＿ありません。",
+        "answer": "じゃ",
+        "choices": [
+          "じゃ",
+          "で",
+          "を",
+          "に"
+        ],
+        "vi": "Hôm nay không phải ngày nghỉ."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "やまださんは がくせいでは＿＿。",
+        "answer": "ありません",
+        "choices": [
+          "ます",
+          "ありません",
+          "です",
+          "いません"
+        ],
+        "vi": "Anh Yamada không phải là sinh viên."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "リンさんは せんせい＿＿。がくせいです。",
+        "answer": "じゃありません",
+        "choices": [
+          "です",
+          "ですか",
+          "じゃありません",
+          "でした"
+        ],
+        "vi": "Chị Linh không phải là giáo viên. Chị ấy là học sinh."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-jikan",
+    "point_id": "n5-jikan",
+    "level": "N5",
+    "sort": 12,
+    "title": "～時～ふん",
+    "pattern": "いま ～時～ふん です",
+    "meaning_vi": "Bây giờ là … giờ … phút",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Nói giờ: số + 時 (じ), phút: số + ふん／ぷん. Hỏi giờ: いま なんじですか. 半 (はん) là “rưỡi”. 午前 (ごぜん, buổi sáng) và 午後 (ごご, buổi chiều) đặt TRƯỚC giờ: ごご さんじ (3 giờ chiều)."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Cách đọc giờ đặc biệt: 四時 よじ, 七時 しちじ, 九時 くじ. Phút: いっぷん, にふん, さんぷん, よんぷん, ごふん, ろっぷん, ななふん, はっぷん, きゅうふん, じゅっぷん."
+      }
+    ],
+    "notes": [
+      "Khác tiếng Việt (“3 giờ chiều”), tiếng Nhật nói ごご さんじ (chiều – 3 giờ)."
+    ],
+    "examples": [
+      {
+        "ja": "今 九時です。",
+        "ruby": "今[いま] 九時[くじ]です。",
+        "vi": "Bây giờ là 9 giờ."
+      },
+      {
+        "ja": "今 四時 半です。",
+        "ruby": "今[いま] 四時[よじ] 半[はん]です。",
+        "vi": "Bây giờ là 4 giờ rưỡi."
+      },
+      {
+        "ja": "今 何時ですか。…午後 二時 じゅっぷんです。",
+        "ruby": "今[いま] 何時[なんじ]ですか。…午後[ごご] 二時[にじ] じゅっぷんです。",
+        "vi": "Bây giờ là mấy giờ? … 2 giờ 10 phút chiều."
+      },
+      {
+        "ja": "ベトナムは 今 午前 七時です。",
+        "ruby": "ベトナムは 今[いま] 午前[ごぜん] 七時[しちじ]です。",
+        "vi": "Ở Việt Nam bây giờ là 7 giờ sáng."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "いま ＿＿ですか。…くじです。",
+        "answer": "なんじ",
+        "choices": [
+          "なんじ",
+          "なんぷん",
+          "いつ",
+          "どこ"
+        ],
+        "vi": "Bây giờ là mấy giờ? … 9 giờ."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "いま よじ ＿＿です。",
+        "answer": "はん",
+        "choices": [
+          "ぷん",
+          "はん",
+          "ごろ",
+          "じ"
+        ],
+        "vi": "Bây giờ là 4 giờ rưỡi."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "いま ＿＿ さんじです。",
+        "answer": "ごご",
+        "choices": [
+          "ごぜん",
+          "あさ",
+          "ごご",
+          "けさ"
+        ],
+        "vi": "Bây giờ là 3 giờ chiều."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "いま ＿＿ はんです。",
+        "answer": "よじ",
+        "choices": [
+          "よんじ",
+          "しじ",
+          "よっじ",
+          "よじ"
+        ],
+        "vi": "Bây giờ là 4 giờ rưỡi."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "いま くじ ＿＿です。",
+        "answer": "ごふん",
+        "choices": [
+          "ごふん",
+          "ごぷん",
+          "ごっぷん",
+          "ごじ"
+        ],
+        "vi": "Bây giờ là 9 giờ 5 phút."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "いま ＿＿ じゅっぷんです。",
+        "answer": "くじ",
+        "choices": [
+          "きゅうじ",
+          "くじ",
+          "くっじ",
+          "ここのじ"
+        ],
+        "vi": "Bây giờ là 9 giờ 10 phút."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-ka",
+    "point_id": "n5-ka",
+    "level": "N5",
+    "sort": 3,
+    "title": "～か",
+    "pattern": "Câu ＋ か",
+    "meaning_vi": "Câu hỏi: … không? / … phải không?",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Thêm か vào cuối câu để biến câu kể thành câu hỏi, không cần đổi trật tự từ, giống “không?” cuối câu tiếng Việt. Trả lời: はい、～です hoặc いいえ、～じゃありません."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Câu hỏi có か thường kết thúc bằng dấu 。 chứ không phải ？. Khi trả lời いいえ, dùng じゃありません, đừng lặp lại です."
+      }
+    ],
+    "notes": [
+      "Câu hỏi có từ để hỏi (なん, だれ…) cũng đặt か ở cuối.",
+      "Lên giọng nhẹ ở か khi hỏi."
+    ],
+    "examples": [
+      {
+        "ja": "あなたは 学生ですか。",
+        "ruby": "あなたは 学生[がくせい]ですか。",
+        "vi": "Bạn là học sinh phải không?"
+      },
+      {
+        "ja": "はい、学生です。",
+        "ruby": "はい、学生[がくせい]です。",
+        "vi": "Vâng, tôi là học sinh."
+      },
+      {
+        "ja": "たなかさんは 先生ですか。…いいえ、先生じゃありません。",
+        "ruby": "たなかさんは 先生[せんせい]ですか。…いいえ、先生[せんせい]じゃありません。",
+        "vi": "Anh Tanaka là giáo viên à? … Không, không phải."
+      },
+      {
+        "ja": "リンさんは ベトナム人ですか。",
+        "ruby": "リンさんは ベトナム人[じん]ですか。",
+        "vi": "Chị Linh là người Việt Nam phải không?"
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "あなたは がくせいです＿＿。",
+        "answer": "か",
+        "choices": [
+          "は",
+          "を",
+          "も",
+          "か"
+        ],
+        "vi": "Bạn là học sinh phải không?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "たなかさんは せんせいですか。…＿＿、せんせいです。",
+        "answer": "はい",
+        "choices": [
+          "はい",
+          "いいえ",
+          "だれ",
+          "なん"
+        ],
+        "vi": "Anh Tanaka là giáo viên à? … Vâng, là giáo viên."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "やまださんは いしゃですか。…いいえ、いしゃ＿＿。",
+        "answer": "じゃありません",
+        "choices": [
+          "です",
+          "じゃありません",
+          "ですか",
+          "か"
+        ],
+        "vi": "Ông Yamada là bác sĩ à? … Không, không phải bác sĩ."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ナムさんは にほんじんですか。…＿＿、ベトナムじんです。",
+        "answer": "いいえ",
+        "choices": [
+          "はい",
+          "ええ",
+          "いいえ",
+          "どうぞ"
+        ],
+        "vi": "Anh Nam là người Nhật à? … Không, anh ấy là người Việt Nam."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "リンさんは りゅうがくせい＿＿か。",
+        "answer": "です",
+        "choices": [
+          "ます",
+          "を",
+          "が",
+          "です"
+        ],
+        "vi": "Chị Linh là du học sinh phải không?"
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-kara-made",
+    "point_id": "n5-kara-made",
+    "level": "N5",
+    "sort": 13,
+    "title": "～から～まで",
+    "pattern": "N1 から N2 まで",
+    "meaning_vi": "Từ N1 đến N2",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "から chỉ điểm bắt đầu, まで chỉ điểm kết thúc, dùng cho cả thời gian và nơi chốn. Có thể dùng riêng: くじから (từ 9 giờ), ごじまで (đến 5 giờ). Câu có thể kết thúc bằng です: やすみは げつようびから すいようびまでです."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Giống “từ… đến…” của tiếng Việt nhưng から／まで đứng SAU danh từ: くじから ごじまで = từ 9 giờ đến 5 giờ."
+      }
+    ],
+    "notes": [
+      "から ở bài này đi sau danh từ; から đứng sau câu nghĩa là “vì” (bài sau)."
+    ],
+    "examples": [
+      {
+        "ja": "学校は 八時から 三時までです。",
+        "ruby": "学校[がっこう]は 八時[はちじ]から 三時[さんじ]までです。",
+        "vi": "Trường học từ 8 giờ đến 3 giờ."
+      },
+      {
+        "ja": "ぎんこうは 九時から 三時までです。",
+        "ruby": "ぎんこうは 九時[くじ]から 三時[さんじ]までです。",
+        "vi": "Ngân hàng làm việc từ 9 giờ đến 3 giờ."
+      },
+      {
+        "ja": "休みは げつようびから すいようびまでです。",
+        "ruby": "休[やす]みは げつようびから すいようびまでです。",
+        "vi": "Kỳ nghỉ từ thứ Hai đến thứ Tư."
+      },
+      {
+        "ja": "テストは 一時からです。",
+        "ruby": "テストは 一時[いちじ]からです。",
+        "vi": "Bài kiểm tra bắt đầu từ 1 giờ."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "がっこうは はちじ＿＿ さんじまでです。",
+        "answer": "から",
+        "choices": [
+          "まで",
+          "から",
+          "に",
+          "で"
+        ],
+        "vi": "Trường học từ 8 giờ đến 3 giờ."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "がっこうは はちじから さんじ＿＿です。",
+        "answer": "まで",
+        "choices": [
+          "から",
+          "に",
+          "まで",
+          "を"
+        ],
+        "vi": "Trường học từ 8 giờ đến 3 giờ."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "やすみは げつようび＿＿ すいようびまでです。",
+        "answer": "から",
+        "choices": [
+          "まで",
+          "を",
+          "に",
+          "から"
+        ],
+        "vi": "Kỳ nghỉ từ thứ Hai đến thứ Tư."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "テストは いちじ＿＿です。",
+        "answer": "から",
+        "choices": [
+          "から",
+          "を",
+          "に",
+          "へ"
+        ],
+        "vi": "Bài kiểm tra bắt đầu từ 1 giờ."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ひるやすみは じゅうにじから いちじ＿＿です。",
+        "answer": "まで",
+        "choices": [
+          "から",
+          "まで",
+          "を",
+          "で"
+        ],
+        "vi": "Nghỉ trưa từ 12 giờ đến 1 giờ."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-kara-reason",
+    "point_id": "n5-kara-reason",
+    "level": "N5",
+    "sort": 41,
+    "title": "～から (lý do)",
+    "pattern": "Câu 1 から、Câu 2",
+    "meaning_vi": "Vì câu 1 nên câu 2",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "から đặt sau câu chỉ lý do, câu kết quả đứng sau: じかんが ありませんから、タクシーで いきます (Vì không có thời gian nên tôi đi taxi). Trả lời câu hỏi どうして (tại sao) bằng ～からです."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Trật tự ngược tiếng Việt: “vì” đứng đầu vế lý do, còn から đứng CUỐI vế lý do. Đừng nhầm với から “từ” đi sau danh từ: くじから (từ 9 giờ) khác くじですから (vì là 9 giờ)."
+      }
+    ],
+    "notes": [
+      "Trước から có thể dùng thể です／ます: あめですから, ありませんから."
+    ],
+    "examples": [
+      {
+        "ja": "時間が ありませんから、タクシーで 行きます。",
+        "ruby": "時間[じかん]が ありませんから、タクシーで 行[い]きます。",
+        "vi": "Vì không có thời gian nên tôi đi taxi."
+      },
+      {
+        "ja": "今日は 雨ですから、うちに います。",
+        "ruby": "今日[きょう]は 雨[あめ]ですから、うちに います。",
+        "vi": "Hôm nay trời mưa nên tôi ở nhà."
+      },
+      {
+        "ja": "あしたは テストですから、こんばん べんきょうします。",
+        "ruby": "あしたは テストですから、こんばん べんきょうします。",
+        "vi": "Mai có kiểm tra nên tối nay tôi học bài."
+      },
+      {
+        "ja": "どうして 休みましたか。…あたまが いたかったからです。",
+        "ruby": "どうして 休[やす]みましたか。…あたまが いたかったからです。",
+        "vi": "Tại sao bạn đã nghỉ? … Vì tôi bị đau đầu."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "じかんが ありません＿＿、タクシーで いきます。",
+        "answer": "から",
+        "choices": [
+          "まで",
+          "から",
+          "を",
+          "に"
+        ],
+        "vi": "Vì không có thời gian nên tôi đi taxi."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きょうは あめです＿＿、うちに います。",
+        "answer": "から",
+        "choices": [
+          "まで",
+          "を",
+          "から",
+          "へ"
+        ],
+        "vi": "Hôm nay trời mưa nên tôi ở nhà."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あしたは テストです＿＿、こんばん べんきょうします。",
+        "answer": "から",
+        "choices": [
+          "まで",
+          "を",
+          "へ",
+          "から"
+        ],
+        "vi": "Mai có kiểm tra nên tối nay tôi học bài."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "どうして やすみましたか。…あたまが いたかった＿＿です。",
+        "answer": "から",
+        "choices": [
+          "から",
+          "まで",
+          "を",
+          "へ"
+        ],
+        "vi": "Tại sao bạn đã nghỉ? … Vì tôi bị đau đầu."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "＿＿ やすみましたか。…あたまが いたかったからです。",
+        "answer": "どうして",
+        "choices": [
+          "どこ",
+          "どうして",
+          "だれ",
+          "いつ"
+        ],
+        "vi": "Tại sao bạn đã nghỉ? … Vì tôi bị đau đầu."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-kochira",
+    "point_id": "n5-kochira",
+    "level": "N5",
+    "sort": 9,
+    "title": "こちら／そちら／あちら／どちら",
+    "pattern": "N は こちら／そちら／あちら です",
+    "meaning_vi": "N ở phía này / phía đó / phía kia (lịch sự)",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "こちら, そちら, あちら, どちら là cách nói lịch sự của ここ, そこ, あそこ, どこ, hay dùng ở cửa hàng, khách sạn, công ty. こちら còn dùng để giới thiệu người: こちらは やまださんです (Đây là anh Yamada). おくには どちらですか là cách hỏi lịch sự “Anh/chị từ nước nào đến?”."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Giới thiệu người thì dùng こちら, không dùng これ (これ chỉ đồ vật, dùng cho người là bất lịch sự). どちら còn có nghĩa “cái nào (trong hai cái)”, sẽ gặp ở bài so sánh."
+      }
+    ],
+    "notes": [
+      "Nhân viên cửa hàng thường nói ～は あちらです khi chỉ đường cho khách."
+    ],
+    "examples": [
+      {
+        "ja": "こちらは たなかさんです。",
+        "ruby": "こちらは たなかさんです。",
+        "vi": "Đây là anh Tanaka."
+      },
+      {
+        "ja": "エレベーターは あちらです。",
+        "ruby": "エレベーターは あちらです。",
+        "vi": "Thang máy ở phía kia ạ."
+      },
+      {
+        "ja": "お国は どちらですか。…ベトナムです。",
+        "ruby": "お国[くに]は どちらですか。…ベトナムです。",
+        "vi": "Anh từ nước nào đến ạ? … Việt Nam."
+      },
+      {
+        "ja": "トイレは そちらです。",
+        "ruby": "トイレは そちらです。",
+        "vi": "Nhà vệ sinh ở phía đó ạ."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "＿＿は やまださんです。",
+        "answer": "こちら",
+        "choices": [
+          "これ",
+          "こちら",
+          "この",
+          "どの"
+        ],
+        "vi": "(Giới thiệu) Đây là anh Yamada."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "おくには ＿＿ですか。",
+        "answer": "どちら",
+        "choices": [
+          "どれ",
+          "どの",
+          "どちら",
+          "だれ"
+        ],
+        "vi": "Anh từ nước nào đến ạ?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "エレベーターは ＿＿です。",
+        "answer": "あちら",
+        "choices": [
+          "あの",
+          "どの",
+          "この",
+          "あちら"
+        ],
+        "vi": "Thang máy ở phía kia ạ."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "かいだんは ＿＿ですか。",
+        "answer": "どちら",
+        "choices": [
+          "どちら",
+          "どの",
+          "なん",
+          "だれ"
+        ],
+        "vi": "Cầu thang ở phía nào ạ?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "＿＿は わたしの せんせいです。",
+        "answer": "こちら",
+        "choices": [
+          "これ",
+          "こちら",
+          "この",
+          "どの"
+        ],
+        "vi": "(Giới thiệu) Đây là thầy giáo của tôi."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-koko-soko-asoko",
+    "point_id": "n5-koko-soko-asoko",
+    "level": "N5",
+    "sort": 8,
+    "title": "ここ／そこ／あそこ／どこ",
+    "pattern": "N は ここ／そこ／あそこ です",
+    "meaning_vi": "N ở đây / ở đó / ở đằng kia",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Chỉ nơi chốn: ここ (chỗ này, gần người nói), そこ (chỗ đó, gần người nghe), あそこ (chỗ đằng kia, xa cả hai), どこ (ở đâu). Hỏi vị trí: トイレは どこですか (Nhà vệ sinh ở đâu?)."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Nói vị trí chỉ cần です: エレベーターは あそこです (Thang máy ở đằng kia), không cần thêm động từ “ở”. Chỉ nơi chốn dùng ここ／そこ／あそこ; chỉ đồ vật dùng これ／それ／あれ."
+      }
+    ],
+    "notes": [
+      "Cách nói lịch sự của nhóm này là こちら／そちら／あちら／どちら (bài sau)."
+    ],
+    "examples": [
+      {
+        "ja": "ここは 学校です。",
+        "ruby": "ここは 学校[がっこう]です。",
+        "vi": "Đây là trường học."
+      },
+      {
+        "ja": "トイレは あそこです。",
+        "ruby": "トイレは あそこです。",
+        "vi": "Nhà vệ sinh ở đằng kia."
+      },
+      {
+        "ja": "えきは どこですか。",
+        "ruby": "えきは どこですか。",
+        "vi": "Nhà ga ở đâu?"
+      },
+      {
+        "ja": "わたしの かさは そこです。",
+        "ruby": "わたしの かさは そこです。",
+        "vi": "Ô của tôi ở chỗ đó (chỗ bạn)."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "トイレは ＿＿ですか。",
+        "answer": "どこ",
+        "choices": [
+          "どこ",
+          "どれ",
+          "どの",
+          "だれ"
+        ],
+        "vi": "Nhà vệ sinh ở đâu?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "＿＿は きょうしつです。",
+        "answer": "ここ",
+        "choices": [
+          "この",
+          "ここ",
+          "どの",
+          "その"
+        ],
+        "vi": "Chỗ này là phòng học."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "エレベーターは ＿＿です。",
+        "answer": "あそこ",
+        "choices": [
+          "あの",
+          "どの",
+          "あそこ",
+          "この"
+        ],
+        "vi": "Thang máy ở đằng kia."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "しょくどうは ＿＿ですか。…そこです。",
+        "answer": "どこ",
+        "choices": [
+          "どの",
+          "なん",
+          "だれ",
+          "どこ"
+        ],
+        "vi": "Nhà ăn ở đâu? … Ở chỗ đó."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしの かさは ＿＿です。",
+        "answer": "そこ",
+        "choices": [
+          "そこ",
+          "その",
+          "どの",
+          "あの"
+        ],
+        "vi": "Ô của tôi ở chỗ đó (chỗ bạn)."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-kono-sono-ano",
+    "point_id": "n5-kono-sono-ano",
+    "level": "N5",
+    "sort": 7,
+    "title": "この／その／あの／どの ＋ N",
+    "pattern": "この／その／あの／どの N",
+    "meaning_vi": "N này / N đó / N kia / N nào",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "この, その, あの, どの luôn đi kèm một danh từ ngay sau: この ほん (quyển sách này). Khoảng cách giống これ／それ／あれ."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Trật tự ngược tiếng Việt: “sách này” thành この ほん. Không dùng một mình: “このは ほんです” là sai. あの cũng dùng cho người: あの ひと (người kia)."
+      }
+    ],
+    "notes": [
+      "これ = この ＋ danh từ đã hiểu ngầm: この ほんは わたしのです ≈ これは わたしの ほんです."
+    ],
+    "examples": [
+      {
+        "ja": "この 本は わたしのです。",
+        "ruby": "この 本[ほん]は わたしのです。",
+        "vi": "Quyển sách này là của tôi."
+      },
+      {
+        "ja": "その かさは 千円です。",
+        "ruby": "その かさは 千円[せんえん]です。",
+        "vi": "Cái ô đó giá 1.000 yên."
+      },
+      {
+        "ja": "あの 人は だれですか。",
+        "ruby": "あの 人[ひと]は だれですか。",
+        "vi": "Người kia là ai?"
+      },
+      {
+        "ja": "どの 車が たなかさんのですか。",
+        "ruby": "どの 車[くるま]が たなかさんのですか。",
+        "vi": "Chiếc xe nào là của anh Tanaka?"
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "＿＿ ほんは わたしのです。",
+        "answer": "この",
+        "choices": [
+          "これ",
+          "ここ",
+          "こちら",
+          "この"
+        ],
+        "vi": "Quyển sách này là của tôi."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "＿＿ ひとは だれですか。",
+        "answer": "あの",
+        "choices": [
+          "あの",
+          "あれ",
+          "あそこ",
+          "あちら"
+        ],
+        "vi": "Người kia là ai?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "＿＿ かさは いくらですか。",
+        "answer": "その",
+        "choices": [
+          "それ",
+          "その",
+          "そこ",
+          "そちら"
+        ],
+        "vi": "Cái ô đó giá bao nhiêu?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "＿＿ くるまが たなかさんのですか。",
+        "answer": "どの",
+        "choices": [
+          "どれ",
+          "どこ",
+          "どの",
+          "どちら"
+        ],
+        "vi": "Chiếc xe nào là của anh Tanaka?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "＿＿ とけいは わたしのです。",
+        "answer": "この",
+        "choices": [
+          "これ",
+          "ここ",
+          "どれ",
+          "この"
+        ],
+        "vi": "Cái đồng hồ này là của tôi."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-kore-sore-are",
+    "point_id": "n5-kore-sore-are",
+    "level": "N5",
+    "sort": 6,
+    "title": "これ／それ／あれ／どれ",
+    "pattern": "これ／それ／あれ は N です",
+    "meaning_vi": "Cái này / cái đó / cái kia là N",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "これ: vật ở gần người nói; それ: vật ở gần người nghe; あれ: vật ở xa cả hai. どれ: cái nào (hỏi khi có từ ba vật trở lên). Đây là đại từ, đứng một mình, không có danh từ theo sau."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Không nói “これ ほん”: muốn có danh từ phía sau thì dùng この (bài sau). Hỏi “cái gì”: これは なんですか. Khi người hỏi dùng それ (vật gần bạn), bạn trả lời bằng これ."
+      }
+    ],
+    "notes": [
+      "Dùng これ để chỉ người là bất lịch sự; giới thiệu người dùng こちら."
+    ],
+    "examples": [
+      {
+        "ja": "これは 本です。",
+        "ruby": "これは 本[ほん]です。",
+        "vi": "Đây là quyển sách."
+      },
+      {
+        "ja": "それは わたしの かさです。",
+        "ruby": "それは わたしの かさです。",
+        "vi": "Cái đó là ô của tôi."
+      },
+      {
+        "ja": "あれは 学校です。",
+        "ruby": "あれは 学校[がっこう]です。",
+        "vi": "Kia là trường học."
+      },
+      {
+        "ja": "リンさんの かばんは どれですか。",
+        "ruby": "リンさんの かばんは どれですか。",
+        "vi": "Cặp của chị Linh là cái nào?"
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "＿＿は わたしの ほんです。",
+        "answer": "これ",
+        "choices": [
+          "この",
+          "ここ",
+          "これ",
+          "どれ"
+        ],
+        "vi": "Cái này (trong tay tôi) là sách của tôi."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "＿＿は がっこうです。",
+        "answer": "あれ",
+        "choices": [
+          "あの",
+          "どの",
+          "それ",
+          "あれ"
+        ],
+        "vi": "Kia (ở đằng xa) là trường học."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あなたの かさは ＿＿ですか。",
+        "answer": "どれ",
+        "choices": [
+          "どれ",
+          "どの",
+          "なん",
+          "あの"
+        ],
+        "vi": "Ô của bạn là cái nào?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "＿＿は なんですか。",
+        "answer": "それ",
+        "choices": [
+          "その",
+          "それ",
+          "あの",
+          "どの"
+        ],
+        "vi": "Cái đó (gần bạn) là gì?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "これは なんですか。…＿＿は じしょです。",
+        "answer": "それ",
+        "choices": [
+          "その",
+          "どれ",
+          "それ",
+          "あの"
+        ],
+        "vi": "Cái này là gì? … Cái đó là từ điển."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-koto-ga-dekiru",
+    "point_id": "n5-koto-ga-dekiru",
+    "level": "N5",
+    "sort": 56,
+    "title": "Thể từ điển ＋ ことが できます",
+    "pattern": "V(thể từ điển) こと が できます ／ N が できます",
+    "meaning_vi": "Có thể V",
+    "explanation": [
+      {
+        "heading": "Cách chia thể từ điển",
+        "body": "Từ thể ます. Nhóm 1: đổi âm trước ます từ hàng い sang hàng う: かきます → かく, のみます → のむ, かいます → かう. Nhóm 2: bỏ ます + る: たべます → たべる. Nhóm 3: します → する, きます → くる."
+      },
+      {
+        "heading": "Cách dùng",
+        "body": "Thể từ điển + ことが できます: khả năng hoặc sự cho phép: ギターを ひくことが できます (tôi chơi được ghi-ta). Với danh từ: N が できます: にほんごが できます."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Đối tượng của できます dùng が, không dùng を: “ギターを できます” là sai. Nhưng trước động từ vẫn giữ を: ギターを ひくことが できます."
+      }
+    ],
+    "notes": [
+      "Thể từ điển là dạng tra trong từ điển, cũng là nền cho ～まえに, ～つもりです."
+    ],
+    "examples": [
+      {
+        "ja": "わたしは ギターを ひくことが できます。",
+        "ruby": "わたしは ギターを ひくことが できます。",
+        "vi": "Tôi có thể chơi ghi-ta."
+      },
+      {
+        "ja": "リンさんは 日本語で てがみを 書くことが できます。",
+        "ruby": "リンさんは 日本語[にほんご]で てがみを 書[か]くことが できます。",
+        "vi": "Chị Linh có thể viết thư bằng tiếng Nhật."
+      },
+      {
+        "ja": "この 川で およぐことが できます。",
+        "ruby": "この 川[かわ]で およぐことが できます。",
+        "vi": "Có thể bơi ở con sông này."
+      },
+      {
+        "ja": "わたしは 日本語が すこし できます。",
+        "ruby": "わたしは 日本語[にほんご]が すこし できます。",
+        "vi": "Tôi biết một chút tiếng Nhật."
+      },
+      {
+        "ja": "ここで しゃしんを とることが できますか。",
+        "ruby": "ここで しゃしんを とることが できますか。",
+        "vi": "Ở đây có thể chụp ảnh không?"
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしは ギターを ＿＿ことが できます。",
+        "answer": "ひく",
+        "choices": [
+          "ひく",
+          "ひき",
+          "ひいて",
+          "ひかない"
+        ],
+        "vi": "Tôi có thể chơi ghi-ta."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "リンさんは にほんごで てがみを ＿＿ことが できます。",
+        "answer": "かく",
+        "choices": [
+          "かき",
+          "かく",
+          "かいて",
+          "かか"
+        ],
+        "vi": "Chị Linh có thể viết thư bằng tiếng Nhật."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "この かわで ＿＿ことが できます。",
+        "answer": "およぐ",
+        "choices": [
+          "およぎ",
+          "およいで",
+          "およぐ",
+          "およが"
+        ],
+        "vi": "Có thể bơi ở con sông này."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしは にほんご＿＿ すこし できます。",
+        "answer": "が",
+        "choices": [
+          "を",
+          "へ",
+          "に",
+          "が"
+        ],
+        "vi": "Tôi biết một chút tiếng Nhật."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ここで しゃしんを とること＿＿ できますか。",
+        "answer": "が",
+        "choices": [
+          "が",
+          "を",
+          "に",
+          "で"
+        ],
+        "vi": "Ở đây có thể chụp ảnh không?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あした ＿＿ことが できますか。",
+        "answer": "くる",
+        "choices": [
+          "きる",
+          "くる",
+          "こる",
+          "きます"
+        ],
+        "vi": "Ngày mai bạn có thể đến không?"
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-mae-ni",
+    "point_id": "n5-mae-ni",
+    "level": "N5",
+    "sort": 58,
+    "title": "V る／N の まえに",
+    "pattern": "V(thể từ điển) まえに ／ N の まえに",
+    "meaning_vi": "Trước khi V / Trước N",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Thể từ điển + まえに, danh từ + の + まえに, hoặc khoảng thời gian + まえに: ねる まえに はを みがきます (Trước khi ngủ tôi đánh răng), ごはんの まえに (trước bữa cơm), さんねん まえに (3 năm trước)."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Động từ trước まえに luôn ở thể từ điển, kể cả khi cả câu nói về quá khứ: にほんへ くる まえに、べんきょうしました. Không nói “きた まえに”. Danh từ phải có の."
+      }
+    ],
+    "notes": [
+      "Đối lập với ～たあとで (bài sau)."
+    ],
+    "examples": [
+      {
+        "ja": "ねる 前に はを みがきます。",
+        "ruby": "ねる 前[まえ]に はを みがきます。",
+        "vi": "Trước khi ngủ tôi đánh răng."
+      },
+      {
+        "ja": "ごはんの 前に てを あらいます。",
+        "ruby": "ごはんの 前[まえ]に てを あらいます。",
+        "vi": "Trước bữa cơm tôi rửa tay."
+      },
+      {
+        "ja": "日本へ 来る 前に、日本語を べんきょうしました。",
+        "ruby": "日本[にほん]へ 来[く]る 前[まえ]に、日本語[にほんご]を べんきょうしました。",
+        "vi": "Trước khi đến Nhật, tôi đã học tiếng Nhật."
+      },
+      {
+        "ja": "三年 前に けっこんしました。",
+        "ruby": "三年[さんねん] 前[まえ]に けっこんしました。",
+        "vi": "Tôi đã kết hôn ba năm trước."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "＿＿ まえに はを みがきます。",
+        "answer": "ねる",
+        "choices": [
+          "ねて",
+          "ねた",
+          "ねる",
+          "ねます"
+        ],
+        "vi": "Trước khi ngủ tôi đánh răng."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ごはん＿＿ まえに てを あらいます。",
+        "answer": "の",
+        "choices": [
+          "を",
+          "が",
+          "に",
+          "の"
+        ],
+        "vi": "Trước bữa cơm tôi rửa tay."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "にほんへ ＿＿ まえに、にほんごを べんきょうしました。",
+        "answer": "くる",
+        "choices": [
+          "くる",
+          "きた",
+          "きて",
+          "こる"
+        ],
+        "vi": "Trước khi đến Nhật, tôi đã học tiếng Nhật."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "さんねん ＿＿に けっこんしました。",
+        "answer": "まえ",
+        "choices": [
+          "あと",
+          "まえ",
+          "うえ",
+          "なか"
+        ],
+        "vi": "Tôi đã kết hôn ba năm trước."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "でかける ＿＿に まどを しめます。",
+        "answer": "まえ",
+        "choices": [
+          "あと",
+          "うしろ",
+          "まえ",
+          "なか"
+        ],
+        "vi": "Trước khi ra ngoài tôi đóng cửa sổ."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-masen",
+    "point_id": "n5-masen",
+    "level": "N5",
+    "sort": 15,
+    "title": "V ません",
+    "pattern": "V ません",
+    "meaning_vi": "không làm V",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Đổi ます thành ません để phủ định: いきます → いきません. Dùng cho thói quen không làm hoặc việc sẽ không làm."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "あまり (không… lắm) luôn đi với dạng phủ định: あまり たべません (không ăn mấy). Người Việt hay nói “あまり たべます” theo kiểu “ăn ít” — sai."
+      }
+    ],
+    "notes": [
+      "ぜんぜん ～ません: hoàn toàn không."
+    ],
+    "examples": [
+      {
+        "ja": "わたしは おさけを のみません。",
+        "ruby": "わたしは おさけを のみません。",
+        "vi": "Tôi không uống rượu."
+      },
+      {
+        "ja": "あしたは 学校へ 行きません。",
+        "ruby": "あしたは 学校[がっこう]へ 行[い]きません。",
+        "vi": "Ngày mai tôi không đến trường."
+      },
+      {
+        "ja": "リンさんは あまり テレビを 見ません。",
+        "ruby": "リンさんは あまり テレビを 見[み]ません。",
+        "vi": "Chị Linh không xem tivi mấy."
+      },
+      {
+        "ja": "にちようびは はたらきません。",
+        "ruby": "にちようびは はたらきません。",
+        "vi": "Chủ nhật tôi không đi làm."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしは おさけを ＿＿。",
+        "answer": "のみません",
+        "choices": [
+          "のみます",
+          "のまません",
+          "のむません",
+          "のみません"
+        ],
+        "vi": "Tôi không uống rượu."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あしたは がっこうへ ＿＿。",
+        "answer": "いきません",
+        "choices": [
+          "いきません",
+          "いかません",
+          "いくません",
+          "いきないです"
+        ],
+        "vi": "Ngày mai tôi không đến trường."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "リンさんは あまり テレビを ＿＿。",
+        "answer": "みません",
+        "choices": [
+          "みます",
+          "みません",
+          "みりません",
+          "みるません"
+        ],
+        "vi": "Chị Linh không xem tivi mấy."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "にちようびは ＿＿。",
+        "answer": "はたらきません",
+        "choices": [
+          "はたらかません",
+          "はたらくません",
+          "はたらきません",
+          "はたらきないです"
+        ],
+        "vi": "Chủ nhật tôi không đi làm."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしは あまり にくを ＿＿。",
+        "answer": "たべません",
+        "choices": [
+          "たべます",
+          "たべりません",
+          "たべるません",
+          "たべません"
+        ],
+        "vi": "Tôi không ăn thịt mấy."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-masenka",
+    "point_id": "n5-masenka",
+    "level": "N5",
+    "sort": 25,
+    "title": "V ませんか",
+    "pattern": "V ませんか",
+    "meaning_vi": "Cùng làm V không? (lời mời)",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Dùng để mời người nghe cùng làm gì một cách lịch sự, để người nghe tự quyết định: いっしょに えいがを みませんか. Đồng ý: ええ、いいですね. Từ chối khéo: すみません、ちょっと…."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Tuy có dạng phủ định nhưng ませんか là lời mời, không phải câu hỏi “bạn không xem à?”. Người Nhật ít khi từ chối thẳng bằng いいえ; thường nói ちょっと… rồi bỏ lửng."
+      }
+    ],
+    "notes": [
+      "ませんか lịch sự và mềm hơn ましょう (bài sau)."
+    ],
+    "examples": [
+      {
+        "ja": "いっしょに えいがを 見ませんか。",
+        "ruby": "いっしょに えいがを 見[み]ませんか。",
+        "vi": "Mình cùng xem phim không?"
+      },
+      {
+        "ja": "にちようび いっしょに こうえんへ 行きませんか。…ええ、いいですね。",
+        "ruby": "にちようび いっしょに こうえんへ 行[い]きませんか。…ええ、いいですね。",
+        "vi": "Chủ nhật cùng đi công viên không? … Ừ, hay đấy."
+      },
+      {
+        "ja": "コーヒーを のみませんか。",
+        "ruby": "コーヒーを のみませんか。",
+        "vi": "Anh uống cà phê không?"
+      },
+      {
+        "ja": "あした いっしょに ひるごはんを 食べませんか。…すみません、あしたは ちょっと…。",
+        "ruby": "あした いっしょに ひるごはんを 食[た]べませんか。…すみません、あしたは ちょっと…。",
+        "vi": "Mai cùng ăn trưa không? … Xin lỗi, mai thì hơi…"
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "いっしょに えいがを ＿＿。…ええ、いいですね。",
+        "answer": "みませんか",
+        "choices": [
+          "みましたか",
+          "みませんか",
+          "みません",
+          "みるませんか"
+        ],
+        "vi": "Mình cùng xem phim không? … Ừ, hay đấy."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "にちようび こうえんへ ＿＿。",
+        "answer": "いきませんか",
+        "choices": [
+          "いかませんか",
+          "いくませんか",
+          "いきませんか",
+          "いきませんでしたか"
+        ],
+        "vi": "Chủ nhật cùng đi công viên không?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "コーヒーを ＿＿。",
+        "answer": "のみませんか",
+        "choices": [
+          "のまませんか",
+          "のむませんか",
+          "のみないか",
+          "のみませんか"
+        ],
+        "vi": "Anh uống cà phê không?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あした いっしょに ひるごはんを ＿＿。…すみません、あしたは ちょっと…。",
+        "answer": "たべませんか",
+        "choices": [
+          "たべませんか",
+          "たべるませんか",
+          "たべりませんか",
+          "たべましたか"
+        ],
+        "vi": "Mai cùng ăn trưa không? … Xin lỗi, mai thì hơi…"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "こんばん いっしょに べんきょう＿＿。",
+        "answer": "しませんか",
+        "choices": [
+          "すませんか",
+          "しませんか",
+          "しりませんか",
+          "しましたか"
+        ],
+        "vi": "Tối nay cùng học bài không?"
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-mashita",
+    "point_id": "n5-mashita",
+    "level": "N5",
+    "sort": 16,
+    "title": "V ました／V ませんでした",
+    "pattern": "V ました ／ V ませんでした",
+    "meaning_vi": "đã làm V / đã không làm V",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Quá khứ của thể ます: ます → ました (đã làm), ません → ませんでした (đã không làm). Thường đi với từ chỉ quá khứ: きのう, けさ, せんしゅう, きょねん."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Tiếng Việt hay bỏ “đã” (“Hôm qua tôi đi chợ”), nhưng tiếng Nhật bắt buộc chia quá khứ: きのう いきました, không nói “きのう いきます”."
+      }
+    ],
+    "notes": [
+      "なにも ～ませんでした: đã không… gì cả."
+    ],
+    "examples": [
+      {
+        "ja": "きのう えいがを 見ました。",
+        "ruby": "きのう えいがを 見[み]ました。",
+        "vi": "Hôm qua tôi đã xem phim."
+      },
+      {
+        "ja": "けさ 何も 食べませんでした。",
+        "ruby": "けさ 何[なに]も 食[た]べませんでした。",
+        "vi": "Sáng nay tôi đã không ăn gì cả."
+      },
+      {
+        "ja": "せんしゅう 日本へ 行きました。",
+        "ruby": "せんしゅう 日本[にほん]へ 行[い]きました。",
+        "vi": "Tuần trước tôi đã đi Nhật."
+      },
+      {
+        "ja": "きのうは べんきょうしませんでした。",
+        "ruby": "きのうは べんきょうしませんでした。",
+        "vi": "Hôm qua tôi đã không học bài."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "きのう えいがを ＿＿。",
+        "answer": "みました",
+        "choices": [
+          "みました",
+          "みます",
+          "みりました",
+          "みるました"
+        ],
+        "vi": "Hôm qua tôi đã xem phim."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "けさ なにも ＿＿。",
+        "answer": "たべませんでした",
+        "choices": [
+          "たべました",
+          "たべませんでした",
+          "たべませんだった",
+          "たべないでした"
+        ],
+        "vi": "Sáng nay tôi đã không ăn gì cả."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "せんしゅう にほんへ ＿＿。",
+        "answer": "いきました",
+        "choices": [
+          "いきます",
+          "いくました",
+          "いきました",
+          "いかました"
+        ],
+        "vi": "Tuần trước tôi đã đi Nhật."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きのうは ＿＿。",
+        "answer": "べんきょうしませんでした",
+        "choices": [
+          "べんきょうしました",
+          "べんきょうしません",
+          "べんきょうすませんでした",
+          "べんきょうしませんでした"
+        ],
+        "vi": "Hôm qua tôi đã không học bài."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きのう てがみを ＿＿。",
+        "answer": "かきました",
+        "choices": [
+          "かきました",
+          "かきます",
+          "かくました",
+          "かきでした"
+        ],
+        "vi": "Hôm qua tôi đã viết thư."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-mashou",
+    "point_id": "n5-mashou",
+    "level": "N5",
+    "sort": 26,
+    "title": "V ましょう",
+    "pattern": "V ましょう／V ましょうか",
+    "meaning_vi": "Chúng ta hãy V / Mình cùng V nhé",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Rủ rê tích cực hoặc hưởng ứng lời mời: いきましょう (Đi thôi). Đáp lời mời ませんか: みませんか。…ええ、みましょう. ましょうか dùng để bàn bạc (どこで あいましょうか: gặp ở đâu nhé?) hoặc đề nghị giúp (まどを あけましょうか: Tôi mở cửa sổ nhé?)."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Khi muốn hỏi ý người nghe, ませんか mềm hơn ましょう. Cách chia: bỏ ます, thêm ましょう: やすみます → やすみましょう."
+      }
+    ],
+    "notes": [
+      "ましょうか để đề nghị giúp đỡ người khác là cách nói rất lịch sự."
+    ],
+    "examples": [
+      {
+        "ja": "すこし 休みましょう。",
+        "ruby": "すこし 休[やす]みましょう。",
+        "vi": "Nghỉ một chút đi."
+      },
+      {
+        "ja": "いっしょに かえりましょう。",
+        "ruby": "いっしょに かえりましょう。",
+        "vi": "Cùng về thôi."
+      },
+      {
+        "ja": "えいがを 見ませんか。…ええ、見ましょう。",
+        "ruby": "えいがを 見[み]ませんか。…ええ、見[み]ましょう。",
+        "vi": "Xem phim không? … Ừ, xem đi."
+      },
+      {
+        "ja": "まどを あけましょうか。",
+        "ruby": "まどを あけましょうか。",
+        "vi": "Tôi mở cửa sổ nhé?"
+      },
+      {
+        "ja": "どこで あいましょうか。…えきで あいましょう。",
+        "ruby": "どこで あいましょうか。…えきで あいましょう。",
+        "vi": "Mình gặp nhau ở đâu nhé? … Gặp ở nhà ga đi."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "すこし ＿＿。",
+        "answer": "やすみましょう",
+        "choices": [
+          "やすむましょう",
+          "やすまましょう",
+          "やすみましょう",
+          "やすみましょうた"
+        ],
+        "vi": "Nghỉ một chút đi."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "えいがを みませんか。…ええ、＿＿。",
+        "answer": "みましょう",
+        "choices": [
+          "みるましょう",
+          "みません",
+          "みりましょう",
+          "みましょう"
+        ],
+        "vi": "Xem phim không? … Ừ, xem đi."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "いっしょに ＿＿。",
+        "answer": "かえりましょう",
+        "choices": [
+          "かえりましょう",
+          "かえるましょう",
+          "かえらましょう",
+          "かえりませんでした"
+        ],
+        "vi": "Cùng về thôi."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "どこで ＿＿か。…えきで あいましょう。",
+        "answer": "あいましょう",
+        "choices": [
+          "あうましょう",
+          "あいましょう",
+          "あわましょう",
+          "あいまし"
+        ],
+        "vi": "Mình gặp nhau ở đâu nhé? … Gặp ở nhà ga đi."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "まどを ＿＿か。",
+        "answer": "あけましょう",
+        "choices": [
+          "あくましょう",
+          "あけるましょう",
+          "あけましょう",
+          "あかましょう"
+        ],
+        "vi": "Tôi mở cửa sổ nhé?"
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-masu",
+    "point_id": "n5-masu",
+    "level": "N5",
+    "sort": 14,
+    "title": "V ます",
+    "pattern": "V ます",
+    "meaning_vi": "(sẽ / thường) làm V",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Đuôi ます là dạng lịch sự của động từ, dùng cho thói quen (まいにち はたらきます: ngày nào cũng làm việc) hoặc việc sẽ làm (あした いきます: ngày mai sẽ đi). Động từ không chia theo ngôi; thời gian do từ chỉ thời gian cho biết."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Động từ luôn đứng cuối câu: “Tôi uống cà phê” → わたしは コーヒーを のみます (tôi – cà phê – uống). ます đọc gần như “mas” (âm u rất nhẹ). Việc đang làm ngay lúc nói không dùng ます mà dùng ～ています (bài sau)."
+      }
+    ],
+    "notes": [
+      "Ở N5, hầu hết câu đều dùng thể ます vì đây là dạng lịch sự an toàn nhất."
+    ],
+    "examples": [
+      {
+        "ja": "わたしは 毎日 はたらきます。",
+        "ruby": "わたしは 毎日[まいにち] はたらきます。",
+        "vi": "Ngày nào tôi cũng đi làm."
+      },
+      {
+        "ja": "あした 学校へ 行きます。",
+        "ruby": "あした 学校[がっこう]へ 行[い]きます。",
+        "vi": "Ngày mai tôi sẽ đến trường."
+      },
+      {
+        "ja": "ナムさんは よく 本を 読みます。",
+        "ruby": "ナムさんは よく 本[ほん]を 読[よ]みます。",
+        "vi": "Anh Nam hay đọc sách."
+      },
+      {
+        "ja": "こんばん テレビを 見ます。",
+        "ruby": "こんばん テレビを 見[み]ます。",
+        "vi": "Tối nay tôi sẽ xem tivi."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしは まいにち ＿＿。",
+        "answer": "はたらきます",
+        "choices": [
+          "はたらきです",
+          "はたらくます",
+          "はたらきます",
+          "はたらいます"
+        ],
+        "vi": "Ngày nào tôi cũng đi làm."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あした がっこうへ ＿＿。",
+        "answer": "いきます",
+        "choices": [
+          "いくます",
+          "いきです",
+          "いきるます",
+          "いきます"
+        ],
+        "vi": "Ngày mai tôi sẽ đến trường."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ナムさんは よく ほんを ＿＿。",
+        "answer": "よみます",
+        "choices": [
+          "よみます",
+          "よむます",
+          "よみです",
+          "よまます"
+        ],
+        "vi": "Anh Nam hay đọc sách."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "こんばん テレビを ＿＿。",
+        "answer": "みます",
+        "choices": [
+          "みるます",
+          "みます",
+          "みです",
+          "みります"
+        ],
+        "vi": "Tối nay tôi sẽ xem tivi."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "まいあさ コーヒーを ＿＿。",
+        "answer": "のみます",
+        "choices": [
+          "のむます",
+          "のみです",
+          "のみます",
+          "のまます"
+        ],
+        "vi": "Sáng nào tôi cũng uống cà phê."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-mo",
+    "point_id": "n5-mo",
+    "level": "N5",
+    "sort": 4,
+    "title": "～も",
+    "pattern": "N も …",
+    "meaning_vi": "N cũng …",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "も thay cho は khi điều nói về N giống với điều vừa nói trước đó: わたしは がくせいです。リンさんも がくせいです. Giống “cũng” trong tiếng Việt, nhưng も đứng ngay sau danh từ chứ không đứng trước động từ."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Không viết “はも”: も thay thế hẳn cho は (và cho が, を). Câu phủ định cũng dùng も: わたしも せんせいじゃありません (Tôi cũng không phải giáo viên)."
+      }
+    ],
+    "notes": [
+      "Người Việt hay đặt も theo vị trí của “cũng” (trước vị ngữ); hãy đặt ngay sau danh từ."
+    ],
+    "examples": [
+      {
+        "ja": "わたしは 学生です。ナムさんも 学生です。",
+        "ruby": "わたしは 学生[がくせい]です。ナムさんも 学生[がくせい]です。",
+        "vi": "Tôi là học sinh. Anh Nam cũng là học sinh."
+      },
+      {
+        "ja": "たなかさんは 日本人です。やまださんも 日本人です。",
+        "ruby": "たなかさんは 日本人[にほんじん]です。やまださんも 日本人[にほんじん]です。",
+        "vi": "Anh Tanaka là người Nhật. Anh Yamada cũng là người Nhật."
+      },
+      {
+        "ja": "リンさんは 先生じゃありません。わたしも 先生じゃありません。",
+        "ruby": "リンさんは 先生[せんせい]じゃありません。わたしも 先生[せんせい]じゃありません。",
+        "vi": "Chị Linh không phải giáo viên. Tôi cũng không phải giáo viên."
+      },
+      {
+        "ja": "今日も 雨です。",
+        "ruby": "今日[きょう]も 雨[あめ]です。",
+        "vi": "Hôm nay trời cũng mưa."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしは がくせいです。リンさん＿＿ がくせいです。",
+        "answer": "も",
+        "choices": [
+          "も",
+          "を",
+          "に",
+          "で"
+        ],
+        "vi": "Tôi là học sinh. Chị Linh cũng là học sinh."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "たなかさんは にほんじんです。すずきさん＿＿ にほんじんです。",
+        "answer": "も",
+        "choices": [
+          "を",
+          "も",
+          "で",
+          "へ"
+        ],
+        "vi": "Anh Tanaka là người Nhật. Anh Suzuki cũng là người Nhật."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きょう＿＿ あめです。",
+        "answer": "も",
+        "choices": [
+          "を",
+          "へ",
+          "も",
+          "と"
+        ],
+        "vi": "Hôm nay trời cũng mưa."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ナムさんは せんせいじゃありません。わたし＿＿ せんせいじゃありません。",
+        "answer": "も",
+        "choices": [
+          "を",
+          "に",
+          "で",
+          "も"
+        ],
+        "vi": "Anh Nam không phải giáo viên. Tôi cũng không phải giáo viên."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あなた＿＿ りゅうがくせいですか。",
+        "answer": "も",
+        "choices": [
+          "も",
+          "を",
+          "に",
+          "へ"
+        ],
+        "vi": "Bạn cũng là du học sinh à?"
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-mou-mada",
+    "point_id": "n5-mou-mada",
+    "level": "N5",
+    "sort": 52,
+    "title": "もう ～ました／まだ ～ていません",
+    "pattern": "もう V ました ／ まだ V て いません",
+    "meaning_vi": "Đã V rồi / Vẫn chưa V",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "もう ～ましたか: hỏi đã làm xong chưa. Trả lời: はい、もう ～ました (rồi) hoặc いいえ、まだです／まだ ～ていません (chưa)."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "“Chưa” không nói “まだ ～ませんでした” (đó là “đã không làm”); phải dùng まだ ～ていません. Người Việt hay dịch “chưa ăn” thành たべませんでした — sai nghĩa."
+      }
+    ],
+    "notes": [
+      "もう còn có nghĩa “thêm, nữa”: もう ひとつ (thêm một cái nữa)."
+    ],
+    "examples": [
+      {
+        "ja": "もう ひるごはんを 食べましたか。…はい、もう 食べました。",
+        "ruby": "もう ひるごはんを 食[た]べましたか。…はい、もう 食[た]べました。",
+        "vi": "Bạn đã ăn trưa chưa? … Rồi, tôi ăn rồi."
+      },
+      {
+        "ja": "しゅくだいは もう しましたか。…いいえ、まだです。",
+        "ruby": "しゅくだいは もう しましたか。…いいえ、まだです。",
+        "vi": "Bạn làm bài tập chưa? … Chưa."
+      },
+      {
+        "ja": "その えいがは まだ 見ていません。",
+        "ruby": "その えいがは まだ 見[み]ていません。",
+        "vi": "Tôi vẫn chưa xem bộ phim đó."
+      },
+      {
+        "ja": "リンさんは まだ 来ていません。",
+        "ruby": "リンさんは まだ 来[き]ていません。",
+        "vi": "Chị Linh vẫn chưa đến."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "＿＿ ひるごはんを たべましたか。",
+        "answer": "もう",
+        "choices": [
+          "もう",
+          "まだ",
+          "よく",
+          "あまり"
+        ],
+        "vi": "Bạn đã ăn trưa chưa?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ひるごはんを たべましたか。…いいえ、＿＿ たべていません。",
+        "answer": "まだ",
+        "choices": [
+          "もう",
+          "まだ",
+          "よく",
+          "とても"
+        ],
+        "vi": "Bạn đã ăn trưa chưa? … Chưa, tôi vẫn chưa ăn."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "その えいがは まだ ＿＿。",
+        "answer": "みていません",
+        "choices": [
+          "みません",
+          "みませんでした",
+          "みていません",
+          "みています"
+        ],
+        "vi": "Tôi vẫn chưa xem bộ phim đó."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "しゅくだいは もう しましたか。…いいえ、＿＿です。",
+        "answer": "まだ",
+        "choices": [
+          "もう",
+          "よく",
+          "すぐ",
+          "まだ"
+        ],
+        "vi": "Bạn làm bài tập chưa? … Chưa."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "リンさんは まだ ＿＿。",
+        "answer": "きていません",
+        "choices": [
+          "きていません",
+          "きません",
+          "きませんでした",
+          "きています"
+        ],
+        "vi": "Chị Linh vẫn chưa đến."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-na-adj",
+    "point_id": "n5-na-adj",
+    "level": "N5",
+    "sort": 29,
+    "title": "Tính từ な ＋ です／じゃありません",
+    "pattern": "N は Aな(bỏ な) です／じゃありません",
+    "meaning_vi": "N (thì) A / N không A",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Tính từ な (しずか, きれい, げんき, ゆうめい, べんり, にぎやか…) khi đứng cuối câu thì bỏ な: しずかです. Phủ định giống danh từ: しずかじゃありません."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "きれい, ゆうめい trông như tính từ い nhưng là tính từ な: “きれくないです” là sai, phải nói きれいじゃありません. Không nói “しずかなです”."
+      }
+    ],
+    "notes": [
+      "Tính từ な được gọi như vậy vì có な khi đứng trước danh từ (bài sau)."
+    ],
+    "examples": [
+      {
+        "ja": "この へやは しずかです。",
+        "ruby": "この へやは しずかです。",
+        "vi": "Căn phòng này yên tĩnh."
+      },
+      {
+        "ja": "やまださんは とても げんきです。",
+        "ruby": "やまださんは とても げんきです。",
+        "vi": "Anh Yamada rất khỏe."
+      },
+      {
+        "ja": "この 川は きれいじゃありません。",
+        "ruby": "この 川[かわ]は きれいじゃありません。",
+        "vi": "Con sông này không sạch."
+      },
+      {
+        "ja": "あの 大学は ゆうめいです。",
+        "ruby": "あの 大学[だいがく]は ゆうめいです。",
+        "vi": "Trường đại học kia nổi tiếng."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "この へやは ＿＿。",
+        "answer": "しずかです",
+        "choices": [
+          "しずかなです",
+          "しずかです",
+          "しずかいです",
+          "しずかだです"
+        ],
+        "vi": "Căn phòng này yên tĩnh."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "この かわは ＿＿。",
+        "answer": "きれいじゃありません",
+        "choices": [
+          "きれくないです",
+          "きれいくないです",
+          "きれいじゃありません",
+          "きれいないです"
+        ],
+        "vi": "Con sông này không sạch."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あの だいがくは ＿＿。",
+        "answer": "ゆうめいです",
+        "choices": [
+          "ゆうめいなです",
+          "ゆうめいだです",
+          "ゆうめくです",
+          "ゆうめいです"
+        ],
+        "vi": "Trường đại học kia nổi tiếng."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "この まちは あまり ＿＿。",
+        "answer": "にぎやかじゃありません",
+        "choices": [
+          "にぎやかじゃありません",
+          "にぎやかです",
+          "にぎやかくないです",
+          "にぎやかないです"
+        ],
+        "vi": "Thị trấn này không nhộn nhịp lắm."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "じてんしゃは ＿＿。",
+        "answer": "べんりです",
+        "choices": [
+          "べんりなです",
+          "べんりです",
+          "べんりいです",
+          "べんりだです"
+        ],
+        "vi": "Xe đạp tiện lợi."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-naide-kudasai",
+    "point_id": "n5-naide-kudasai",
+    "level": "N5",
+    "sort": 53,
+    "title": "Thể ない ＋ ないでください",
+    "pattern": "V ない で ください",
+    "meaning_vi": "Xin đừng V",
+    "explanation": [
+      {
+        "heading": "Cách chia thể ない",
+        "body": "Từ thể ます. Nhóm 1: đổi âm trước ます từ hàng い sang hàng あ + ない: かきます → かかない, のみます → のまない, まちます → またない; riêng い → わ: かいます → かわない. Nhóm 2: bỏ ます + ない: たべます → たべない. Nhóm 3: します → しない, きます → こない. Đặc biệt: あります → ない."
+      },
+      {
+        "heading": "Cách dùng",
+        "body": "Thể ない + でください: nhờ người nghe đừng làm gì: ここに にもつを おかないでください. Mềm hơn ～てはいけません."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Lỗi hay gặp: “かいない” (đúng: かわない), “すいない” (đúng: すわない)."
+      }
+    ],
+    "notes": [
+      "Thể ない còn là nền cho ～なければなりません và ～なくてもいいです."
+    ],
+    "examples": [
+      {
+        "ja": "ここに にもつを おかないでください。",
+        "ruby": "ここに にもつを おかないでください。",
+        "vi": "Xin đừng để hành lý ở đây."
+      },
+      {
+        "ja": "しゃしんを とらないでください。",
+        "ruby": "しゃしんを とらないでください。",
+        "vi": "Xin đừng chụp ảnh."
+      },
+      {
+        "ja": "しゅくだいを わすれないでください。",
+        "ruby": "しゅくだいを わすれないでください。",
+        "vi": "Xin đừng quên bài tập."
+      },
+      {
+        "ja": "あぶないですから、この 川で およがないでください。",
+        "ruby": "あぶないですから、この 川[かわ]で およがないでください。",
+        "vi": "Nguy hiểm nên xin đừng bơi ở con sông này."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "ここに にもつを ＿＿でください。",
+        "answer": "おかない",
+        "choices": [
+          "おきない",
+          "おかない",
+          "おくない",
+          "おかなく"
+        ],
+        "vi": "Xin đừng để hành lý ở đây."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "しゃしんを ＿＿でください。",
+        "answer": "とらない",
+        "choices": [
+          "とりない",
+          "とるない",
+          "とらない",
+          "とない"
+        ],
+        "vi": "Xin đừng chụp ảnh."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "しゅくだいを ＿＿でください。",
+        "answer": "わすれない",
+        "choices": [
+          "わすらない",
+          "わすれらない",
+          "わするない",
+          "わすれない"
+        ],
+        "vi": "Xin đừng quên bài tập."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "この かわで ＿＿でください。",
+        "answer": "およがない",
+        "choices": [
+          "およがない",
+          "およぎない",
+          "およかない",
+          "およくない"
+        ],
+        "vi": "Xin đừng bơi ở con sông này."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "この へやで たばこを ＿＿でください。",
+        "answer": "すわない",
+        "choices": [
+          "すあない",
+          "すわない",
+          "すいない",
+          "すかない"
+        ],
+        "vi": "Xin đừng hút thuốc trong phòng này."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "まだ ＿＿でください。",
+        "answer": "かえらない",
+        "choices": [
+          "かえない",
+          "かえりない",
+          "かえらない",
+          "かえるない"
+        ],
+        "vi": "Xin đừng về vội."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-nakereba",
+    "point_id": "n5-nakereba",
+    "level": "N5",
+    "sort": 54,
+    "title": "V なければなりません",
+    "pattern": "V(thể ない, bỏ い) ければ なりません",
+    "meaning_vi": "Phải V",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Thể ない bỏ い + ければなりません: いかない → いかなければなりません. Diễn tả nghĩa vụ, việc bắt buộc phải làm."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Cách nói tương đương: ～なければいけません. Lỗi hay gặp: giữ nguyên い (“いかないければ”). Câu dài nên luyện đọc nhiều lần cho quen."
+      }
+    ],
+    "notes": [
+      "Câu hỏi: ～なければなりませんか. Trả lời “không cần”: ～なくてもいいです (bài sau)."
+    ],
+    "examples": [
+      {
+        "ja": "あしたは 六時に おきなければなりません。",
+        "ruby": "あしたは 六時[ろくじ]に おきなければなりません。",
+        "vi": "Ngày mai tôi phải dậy lúc 6 giờ."
+      },
+      {
+        "ja": "くすりを のまなければなりません。",
+        "ruby": "くすりを のまなければなりません。",
+        "vi": "Tôi phải uống thuốc."
+      },
+      {
+        "ja": "今日は しゅくだいを しなければなりません。",
+        "ruby": "今日[きょう]は しゅくだいを しなければなりません。",
+        "vi": "Hôm nay tôi phải làm bài tập."
+      },
+      {
+        "ja": "毎日 日本語を べんきょうしなければなりません。",
+        "ruby": "毎日[まいにち] 日本語[にほんご]を べんきょうしなければなりません。",
+        "vi": "Ngày nào tôi cũng phải học tiếng Nhật."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "あしたは ろくじに ＿＿なければなりません。",
+        "answer": "おき",
+        "choices": [
+          "おか",
+          "おく",
+          "おき",
+          "おきな"
+        ],
+        "vi": "Ngày mai tôi phải dậy lúc 6 giờ."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "くすりを ＿＿なければなりません。",
+        "answer": "のま",
+        "choices": [
+          "のみ",
+          "のむ",
+          "のめ",
+          "のま"
+        ],
+        "vi": "Tôi phải uống thuốc."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きょうは しゅくだいを ＿＿なければなりません。",
+        "answer": "し",
+        "choices": [
+          "し",
+          "す",
+          "さ",
+          "こ"
+        ],
+        "vi": "Hôm nay tôi phải làm bài tập."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "まいにち にほんごを べんきょうしなければ＿＿。",
+        "answer": "なりません",
+        "choices": [
+          "なります",
+          "なりません",
+          "いいです",
+          "ください"
+        ],
+        "vi": "Ngày nào tôi cũng phải học tiếng Nhật."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あした ほんを としょかんに ＿＿なければなりません。",
+        "answer": "かえさ",
+        "choices": [
+          "かえし",
+          "かえす",
+          "かえさ",
+          "かえせ"
+        ],
+        "vi": "Ngày mai tôi phải trả sách cho thư viện."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-nakutemo-ii",
+    "point_id": "n5-nakutemo-ii",
+    "level": "N5",
+    "sort": 55,
+    "title": "V なくてもいいです",
+    "pattern": "V(thể ない, bỏ い) くて も いいです",
+    "meaning_vi": "Không cần V cũng được",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Thể ない bỏ い + くてもいいです: việc không bắt buộc. Hay dùng để trả lời ～なければなりませんか: いいえ、～なくてもいいです."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Phân biệt: ～なくてもいいです (không cần làm) khác ～てはいけません (không được làm). Người Việt dễ nhầm vì cả hai đều có chữ “không”."
+      }
+    ],
+    "notes": [
+      "Đối lập: ～なければなりません (phải) ↔ ～なくてもいいです (không cần)."
+    ],
+    "examples": [
+      {
+        "ja": "あしたは 学校へ 行かなくてもいいです。",
+        "ruby": "あしたは 学校[がっこう]へ 行[い]かなくてもいいです。",
+        "vi": "Ngày mai không cần đến trường cũng được."
+      },
+      {
+        "ja": "ここでは くつを ぬがなくてもいいです。",
+        "ruby": "ここでは くつを ぬがなくてもいいです。",
+        "vi": "Ở đây không cần cởi giày cũng được."
+      },
+      {
+        "ja": "この 本は 今日 かえさなくてもいいです。",
+        "ruby": "この 本[ほん]は 今日[きょう] かえさなくてもいいです。",
+        "vi": "Quyển sách này không cần trả hôm nay cũng được."
+      },
+      {
+        "ja": "名前を 書かなければなりませんか。…いいえ、書かなくてもいいです。",
+        "ruby": "名前[なまえ]を 書[か]かなければなりませんか。…いいえ、書[か]かなくてもいいです。",
+        "vi": "Có phải viết tên không? … Không, không cần viết cũng được."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "あしたは がっこうへ ＿＿なくてもいいです。",
+        "answer": "いか",
+        "choices": [
+          "いき",
+          "いく",
+          "いけ",
+          "いか"
+        ],
+        "vi": "Ngày mai không cần đến trường cũng được."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ここでは くつを ＿＿なくてもいいです。",
+        "answer": "ぬが",
+        "choices": [
+          "ぬが",
+          "ぬぎ",
+          "ぬぐ",
+          "ぬか"
+        ],
+        "vi": "Ở đây không cần cởi giày cũng được."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "この ほんは きょう ＿＿なくてもいいです。",
+        "answer": "かえさ",
+        "choices": [
+          "かえし",
+          "かえさ",
+          "かえす",
+          "かえせ"
+        ],
+        "vi": "Quyển sách này không cần trả hôm nay cũng được."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "なまえを かかなければなりませんか。…いいえ、かかなくても＿＿。",
+        "answer": "いいです",
+        "choices": [
+          "いけません",
+          "なりません",
+          "いいです",
+          "ください"
+        ],
+        "vi": "Có phải viết tên không? … Không, không cần viết cũng được."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あしたは はやく ＿＿なくてもいいです。",
+        "answer": "おき",
+        "choices": [
+          "おか",
+          "おく",
+          "おけ",
+          "おき"
+        ],
+        "vi": "Ngày mai không cần dậy sớm cũng được."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-nan-dare-itsu",
+    "point_id": "n5-nan-dare-itsu",
+    "level": "N5",
+    "sort": 10,
+    "title": "なん／だれ／どなた／いつ",
+    "pattern": "N は なん／だれ／いつ ですか",
+    "meaning_vi": "N là cái gì / ai / khi nào?",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Từ để hỏi đứng đúng chỗ của thông tin cần hỏi, cuối câu vẫn là ですか. なん／なに: cái gì; だれ: ai; どなた: ai (lịch sự); いつ: khi nào. なん dùng trước です, の và từ đếm; なに dùng trước を, が."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Trật tự câu giữ nguyên như tiếng Việt: “Đây là cái gì?” → これは なんですか. Câu hỏi có từ để hỏi không trả lời bằng はい／いいえ."
+      }
+    ],
+    "notes": [
+      "Từ để hỏi làm chủ ngữ thì dùng が, không dùng は: だれが せんせいですか.",
+      "なんの ほん = sách về cái gì; だれの ほん = sách của ai."
+    ],
+    "examples": [
+      {
+        "ja": "これは 何ですか。",
+        "ruby": "これは 何[なん]ですか。",
+        "vi": "Cái này là gì?"
+      },
+      {
+        "ja": "あの 人は だれですか。",
+        "ruby": "あの 人[ひと]は だれですか。",
+        "vi": "Người kia là ai?"
+      },
+      {
+        "ja": "テストは いつですか。",
+        "ruby": "テストは いつですか。",
+        "vi": "Bài kiểm tra là khi nào?"
+      },
+      {
+        "ja": "あの かたは どなたですか。",
+        "ruby": "あの かたは どなたですか。",
+        "vi": "Vị kia là ai ạ?"
+      },
+      {
+        "ja": "それは 何の 本ですか。",
+        "ruby": "それは 何[なん]の 本[ほん]ですか。",
+        "vi": "Đó là sách về gì?"
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "これは ＿＿ですか。…ペンです。",
+        "answer": "なん",
+        "choices": [
+          "だれ",
+          "いつ",
+          "なん",
+          "どこ"
+        ],
+        "vi": "Cái này là gì? … Là cây bút."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あの ひとは ＿＿ですか。…たなかさんです。",
+        "answer": "だれ",
+        "choices": [
+          "なん",
+          "いつ",
+          "どれ",
+          "だれ"
+        ],
+        "vi": "Người kia là ai? … Là anh Tanaka."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "テストは ＿＿ですか。…あしたです。",
+        "answer": "いつ",
+        "choices": [
+          "いつ",
+          "だれ",
+          "なん",
+          "どれ"
+        ],
+        "vi": "Bài kiểm tra là khi nào? … Ngày mai."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "それは ＿＿の ほんですか。…にほんごの ほんです。",
+        "answer": "なん",
+        "choices": [
+          "どれ",
+          "なん",
+          "どの",
+          "どう"
+        ],
+        "vi": "Đó là sách về gì? … Sách tiếng Nhật."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あの かたは ＿＿ですか。…やまだせんせいです。",
+        "answer": "どなた",
+        "choices": [
+          "なん",
+          "いつ",
+          "どなた",
+          "どれ"
+        ],
+        "vi": "Vị kia là ai ạ? … Là thầy Yamada."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-naru",
+    "point_id": "n5-naru",
+    "level": "N5",
+    "sort": 64,
+    "title": "～く／～に なります",
+    "pattern": "Aい(bỏ い) く なります ／ Aな・N に なります",
+    "meaning_vi": "Trở nên / Trở thành",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Diễn tả sự thay đổi: tính từ い bỏ い + く なります (さむく なります: trở lạnh); tính từ な và danh từ + に なります (げんきに なります: khỏe lên; せんせいに なります: trở thành giáo viên)."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Lỗi hay gặp: “さむいに なります”, “げんきく なります”. Tiếng Việt “trời trở lạnh rồi” → さむく なりましたね."
+      }
+    ],
+    "notes": [
+      "Muốn trở thành gì: ～に なりたいです."
+    ],
+    "examples": [
+      {
+        "ja": "十二月に なりました。さむく なりましたね。",
+        "ruby": "十二月[じゅうにがつ]に なりました。さむく なりましたね。",
+        "vi": "Đã sang tháng 12. Trời trở lạnh rồi nhỉ."
+      },
+      {
+        "ja": "くすりを のみましたから、げんきに なりました。",
+        "ruby": "くすりを のみましたから、げんきに なりました。",
+        "vi": "Vì đã uống thuốc nên tôi khỏe lại rồi."
+      },
+      {
+        "ja": "わたしは 先生に なりたいです。",
+        "ruby": "わたしは 先生[せんせい]に なりたいです。",
+        "vi": "Tôi muốn trở thành giáo viên."
+      },
+      {
+        "ja": "日本語が じょうずに なりました。",
+        "ruby": "日本語[にほんご]が じょうずに なりました。",
+        "vi": "Tiếng Nhật của bạn đã giỏi lên rồi."
+      },
+      {
+        "ja": "へやが きれいに なりました。",
+        "ruby": "へやが きれいに なりました。",
+        "vi": "Căn phòng đã sạch sẽ."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "さむ＿＿ なりましたね。",
+        "answer": "く",
+        "choices": [
+          "く",
+          "い",
+          "に",
+          "な"
+        ],
+        "vi": "Trời trở lạnh rồi nhỉ."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "くすりを のみましたから、げんき＿＿ なりました。",
+        "answer": "に",
+        "choices": [
+          "く",
+          "に",
+          "な",
+          "が"
+        ],
+        "vi": "Vì đã uống thuốc nên tôi khỏe lại rồi."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしは せんせい＿＿ なりたいです。",
+        "answer": "に",
+        "choices": [
+          "く",
+          "な",
+          "に",
+          "を"
+        ],
+        "vi": "Tôi muốn trở thành giáo viên."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "にほんごが じょうず＿＿ なりました。",
+        "answer": "に",
+        "choices": [
+          "く",
+          "な",
+          "を",
+          "に"
+        ],
+        "vi": "Tiếng Nhật của bạn đã giỏi lên rồi."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "へやが ＿＿ なりました。",
+        "answer": "きれいに",
+        "choices": [
+          "きれいに",
+          "きれく",
+          "きれいく",
+          "きれいな"
+        ],
+        "vi": "Căn phòng đã sạch sẽ."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あつ＿＿ なりました。",
+        "answer": "く",
+        "choices": [
+          "い",
+          "く",
+          "に",
+          "な"
+        ],
+        "vi": "Trời đã nóng lên."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-ne-yo",
+    "point_id": "n5-ne-yo",
+    "level": "N5",
+    "sort": 11,
+    "title": "～ね／～よ",
+    "pattern": "Câu ＋ ね／よ",
+    "meaning_vi": "…nhỉ / …đấy",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Trợ từ cuối câu. ね: tìm sự đồng tình hoặc xác nhận, khi người nói nghĩ người nghe cũng biết, cũng thấy vậy (giống “nhỉ”, “nhé”). よ: báo cho người nghe điều họ chưa biết, nhấn mạnh (giống “đấy”, “cơ”)."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Câu có ね thường được đáp bằng そうですね. Dùng よ quá nhiều với người trên có thể nghe như dạy đời. Không dùng ね khi đưa thông tin mới cho người nghe."
+      }
+    ],
+    "notes": [
+      "ね và よ đứng sau です／ます: いいですね, あしたですよ."
+    ],
+    "examples": [
+      {
+        "ja": "今日は いい 天気ですね。",
+        "ruby": "今日[きょう]は いい 天気[てんき]ですね。",
+        "vi": "Hôm nay trời đẹp nhỉ."
+      },
+      {
+        "ja": "この 本は 千円ですよ。",
+        "ruby": "この 本[ほん]は 千円[せんえん]ですよ。",
+        "vi": "Quyển sách này 1.000 yên đấy."
+      },
+      {
+        "ja": "あしたは 休みですよ。",
+        "ruby": "あしたは 休[やす]みですよ。",
+        "vi": "Ngày mai là ngày nghỉ đấy."
+      },
+      {
+        "ja": "リンさんは 学生ですね。",
+        "ruby": "リンさんは 学生[がくせい]ですね。",
+        "vi": "Chị Linh là sinh viên nhỉ (tôi xác nhận lại)."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "きょうは いい てんきです＿＿。…そうですね。",
+        "answer": "ね",
+        "choices": [
+          "を",
+          "に",
+          "は",
+          "ね"
+        ],
+        "vi": "Hôm nay trời đẹp nhỉ. … Đúng vậy nhỉ."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あしたは テストですか。…いいえ、あさってです＿＿。",
+        "answer": "よ",
+        "choices": [
+          "よ",
+          "を",
+          "に",
+          "が"
+        ],
+        "vi": "Ngày mai có kiểm tra à? … Không, ngày kia cơ."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "すみません、えきは どこですか。…あそこです＿＿。",
+        "answer": "よ",
+        "choices": [
+          "を",
+          "よ",
+          "が",
+          "で"
+        ],
+        "vi": "Xin lỗi, nhà ga ở đâu ạ? … Ở đằng kia đấy."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "リンさんは ベトナムじんです＿＿。…はい、そうです。",
+        "answer": "ね",
+        "choices": [
+          "を",
+          "で",
+          "ね",
+          "へ"
+        ],
+        "vi": "Chị Linh là người Việt Nam nhỉ? … Vâng, đúng vậy."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-ni-arimasu",
+    "point_id": "n5-ni-arimasu",
+    "level": "N5",
+    "sort": 37,
+    "title": "Nơi に N が あります／N は nơi に あります",
+    "pattern": "Nơi に N が あります ／ N は nơi に あります",
+    "meaning_vi": "Ở (nơi) có N / N ở (nơi)",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "に chỉ nơi tồn tại. Hai mẫu: (1) へやに テレビが あります: giới thiệu ở đâu có cái gì (thông tin mới là vật). (2) テレビは へやに あります: nói một vật đã biết đang ở đâu (thông tin mới là nơi). Mẫu (2) có thể nói gọn: テレビは へやです."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Không dùng で với あります／います khi nói vị trí: “へやで テレビが あります” là sai. で chỉ nơi xảy ra hành động."
+      }
+    ],
+    "notes": [
+      "Hỏi vị trí: ～は どこに ありますか／いますか."
+    ],
+    "examples": [
+      {
+        "ja": "へやに テレビが あります。",
+        "ruby": "へやに テレビが あります。",
+        "vi": "Trong phòng có cái tivi."
+      },
+      {
+        "ja": "テレビは へやに あります。",
+        "ruby": "テレビは へやに あります。",
+        "vi": "Cái tivi ở trong phòng."
+      },
+      {
+        "ja": "えきの 前に ぎんこうが あります。",
+        "ruby": "えきの 前[まえ]に ぎんこうが あります。",
+        "vi": "Trước nhà ga có ngân hàng."
+      },
+      {
+        "ja": "リンさんは 今 としょかんに います。",
+        "ruby": "リンさんは 今[いま] としょかんに います。",
+        "vi": "Chị Linh bây giờ đang ở thư viện."
+      },
+      {
+        "ja": "ナムさんは どこに いますか。…きょうしつに います。",
+        "ruby": "ナムさんは どこに いますか。…きょうしつに います。",
+        "vi": "Anh Nam ở đâu? … Ở phòng học."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "へや＿＿ テレビが あります。",
+        "answer": "に",
+        "choices": [
+          "で",
+          "に",
+          "を",
+          "へ"
+        ],
+        "vi": "Trong phòng có cái tivi."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "えきの まえ＿＿ ぎんこうが あります。",
+        "answer": "に",
+        "choices": [
+          "で",
+          "を",
+          "に",
+          "が"
+        ],
+        "vi": "Trước nhà ga có ngân hàng."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "リンさんは いま としょかん＿＿ います。",
+        "answer": "に",
+        "choices": [
+          "で",
+          "を",
+          "へ",
+          "に"
+        ],
+        "vi": "Chị Linh bây giờ đang ở thư viện."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ナムさんは どこ＿＿ いますか。",
+        "answer": "に",
+        "choices": [
+          "に",
+          "で",
+          "を",
+          "へ"
+        ],
+        "vi": "Anh Nam ở đâu?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "テレビ＿＿ へやに あります。",
+        "answer": "は",
+        "choices": [
+          "を",
+          "は",
+          "で",
+          "に"
+        ],
+        "vi": "Cái tivi ở trong phòng."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-ni-iku-purpose",
+    "point_id": "n5-ni-iku-purpose",
+    "level": "N5",
+    "sort": 44,
+    "title": "V(bỏ ます)／N に 行きます",
+    "pattern": "Nơi へ V(bỏ ます) に 行きます／来ます／かえります",
+    "meaning_vi": "Đi (đến nơi) để làm V",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Chỉ mục đích của việc đi/đến/về: bỏ ます + に + いきます: デパートへ くつを かいに いきます (đi bách hóa để mua giày). Với danh từ chỉ hành động (かいもの, さんぽ, べんきょう…) thêm に trực tiếp: さんぽに いきます."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Trật tự: nơi へ – (tân ngữ を) – V(bỏ ます)に – いきます. Không dùng thể từ điển: “かうに いきます” là sai."
+      }
+    ],
+    "notes": [
+      "Tiếng Việt “đi mua giày” → くつを かいに いきます."
+    ],
+    "examples": [
+      {
+        "ja": "デパートへ くつを かいに 行きます。",
+        "ruby": "デパートへ くつを かいに 行[い]きます。",
+        "vi": "Tôi đi bách hóa để mua giày."
+      },
+      {
+        "ja": "日本へ 日本語を べんきょうしに 来ました。",
+        "ruby": "日本[にほん]へ 日本語[にほんご]を べんきょうしに 来[き]ました。",
+        "vi": "Tôi đã đến Nhật để học tiếng Nhật."
+      },
+      {
+        "ja": "いっしょに ひるごはんを 食べに 行きませんか。",
+        "ruby": "いっしょに ひるごはんを 食[た]べに 行[い]きませんか。",
+        "vi": "Cùng đi ăn trưa không?"
+      },
+      {
+        "ja": "こうえんへ さんぽに 行きます。",
+        "ruby": "こうえんへ さんぽに 行[い]きます。",
+        "vi": "Tôi đi dạo ở công viên."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "デパートへ くつを ＿＿に いきます。",
+        "answer": "かい",
+        "choices": [
+          "かい",
+          "かう",
+          "かって",
+          "かいます"
+        ],
+        "vi": "Tôi đi bách hóa để mua giày."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "にほんへ にほんごを べんきょうし＿＿ きました。",
+        "answer": "に",
+        "choices": [
+          "を",
+          "に",
+          "で",
+          "と"
+        ],
+        "vi": "Tôi đã đến Nhật để học tiếng Nhật."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "いっしょに ひるごはんを ＿＿に いきませんか。",
+        "answer": "たべ",
+        "choices": [
+          "たべる",
+          "たべて",
+          "たべ",
+          "たべます"
+        ],
+        "vi": "Cùng đi ăn trưa không?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "こうえんへ さんぽ＿＿ いきます。",
+        "answer": "に",
+        "choices": [
+          "を",
+          "で",
+          "と",
+          "に"
+        ],
+        "vi": "Tôi đi dạo ở công viên."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "としょかんへ ほんを ＿＿に いきます。",
+        "answer": "かえし",
+        "choices": [
+          "かえし",
+          "かえす",
+          "かえして",
+          "かえしました"
+        ],
+        "vi": "Tôi đến thư viện để trả sách."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-ni-target",
+    "point_id": "n5-ni-target",
+    "level": "N5",
+    "sort": 24,
+    "title": "N(người) に V",
+    "pattern": "N(người) に V",
+    "meaning_vi": "làm V cho / với N",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "に sau danh từ chỉ người cho biết đối tượng nhận hành động: ははに でんわします (gọi điện cho mẹ), リンさんに ほんを かします (cho Linh mượn sách), ともだちに あいます (gặp bạn). Với ならいます, かります, に chỉ người mà mình học/mượn từ đó: せんせいに ならいます."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "あいます (gặp) dùng に, không dùng を: “ともだちを あいます” là lỗi rất hay gặp của người Việt, vì tiếng Việt nói “gặp bạn” không có giới từ."
+      }
+    ],
+    "notes": [
+      "Cùng một câu có thể có cả に (người) và を (vật): リンさんに ほんを かします."
+    ],
+    "examples": [
+      {
+        "ja": "まいばん 母に 電話します。",
+        "ruby": "まいばん 母[はは]に 電話[でんわ]します。",
+        "vi": "Tối nào tôi cũng gọi điện cho mẹ."
+      },
+      {
+        "ja": "あした えきで 友だちに あいます。",
+        "ruby": "あした えきで 友[とも]だちに あいます。",
+        "vi": "Ngày mai tôi gặp bạn ở nhà ga."
+      },
+      {
+        "ja": "リンさんに 本を かしました。",
+        "ruby": "リンさんに 本[ほん]を かしました。",
+        "vi": "Tôi đã cho chị Linh mượn sách."
+      },
+      {
+        "ja": "たなかさんに 日本語を ならいます。",
+        "ruby": "たなかさんに 日本語[にほんご]を ならいます。",
+        "vi": "Tôi học tiếng Nhật với anh Tanaka."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "まいばん はは＿＿ でんわします。",
+        "answer": "に",
+        "choices": [
+          "に",
+          "を",
+          "で",
+          "の"
+        ],
+        "vi": "Tối nào tôi cũng gọi điện cho mẹ."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あした えきで ともだち＿＿ あいます。",
+        "answer": "に",
+        "choices": [
+          "を",
+          "に",
+          "で",
+          "の"
+        ],
+        "vi": "Ngày mai tôi gặp bạn ở nhà ga."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "リンさん＿＿ ほんを かしました。",
+        "answer": "に",
+        "choices": [
+          "を",
+          "で",
+          "に",
+          "から"
+        ],
+        "vi": "Tôi đã cho chị Linh mượn sách."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "たなかさん＿＿ にほんごを ならいます。",
+        "answer": "に",
+        "choices": [
+          "を",
+          "で",
+          "へ",
+          "に"
+        ],
+        "vi": "Tôi học tiếng Nhật với anh Tanaka."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "せんせい＿＿ しつもんします。",
+        "answer": "に",
+        "choices": [
+          "に",
+          "を",
+          "で",
+          "の"
+        ],
+        "vi": "Tôi đặt câu hỏi cho thầy giáo."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-ni-time",
+    "point_id": "n5-ni-time",
+    "level": "N5",
+    "sort": 17,
+    "title": "N(thời gian) に",
+    "pattern": "N(thời điểm) に V",
+    "meaning_vi": "vào lúc / vào (thời điểm) N",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "に đặt sau thời điểm cụ thể có con số: ろくじに (lúc 6 giờ), はちがつに (vào tháng 8), và sau thứ trong tuần: どようびに. Từ chỉ thời gian tương đối như きょう, あした, まいにち, いま, けさ thì KHÔNG dùng に."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Lỗi hay gặp: “あしたに いきます” là sai. Tiếng Việt có thể bỏ “vào lúc”, nhưng tiếng Nhật bắt buộc có に sau giờ cụ thể."
+      }
+    ],
+    "notes": [
+      "Hỏi “mấy giờ”: なんじに ～ますか."
+    ],
+    "examples": [
+      {
+        "ja": "まいあさ 六時に おきます。",
+        "ruby": "まいあさ 六時[ろくじ]に おきます。",
+        "vi": "Sáng nào tôi cũng dậy lúc 6 giờ."
+      },
+      {
+        "ja": "よる 十一時に ねます。",
+        "ruby": "よる 十一時[じゅういちじ]に ねます。",
+        "vi": "Tôi đi ngủ lúc 11 giờ đêm."
+      },
+      {
+        "ja": "八月に 日本へ 行きます。",
+        "ruby": "八月[はちがつ]に 日本[にほん]へ 行[い]きます。",
+        "vi": "Tháng 8 tôi sẽ đi Nhật."
+      },
+      {
+        "ja": "どようびに 友だちと あそびます。",
+        "ruby": "どようびに 友[とも]だちと あそびます。",
+        "vi": "Thứ Bảy tôi đi chơi với bạn."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "まいあさ ろくじ＿＿ おきます。",
+        "answer": "に",
+        "choices": [
+          "を",
+          "に",
+          "で",
+          "へ"
+        ],
+        "vi": "Sáng nào tôi cũng dậy lúc 6 giờ."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "よる じゅういちじ＿＿ ねます。",
+        "answer": "に",
+        "choices": [
+          "を",
+          "で",
+          "に",
+          "が"
+        ],
+        "vi": "Tôi đi ngủ lúc 11 giờ đêm."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "はちがつ＿＿ にほんへ いきます。",
+        "answer": "に",
+        "choices": [
+          "を",
+          "で",
+          "が",
+          "に"
+        ],
+        "vi": "Tháng 8 tôi sẽ đi Nhật."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "なんじ＿＿ ねますか。",
+        "answer": "に",
+        "choices": [
+          "に",
+          "を",
+          "で",
+          "へ"
+        ],
+        "vi": "Bạn đi ngủ lúc mấy giờ?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "どようび＿＿ ともだちと あそびます。",
+        "answer": "に",
+        "choices": [
+          "を",
+          "に",
+          "が",
+          "へ"
+        ],
+        "vi": "Thứ Bảy tôi đi chơi với bạn."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-no",
+    "point_id": "n5-no",
+    "level": "N5",
+    "sort": 5,
+    "title": "～の～",
+    "pattern": "N1 の N2",
+    "meaning_vi": "N2 của N1 / N2 (thuộc về) N1",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "の nối hai danh từ, N1 bổ nghĩa cho N2: sở hữu (わたしの なまえ: tên của tôi), lĩnh vực (にほんごの せんせい: giáo viên tiếng Nhật), nơi thuộc về (だいがくの せんせい: giảng viên đại học)…"
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Trật tự ngược với tiếng Việt: “tên của tôi” thành わたしの なまえ (tôi – của – tên). Danh từ chính luôn đứng SAU の. Người Việt hay nói ngược thành “なまえの わたし”."
+      }
+    ],
+    "notes": [
+      "Khi đã rõ danh từ, có thể lược: それは わたしのです (Cái đó là của tôi)."
+    ],
+    "examples": [
+      {
+        "ja": "リンさんは 日本語の 先生です。",
+        "ruby": "リンさんは 日本語[にほんご]の 先生[せんせい]です。",
+        "vi": "Chị Linh là giáo viên tiếng Nhật."
+      },
+      {
+        "ja": "わたしの 名前は ナムです。",
+        "ruby": "わたしの 名前[なまえ]は ナムです。",
+        "vi": "Tên tôi là Nam."
+      },
+      {
+        "ja": "たなかさんは わたしの 友だちです。",
+        "ruby": "たなかさんは わたしの 友[とも]だちです。",
+        "vi": "Anh Tanaka là bạn của tôi."
+      },
+      {
+        "ja": "やまださんは 大学の 先生です。",
+        "ruby": "やまださんは 大学[だいがく]の 先生[せんせい]です。",
+        "vi": "Ông Yamada là giảng viên đại học."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "わたし＿＿ なまえは ナムです。",
+        "answer": "の",
+        "choices": [
+          "は",
+          "の",
+          "を",
+          "も"
+        ],
+        "vi": "Tên tôi là Nam."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "リンさんは にほんご＿＿ せんせいです。",
+        "answer": "の",
+        "choices": [
+          "と",
+          "を",
+          "の",
+          "で"
+        ],
+        "vi": "Chị Linh là giáo viên tiếng Nhật."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "たなかさんは わたし＿＿ ともだちです。",
+        "answer": "の",
+        "choices": [
+          "を",
+          "に",
+          "へ",
+          "の"
+        ],
+        "vi": "Anh Tanaka là bạn của tôi."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あなた＿＿ かさですか。",
+        "answer": "の",
+        "choices": [
+          "の",
+          "で",
+          "を",
+          "に"
+        ],
+        "vi": "Đây là ô của bạn à?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "やまださんは だいがく＿＿ せんせいです。",
+        "answer": "の",
+        "choices": [
+          "を",
+          "の",
+          "に",
+          "へ"
+        ],
+        "vi": "Ông Yamada là giảng viên đại học."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-shumi-koto",
+    "point_id": "n5-shumi-koto",
+    "level": "N5",
+    "sort": 57,
+    "title": "しゅみは ～ことです",
+    "pattern": "しゅみは V(thể từ điển) ことです",
+    "meaning_vi": "Sở thích (của tôi) là V",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Thêm こと sau thể từ điển để biến động từ thành danh từ “việc V”: しゅみは ほんを よむことです (Sở thích của tôi là đọc sách). Có thể nói ngắn bằng danh từ: しゅみは おんがくです."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Không nói “しゅみは ほんを よみます”: sau ～は ～です phải là danh từ, nên cần こと. Hỏi: しゅみは なんですか."
+      }
+    ],
+    "notes": [
+      "しゅみ (sở thích) rất thông dụng khi tự giới thiệu, dù không có trong danh sách từ N5 của dự án."
+    ],
+    "examples": [
+      {
+        "ja": "わたしの しゅみは 本を 読むことです。",
+        "ruby": "わたしの しゅみは 本[ほん]を 読[よ]むことです。",
+        "vi": "Sở thích của tôi là đọc sách."
+      },
+      {
+        "ja": "リンさんの しゅみは うたを うたうことです。",
+        "ruby": "リンさんの しゅみは うたを うたうことです。",
+        "vi": "Sở thích của chị Linh là ca hát."
+      },
+      {
+        "ja": "父の しゅみは しゃしんを とることです。",
+        "ruby": "父[ちち]の しゅみは しゃしんを とることです。",
+        "vi": "Sở thích của bố tôi là chụp ảnh."
+      },
+      {
+        "ja": "しゅみは 何ですか。…りょうりを つくることです。",
+        "ruby": "しゅみは 何[なん]ですか。…りょうりを つくることです。",
+        "vi": "Sở thích của bạn là gì? … Là nấu ăn."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしの しゅみは ほんを ＿＿ことです。",
+        "answer": "よむ",
+        "choices": [
+          "よみ",
+          "よむ",
+          "よんで",
+          "よみます"
+        ],
+        "vi": "Sở thích của tôi là đọc sách."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "リンさんの しゅみは うたを ＿＿ことです。",
+        "answer": "うたう",
+        "choices": [
+          "うたい",
+          "うたって",
+          "うたう",
+          "うたいます"
+        ],
+        "vi": "Sở thích của chị Linh là ca hát."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ちちの しゅみは しゃしんを ＿＿ことです。",
+        "answer": "とる",
+        "choices": [
+          "とり",
+          "とって",
+          "とります",
+          "とる"
+        ],
+        "vi": "Sở thích của bố tôi là chụp ảnh."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "しゅみは りょうりを つくる＿＿です。",
+        "answer": "こと",
+        "choices": [
+          "こと",
+          "を",
+          "が",
+          "に"
+        ],
+        "vi": "Sở thích của tôi là nấu ăn."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしの しゅみは えいがを ＿＿ことです。",
+        "answer": "みる",
+        "choices": [
+          "み",
+          "みる",
+          "みて",
+          "みます"
+        ],
+        "vi": "Sở thích của tôi là xem phim."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-ta-hou-ga-ii",
+    "point_id": "n5-ta-hou-ga-ii",
+    "level": "N5",
+    "sort": 61,
+    "title": "V たほうが いいです",
+    "pattern": "V(thể た) ほうが いいです ／ V(thể ない) ほうが いいです",
+    "meaning_vi": "Nên V / Không nên V",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Thể た + ほうが いいです: khuyên nên làm: くすりを のんだ ほうが いいです. Khuyên không nên: thể ない + ほうが いいです: よる ひとりで でかけない ほうが いいです."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Dù dùng thể た, câu không mang nghĩa quá khứ. Đây là lời khuyên khá trực tiếp; với người trên nên tránh."
+      }
+    ],
+    "notes": [
+      "Thường thêm よ ở cuối để nghe thân thiện: はやく ねた ほうが いいですよ."
+    ],
+    "examples": [
+      {
+        "ja": "かぜですか。今日は はやく ねた ほうが いいですよ。",
+        "ruby": "かぜですか。今日[きょう]は はやく ねた ほうが いいですよ。",
+        "vi": "Bạn bị cảm à? Hôm nay nên đi ngủ sớm đấy."
+      },
+      {
+        "ja": "くすりを のんだ ほうが いいです。",
+        "ruby": "くすりを のんだ ほうが いいです。",
+        "vi": "Bạn nên uống thuốc."
+      },
+      {
+        "ja": "あぶないですから、よる 一人で 出かけない ほうが いいです。",
+        "ruby": "あぶないですから、よる 一人[ひとり]で 出[で]かけない ほうが いいです。",
+        "vi": "Nguy hiểm nên buổi tối không nên ra ngoài một mình."
+      },
+      {
+        "ja": "雨ですから、タクシーで 行った ほうが いいです。",
+        "ruby": "雨[あめ]ですから、タクシーで 行[い]った ほうが いいです。",
+        "vi": "Trời mưa nên đi taxi thì hơn."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "きょうは はやく ＿＿ ほうが いいですよ。",
+        "answer": "ねた",
+        "choices": [
+          "ねて",
+          "ねた",
+          "ねます",
+          "ねたい"
+        ],
+        "vi": "Hôm nay nên đi ngủ sớm đấy."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "くすりを ＿＿ ほうが いいです。",
+        "answer": "のんだ",
+        "choices": [
+          "のんで",
+          "のみます",
+          "のんだ",
+          "のみた"
+        ],
+        "vi": "Bạn nên uống thuốc."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "よる ひとりで ＿＿ ほうが いいです。",
+        "answer": "でかけない",
+        "choices": [
+          "でかけなくて",
+          "でかけません",
+          "でかけないで",
+          "でかけない"
+        ],
+        "vi": "Buổi tối không nên ra ngoài một mình."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "タクシーで いった ＿＿が いいです。",
+        "answer": "ほう",
+        "choices": [
+          "ほう",
+          "もの",
+          "こと",
+          "とき"
+        ],
+        "vi": "Đi taxi thì hơn."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "やさいを たくさん ＿＿ ほうが いいです。",
+        "answer": "たべた",
+        "choices": [
+          "たべて",
+          "たべた",
+          "たべます",
+          "たべたい"
+        ],
+        "vi": "Bạn nên ăn nhiều rau."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-ta-koto-ga-aru",
+    "point_id": "n5-ta-koto-ga-aru",
+    "level": "N5",
+    "sort": 60,
+    "title": "V たことが あります",
+    "pattern": "V(thể た) こと が あります",
+    "meaning_vi": "Đã từng V",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Thể た + ことが あります: kinh nghiệm đã từng có: にほんへ いったことが あります (Tôi đã từng đi Nhật). Chưa từng: ～たことが ありません. Hỏi: ～たことが ありますか."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Không dùng cho việc vừa làm gần đây hay việc làm hằng ngày: “けさ パンを たべたことが あります” là lạ. Trợ từ sau こと là が."
+      }
+    ],
+    "notes": [
+      "いちども ～たことが ありません: chưa từng một lần nào."
+    ],
+    "examples": [
+      {
+        "ja": "わたしは 日本へ 行ったことが あります。",
+        "ruby": "わたしは 日本[にほん]へ 行[い]ったことが あります。",
+        "vi": "Tôi đã từng đi Nhật."
+      },
+      {
+        "ja": "日本の 山に のぼったことが ありますか。",
+        "ruby": "日本[にほん]の 山[やま]に のぼったことが ありますか。",
+        "vi": "Bạn đã từng leo núi ở Nhật chưa?"
+      },
+      {
+        "ja": "わたしは 日本の おさけを のんだことが ありません。",
+        "ruby": "わたしは 日本[にほん]の おさけを のんだことが ありません。",
+        "vi": "Tôi chưa từng uống rượu Nhật."
+      },
+      {
+        "ja": "その えいがを 見たことが あります。",
+        "ruby": "その えいがを 見[み]たことが あります。",
+        "vi": "Tôi đã từng xem bộ phim đó."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしは にほんへ ＿＿ことが あります。",
+        "answer": "いった",
+        "choices": [
+          "いった",
+          "いきた",
+          "いく",
+          "いって"
+        ],
+        "vi": "Tôi đã từng đi Nhật."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "にほんの やまに ＿＿ことが ありますか。",
+        "answer": "のぼった",
+        "choices": [
+          "のぼる",
+          "のぼった",
+          "のぼりた",
+          "のぼって"
+        ],
+        "vi": "Bạn đã từng leo núi ở Nhật chưa?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "にほんの おさけを のんだことが ＿＿。",
+        "answer": "ありません",
+        "choices": [
+          "あります",
+          "いません",
+          "ありません",
+          "しません"
+        ],
+        "vi": "Tôi chưa từng uống rượu Nhật."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "その えいがを みた こと＿＿ あります。",
+        "answer": "が",
+        "choices": [
+          "を",
+          "に",
+          "で",
+          "が"
+        ],
+        "vi": "Tôi đã từng xem bộ phim đó."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ひこうきに ＿＿ことが ありますか。",
+        "answer": "のった",
+        "choices": [
+          "のった",
+          "のる",
+          "のりた",
+          "のって"
+        ],
+        "vi": "Bạn đã từng đi máy bay chưa?"
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-tai",
+    "point_id": "n5-tai",
+    "level": "N5",
+    "sort": 43,
+    "title": "V たいです",
+    "pattern": "V(bỏ ます) たいです",
+    "meaning_vi": "Muốn V",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Bỏ ます, thêm たいです: いきます → いきたいです. Nói mong muốn làm gì của bản thân. Tân ngữ có thể dùng を hoặc が: みずが／を のみたいです. たい chia như tính từ い: phủ định たくないです, quá khứ たかったです."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Không dùng ～たいです để nói mong muốn của người khác, và không hỏi người trên ～たいですか (nghe thẳng); thay bằng ～ませんか. Muốn có đồ vật thì dùng ほしいです."
+      }
+    ],
+    "notes": [
+      "Hỏi bạn bè: なにが たべたいですか (Bạn muốn ăn gì?)."
+    ],
+    "examples": [
+      {
+        "ja": "日本へ 行きたいです。",
+        "ruby": "日本[にほん]へ 行[い]きたいです。",
+        "vi": "Tôi muốn đi Nhật."
+      },
+      {
+        "ja": "つめたい 水が のみたいです。",
+        "ruby": "つめたい 水[みず]が のみたいです。",
+        "vi": "Tôi muốn uống nước lạnh."
+      },
+      {
+        "ja": "今日は 何も 食べたくないです。",
+        "ruby": "今日[きょう]は 何[なに]も 食[た]べたくないです。",
+        "vi": "Hôm nay tôi không muốn ăn gì cả."
+      },
+      {
+        "ja": "にちようびは うちで ゆっくり 休みたいです。",
+        "ruby": "にちようびは うちで ゆっくり 休[やす]みたいです。",
+        "vi": "Chủ nhật tôi muốn nghỉ ngơi thong thả ở nhà."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "にほんへ ＿＿。",
+        "answer": "いきたいです",
+        "choices": [
+          "いくたいです",
+          "いかたいです",
+          "いきだいです",
+          "いきたいです"
+        ],
+        "vi": "Tôi muốn đi Nhật."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "つめたい みずが ＿＿。",
+        "answer": "のみたいです",
+        "choices": [
+          "のみたいです",
+          "のむたいです",
+          "のまたいです",
+          "のみだいです"
+        ],
+        "vi": "Tôi muốn uống nước lạnh."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きょうは なにも ＿＿。",
+        "answer": "たべたくないです",
+        "choices": [
+          "たべたいじゃありません",
+          "たべたくないです",
+          "たべないたいです",
+          "たべたいないです"
+        ],
+        "vi": "Hôm nay tôi không muốn ăn gì cả."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "にちようびは うちで ゆっくり ＿＿。",
+        "answer": "やすみたいです",
+        "choices": [
+          "やすむたいです",
+          "やすまたいです",
+          "やすみたいです",
+          "やすみたいます"
+        ],
+        "vi": "Chủ nhật tôi muốn nghỉ ngơi thong thả ở nhà."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "なつやすみに なにを ＿＿か。…りょこうが したいです。",
+        "answer": "したいです",
+        "choices": [
+          "するたいです",
+          "したいます",
+          "しりたいです",
+          "したいです"
+        ],
+        "vi": "Kỳ nghỉ hè bạn muốn làm gì? … Tôi muốn đi du lịch."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-tari",
+    "point_id": "n5-tari",
+    "level": "N5",
+    "sort": 62,
+    "title": "V たり V たり します",
+    "pattern": "V1 たり、V2 たり します",
+    "meaning_vi": "Nào là V1, nào là V2…",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Liệt kê vài hành động tiêu biểu, không theo thứ tự, không đầy đủ: にちようびは ほんを よんだり、えいがを みたり します. Cách tạo: thể た + り. Câu kết thúc bằng します; thì của câu chia ở します."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Lỗi hay gặp: quên します ở cuối, hoặc chỉ dùng たり một lần. Khác ～て、～ (liệt kê theo thứ tự, đầy đủ)."
+      }
+    ],
+    "notes": [
+      "Rất hay dùng để kể về cuối tuần, kỳ nghỉ."
+    ],
+    "examples": [
+      {
+        "ja": "にちようびは 本を 読んだり、えいがを 見たり します。",
+        "ruby": "にちようびは 本[ほん]を 読[よ]んだり、えいがを 見[み]たり します。",
+        "vi": "Chủ nhật tôi đọc sách, xem phim…"
+      },
+      {
+        "ja": "なつやすみは 山に のぼったり、川で およいだり しました。",
+        "ruby": "なつやすみは 山[やま]に のぼったり、川[かわ]で およいだり しました。",
+        "vi": "Kỳ nghỉ hè tôi đã leo núi, bơi sông…"
+      },
+      {
+        "ja": "パーティーで うたを うたったり、りょうりを 食べたり しました。",
+        "ruby": "パーティーで うたを うたったり、りょうりを 食[た]べたり しました。",
+        "vi": "Ở bữa tiệc chúng tôi đã hát, ăn uống…"
+      },
+      {
+        "ja": "休みの 日は そうじを したり、せんたくを したり します。",
+        "ruby": "休[やす]みの 日[ひ]は そうじを したり、せんたくを したり します。",
+        "vi": "Ngày nghỉ tôi dọn dẹp, giặt giũ…"
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "にちようびは ほんを ＿＿、えいがを みたり します。",
+        "answer": "よんだり",
+        "choices": [
+          "よみたり",
+          "よんでり",
+          "よんだり",
+          "よむたり"
+        ],
+        "vi": "Chủ nhật tôi đọc sách, xem phim…"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "なつやすみは やまに のぼったり、かわで ＿＿ しました。",
+        "answer": "およいだり",
+        "choices": [
+          "およぎたり",
+          "およいたり",
+          "およんだり",
+          "およいだり"
+        ],
+        "vi": "Kỳ nghỉ hè tôi đã leo núi, bơi sông…"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "パーティーで うたを うたったり、りょうりを たべたり ＿＿。",
+        "answer": "しました",
+        "choices": [
+          "しました",
+          "します",
+          "ありました",
+          "いました"
+        ],
+        "vi": "Ở bữa tiệc chúng tôi đã hát, ăn uống…"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "やすみの ひは そうじを ＿＿、せんたくを したり します。",
+        "answer": "したり",
+        "choices": [
+          "すたり",
+          "したり",
+          "しったり",
+          "してり"
+        ],
+        "vi": "Ngày nghỉ tôi dọn dẹp, giặt giũ…"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "まいばん テレビを みたり、おんがくを ＿＿ します。",
+        "answer": "きいたり",
+        "choices": [
+          "きいだり",
+          "ききたり",
+          "きいたり",
+          "きったり"
+        ],
+        "vi": "Tối nào tôi cũng xem tivi, nghe nhạc…"
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-te-form",
+    "point_id": "n5-te-form",
+    "level": "N5",
+    "sort": 45,
+    "title": "Thể て: V1 て、V2",
+    "pattern": "V1 て、V2",
+    "meaning_vi": "Làm V1 rồi V2",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Thể て nối nhiều hành động theo thứ tự thời gian: あさ おきて、シャワーを あびます. Thì của cả câu do động từ cuối quyết định."
+      },
+      {
+        "heading": "Cách chia",
+        "body": "Từ thể ます. Nhóm 1: い・ち・り → って (かいます → かって, まちます → まって, かえります → かえって); み・び・に → んで (よみます → よんで, あそびます → あそんで); き → いて (かきます → かいて); ぎ → いで (およぎます → およいで); し → して (はなします → はなして). Ngoại lệ: いきます → いって. Nhóm 2 (たべます, みます, おきます, ねます…): bỏ ます + て. Nhóm 3: します → して, きます → きて."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Lỗi hay gặp: “いきて” (đúng là いって). Không chia quá khứ cho động từ ở giữa câu: きのう いって、かいました."
+      }
+    ],
+    "notes": [
+      "Thể て là nền cho nhiều mẫu sau: ～てください, ～ています, ～てもいいです, ～てから."
+    ],
+    "examples": [
+      {
+        "ja": "あさ おきて、シャワーを あびます。",
+        "ruby": "あさ おきて、シャワーを あびます。",
+        "vi": "Buổi sáng tôi dậy rồi tắm vòi sen."
+      },
+      {
+        "ja": "きのう デパートへ 行って、くつを かいました。",
+        "ruby": "きのう デパートへ 行[い]って、くつを かいました。",
+        "vi": "Hôm qua tôi đến bách hóa rồi mua giày."
+      },
+      {
+        "ja": "うちへ かえって、ばんごはんを 食べました。",
+        "ruby": "うちへ かえって、ばんごはんを 食[た]べました。",
+        "vi": "Tôi về nhà rồi ăn tối."
+      },
+      {
+        "ja": "本を 読んで、ねました。",
+        "ruby": "本[ほん]を 読[よ]んで、ねました。",
+        "vi": "Tôi đọc sách rồi đi ngủ."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "きのう デパートへ ＿＿、くつを かいました。",
+        "answer": "いって",
+        "choices": [
+          "いきて",
+          "いって",
+          "いいて",
+          "いきって"
+        ],
+        "vi": "Hôm qua tôi đến bách hóa rồi mua giày."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あさ ＿＿、シャワーを あびます。",
+        "answer": "おきて",
+        "choices": [
+          "おきって",
+          "おいて",
+          "おきて",
+          "おきんで"
+        ],
+        "vi": "Buổi sáng tôi dậy rồi tắm vòi sen."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "うちへ ＿＿、ばんごはんを たべました。",
+        "answer": "かえって",
+        "choices": [
+          "かえりて",
+          "かえて",
+          "かえんで",
+          "かえって"
+        ],
+        "vi": "Tôi về nhà rồi ăn tối."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ほんを ＿＿、ねました。",
+        "answer": "よんで",
+        "choices": [
+          "よんで",
+          "よみて",
+          "よって",
+          "よいて"
+        ],
+        "vi": "Tôi đọc sách rồi đi ngủ."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "てがみを ＿＿、ポストに だしました。",
+        "answer": "かいて",
+        "choices": [
+          "かきて",
+          "かいて",
+          "かって",
+          "かんで"
+        ],
+        "vi": "Tôi viết thư rồi bỏ vào hòm thư."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ともだちと ＿＿、うちへ かえりました。",
+        "answer": "はなして",
+        "choices": [
+          "はなって",
+          "はなしって",
+          "はなして",
+          "はないて"
+        ],
+        "vi": "Tôi nói chuyện với bạn rồi về nhà."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-te-imasu",
+    "point_id": "n5-te-imasu",
+    "level": "N5",
+    "sort": 47,
+    "title": "V ています (đang làm)",
+    "pattern": "V て います",
+    "meaning_vi": "Đang V",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Thể て + います diễn tả hành động đang diễn ra: リンさんは いま ほんを よんでいます (Linh đang đọc sách). Hỏi: いま なにを していますか (Bây giờ bạn đang làm gì?)."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Tiếng Việt chỉ cần thêm “đang”, còn tiếng Nhật phải đổi dạng động từ: “いま ほんを よみます” nghĩa là “bây giờ tôi SẼ đọc sách”. Phủ định: ～ていません."
+      }
+    ],
+    "notes": [
+      "Trong hội thoại, い thường bị nuốt: よんでます; khi viết nên dùng dạng đầy đủ."
+    ],
+    "examples": [
+      {
+        "ja": "リンさんは 今 本を 読んでいます。",
+        "ruby": "リンさんは 今[いま] 本[ほん]を 読[よ]んでいます。",
+        "vi": "Chị Linh đang đọc sách."
+      },
+      {
+        "ja": "外は 雨が ふっています。",
+        "ruby": "外[そと]は 雨[あめ]が ふっています。",
+        "vi": "Bên ngoài trời đang mưa."
+      },
+      {
+        "ja": "ナムさんは 今 何を していますか。…電話を しています。",
+        "ruby": "ナムさんは 今[いま] 何[なに]を していますか。…電話[でんわ]を しています。",
+        "vi": "Anh Nam bây giờ đang làm gì? … Đang gọi điện thoại."
+      },
+      {
+        "ja": "子どもたちが こうえんで あそんでいます。",
+        "ruby": "子[こ]どもたちが こうえんで あそんでいます。",
+        "vi": "Bọn trẻ đang chơi ở công viên."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "リンさんは いま ほんを ＿＿います。",
+        "answer": "よんで",
+        "choices": [
+          "よみて",
+          "よんて",
+          "よって",
+          "よんで"
+        ],
+        "vi": "Chị Linh đang đọc sách."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "そとは あめが ＿＿います。",
+        "answer": "ふって",
+        "choices": [
+          "ふって",
+          "ふりて",
+          "ふんで",
+          "ふいて"
+        ],
+        "vi": "Bên ngoài trời đang mưa."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "いま なにを ＿＿か。",
+        "answer": "しています",
+        "choices": [
+          "します",
+          "しています",
+          "しりています",
+          "すています"
+        ],
+        "vi": "Bây giờ bạn đang làm gì?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "こどもたちが こうえんで ＿＿います。",
+        "answer": "あそんで",
+        "choices": [
+          "あそびて",
+          "あそって",
+          "あそんで",
+          "あそいて"
+        ],
+        "vi": "Bọn trẻ đang chơi ở công viên."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ナムさんは いま でんわを ＿＿。",
+        "answer": "しています",
+        "choices": [
+          "します",
+          "しました",
+          "するています",
+          "しています"
+        ],
+        "vi": "Anh Nam bây giờ đang gọi điện thoại."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-te-imasu-state",
+    "point_id": "n5-te-imasu-state",
+    "level": "N5",
+    "sort": 48,
+    "title": "V ています (trạng thái, thói quen)",
+    "pattern": "V て います",
+    "meaning_vi": "(Đã) V và vẫn ở trạng thái đó / thường xuyên V",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Ngoài nghĩa “đang làm”, ～ています còn chỉ: (1) trạng thái kéo dài sau một việc đã xảy ra: けっこんしています (đã kết hôn, đang có gia đình), ハノイに すんでいます (đang sống ở Hà Nội), しっています (biết); (2) công việc, thói quen lâu dài: ぎんこうで はたらいています (làm việc ở ngân hàng)."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "“Tôi biết” là しっています, nhưng “tôi không biết” là しりません (không nói “しっていません”). けっこんしています nghĩa là đã có gia đình, không phải “đang tổ chức đám cưới”."
+      }
+    ],
+    "notes": [
+      "すむ (sống) đi với に: ハノイに すんでいます."
+    ],
+    "examples": [
+      {
+        "ja": "わたしは ハノイに すんでいます。",
+        "ruby": "わたしは ハノイに すんでいます。",
+        "vi": "Tôi sống ở Hà Nội."
+      },
+      {
+        "ja": "やまださんは けっこんしています。",
+        "ruby": "やまださんは けっこんしています。",
+        "vi": "Anh Yamada đã kết hôn."
+      },
+      {
+        "ja": "父は ぎんこうで はたらいています。",
+        "ruby": "父[ちち]は ぎんこうで はたらいています。",
+        "vi": "Bố tôi làm việc ở ngân hàng."
+      },
+      {
+        "ja": "リンさんの 電話ばんごうを しっていますか。…いいえ、しりません。",
+        "ruby": "リンさんの 電話[でんわ]ばんごうを しっていますか。…いいえ、しりません。",
+        "vi": "Bạn có biết số điện thoại của chị Linh không? … Không, tôi không biết."
+      },
+      {
+        "ja": "ナムさんは まいあさ はしっています。",
+        "ruby": "ナムさんは まいあさ はしっています。",
+        "vi": "Sáng nào anh Nam cũng chạy bộ."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしは ハノイに ＿＿います。",
+        "answer": "すんで",
+        "choices": [
+          "すんで",
+          "すみて",
+          "すって",
+          "すいで"
+        ],
+        "vi": "Tôi sống ở Hà Nội."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "やまださんは ＿＿います。",
+        "answer": "けっこんして",
+        "choices": [
+          "けっこんしって",
+          "けっこんして",
+          "けっこんすって",
+          "けっこんしんで"
+        ],
+        "vi": "Anh Yamada đã kết hôn."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ちちは ぎんこうで ＿＿います。",
+        "answer": "はたらいて",
+        "choices": [
+          "はたらきて",
+          "はたらって",
+          "はたらいて",
+          "はたらんで"
+        ],
+        "vi": "Bố tôi làm việc ở ngân hàng."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "たなかさんの でんわばんごうを しっていますか。…いいえ、＿＿。",
+        "answer": "しりません",
+        "choices": [
+          "しっていません",
+          "しりないです",
+          "しりませんか",
+          "しりません"
+        ],
+        "vi": "Bạn có biết số điện thoại của anh Tanaka không? … Không, tôi không biết."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "リンさんを ＿＿か。…はい、しっています。",
+        "answer": "しっています",
+        "choices": [
+          "しっています",
+          "しりています",
+          "しるています",
+          "しっていて"
+        ],
+        "vi": "Bạn có biết chị Linh không? … Có, tôi biết."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-te-kara",
+    "point_id": "n5-te-kara",
+    "level": "N5",
+    "sort": 51,
+    "title": "V てから",
+    "pattern": "V1 て から、V2",
+    "meaning_vi": "Sau khi V1 (xong) thì V2",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Nhấn mạnh thứ tự: làm xong V1 rồi mới V2: しゅくだいを してから、テレビを みます (Làm bài tập xong rồi mới xem tivi). Khác ～て、～ (chỉ nối tiếp), てから nhấn mạnh V1 phải xong trước."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Thì của câu do động từ cuối quyết định: きのう ごはんを たべてから、ねました. Không dùng “たべたから” — từ quá khứ + から là “vì đã ăn”."
+      }
+    ],
+    "notes": [
+      "てから cũng chỉ mốc bắt đầu: だいがくを でてから (từ khi ra trường)."
+    ],
+    "examples": [
+      {
+        "ja": "しゅくだいを してから、テレビを 見ます。",
+        "ruby": "しゅくだいを してから、テレビを 見[み]ます。",
+        "vi": "Tôi làm bài tập xong rồi mới xem tivi."
+      },
+      {
+        "ja": "てを あらってから、ごはんを 食べます。",
+        "ruby": "てを あらってから、ごはんを 食[た]べます。",
+        "vi": "Tôi rửa tay rồi mới ăn cơm."
+      },
+      {
+        "ja": "きのう 電話を してから、友だちの うちへ 行きました。",
+        "ruby": "きのう 電話[でんわ]を してから、友[とも]だちの うちへ 行[い]きました。",
+        "vi": "Hôm qua tôi gọi điện trước rồi mới đến nhà bạn."
+      },
+      {
+        "ja": "大学を 出てから、ぎんこうに つとめています。",
+        "ruby": "大学[だいがく]を 出[で]てから、ぎんこうに つとめています。",
+        "vi": "Từ khi tốt nghiệp đại học, tôi làm việc ở ngân hàng."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "しゅくだいを ＿＿から、テレビを みます。",
+        "answer": "して",
+        "choices": [
+          "した",
+          "します",
+          "する",
+          "して"
+        ],
+        "vi": "Tôi làm bài tập xong rồi mới xem tivi."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "てを ＿＿から、ごはんを たべます。",
+        "answer": "あらって",
+        "choices": [
+          "あらって",
+          "あらいて",
+          "あらった",
+          "あらう"
+        ],
+        "vi": "Tôi rửa tay rồi mới ăn cơm."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "でんわを して＿＿、ともだちの うちへ いきました。",
+        "answer": "から",
+        "choices": [
+          "まで",
+          "から",
+          "が",
+          "を"
+        ],
+        "vi": "Tôi gọi điện trước rồi mới đến nhà bạn."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "だいがくを ＿＿から、ぎんこうに つとめています。",
+        "answer": "でて",
+        "choices": [
+          "でた",
+          "でる",
+          "でて",
+          "でます"
+        ],
+        "vi": "Từ khi tốt nghiệp đại học, tôi làm việc ở ngân hàng."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ばんごはんを たべて＿＿、さんぽします。",
+        "answer": "から",
+        "choices": [
+          "まで",
+          "が",
+          "に",
+          "から"
+        ],
+        "vi": "Ăn tối xong tôi đi dạo."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-te-kudasai",
+    "point_id": "n5-te-kudasai",
+    "level": "N5",
+    "sort": 46,
+    "title": "V てください",
+    "pattern": "V て ください",
+    "meaning_vi": "Hãy V / Xin vui lòng V",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Thể て + ください: nhờ, yêu cầu, hướng dẫn người nghe làm gì: ここに なまえを かいてください (Xin viết tên vào đây). Mở đầu bằng すみませんが để mềm hơn."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "～てください vẫn mang tính yêu cầu; với người trên nên thêm すみませんが. Lỗi chia thể て hay gặp: “まちてください” (đúng: まってください). どうぞ ～てください dùng khi mời: どうぞ たべてください."
+      }
+    ],
+    "notes": [
+      "Đừng nhầm ください (xin cho tôi) với ～てください (xin hãy làm)."
+    ],
+    "examples": [
+      {
+        "ja": "ここに 名前を 書いてください。",
+        "ruby": "ここに 名前[なまえ]を 書[か]いてください。",
+        "vi": "Xin hãy viết tên vào đây."
+      },
+      {
+        "ja": "すみませんが、ちょっと まってください。",
+        "ruby": "すみませんが、ちょっと まってください。",
+        "vi": "Xin lỗi, xin đợi một chút."
+      },
+      {
+        "ja": "もういちど いってください。",
+        "ruby": "もういちど いってください。",
+        "vi": "Xin hãy nói lại một lần nữa."
+      },
+      {
+        "ja": "ゆっくり 話してください。",
+        "ruby": "ゆっくり 話[はな]してください。",
+        "vi": "Xin hãy nói chậm."
+      },
+      {
+        "ja": "どうぞ たくさん 食べてください。",
+        "ruby": "どうぞ たくさん 食[た]べてください。",
+        "vi": "Xin mời ăn nhiều vào nhé."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "ここに なまえを ＿＿ください。",
+        "answer": "かいて",
+        "choices": [
+          "かきて",
+          "かって",
+          "かいて",
+          "かくて"
+        ],
+        "vi": "Xin hãy viết tên vào đây."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "すみませんが、ちょっと ＿＿ください。",
+        "answer": "まって",
+        "choices": [
+          "まちて",
+          "まんで",
+          "まいて",
+          "まって"
+        ],
+        "vi": "Xin lỗi, xin đợi một chút."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "もういちど ＿＿ください。",
+        "answer": "いって",
+        "choices": [
+          "いって",
+          "いいて",
+          "いきて",
+          "いうて"
+        ],
+        "vi": "Xin hãy nói lại một lần nữa."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ゆっくり ＿＿ください。",
+        "answer": "はなして",
+        "choices": [
+          "はなって",
+          "はなして",
+          "はなしって",
+          "はないて"
+        ],
+        "vi": "Xin hãy nói chậm."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "まどを ＿＿ください。",
+        "answer": "あけて",
+        "choices": [
+          "あけって",
+          "あきて",
+          "あけて",
+          "あいて"
+        ],
+        "vi": "Xin hãy mở cửa sổ."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "どうぞ たくさん ＿＿ください。",
+        "answer": "たべて",
+        "choices": [
+          "たべって",
+          "たべりて",
+          "たべんで",
+          "たべて"
+        ],
+        "vi": "Xin mời ăn nhiều vào nhé."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-te-mo-ii",
+    "point_id": "n5-te-mo-ii",
+    "level": "N5",
+    "sort": 49,
+    "title": "V てもいいです",
+    "pattern": "V て も いいです",
+    "meaning_vi": "V cũng được / Được phép V",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Thể て + もいいです: cho phép. Xin phép: ～てもいいですか (Tôi… có được không?). Đồng ý: はい、いいですよ／どうぞ. Từ chối khéo: すみません、ちょっと…."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Phải dùng thể て: “すわるもいいですか” là sai. Từ chối thẳng いいえ、いけません nghe cứng, chỉ dùng khi có quy định rõ ràng."
+      }
+    ],
+    "notes": [
+      "Câu xin phép rất hữu ích khi ở Nhật: しゃしんを とってもいいですか."
+    ],
+    "examples": [
+      {
+        "ja": "ここに すわってもいいですか。…はい、どうぞ。",
+        "ruby": "ここに すわってもいいですか。…はい、どうぞ。",
+        "vi": "Tôi ngồi đây được không? … Vâng, mời bạn."
+      },
+      {
+        "ja": "しゃしんを とってもいいですか。",
+        "ruby": "しゃしんを とってもいいですか。",
+        "vi": "Tôi chụp ảnh được không?"
+      },
+      {
+        "ja": "この ペンを つかってもいいですか。",
+        "ruby": "この ペンを つかってもいいですか。",
+        "vi": "Tôi dùng cây bút này được không?"
+      },
+      {
+        "ja": "しゅくだいは あした 出してもいいです。",
+        "ruby": "しゅくだいは あした 出[だ]してもいいです。",
+        "vi": "Bài tập nộp vào ngày mai cũng được."
+      },
+      {
+        "ja": "まどを あけてもいいですか。…すみません、ちょっと さむいです。",
+        "ruby": "まどを あけてもいいですか。…すみません、ちょっと さむいです。",
+        "vi": "Tôi mở cửa sổ được không? … Xin lỗi, hơi lạnh ạ."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "ここに ＿＿もいいですか。",
+        "answer": "すわって",
+        "choices": [
+          "すわりて",
+          "すわって",
+          "すわんで",
+          "すわいて"
+        ],
+        "vi": "Tôi ngồi đây được không?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "しゃしんを ＿＿もいいですか。",
+        "answer": "とって",
+        "choices": [
+          "とりて",
+          "とんで",
+          "とって",
+          "といて"
+        ],
+        "vi": "Tôi chụp ảnh được không?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "この ペンを ＿＿もいいですか。",
+        "answer": "つかって",
+        "choices": [
+          "つかいて",
+          "つかんで",
+          "つかりて",
+          "つかって"
+        ],
+        "vi": "Tôi dùng cây bút này được không?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "しゅくだいは あした だして＿＿。",
+        "answer": "もいいです",
+        "choices": [
+          "もいいです",
+          "はいけません",
+          "ください",
+          "います"
+        ],
+        "vi": "Bài tập nộp vào ngày mai cũng được."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "まどを あけても ＿＿か。",
+        "answer": "いいです",
+        "choices": [
+          "いけません",
+          "いいです",
+          "ください",
+          "あります"
+        ],
+        "vi": "Tôi mở cửa sổ được không?"
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-te-wa-ikemasen",
+    "point_id": "n5-te-wa-ikemasen",
+    "level": "N5",
+    "sort": 50,
+    "title": "V てはいけません",
+    "pattern": "V て は いけません",
+    "meaning_vi": "Không được V",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Thể て + はいけません: cấm đoán, thường dùng cho nội quy, luật lệ hoặc người trên nói với người dưới: ここで たばこを すってはいけません. は đọc là “wa”."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Câu này nghe khá mạnh; khi nhắc nhở nhẹ nhàng người Nhật hay dùng ～ないでください (bài sau). Trả lời phủ định cho ～てもいいですか: いいえ、～てはいけません."
+      }
+    ],
+    "notes": [
+      "Đối lập: ～てもいいです (được phép) ↔ ～てはいけません (không được phép)."
+    ],
+    "examples": [
+      {
+        "ja": "ここで たばこを すってはいけません。",
+        "ruby": "ここで たばこを すってはいけません。",
+        "vi": "Không được hút thuốc ở đây."
+      },
+      {
+        "ja": "としょかんで 大きい こえで 話してはいけません。",
+        "ruby": "としょかんで 大[おお]きい こえで 話[はな]してはいけません。",
+        "vi": "Không được nói to trong thư viện."
+      },
+      {
+        "ja": "テストの とき、じしょを 見てはいけません。",
+        "ruby": "テストの とき、じしょを 見[み]てはいけません。",
+        "vi": "Trong giờ kiểm tra không được xem từ điển."
+      },
+      {
+        "ja": "この 川で およいではいけません。",
+        "ruby": "この 川[かわ]で およいではいけません。",
+        "vi": "Không được bơi ở con sông này."
+      },
+      {
+        "ja": "しゃしんを とってもいいですか。…いいえ、とってはいけません。",
+        "ruby": "しゃしんを とってもいいですか。…いいえ、とってはいけません。",
+        "vi": "Tôi chụp ảnh được không? … Không, không được chụp."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "ここで たばこを ＿＿はいけません。",
+        "answer": "すって",
+        "choices": [
+          "すいて",
+          "すんで",
+          "すって",
+          "すりて"
+        ],
+        "vi": "Không được hút thuốc ở đây."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "この かわで ＿＿はいけません。",
+        "answer": "およいで",
+        "choices": [
+          "およいて",
+          "およぎて",
+          "およって",
+          "およいで"
+        ],
+        "vi": "Không được bơi ở con sông này."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "テストの とき、じしょを みて＿＿。",
+        "answer": "はいけません",
+        "choices": [
+          "はいけません",
+          "もいいです",
+          "ください",
+          "います"
+        ],
+        "vi": "Trong giờ kiểm tra không được xem từ điển."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "としょかんで おおきい こえで ＿＿はいけません。",
+        "answer": "はなして",
+        "choices": [
+          "はなって",
+          "はなして",
+          "はなしって",
+          "はないて"
+        ],
+        "vi": "Không được nói to trong thư viện."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "しゃしんを とってもいいですか。…いいえ、とって＿＿。",
+        "answer": "はいけません",
+        "choices": [
+          "もいいです",
+          "ください",
+          "はいけません",
+          "います"
+        ],
+        "vi": "Tôi chụp ảnh được không? … Không, không được chụp."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-to-together",
+    "point_id": "n5-to-together",
+    "level": "N5",
+    "sort": 20,
+    "title": "N(người) と V",
+    "pattern": "N(người) と V",
+    "meaning_vi": "làm V cùng với N",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "と sau danh từ chỉ người: cùng ai làm việc gì: ともだちと えいがを みます (xem phim với bạn). Thêm いっしょに cho rõ nghĩa “cùng nhau”: ともだちと いっしょに."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Làm một mình thì dùng ひとりで, không dùng と: “ひとりと いきます” là sai."
+      }
+    ],
+    "notes": [
+      "Hỏi “với ai”: だれと いきますか."
+    ],
+    "examples": [
+      {
+        "ja": "友だちと えいがを 見ます。",
+        "ruby": "友[とも]だちと えいがを 見[み]ます。",
+        "vi": "Tôi xem phim với bạn."
+      },
+      {
+        "ja": "かぞくと 日本へ 行きます。",
+        "ruby": "かぞくと 日本[にほん]へ 行[い]きます。",
+        "vi": "Tôi đi Nhật cùng gia đình."
+      },
+      {
+        "ja": "きのう 母と いっしょに りょうりを つくりました。",
+        "ruby": "きのう 母[はは]と いっしょに りょうりを つくりました。",
+        "vi": "Hôm qua tôi đã nấu ăn cùng mẹ."
+      },
+      {
+        "ja": "にちようびは 一人で 本を 読みました。",
+        "ruby": "にちようびは 一人[ひとり]で 本[ほん]を 読[よ]みました。",
+        "vi": "Chủ nhật tôi đã đọc sách một mình."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "ともだち＿＿ えいがを みます。",
+        "answer": "と",
+        "choices": [
+          "と",
+          "を",
+          "へ",
+          "に"
+        ],
+        "vi": "Tôi xem phim với bạn."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "かぞく＿＿ にほんへ いきます。",
+        "answer": "と",
+        "choices": [
+          "を",
+          "と",
+          "に",
+          "の"
+        ],
+        "vi": "Tôi đi Nhật cùng gia đình."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "はは＿＿ いっしょに りょうりを つくりました。",
+        "answer": "と",
+        "choices": [
+          "を",
+          "に",
+          "と",
+          "で"
+        ],
+        "vi": "Tôi đã nấu ăn cùng mẹ."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "にちようびは ひとり＿＿ ほんを よみました。",
+        "answer": "で",
+        "choices": [
+          "と",
+          "を",
+          "に",
+          "で"
+        ],
+        "vi": "Chủ nhật tôi đã đọc sách một mình."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "だれ＿＿ いきますか。…リンさんと いきます。",
+        "answer": "と",
+        "choices": [
+          "と",
+          "を",
+          "に",
+          "へ"
+        ],
+        "vi": "Bạn đi với ai? … Tôi đi với chị Linh."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-to-ya",
+    "point_id": "n5-to-ya",
+    "level": "N5",
+    "sort": 23,
+    "title": "N1 と N2／N1 や N2（など）",
+    "pattern": "N1 と N2 ／ N1 や N2 など",
+    "meaning_vi": "N1 và N2 / N1, N2… (vân vân)",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "と nối danh từ khi kể đủ, không còn gì khác: パンと たまごを たべました (chỉ bánh mì và trứng). や dùng khi chỉ nêu vài ví dụ tiêu biểu, ngầm hiểu còn thứ khác, thường kết thúc bằng など: やさいや くだものなどを かいます."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "と và や chỉ nối DANH TỪ, không nối động từ hay câu. Tiếng Việt “và” dùng rộng hơn: “Tôi ăn và uống” không dùng と."
+      }
+    ],
+    "notes": [
+      "と ở bài này (nối danh từ) khác と “cùng với ai” (bài trước)."
+    ],
+    "examples": [
+      {
+        "ja": "あさ パンと たまごを 食べました。",
+        "ruby": "あさ パンと たまごを 食[た]べました。",
+        "vi": "Sáng nay tôi đã ăn bánh mì và trứng."
+      },
+      {
+        "ja": "デパートで くつや かばんを かいました。",
+        "ruby": "デパートで くつや かばんを かいました。",
+        "vi": "Tôi đã mua giày, cặp… ở cửa hàng bách hóa."
+      },
+      {
+        "ja": "やおやで やさいや くだものなどを かいます。",
+        "ruby": "やおやで やさいや くだものなどを かいます。",
+        "vi": "Tôi mua rau, trái cây v.v. ở hàng rau."
+      },
+      {
+        "ja": "日本語と えいごを べんきょうします。",
+        "ruby": "日本語[にほんご]と えいごを べんきょうします。",
+        "vi": "Tôi học tiếng Nhật và tiếng Anh."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "あさ パン＿＿ たまごを たべました。",
+        "answer": "と",
+        "choices": [
+          "や",
+          "を",
+          "の",
+          "と"
+        ],
+        "vi": "Sáng nay tôi đã ăn bánh mì và trứng (chỉ hai món đó)."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "デパートで くつ＿＿ かばんなどを かいました。",
+        "answer": "や",
+        "choices": [
+          "や",
+          "を",
+          "が",
+          "で"
+        ],
+        "vi": "Tôi đã mua giày, cặp v.v. ở cửa hàng bách hóa."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "やおやで やさいや くだもの＿＿を かいます。",
+        "answer": "など",
+        "choices": [
+          "も",
+          "など",
+          "と",
+          "や"
+        ],
+        "vi": "Tôi mua rau, trái cây v.v. ở hàng rau."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "にほんご＿＿ えいごを べんきょうします。",
+        "answer": "と",
+        "choices": [
+          "を",
+          "に",
+          "と",
+          "へ"
+        ],
+        "vi": "Tôi học tiếng Nhật và tiếng Anh (chỉ hai thứ tiếng)."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "かばんの なかに ほん＿＿ ノートなどが あります。",
+        "answer": "や",
+        "choices": [
+          "を",
+          "に",
+          "で",
+          "や"
+        ],
+        "vi": "Trong cặp có sách, vở v.v."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-toki",
+    "point_id": "n5-toki",
+    "level": "N5",
+    "sort": 63,
+    "title": "～とき",
+    "pattern": "V(thể thường)／Aい／Aな／N の とき、～",
+    "meaning_vi": "Khi …",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "とき nối với mệnh đề chỉ thời điểm: ひまな とき (khi rảnh), こどもの とき (hồi nhỏ), さむい とき (khi lạnh), わからない とき (khi không hiểu). Trước とき dùng thể thường: tính từ な giữ な, danh từ thêm の."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Lỗi hay gặp: “ひま とき”, “こども とき” (thiếu な／の). Tiếng Việt “khi” đứng đầu, còn とき đứng sau mệnh đề."
+      }
+    ],
+    "notes": [
+      "Thể từ điển + とき và thể た + とき khác nhau về thời điểm; phần này học kỹ ở N4."
+    ],
+    "examples": [
+      {
+        "ja": "ひまな とき、本を 読みます。",
+        "ruby": "ひまな とき、本[ほん]を 読[よ]みます。",
+        "vi": "Khi rảnh tôi đọc sách."
+      },
+      {
+        "ja": "子どもの とき、川で よく およぎました。",
+        "ruby": "子[こ]どもの とき、川[かわ]で よく およぎました。",
+        "vi": "Hồi nhỏ tôi hay bơi ở sông."
+      },
+      {
+        "ja": "さむい とき、あたたかい おちゃを のみます。",
+        "ruby": "さむい とき、あたたかい おちゃを のみます。",
+        "vi": "Khi lạnh tôi uống trà nóng."
+      },
+      {
+        "ja": "わからない とき、先生に 聞いてください。",
+        "ruby": "わからない とき、先生[せんせい]に 聞[き]いてください。",
+        "vi": "Khi không hiểu, hãy hỏi thầy cô."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "＿＿ とき、ほんを よみます。",
+        "answer": "ひまな",
+        "choices": [
+          "ひま",
+          "ひまの",
+          "ひまい",
+          "ひまな"
+        ],
+        "vi": "Khi rảnh tôi đọc sách."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "こども＿＿ とき、かわで よく およぎました。",
+        "answer": "の",
+        "choices": [
+          "の",
+          "な",
+          "が",
+          "を"
+        ],
+        "vi": "Hồi nhỏ tôi hay bơi ở sông."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "＿＿ とき、あたたかい おちゃを のみます。",
+        "answer": "さむい",
+        "choices": [
+          "さむいな",
+          "さむい",
+          "さむの",
+          "さむくて"
+        ],
+        "vi": "Khi lạnh tôi uống trà nóng."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "＿＿ とき、せんせいに きいてください。",
+        "answer": "わからない",
+        "choices": [
+          "わかりません",
+          "わからなくて",
+          "わからない",
+          "わからないの"
+        ],
+        "vi": "Khi không hiểu, hãy hỏi thầy cô."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "げんき＿＿ とき、さんぽします。",
+        "answer": "な",
+        "choices": [
+          "の",
+          "が",
+          "い",
+          "な"
+        ],
+        "vi": "Khi khỏe tôi đi dạo."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あめ＿＿ とき、タクシーで いきます。",
+        "answer": "の",
+        "choices": [
+          "の",
+          "な",
+          "が",
+          "を"
+        ],
+        "vi": "Khi trời mưa tôi đi taxi."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-tsumori",
+    "point_id": "n5-tsumori",
+    "level": "N5",
+    "sort": 68,
+    "title": "V る つもりです",
+    "pattern": "V(thể từ điển) つもりです ／ V(thể ない) つもりです",
+    "meaning_vi": "Định V / Dự định V",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "Thể từ điển + つもりです: kế hoạch, ý định đã quyết của bản thân: なつやすみに にほんへ いく つもりです. Định không làm: thể ない + つもりです."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "つもり là ý định chắc chắn hơn ～たい (muốn). Hỏi kế hoạch của người trên bằng ～つもりですか nghe hơi thẳng; nên hỏi bằng ～ますか."
+      }
+    ],
+    "notes": [
+      "Trước つもり không dùng thể ます: “いきます つもり” là sai."
+    ],
+    "examples": [
+      {
+        "ja": "なつやすみに 日本へ 行く つもりです。",
+        "ruby": "なつやすみに 日本[にほん]へ 行[い]く つもりです。",
+        "vi": "Kỳ nghỉ hè tôi định đi Nhật."
+      },
+      {
+        "ja": "来年 大学で 日本語を べんきょうする つもりです。",
+        "ruby": "来年[らいねん] 大学[だいがく]で 日本語[にほんご]を べんきょうする つもりです。",
+        "vi": "Năm sau tôi định học tiếng Nhật ở đại học."
+      },
+      {
+        "ja": "今日は どこへも 出かけない つもりです。",
+        "ruby": "今日[きょう]は どこへも 出[で]かけない つもりです。",
+        "vi": "Hôm nay tôi định không đi đâu cả."
+      },
+      {
+        "ja": "あした 何を する つもりですか。…友だちに あう つもりです。",
+        "ruby": "あした 何[なに]を する つもりですか。…友[とも]だちに あう つもりです。",
+        "vi": "Ngày mai bạn định làm gì? … Tôi định gặp bạn."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "なつやすみに にほんへ ＿＿ つもりです。",
+        "answer": "いく",
+        "choices": [
+          "いく",
+          "いき",
+          "いって",
+          "いきます"
+        ],
+        "vi": "Kỳ nghỉ hè tôi định đi Nhật."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "らいねん だいがくで にほんごを ＿＿ つもりです。",
+        "answer": "べんきょうする",
+        "choices": [
+          "べんきょうし",
+          "べんきょうする",
+          "べんきょうして",
+          "べんきょうします"
+        ],
+        "vi": "Năm sau tôi định học tiếng Nhật ở đại học."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きょうは どこへも ＿＿ つもりです。",
+        "answer": "でかけない",
+        "choices": [
+          "でかけません",
+          "でかけなくて",
+          "でかけない",
+          "でかけないで"
+        ],
+        "vi": "Hôm nay tôi định không đi đâu cả."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あした なにを する ＿＿ですか。",
+        "answer": "つもり",
+        "choices": [
+          "ほう",
+          "とき",
+          "まえ",
+          "つもり"
+        ],
+        "vi": "Ngày mai bạn định làm gì?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "らいげつ あたらしい くるまを ＿＿ つもりです。",
+        "answer": "かう",
+        "choices": [
+          "かう",
+          "かい",
+          "かって",
+          "かいます"
+        ],
+        "vi": "Tháng sau tôi định mua xe ô tô mới."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-wo-object",
+    "point_id": "n5-wo-object",
+    "level": "N5",
+    "sort": 21,
+    "title": "N を V",
+    "pattern": "N を V(tha động từ)",
+    "meaning_vi": "làm V (đối tượng là N)",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "を đánh dấu tân ngữ, tức đối tượng chịu tác động của động từ: パンを たべます (ăn bánh mì), ほんを よみます (đọc sách). Trật tự: chủ ngữ は – tân ngữ を – động từ. Hỏi “làm gì”: なにを しますか."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "を viết bằng chữ “wo” nhưng đọc “o”. Một số động từ tiếng Việt có tân ngữ nhưng tiếng Nhật không dùng を: あいます (dùng に), わかります／すきです (dùng が)."
+      }
+    ],
+    "notes": [
+      "Câu tiếng Nhật đặt động từ cuối: “Tôi đọc sách” → わたしは ほんを よみます."
+    ],
+    "examples": [
+      {
+        "ja": "まいあさ パンを 食べます。",
+        "ruby": "まいあさ パンを 食[た]べます。",
+        "vi": "Sáng nào tôi cũng ăn bánh mì."
+      },
+      {
+        "ja": "わたしは コーヒーを のみます。",
+        "ruby": "わたしは コーヒーを のみます。",
+        "vi": "Tôi uống cà phê."
+      },
+      {
+        "ja": "きのう しんぶんを 読みました。",
+        "ruby": "きのう しんぶんを 読[よ]みました。",
+        "vi": "Hôm qua tôi đã đọc báo."
+      },
+      {
+        "ja": "あした 何を しますか。…にわを そうじします。",
+        "ruby": "あした 何[なに]を しますか。…にわを そうじします。",
+        "vi": "Ngày mai bạn làm gì? … Tôi dọn vườn."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "まいあさ パン＿＿ たべます。",
+        "answer": "を",
+        "choices": [
+          "に",
+          "を",
+          "で",
+          "へ"
+        ],
+        "vi": "Sáng nào tôi cũng ăn bánh mì."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "わたしは コーヒー＿＿ のみます。",
+        "answer": "を",
+        "choices": [
+          "に",
+          "で",
+          "を",
+          "へ"
+        ],
+        "vi": "Tôi uống cà phê."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きのう しんぶん＿＿ よみました。",
+        "answer": "を",
+        "choices": [
+          "に",
+          "へ",
+          "と",
+          "を"
+        ],
+        "vi": "Hôm qua tôi đã đọc báo."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あした なに＿＿ しますか。",
+        "answer": "を",
+        "choices": [
+          "を",
+          "へ",
+          "が",
+          "から"
+        ],
+        "vi": "Ngày mai bạn làm gì?"
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "まいばん にほんごの しゅくだい＿＿ します。",
+        "answer": "を",
+        "choices": [
+          "へ",
+          "を",
+          "が",
+          "と"
+        ],
+        "vi": "Tối nào tôi cũng làm bài tập tiếng Nhật."
+      }
+    ]
+  },
+  {
+    "card_id": "grammar:n5-yori",
+    "point_id": "n5-yori",
+    "level": "N5",
+    "sort": 65,
+    "title": "N1 は N2 より ～",
+    "pattern": "N1 は N2 より A です",
+    "meaning_vi": "N1 A hơn N2",
+    "explanation": [
+      {
+        "heading": "Cách dùng",
+        "body": "より đặt sau danh từ đem ra so sánh: でんしゃは バスより はやいです (Tàu điện nhanh hơn xe buýt). Tính từ giữ nguyên, không cần thêm từ “hơn”."
+      },
+      {
+        "heading": "Lưu ý",
+        "body": "Trật tự khác tiếng Việt: “A nhanh hơn B” → A は B より はやいです. より luôn đi sau B (vật làm mốc), không đặt sau A."
+      }
+    ],
+    "notes": [
+      "Có thể thêm ずっと để nhấn mạnh “hơn nhiều” (gặp ở N4)."
+    ],
+    "examples": [
+      {
+        "ja": "ハノイは ホーチミンより さむいです。",
+        "ruby": "ハノイは ホーチミンより さむいです。",
+        "vi": "Hà Nội lạnh hơn TP Hồ Chí Minh."
+      },
+      {
+        "ja": "電車は バスより はやいです。",
+        "ruby": "電車[でんしゃ]は バスより はやいです。",
+        "vi": "Tàu điện nhanh hơn xe buýt."
+      },
+      {
+        "ja": "この かばんは あの かばんより 高いです。",
+        "ruby": "この かばんは あの かばんより 高[たか]いです。",
+        "vi": "Cái cặp này đắt hơn cái cặp kia."
+      },
+      {
+        "ja": "あには わたしより せが 高いです。",
+        "ruby": "あには わたしより せが 高[たか]いです。",
+        "vi": "Anh trai tôi cao hơn tôi."
+      }
+    ],
+    "exercises": [
+      {
+        "type": "cloze",
+        "prompt_ja": "でんしゃは バス＿＿ はやいです。",
+        "answer": "より",
+        "choices": [
+          "から",
+          "より",
+          "まで",
+          "ほう"
+        ],
+        "vi": "Tàu điện nhanh hơn xe buýt."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "この かばんは あの かばん＿＿ たかいです。",
+        "answer": "より",
+        "choices": [
+          "から",
+          "まで",
+          "より",
+          "の"
+        ],
+        "vi": "Cái cặp này đắt hơn cái cặp kia."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "あには わたし＿＿ せが たかいです。",
+        "answer": "より",
+        "choices": [
+          "から",
+          "まで",
+          "に",
+          "より"
+        ],
+        "vi": "Anh trai tôi cao hơn tôi."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "ハノイは ホーチミン＿＿ さむいです。",
+        "answer": "より",
+        "choices": [
+          "より",
+          "から",
+          "まで",
+          "で"
+        ],
+        "vi": "Hà Nội lạnh hơn TP Hồ Chí Minh."
+      },
+      {
+        "type": "cloze",
+        "prompt_ja": "きょうは きのう＿＿ あついです。",
+        "answer": "より",
+        "choices": [
+          "から",
+          "より",
+          "まで",
+          "に"
+        ],
+        "vi": "Hôm nay nóng hơn hôm qua."
+      }
+    ]
+  }
+]

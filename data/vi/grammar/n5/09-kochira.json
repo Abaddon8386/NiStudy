@@ -1,0 +1,107 @@
+{
+  "id": "n5-kochira",
+  "level": "N5",
+  "order": 9,
+  "title": "こちら／そちら／あちら／どちら",
+  "pattern": "N は こちら／そちら／あちら です",
+  "meaning_vi": "N ở phía này / phía đó / phía kia (lịch sự)",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "こちら, そちら, あちら, どちら là cách nói lịch sự của ここ, そこ, あそこ, どこ, hay dùng ở cửa hàng, khách sạn, công ty. こちら còn dùng để giới thiệu người: こちらは やまださんです (Đây là anh Yamada). おくには どちらですか là cách hỏi lịch sự “Anh/chị từ nước nào đến?”."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Giới thiệu người thì dùng こちら, không dùng これ (これ chỉ đồ vật, dùng cho người là bất lịch sự). どちら còn có nghĩa “cái nào (trong hai cái)”, sẽ gặp ở bài so sánh."
+    }
+  ],
+  "notes": [
+    "Nhân viên cửa hàng thường nói ～は あちらです khi chỉ đường cho khách."
+  ],
+  "examples": [
+    {
+      "ja": "こちらは たなかさんです。",
+      "ruby": "こちらは たなかさんです。",
+      "vi": "Đây là anh Tanaka."
+    },
+    {
+      "ja": "エレベーターは あちらです。",
+      "ruby": "エレベーターは あちらです。",
+      "vi": "Thang máy ở phía kia ạ."
+    },
+    {
+      "ja": "お国は どちらですか。…ベトナムです。",
+      "ruby": "お国[くに]は どちらですか。…ベトナムです。",
+      "vi": "Anh từ nước nào đến ạ? … Việt Nam."
+    },
+    {
+      "ja": "トイレは そちらです。",
+      "ruby": "トイレは そちらです。",
+      "vi": "Nhà vệ sinh ở phía đó ạ."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "＿＿は やまださんです。",
+      "answer": "こちら",
+      "choices": [
+        "これ",
+        "こちら",
+        "この",
+        "どの"
+      ],
+      "vi": "(Giới thiệu) Đây là anh Yamada."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "おくには ＿＿ですか。",
+      "answer": "どちら",
+      "choices": [
+        "どれ",
+        "どの",
+        "どちら",
+        "だれ"
+      ],
+      "vi": "Anh từ nước nào đến ạ?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "エレベーターは ＿＿です。",
+      "answer": "あちら",
+      "choices": [
+        "あの",
+        "どの",
+        "この",
+        "あちら"
+      ],
+      "vi": "Thang máy ở phía kia ạ."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "かいだんは ＿＿ですか。",
+      "answer": "どちら",
+      "choices": [
+        "どちら",
+        "どの",
+        "なん",
+        "だれ"
+      ],
+      "vi": "Cầu thang ở phía nào ạ?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "＿＿は わたしの せんせいです。",
+      "answer": "こちら",
+      "choices": [
+        "これ",
+        "こちら",
+        "この",
+        "どの"
+      ],
+      "vi": "(Giới thiệu) Đây là thầy giáo của tôi."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

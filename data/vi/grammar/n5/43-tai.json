@@ -1,0 +1,107 @@
+{
+  "id": "n5-tai",
+  "level": "N5",
+  "order": 43,
+  "title": "V たいです",
+  "pattern": "V(bỏ ます) たいです",
+  "meaning_vi": "Muốn V",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Bỏ ます, thêm たいです: いきます → いきたいです. Nói mong muốn làm gì của bản thân. Tân ngữ có thể dùng を hoặc が: みずが／を のみたいです. たい chia như tính từ い: phủ định たくないです, quá khứ たかったです."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Không dùng ～たいです để nói mong muốn của người khác, và không hỏi người trên ～たいですか (nghe thẳng); thay bằng ～ませんか. Muốn có đồ vật thì dùng ほしいです."
+    }
+  ],
+  "notes": [
+    "Hỏi bạn bè: なにが たべたいですか (Bạn muốn ăn gì?)."
+  ],
+  "examples": [
+    {
+      "ja": "日本へ 行きたいです。",
+      "ruby": "日本[にほん]へ 行[い]きたいです。",
+      "vi": "Tôi muốn đi Nhật."
+    },
+    {
+      "ja": "つめたい 水が のみたいです。",
+      "ruby": "つめたい 水[みず]が のみたいです。",
+      "vi": "Tôi muốn uống nước lạnh."
+    },
+    {
+      "ja": "今日は 何も 食べたくないです。",
+      "ruby": "今日[きょう]は 何[なに]も 食[た]べたくないです。",
+      "vi": "Hôm nay tôi không muốn ăn gì cả."
+    },
+    {
+      "ja": "にちようびは うちで ゆっくり 休みたいです。",
+      "ruby": "にちようびは うちで ゆっくり 休[やす]みたいです。",
+      "vi": "Chủ nhật tôi muốn nghỉ ngơi thong thả ở nhà."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "にほんへ ＿＿。",
+      "answer": "いきたいです",
+      "choices": [
+        "いくたいです",
+        "いかたいです",
+        "いきだいです",
+        "いきたいです"
+      ],
+      "vi": "Tôi muốn đi Nhật."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "つめたい みずが ＿＿。",
+      "answer": "のみたいです",
+      "choices": [
+        "のみたいです",
+        "のむたいです",
+        "のまたいです",
+        "のみだいです"
+      ],
+      "vi": "Tôi muốn uống nước lạnh."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きょうは なにも ＿＿。",
+      "answer": "たべたくないです",
+      "choices": [
+        "たべたいじゃありません",
+        "たべたくないです",
+        "たべないたいです",
+        "たべたいないです"
+      ],
+      "vi": "Hôm nay tôi không muốn ăn gì cả."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "にちようびは うちで ゆっくり ＿＿。",
+      "answer": "やすみたいです",
+      "choices": [
+        "やすむたいです",
+        "やすまたいです",
+        "やすみたいです",
+        "やすみたいます"
+      ],
+      "vi": "Chủ nhật tôi muốn nghỉ ngơi thong thả ở nhà."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "なつやすみに なにを ＿＿か。…りょこうが したいです。",
+      "answer": "したいです",
+      "choices": [
+        "するたいです",
+        "したいます",
+        "しりたいです",
+        "したいです"
+      ],
+      "vi": "Kỳ nghỉ hè bạn muốn làm gì? … Tôi muốn đi du lịch."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

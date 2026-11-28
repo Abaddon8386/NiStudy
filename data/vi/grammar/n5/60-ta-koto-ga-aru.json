@@ -1,0 +1,107 @@
+{
+  "id": "n5-ta-koto-ga-aru",
+  "level": "N5",
+  "order": 60,
+  "title": "V たことが あります",
+  "pattern": "V(thể た) こと が あります",
+  "meaning_vi": "Đã từng V",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Thể た + ことが あります: kinh nghiệm đã từng có: にほんへ いったことが あります (Tôi đã từng đi Nhật). Chưa từng: ～たことが ありません. Hỏi: ～たことが ありますか."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Không dùng cho việc vừa làm gần đây hay việc làm hằng ngày: “けさ パンを たべたことが あります” là lạ. Trợ từ sau こと là が."
+    }
+  ],
+  "notes": [
+    "いちども ～たことが ありません: chưa từng một lần nào."
+  ],
+  "examples": [
+    {
+      "ja": "わたしは 日本へ 行ったことが あります。",
+      "ruby": "わたしは 日本[にほん]へ 行[い]ったことが あります。",
+      "vi": "Tôi đã từng đi Nhật."
+    },
+    {
+      "ja": "日本の 山に のぼったことが ありますか。",
+      "ruby": "日本[にほん]の 山[やま]に のぼったことが ありますか。",
+      "vi": "Bạn đã từng leo núi ở Nhật chưa?"
+    },
+    {
+      "ja": "わたしは 日本の おさけを のんだことが ありません。",
+      "ruby": "わたしは 日本[にほん]の おさけを のんだことが ありません。",
+      "vi": "Tôi chưa từng uống rượu Nhật."
+    },
+    {
+      "ja": "その えいがを 見たことが あります。",
+      "ruby": "その えいがを 見[み]たことが あります。",
+      "vi": "Tôi đã từng xem bộ phim đó."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしは にほんへ ＿＿ことが あります。",
+      "answer": "いった",
+      "choices": [
+        "いった",
+        "いきた",
+        "いく",
+        "いって"
+      ],
+      "vi": "Tôi đã từng đi Nhật."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "にほんの やまに ＿＿ことが ありますか。",
+      "answer": "のぼった",
+      "choices": [
+        "のぼる",
+        "のぼった",
+        "のぼりた",
+        "のぼって"
+      ],
+      "vi": "Bạn đã từng leo núi ở Nhật chưa?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "にほんの おさけを のんだことが ＿＿。",
+      "answer": "ありません",
+      "choices": [
+        "あります",
+        "いません",
+        "ありません",
+        "しません"
+      ],
+      "vi": "Tôi chưa từng uống rượu Nhật."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "その えいがを みた こと＿＿ あります。",
+      "answer": "が",
+      "choices": [
+        "を",
+        "に",
+        "で",
+        "が"
+      ],
+      "vi": "Tôi đã từng xem bộ phim đó."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ひこうきに ＿＿ことが ありますか。",
+      "answer": "のった",
+      "choices": [
+        "のった",
+        "のる",
+        "のりた",
+        "のって"
+      ],
+      "vi": "Bạn đã từng đi máy bay chưa?"
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

@@ -1,0 +1,107 @@
+{
+  "id": "n5-ni-iku-purpose",
+  "level": "N5",
+  "order": 44,
+  "title": "V(bỏ ます)／N に 行きます",
+  "pattern": "Nơi へ V(bỏ ます) に 行きます／来ます／かえります",
+  "meaning_vi": "Đi (đến nơi) để làm V",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Chỉ mục đích của việc đi/đến/về: bỏ ます + に + いきます: デパートへ くつを かいに いきます (đi bách hóa để mua giày). Với danh từ chỉ hành động (かいもの, さんぽ, べんきょう…) thêm に trực tiếp: さんぽに いきます."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Trật tự: nơi へ – (tân ngữ を) – V(bỏ ます)に – いきます. Không dùng thể từ điển: “かうに いきます” là sai."
+    }
+  ],
+  "notes": [
+    "Tiếng Việt “đi mua giày” → くつを かいに いきます."
+  ],
+  "examples": [
+    {
+      "ja": "デパートへ くつを かいに 行きます。",
+      "ruby": "デパートへ くつを かいに 行[い]きます。",
+      "vi": "Tôi đi bách hóa để mua giày."
+    },
+    {
+      "ja": "日本へ 日本語を べんきょうしに 来ました。",
+      "ruby": "日本[にほん]へ 日本語[にほんご]を べんきょうしに 来[き]ました。",
+      "vi": "Tôi đã đến Nhật để học tiếng Nhật."
+    },
+    {
+      "ja": "いっしょに ひるごはんを 食べに 行きませんか。",
+      "ruby": "いっしょに ひるごはんを 食[た]べに 行[い]きませんか。",
+      "vi": "Cùng đi ăn trưa không?"
+    },
+    {
+      "ja": "こうえんへ さんぽに 行きます。",
+      "ruby": "こうえんへ さんぽに 行[い]きます。",
+      "vi": "Tôi đi dạo ở công viên."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "デパートへ くつを ＿＿に いきます。",
+      "answer": "かい",
+      "choices": [
+        "かい",
+        "かう",
+        "かって",
+        "かいます"
+      ],
+      "vi": "Tôi đi bách hóa để mua giày."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "にほんへ にほんごを べんきょうし＿＿ きました。",
+      "answer": "に",
+      "choices": [
+        "を",
+        "に",
+        "で",
+        "と"
+      ],
+      "vi": "Tôi đã đến Nhật để học tiếng Nhật."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "いっしょに ひるごはんを ＿＿に いきませんか。",
+      "answer": "たべ",
+      "choices": [
+        "たべる",
+        "たべて",
+        "たべ",
+        "たべます"
+      ],
+      "vi": "Cùng đi ăn trưa không?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "こうえんへ さんぽ＿＿ いきます。",
+      "answer": "に",
+      "choices": [
+        "を",
+        "で",
+        "と",
+        "に"
+      ],
+      "vi": "Tôi đi dạo ở công viên."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "としょかんへ ほんを ＿＿に いきます。",
+      "answer": "かえし",
+      "choices": [
+        "かえし",
+        "かえす",
+        "かえして",
+        "かえしました"
+      ],
+      "vi": "Tôi đến thư viện để trả sách."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

@@ -1,0 +1,107 @@
+{
+  "id": "n5-dochira-hou",
+  "level": "N5",
+  "order": 66,
+  "title": "どちらが ～ですか／～の ほうが ～です",
+  "pattern": "N1 と N2 と どちらが A ですか ／ N の ほうが A です",
+  "meaning_vi": "N1 và N2, cái nào A hơn? / N A hơn",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Hỏi so sánh giữa hai thứ: コーヒーと おちゃと どちらが すきですか. Trả lời: N の ほうが A です (コーヒーの ほうが すきです). Như nhau: どちらも A です."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "So sánh hai thứ thì luôn dùng どちら (không dùng どれ hay なに). ほう cần の sau danh từ: “コーヒー ほうが” là sai."
+    }
+  ],
+  "notes": [
+    "Câu trả lời có thể gộp với より: コーヒーの ほうが おちゃより すきです."
+  ],
+  "examples": [
+    {
+      "ja": "コーヒーと おちゃと どちらが すきですか。…コーヒーの ほうが すきです。",
+      "ruby": "コーヒーと おちゃと どちらが すきですか。…コーヒーの ほうが すきです。",
+      "vi": "Cà phê và trà, bạn thích cái nào hơn? … Tôi thích cà phê hơn."
+    },
+    {
+      "ja": "電車と バスと どちらが はやいですか。…電車の ほうが はやいです。",
+      "ruby": "電車[でんしゃ]と バスと どちらが はやいですか。…電車[でんしゃ]の ほうが はやいです。",
+      "vi": "Tàu điện và xe buýt, cái nào nhanh hơn? … Tàu điện nhanh hơn."
+    },
+    {
+      "ja": "なつと ふゆと どちらが すきですか。…どちらも すきです。",
+      "ruby": "なつと ふゆと どちらが すきですか。…どちらも すきです。",
+      "vi": "Mùa hè và mùa đông, bạn thích mùa nào hơn? … Tôi thích cả hai."
+    },
+    {
+      "ja": "この 本の ほうが やさしいです。",
+      "ruby": "この 本[ほん]の ほうが やさしいです。",
+      "vi": "Quyển sách này dễ hơn."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "コーヒーと おちゃと ＿＿が すきですか。",
+      "answer": "どちら",
+      "choices": [
+        "どれ",
+        "なに",
+        "どちら",
+        "だれ"
+      ],
+      "vi": "Cà phê và trà, bạn thích cái nào hơn?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "コーヒー＿＿ ほうが すきです。",
+      "answer": "の",
+      "choices": [
+        "が",
+        "は",
+        "と",
+        "の"
+      ],
+      "vi": "Tôi thích cà phê hơn."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "でんしゃと バスと どちらが はやいですか。…でんしゃの ＿＿が はやいです。",
+      "answer": "ほう",
+      "choices": [
+        "ほう",
+        "より",
+        "もの",
+        "こと"
+      ],
+      "vi": "Tàu điện và xe buýt, cái nào nhanh hơn? … Tàu điện nhanh hơn."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "なつと ふゆと どちらが すきですか。…＿＿も すきです。",
+      "answer": "どちら",
+      "choices": [
+        "どれ",
+        "どちら",
+        "なに",
+        "だれ"
+      ],
+      "vi": "Mùa hè và mùa đông, bạn thích mùa nào hơn? … Tôi thích cả hai."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "でんしゃ＿＿ バスと どちらが はやいですか。",
+      "answer": "と",
+      "choices": [
+        "や",
+        "の",
+        "と",
+        "が"
+      ],
+      "vi": "Tàu điện và xe buýt, cái nào nhanh hơn?"
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

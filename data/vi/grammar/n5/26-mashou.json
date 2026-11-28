@@ -1,0 +1,112 @@
+{
+  "id": "n5-mashou",
+  "level": "N5",
+  "order": 26,
+  "title": "V ましょう",
+  "pattern": "V ましょう／V ましょうか",
+  "meaning_vi": "Chúng ta hãy V / Mình cùng V nhé",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Rủ rê tích cực hoặc hưởng ứng lời mời: いきましょう (Đi thôi). Đáp lời mời ませんか: みませんか。…ええ、みましょう. ましょうか dùng để bàn bạc (どこで あいましょうか: gặp ở đâu nhé?) hoặc đề nghị giúp (まどを あけましょうか: Tôi mở cửa sổ nhé?)."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Khi muốn hỏi ý người nghe, ませんか mềm hơn ましょう. Cách chia: bỏ ます, thêm ましょう: やすみます → やすみましょう."
+    }
+  ],
+  "notes": [
+    "ましょうか để đề nghị giúp đỡ người khác là cách nói rất lịch sự."
+  ],
+  "examples": [
+    {
+      "ja": "すこし 休みましょう。",
+      "ruby": "すこし 休[やす]みましょう。",
+      "vi": "Nghỉ một chút đi."
+    },
+    {
+      "ja": "いっしょに かえりましょう。",
+      "ruby": "いっしょに かえりましょう。",
+      "vi": "Cùng về thôi."
+    },
+    {
+      "ja": "えいがを 見ませんか。…ええ、見ましょう。",
+      "ruby": "えいがを 見[み]ませんか。…ええ、見[み]ましょう。",
+      "vi": "Xem phim không? … Ừ, xem đi."
+    },
+    {
+      "ja": "まどを あけましょうか。",
+      "ruby": "まどを あけましょうか。",
+      "vi": "Tôi mở cửa sổ nhé?"
+    },
+    {
+      "ja": "どこで あいましょうか。…えきで あいましょう。",
+      "ruby": "どこで あいましょうか。…えきで あいましょう。",
+      "vi": "Mình gặp nhau ở đâu nhé? … Gặp ở nhà ga đi."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "すこし ＿＿。",
+      "answer": "やすみましょう",
+      "choices": [
+        "やすむましょう",
+        "やすまましょう",
+        "やすみましょう",
+        "やすみましょうた"
+      ],
+      "vi": "Nghỉ một chút đi."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "えいがを みませんか。…ええ、＿＿。",
+      "answer": "みましょう",
+      "choices": [
+        "みるましょう",
+        "みません",
+        "みりましょう",
+        "みましょう"
+      ],
+      "vi": "Xem phim không? … Ừ, xem đi."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "いっしょに ＿＿。",
+      "answer": "かえりましょう",
+      "choices": [
+        "かえりましょう",
+        "かえるましょう",
+        "かえらましょう",
+        "かえりませんでした"
+      ],
+      "vi": "Cùng về thôi."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "どこで ＿＿か。…えきで あいましょう。",
+      "answer": "あいましょう",
+      "choices": [
+        "あうましょう",
+        "あいましょう",
+        "あわましょう",
+        "あいまし"
+      ],
+      "vi": "Mình gặp nhau ở đâu nhé? … Gặp ở nhà ga đi."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "まどを ＿＿か。",
+      "answer": "あけましょう",
+      "choices": [
+        "あくましょう",
+        "あけるましょう",
+        "あけましょう",
+        "あかましょう"
+      ],
+      "vi": "Tôi mở cửa sổ nhé?"
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

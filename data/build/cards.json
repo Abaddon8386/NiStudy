@@ -1,5 +1,488 @@
 [
   {
+    "id": "grammar:n5-adj-noun",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 30,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-adj-past",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 31,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-arimasu-imasu",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 36,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-ato-de",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 59,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-counters",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 39,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-de-means",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 19,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-de-place",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 22,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-deshou",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 69,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-desu",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 1,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-dochira-hou",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 66,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-e-direction",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 18,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-ga-but",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 42,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-ga-hoshii",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 35,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-ga-jouzu",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 33,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-ga-suki",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 32,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-ga-wakaru-aru",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 34,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-i-adj",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 27,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-i-adj-neg",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 28,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-ichi",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 38,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-ichiban",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 67,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-ikura",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 40,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-ja-arimasen",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 2,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-jikan",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 12,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-ka",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 3,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-kara-made",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 13,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-kara-reason",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 41,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-kochira",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 9,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-koko-soko-asoko",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 8,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-kono-sono-ano",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 7,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-kore-sore-are",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 6,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-koto-ga-dekiru",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 56,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-mae-ni",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 58,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-masen",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 15,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-masenka",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 25,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-mashita",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 16,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-mashou",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 26,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-masu",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 14,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-mo",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 4,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-mou-mada",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 52,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-na-adj",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 29,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-naide-kudasai",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 53,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-nakereba",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 54,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-nakutemo-ii",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 55,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-nan-dare-itsu",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 10,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-naru",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 64,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-ne-yo",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 11,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-ni-arimasu",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 37,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-ni-iku-purpose",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 44,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-ni-target",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 24,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-ni-time",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 17,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-no",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 5,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-shumi-koto",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 57,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-ta-hou-ga-ii",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 61,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-ta-koto-ga-aru",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 60,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-tai",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 43,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-tari",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 62,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-te-form",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 45,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-te-imasu",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 47,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-te-imasu-state",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 48,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-te-kara",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 51,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-te-kudasai",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 46,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-te-mo-ii",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 49,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-te-wa-ikemasen",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 50,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-to-together",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 20,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-to-ya",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 23,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-toki",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 63,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-tsumori",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 68,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-wo-object",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 21,
+    "published": false
+  },
+  {
+    "id": "grammar:n5-yori",
+    "kind": "grammar",
+    "level": "N5",
+    "sort_order": 65,
+    "published": false
+  },
+  {
     "id": "kana:hira:a",
     "kind": "kana",
     "level": null,

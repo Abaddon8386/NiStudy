@@ -1,0 +1,107 @@
+{
+  "id": "n5-koko-soko-asoko",
+  "level": "N5",
+  "order": 8,
+  "title": "ここ／そこ／あそこ／どこ",
+  "pattern": "N は ここ／そこ／あそこ です",
+  "meaning_vi": "N ở đây / ở đó / ở đằng kia",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Chỉ nơi chốn: ここ (chỗ này, gần người nói), そこ (chỗ đó, gần người nghe), あそこ (chỗ đằng kia, xa cả hai), どこ (ở đâu). Hỏi vị trí: トイレは どこですか (Nhà vệ sinh ở đâu?)."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Nói vị trí chỉ cần です: エレベーターは あそこです (Thang máy ở đằng kia), không cần thêm động từ “ở”. Chỉ nơi chốn dùng ここ／そこ／あそこ; chỉ đồ vật dùng これ／それ／あれ."
+    }
+  ],
+  "notes": [
+    "Cách nói lịch sự của nhóm này là こちら／そちら／あちら／どちら (bài sau)."
+  ],
+  "examples": [
+    {
+      "ja": "ここは 学校です。",
+      "ruby": "ここは 学校[がっこう]です。",
+      "vi": "Đây là trường học."
+    },
+    {
+      "ja": "トイレは あそこです。",
+      "ruby": "トイレは あそこです。",
+      "vi": "Nhà vệ sinh ở đằng kia."
+    },
+    {
+      "ja": "えきは どこですか。",
+      "ruby": "えきは どこですか。",
+      "vi": "Nhà ga ở đâu?"
+    },
+    {
+      "ja": "わたしの かさは そこです。",
+      "ruby": "わたしの かさは そこです。",
+      "vi": "Ô của tôi ở chỗ đó (chỗ bạn)."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "トイレは ＿＿ですか。",
+      "answer": "どこ",
+      "choices": [
+        "どこ",
+        "どれ",
+        "どの",
+        "だれ"
+      ],
+      "vi": "Nhà vệ sinh ở đâu?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "＿＿は きょうしつです。",
+      "answer": "ここ",
+      "choices": [
+        "この",
+        "ここ",
+        "どの",
+        "その"
+      ],
+      "vi": "Chỗ này là phòng học."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "エレベーターは ＿＿です。",
+      "answer": "あそこ",
+      "choices": [
+        "あの",
+        "どの",
+        "あそこ",
+        "この"
+      ],
+      "vi": "Thang máy ở đằng kia."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "しょくどうは ＿＿ですか。…そこです。",
+      "answer": "どこ",
+      "choices": [
+        "どの",
+        "なん",
+        "だれ",
+        "どこ"
+      ],
+      "vi": "Nhà ăn ở đâu? … Ở chỗ đó."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしの かさは ＿＿です。",
+      "answer": "そこ",
+      "choices": [
+        "そこ",
+        "その",
+        "どの",
+        "あの"
+      ],
+      "vi": "Ô của tôi ở chỗ đó (chỗ bạn)."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

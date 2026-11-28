@@ -1,0 +1,95 @@
+{
+  "id": "n5-ne-yo",
+  "level": "N5",
+  "order": 11,
+  "title": "～ね／～よ",
+  "pattern": "Câu ＋ ね／よ",
+  "meaning_vi": "…nhỉ / …đấy",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Trợ từ cuối câu. ね: tìm sự đồng tình hoặc xác nhận, khi người nói nghĩ người nghe cũng biết, cũng thấy vậy (giống “nhỉ”, “nhé”). よ: báo cho người nghe điều họ chưa biết, nhấn mạnh (giống “đấy”, “cơ”)."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Câu có ね thường được đáp bằng そうですね. Dùng よ quá nhiều với người trên có thể nghe như dạy đời. Không dùng ね khi đưa thông tin mới cho người nghe."
+    }
+  ],
+  "notes": [
+    "ね và よ đứng sau です／ます: いいですね, あしたですよ."
+  ],
+  "examples": [
+    {
+      "ja": "今日は いい 天気ですね。",
+      "ruby": "今日[きょう]は いい 天気[てんき]ですね。",
+      "vi": "Hôm nay trời đẹp nhỉ."
+    },
+    {
+      "ja": "この 本は 千円ですよ。",
+      "ruby": "この 本[ほん]は 千円[せんえん]ですよ。",
+      "vi": "Quyển sách này 1.000 yên đấy."
+    },
+    {
+      "ja": "あしたは 休みですよ。",
+      "ruby": "あしたは 休[やす]みですよ。",
+      "vi": "Ngày mai là ngày nghỉ đấy."
+    },
+    {
+      "ja": "リンさんは 学生ですね。",
+      "ruby": "リンさんは 学生[がくせい]ですね。",
+      "vi": "Chị Linh là sinh viên nhỉ (tôi xác nhận lại)."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "きょうは いい てんきです＿＿。…そうですね。",
+      "answer": "ね",
+      "choices": [
+        "を",
+        "に",
+        "は",
+        "ね"
+      ],
+      "vi": "Hôm nay trời đẹp nhỉ. … Đúng vậy nhỉ."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あしたは テストですか。…いいえ、あさってです＿＿。",
+      "answer": "よ",
+      "choices": [
+        "よ",
+        "を",
+        "に",
+        "が"
+      ],
+      "vi": "Ngày mai có kiểm tra à? … Không, ngày kia cơ."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "すみません、えきは どこですか。…あそこです＿＿。",
+      "answer": "よ",
+      "choices": [
+        "を",
+        "よ",
+        "が",
+        "で"
+      ],
+      "vi": "Xin lỗi, nhà ga ở đâu ạ? … Ở đằng kia đấy."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "リンさんは ベトナムじんです＿＿。…はい、そうです。",
+      "answer": "ね",
+      "choices": [
+        "を",
+        "で",
+        "ね",
+        "へ"
+      ],
+      "vi": "Chị Linh là người Việt Nam nhỉ? … Vâng, đúng vậy."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

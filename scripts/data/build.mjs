@@ -1,10 +1,11 @@
 // Pipeline dữ liệu nội dung: raw (ngoài repo) + data/vi -> data/build/*.json
-// Dùng: pnpm data:build -- --raw <thư mục raw> [--include-drafts] [--levels N5[,N4]] [--out <dir>] [--report <dir>] (hoặc đặt NIHONGO_RAW)
+// Dùng: pnpm data:build -- --raw <thư mục raw> [--include-drafts] [--levels N5[,N4]] [--out <dir>] [--report <dir>] [--grammar-dir <dir>] (hoặc đặt NIHONGO_RAW)
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { readCsvObjects } from './lib/csv.mjs';
 import { buildKana } from './lib/kana.mjs';
+import { buildGrammar, loadGrammarFiles, validateGrammarSet } from './lib/grammar.mjs';
 import { parseKanjidic, parseJmdict, priScore } from './lib/xml.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..', '..');
@@ -20,6 +21,7 @@ if (!rawDir) {
 }
 const includeDrafts = args.includes('--include-drafts');
 const vocabLevels = opt('--levels', 'N5').split(',').map((s) => s.trim());
+const grammarDir = resolve(opt('--grammar-dir', join(root, 'data', 'vi', 'grammar')));
 const outDir = resolve(opt('--out', join(root, 'data', 'build')));
 const reportDir = resolve(opt('--report', join(rawDir, '..', 'out')));
 mkdirSync(outDir, { recursive: true });
@@ -238,6 +240,16 @@ for (const [seq, c] of chosen) {
   );
 }
 
+// ---------- Ngữ pháp ----------
+const grammarFiles = loadGrammarFiles(grammarDir);
+const grammarErrors = validateGrammarSet(grammarFiles);
+if (grammarErrors.length) {
+  console.error(['Lỗi ngữ pháp:', ...grammarErrors.map((m) => `  ${m}`)].join('\n'));
+  process.exit(1);
+}
+const grammar = buildGrammar(grammarFiles, includeDrafts);
+cards.push(...grammar.cards);
+
 // ---------- Ghi ----------
 const byId = (a, b) => cmp(a.id, b.id);
 const byCard = (a, b) => cmp(a.card_id, b.card_id);
@@ -246,6 +258,7 @@ write('cards.json', cards.sort(byId));
 write('kana_details.json', kanaDetails.sort(byCard));
 write('kanji_details.json', kanjiDetails.sort(byCard));
 write('vocab_details.json', vocabDetails.sort(byCard));
+write('grammar_details.json', grammar.details);
 // Nguồn dữ liệu cho bảng data_sources (khớp data/LICENSE.md). downloaded_on: ngày tải bản gốc.
 const TANOS = 'https://github.com/Bluskyo/JLPT_Vocabulary (commit d29a678, mirror của tanos.co.uk)';
 write('data_sources.json', [
@@ -263,7 +276,7 @@ if (kanjiErrors.length) rep('kanji-errors.txt', kanjiErrors.join('\n') + '\n');
 // ---------- Tổng kết ----------
 const count = (f) => cards.filter(f).length;
 console.log(`Nguồn: KANJIDIC2 ${kd.version}; JMdict created ${jm.created} (${jm.total} mục); drafts=${includeDrafts}`);
-for (const kind of ['kana', 'vocab', 'kanji']) {
+for (const kind of ['kana', 'vocab', 'kanji', 'grammar']) {
   const lv = (l) => count((c) => c.kind === kind && c.level === l);
   console.log(
     `${kind}: ${count((c) => c.kind === kind)} thẻ (N5 ${lv('N5')}, N4 ${lv('N4')}, null ${lv(null)}), published ${count((c) => c.kind === kind && c.published)}`,

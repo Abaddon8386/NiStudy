@@ -1,0 +1,107 @@
+{
+  "id": "n5-nakutemo-ii",
+  "level": "N5",
+  "order": 55,
+  "title": "V なくてもいいです",
+  "pattern": "V(thể ない, bỏ い) くて も いいです",
+  "meaning_vi": "Không cần V cũng được",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Thể ない bỏ い + くてもいいです: việc không bắt buộc. Hay dùng để trả lời ～なければなりませんか: いいえ、～なくてもいいです."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Phân biệt: ～なくてもいいです (không cần làm) khác ～てはいけません (không được làm). Người Việt dễ nhầm vì cả hai đều có chữ “không”."
+    }
+  ],
+  "notes": [
+    "Đối lập: ～なければなりません (phải) ↔ ～なくてもいいです (không cần)."
+  ],
+  "examples": [
+    {
+      "ja": "あしたは 学校へ 行かなくてもいいです。",
+      "ruby": "あしたは 学校[がっこう]へ 行[い]かなくてもいいです。",
+      "vi": "Ngày mai không cần đến trường cũng được."
+    },
+    {
+      "ja": "ここでは くつを ぬがなくてもいいです。",
+      "ruby": "ここでは くつを ぬがなくてもいいです。",
+      "vi": "Ở đây không cần cởi giày cũng được."
+    },
+    {
+      "ja": "この 本は 今日 かえさなくてもいいです。",
+      "ruby": "この 本[ほん]は 今日[きょう] かえさなくてもいいです。",
+      "vi": "Quyển sách này không cần trả hôm nay cũng được."
+    },
+    {
+      "ja": "名前を 書かなければなりませんか。…いいえ、書かなくてもいいです。",
+      "ruby": "名前[なまえ]を 書[か]かなければなりませんか。…いいえ、書[か]かなくてもいいです。",
+      "vi": "Có phải viết tên không? … Không, không cần viết cũng được."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "あしたは がっこうへ ＿＿なくてもいいです。",
+      "answer": "いか",
+      "choices": [
+        "いき",
+        "いく",
+        "いけ",
+        "いか"
+      ],
+      "vi": "Ngày mai không cần đến trường cũng được."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ここでは くつを ＿＿なくてもいいです。",
+      "answer": "ぬが",
+      "choices": [
+        "ぬが",
+        "ぬぎ",
+        "ぬぐ",
+        "ぬか"
+      ],
+      "vi": "Ở đây không cần cởi giày cũng được."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "この ほんは きょう ＿＿なくてもいいです。",
+      "answer": "かえさ",
+      "choices": [
+        "かえし",
+        "かえさ",
+        "かえす",
+        "かえせ"
+      ],
+      "vi": "Quyển sách này không cần trả hôm nay cũng được."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "なまえを かかなければなりませんか。…いいえ、かかなくても＿＿。",
+      "answer": "いいです",
+      "choices": [
+        "いけません",
+        "なりません",
+        "いいです",
+        "ください"
+      ],
+      "vi": "Có phải viết tên không? … Không, không cần viết cũng được."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あしたは はやく ＿＿なくてもいいです。",
+      "answer": "おき",
+      "choices": [
+        "おか",
+        "おく",
+        "おけ",
+        "おき"
+      ],
+      "vi": "Ngày mai không cần dậy sớm cũng được."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

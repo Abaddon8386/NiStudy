@@ -1,0 +1,119 @@
+{
+  "id": "n5-jikan",
+  "level": "N5",
+  "order": 12,
+  "title": "～時～ふん",
+  "pattern": "いま ～時～ふん です",
+  "meaning_vi": "Bây giờ là … giờ … phút",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Nói giờ: số + 時 (じ), phút: số + ふん／ぷん. Hỏi giờ: いま なんじですか. 半 (はん) là “rưỡi”. 午前 (ごぜん, buổi sáng) và 午後 (ごご, buổi chiều) đặt TRƯỚC giờ: ごご さんじ (3 giờ chiều)."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Cách đọc giờ đặc biệt: 四時 よじ, 七時 しちじ, 九時 くじ. Phút: いっぷん, にふん, さんぷん, よんぷん, ごふん, ろっぷん, ななふん, はっぷん, きゅうふん, じゅっぷん."
+    }
+  ],
+  "notes": [
+    "Khác tiếng Việt (“3 giờ chiều”), tiếng Nhật nói ごご さんじ (chiều – 3 giờ)."
+  ],
+  "examples": [
+    {
+      "ja": "今 九時です。",
+      "ruby": "今[いま] 九時[くじ]です。",
+      "vi": "Bây giờ là 9 giờ."
+    },
+    {
+      "ja": "今 四時 半です。",
+      "ruby": "今[いま] 四時[よじ] 半[はん]です。",
+      "vi": "Bây giờ là 4 giờ rưỡi."
+    },
+    {
+      "ja": "今 何時ですか。…午後 二時 じゅっぷんです。",
+      "ruby": "今[いま] 何時[なんじ]ですか。…午後[ごご] 二時[にじ] じゅっぷんです。",
+      "vi": "Bây giờ là mấy giờ? … 2 giờ 10 phút chiều."
+    },
+    {
+      "ja": "ベトナムは 今 午前 七時です。",
+      "ruby": "ベトナムは 今[いま] 午前[ごぜん] 七時[しちじ]です。",
+      "vi": "Ở Việt Nam bây giờ là 7 giờ sáng."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "いま ＿＿ですか。…くじです。",
+      "answer": "なんじ",
+      "choices": [
+        "なんじ",
+        "なんぷん",
+        "いつ",
+        "どこ"
+      ],
+      "vi": "Bây giờ là mấy giờ? … 9 giờ."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "いま よじ ＿＿です。",
+      "answer": "はん",
+      "choices": [
+        "ぷん",
+        "はん",
+        "ごろ",
+        "じ"
+      ],
+      "vi": "Bây giờ là 4 giờ rưỡi."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "いま ＿＿ さんじです。",
+      "answer": "ごご",
+      "choices": [
+        "ごぜん",
+        "あさ",
+        "ごご",
+        "けさ"
+      ],
+      "vi": "Bây giờ là 3 giờ chiều."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "いま ＿＿ はんです。",
+      "answer": "よじ",
+      "choices": [
+        "よんじ",
+        "しじ",
+        "よっじ",
+        "よじ"
+      ],
+      "vi": "Bây giờ là 4 giờ rưỡi."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "いま くじ ＿＿です。",
+      "answer": "ごふん",
+      "choices": [
+        "ごふん",
+        "ごぷん",
+        "ごっぷん",
+        "ごじ"
+      ],
+      "vi": "Bây giờ là 9 giờ 5 phút."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "いま ＿＿ じゅっぷんです。",
+      "answer": "くじ",
+      "choices": [
+        "きゅうじ",
+        "くじ",
+        "くっじ",
+        "ここのじ"
+      ],
+      "vi": "Bây giờ là 9 giờ 10 phút."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

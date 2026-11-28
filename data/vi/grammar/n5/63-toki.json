@@ -1,0 +1,119 @@
+{
+  "id": "n5-toki",
+  "level": "N5",
+  "order": 63,
+  "title": "～とき",
+  "pattern": "V(thể thường)／Aい／Aな／N の とき、～",
+  "meaning_vi": "Khi …",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "とき nối với mệnh đề chỉ thời điểm: ひまな とき (khi rảnh), こどもの とき (hồi nhỏ), さむい とき (khi lạnh), わからない とき (khi không hiểu). Trước とき dùng thể thường: tính từ な giữ な, danh từ thêm の."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Lỗi hay gặp: “ひま とき”, “こども とき” (thiếu な／の). Tiếng Việt “khi” đứng đầu, còn とき đứng sau mệnh đề."
+    }
+  ],
+  "notes": [
+    "Thể từ điển + とき và thể た + とき khác nhau về thời điểm; phần này học kỹ ở N4."
+  ],
+  "examples": [
+    {
+      "ja": "ひまな とき、本を 読みます。",
+      "ruby": "ひまな とき、本[ほん]を 読[よ]みます。",
+      "vi": "Khi rảnh tôi đọc sách."
+    },
+    {
+      "ja": "子どもの とき、川で よく およぎました。",
+      "ruby": "子[こ]どもの とき、川[かわ]で よく およぎました。",
+      "vi": "Hồi nhỏ tôi hay bơi ở sông."
+    },
+    {
+      "ja": "さむい とき、あたたかい おちゃを のみます。",
+      "ruby": "さむい とき、あたたかい おちゃを のみます。",
+      "vi": "Khi lạnh tôi uống trà nóng."
+    },
+    {
+      "ja": "わからない とき、先生に 聞いてください。",
+      "ruby": "わからない とき、先生[せんせい]に 聞[き]いてください。",
+      "vi": "Khi không hiểu, hãy hỏi thầy cô."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "＿＿ とき、ほんを よみます。",
+      "answer": "ひまな",
+      "choices": [
+        "ひま",
+        "ひまの",
+        "ひまい",
+        "ひまな"
+      ],
+      "vi": "Khi rảnh tôi đọc sách."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "こども＿＿ とき、かわで よく およぎました。",
+      "answer": "の",
+      "choices": [
+        "の",
+        "な",
+        "が",
+        "を"
+      ],
+      "vi": "Hồi nhỏ tôi hay bơi ở sông."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "＿＿ とき、あたたかい おちゃを のみます。",
+      "answer": "さむい",
+      "choices": [
+        "さむいな",
+        "さむい",
+        "さむの",
+        "さむくて"
+      ],
+      "vi": "Khi lạnh tôi uống trà nóng."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "＿＿ とき、せんせいに きいてください。",
+      "answer": "わからない",
+      "choices": [
+        "わかりません",
+        "わからなくて",
+        "わからない",
+        "わからないの"
+      ],
+      "vi": "Khi không hiểu, hãy hỏi thầy cô."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "げんき＿＿ とき、さんぽします。",
+      "answer": "な",
+      "choices": [
+        "の",
+        "が",
+        "い",
+        "な"
+      ],
+      "vi": "Khi khỏe tôi đi dạo."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あめ＿＿ とき、タクシーで いきます。",
+      "answer": "の",
+      "choices": [
+        "の",
+        "な",
+        "が",
+        "を"
+      ],
+      "vi": "Khi trời mưa tôi đi taxi."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

@@ -332,6 +332,22 @@ function QuizEntry() {
   );
 }
 
+function GrammarEntry() {
+  return (
+    <Reveal index={5} className="col-span-2 lg:col-span-12">
+      <Link
+        href="/ngu-phap"
+        className="dash-quiz flex min-h-16 w-full items-center justify-between gap-4 rounded-full border-2 border-ink bg-paper px-6 text-[18px] font-bold"
+      >
+        <span>Ngữ pháp N5</span>
+        <span aria-hidden="true" className="text-[24px] leading-none">
+          →
+        </span>
+      </Link>
+    </Reveal>
+  );
+}
+
 export function Dashboard() {
   const [loaded, setLoaded] = useState<Loaded | null>(null);
   const [failed, setFailed] = useState(false);
@@ -416,6 +432,7 @@ export function Dashboard() {
           <ExamTile view={view} d={d} />
           <XpTile d={d} />
           <QuizEntry />
+          <GrammarEntry />
         </div>
       )}
 

@@ -1,0 +1,107 @@
+{
+  "id": "n5-na-adj",
+  "level": "N5",
+  "order": 29,
+  "title": "Tính từ な ＋ です／じゃありません",
+  "pattern": "N は Aな(bỏ な) です／じゃありません",
+  "meaning_vi": "N (thì) A / N không A",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Tính từ な (しずか, きれい, げんき, ゆうめい, べんり, にぎやか…) khi đứng cuối câu thì bỏ な: しずかです. Phủ định giống danh từ: しずかじゃありません."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "きれい, ゆうめい trông như tính từ い nhưng là tính từ な: “きれくないです” là sai, phải nói きれいじゃありません. Không nói “しずかなです”."
+    }
+  ],
+  "notes": [
+    "Tính từ な được gọi như vậy vì có な khi đứng trước danh từ (bài sau)."
+  ],
+  "examples": [
+    {
+      "ja": "この へやは しずかです。",
+      "ruby": "この へやは しずかです。",
+      "vi": "Căn phòng này yên tĩnh."
+    },
+    {
+      "ja": "やまださんは とても げんきです。",
+      "ruby": "やまださんは とても げんきです。",
+      "vi": "Anh Yamada rất khỏe."
+    },
+    {
+      "ja": "この 川は きれいじゃありません。",
+      "ruby": "この 川[かわ]は きれいじゃありません。",
+      "vi": "Con sông này không sạch."
+    },
+    {
+      "ja": "あの 大学は ゆうめいです。",
+      "ruby": "あの 大学[だいがく]は ゆうめいです。",
+      "vi": "Trường đại học kia nổi tiếng."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "この へやは ＿＿。",
+      "answer": "しずかです",
+      "choices": [
+        "しずかなです",
+        "しずかです",
+        "しずかいです",
+        "しずかだです"
+      ],
+      "vi": "Căn phòng này yên tĩnh."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "この かわは ＿＿。",
+      "answer": "きれいじゃありません",
+      "choices": [
+        "きれくないです",
+        "きれいくないです",
+        "きれいじゃありません",
+        "きれいないです"
+      ],
+      "vi": "Con sông này không sạch."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あの だいがくは ＿＿。",
+      "answer": "ゆうめいです",
+      "choices": [
+        "ゆうめいなです",
+        "ゆうめいだです",
+        "ゆうめくです",
+        "ゆうめいです"
+      ],
+      "vi": "Trường đại học kia nổi tiếng."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "この まちは あまり ＿＿。",
+      "answer": "にぎやかじゃありません",
+      "choices": [
+        "にぎやかじゃありません",
+        "にぎやかです",
+        "にぎやかくないです",
+        "にぎやかないです"
+      ],
+      "vi": "Thị trấn này không nhộn nhịp lắm."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "じてんしゃは ＿＿。",
+      "answer": "べんりです",
+      "choices": [
+        "べんりなです",
+        "べんりです",
+        "べんりいです",
+        "べんりだです"
+      ],
+      "vi": "Xe đạp tiện lợi."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

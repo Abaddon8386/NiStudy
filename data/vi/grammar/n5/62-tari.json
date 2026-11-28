@@ -1,0 +1,107 @@
+{
+  "id": "n5-tari",
+  "level": "N5",
+  "order": 62,
+  "title": "V たり V たり します",
+  "pattern": "V1 たり、V2 たり します",
+  "meaning_vi": "Nào là V1, nào là V2…",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Liệt kê vài hành động tiêu biểu, không theo thứ tự, không đầy đủ: にちようびは ほんを よんだり、えいがを みたり します. Cách tạo: thể た + り. Câu kết thúc bằng します; thì của câu chia ở します."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Lỗi hay gặp: quên します ở cuối, hoặc chỉ dùng たり một lần. Khác ～て、～ (liệt kê theo thứ tự, đầy đủ)."
+    }
+  ],
+  "notes": [
+    "Rất hay dùng để kể về cuối tuần, kỳ nghỉ."
+  ],
+  "examples": [
+    {
+      "ja": "にちようびは 本を 読んだり、えいがを 見たり します。",
+      "ruby": "にちようびは 本[ほん]を 読[よ]んだり、えいがを 見[み]たり します。",
+      "vi": "Chủ nhật tôi đọc sách, xem phim…"
+    },
+    {
+      "ja": "なつやすみは 山に のぼったり、川で およいだり しました。",
+      "ruby": "なつやすみは 山[やま]に のぼったり、川[かわ]で およいだり しました。",
+      "vi": "Kỳ nghỉ hè tôi đã leo núi, bơi sông…"
+    },
+    {
+      "ja": "パーティーで うたを うたったり、りょうりを 食べたり しました。",
+      "ruby": "パーティーで うたを うたったり、りょうりを 食[た]べたり しました。",
+      "vi": "Ở bữa tiệc chúng tôi đã hát, ăn uống…"
+    },
+    {
+      "ja": "休みの 日は そうじを したり、せんたくを したり します。",
+      "ruby": "休[やす]みの 日[ひ]は そうじを したり、せんたくを したり します。",
+      "vi": "Ngày nghỉ tôi dọn dẹp, giặt giũ…"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "にちようびは ほんを ＿＿、えいがを みたり します。",
+      "answer": "よんだり",
+      "choices": [
+        "よみたり",
+        "よんでり",
+        "よんだり",
+        "よむたり"
+      ],
+      "vi": "Chủ nhật tôi đọc sách, xem phim…"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "なつやすみは やまに のぼったり、かわで ＿＿ しました。",
+      "answer": "およいだり",
+      "choices": [
+        "およぎたり",
+        "およいたり",
+        "およんだり",
+        "およいだり"
+      ],
+      "vi": "Kỳ nghỉ hè tôi đã leo núi, bơi sông…"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "パーティーで うたを うたったり、りょうりを たべたり ＿＿。",
+      "answer": "しました",
+      "choices": [
+        "しました",
+        "します",
+        "ありました",
+        "いました"
+      ],
+      "vi": "Ở bữa tiệc chúng tôi đã hát, ăn uống…"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "やすみの ひは そうじを ＿＿、せんたくを したり します。",
+      "answer": "したり",
+      "choices": [
+        "すたり",
+        "したり",
+        "しったり",
+        "してり"
+      ],
+      "vi": "Ngày nghỉ tôi dọn dẹp, giặt giũ…"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "まいばん テレビを みたり、おんがくを ＿＿ します。",
+      "answer": "きいたり",
+      "choices": [
+        "きいだり",
+        "ききたり",
+        "きいたり",
+        "きったり"
+      ],
+      "vi": "Tối nào tôi cũng xem tivi, nghe nhạc…"
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

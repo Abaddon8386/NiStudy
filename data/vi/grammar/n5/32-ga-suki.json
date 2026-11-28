@@ -1,0 +1,107 @@
+{
+  "id": "n5-ga-suki",
+  "level": "N5",
+  "order": 32,
+  "title": "～が すきです／きらいです",
+  "pattern": "N が すきです／きらいです",
+  "meaning_vi": "Thích N / Ghét (không thích) N",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "すき (thích), きらい (ghét) là tính từ な; đối tượng được thích đánh dấu bằng が: わたしは ねこが すきです. Rất thích: だいすきです."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Lỗi hay gặp do dịch từ tiếng Việt: “ねこを すきです”. きらい nghe khá mạnh; muốn nói nhẹ nhàng dùng あまり すきじゃありません."
+    }
+  ],
+  "notes": [
+    "Phủ định của すき là すきじゃありません (tính từ な), không phải “すきくないです”."
+  ],
+  "examples": [
+    {
+      "ja": "わたしは ねこが すきです。",
+      "ruby": "わたしは ねこが すきです。",
+      "vi": "Tôi thích mèo."
+    },
+    {
+      "ja": "リンさんは 日本の えいがが だいすきです。",
+      "ruby": "リンさんは 日本[にほん]の えいがが だいすきです。",
+      "vi": "Chị Linh rất thích phim Nhật."
+    },
+    {
+      "ja": "わたしは やさいが きらいです。",
+      "ruby": "わたしは やさいが きらいです。",
+      "vi": "Tôi ghét rau."
+    },
+    {
+      "ja": "ナムさんは あまり さかなが すきじゃありません。",
+      "ruby": "ナムさんは あまり さかなが すきじゃありません。",
+      "vi": "Anh Nam không thích cá lắm."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしは ねこ＿＿ すきです。",
+      "answer": "が",
+      "choices": [
+        "が",
+        "を",
+        "に",
+        "で"
+      ],
+      "vi": "Tôi thích mèo."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "リンさんは にほんの えいが＿＿ だいすきです。",
+      "answer": "が",
+      "choices": [
+        "を",
+        "が",
+        "に",
+        "で"
+      ],
+      "vi": "Chị Linh rất thích phim Nhật."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしは やさい＿＿ きらいです。",
+      "answer": "が",
+      "choices": [
+        "を",
+        "に",
+        "が",
+        "で"
+      ],
+      "vi": "Tôi ghét rau."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ナムさんは あまり さかなが ＿＿。",
+      "answer": "すきじゃありません",
+      "choices": [
+        "すきです",
+        "すきくないです",
+        "すきないです",
+        "すきじゃありません"
+      ],
+      "vi": "Anh Nam không thích cá lắm."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしは おんがくが ＿＿。",
+      "answer": "だいすきです",
+      "choices": [
+        "だいすきです",
+        "だいすきなです",
+        "だいすきいです",
+        "すきだいです"
+      ],
+      "vi": "Tôi rất thích âm nhạc."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

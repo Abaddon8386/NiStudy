@@ -1,0 +1,124 @@
+{
+  "id": "n5-counters",
+  "level": "N5",
+  "order": 39,
+  "title": "Số đếm và trợ số từ",
+  "pattern": "N を／が Số lượng ＋ V",
+  "meaning_vi": "Đếm số lượng (… cái, … người…)",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Tiếng Nhật đếm bằng số + từ đếm. ひとつ, ふたつ, みっつ… とお: đồ vật nói chung (đến 10). ～にん: người (đặc biệt ひとり, ふたり, よにん). ～まい: vật mỏng, phẳng (giấy, vé, áo). ～ほん: vật dài (bút, ô, chai). ～だい: máy móc, xe. Hỏi số lượng: いくつ, なんにん, なんまい…."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Tiếng Việt nói “mua ba quả trứng” (số trước danh từ), tiếng Nhật thường đặt số lượng ngay trước động từ: たまごを みっつ かいます. Biến âm của ほん: いっぽん, さんぼん, ろっぽん, はっぽん."
+    }
+  ],
+  "notes": [
+    "Gia đình có mấy người: かぞくは よにんです."
+  ],
+  "examples": [
+    {
+      "ja": "たまごを 三つ かいました。",
+      "ruby": "たまごを 三[みっ]つ かいました。",
+      "vi": "Tôi đã mua ba quả trứng."
+    },
+    {
+      "ja": "きょうしつに 学生が 十人 います。",
+      "ruby": "きょうしつに 学生[がくせい]が 十人[じゅうにん] います。",
+      "vi": "Trong phòng học có mười học sinh."
+    },
+    {
+      "ja": "きっぷを 二まい ください。",
+      "ruby": "きっぷを 二[に]まい ください。",
+      "vi": "Cho tôi hai vé."
+    },
+    {
+      "ja": "ペンが 一本 あります。",
+      "ruby": "ペンが 一本[いっぽん] あります。",
+      "vi": "Có một cây bút."
+    },
+    {
+      "ja": "うちに 車が 二だい あります。",
+      "ruby": "うちに 車[くるま]が 二[に]だい あります。",
+      "vi": "Nhà tôi có hai chiếc ô tô."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "たまごを ＿＿ かいました。",
+      "answer": "みっつ",
+      "choices": [
+        "さんにん",
+        "さんまい",
+        "さんぼん",
+        "みっつ"
+      ],
+      "vi": "Tôi đã mua ba quả trứng."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きょうしつに がくせいが ＿＿ います。",
+      "answer": "ふたり",
+      "choices": [
+        "ふたり",
+        "ふたつ",
+        "ににん",
+        "にまい"
+      ],
+      "vi": "Trong phòng học có hai học sinh."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きっぷを ＿＿ ください。",
+      "answer": "にまい",
+      "choices": [
+        "にほん",
+        "にまい",
+        "にだい",
+        "ふたり"
+      ],
+      "vi": "Cho tôi hai vé."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ペンが ＿＿ あります。",
+      "answer": "いっぽん",
+      "choices": [
+        "いちほん",
+        "いちまい",
+        "いっぽん",
+        "ひとり"
+      ],
+      "vi": "Có một cây bút."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "うちに くるまが ＿＿ あります。",
+      "answer": "にだい",
+      "choices": [
+        "にまい",
+        "にほん",
+        "ふたり",
+        "にだい"
+      ],
+      "vi": "Nhà tôi có hai chiếc ô tô."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "かぞくは ＿＿です。",
+      "answer": "よにん",
+      "choices": [
+        "よにん",
+        "よんにん",
+        "しにん",
+        "よっつ"
+      ],
+      "vi": "Gia đình tôi có bốn người."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

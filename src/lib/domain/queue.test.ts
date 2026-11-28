@@ -191,6 +191,64 @@ describe("buildSession", () => {
     expect(ids(s)).toEqual(["vocab:1", "vocab:2"]);
   });
 
+  it("ngữ pháp: chưa biết kana xen 1 kana, 1 kanji, 2 vocab, 1 grammar", () => {
+    const s = buildSession({
+      due: [],
+      newCandidates: [...kanaLater(2), ...list("kanji", 2), ...list("vocab", 4), ...list("grammar", 2)],
+      newDoneToday: 0,
+      newPerDay: 20,
+      knowsKana: false,
+    });
+    expect(ids(s)).toEqual([
+      "kana:1", "kanji:1", "vocab:1", "vocab:2", "grammar:1",
+      "kana:2", "kanji:2", "vocab:3", "vocab:4", "grammar:2",
+    ]);
+  });
+
+  it("ngữ pháp: đã biết kana xen 1 kanji, 2 vocab, 1 grammar", () => {
+    const s = buildSession({
+      due: [],
+      newCandidates: [...list("kanji", 2), ...list("vocab", 4), ...list("grammar", 2)],
+      newDoneToday: 0,
+      newPerDay: 20,
+      knowsKana: true,
+    });
+    expect(ids(s)).toEqual([
+      "kanji:1", "vocab:1", "vocab:2", "grammar:1",
+      "kanji:2", "vocab:3", "vocab:4", "grammar:2",
+    ]);
+  });
+
+  it("ngữ pháp: không có ngữ pháp thì thứ tự như cũ; hết loại khác thì chỉ còn ngữ pháp", () => {
+    const none = buildSession({
+      due: [],
+      newCandidates: [...list("kanji", 1), ...list("vocab", 2)],
+      newDoneToday: 0,
+      newPerDay: 10,
+      knowsKana: true,
+    });
+    expect(ids(none)).toEqual(["kanji:1", "vocab:1", "vocab:2"]);
+    const only = buildSession({
+      due: [],
+      newCandidates: list("grammar", 3),
+      newDoneToday: 0,
+      newPerDay: 2,
+      knowsKana: true,
+    });
+    expect(ids(only)).toEqual(["grammar:1", "grammar:2"]);
+  });
+
+  it("ngữ pháp: còn hiragana cơ bản thì chưa có thẻ ngữ pháp", () => {
+    const s = buildSession({
+      due: [],
+      newCandidates: [...list("kana", 3), ...list("grammar", 2)],
+      newDoneToday: 0,
+      newPerDay: 10,
+      knowsKana: false,
+    });
+    expect(ids(s)).toEqual(["kana:1", "kana:2", "kana:3"]);
+  });
+
   it("chỉ lấy số còn lại = newPerDay - newDoneToday, không cắt thẻ đến hạn", () => {
     const s = buildSession({
       due: [dueItem("vocab:9")],

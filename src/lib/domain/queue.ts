@@ -3,7 +3,7 @@
  * Hàm thuần: không đọc đồng hồ hay mạng.
  */
 
-export type CardKind = "kana" | "vocab" | "kanji";
+export type CardKind = "kana" | "vocab" | "kanji" | "grammar";
 
 export interface QueueCard {
   id: string;
@@ -45,7 +45,35 @@ export interface KanjiDetails {
   examples: KanjiExample[];
 }
 
-export type CardDetails = KanaDetails | VocabDetails | KanjiDetails;
+export interface GrammarExample {
+  ja: string;
+  ruby: string;
+  vi: string;
+}
+
+export interface GrammarExercise {
+  type: "cloze";
+  prompt_ja: string;
+  answer: string;
+  choices: string[];
+  vi: string;
+}
+
+/** Chi tiết thẻ ngữ pháp (cột của `grammar_details` trừ `card_id`). */
+export interface GrammarCardDetails {
+  point_id: string;
+  level: "N5" | "N4";
+  sort: number;
+  title: string;
+  pattern: string;
+  meaning_vi: string;
+  explanation: { heading?: string; body: string }[];
+  notes: string[];
+  examples: GrammarExample[];
+  exercises: GrammarExercise[];
+}
+
+export type CardDetails = KanaDetails | VocabDetails | KanjiDetails | GrammarCardDetails;
 
 /** Một dòng `card_states` dạng JSON do RPC trả (không có user_id, card_id). */
 export interface CardStateRow {
@@ -70,7 +98,7 @@ export interface DueItem extends NewCandidate {
   state: CardStateRow;
 }
 
-/** JSON của `get_today_queue`. `new_candidates` là mảng phẳng đã sắp kana, kanji, vocab (mỗi loại theo sort_order). */
+/** JSON của `get_today_queue`. `new_candidates` là mảng phẳng đã sắp kana, kanji, vocab, grammar (mỗi loại theo sort_order). */
 export interface TodayQueue {
   due: DueItem[];
   new_done_today: number;
@@ -102,20 +130,20 @@ function hasBasicHiraganaLeft(kana: readonly NewCandidate[]): boolean {
   return d?.script === "hira" && d.grp === "basic";
 }
 
-type Slot = "kana" | "kanji" | "vocab";
+type Slot = "kana" | "kanji" | "vocab" | "grammar";
 
 /**
  * Thẻ đến hạn trước (giữ thứ tự đầu vào), rồi thẻ mới: tối đa `newPerDay - newDoneToday` (FR-13).
  * - Chưa biết kana, còn hiragana cơ bản: thẻ mới chỉ là kana.
- * - Chưa biết kana, hết hiragana cơ bản: xen theo chu kỳ 1 kana, 1 kanji, 2 vocab.
- * - Đã biết kana: bỏ kana, chu kỳ 1 kanji, 2 vocab.
+ * - Chưa biết kana, hết hiragana cơ bản: xen theo chu kỳ 1 kana, 1 kanji, 2 vocab, 1 grammar.
+ * - Đã biết kana: bỏ kana, chu kỳ 1 kanji, 2 vocab, 1 grammar.
  * Loại nào hết thì bỏ qua trong chu kỳ. Thứ tự trong từng loại giữ nguyên như máy chủ trả (sort_order).
  */
 export function buildSession(input: BuildSessionInput): SessionCard[] {
   const session: SessionCard[] = input.due.map((d) => ({ ...d, isNew: false }));
 
   let left = remainingNew(input.newPerDay, input.newDoneToday);
-  const pools: Record<Slot, NewCandidate[]> = { kana: [], kanji: [], vocab: [] };
+  const pools: Record<Slot, NewCandidate[]> = { kana: [], kanji: [], vocab: [], grammar: [] };
   for (const c of input.newCandidates) {
     if (c.card.kind === "kana") {
       if (!input.knowsKana) pools.kana.push(c);
@@ -126,10 +154,10 @@ export function buildSession(input: BuildSessionInput): SessionCard[] {
   const cycle: Slot[] = kanaOnly
     ? ["kana"]
     : input.knowsKana
-      ? ["kanji", "vocab", "vocab"]
-      : ["kana", "kanji", "vocab", "vocab"];
+      ? ["kanji", "vocab", "vocab", "grammar"]
+      : ["kana", "kanji", "vocab", "vocab", "grammar"];
 
-  const next: Record<Slot, number> = { kana: 0, kanji: 0, vocab: 0 };
+  const next: Record<Slot, number> = { kana: 0, kanji: 0, vocab: 0, grammar: 0 };
   const pickedNew: NewCandidate[] = [];
   while (left > 0 && cycle.some((slot) => next[slot] < pools[slot].length)) {
     for (const slot of cycle) {

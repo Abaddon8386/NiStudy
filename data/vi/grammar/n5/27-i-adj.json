@@ -1,0 +1,107 @@
+{
+  "id": "n5-i-adj",
+  "level": "N5",
+  "order": 27,
+  "title": "Tính từ い ＋ です",
+  "pattern": "N は Aい です",
+  "meaning_vi": "N (thì) A",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Tính từ đuôi い (たかい, おおきい, おいしい, さむい…) đứng trước です làm vị ngữ: この ほんは たかいです (Quyển sách này đắt). とても (rất) đứng trước tính từ."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Không nói “たかいだです” hay “たかいだ”. Tiếng Việt không cần “thì/là” trước tính từ; tiếng Nhật cũng không cần, chỉ thêm です để lịch sự. きれい, きらい, ゆうめい tận cùng bằng い nhưng là tính từ な (bài sau)."
+    }
+  ],
+  "notes": [
+    "いい (tốt, đẹp) là tính từ い đặc biệt, gặp lại ở bài phủ định."
+  ],
+  "examples": [
+    {
+      "ja": "この 本は 高いです。",
+      "ruby": "この 本[ほん]は 高[たか]いです。",
+      "vi": "Quyển sách này đắt."
+    },
+    {
+      "ja": "日本の りょうりは おいしいです。",
+      "ruby": "日本[にほん]の りょうりは おいしいです。",
+      "vi": "Món ăn Nhật ngon."
+    },
+    {
+      "ja": "今日は とても さむいです。",
+      "ruby": "今日[きょう]は とても さむいです。",
+      "vi": "Hôm nay rất lạnh."
+    },
+    {
+      "ja": "あの 山は 高いですね。",
+      "ruby": "あの 山[やま]は 高[たか]いですね。",
+      "vi": "Ngọn núi kia cao nhỉ."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "この ほんは ＿＿。",
+      "answer": "たかいです",
+      "choices": [
+        "たかいます",
+        "たかだです",
+        "たかいだ",
+        "たかいです"
+      ],
+      "vi": "Quyển sách này đắt."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "にほんの りょうりは ＿＿。",
+      "answer": "おいしいです",
+      "choices": [
+        "おいしいです",
+        "おいしいます",
+        "おいしです",
+        "おいしいだ"
+      ],
+      "vi": "Món ăn Nhật ngon."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きょうは とても ＿＿。",
+      "answer": "さむいです",
+      "choices": [
+        "さむいます",
+        "さむいです",
+        "さむです",
+        "さむいだ"
+      ],
+      "vi": "Hôm nay rất lạnh."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "この へやは ＿＿。",
+      "answer": "ひろいです",
+      "choices": [
+        "ひろいます",
+        "ひろです",
+        "ひろいです",
+        "ひろいだ"
+      ],
+      "vi": "Căn phòng này rộng."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きょうは ＿＿ さむいです。",
+      "answer": "とても",
+      "choices": [
+        "あまり",
+        "なに",
+        "どう",
+        "とても"
+      ],
+      "vi": "Hôm nay rất lạnh."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

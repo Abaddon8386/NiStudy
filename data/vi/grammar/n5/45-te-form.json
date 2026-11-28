@@ -1,0 +1,123 @@
+{
+  "id": "n5-te-form",
+  "level": "N5",
+  "order": 45,
+  "title": "Thể て: V1 て、V2",
+  "pattern": "V1 て、V2",
+  "meaning_vi": "Làm V1 rồi V2",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Thể て nối nhiều hành động theo thứ tự thời gian: あさ おきて、シャワーを あびます. Thì của cả câu do động từ cuối quyết định."
+    },
+    {
+      "heading": "Cách chia",
+      "body": "Từ thể ます. Nhóm 1: い・ち・り → って (かいます → かって, まちます → まって, かえります → かえって); み・び・に → んで (よみます → よんで, あそびます → あそんで); き → いて (かきます → かいて); ぎ → いで (およぎます → およいで); し → して (はなします → はなして). Ngoại lệ: いきます → いって. Nhóm 2 (たべます, みます, おきます, ねます…): bỏ ます + て. Nhóm 3: します → して, きます → きて."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Lỗi hay gặp: “いきて” (đúng là いって). Không chia quá khứ cho động từ ở giữa câu: きのう いって、かいました."
+    }
+  ],
+  "notes": [
+    "Thể て là nền cho nhiều mẫu sau: ～てください, ～ています, ～てもいいです, ～てから."
+  ],
+  "examples": [
+    {
+      "ja": "あさ おきて、シャワーを あびます。",
+      "ruby": "あさ おきて、シャワーを あびます。",
+      "vi": "Buổi sáng tôi dậy rồi tắm vòi sen."
+    },
+    {
+      "ja": "きのう デパートへ 行って、くつを かいました。",
+      "ruby": "きのう デパートへ 行[い]って、くつを かいました。",
+      "vi": "Hôm qua tôi đến bách hóa rồi mua giày."
+    },
+    {
+      "ja": "うちへ かえって、ばんごはんを 食べました。",
+      "ruby": "うちへ かえって、ばんごはんを 食[た]べました。",
+      "vi": "Tôi về nhà rồi ăn tối."
+    },
+    {
+      "ja": "本を 読んで、ねました。",
+      "ruby": "本[ほん]を 読[よ]んで、ねました。",
+      "vi": "Tôi đọc sách rồi đi ngủ."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "きのう デパートへ ＿＿、くつを かいました。",
+      "answer": "いって",
+      "choices": [
+        "いきて",
+        "いって",
+        "いいて",
+        "いきって"
+      ],
+      "vi": "Hôm qua tôi đến bách hóa rồi mua giày."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あさ ＿＿、シャワーを あびます。",
+      "answer": "おきて",
+      "choices": [
+        "おきって",
+        "おいて",
+        "おきて",
+        "おきんで"
+      ],
+      "vi": "Buổi sáng tôi dậy rồi tắm vòi sen."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "うちへ ＿＿、ばんごはんを たべました。",
+      "answer": "かえって",
+      "choices": [
+        "かえりて",
+        "かえて",
+        "かえんで",
+        "かえって"
+      ],
+      "vi": "Tôi về nhà rồi ăn tối."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ほんを ＿＿、ねました。",
+      "answer": "よんで",
+      "choices": [
+        "よんで",
+        "よみて",
+        "よって",
+        "よいて"
+      ],
+      "vi": "Tôi đọc sách rồi đi ngủ."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "てがみを ＿＿、ポストに だしました。",
+      "answer": "かいて",
+      "choices": [
+        "かきて",
+        "かいて",
+        "かって",
+        "かんで"
+      ],
+      "vi": "Tôi viết thư rồi bỏ vào hòm thư."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ともだちと ＿＿、うちへ かえりました。",
+      "answer": "はなして",
+      "choices": [
+        "はなって",
+        "はなしって",
+        "はなして",
+        "はないて"
+      ],
+      "vi": "Tôi nói chuyện với bạn rồi về nhà."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

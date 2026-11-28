@@ -1,0 +1,107 @@
+{
+  "id": "n5-kore-sore-are",
+  "level": "N5",
+  "order": 6,
+  "title": "これ／それ／あれ／どれ",
+  "pattern": "これ／それ／あれ は N です",
+  "meaning_vi": "Cái này / cái đó / cái kia là N",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "これ: vật ở gần người nói; それ: vật ở gần người nghe; あれ: vật ở xa cả hai. どれ: cái nào (hỏi khi có từ ba vật trở lên). Đây là đại từ, đứng một mình, không có danh từ theo sau."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Không nói “これ ほん”: muốn có danh từ phía sau thì dùng この (bài sau). Hỏi “cái gì”: これは なんですか. Khi người hỏi dùng それ (vật gần bạn), bạn trả lời bằng これ."
+    }
+  ],
+  "notes": [
+    "Dùng これ để chỉ người là bất lịch sự; giới thiệu người dùng こちら."
+  ],
+  "examples": [
+    {
+      "ja": "これは 本です。",
+      "ruby": "これは 本[ほん]です。",
+      "vi": "Đây là quyển sách."
+    },
+    {
+      "ja": "それは わたしの かさです。",
+      "ruby": "それは わたしの かさです。",
+      "vi": "Cái đó là ô của tôi."
+    },
+    {
+      "ja": "あれは 学校です。",
+      "ruby": "あれは 学校[がっこう]です。",
+      "vi": "Kia là trường học."
+    },
+    {
+      "ja": "リンさんの かばんは どれですか。",
+      "ruby": "リンさんの かばんは どれですか。",
+      "vi": "Cặp của chị Linh là cái nào?"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "＿＿は わたしの ほんです。",
+      "answer": "これ",
+      "choices": [
+        "この",
+        "ここ",
+        "これ",
+        "どれ"
+      ],
+      "vi": "Cái này (trong tay tôi) là sách của tôi."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "＿＿は がっこうです。",
+      "answer": "あれ",
+      "choices": [
+        "あの",
+        "どの",
+        "それ",
+        "あれ"
+      ],
+      "vi": "Kia (ở đằng xa) là trường học."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あなたの かさは ＿＿ですか。",
+      "answer": "どれ",
+      "choices": [
+        "どれ",
+        "どの",
+        "なん",
+        "あの"
+      ],
+      "vi": "Ô của bạn là cái nào?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "＿＿は なんですか。",
+      "answer": "それ",
+      "choices": [
+        "その",
+        "それ",
+        "あの",
+        "どの"
+      ],
+      "vi": "Cái đó (gần bạn) là gì?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "これは なんですか。…＿＿は じしょです。",
+      "answer": "それ",
+      "choices": [
+        "その",
+        "どれ",
+        "それ",
+        "あの"
+      ],
+      "vi": "Cái này là gì? … Cái đó là từ điển."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

@@ -1,0 +1,107 @@
+{
+  "id": "n5-shumi-koto",
+  "level": "N5",
+  "order": 57,
+  "title": "しゅみは ～ことです",
+  "pattern": "しゅみは V(thể từ điển) ことです",
+  "meaning_vi": "Sở thích (của tôi) là V",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Thêm こと sau thể từ điển để biến động từ thành danh từ “việc V”: しゅみは ほんを よむことです (Sở thích của tôi là đọc sách). Có thể nói ngắn bằng danh từ: しゅみは おんがくです."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Không nói “しゅみは ほんを よみます”: sau ～は ～です phải là danh từ, nên cần こと. Hỏi: しゅみは なんですか."
+    }
+  ],
+  "notes": [
+    "しゅみ (sở thích) rất thông dụng khi tự giới thiệu, dù không có trong danh sách từ N5 của dự án."
+  ],
+  "examples": [
+    {
+      "ja": "わたしの しゅみは 本を 読むことです。",
+      "ruby": "わたしの しゅみは 本[ほん]を 読[よ]むことです。",
+      "vi": "Sở thích của tôi là đọc sách."
+    },
+    {
+      "ja": "リンさんの しゅみは うたを うたうことです。",
+      "ruby": "リンさんの しゅみは うたを うたうことです。",
+      "vi": "Sở thích của chị Linh là ca hát."
+    },
+    {
+      "ja": "父の しゅみは しゃしんを とることです。",
+      "ruby": "父[ちち]の しゅみは しゃしんを とることです。",
+      "vi": "Sở thích của bố tôi là chụp ảnh."
+    },
+    {
+      "ja": "しゅみは 何ですか。…りょうりを つくることです。",
+      "ruby": "しゅみは 何[なん]ですか。…りょうりを つくることです。",
+      "vi": "Sở thích của bạn là gì? … Là nấu ăn."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしの しゅみは ほんを ＿＿ことです。",
+      "answer": "よむ",
+      "choices": [
+        "よみ",
+        "よむ",
+        "よんで",
+        "よみます"
+      ],
+      "vi": "Sở thích của tôi là đọc sách."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "リンさんの しゅみは うたを ＿＿ことです。",
+      "answer": "うたう",
+      "choices": [
+        "うたい",
+        "うたって",
+        "うたう",
+        "うたいます"
+      ],
+      "vi": "Sở thích của chị Linh là ca hát."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ちちの しゅみは しゃしんを ＿＿ことです。",
+      "answer": "とる",
+      "choices": [
+        "とり",
+        "とって",
+        "とります",
+        "とる"
+      ],
+      "vi": "Sở thích của bố tôi là chụp ảnh."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "しゅみは りょうりを つくる＿＿です。",
+      "answer": "こと",
+      "choices": [
+        "こと",
+        "を",
+        "が",
+        "に"
+      ],
+      "vi": "Sở thích của tôi là nấu ăn."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしの しゅみは えいがを ＿＿ことです。",
+      "answer": "みる",
+      "choices": [
+        "み",
+        "みる",
+        "みて",
+        "みます"
+      ],
+      "vi": "Sở thích của tôi là xem phim."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

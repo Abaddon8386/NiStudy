@@ -1,0 +1,107 @@
+{
+  "id": "n5-ga-jouzu",
+  "level": "N5",
+  "order": 33,
+  "title": "～が じょうずです／へたです",
+  "pattern": "N が じょうずです／へたです",
+  "meaning_vi": "Giỏi N / Kém N",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "じょうず (giỏi), へた (kém) là tính từ な, đối tượng dùng が: リンさんは りょうりが じょうずです (Linh nấu ăn giỏi)."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "じょうず dùng để khen người khác; không dùng để tự khen mình. Khi được khen, người Nhật thường đáp いいえ、まだまだです (Không, tôi còn kém lắm)."
+    }
+  ],
+  "notes": [
+    "Không dùng を: “りょうりを じょうずです” là sai."
+  ],
+  "examples": [
+    {
+      "ja": "リンさんは りょうりが じょうずです。",
+      "ruby": "リンさんは りょうりが じょうずです。",
+      "vi": "Chị Linh nấu ăn giỏi."
+    },
+    {
+      "ja": "やまださんは うたが じょうずです。",
+      "ruby": "やまださんは うたが じょうずです。",
+      "vi": "Anh Yamada hát hay."
+    },
+    {
+      "ja": "わたしは えが へたです。",
+      "ruby": "わたしは えが へたです。",
+      "vi": "Tôi vẽ kém."
+    },
+    {
+      "ja": "日本語が じょうずですね。…いいえ、まだまだです。",
+      "ruby": "日本語[にほんご]が じょうずですね。…いいえ、まだまだです。",
+      "vi": "Bạn giỏi tiếng Nhật nhỉ. … Không, tôi còn kém lắm."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "リンさんは りょうり＿＿ じょうずです。",
+      "answer": "が",
+      "choices": [
+        "を",
+        "が",
+        "で",
+        "に"
+      ],
+      "vi": "Chị Linh nấu ăn giỏi."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "やまださんは うた＿＿ じょうずです。",
+      "answer": "が",
+      "choices": [
+        "を",
+        "に",
+        "が",
+        "の"
+      ],
+      "vi": "Anh Yamada hát hay."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしは え＿＿ へたです。",
+      "answer": "が",
+      "choices": [
+        "を",
+        "で",
+        "へ",
+        "が"
+      ],
+      "vi": "Tôi vẽ kém."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "にほんごが ＿＿ね。…いいえ、まだまだです。",
+      "answer": "じょうずです",
+      "choices": [
+        "じょうずです",
+        "じょうずなです",
+        "じょうずいです",
+        "へたです"
+      ],
+      "vi": "Bạn giỏi tiếng Nhật nhỉ. … Không, tôi còn kém lắm."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ナムさんは ギター＿＿ じょうずです。",
+      "answer": "が",
+      "choices": [
+        "を",
+        "が",
+        "に",
+        "で"
+      ],
+      "vi": "Anh Nam chơi ghi-ta giỏi."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

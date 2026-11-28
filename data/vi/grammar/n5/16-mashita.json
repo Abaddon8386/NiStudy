@@ -1,0 +1,107 @@
+{
+  "id": "n5-mashita",
+  "level": "N5",
+  "order": 16,
+  "title": "V ました／V ませんでした",
+  "pattern": "V ました ／ V ませんでした",
+  "meaning_vi": "đã làm V / đã không làm V",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Quá khứ của thể ます: ます → ました (đã làm), ません → ませんでした (đã không làm). Thường đi với từ chỉ quá khứ: きのう, けさ, せんしゅう, きょねん."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Tiếng Việt hay bỏ “đã” (“Hôm qua tôi đi chợ”), nhưng tiếng Nhật bắt buộc chia quá khứ: きのう いきました, không nói “きのう いきます”."
+    }
+  ],
+  "notes": [
+    "なにも ～ませんでした: đã không… gì cả."
+  ],
+  "examples": [
+    {
+      "ja": "きのう えいがを 見ました。",
+      "ruby": "きのう えいがを 見[み]ました。",
+      "vi": "Hôm qua tôi đã xem phim."
+    },
+    {
+      "ja": "けさ 何も 食べませんでした。",
+      "ruby": "けさ 何[なに]も 食[た]べませんでした。",
+      "vi": "Sáng nay tôi đã không ăn gì cả."
+    },
+    {
+      "ja": "せんしゅう 日本へ 行きました。",
+      "ruby": "せんしゅう 日本[にほん]へ 行[い]きました。",
+      "vi": "Tuần trước tôi đã đi Nhật."
+    },
+    {
+      "ja": "きのうは べんきょうしませんでした。",
+      "ruby": "きのうは べんきょうしませんでした。",
+      "vi": "Hôm qua tôi đã không học bài."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "きのう えいがを ＿＿。",
+      "answer": "みました",
+      "choices": [
+        "みました",
+        "みます",
+        "みりました",
+        "みるました"
+      ],
+      "vi": "Hôm qua tôi đã xem phim."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "けさ なにも ＿＿。",
+      "answer": "たべませんでした",
+      "choices": [
+        "たべました",
+        "たべませんでした",
+        "たべませんだった",
+        "たべないでした"
+      ],
+      "vi": "Sáng nay tôi đã không ăn gì cả."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "せんしゅう にほんへ ＿＿。",
+      "answer": "いきました",
+      "choices": [
+        "いきます",
+        "いくました",
+        "いきました",
+        "いかました"
+      ],
+      "vi": "Tuần trước tôi đã đi Nhật."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きのうは ＿＿。",
+      "answer": "べんきょうしませんでした",
+      "choices": [
+        "べんきょうしました",
+        "べんきょうしません",
+        "べんきょうすませんでした",
+        "べんきょうしませんでした"
+      ],
+      "vi": "Hôm qua tôi đã không học bài."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きのう てがみを ＿＿。",
+      "answer": "かきました",
+      "choices": [
+        "かきました",
+        "かきます",
+        "かくました",
+        "かきでした"
+      ],
+      "vi": "Hôm qua tôi đã viết thư."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

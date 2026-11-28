@@ -1,0 +1,124 @@
+{
+  "id": "n5-adj-past",
+  "level": "N5",
+  "order": 31,
+  "title": "Tính từ quá khứ: ～かったです／～でした",
+  "pattern": "Aい → Aかったです ／ Aな → Aでした",
+  "meaning_vi": "(đã) A — quá khứ của tính từ",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Tính từ い: bỏ い + かったです (さむい → さむかったです); phủ định: bỏ い + くなかったです. Tính từ な và danh từ: でした (しずかでした); phủ định: じゃありませんでした. Đặc biệt: いい → よかったです."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Lỗi rất hay gặp: “さむいでした”. Với tính từ い, です giữ nguyên, phần い mới đổi. Với tính từ な thì ngược lại: chia です thành でした."
+    }
+  ],
+  "notes": [
+    "Tiếng Việt có thể chỉ thêm “hôm qua”, tiếng Nhật bắt buộc đổi tính từ sang quá khứ."
+  ],
+  "examples": [
+    {
+      "ja": "きのうは さむかったです。",
+      "ruby": "きのうは さむかったです。",
+      "vi": "Hôm qua trời lạnh."
+    },
+    {
+      "ja": "りょこうは とても たのしかったです。",
+      "ruby": "りょこうは とても たのしかったです。",
+      "vi": "Chuyến du lịch rất vui."
+    },
+    {
+      "ja": "パーティーは にぎやかでした。",
+      "ruby": "パーティーは にぎやかでした。",
+      "vi": "Bữa tiệc đã rất náo nhiệt."
+    },
+    {
+      "ja": "テストは あまり むずかしくなかったです。",
+      "ruby": "テストは あまり むずかしくなかったです。",
+      "vi": "Bài kiểm tra không khó lắm."
+    },
+    {
+      "ja": "きのうの 天気は よくなかったです。",
+      "ruby": "きのうの 天気[てんき]は よくなかったです。",
+      "vi": "Thời tiết hôm qua không tốt."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "きのうは ＿＿。",
+      "answer": "さむかったです",
+      "choices": [
+        "さむいでした",
+        "さむかったでした",
+        "さむいかったです",
+        "さむかったです"
+      ],
+      "vi": "Hôm qua trời lạnh."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "りょこうは とても ＿＿。",
+      "answer": "たのしかったです",
+      "choices": [
+        "たのしかったです",
+        "たのしいでした",
+        "たのしでした",
+        "たのしいかったです"
+      ],
+      "vi": "Chuyến du lịch rất vui."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "パーティーは ＿＿。",
+      "answer": "にぎやかでした",
+      "choices": [
+        "にぎやかかったです",
+        "にぎやかでした",
+        "にぎやかだでした",
+        "にぎやかなでした"
+      ],
+      "vi": "Bữa tiệc đã rất náo nhiệt."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "テストは あまり ＿＿。",
+      "answer": "むずかしくなかったです",
+      "choices": [
+        "むずかしかったです",
+        "むずかしいじゃありませんでした",
+        "むずかしくなかったです",
+        "むずかしくないでした"
+      ],
+      "vi": "Bài kiểm tra không khó lắm."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きのうの てんきは ＿＿。",
+      "answer": "よくなかったです",
+      "choices": [
+        "いくなかったです",
+        "いいじゃなかったです",
+        "よいでした",
+        "よくなかったです"
+      ],
+      "vi": "Thời tiết hôm qua không tốt."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ホテルは ＿＿。",
+      "answer": "しずかじゃありませんでした",
+      "choices": [
+        "しずかじゃありませんでした",
+        "しずかくなかったです",
+        "しずかなかったです",
+        "しずかでした"
+      ],
+      "vi": "Khách sạn đã không yên tĩnh."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

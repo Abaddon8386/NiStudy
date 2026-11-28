@@ -1,0 +1,107 @@
+{
+  "id": "n5-wo-object",
+  "level": "N5",
+  "order": 21,
+  "title": "N を V",
+  "pattern": "N を V(tha động từ)",
+  "meaning_vi": "làm V (đối tượng là N)",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "を đánh dấu tân ngữ, tức đối tượng chịu tác động của động từ: パンを たべます (ăn bánh mì), ほんを よみます (đọc sách). Trật tự: chủ ngữ は – tân ngữ を – động từ. Hỏi “làm gì”: なにを しますか."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "を viết bằng chữ “wo” nhưng đọc “o”. Một số động từ tiếng Việt có tân ngữ nhưng tiếng Nhật không dùng を: あいます (dùng に), わかります／すきです (dùng が)."
+    }
+  ],
+  "notes": [
+    "Câu tiếng Nhật đặt động từ cuối: “Tôi đọc sách” → わたしは ほんを よみます."
+  ],
+  "examples": [
+    {
+      "ja": "まいあさ パンを 食べます。",
+      "ruby": "まいあさ パンを 食[た]べます。",
+      "vi": "Sáng nào tôi cũng ăn bánh mì."
+    },
+    {
+      "ja": "わたしは コーヒーを のみます。",
+      "ruby": "わたしは コーヒーを のみます。",
+      "vi": "Tôi uống cà phê."
+    },
+    {
+      "ja": "きのう しんぶんを 読みました。",
+      "ruby": "きのう しんぶんを 読[よ]みました。",
+      "vi": "Hôm qua tôi đã đọc báo."
+    },
+    {
+      "ja": "あした 何を しますか。…にわを そうじします。",
+      "ruby": "あした 何[なに]を しますか。…にわを そうじします。",
+      "vi": "Ngày mai bạn làm gì? … Tôi dọn vườn."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "まいあさ パン＿＿ たべます。",
+      "answer": "を",
+      "choices": [
+        "に",
+        "を",
+        "で",
+        "へ"
+      ],
+      "vi": "Sáng nào tôi cũng ăn bánh mì."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしは コーヒー＿＿ のみます。",
+      "answer": "を",
+      "choices": [
+        "に",
+        "で",
+        "を",
+        "へ"
+      ],
+      "vi": "Tôi uống cà phê."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きのう しんぶん＿＿ よみました。",
+      "answer": "を",
+      "choices": [
+        "に",
+        "へ",
+        "と",
+        "を"
+      ],
+      "vi": "Hôm qua tôi đã đọc báo."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あした なに＿＿ しますか。",
+      "answer": "を",
+      "choices": [
+        "を",
+        "へ",
+        "が",
+        "から"
+      ],
+      "vi": "Ngày mai bạn làm gì?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "まいばん にほんごの しゅくだい＿＿ します。",
+      "answer": "を",
+      "choices": [
+        "へ",
+        "を",
+        "が",
+        "と"
+      ],
+      "vi": "Tối nào tôi cũng làm bài tập tiếng Nhật."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

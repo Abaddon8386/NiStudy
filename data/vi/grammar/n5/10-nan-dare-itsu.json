@@ -1,0 +1,113 @@
+{
+  "id": "n5-nan-dare-itsu",
+  "level": "N5",
+  "order": 10,
+  "title": "なん／だれ／どなた／いつ",
+  "pattern": "N は なん／だれ／いつ ですか",
+  "meaning_vi": "N là cái gì / ai / khi nào?",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Từ để hỏi đứng đúng chỗ của thông tin cần hỏi, cuối câu vẫn là ですか. なん／なに: cái gì; だれ: ai; どなた: ai (lịch sự); いつ: khi nào. なん dùng trước です, の và từ đếm; なに dùng trước を, が."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Trật tự câu giữ nguyên như tiếng Việt: “Đây là cái gì?” → これは なんですか. Câu hỏi có từ để hỏi không trả lời bằng はい／いいえ."
+    }
+  ],
+  "notes": [
+    "Từ để hỏi làm chủ ngữ thì dùng が, không dùng は: だれが せんせいですか.",
+    "なんの ほん = sách về cái gì; だれの ほん = sách của ai."
+  ],
+  "examples": [
+    {
+      "ja": "これは 何ですか。",
+      "ruby": "これは 何[なん]ですか。",
+      "vi": "Cái này là gì?"
+    },
+    {
+      "ja": "あの 人は だれですか。",
+      "ruby": "あの 人[ひと]は だれですか。",
+      "vi": "Người kia là ai?"
+    },
+    {
+      "ja": "テストは いつですか。",
+      "ruby": "テストは いつですか。",
+      "vi": "Bài kiểm tra là khi nào?"
+    },
+    {
+      "ja": "あの かたは どなたですか。",
+      "ruby": "あの かたは どなたですか。",
+      "vi": "Vị kia là ai ạ?"
+    },
+    {
+      "ja": "それは 何の 本ですか。",
+      "ruby": "それは 何[なん]の 本[ほん]ですか。",
+      "vi": "Đó là sách về gì?"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "これは ＿＿ですか。…ペンです。",
+      "answer": "なん",
+      "choices": [
+        "だれ",
+        "いつ",
+        "なん",
+        "どこ"
+      ],
+      "vi": "Cái này là gì? … Là cây bút."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あの ひとは ＿＿ですか。…たなかさんです。",
+      "answer": "だれ",
+      "choices": [
+        "なん",
+        "いつ",
+        "どれ",
+        "だれ"
+      ],
+      "vi": "Người kia là ai? … Là anh Tanaka."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "テストは ＿＿ですか。…あしたです。",
+      "answer": "いつ",
+      "choices": [
+        "いつ",
+        "だれ",
+        "なん",
+        "どれ"
+      ],
+      "vi": "Bài kiểm tra là khi nào? … Ngày mai."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "それは ＿＿の ほんですか。…にほんごの ほんです。",
+      "answer": "なん",
+      "choices": [
+        "どれ",
+        "なん",
+        "どの",
+        "どう"
+      ],
+      "vi": "Đó là sách về gì? … Sách tiếng Nhật."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あの かたは ＿＿ですか。…やまだせんせいです。",
+      "answer": "どなた",
+      "choices": [
+        "なん",
+        "いつ",
+        "どなた",
+        "どれ"
+      ],
+      "vi": "Vị kia là ai ạ? … Là thầy Yamada."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

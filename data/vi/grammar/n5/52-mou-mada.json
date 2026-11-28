@@ -1,0 +1,107 @@
+{
+  "id": "n5-mou-mada",
+  "level": "N5",
+  "order": 52,
+  "title": "もう ～ました／まだ ～ていません",
+  "pattern": "もう V ました ／ まだ V て いません",
+  "meaning_vi": "Đã V rồi / Vẫn chưa V",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "もう ～ましたか: hỏi đã làm xong chưa. Trả lời: はい、もう ～ました (rồi) hoặc いいえ、まだです／まだ ～ていません (chưa)."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "“Chưa” không nói “まだ ～ませんでした” (đó là “đã không làm”); phải dùng まだ ～ていません. Người Việt hay dịch “chưa ăn” thành たべませんでした — sai nghĩa."
+    }
+  ],
+  "notes": [
+    "もう còn có nghĩa “thêm, nữa”: もう ひとつ (thêm một cái nữa)."
+  ],
+  "examples": [
+    {
+      "ja": "もう ひるごはんを 食べましたか。…はい、もう 食べました。",
+      "ruby": "もう ひるごはんを 食[た]べましたか。…はい、もう 食[た]べました。",
+      "vi": "Bạn đã ăn trưa chưa? … Rồi, tôi ăn rồi."
+    },
+    {
+      "ja": "しゅくだいは もう しましたか。…いいえ、まだです。",
+      "ruby": "しゅくだいは もう しましたか。…いいえ、まだです。",
+      "vi": "Bạn làm bài tập chưa? … Chưa."
+    },
+    {
+      "ja": "その えいがは まだ 見ていません。",
+      "ruby": "その えいがは まだ 見[み]ていません。",
+      "vi": "Tôi vẫn chưa xem bộ phim đó."
+    },
+    {
+      "ja": "リンさんは まだ 来ていません。",
+      "ruby": "リンさんは まだ 来[き]ていません。",
+      "vi": "Chị Linh vẫn chưa đến."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "＿＿ ひるごはんを たべましたか。",
+      "answer": "もう",
+      "choices": [
+        "もう",
+        "まだ",
+        "よく",
+        "あまり"
+      ],
+      "vi": "Bạn đã ăn trưa chưa?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ひるごはんを たべましたか。…いいえ、＿＿ たべていません。",
+      "answer": "まだ",
+      "choices": [
+        "もう",
+        "まだ",
+        "よく",
+        "とても"
+      ],
+      "vi": "Bạn đã ăn trưa chưa? … Chưa, tôi vẫn chưa ăn."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "その えいがは まだ ＿＿。",
+      "answer": "みていません",
+      "choices": [
+        "みません",
+        "みませんでした",
+        "みていません",
+        "みています"
+      ],
+      "vi": "Tôi vẫn chưa xem bộ phim đó."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "しゅくだいは もう しましたか。…いいえ、＿＿です。",
+      "answer": "まだ",
+      "choices": [
+        "もう",
+        "よく",
+        "すぐ",
+        "まだ"
+      ],
+      "vi": "Bạn làm bài tập chưa? … Chưa."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "リンさんは まだ ＿＿。",
+      "answer": "きていません",
+      "choices": [
+        "きていません",
+        "きません",
+        "きませんでした",
+        "きています"
+      ],
+      "vi": "Chị Linh vẫn chưa đến."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

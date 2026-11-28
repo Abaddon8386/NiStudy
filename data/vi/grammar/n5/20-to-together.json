@@ -1,0 +1,107 @@
+{
+  "id": "n5-to-together",
+  "level": "N5",
+  "order": 20,
+  "title": "N(người) と V",
+  "pattern": "N(người) と V",
+  "meaning_vi": "làm V cùng với N",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "と sau danh từ chỉ người: cùng ai làm việc gì: ともだちと えいがを みます (xem phim với bạn). Thêm いっしょに cho rõ nghĩa “cùng nhau”: ともだちと いっしょに."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Làm một mình thì dùng ひとりで, không dùng と: “ひとりと いきます” là sai."
+    }
+  ],
+  "notes": [
+    "Hỏi “với ai”: だれと いきますか."
+  ],
+  "examples": [
+    {
+      "ja": "友だちと えいがを 見ます。",
+      "ruby": "友[とも]だちと えいがを 見[み]ます。",
+      "vi": "Tôi xem phim với bạn."
+    },
+    {
+      "ja": "かぞくと 日本へ 行きます。",
+      "ruby": "かぞくと 日本[にほん]へ 行[い]きます。",
+      "vi": "Tôi đi Nhật cùng gia đình."
+    },
+    {
+      "ja": "きのう 母と いっしょに りょうりを つくりました。",
+      "ruby": "きのう 母[はは]と いっしょに りょうりを つくりました。",
+      "vi": "Hôm qua tôi đã nấu ăn cùng mẹ."
+    },
+    {
+      "ja": "にちようびは 一人で 本を 読みました。",
+      "ruby": "にちようびは 一人[ひとり]で 本[ほん]を 読[よ]みました。",
+      "vi": "Chủ nhật tôi đã đọc sách một mình."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "ともだち＿＿ えいがを みます。",
+      "answer": "と",
+      "choices": [
+        "と",
+        "を",
+        "へ",
+        "に"
+      ],
+      "vi": "Tôi xem phim với bạn."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "かぞく＿＿ にほんへ いきます。",
+      "answer": "と",
+      "choices": [
+        "を",
+        "と",
+        "に",
+        "の"
+      ],
+      "vi": "Tôi đi Nhật cùng gia đình."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "はは＿＿ いっしょに りょうりを つくりました。",
+      "answer": "と",
+      "choices": [
+        "を",
+        "に",
+        "と",
+        "で"
+      ],
+      "vi": "Tôi đã nấu ăn cùng mẹ."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "にちようびは ひとり＿＿ ほんを よみました。",
+      "answer": "で",
+      "choices": [
+        "と",
+        "を",
+        "に",
+        "で"
+      ],
+      "vi": "Chủ nhật tôi đã đọc sách một mình."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "だれ＿＿ いきますか。…リンさんと いきます。",
+      "answer": "と",
+      "choices": [
+        "と",
+        "を",
+        "に",
+        "へ"
+      ],
+      "vi": "Bạn đi với ai? … Tôi đi với chị Linh."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

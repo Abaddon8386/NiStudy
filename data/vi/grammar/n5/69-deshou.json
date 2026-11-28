@@ -1,0 +1,112 @@
+{
+  "id": "n5-deshou",
+  "level": "N5",
+  "order": 69,
+  "title": "～でしょう",
+  "pattern": "V／Aい(thể thường)・Aな／N ＋ でしょう",
+  "meaning_vi": "Có lẽ … / Chắc là …",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Đặt sau thể thường của động từ, tính từ い, hoặc sau danh từ / tính từ な (không có だ) để dự đoán không chắc chắn: あしたは あめが ふるでしょう (Ngày mai có lẽ trời mưa). Hay đi với たぶん (có lẽ). Dự báo thời tiết dùng でしょう rất nhiều."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Ở N5, trước でしょう dùng thể từ điển (ふる), không dùng thể ます (ふります). Tính từ い giữ い: さむいでしょう. Nói với giọng lên ở cuối (でしょう↗) thì là xác nhận “… đúng không?”."
+    }
+  ],
+  "notes": [
+    "Mức chắc chắn: ～です／ます (chắc chắn) > ～でしょう (có lẽ)."
+  ],
+  "examples": [
+    {
+      "ja": "あしたは 雨が ふるでしょう。",
+      "ruby": "あしたは 雨[あめ]が ふるでしょう。",
+      "vi": "Ngày mai có lẽ trời mưa."
+    },
+    {
+      "ja": "たぶん リンさんも 来るでしょう。",
+      "ruby": "たぶん リンさんも 来[く]るでしょう。",
+      "vi": "Có lẽ chị Linh cũng đến."
+    },
+    {
+      "ja": "北の ほうは さむいでしょう。",
+      "ruby": "北[きた]の ほうは さむいでしょう。",
+      "vi": "Phía bắc chắc là lạnh."
+    },
+    {
+      "ja": "あの 人は たぶん 先生でしょう。",
+      "ruby": "あの 人[ひと]は たぶん 先生[せんせい]でしょう。",
+      "vi": "Người kia có lẽ là giáo viên."
+    },
+    {
+      "ja": "あしたは いい 天気でしょう。",
+      "ruby": "あしたは いい 天気[てんき]でしょう。",
+      "vi": "Ngày mai có lẽ trời đẹp."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "あしたは あめが ＿＿でしょう。",
+      "answer": "ふる",
+      "choices": [
+        "ふります",
+        "ふる",
+        "ふって",
+        "ふり"
+      ],
+      "vi": "Ngày mai có lẽ trời mưa."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "たぶん リンさんも ＿＿でしょう。",
+      "answer": "くる",
+      "choices": [
+        "きます",
+        "きて",
+        "くる",
+        "こる"
+      ],
+      "vi": "Có lẽ chị Linh cũng đến."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あしたは さむい＿＿。",
+      "answer": "でしょう",
+      "choices": [
+        "ましょう",
+        "ませんか",
+        "ください",
+        "でしょう"
+      ],
+      "vi": "Ngày mai có lẽ trời lạnh."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あの ひとは ＿＿ せんせいでしょう。",
+      "answer": "たぶん",
+      "choices": [
+        "たぶん",
+        "とても",
+        "よく",
+        "いちばん"
+      ],
+      "vi": "Người kia có lẽ là giáo viên."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あの レストランは ＿＿でしょう。",
+      "answer": "たかい",
+      "choices": [
+        "たかいだ",
+        "たかい",
+        "たかく",
+        "たかいます"
+      ],
+      "vi": "Nhà hàng đó chắc là đắt."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

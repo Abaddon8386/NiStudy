@@ -1,0 +1,107 @@
+{
+  "id": "n5-to-ya",
+  "level": "N5",
+  "order": 23,
+  "title": "N1 と N2／N1 や N2（など）",
+  "pattern": "N1 と N2 ／ N1 や N2 など",
+  "meaning_vi": "N1 và N2 / N1, N2… (vân vân)",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "と nối danh từ khi kể đủ, không còn gì khác: パンと たまごを たべました (chỉ bánh mì và trứng). や dùng khi chỉ nêu vài ví dụ tiêu biểu, ngầm hiểu còn thứ khác, thường kết thúc bằng など: やさいや くだものなどを かいます."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "と và や chỉ nối DANH TỪ, không nối động từ hay câu. Tiếng Việt “và” dùng rộng hơn: “Tôi ăn và uống” không dùng と."
+    }
+  ],
+  "notes": [
+    "と ở bài này (nối danh từ) khác と “cùng với ai” (bài trước)."
+  ],
+  "examples": [
+    {
+      "ja": "あさ パンと たまごを 食べました。",
+      "ruby": "あさ パンと たまごを 食[た]べました。",
+      "vi": "Sáng nay tôi đã ăn bánh mì và trứng."
+    },
+    {
+      "ja": "デパートで くつや かばんを かいました。",
+      "ruby": "デパートで くつや かばんを かいました。",
+      "vi": "Tôi đã mua giày, cặp… ở cửa hàng bách hóa."
+    },
+    {
+      "ja": "やおやで やさいや くだものなどを かいます。",
+      "ruby": "やおやで やさいや くだものなどを かいます。",
+      "vi": "Tôi mua rau, trái cây v.v. ở hàng rau."
+    },
+    {
+      "ja": "日本語と えいごを べんきょうします。",
+      "ruby": "日本語[にほんご]と えいごを べんきょうします。",
+      "vi": "Tôi học tiếng Nhật và tiếng Anh."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "あさ パン＿＿ たまごを たべました。",
+      "answer": "と",
+      "choices": [
+        "や",
+        "を",
+        "の",
+        "と"
+      ],
+      "vi": "Sáng nay tôi đã ăn bánh mì và trứng (chỉ hai món đó)."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "デパートで くつ＿＿ かばんなどを かいました。",
+      "answer": "や",
+      "choices": [
+        "や",
+        "を",
+        "が",
+        "で"
+      ],
+      "vi": "Tôi đã mua giày, cặp v.v. ở cửa hàng bách hóa."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "やおやで やさいや くだもの＿＿を かいます。",
+      "answer": "など",
+      "choices": [
+        "も",
+        "など",
+        "と",
+        "や"
+      ],
+      "vi": "Tôi mua rau, trái cây v.v. ở hàng rau."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "にほんご＿＿ えいごを べんきょうします。",
+      "answer": "と",
+      "choices": [
+        "を",
+        "に",
+        "と",
+        "へ"
+      ],
+      "vi": "Tôi học tiếng Nhật và tiếng Anh (chỉ hai thứ tiếng)."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "かばんの なかに ほん＿＿ ノートなどが あります。",
+      "answer": "や",
+      "choices": [
+        "を",
+        "に",
+        "で",
+        "や"
+      ],
+      "vi": "Trong cặp có sách, vở v.v."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

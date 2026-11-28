@@ -10,6 +10,7 @@ const SIDE_NAV = [
   { href: "/on-tap", label: "Ôn tập" },
   { href: "/trac-nghiem", label: "Trắc nghiệm" },
   { href: "/kana", label: "Bảng kana" },
+  { href: "/ngu-phap", label: "Ngữ pháp" },
   { href: "/cai-dat", label: "Cài đặt" },
 ] as const;
 

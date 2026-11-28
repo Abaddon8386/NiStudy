@@ -1,0 +1,107 @@
+{
+  "id": "n5-ga-hoshii",
+  "level": "N5",
+  "order": 35,
+  "title": "～が ほしいです",
+  "pattern": "N が ほしいです",
+  "meaning_vi": "Muốn có N",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "ほしい là tính từ い, chỉ mong muốn có một vật: あたらしい くるまが ほしいです. Đối tượng dùng が. Phủ định: ほしくないです; quá khứ: ほしかったです."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "ほしい dùng cho danh từ (đồ vật); muốn LÀM một việc thì dùng ～たいです (bài sau). Không dùng ほしい để nói thẳng mong muốn của người khác."
+    }
+  ],
+  "notes": [
+    "Hỏi người trên “～が ほしいですか” nghe hơi thẳng; nên tránh."
+  ],
+  "examples": [
+    {
+      "ja": "わたしは あたらしい 車が ほしいです。",
+      "ruby": "わたしは あたらしい 車[くるま]が ほしいです。",
+      "vi": "Tôi muốn có xe ô tô mới."
+    },
+    {
+      "ja": "今 何が いちばん ほしいですか。…カメラが ほしいです。",
+      "ruby": "今[いま] 何[なに]が いちばん ほしいですか。…カメラが ほしいです。",
+      "vi": "Bây giờ bạn muốn có gì nhất? … Tôi muốn có máy ảnh."
+    },
+    {
+      "ja": "今 何も ほしくないです。",
+      "ruby": "今[いま] 何[なに]も ほしくないです。",
+      "vi": "Bây giờ tôi không muốn có gì cả."
+    },
+    {
+      "ja": "大きい へやが ほしいです。",
+      "ruby": "大[おお]きい へやが ほしいです。",
+      "vi": "Tôi muốn có căn phòng rộng."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしは あたらしい くるま＿＿ ほしいです。",
+      "answer": "が",
+      "choices": [
+        "を",
+        "に",
+        "で",
+        "が"
+      ],
+      "vi": "Tôi muốn có xe ô tô mới."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "いま なにが いちばん ＿＿か。…カメラが ほしいです。",
+      "answer": "ほしいです",
+      "choices": [
+        "ほしいです",
+        "ほしいだ",
+        "ほしです",
+        "ほしいます"
+      ],
+      "vi": "Bây giờ bạn muốn có gì nhất? … Tôi muốn có máy ảnh."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "いま なにも ＿＿。",
+      "answer": "ほしくないです",
+      "choices": [
+        "ほしいじゃありません",
+        "ほしくないです",
+        "ほしないです",
+        "ほしいないです"
+      ],
+      "vi": "Bây giờ tôi không muốn có gì cả."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "おおきい へや＿＿ ほしいです。",
+      "answer": "が",
+      "choices": [
+        "を",
+        "に",
+        "が",
+        "の"
+      ],
+      "vi": "Tôi muốn có căn phòng rộng."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きょねん、じてんしゃが ＿＿。",
+      "answer": "ほしかったです",
+      "choices": [
+        "ほしいでした",
+        "ほしいかったです",
+        "ほしでした",
+        "ほしかったです"
+      ],
+      "vi": "Năm ngoái tôi đã muốn có xe đạp."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

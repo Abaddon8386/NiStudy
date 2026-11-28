@@ -1,0 +1,124 @@
+{
+  "id": "n5-ichi",
+  "level": "N5",
+  "order": 38,
+  "title": "Vị trí: N の うえ／した／なか／まえ…",
+  "pattern": "N の うえ／した／なか／まえ／うしろ／となり",
+  "meaning_vi": "Trên / dưới / trong / trước / sau / bên cạnh N",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Từ chỉ vị trí đứng sau の: つくえの うえ (trên bàn). Các từ: うえ (trên), した (dưới), なか (trong), そと (ngoài), まえ (trước), うしろ (sau), となり (bên cạnh), よこ (bên), ちかく (gần), みぎ (phải), ひだり (trái). Thường đi với に あります／います hoặc で ＋ hành động."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Trật tự ngược tiếng Việt: “trên bàn” → つくえの うえ. Người Việt hay nói “うえ つくえ”. となり dùng cho hai thứ cùng loại sát nhau (nhà bên cạnh nhà); よこ chỉ bên cạnh nói chung."
+    }
+  ],
+  "notes": [
+    "Chữ kanji: 上 (うえ), 下 (した), 中 (なか), 前 (まえ), 後ろ (うしろ), 右 (みぎ), 左 (ひだり), 外 (そと)."
+  ],
+  "examples": [
+    {
+      "ja": "つくえの 上に 本が あります。",
+      "ruby": "つくえの 上[うえ]に 本[ほん]が あります。",
+      "vi": "Trên bàn có quyển sách."
+    },
+    {
+      "ja": "いすの 下に ねこが います。",
+      "ruby": "いすの 下[した]に ねこが います。",
+      "vi": "Dưới ghế có con mèo."
+    },
+    {
+      "ja": "かばんの 中に 何が ありますか。",
+      "ruby": "かばんの 中[なか]に 何[なに]が ありますか。",
+      "vi": "Trong cặp có gì?"
+    },
+    {
+      "ja": "ゆうびんきょくは ぎんこうの となりです。",
+      "ruby": "ゆうびんきょくは ぎんこうの となりです。",
+      "vi": "Bưu điện ở bên cạnh ngân hàng."
+    },
+    {
+      "ja": "学校の 後ろに 山が あります。",
+      "ruby": "学校[がっこう]の 後[うし]ろに 山[やま]が あります。",
+      "vi": "Phía sau trường có ngọn núi."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "つくえの ＿＿に ほんが あります。",
+      "answer": "うえ",
+      "choices": [
+        "した",
+        "なか",
+        "うえ",
+        "まえ"
+      ],
+      "vi": "Trên bàn có quyển sách."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "いすの ＿＿に ねこが います。",
+      "answer": "した",
+      "choices": [
+        "うえ",
+        "そと",
+        "よこ",
+        "した"
+      ],
+      "vi": "Dưới ghế có con mèo."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "かばんの ＿＿に なにが ありますか。",
+      "answer": "なか",
+      "choices": [
+        "なか",
+        "うえ",
+        "した",
+        "まえ"
+      ],
+      "vi": "Trong cặp có gì?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ゆうびんきょくは ぎんこうの ＿＿です。",
+      "answer": "となり",
+      "choices": [
+        "うしろ",
+        "となり",
+        "まえ",
+        "なか"
+      ],
+      "vi": "Bưu điện ở bên cạnh ngân hàng."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "がっこうの ＿＿に やまが あります。",
+      "answer": "うしろ",
+      "choices": [
+        "まえ",
+        "となり",
+        "うしろ",
+        "なか"
+      ],
+      "vi": "Phía sau trường có ngọn núi."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "えきの ＿＿で まちます。",
+      "answer": "まえ",
+      "choices": [
+        "うしろ",
+        "なか",
+        "うえ",
+        "まえ"
+      ],
+      "vi": "Tôi đợi ở trước nhà ga."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

@@ -1,0 +1,107 @@
+{
+  "id": "n5-te-kara",
+  "level": "N5",
+  "order": 51,
+  "title": "V てから",
+  "pattern": "V1 て から、V2",
+  "meaning_vi": "Sau khi V1 (xong) thì V2",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Nhấn mạnh thứ tự: làm xong V1 rồi mới V2: しゅくだいを してから、テレビを みます (Làm bài tập xong rồi mới xem tivi). Khác ～て、～ (chỉ nối tiếp), てから nhấn mạnh V1 phải xong trước."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Thì của câu do động từ cuối quyết định: きのう ごはんを たべてから、ねました. Không dùng “たべたから” — từ quá khứ + から là “vì đã ăn”."
+    }
+  ],
+  "notes": [
+    "てから cũng chỉ mốc bắt đầu: だいがくを でてから (từ khi ra trường)."
+  ],
+  "examples": [
+    {
+      "ja": "しゅくだいを してから、テレビを 見ます。",
+      "ruby": "しゅくだいを してから、テレビを 見[み]ます。",
+      "vi": "Tôi làm bài tập xong rồi mới xem tivi."
+    },
+    {
+      "ja": "てを あらってから、ごはんを 食べます。",
+      "ruby": "てを あらってから、ごはんを 食[た]べます。",
+      "vi": "Tôi rửa tay rồi mới ăn cơm."
+    },
+    {
+      "ja": "きのう 電話を してから、友だちの うちへ 行きました。",
+      "ruby": "きのう 電話[でんわ]を してから、友[とも]だちの うちへ 行[い]きました。",
+      "vi": "Hôm qua tôi gọi điện trước rồi mới đến nhà bạn."
+    },
+    {
+      "ja": "大学を 出てから、ぎんこうに つとめています。",
+      "ruby": "大学[だいがく]を 出[で]てから、ぎんこうに つとめています。",
+      "vi": "Từ khi tốt nghiệp đại học, tôi làm việc ở ngân hàng."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "しゅくだいを ＿＿から、テレビを みます。",
+      "answer": "して",
+      "choices": [
+        "した",
+        "します",
+        "する",
+        "して"
+      ],
+      "vi": "Tôi làm bài tập xong rồi mới xem tivi."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "てを ＿＿から、ごはんを たべます。",
+      "answer": "あらって",
+      "choices": [
+        "あらって",
+        "あらいて",
+        "あらった",
+        "あらう"
+      ],
+      "vi": "Tôi rửa tay rồi mới ăn cơm."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "でんわを して＿＿、ともだちの うちへ いきました。",
+      "answer": "から",
+      "choices": [
+        "まで",
+        "から",
+        "が",
+        "を"
+      ],
+      "vi": "Tôi gọi điện trước rồi mới đến nhà bạn."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "だいがくを ＿＿から、ぎんこうに つとめています。",
+      "answer": "でて",
+      "choices": [
+        "でた",
+        "でる",
+        "でて",
+        "でます"
+      ],
+      "vi": "Từ khi tốt nghiệp đại học, tôi làm việc ở ngân hàng."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ばんごはんを たべて＿＿、さんぽします。",
+      "answer": "から",
+      "choices": [
+        "まで",
+        "が",
+        "に",
+        "から"
+      ],
+      "vi": "Ăn tối xong tôi đi dạo."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

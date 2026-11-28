@@ -1,0 +1,107 @@
+{
+  "id": "n5-yori",
+  "level": "N5",
+  "order": 65,
+  "title": "N1 は N2 より ～",
+  "pattern": "N1 は N2 より A です",
+  "meaning_vi": "N1 A hơn N2",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "より đặt sau danh từ đem ra so sánh: でんしゃは バスより はやいです (Tàu điện nhanh hơn xe buýt). Tính từ giữ nguyên, không cần thêm từ “hơn”."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Trật tự khác tiếng Việt: “A nhanh hơn B” → A は B より はやいです. より luôn đi sau B (vật làm mốc), không đặt sau A."
+    }
+  ],
+  "notes": [
+    "Có thể thêm ずっと để nhấn mạnh “hơn nhiều” (gặp ở N4)."
+  ],
+  "examples": [
+    {
+      "ja": "ハノイは ホーチミンより さむいです。",
+      "ruby": "ハノイは ホーチミンより さむいです。",
+      "vi": "Hà Nội lạnh hơn TP Hồ Chí Minh."
+    },
+    {
+      "ja": "電車は バスより はやいです。",
+      "ruby": "電車[でんしゃ]は バスより はやいです。",
+      "vi": "Tàu điện nhanh hơn xe buýt."
+    },
+    {
+      "ja": "この かばんは あの かばんより 高いです。",
+      "ruby": "この かばんは あの かばんより 高[たか]いです。",
+      "vi": "Cái cặp này đắt hơn cái cặp kia."
+    },
+    {
+      "ja": "あには わたしより せが 高いです。",
+      "ruby": "あには わたしより せが 高[たか]いです。",
+      "vi": "Anh trai tôi cao hơn tôi."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "でんしゃは バス＿＿ はやいです。",
+      "answer": "より",
+      "choices": [
+        "から",
+        "より",
+        "まで",
+        "ほう"
+      ],
+      "vi": "Tàu điện nhanh hơn xe buýt."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "この かばんは あの かばん＿＿ たかいです。",
+      "answer": "より",
+      "choices": [
+        "から",
+        "まで",
+        "より",
+        "の"
+      ],
+      "vi": "Cái cặp này đắt hơn cái cặp kia."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あには わたし＿＿ せが たかいです。",
+      "answer": "より",
+      "choices": [
+        "から",
+        "まで",
+        "に",
+        "より"
+      ],
+      "vi": "Anh trai tôi cao hơn tôi."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ハノイは ホーチミン＿＿ さむいです。",
+      "answer": "より",
+      "choices": [
+        "より",
+        "から",
+        "まで",
+        "で"
+      ],
+      "vi": "Hà Nội lạnh hơn TP Hồ Chí Minh."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きょうは きのう＿＿ あついです。",
+      "answer": "より",
+      "choices": [
+        "から",
+        "より",
+        "まで",
+        "に"
+      ],
+      "vi": "Hôm nay nóng hơn hôm qua."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

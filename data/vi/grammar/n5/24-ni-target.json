@@ -1,0 +1,107 @@
+{
+  "id": "n5-ni-target",
+  "level": "N5",
+  "order": 24,
+  "title": "N(người) に V",
+  "pattern": "N(người) に V",
+  "meaning_vi": "làm V cho / với N",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "に sau danh từ chỉ người cho biết đối tượng nhận hành động: ははに でんわします (gọi điện cho mẹ), リンさんに ほんを かします (cho Linh mượn sách), ともだちに あいます (gặp bạn). Với ならいます, かります, に chỉ người mà mình học/mượn từ đó: せんせいに ならいます."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "あいます (gặp) dùng に, không dùng を: “ともだちを あいます” là lỗi rất hay gặp của người Việt, vì tiếng Việt nói “gặp bạn” không có giới từ."
+    }
+  ],
+  "notes": [
+    "Cùng một câu có thể có cả に (người) và を (vật): リンさんに ほんを かします."
+  ],
+  "examples": [
+    {
+      "ja": "まいばん 母に 電話します。",
+      "ruby": "まいばん 母[はは]に 電話[でんわ]します。",
+      "vi": "Tối nào tôi cũng gọi điện cho mẹ."
+    },
+    {
+      "ja": "あした えきで 友だちに あいます。",
+      "ruby": "あした えきで 友[とも]だちに あいます。",
+      "vi": "Ngày mai tôi gặp bạn ở nhà ga."
+    },
+    {
+      "ja": "リンさんに 本を かしました。",
+      "ruby": "リンさんに 本[ほん]を かしました。",
+      "vi": "Tôi đã cho chị Linh mượn sách."
+    },
+    {
+      "ja": "たなかさんに 日本語を ならいます。",
+      "ruby": "たなかさんに 日本語[にほんご]を ならいます。",
+      "vi": "Tôi học tiếng Nhật với anh Tanaka."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "まいばん はは＿＿ でんわします。",
+      "answer": "に",
+      "choices": [
+        "に",
+        "を",
+        "で",
+        "の"
+      ],
+      "vi": "Tối nào tôi cũng gọi điện cho mẹ."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あした えきで ともだち＿＿ あいます。",
+      "answer": "に",
+      "choices": [
+        "を",
+        "に",
+        "で",
+        "の"
+      ],
+      "vi": "Ngày mai tôi gặp bạn ở nhà ga."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "リンさん＿＿ ほんを かしました。",
+      "answer": "に",
+      "choices": [
+        "を",
+        "で",
+        "に",
+        "から"
+      ],
+      "vi": "Tôi đã cho chị Linh mượn sách."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "たなかさん＿＿ にほんごを ならいます。",
+      "answer": "に",
+      "choices": [
+        "を",
+        "で",
+        "へ",
+        "に"
+      ],
+      "vi": "Tôi học tiếng Nhật với anh Tanaka."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "せんせい＿＿ しつもんします。",
+      "answer": "に",
+      "choices": [
+        "に",
+        "を",
+        "で",
+        "の"
+      ],
+      "vi": "Tôi đặt câu hỏi cho thầy giáo."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

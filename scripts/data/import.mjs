@@ -27,12 +27,15 @@ function loadEnvFile() {
 }
 
 const load = (f) => JSON.parse(readFileSync(join(dir, f), 'utf8'));
+// Bản build cũ chưa có grammar_details.json: coi như không có thẻ ngữ pháp.
+const loadOpt = (f) => (existsSync(join(dir, f)) ? load(f) : []);
 const cards = load('cards.json');
 const tables = [
   ['cards', cards, 'id'],
   ['kana_details', load('kana_details.json'), 'card_id'],
   ['vocab_details', load('vocab_details.json'), 'card_id'],
   ['kanji_details', load('kanji_details.json'), 'card_id'],
+  ['grammar_details', loadOpt('grammar_details.json'), 'card_id'],
 ];
 const sources = load('data_sources.json');
 

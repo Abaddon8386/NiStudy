@@ -1,0 +1,107 @@
+{
+  "id": "n5-ato-de",
+  "level": "N5",
+  "order": 59,
+  "title": "V た／N の あとで",
+  "pattern": "V(thể た) あとで ／ N の あとで",
+  "meaning_vi": "Sau khi V / Sau N",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Thể た + あとで, hoặc danh từ + の + あとで: しごとが おわった あとで、えいがを みます (Sau khi xong việc tôi xem phim). Thể た chia giống thể て, chỉ đổi て → た, で → だ: かいて → かいた, よんで → よんだ, たべて → たべた."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Ngược với まえに: trước あとで luôn là thể た, kể cả khi nói về tương lai: あした しごとが おわった あとで、あいましょう."
+    }
+  ],
+  "notes": [
+    "Thể た cũng dùng trong ～たことが あります, ～たほうが いいです, ～たり."
+  ],
+  "examples": [
+    {
+      "ja": "しごとが おわった 後で、えいがを 見ます。",
+      "ruby": "しごとが おわった 後[あと]で、えいがを 見[み]ます。",
+      "vi": "Sau khi xong việc tôi sẽ xem phim."
+    },
+    {
+      "ja": "じゅぎょうの 後で、先生に しつもんしました。",
+      "ruby": "じゅぎょうの 後[あと]で、先生[せんせい]に しつもんしました。",
+      "vi": "Sau giờ học, tôi đã hỏi thầy giáo."
+    },
+    {
+      "ja": "ごはんを 食べた 後で、くすりを のみます。",
+      "ruby": "ごはんを 食[た]べた 後[あと]で、くすりを のみます。",
+      "vi": "Sau khi ăn cơm tôi uống thuốc."
+    },
+    {
+      "ja": "この 本は 読んだ 後で、かえしてください。",
+      "ruby": "この 本[ほん]は 読[よ]んだ 後[あと]で、かえしてください。",
+      "vi": "Đọc xong quyển sách này thì xin hãy trả lại."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "しごとが ＿＿ あとで、えいがを みます。",
+      "answer": "おわった",
+      "choices": [
+        "おわる",
+        "おわって",
+        "おわります",
+        "おわった"
+      ],
+      "vi": "Sau khi xong việc tôi sẽ xem phim."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "じゅぎょう＿＿ あとで、せんせいに しつもんしました。",
+      "answer": "の",
+      "choices": [
+        "の",
+        "を",
+        "が",
+        "に"
+      ],
+      "vi": "Sau giờ học, tôi đã hỏi thầy giáo."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ごはんを ＿＿ あとで、くすりを のみます。",
+      "answer": "たべた",
+      "choices": [
+        "たべる",
+        "たべた",
+        "たべて",
+        "たべます"
+      ],
+      "vi": "Sau khi ăn cơm tôi uống thuốc."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "この ほんは ＿＿ あとで、かえしてください。",
+      "answer": "よんだ",
+      "choices": [
+        "よむ",
+        "よんで",
+        "よんだ",
+        "よみた"
+      ],
+      "vi": "Đọc xong quyển sách này thì xin hãy trả lại."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "シャワーを あびた ＿＿で、ねます。",
+      "answer": "あと",
+      "choices": [
+        "まえ",
+        "うしろ",
+        "とき",
+        "あと"
+      ],
+      "vi": "Tắm xong tôi đi ngủ."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

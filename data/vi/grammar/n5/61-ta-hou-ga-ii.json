@@ -1,0 +1,107 @@
+{
+  "id": "n5-ta-hou-ga-ii",
+  "level": "N5",
+  "order": 61,
+  "title": "V たほうが いいです",
+  "pattern": "V(thể た) ほうが いいです ／ V(thể ない) ほうが いいです",
+  "meaning_vi": "Nên V / Không nên V",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Thể た + ほうが いいです: khuyên nên làm: くすりを のんだ ほうが いいです. Khuyên không nên: thể ない + ほうが いいです: よる ひとりで でかけない ほうが いいです."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Dù dùng thể た, câu không mang nghĩa quá khứ. Đây là lời khuyên khá trực tiếp; với người trên nên tránh."
+    }
+  ],
+  "notes": [
+    "Thường thêm よ ở cuối để nghe thân thiện: はやく ねた ほうが いいですよ."
+  ],
+  "examples": [
+    {
+      "ja": "かぜですか。今日は はやく ねた ほうが いいですよ。",
+      "ruby": "かぜですか。今日[きょう]は はやく ねた ほうが いいですよ。",
+      "vi": "Bạn bị cảm à? Hôm nay nên đi ngủ sớm đấy."
+    },
+    {
+      "ja": "くすりを のんだ ほうが いいです。",
+      "ruby": "くすりを のんだ ほうが いいです。",
+      "vi": "Bạn nên uống thuốc."
+    },
+    {
+      "ja": "あぶないですから、よる 一人で 出かけない ほうが いいです。",
+      "ruby": "あぶないですから、よる 一人[ひとり]で 出[で]かけない ほうが いいです。",
+      "vi": "Nguy hiểm nên buổi tối không nên ra ngoài một mình."
+    },
+    {
+      "ja": "雨ですから、タクシーで 行った ほうが いいです。",
+      "ruby": "雨[あめ]ですから、タクシーで 行[い]った ほうが いいです。",
+      "vi": "Trời mưa nên đi taxi thì hơn."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "きょうは はやく ＿＿ ほうが いいですよ。",
+      "answer": "ねた",
+      "choices": [
+        "ねて",
+        "ねた",
+        "ねます",
+        "ねたい"
+      ],
+      "vi": "Hôm nay nên đi ngủ sớm đấy."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "くすりを ＿＿ ほうが いいです。",
+      "answer": "のんだ",
+      "choices": [
+        "のんで",
+        "のみます",
+        "のんだ",
+        "のみた"
+      ],
+      "vi": "Bạn nên uống thuốc."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "よる ひとりで ＿＿ ほうが いいです。",
+      "answer": "でかけない",
+      "choices": [
+        "でかけなくて",
+        "でかけません",
+        "でかけないで",
+        "でかけない"
+      ],
+      "vi": "Buổi tối không nên ra ngoài một mình."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "タクシーで いった ＿＿が いいです。",
+      "answer": "ほう",
+      "choices": [
+        "ほう",
+        "もの",
+        "こと",
+        "とき"
+      ],
+      "vi": "Đi taxi thì hơn."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "やさいを たくさん ＿＿ ほうが いいです。",
+      "answer": "たべた",
+      "choices": [
+        "たべて",
+        "たべた",
+        "たべます",
+        "たべたい"
+      ],
+      "vi": "Bạn nên ăn nhiều rau."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

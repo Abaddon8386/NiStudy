@@ -1,0 +1,107 @@
+{
+  "id": "n5-e-direction",
+  "level": "N5",
+  "order": 18,
+  "title": "N(nơi) へ 行きます／来ます／かえります",
+  "pattern": "N(nơi) へ 行きます／来ます／かえります",
+  "meaning_vi": "đi / đến / về (nơi) N",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "へ chỉ hướng di chuyển, dùng với いきます (đi), きます (đến), かえります (về). Hỏi: どこへ いきますか (Bạn đi đâu?). Không đi đâu cả: どこへも いきません."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "へ viết bằng chữ “he” nhưng đọc là “e”. Có thể thay へ bằng に với nghĩa gần như nhau. Không dùng を: “がっこうを いきます” là sai."
+    }
+  ],
+  "notes": [
+    "Đi bằng phương tiện gì thì dùng で (bài sau)."
+  ],
+  "examples": [
+    {
+      "ja": "あした 学校へ 行きます。",
+      "ruby": "あした 学校[がっこう]へ 行[い]きます。",
+      "vi": "Ngày mai tôi đến trường."
+    },
+    {
+      "ja": "リンさんは きょねん 日本へ 来ました。",
+      "ruby": "リンさんは きょねん 日本[にほん]へ 来[き]ました。",
+      "vi": "Chị Linh đã đến Nhật năm ngoái."
+    },
+    {
+      "ja": "七時に うちへ かえります。",
+      "ruby": "七時[しちじ]に うちへ かえります。",
+      "vi": "Tôi về nhà lúc 7 giờ."
+    },
+    {
+      "ja": "にちようびは どこへも 行きませんでした。",
+      "ruby": "にちようびは どこへも 行[い]きませんでした。",
+      "vi": "Chủ nhật tôi đã không đi đâu cả."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "あした がっこう＿＿ いきます。",
+      "answer": "へ",
+      "choices": [
+        "を",
+        "で",
+        "へ",
+        "が"
+      ],
+      "vi": "Ngày mai tôi đến trường."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きょねん にほん＿＿ きました。",
+      "answer": "へ",
+      "choices": [
+        "を",
+        "で",
+        "が",
+        "へ"
+      ],
+      "vi": "Năm ngoái tôi đã đến Nhật."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "しちじに うち＿＿ かえります。",
+      "answer": "へ",
+      "choices": [
+        "へ",
+        "を",
+        "で",
+        "が"
+      ],
+      "vi": "Tôi về nhà lúc 7 giờ."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "にちようびは どこ＿＿も いきませんでした。",
+      "answer": "へ",
+      "choices": [
+        "を",
+        "へ",
+        "で",
+        "が"
+      ],
+      "vi": "Chủ nhật tôi đã không đi đâu cả."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "どこ＿＿ いきますか。",
+      "answer": "へ",
+      "choices": [
+        "を",
+        "で",
+        "へ",
+        "が"
+      ],
+      "vi": "Bạn đi đâu?"
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

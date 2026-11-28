@@ -1,0 +1,123 @@
+{
+  "id": "n5-naide-kudasai",
+  "level": "N5",
+  "order": 53,
+  "title": "Thể ない ＋ ないでください",
+  "pattern": "V ない で ください",
+  "meaning_vi": "Xin đừng V",
+  "explanation": [
+    {
+      "heading": "Cách chia thể ない",
+      "body": "Từ thể ます. Nhóm 1: đổi âm trước ます từ hàng い sang hàng あ + ない: かきます → かかない, のみます → のまない, まちます → またない; riêng い → わ: かいます → かわない. Nhóm 2: bỏ ます + ない: たべます → たべない. Nhóm 3: します → しない, きます → こない. Đặc biệt: あります → ない."
+    },
+    {
+      "heading": "Cách dùng",
+      "body": "Thể ない + でください: nhờ người nghe đừng làm gì: ここに にもつを おかないでください. Mềm hơn ～てはいけません."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Lỗi hay gặp: “かいない” (đúng: かわない), “すいない” (đúng: すわない)."
+    }
+  ],
+  "notes": [
+    "Thể ない còn là nền cho ～なければなりません và ～なくてもいいです."
+  ],
+  "examples": [
+    {
+      "ja": "ここに にもつを おかないでください。",
+      "ruby": "ここに にもつを おかないでください。",
+      "vi": "Xin đừng để hành lý ở đây."
+    },
+    {
+      "ja": "しゃしんを とらないでください。",
+      "ruby": "しゃしんを とらないでください。",
+      "vi": "Xin đừng chụp ảnh."
+    },
+    {
+      "ja": "しゅくだいを わすれないでください。",
+      "ruby": "しゅくだいを わすれないでください。",
+      "vi": "Xin đừng quên bài tập."
+    },
+    {
+      "ja": "あぶないですから、この 川で およがないでください。",
+      "ruby": "あぶないですから、この 川[かわ]で およがないでください。",
+      "vi": "Nguy hiểm nên xin đừng bơi ở con sông này."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "ここに にもつを ＿＿でください。",
+      "answer": "おかない",
+      "choices": [
+        "おきない",
+        "おかない",
+        "おくない",
+        "おかなく"
+      ],
+      "vi": "Xin đừng để hành lý ở đây."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "しゃしんを ＿＿でください。",
+      "answer": "とらない",
+      "choices": [
+        "とりない",
+        "とるない",
+        "とらない",
+        "とない"
+      ],
+      "vi": "Xin đừng chụp ảnh."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "しゅくだいを ＿＿でください。",
+      "answer": "わすれない",
+      "choices": [
+        "わすらない",
+        "わすれらない",
+        "わするない",
+        "わすれない"
+      ],
+      "vi": "Xin đừng quên bài tập."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "この かわで ＿＿でください。",
+      "answer": "およがない",
+      "choices": [
+        "およがない",
+        "およぎない",
+        "およかない",
+        "およくない"
+      ],
+      "vi": "Xin đừng bơi ở con sông này."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "この へやで たばこを ＿＿でください。",
+      "answer": "すわない",
+      "choices": [
+        "すあない",
+        "すわない",
+        "すいない",
+        "すかない"
+      ],
+      "vi": "Xin đừng hút thuốc trong phòng này."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "まだ ＿＿でください。",
+      "answer": "かえらない",
+      "choices": [
+        "かえない",
+        "かえりない",
+        "かえらない",
+        "かえるない"
+      ],
+      "vi": "Xin đừng về vội."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

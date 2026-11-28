@@ -1,0 +1,112 @@
+{
+  "id": "n5-te-imasu-state",
+  "level": "N5",
+  "order": 48,
+  "title": "V ています (trạng thái, thói quen)",
+  "pattern": "V て います",
+  "meaning_vi": "(Đã) V và vẫn ở trạng thái đó / thường xuyên V",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Ngoài nghĩa “đang làm”, ～ています còn chỉ: (1) trạng thái kéo dài sau một việc đã xảy ra: けっこんしています (đã kết hôn, đang có gia đình), ハノイに すんでいます (đang sống ở Hà Nội), しっています (biết); (2) công việc, thói quen lâu dài: ぎんこうで はたらいています (làm việc ở ngân hàng)."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "“Tôi biết” là しっています, nhưng “tôi không biết” là しりません (không nói “しっていません”). けっこんしています nghĩa là đã có gia đình, không phải “đang tổ chức đám cưới”."
+    }
+  ],
+  "notes": [
+    "すむ (sống) đi với に: ハノイに すんでいます."
+  ],
+  "examples": [
+    {
+      "ja": "わたしは ハノイに すんでいます。",
+      "ruby": "わたしは ハノイに すんでいます。",
+      "vi": "Tôi sống ở Hà Nội."
+    },
+    {
+      "ja": "やまださんは けっこんしています。",
+      "ruby": "やまださんは けっこんしています。",
+      "vi": "Anh Yamada đã kết hôn."
+    },
+    {
+      "ja": "父は ぎんこうで はたらいています。",
+      "ruby": "父[ちち]は ぎんこうで はたらいています。",
+      "vi": "Bố tôi làm việc ở ngân hàng."
+    },
+    {
+      "ja": "リンさんの 電話ばんごうを しっていますか。…いいえ、しりません。",
+      "ruby": "リンさんの 電話[でんわ]ばんごうを しっていますか。…いいえ、しりません。",
+      "vi": "Bạn có biết số điện thoại của chị Linh không? … Không, tôi không biết."
+    },
+    {
+      "ja": "ナムさんは まいあさ はしっています。",
+      "ruby": "ナムさんは まいあさ はしっています。",
+      "vi": "Sáng nào anh Nam cũng chạy bộ."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしは ハノイに ＿＿います。",
+      "answer": "すんで",
+      "choices": [
+        "すんで",
+        "すみて",
+        "すって",
+        "すいで"
+      ],
+      "vi": "Tôi sống ở Hà Nội."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "やまださんは ＿＿います。",
+      "answer": "けっこんして",
+      "choices": [
+        "けっこんしって",
+        "けっこんして",
+        "けっこんすって",
+        "けっこんしんで"
+      ],
+      "vi": "Anh Yamada đã kết hôn."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ちちは ぎんこうで ＿＿います。",
+      "answer": "はたらいて",
+      "choices": [
+        "はたらきて",
+        "はたらって",
+        "はたらいて",
+        "はたらんで"
+      ],
+      "vi": "Bố tôi làm việc ở ngân hàng."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "たなかさんの でんわばんごうを しっていますか。…いいえ、＿＿。",
+      "answer": "しりません",
+      "choices": [
+        "しっていません",
+        "しりないです",
+        "しりませんか",
+        "しりません"
+      ],
+      "vi": "Bạn có biết số điện thoại của anh Tanaka không? … Không, tôi không biết."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "リンさんを ＿＿か。…はい、しっています。",
+      "answer": "しっています",
+      "choices": [
+        "しっています",
+        "しりています",
+        "しるています",
+        "しっていて"
+      ],
+      "vi": "Bạn có biết chị Linh không? … Có, tôi biết."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

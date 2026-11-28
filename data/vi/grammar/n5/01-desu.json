@@ -1,0 +1,108 @@
+{
+  "id": "n5-desu",
+  "level": "N5",
+  "order": 1,
+  "title": "～です",
+  "pattern": "N1 は N2 です",
+  "meaning_vi": "N1 là N2",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Dùng để nói N1 là N2: giới thiệu tên, nghề nghiệp, quốc tịch… は (viết bằng chữ “ha” nhưng đọc là “wa”) đánh dấu chủ đề của câu. です đứng cuối câu, làm câu lịch sự. Tiếng Việt nói “Tôi là học sinh”, tiếng Nhật nói わたしは がくせいです (tôi – thì – học sinh – là)."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Người Việt hay quên です vì tiếng Việt không có từ nào đứng cuối câu như vậy; thiếu です câu nghe cộc lốc. です không đổi theo ngôi hay số nhiều: わたし, あなた, せんせい đều dùng です."
+    }
+  ],
+  "notes": [
+    "Khi người nghe đã hiểu đang nói về ai, có thể bỏ “わたしは”: がくせいです.",
+    "は là trợ từ nên luôn đọc “wa”, dù viết bằng chữ “ha”."
+  ],
+  "examples": [
+    {
+      "ja": "わたしは 学生です。",
+      "ruby": "わたしは 学生[がくせい]です。",
+      "vi": "Tôi là học sinh."
+    },
+    {
+      "ja": "リンさんは ベトナム人です。",
+      "ruby": "リンさんは ベトナム人[じん]です。",
+      "vi": "Chị Linh là người Việt Nam."
+    },
+    {
+      "ja": "たなかさんは 先生です。",
+      "ruby": "たなかさんは 先生[せんせい]です。",
+      "vi": "Anh Tanaka là giáo viên."
+    },
+    {
+      "ja": "やまださんは いしゃです。",
+      "ruby": "やまださんは いしゃです。",
+      "vi": "Ông Yamada là bác sĩ."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしは がくせい＿＿。",
+      "answer": "です",
+      "choices": [
+        "ます",
+        "です",
+        "か",
+        "を"
+      ],
+      "vi": "Tôi là học sinh."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "リンさんは ベトナムじん＿＿。",
+      "answer": "です",
+      "choices": [
+        "ます",
+        "が",
+        "です",
+        "に"
+      ],
+      "vi": "Chị Linh là người Việt Nam."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "たなかさん＿＿ せんせいです。",
+      "answer": "は",
+      "choices": [
+        "を",
+        "に",
+        "で",
+        "は"
+      ],
+      "vi": "Anh Tanaka là giáo viên."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "やまださん＿＿ いしゃです。",
+      "answer": "は",
+      "choices": [
+        "は",
+        "を",
+        "へ",
+        "で"
+      ],
+      "vi": "Ông Yamada là bác sĩ."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "わたし＿＿ りゅうがくせいです。",
+      "answer": "は",
+      "choices": [
+        "を",
+        "は",
+        "へ",
+        "に"
+      ],
+      "vi": "Tôi là du học sinh."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

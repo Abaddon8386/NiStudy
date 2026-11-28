@@ -1,0 +1,107 @@
+{
+  "id": "n5-ja-arimasen",
+  "level": "N5",
+  "order": 2,
+  "title": "～じゃありません",
+  "pattern": "N1 は N2 じゃありません（ではありません）",
+  "meaning_vi": "N1 không phải là N2",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Dạng phủ định của です, giống “không phải là” trong tiếng Việt. じゃありません dùng trong hội thoại; ではありません trang trọng hơn, hay gặp trong văn viết."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Không nói “がくせいですません” hay “がくせいでありません”. では đọc là “dewa” (は đọc “wa”). Trong hội thoại thân mật còn nghe dạng じゃないです."
+    }
+  ],
+  "notes": [
+    "Câu trả lời phủ định thường kèm thông tin đúng: いいえ、せんせいじゃありません。がくせいです."
+  ],
+  "examples": [
+    {
+      "ja": "わたしは 先生じゃありません。",
+      "ruby": "わたしは 先生[せんせい]じゃありません。",
+      "vi": "Tôi không phải là giáo viên."
+    },
+    {
+      "ja": "ナムさんは 日本人じゃありません。ベトナム人です。",
+      "ruby": "ナムさんは 日本人[にほんじん]じゃありません。ベトナム人[じん]です。",
+      "vi": "Anh Nam không phải người Nhật. Anh ấy là người Việt Nam."
+    },
+    {
+      "ja": "やまださんは 学生ではありません。",
+      "ruby": "やまださんは 学生[がくせい]ではありません。",
+      "vi": "Anh Yamada không phải là sinh viên."
+    },
+    {
+      "ja": "今日は 休みじゃありません。",
+      "ruby": "今日[きょう]は 休[やす]みじゃありません。",
+      "vi": "Hôm nay không phải ngày nghỉ."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしは せんせい＿＿。",
+      "answer": "じゃありません",
+      "choices": [
+        "です",
+        "ます",
+        "じゃありません",
+        "ません"
+      ],
+      "vi": "Tôi không phải là giáo viên."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ナムさんは にほんじん＿＿。ベトナムじんです。",
+      "answer": "じゃありません",
+      "choices": [
+        "です",
+        "ます",
+        "ません",
+        "じゃありません"
+      ],
+      "vi": "Anh Nam không phải người Nhật. Anh ấy là người Việt Nam."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きょうは やすみ＿＿ありません。",
+      "answer": "じゃ",
+      "choices": [
+        "じゃ",
+        "で",
+        "を",
+        "に"
+      ],
+      "vi": "Hôm nay không phải ngày nghỉ."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "やまださんは がくせいでは＿＿。",
+      "answer": "ありません",
+      "choices": [
+        "ます",
+        "ありません",
+        "です",
+        "いません"
+      ],
+      "vi": "Anh Yamada không phải là sinh viên."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "リンさんは せんせい＿＿。がくせいです。",
+      "answer": "じゃありません",
+      "choices": [
+        "です",
+        "ですか",
+        "じゃありません",
+        "でした"
+      ],
+      "vi": "Chị Linh không phải là giáo viên. Chị ấy là học sinh."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

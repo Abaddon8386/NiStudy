@@ -1,0 +1,124 @@
+{
+  "id": "n5-naru",
+  "level": "N5",
+  "order": 64,
+  "title": "～く／～に なります",
+  "pattern": "Aい(bỏ い) く なります ／ Aな・N に なります",
+  "meaning_vi": "Trở nên / Trở thành",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Diễn tả sự thay đổi: tính từ い bỏ い + く なります (さむく なります: trở lạnh); tính từ な và danh từ + に なります (げんきに なります: khỏe lên; せんせいに なります: trở thành giáo viên)."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Lỗi hay gặp: “さむいに なります”, “げんきく なります”. Tiếng Việt “trời trở lạnh rồi” → さむく なりましたね."
+    }
+  ],
+  "notes": [
+    "Muốn trở thành gì: ～に なりたいです."
+  ],
+  "examples": [
+    {
+      "ja": "十二月に なりました。さむく なりましたね。",
+      "ruby": "十二月[じゅうにがつ]に なりました。さむく なりましたね。",
+      "vi": "Đã sang tháng 12. Trời trở lạnh rồi nhỉ."
+    },
+    {
+      "ja": "くすりを のみましたから、げんきに なりました。",
+      "ruby": "くすりを のみましたから、げんきに なりました。",
+      "vi": "Vì đã uống thuốc nên tôi khỏe lại rồi."
+    },
+    {
+      "ja": "わたしは 先生に なりたいです。",
+      "ruby": "わたしは 先生[せんせい]に なりたいです。",
+      "vi": "Tôi muốn trở thành giáo viên."
+    },
+    {
+      "ja": "日本語が じょうずに なりました。",
+      "ruby": "日本語[にほんご]が じょうずに なりました。",
+      "vi": "Tiếng Nhật của bạn đã giỏi lên rồi."
+    },
+    {
+      "ja": "へやが きれいに なりました。",
+      "ruby": "へやが きれいに なりました。",
+      "vi": "Căn phòng đã sạch sẽ."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "さむ＿＿ なりましたね。",
+      "answer": "く",
+      "choices": [
+        "く",
+        "い",
+        "に",
+        "な"
+      ],
+      "vi": "Trời trở lạnh rồi nhỉ."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "くすりを のみましたから、げんき＿＿ なりました。",
+      "answer": "に",
+      "choices": [
+        "く",
+        "に",
+        "な",
+        "が"
+      ],
+      "vi": "Vì đã uống thuốc nên tôi khỏe lại rồi."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしは せんせい＿＿ なりたいです。",
+      "answer": "に",
+      "choices": [
+        "く",
+        "な",
+        "に",
+        "を"
+      ],
+      "vi": "Tôi muốn trở thành giáo viên."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "にほんごが じょうず＿＿ なりました。",
+      "answer": "に",
+      "choices": [
+        "く",
+        "な",
+        "を",
+        "に"
+      ],
+      "vi": "Tiếng Nhật của bạn đã giỏi lên rồi."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "へやが ＿＿ なりました。",
+      "answer": "きれいに",
+      "choices": [
+        "きれいに",
+        "きれく",
+        "きれいく",
+        "きれいな"
+      ],
+      "vi": "Căn phòng đã sạch sẽ."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あつ＿＿ なりました。",
+      "answer": "く",
+      "choices": [
+        "い",
+        "く",
+        "に",
+        "な"
+      ],
+      "vi": "Trời đã nóng lên."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

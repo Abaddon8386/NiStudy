@@ -1,0 +1,107 @@
+{
+  "id": "n5-masenka",
+  "level": "N5",
+  "order": 25,
+  "title": "V ませんか",
+  "pattern": "V ませんか",
+  "meaning_vi": "Cùng làm V không? (lời mời)",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Dùng để mời người nghe cùng làm gì một cách lịch sự, để người nghe tự quyết định: いっしょに えいがを みませんか. Đồng ý: ええ、いいですね. Từ chối khéo: すみません、ちょっと…."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Tuy có dạng phủ định nhưng ませんか là lời mời, không phải câu hỏi “bạn không xem à?”. Người Nhật ít khi từ chối thẳng bằng いいえ; thường nói ちょっと… rồi bỏ lửng."
+    }
+  ],
+  "notes": [
+    "ませんか lịch sự và mềm hơn ましょう (bài sau)."
+  ],
+  "examples": [
+    {
+      "ja": "いっしょに えいがを 見ませんか。",
+      "ruby": "いっしょに えいがを 見[み]ませんか。",
+      "vi": "Mình cùng xem phim không?"
+    },
+    {
+      "ja": "にちようび いっしょに こうえんへ 行きませんか。…ええ、いいですね。",
+      "ruby": "にちようび いっしょに こうえんへ 行[い]きませんか。…ええ、いいですね。",
+      "vi": "Chủ nhật cùng đi công viên không? … Ừ, hay đấy."
+    },
+    {
+      "ja": "コーヒーを のみませんか。",
+      "ruby": "コーヒーを のみませんか。",
+      "vi": "Anh uống cà phê không?"
+    },
+    {
+      "ja": "あした いっしょに ひるごはんを 食べませんか。…すみません、あしたは ちょっと…。",
+      "ruby": "あした いっしょに ひるごはんを 食[た]べませんか。…すみません、あしたは ちょっと…。",
+      "vi": "Mai cùng ăn trưa không? … Xin lỗi, mai thì hơi…"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "いっしょに えいがを ＿＿。…ええ、いいですね。",
+      "answer": "みませんか",
+      "choices": [
+        "みましたか",
+        "みませんか",
+        "みません",
+        "みるませんか"
+      ],
+      "vi": "Mình cùng xem phim không? … Ừ, hay đấy."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "にちようび こうえんへ ＿＿。",
+      "answer": "いきませんか",
+      "choices": [
+        "いかませんか",
+        "いくませんか",
+        "いきませんか",
+        "いきませんでしたか"
+      ],
+      "vi": "Chủ nhật cùng đi công viên không?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "コーヒーを ＿＿。",
+      "answer": "のみませんか",
+      "choices": [
+        "のまませんか",
+        "のむませんか",
+        "のみないか",
+        "のみませんか"
+      ],
+      "vi": "Anh uống cà phê không?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あした いっしょに ひるごはんを ＿＿。…すみません、あしたは ちょっと…。",
+      "answer": "たべませんか",
+      "choices": [
+        "たべませんか",
+        "たべるませんか",
+        "たべりませんか",
+        "たべましたか"
+      ],
+      "vi": "Mai cùng ăn trưa không? … Xin lỗi, mai thì hơi…"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "こんばん いっしょに べんきょう＿＿。",
+      "answer": "しませんか",
+      "choices": [
+        "すませんか",
+        "しませんか",
+        "しりませんか",
+        "しましたか"
+      ],
+      "vi": "Tối nay cùng học bài không?"
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

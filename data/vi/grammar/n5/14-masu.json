@@ -1,0 +1,107 @@
+{
+  "id": "n5-masu",
+  "level": "N5",
+  "order": 14,
+  "title": "V ます",
+  "pattern": "V ます",
+  "meaning_vi": "(sẽ / thường) làm V",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Đuôi ます là dạng lịch sự của động từ, dùng cho thói quen (まいにち はたらきます: ngày nào cũng làm việc) hoặc việc sẽ làm (あした いきます: ngày mai sẽ đi). Động từ không chia theo ngôi; thời gian do từ chỉ thời gian cho biết."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Động từ luôn đứng cuối câu: “Tôi uống cà phê” → わたしは コーヒーを のみます (tôi – cà phê – uống). ます đọc gần như “mas” (âm u rất nhẹ). Việc đang làm ngay lúc nói không dùng ます mà dùng ～ています (bài sau)."
+    }
+  ],
+  "notes": [
+    "Ở N5, hầu hết câu đều dùng thể ます vì đây là dạng lịch sự an toàn nhất."
+  ],
+  "examples": [
+    {
+      "ja": "わたしは 毎日 はたらきます。",
+      "ruby": "わたしは 毎日[まいにち] はたらきます。",
+      "vi": "Ngày nào tôi cũng đi làm."
+    },
+    {
+      "ja": "あした 学校へ 行きます。",
+      "ruby": "あした 学校[がっこう]へ 行[い]きます。",
+      "vi": "Ngày mai tôi sẽ đến trường."
+    },
+    {
+      "ja": "ナムさんは よく 本を 読みます。",
+      "ruby": "ナムさんは よく 本[ほん]を 読[よ]みます。",
+      "vi": "Anh Nam hay đọc sách."
+    },
+    {
+      "ja": "こんばん テレビを 見ます。",
+      "ruby": "こんばん テレビを 見[み]ます。",
+      "vi": "Tối nay tôi sẽ xem tivi."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしは まいにち ＿＿。",
+      "answer": "はたらきます",
+      "choices": [
+        "はたらきです",
+        "はたらくます",
+        "はたらきます",
+        "はたらいます"
+      ],
+      "vi": "Ngày nào tôi cũng đi làm."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あした がっこうへ ＿＿。",
+      "answer": "いきます",
+      "choices": [
+        "いくます",
+        "いきです",
+        "いきるます",
+        "いきます"
+      ],
+      "vi": "Ngày mai tôi sẽ đến trường."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ナムさんは よく ほんを ＿＿。",
+      "answer": "よみます",
+      "choices": [
+        "よみます",
+        "よむます",
+        "よみです",
+        "よまます"
+      ],
+      "vi": "Anh Nam hay đọc sách."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "こんばん テレビを ＿＿。",
+      "answer": "みます",
+      "choices": [
+        "みるます",
+        "みます",
+        "みです",
+        "みります"
+      ],
+      "vi": "Tối nay tôi sẽ xem tivi."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "まいあさ コーヒーを ＿＿。",
+      "answer": "のみます",
+      "choices": [
+        "のむます",
+        "のみです",
+        "のみます",
+        "のまます"
+      ],
+      "vi": "Sáng nào tôi cũng uống cà phê."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

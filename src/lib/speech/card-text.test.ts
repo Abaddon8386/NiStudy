@@ -19,4 +19,12 @@ describe("speechTextForCard", () => {
   it("không có dữ liệu thì null", () => {
     expect(speechTextForCard(c("vocab", null))).toBeNull();
   });
+  it("ngữ pháp phát câu hoàn chỉnh của bài tập, không có thì ví dụ đầu", () => {
+    const ex = { type: "cloze", prompt_ja: "私＿＿学生です。", answer: "は", choices: [], vi: "" };
+    expect(speechTextForCard(c("grammar", { exercises: [ex], examples: [] }))).toBe("私は学生です。");
+    expect(
+      speechTextForCard(c("grammar", { exercises: [], examples: [{ ja: "私は", ruby: "私[わたし]は", vi: "" }] })),
+    ).toBe("わたしは");
+    expect(speechTextForCard(c("grammar", { exercises: [], examples: [] }))).toBeNull();
+  });
 });

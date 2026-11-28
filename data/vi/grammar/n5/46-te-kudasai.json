@@ -1,0 +1,124 @@
+{
+  "id": "n5-te-kudasai",
+  "level": "N5",
+  "order": 46,
+  "title": "V てください",
+  "pattern": "V て ください",
+  "meaning_vi": "Hãy V / Xin vui lòng V",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Thể て + ください: nhờ, yêu cầu, hướng dẫn người nghe làm gì: ここに なまえを かいてください (Xin viết tên vào đây). Mở đầu bằng すみませんが để mềm hơn."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "～てください vẫn mang tính yêu cầu; với người trên nên thêm すみませんが. Lỗi chia thể て hay gặp: “まちてください” (đúng: まってください). どうぞ ～てください dùng khi mời: どうぞ たべてください."
+    }
+  ],
+  "notes": [
+    "Đừng nhầm ください (xin cho tôi) với ～てください (xin hãy làm)."
+  ],
+  "examples": [
+    {
+      "ja": "ここに 名前を 書いてください。",
+      "ruby": "ここに 名前[なまえ]を 書[か]いてください。",
+      "vi": "Xin hãy viết tên vào đây."
+    },
+    {
+      "ja": "すみませんが、ちょっと まってください。",
+      "ruby": "すみませんが、ちょっと まってください。",
+      "vi": "Xin lỗi, xin đợi một chút."
+    },
+    {
+      "ja": "もういちど いってください。",
+      "ruby": "もういちど いってください。",
+      "vi": "Xin hãy nói lại một lần nữa."
+    },
+    {
+      "ja": "ゆっくり 話してください。",
+      "ruby": "ゆっくり 話[はな]してください。",
+      "vi": "Xin hãy nói chậm."
+    },
+    {
+      "ja": "どうぞ たくさん 食べてください。",
+      "ruby": "どうぞ たくさん 食[た]べてください。",
+      "vi": "Xin mời ăn nhiều vào nhé."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "ここに なまえを ＿＿ください。",
+      "answer": "かいて",
+      "choices": [
+        "かきて",
+        "かって",
+        "かいて",
+        "かくて"
+      ],
+      "vi": "Xin hãy viết tên vào đây."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "すみませんが、ちょっと ＿＿ください。",
+      "answer": "まって",
+      "choices": [
+        "まちて",
+        "まんで",
+        "まいて",
+        "まって"
+      ],
+      "vi": "Xin lỗi, xin đợi một chút."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "もういちど ＿＿ください。",
+      "answer": "いって",
+      "choices": [
+        "いって",
+        "いいて",
+        "いきて",
+        "いうて"
+      ],
+      "vi": "Xin hãy nói lại một lần nữa."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ゆっくり ＿＿ください。",
+      "answer": "はなして",
+      "choices": [
+        "はなって",
+        "はなして",
+        "はなしって",
+        "はないて"
+      ],
+      "vi": "Xin hãy nói chậm."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "まどを ＿＿ください。",
+      "answer": "あけて",
+      "choices": [
+        "あけって",
+        "あきて",
+        "あけて",
+        "あいて"
+      ],
+      "vi": "Xin hãy mở cửa sổ."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "どうぞ たくさん ＿＿ください。",
+      "answer": "たべて",
+      "choices": [
+        "たべって",
+        "たべりて",
+        "たべんで",
+        "たべて"
+      ],
+      "vi": "Xin mời ăn nhiều vào nhé."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

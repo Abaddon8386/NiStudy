@@ -1,0 +1,107 @@
+{
+  "id": "n5-ga-wakaru-aru",
+  "level": "N5",
+  "order": 34,
+  "title": "～が わかります／あります",
+  "pattern": "N が わかります ／ N が あります",
+  "meaning_vi": "Hiểu N / Có N",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Một số động từ chỉ khả năng, sở hữu dùng が cho đối tượng: にほんごが わかります (hiểu tiếng Nhật), おかねが あります (có tiền), じかんが あります (có thời gian). Mức độ: よく (rõ), すこし (một chút); あまり + phủ định (không… lắm)."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Người Việt hay nói “にほんごを わかります” vì “hiểu” trong tiếng Việt có tân ngữ trực tiếp. Không hiểu thì nói: すみません、わかりません."
+    }
+  ],
+  "notes": [
+    "よく わかりません: không hiểu rõ lắm (cách nói mềm)."
+  ],
+  "examples": [
+    {
+      "ja": "わたしは 日本語が すこし わかります。",
+      "ruby": "わたしは 日本語[にほんご]が すこし わかります。",
+      "vi": "Tôi hiểu tiếng Nhật một chút."
+    },
+    {
+      "ja": "今日は 時間が あります。",
+      "ruby": "今日[きょう]は 時間[じかん]が あります。",
+      "vi": "Hôm nay tôi có thời gian."
+    },
+    {
+      "ja": "わたしは お金が あまり ありません。",
+      "ruby": "わたしは お金[かね]が あまり ありません。",
+      "vi": "Tôi không có nhiều tiền lắm."
+    },
+    {
+      "ja": "かんじが よく わかりません。",
+      "ruby": "かんじが よく わかりません。",
+      "vi": "Tôi không hiểu rõ kanji lắm."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしは にほんご＿＿ すこし わかります。",
+      "answer": "が",
+      "choices": [
+        "を",
+        "に",
+        "が",
+        "で"
+      ],
+      "vi": "Tôi hiểu tiếng Nhật một chút."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きょうは じかん＿＿ あります。",
+      "answer": "が",
+      "choices": [
+        "を",
+        "に",
+        "で",
+        "が"
+      ],
+      "vi": "Hôm nay tôi có thời gian."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしは おかね＿＿ あまり ありません。",
+      "answer": "が",
+      "choices": [
+        "が",
+        "を",
+        "に",
+        "で"
+      ],
+      "vi": "Tôi không có nhiều tiền lắm."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "かんじが ＿＿ わかりません。",
+      "answer": "よく",
+      "choices": [
+        "どうぞ",
+        "よく",
+        "たくさん",
+        "いちばん"
+      ],
+      "vi": "Tôi không hiểu rõ kanji lắm."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "えいごが ＿＿ わかります。",
+      "answer": "すこし",
+      "choices": [
+        "あまり",
+        "いつ",
+        "すこし",
+        "どう"
+      ],
+      "vi": "Tôi hiểu tiếng Anh một chút."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

@@ -1,0 +1,107 @@
+{
+  "id": "n5-kara-reason",
+  "level": "N5",
+  "order": 41,
+  "title": "～から (lý do)",
+  "pattern": "Câu 1 から、Câu 2",
+  "meaning_vi": "Vì câu 1 nên câu 2",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "から đặt sau câu chỉ lý do, câu kết quả đứng sau: じかんが ありませんから、タクシーで いきます (Vì không có thời gian nên tôi đi taxi). Trả lời câu hỏi どうして (tại sao) bằng ～からです."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Trật tự ngược tiếng Việt: “vì” đứng đầu vế lý do, còn から đứng CUỐI vế lý do. Đừng nhầm với から “từ” đi sau danh từ: くじから (từ 9 giờ) khác くじですから (vì là 9 giờ)."
+    }
+  ],
+  "notes": [
+    "Trước から có thể dùng thể です／ます: あめですから, ありませんから."
+  ],
+  "examples": [
+    {
+      "ja": "時間が ありませんから、タクシーで 行きます。",
+      "ruby": "時間[じかん]が ありませんから、タクシーで 行[い]きます。",
+      "vi": "Vì không có thời gian nên tôi đi taxi."
+    },
+    {
+      "ja": "今日は 雨ですから、うちに います。",
+      "ruby": "今日[きょう]は 雨[あめ]ですから、うちに います。",
+      "vi": "Hôm nay trời mưa nên tôi ở nhà."
+    },
+    {
+      "ja": "あしたは テストですから、こんばん べんきょうします。",
+      "ruby": "あしたは テストですから、こんばん べんきょうします。",
+      "vi": "Mai có kiểm tra nên tối nay tôi học bài."
+    },
+    {
+      "ja": "どうして 休みましたか。…あたまが いたかったからです。",
+      "ruby": "どうして 休[やす]みましたか。…あたまが いたかったからです。",
+      "vi": "Tại sao bạn đã nghỉ? … Vì tôi bị đau đầu."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "じかんが ありません＿＿、タクシーで いきます。",
+      "answer": "から",
+      "choices": [
+        "まで",
+        "から",
+        "を",
+        "に"
+      ],
+      "vi": "Vì không có thời gian nên tôi đi taxi."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きょうは あめです＿＿、うちに います。",
+      "answer": "から",
+      "choices": [
+        "まで",
+        "を",
+        "から",
+        "へ"
+      ],
+      "vi": "Hôm nay trời mưa nên tôi ở nhà."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あしたは テストです＿＿、こんばん べんきょうします。",
+      "answer": "から",
+      "choices": [
+        "まで",
+        "を",
+        "へ",
+        "から"
+      ],
+      "vi": "Mai có kiểm tra nên tối nay tôi học bài."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "どうして やすみましたか。…あたまが いたかった＿＿です。",
+      "answer": "から",
+      "choices": [
+        "から",
+        "まで",
+        "を",
+        "へ"
+      ],
+      "vi": "Tại sao bạn đã nghỉ? … Vì tôi bị đau đầu."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "＿＿ やすみましたか。…あたまが いたかったからです。",
+      "answer": "どうして",
+      "choices": [
+        "どこ",
+        "どうして",
+        "だれ",
+        "いつ"
+      ],
+      "vi": "Tại sao bạn đã nghỉ? … Vì tôi bị đau đầu."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

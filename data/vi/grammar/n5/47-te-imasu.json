@@ -1,0 +1,107 @@
+{
+  "id": "n5-te-imasu",
+  "level": "N5",
+  "order": 47,
+  "title": "V ています (đang làm)",
+  "pattern": "V て います",
+  "meaning_vi": "Đang V",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Thể て + います diễn tả hành động đang diễn ra: リンさんは いま ほんを よんでいます (Linh đang đọc sách). Hỏi: いま なにを していますか (Bây giờ bạn đang làm gì?)."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Tiếng Việt chỉ cần thêm “đang”, còn tiếng Nhật phải đổi dạng động từ: “いま ほんを よみます” nghĩa là “bây giờ tôi SẼ đọc sách”. Phủ định: ～ていません."
+    }
+  ],
+  "notes": [
+    "Trong hội thoại, い thường bị nuốt: よんでます; khi viết nên dùng dạng đầy đủ."
+  ],
+  "examples": [
+    {
+      "ja": "リンさんは 今 本を 読んでいます。",
+      "ruby": "リンさんは 今[いま] 本[ほん]を 読[よ]んでいます。",
+      "vi": "Chị Linh đang đọc sách."
+    },
+    {
+      "ja": "外は 雨が ふっています。",
+      "ruby": "外[そと]は 雨[あめ]が ふっています。",
+      "vi": "Bên ngoài trời đang mưa."
+    },
+    {
+      "ja": "ナムさんは 今 何を していますか。…電話を しています。",
+      "ruby": "ナムさんは 今[いま] 何[なに]を していますか。…電話[でんわ]を しています。",
+      "vi": "Anh Nam bây giờ đang làm gì? … Đang gọi điện thoại."
+    },
+    {
+      "ja": "子どもたちが こうえんで あそんでいます。",
+      "ruby": "子[こ]どもたちが こうえんで あそんでいます。",
+      "vi": "Bọn trẻ đang chơi ở công viên."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "リンさんは いま ほんを ＿＿います。",
+      "answer": "よんで",
+      "choices": [
+        "よみて",
+        "よんて",
+        "よって",
+        "よんで"
+      ],
+      "vi": "Chị Linh đang đọc sách."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "そとは あめが ＿＿います。",
+      "answer": "ふって",
+      "choices": [
+        "ふって",
+        "ふりて",
+        "ふんで",
+        "ふいて"
+      ],
+      "vi": "Bên ngoài trời đang mưa."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "いま なにを ＿＿か。",
+      "answer": "しています",
+      "choices": [
+        "します",
+        "しています",
+        "しりています",
+        "すています"
+      ],
+      "vi": "Bây giờ bạn đang làm gì?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "こどもたちが こうえんで ＿＿います。",
+      "answer": "あそんで",
+      "choices": [
+        "あそびて",
+        "あそって",
+        "あそんで",
+        "あそいて"
+      ],
+      "vi": "Bọn trẻ đang chơi ở công viên."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ナムさんは いま でんわを ＿＿。",
+      "answer": "しています",
+      "choices": [
+        "します",
+        "しました",
+        "するています",
+        "しています"
+      ],
+      "vi": "Anh Nam bây giờ đang gọi điện thoại."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

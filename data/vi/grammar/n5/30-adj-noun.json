@@ -1,0 +1,124 @@
+{
+  "id": "n5-adj-noun",
+  "level": "N5",
+  "order": 30,
+  "title": "Tính từ ＋ danh từ",
+  "pattern": "Aい N ／ Aな N",
+  "meaning_vi": "N (mà) A",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Tính từ đứng TRƯỚC danh từ để bổ nghĩa: tính từ い giữ nguyên (たかい やま: núi cao), tính từ な giữ な (しずかな こうえん: công viên yên tĩnh)."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Trật tự ngược tiếng Việt: “núi cao” → たかい やま. Lỗi hay gặp: “しずか こうえん” (thiếu な), “たかいな やま” (thừa な)."
+    }
+  ],
+  "notes": [
+    "おおきな／ちいさな cũng đứng trước danh từ: おおきな き (cái cây to)."
+  ],
+  "examples": [
+    {
+      "ja": "あれは 高い 山です。",
+      "ruby": "あれは 高[たか]い 山[やま]です。",
+      "vi": "Kia là ngọn núi cao."
+    },
+    {
+      "ja": "ここは しずかな こうえんです。",
+      "ruby": "ここは しずかな こうえんです。",
+      "vi": "Đây là công viên yên tĩnh."
+    },
+    {
+      "ja": "きのう おもしろい えいがを 見ました。",
+      "ruby": "きのう おもしろい えいがを 見[み]ました。",
+      "vi": "Hôm qua tôi đã xem một bộ phim hay."
+    },
+    {
+      "ja": "リンさんは きれいな 人です。",
+      "ruby": "リンさんは きれいな 人[ひと]です。",
+      "vi": "Chị Linh là người đẹp."
+    },
+    {
+      "ja": "あたらしい 車を かいました。",
+      "ruby": "あたらしい 車[くるま]を かいました。",
+      "vi": "Tôi đã mua xe ô tô mới."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "あれは ＿＿ やまです。",
+      "answer": "たかい",
+      "choices": [
+        "たかいな",
+        "たかな",
+        "たかい",
+        "たかく"
+      ],
+      "vi": "Kia là ngọn núi cao."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ここは ＿＿ こうえんです。",
+      "answer": "しずかな",
+      "choices": [
+        "しずか",
+        "しずかい",
+        "しずかの",
+        "しずかな"
+      ],
+      "vi": "Đây là công viên yên tĩnh."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きのう ＿＿ えいがを みました。",
+      "answer": "おもしろい",
+      "choices": [
+        "おもしろい",
+        "おもしろいな",
+        "おもしろな",
+        "おもしろく"
+      ],
+      "vi": "Hôm qua tôi đã xem một bộ phim hay."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "リンさんは ＿＿ ひとです。",
+      "answer": "きれいな",
+      "choices": [
+        "きれい",
+        "きれいな",
+        "きれいい",
+        "きれいの"
+      ],
+      "vi": "Chị Linh là người đẹp."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ハノイは ＿＿ まちです。",
+      "answer": "にぎやかな",
+      "choices": [
+        "にぎやか",
+        "にぎやかい",
+        "にぎやかな",
+        "にぎやかの"
+      ],
+      "vi": "Hà Nội là thành phố nhộn nhịp."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "＿＿ くるまを かいました。",
+      "answer": "あたらしい",
+      "choices": [
+        "あたらしいな",
+        "あたらしな",
+        "あたらしの",
+        "あたらしい"
+      ],
+      "vi": "Tôi đã mua xe ô tô mới."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

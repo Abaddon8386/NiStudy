@@ -1,0 +1,107 @@
+{
+  "id": "n5-ga-but",
+  "level": "N5",
+  "order": 42,
+  "title": "～が (nhưng)",
+  "pattern": "Câu 1 が、Câu 2",
+  "meaning_vi": "Câu 1 nhưng câu 2",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "が nối hai vế trái ngược: この レストランは たかいですが、おいしいです. が đặt cuối vế thứ nhất, sau です／ます. Còn dùng để mở đầu lịch sự: すみませんが、… (Xin lỗi, cho tôi hỏi…)."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Đừng nhầm が “nhưng” (sau cả câu) với trợ từ が chủ ngữ (sau danh từ). でも (nhưng) thì đứng đầu câu thứ hai: たかいです。でも、おいしいです."
+    }
+  ],
+  "notes": [
+    "Thường có dấu phẩy 、 ngay sau が."
+  ],
+  "examples": [
+    {
+      "ja": "この レストランは たかいですが、おいしいです。",
+      "ruby": "この レストランは たかいですが、おいしいです。",
+      "vi": "Nhà hàng này đắt nhưng ngon."
+    },
+    {
+      "ja": "日本語は むずかしいですが、おもしろいです。",
+      "ruby": "日本語[にほんご]は むずかしいですが、おもしろいです。",
+      "vi": "Tiếng Nhật khó nhưng thú vị."
+    },
+    {
+      "ja": "きのうは 雨でしたが、今日は いい 天気です。",
+      "ruby": "きのうは 雨[あめ]でしたが、今日[きょう]は いい 天気[てんき]です。",
+      "vi": "Hôm qua trời mưa, nhưng hôm nay trời đẹp."
+    },
+    {
+      "ja": "すみませんが、えきは どこですか。",
+      "ruby": "すみませんが、えきは どこですか。",
+      "vi": "Xin lỗi, nhà ga ở đâu ạ?"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "この レストランは たかいです＿＿、おいしいです。",
+      "answer": "が",
+      "choices": [
+        "から",
+        "を",
+        "が",
+        "に"
+      ],
+      "vi": "Nhà hàng này đắt nhưng ngon."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "にほんごは むずかしいです＿＿、おもしろいです。",
+      "answer": "が",
+      "choices": [
+        "から",
+        "を",
+        "と",
+        "が"
+      ],
+      "vi": "Tiếng Nhật khó nhưng thú vị."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きのうは あめでした＿＿、きょうは いい てんきです。",
+      "answer": "が",
+      "choices": [
+        "が",
+        "から",
+        "を",
+        "で"
+      ],
+      "vi": "Hôm qua trời mưa, nhưng hôm nay trời đẹp."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "すみません＿＿、えきは どこですか。",
+      "answer": "が",
+      "choices": [
+        "から",
+        "が",
+        "を",
+        "と"
+      ],
+      "vi": "Xin lỗi, nhà ga ở đâu ạ?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "やさいは すきです＿＿、にくは すきじゃありません。",
+      "answer": "が",
+      "choices": [
+        "から",
+        "も",
+        "が",
+        "を"
+      ],
+      "vi": "Tôi thích rau nhưng không thích thịt."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

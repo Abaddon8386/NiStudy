@@ -1,0 +1,107 @@
+{
+  "id": "n5-tsumori",
+  "level": "N5",
+  "order": 68,
+  "title": "V る つもりです",
+  "pattern": "V(thể từ điển) つもりです ／ V(thể ない) つもりです",
+  "meaning_vi": "Định V / Dự định V",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Thể từ điển + つもりです: kế hoạch, ý định đã quyết của bản thân: なつやすみに にほんへ いく つもりです. Định không làm: thể ない + つもりです."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "つもり là ý định chắc chắn hơn ～たい (muốn). Hỏi kế hoạch của người trên bằng ～つもりですか nghe hơi thẳng; nên hỏi bằng ～ますか."
+    }
+  ],
+  "notes": [
+    "Trước つもり không dùng thể ます: “いきます つもり” là sai."
+  ],
+  "examples": [
+    {
+      "ja": "なつやすみに 日本へ 行く つもりです。",
+      "ruby": "なつやすみに 日本[にほん]へ 行[い]く つもりです。",
+      "vi": "Kỳ nghỉ hè tôi định đi Nhật."
+    },
+    {
+      "ja": "来年 大学で 日本語を べんきょうする つもりです。",
+      "ruby": "来年[らいねん] 大学[だいがく]で 日本語[にほんご]を べんきょうする つもりです。",
+      "vi": "Năm sau tôi định học tiếng Nhật ở đại học."
+    },
+    {
+      "ja": "今日は どこへも 出かけない つもりです。",
+      "ruby": "今日[きょう]は どこへも 出[で]かけない つもりです。",
+      "vi": "Hôm nay tôi định không đi đâu cả."
+    },
+    {
+      "ja": "あした 何を する つもりですか。…友だちに あう つもりです。",
+      "ruby": "あした 何[なに]を する つもりですか。…友[とも]だちに あう つもりです。",
+      "vi": "Ngày mai bạn định làm gì? … Tôi định gặp bạn."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "なつやすみに にほんへ ＿＿ つもりです。",
+      "answer": "いく",
+      "choices": [
+        "いく",
+        "いき",
+        "いって",
+        "いきます"
+      ],
+      "vi": "Kỳ nghỉ hè tôi định đi Nhật."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "らいねん だいがくで にほんごを ＿＿ つもりです。",
+      "answer": "べんきょうする",
+      "choices": [
+        "べんきょうし",
+        "べんきょうする",
+        "べんきょうして",
+        "べんきょうします"
+      ],
+      "vi": "Năm sau tôi định học tiếng Nhật ở đại học."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きょうは どこへも ＿＿ つもりです。",
+      "answer": "でかけない",
+      "choices": [
+        "でかけません",
+        "でかけなくて",
+        "でかけない",
+        "でかけないで"
+      ],
+      "vi": "Hôm nay tôi định không đi đâu cả."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あした なにを する ＿＿ですか。",
+      "answer": "つもり",
+      "choices": [
+        "ほう",
+        "とき",
+        "まえ",
+        "つもり"
+      ],
+      "vi": "Ngày mai bạn định làm gì?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "らいげつ あたらしい くるまを ＿＿ つもりです。",
+      "answer": "かう",
+      "choices": [
+        "かう",
+        "かい",
+        "かって",
+        "かいます"
+      ],
+      "vi": "Tháng sau tôi định mua xe ô tô mới."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

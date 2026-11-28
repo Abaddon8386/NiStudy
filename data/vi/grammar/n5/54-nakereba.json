@@ -1,0 +1,107 @@
+{
+  "id": "n5-nakereba",
+  "level": "N5",
+  "order": 54,
+  "title": "V なければなりません",
+  "pattern": "V(thể ない, bỏ い) ければ なりません",
+  "meaning_vi": "Phải V",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Thể ない bỏ い + ければなりません: いかない → いかなければなりません. Diễn tả nghĩa vụ, việc bắt buộc phải làm."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Cách nói tương đương: ～なければいけません. Lỗi hay gặp: giữ nguyên い (“いかないければ”). Câu dài nên luyện đọc nhiều lần cho quen."
+    }
+  ],
+  "notes": [
+    "Câu hỏi: ～なければなりませんか. Trả lời “không cần”: ～なくてもいいです (bài sau)."
+  ],
+  "examples": [
+    {
+      "ja": "あしたは 六時に おきなければなりません。",
+      "ruby": "あしたは 六時[ろくじ]に おきなければなりません。",
+      "vi": "Ngày mai tôi phải dậy lúc 6 giờ."
+    },
+    {
+      "ja": "くすりを のまなければなりません。",
+      "ruby": "くすりを のまなければなりません。",
+      "vi": "Tôi phải uống thuốc."
+    },
+    {
+      "ja": "今日は しゅくだいを しなければなりません。",
+      "ruby": "今日[きょう]は しゅくだいを しなければなりません。",
+      "vi": "Hôm nay tôi phải làm bài tập."
+    },
+    {
+      "ja": "毎日 日本語を べんきょうしなければなりません。",
+      "ruby": "毎日[まいにち] 日本語[にほんご]を べんきょうしなければなりません。",
+      "vi": "Ngày nào tôi cũng phải học tiếng Nhật."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "あしたは ろくじに ＿＿なければなりません。",
+      "answer": "おき",
+      "choices": [
+        "おか",
+        "おく",
+        "おき",
+        "おきな"
+      ],
+      "vi": "Ngày mai tôi phải dậy lúc 6 giờ."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "くすりを ＿＿なければなりません。",
+      "answer": "のま",
+      "choices": [
+        "のみ",
+        "のむ",
+        "のめ",
+        "のま"
+      ],
+      "vi": "Tôi phải uống thuốc."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きょうは しゅくだいを ＿＿なければなりません。",
+      "answer": "し",
+      "choices": [
+        "し",
+        "す",
+        "さ",
+        "こ"
+      ],
+      "vi": "Hôm nay tôi phải làm bài tập."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "まいにち にほんごを べんきょうしなければ＿＿。",
+      "answer": "なりません",
+      "choices": [
+        "なります",
+        "なりません",
+        "いいです",
+        "ください"
+      ],
+      "vi": "Ngày nào tôi cũng phải học tiếng Nhật."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あした ほんを としょかんに ＿＿なければなりません。",
+      "answer": "かえさ",
+      "choices": [
+        "かえし",
+        "かえす",
+        "かえさ",
+        "かえせ"
+      ],
+      "vi": "Ngày mai tôi phải trả sách cho thư viện."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

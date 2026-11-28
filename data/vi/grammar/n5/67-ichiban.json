@@ -1,0 +1,107 @@
+{
+  "id": "n5-ichiban",
+  "level": "N5",
+  "order": 67,
+  "title": "～の なかで ～が いちばん ～",
+  "pattern": "N(phạm vi) の なかで N が いちばん A です",
+  "meaning_vi": "Trong (phạm vi), N là A nhất",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "So sánh từ ba thứ trở lên: りょうりの なかで なにが いちばん すきですか (Trong các món ăn, bạn thích món nào nhất?). Trả lời: N が いちばん A です. Hỏi người: だれが; nơi: どこが; thời gian: いつが."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Khi có từ ba thứ trở lên không dùng どちら. Từ để hỏi làm chủ ngữ dùng が (なにが), không dùng は. Phạm vi là nơi/nhóm thì có thể chỉ dùng で: クラスで."
+    }
+  ],
+  "notes": [
+    "いちばん đứng ngay trước tính từ: いちばん すき, いちばん たかい."
+  ],
+  "examples": [
+    {
+      "ja": "りょうりの 中で 何が いちばん すきですか。…カレーが いちばん すきです。",
+      "ruby": "りょうりの 中[なか]で 何[なに]が いちばん すきですか。…カレーが いちばん すきです。",
+      "vi": "Trong các món ăn, bạn thích món nào nhất? … Tôi thích cà ri nhất."
+    },
+    {
+      "ja": "かぞくの 中で だれが いちばん せが 高いですか。…父です。",
+      "ruby": "かぞくの 中[なか]で だれが いちばん せが 高[たか]いですか。…父[ちち]です。",
+      "vi": "Trong gia đình, ai cao nhất? … Bố tôi."
+    },
+    {
+      "ja": "一年で いつが いちばん さむいですか。…一月です。",
+      "ruby": "一年[いちねん]で いつが いちばん さむいですか。…一月[いちがつ]です。",
+      "vi": "Trong một năm, lúc nào lạnh nhất? … Tháng 1."
+    },
+    {
+      "ja": "クラスで リンさんが いちばん 日本語が じょうずです。",
+      "ruby": "クラスで リンさんが いちばん 日本語[にほんご]が じょうずです。",
+      "vi": "Trong lớp, chị Linh giỏi tiếng Nhật nhất."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "りょうりの ＿＿で なにが いちばん すきですか。",
+      "answer": "なか",
+      "choices": [
+        "うえ",
+        "まえ",
+        "ほう",
+        "なか"
+      ],
+      "vi": "Trong các món ăn, bạn thích món nào nhất?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "かぞくの なかで だれが ＿＿ せが たかいですか。",
+      "answer": "いちばん",
+      "choices": [
+        "いちばん",
+        "どちら",
+        "より",
+        "ほう"
+      ],
+      "vi": "Trong gia đình, ai cao nhất?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "いちねんで ＿＿が いちばん さむいですか。…いちがつです。",
+      "answer": "いつ",
+      "choices": [
+        "どこ",
+        "いつ",
+        "だれ",
+        "どちら"
+      ],
+      "vi": "Trong một năm, lúc nào lạnh nhất? … Tháng 1."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "クラスで ＿＿が いちばん にほんごが じょうずですか。…リンさんです。",
+      "answer": "だれ",
+      "choices": [
+        "なに",
+        "いつ",
+        "だれ",
+        "どちら"
+      ],
+      "vi": "Trong lớp, ai giỏi tiếng Nhật nhất? … Chị Linh."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ベトナムで ＿＿が いちばん にぎやかですか。…ホーチミンです。",
+      "answer": "どこ",
+      "choices": [
+        "だれ",
+        "いつ",
+        "どちら",
+        "どこ"
+      ],
+      "vi": "Ở Việt Nam, nơi nào nhộn nhịp nhất? … TP Hồ Chí Minh."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

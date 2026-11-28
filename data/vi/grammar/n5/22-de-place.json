@@ -1,0 +1,107 @@
+{
+  "id": "n5-de-place",
+  "level": "N5",
+  "order": 22,
+  "title": "N(nơi) で V",
+  "pattern": "N(nơi) で V",
+  "meaning_vi": "làm V ở / tại N",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "で sau danh từ chỉ nơi chốn cho biết nơi hành động diễn ra: としょかんで ほんを よみます (đọc sách ở thư viện)."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Người Việt hay dùng に cho mọi chữ “ở”: “としょかんに べんきょうします” là sai. Mẹo: có hành động (ăn, học, mua, đợi…) thì dùng で; chỉ sự tồn tại (あります／います) thì dùng に."
+    }
+  ],
+  "notes": [
+    "Hỏi “ở đâu”: どこで ～ますか."
+  ],
+  "examples": [
+    {
+      "ja": "としょかんで 本を 読みます。",
+      "ruby": "としょかんで 本[ほん]を 読[よ]みます。",
+      "vi": "Tôi đọc sách ở thư viện."
+    },
+    {
+      "ja": "えきで 友だちを まちます。",
+      "ruby": "えきで 友[とも]だちを まちます。",
+      "vi": "Tôi đợi bạn ở nhà ga."
+    },
+    {
+      "ja": "デパートで くつを かいました。",
+      "ruby": "デパートで くつを かいました。",
+      "vi": "Tôi đã mua giày ở cửa hàng bách hóa."
+    },
+    {
+      "ja": "学校で 日本語を べんきょうします。",
+      "ruby": "学校[がっこう]で 日本語[にほんご]を べんきょうします。",
+      "vi": "Tôi học tiếng Nhật ở trường."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "としょかん＿＿ ほんを よみます。",
+      "answer": "で",
+      "choices": [
+        "に",
+        "を",
+        "で",
+        "へ"
+      ],
+      "vi": "Tôi đọc sách ở thư viện."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "えき＿＿ ともだちを まちます。",
+      "answer": "で",
+      "choices": [
+        "に",
+        "を",
+        "が",
+        "で"
+      ],
+      "vi": "Tôi đợi bạn ở nhà ga."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "デパート＿＿ くつを かいました。",
+      "answer": "で",
+      "choices": [
+        "で",
+        "に",
+        "へ",
+        "を"
+      ],
+      "vi": "Tôi đã mua giày ở cửa hàng bách hóa."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "がっこう＿＿ にほんごを べんきょうします。",
+      "answer": "で",
+      "choices": [
+        "に",
+        "で",
+        "へ",
+        "を"
+      ],
+      "vi": "Tôi học tiếng Nhật ở trường."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "どこ＿＿ ひるごはんを たべますか。",
+      "answer": "で",
+      "choices": [
+        "に",
+        "を",
+        "で",
+        "へ"
+      ],
+      "vi": "Bạn ăn trưa ở đâu?"
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

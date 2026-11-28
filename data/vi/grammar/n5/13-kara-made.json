@@ -1,0 +1,107 @@
+{
+  "id": "n5-kara-made",
+  "level": "N5",
+  "order": 13,
+  "title": "～から～まで",
+  "pattern": "N1 から N2 まで",
+  "meaning_vi": "Từ N1 đến N2",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "から chỉ điểm bắt đầu, まで chỉ điểm kết thúc, dùng cho cả thời gian và nơi chốn. Có thể dùng riêng: くじから (từ 9 giờ), ごじまで (đến 5 giờ). Câu có thể kết thúc bằng です: やすみは げつようびから すいようびまでです."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Giống “từ… đến…” của tiếng Việt nhưng から／まで đứng SAU danh từ: くじから ごじまで = từ 9 giờ đến 5 giờ."
+    }
+  ],
+  "notes": [
+    "から ở bài này đi sau danh từ; から đứng sau câu nghĩa là “vì” (bài sau)."
+  ],
+  "examples": [
+    {
+      "ja": "学校は 八時から 三時までです。",
+      "ruby": "学校[がっこう]は 八時[はちじ]から 三時[さんじ]までです。",
+      "vi": "Trường học từ 8 giờ đến 3 giờ."
+    },
+    {
+      "ja": "ぎんこうは 九時から 三時までです。",
+      "ruby": "ぎんこうは 九時[くじ]から 三時[さんじ]までです。",
+      "vi": "Ngân hàng làm việc từ 9 giờ đến 3 giờ."
+    },
+    {
+      "ja": "休みは げつようびから すいようびまでです。",
+      "ruby": "休[やす]みは げつようびから すいようびまでです。",
+      "vi": "Kỳ nghỉ từ thứ Hai đến thứ Tư."
+    },
+    {
+      "ja": "テストは 一時からです。",
+      "ruby": "テストは 一時[いちじ]からです。",
+      "vi": "Bài kiểm tra bắt đầu từ 1 giờ."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "がっこうは はちじ＿＿ さんじまでです。",
+      "answer": "から",
+      "choices": [
+        "まで",
+        "から",
+        "に",
+        "で"
+      ],
+      "vi": "Trường học từ 8 giờ đến 3 giờ."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "がっこうは はちじから さんじ＿＿です。",
+      "answer": "まで",
+      "choices": [
+        "から",
+        "に",
+        "まで",
+        "を"
+      ],
+      "vi": "Trường học từ 8 giờ đến 3 giờ."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "やすみは げつようび＿＿ すいようびまでです。",
+      "answer": "から",
+      "choices": [
+        "まで",
+        "を",
+        "に",
+        "から"
+      ],
+      "vi": "Kỳ nghỉ từ thứ Hai đến thứ Tư."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "テストは いちじ＿＿です。",
+      "answer": "から",
+      "choices": [
+        "から",
+        "を",
+        "に",
+        "へ"
+      ],
+      "vi": "Bài kiểm tra bắt đầu từ 1 giờ."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ひるやすみは じゅうにじから いちじ＿＿です。",
+      "answer": "まで",
+      "choices": [
+        "から",
+        "まで",
+        "を",
+        "で"
+      ],
+      "vi": "Nghỉ trưa từ 12 giờ đến 1 giờ."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

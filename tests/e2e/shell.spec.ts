@@ -8,7 +8,7 @@ const kanaRows = [
   { id: "kana:hira:a", sort_order: 1, kana_details: { script: "hira", kana: "あ", romaji: "a", grp: "basic" } },
   { id: "kana:hira:ga", sort_order: 2, kana_details: { script: "hira", kana: "が", romaji: "ga", grp: "dakuten" } },
 ];
-const NAV_NAMES = ["Trang chính", "Ôn tập", "Trắc nghiệm", "Bảng kana", "Cài đặt"];
+const NAV_NAMES = ["Trang chính", "Ôn tập", "Trắc nghiệm", "Bảng kana", "Ngữ pháp", "Cài đặt"];
 const BOTTOM_NAMES = ["Hôm nay", "Ôn tập", "Kiểm tra", "Kana"];
 
 async function login(page: Page) {
@@ -29,7 +29,7 @@ const overflow = (page: Page) =>
 test.describe("khung điều hướng (máy tính 1280px)", () => {
   test.use({ viewport: { width: 1280, height: 800 } });
 
-  test("thanh bên có 5 mục, aria-current theo trang đang mở", async ({ page }) => {
+  test("thanh bên có 6 mục, aria-current theo trang đang mở", async ({ page }) => {
     await login(page);
     const nav = page.getByRole("navigation", { name: "Điều hướng chính" });
     await expect(nav).toHaveCount(1);

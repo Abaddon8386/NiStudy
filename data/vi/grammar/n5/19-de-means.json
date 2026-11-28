@@ -1,0 +1,119 @@
+{
+  "id": "n5-de-means",
+  "level": "N5",
+  "order": 19,
+  "title": "N で (phương tiện)",
+  "pattern": "N(phương tiện) で V",
+  "meaning_vi": "làm V bằng N",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "で chỉ phương tiện, dụng cụ, ngôn ngữ dùng để làm việc gì: でんしゃで いきます (đi bằng tàu điện), はしで たべます (ăn bằng đũa), にほんごで はなします (nói bằng tiếng Nhật). Hỏi: なんで きましたか (Bạn đến bằng gì?)."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Tiếng Việt “bằng” đứng trước danh từ, còn で đứng sau. Đi bộ thì nói あるいて いきます, không dùng で."
+    }
+  ],
+  "notes": [
+    "で còn chỉ nơi xảy ra hành động (bài sau); xem danh từ đi trước để phân biệt."
+  ],
+  "examples": [
+    {
+      "ja": "毎日 電車で 学校へ 行きます。",
+      "ruby": "毎日[まいにち] 電車[でんしゃ]で 学校[がっこう]へ 行[い]きます。",
+      "vi": "Hằng ngày tôi đến trường bằng tàu điện."
+    },
+    {
+      "ja": "はしで ごはんを 食べます。",
+      "ruby": "はしで ごはんを 食[た]べます。",
+      "vi": "Tôi ăn cơm bằng đũa."
+    },
+    {
+      "ja": "日本語で てがみを 書きます。",
+      "ruby": "日本語[にほんご]で てがみを 書[か]きます。",
+      "vi": "Tôi viết thư bằng tiếng Nhật."
+    },
+    {
+      "ja": "バスで うちへ かえります。",
+      "ruby": "バスで うちへ かえります。",
+      "vi": "Tôi về nhà bằng xe buýt."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "まいにち でんしゃ＿＿ がっこうへ いきます。",
+      "answer": "で",
+      "choices": [
+        "を",
+        "に",
+        "が",
+        "で"
+      ],
+      "vi": "Hằng ngày tôi đến trường bằng tàu điện."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "はし＿＿ ごはんを たべます。",
+      "answer": "で",
+      "choices": [
+        "で",
+        "を",
+        "が",
+        "へ"
+      ],
+      "vi": "Tôi ăn cơm bằng đũa."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "にほんご＿＿ てがみを かきます。",
+      "answer": "で",
+      "choices": [
+        "を",
+        "で",
+        "が",
+        "へ"
+      ],
+      "vi": "Tôi viết thư bằng tiếng Nhật."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "バス＿＿ うちへ かえります。",
+      "answer": "で",
+      "choices": [
+        "を",
+        "が",
+        "で",
+        "へ"
+      ],
+      "vi": "Tôi về nhà bằng xe buýt."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ペン＿＿ なまえを かきます。",
+      "answer": "で",
+      "choices": [
+        "を",
+        "が",
+        "へ",
+        "で"
+      ],
+      "vi": "Tôi viết tên bằng bút."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "なん＿＿ きましたか。…じてんしゃで きました。",
+      "answer": "で",
+      "choices": [
+        "で",
+        "を",
+        "が",
+        "へ"
+      ],
+      "vi": "Bạn đến bằng gì? … Tôi đến bằng xe đạp."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

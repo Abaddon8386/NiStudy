@@ -1,0 +1,112 @@
+{
+  "id": "n5-ni-arimasu",
+  "level": "N5",
+  "order": 37,
+  "title": "Nơi に N が あります／N は nơi に あります",
+  "pattern": "Nơi に N が あります ／ N は nơi に あります",
+  "meaning_vi": "Ở (nơi) có N / N ở (nơi)",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "に chỉ nơi tồn tại. Hai mẫu: (1) へやに テレビが あります: giới thiệu ở đâu có cái gì (thông tin mới là vật). (2) テレビは へやに あります: nói một vật đã biết đang ở đâu (thông tin mới là nơi). Mẫu (2) có thể nói gọn: テレビは へやです."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Không dùng で với あります／います khi nói vị trí: “へやで テレビが あります” là sai. で chỉ nơi xảy ra hành động."
+    }
+  ],
+  "notes": [
+    "Hỏi vị trí: ～は どこに ありますか／いますか."
+  ],
+  "examples": [
+    {
+      "ja": "へやに テレビが あります。",
+      "ruby": "へやに テレビが あります。",
+      "vi": "Trong phòng có cái tivi."
+    },
+    {
+      "ja": "テレビは へやに あります。",
+      "ruby": "テレビは へやに あります。",
+      "vi": "Cái tivi ở trong phòng."
+    },
+    {
+      "ja": "えきの 前に ぎんこうが あります。",
+      "ruby": "えきの 前[まえ]に ぎんこうが あります。",
+      "vi": "Trước nhà ga có ngân hàng."
+    },
+    {
+      "ja": "リンさんは 今 としょかんに います。",
+      "ruby": "リンさんは 今[いま] としょかんに います。",
+      "vi": "Chị Linh bây giờ đang ở thư viện."
+    },
+    {
+      "ja": "ナムさんは どこに いますか。…きょうしつに います。",
+      "ruby": "ナムさんは どこに いますか。…きょうしつに います。",
+      "vi": "Anh Nam ở đâu? … Ở phòng học."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "へや＿＿ テレビが あります。",
+      "answer": "に",
+      "choices": [
+        "で",
+        "に",
+        "を",
+        "へ"
+      ],
+      "vi": "Trong phòng có cái tivi."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "えきの まえ＿＿ ぎんこうが あります。",
+      "answer": "に",
+      "choices": [
+        "で",
+        "を",
+        "に",
+        "が"
+      ],
+      "vi": "Trước nhà ga có ngân hàng."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "リンさんは いま としょかん＿＿ います。",
+      "answer": "に",
+      "choices": [
+        "で",
+        "を",
+        "へ",
+        "に"
+      ],
+      "vi": "Chị Linh bây giờ đang ở thư viện."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ナムさんは どこ＿＿ いますか。",
+      "answer": "に",
+      "choices": [
+        "に",
+        "で",
+        "を",
+        "へ"
+      ],
+      "vi": "Anh Nam ở đâu?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "テレビ＿＿ へやに あります。",
+      "answer": "は",
+      "choices": [
+        "を",
+        "は",
+        "で",
+        "に"
+      ],
+      "vi": "Cái tivi ở trong phòng."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

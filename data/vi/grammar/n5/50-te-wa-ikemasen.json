@@ -1,0 +1,112 @@
+{
+  "id": "n5-te-wa-ikemasen",
+  "level": "N5",
+  "order": 50,
+  "title": "V てはいけません",
+  "pattern": "V て は いけません",
+  "meaning_vi": "Không được V",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Thể て + はいけません: cấm đoán, thường dùng cho nội quy, luật lệ hoặc người trên nói với người dưới: ここで たばこを すってはいけません. は đọc là “wa”."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Câu này nghe khá mạnh; khi nhắc nhở nhẹ nhàng người Nhật hay dùng ～ないでください (bài sau). Trả lời phủ định cho ～てもいいですか: いいえ、～てはいけません."
+    }
+  ],
+  "notes": [
+    "Đối lập: ～てもいいです (được phép) ↔ ～てはいけません (không được phép)."
+  ],
+  "examples": [
+    {
+      "ja": "ここで たばこを すってはいけません。",
+      "ruby": "ここで たばこを すってはいけません。",
+      "vi": "Không được hút thuốc ở đây."
+    },
+    {
+      "ja": "としょかんで 大きい こえで 話してはいけません。",
+      "ruby": "としょかんで 大[おお]きい こえで 話[はな]してはいけません。",
+      "vi": "Không được nói to trong thư viện."
+    },
+    {
+      "ja": "テストの とき、じしょを 見てはいけません。",
+      "ruby": "テストの とき、じしょを 見[み]てはいけません。",
+      "vi": "Trong giờ kiểm tra không được xem từ điển."
+    },
+    {
+      "ja": "この 川で およいではいけません。",
+      "ruby": "この 川[かわ]で およいではいけません。",
+      "vi": "Không được bơi ở con sông này."
+    },
+    {
+      "ja": "しゃしんを とってもいいですか。…いいえ、とってはいけません。",
+      "ruby": "しゃしんを とってもいいですか。…いいえ、とってはいけません。",
+      "vi": "Tôi chụp ảnh được không? … Không, không được chụp."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "ここで たばこを ＿＿はいけません。",
+      "answer": "すって",
+      "choices": [
+        "すいて",
+        "すんで",
+        "すって",
+        "すりて"
+      ],
+      "vi": "Không được hút thuốc ở đây."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "この かわで ＿＿はいけません。",
+      "answer": "およいで",
+      "choices": [
+        "およいて",
+        "およぎて",
+        "およって",
+        "およいで"
+      ],
+      "vi": "Không được bơi ở con sông này."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "テストの とき、じしょを みて＿＿。",
+      "answer": "はいけません",
+      "choices": [
+        "はいけません",
+        "もいいです",
+        "ください",
+        "います"
+      ],
+      "vi": "Trong giờ kiểm tra không được xem từ điển."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "としょかんで おおきい こえで ＿＿はいけません。",
+      "answer": "はなして",
+      "choices": [
+        "はなって",
+        "はなして",
+        "はなしって",
+        "はないて"
+      ],
+      "vi": "Không được nói to trong thư viện."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "しゃしんを とってもいいですか。…いいえ、とって＿＿。",
+      "answer": "はいけません",
+      "choices": [
+        "もいいです",
+        "ください",
+        "はいけません",
+        "います"
+      ],
+      "vi": "Tôi chụp ảnh được không? … Không, không được chụp."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

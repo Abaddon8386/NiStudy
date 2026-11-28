@@ -1,0 +1,107 @@
+{
+  "id": "n5-ni-time",
+  "level": "N5",
+  "order": 17,
+  "title": "N(thời gian) に",
+  "pattern": "N(thời điểm) に V",
+  "meaning_vi": "vào lúc / vào (thời điểm) N",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "に đặt sau thời điểm cụ thể có con số: ろくじに (lúc 6 giờ), はちがつに (vào tháng 8), và sau thứ trong tuần: どようびに. Từ chỉ thời gian tương đối như きょう, あした, まいにち, いま, けさ thì KHÔNG dùng に."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Lỗi hay gặp: “あしたに いきます” là sai. Tiếng Việt có thể bỏ “vào lúc”, nhưng tiếng Nhật bắt buộc có に sau giờ cụ thể."
+    }
+  ],
+  "notes": [
+    "Hỏi “mấy giờ”: なんじに ～ますか."
+  ],
+  "examples": [
+    {
+      "ja": "まいあさ 六時に おきます。",
+      "ruby": "まいあさ 六時[ろくじ]に おきます。",
+      "vi": "Sáng nào tôi cũng dậy lúc 6 giờ."
+    },
+    {
+      "ja": "よる 十一時に ねます。",
+      "ruby": "よる 十一時[じゅういちじ]に ねます。",
+      "vi": "Tôi đi ngủ lúc 11 giờ đêm."
+    },
+    {
+      "ja": "八月に 日本へ 行きます。",
+      "ruby": "八月[はちがつ]に 日本[にほん]へ 行[い]きます。",
+      "vi": "Tháng 8 tôi sẽ đi Nhật."
+    },
+    {
+      "ja": "どようびに 友だちと あそびます。",
+      "ruby": "どようびに 友[とも]だちと あそびます。",
+      "vi": "Thứ Bảy tôi đi chơi với bạn."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "まいあさ ろくじ＿＿ おきます。",
+      "answer": "に",
+      "choices": [
+        "を",
+        "に",
+        "で",
+        "へ"
+      ],
+      "vi": "Sáng nào tôi cũng dậy lúc 6 giờ."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "よる じゅういちじ＿＿ ねます。",
+      "answer": "に",
+      "choices": [
+        "を",
+        "で",
+        "に",
+        "が"
+      ],
+      "vi": "Tôi đi ngủ lúc 11 giờ đêm."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "はちがつ＿＿ にほんへ いきます。",
+      "answer": "に",
+      "choices": [
+        "を",
+        "で",
+        "が",
+        "に"
+      ],
+      "vi": "Tháng 8 tôi sẽ đi Nhật."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "なんじ＿＿ ねますか。",
+      "answer": "に",
+      "choices": [
+        "に",
+        "を",
+        "で",
+        "へ"
+      ],
+      "vi": "Bạn đi ngủ lúc mấy giờ?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "どようび＿＿ ともだちと あそびます。",
+      "answer": "に",
+      "choices": [
+        "を",
+        "に",
+        "が",
+        "へ"
+      ],
+      "vi": "Thứ Bảy tôi đi chơi với bạn."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

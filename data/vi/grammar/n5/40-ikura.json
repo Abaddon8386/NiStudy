@@ -1,0 +1,107 @@
+{
+  "id": "n5-ikura",
+  "level": "N5",
+  "order": 40,
+  "title": "～は いくらですか／～円です",
+  "pattern": "N は いくらですか ／ ～円です",
+  "meaning_vi": "N giá bao nhiêu? / … yên",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Hỏi giá: これは いくらですか. Trả lời bằng số + 円 (えん). Muốn mua: これを ください (Cho tôi cái này). Số lớn: 百 (ひゃく, trăm), 千 (せん, nghìn), 万 (まん, mười nghìn)."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Tiếng Nhật đếm số lớn theo nhóm bốn chữ số (万 = 10.000), khác tiếng Việt theo nhóm ba (nghìn): いちまんえん = 10.000 yên, じゅうまんえん = 100.000 yên. Biến âm: さんびゃく, ろっぴゃく, はっぴゃく, さんぜん, はっせん."
+    }
+  ],
+  "notes": [
+    "いくつ hỏi số lượng (mấy cái), いくら hỏi giá tiền."
+  ],
+  "examples": [
+    {
+      "ja": "この かばんは いくらですか。…三千円です。",
+      "ruby": "この かばんは いくらですか。…三千円[さんぜんえん]です。",
+      "vi": "Cái cặp này bao nhiêu tiền? … 3.000 yên."
+    },
+    {
+      "ja": "この 本は 八百円です。",
+      "ruby": "この 本[ほん]は 八百円[はっぴゃくえん]です。",
+      "vi": "Quyển sách này 800 yên."
+    },
+    {
+      "ja": "これを ください。",
+      "ruby": "これを ください。",
+      "vi": "Cho tôi cái này."
+    },
+    {
+      "ja": "その とけいは 一万円です。",
+      "ruby": "その とけいは 一万円[いちまんえん]です。",
+      "vi": "Cái đồng hồ đó 10.000 yên."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "この かばんは ＿＿ですか。…さんぜんえんです。",
+      "answer": "いくら",
+      "choices": [
+        "いくら",
+        "いくつ",
+        "なんにん",
+        "いつ"
+      ],
+      "vi": "Cái cặp này bao nhiêu tiền? … 3.000 yên."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "この ほんは ＿＿えんです。",
+      "answer": "はっぴゃく",
+      "choices": [
+        "はちひゃく",
+        "はっぴゃく",
+        "はちびゃく",
+        "はっひゃく"
+      ],
+      "vi": "Quyển sách này 800 yên."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "かさは ＿＿えんです。",
+      "answer": "さんびゃく",
+      "choices": [
+        "さんひゃく",
+        "さんぴゃく",
+        "さんびゃく",
+        "さっぴゃく"
+      ],
+      "vi": "Cái ô 300 yên."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "その とけいは ＿＿えんです。",
+      "answer": "いちまん",
+      "choices": [
+        "じゅうせん",
+        "いっせん",
+        "ひゃくせん",
+        "いちまん"
+      ],
+      "vi": "Cái đồng hồ đó 10.000 yên."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "これ＿＿ ください。",
+      "answer": "を",
+      "choices": [
+        "を",
+        "が",
+        "に",
+        "で"
+      ],
+      "vi": "Cho tôi cái này."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

@@ -1,0 +1,128 @@
+{
+  "id": "n5-koto-ga-dekiru",
+  "level": "N5",
+  "order": 56,
+  "title": "Thể từ điển ＋ ことが できます",
+  "pattern": "V(thể từ điển) こと が できます ／ N が できます",
+  "meaning_vi": "Có thể V",
+  "explanation": [
+    {
+      "heading": "Cách chia thể từ điển",
+      "body": "Từ thể ます. Nhóm 1: đổi âm trước ます từ hàng い sang hàng う: かきます → かく, のみます → のむ, かいます → かう. Nhóm 2: bỏ ます + る: たべます → たべる. Nhóm 3: します → する, きます → くる."
+    },
+    {
+      "heading": "Cách dùng",
+      "body": "Thể từ điển + ことが できます: khả năng hoặc sự cho phép: ギターを ひくことが できます (tôi chơi được ghi-ta). Với danh từ: N が できます: にほんごが できます."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Đối tượng của できます dùng が, không dùng を: “ギターを できます” là sai. Nhưng trước động từ vẫn giữ を: ギターを ひくことが できます."
+    }
+  ],
+  "notes": [
+    "Thể từ điển là dạng tra trong từ điển, cũng là nền cho ～まえに, ～つもりです."
+  ],
+  "examples": [
+    {
+      "ja": "わたしは ギターを ひくことが できます。",
+      "ruby": "わたしは ギターを ひくことが できます。",
+      "vi": "Tôi có thể chơi ghi-ta."
+    },
+    {
+      "ja": "リンさんは 日本語で てがみを 書くことが できます。",
+      "ruby": "リンさんは 日本語[にほんご]で てがみを 書[か]くことが できます。",
+      "vi": "Chị Linh có thể viết thư bằng tiếng Nhật."
+    },
+    {
+      "ja": "この 川で およぐことが できます。",
+      "ruby": "この 川[かわ]で およぐことが できます。",
+      "vi": "Có thể bơi ở con sông này."
+    },
+    {
+      "ja": "わたしは 日本語が すこし できます。",
+      "ruby": "わたしは 日本語[にほんご]が すこし できます。",
+      "vi": "Tôi biết một chút tiếng Nhật."
+    },
+    {
+      "ja": "ここで しゃしんを とることが できますか。",
+      "ruby": "ここで しゃしんを とることが できますか。",
+      "vi": "Ở đây có thể chụp ảnh không?"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしは ギターを ＿＿ことが できます。",
+      "answer": "ひく",
+      "choices": [
+        "ひく",
+        "ひき",
+        "ひいて",
+        "ひかない"
+      ],
+      "vi": "Tôi có thể chơi ghi-ta."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "リンさんは にほんごで てがみを ＿＿ことが できます。",
+      "answer": "かく",
+      "choices": [
+        "かき",
+        "かく",
+        "かいて",
+        "かか"
+      ],
+      "vi": "Chị Linh có thể viết thư bằng tiếng Nhật."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "この かわで ＿＿ことが できます。",
+      "answer": "およぐ",
+      "choices": [
+        "およぎ",
+        "およいで",
+        "およぐ",
+        "およが"
+      ],
+      "vi": "Có thể bơi ở con sông này."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしは にほんご＿＿ すこし できます。",
+      "answer": "が",
+      "choices": [
+        "を",
+        "へ",
+        "に",
+        "が"
+      ],
+      "vi": "Tôi biết một chút tiếng Nhật."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ここで しゃしんを とること＿＿ できますか。",
+      "answer": "が",
+      "choices": [
+        "が",
+        "を",
+        "に",
+        "で"
+      ],
+      "vi": "Ở đây có thể chụp ảnh không?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あした ＿＿ことが できますか。",
+      "answer": "くる",
+      "choices": [
+        "きる",
+        "くる",
+        "こる",
+        "きます"
+      ],
+      "vi": "Ngày mai bạn có thể đến không?"
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

@@ -1,0 +1,107 @@
+{
+  "id": "n5-masen",
+  "level": "N5",
+  "order": 15,
+  "title": "V ません",
+  "pattern": "V ません",
+  "meaning_vi": "không làm V",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Đổi ます thành ません để phủ định: いきます → いきません. Dùng cho thói quen không làm hoặc việc sẽ không làm."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "あまり (không… lắm) luôn đi với dạng phủ định: あまり たべません (không ăn mấy). Người Việt hay nói “あまり たべます” theo kiểu “ăn ít” — sai."
+    }
+  ],
+  "notes": [
+    "ぜんぜん ～ません: hoàn toàn không."
+  ],
+  "examples": [
+    {
+      "ja": "わたしは おさけを のみません。",
+      "ruby": "わたしは おさけを のみません。",
+      "vi": "Tôi không uống rượu."
+    },
+    {
+      "ja": "あしたは 学校へ 行きません。",
+      "ruby": "あしたは 学校[がっこう]へ 行[い]きません。",
+      "vi": "Ngày mai tôi không đến trường."
+    },
+    {
+      "ja": "リンさんは あまり テレビを 見ません。",
+      "ruby": "リンさんは あまり テレビを 見[み]ません。",
+      "vi": "Chị Linh không xem tivi mấy."
+    },
+    {
+      "ja": "にちようびは はたらきません。",
+      "ruby": "にちようびは はたらきません。",
+      "vi": "Chủ nhật tôi không đi làm."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしは おさけを ＿＿。",
+      "answer": "のみません",
+      "choices": [
+        "のみます",
+        "のまません",
+        "のむません",
+        "のみません"
+      ],
+      "vi": "Tôi không uống rượu."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あしたは がっこうへ ＿＿。",
+      "answer": "いきません",
+      "choices": [
+        "いきません",
+        "いかません",
+        "いくません",
+        "いきないです"
+      ],
+      "vi": "Ngày mai tôi không đến trường."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "リンさんは あまり テレビを ＿＿。",
+      "answer": "みません",
+      "choices": [
+        "みます",
+        "みません",
+        "みりません",
+        "みるません"
+      ],
+      "vi": "Chị Linh không xem tivi mấy."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "にちようびは ＿＿。",
+      "answer": "はたらきません",
+      "choices": [
+        "はたらかません",
+        "はたらくません",
+        "はたらきません",
+        "はたらきないです"
+      ],
+      "vi": "Chủ nhật tôi không đi làm."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしは あまり にくを ＿＿。",
+      "answer": "たべません",
+      "choices": [
+        "たべます",
+        "たべりません",
+        "たべるません",
+        "たべません"
+      ],
+      "vi": "Tôi không ăn thịt mấy."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

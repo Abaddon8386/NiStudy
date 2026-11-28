@@ -1,0 +1,107 @@
+{
+  "id": "n5-mo",
+  "level": "N5",
+  "order": 4,
+  "title": "～も",
+  "pattern": "N も …",
+  "meaning_vi": "N cũng …",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "も thay cho は khi điều nói về N giống với điều vừa nói trước đó: わたしは がくせいです。リンさんも がくせいです. Giống “cũng” trong tiếng Việt, nhưng も đứng ngay sau danh từ chứ không đứng trước động từ."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Không viết “はも”: も thay thế hẳn cho は (và cho が, を). Câu phủ định cũng dùng も: わたしも せんせいじゃありません (Tôi cũng không phải giáo viên)."
+    }
+  ],
+  "notes": [
+    "Người Việt hay đặt も theo vị trí của “cũng” (trước vị ngữ); hãy đặt ngay sau danh từ."
+  ],
+  "examples": [
+    {
+      "ja": "わたしは 学生です。ナムさんも 学生です。",
+      "ruby": "わたしは 学生[がくせい]です。ナムさんも 学生[がくせい]です。",
+      "vi": "Tôi là học sinh. Anh Nam cũng là học sinh."
+    },
+    {
+      "ja": "たなかさんは 日本人です。やまださんも 日本人です。",
+      "ruby": "たなかさんは 日本人[にほんじん]です。やまださんも 日本人[にほんじん]です。",
+      "vi": "Anh Tanaka là người Nhật. Anh Yamada cũng là người Nhật."
+    },
+    {
+      "ja": "リンさんは 先生じゃありません。わたしも 先生じゃありません。",
+      "ruby": "リンさんは 先生[せんせい]じゃありません。わたしも 先生[せんせい]じゃありません。",
+      "vi": "Chị Linh không phải giáo viên. Tôi cũng không phải giáo viên."
+    },
+    {
+      "ja": "今日も 雨です。",
+      "ruby": "今日[きょう]も 雨[あめ]です。",
+      "vi": "Hôm nay trời cũng mưa."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "わたしは がくせいです。リンさん＿＿ がくせいです。",
+      "answer": "も",
+      "choices": [
+        "も",
+        "を",
+        "に",
+        "で"
+      ],
+      "vi": "Tôi là học sinh. Chị Linh cũng là học sinh."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "たなかさんは にほんじんです。すずきさん＿＿ にほんじんです。",
+      "answer": "も",
+      "choices": [
+        "を",
+        "も",
+        "で",
+        "へ"
+      ],
+      "vi": "Anh Tanaka là người Nhật. Anh Suzuki cũng là người Nhật."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "きょう＿＿ あめです。",
+      "answer": "も",
+      "choices": [
+        "を",
+        "へ",
+        "も",
+        "と"
+      ],
+      "vi": "Hôm nay trời cũng mưa."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ナムさんは せんせいじゃありません。わたし＿＿ せんせいじゃありません。",
+      "answer": "も",
+      "choices": [
+        "を",
+        "に",
+        "で",
+        "も"
+      ],
+      "vi": "Anh Nam không phải giáo viên. Tôi cũng không phải giáo viên."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あなた＿＿ りゅうがくせいですか。",
+      "answer": "も",
+      "choices": [
+        "も",
+        "を",
+        "に",
+        "へ"
+      ],
+      "vi": "Bạn cũng là du học sinh à?"
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

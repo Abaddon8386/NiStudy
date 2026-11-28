@@ -1,0 +1,112 @@
+{
+  "id": "n5-te-mo-ii",
+  "level": "N5",
+  "order": 49,
+  "title": "V てもいいです",
+  "pattern": "V て も いいです",
+  "meaning_vi": "V cũng được / Được phép V",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Thể て + もいいです: cho phép. Xin phép: ～てもいいですか (Tôi… có được không?). Đồng ý: はい、いいですよ／どうぞ. Từ chối khéo: すみません、ちょっと…."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Phải dùng thể て: “すわるもいいですか” là sai. Từ chối thẳng いいえ、いけません nghe cứng, chỉ dùng khi có quy định rõ ràng."
+    }
+  ],
+  "notes": [
+    "Câu xin phép rất hữu ích khi ở Nhật: しゃしんを とってもいいですか."
+  ],
+  "examples": [
+    {
+      "ja": "ここに すわってもいいですか。…はい、どうぞ。",
+      "ruby": "ここに すわってもいいですか。…はい、どうぞ。",
+      "vi": "Tôi ngồi đây được không? … Vâng, mời bạn."
+    },
+    {
+      "ja": "しゃしんを とってもいいですか。",
+      "ruby": "しゃしんを とってもいいですか。",
+      "vi": "Tôi chụp ảnh được không?"
+    },
+    {
+      "ja": "この ペンを つかってもいいですか。",
+      "ruby": "この ペンを つかってもいいですか。",
+      "vi": "Tôi dùng cây bút này được không?"
+    },
+    {
+      "ja": "しゅくだいは あした 出してもいいです。",
+      "ruby": "しゅくだいは あした 出[だ]してもいいです。",
+      "vi": "Bài tập nộp vào ngày mai cũng được."
+    },
+    {
+      "ja": "まどを あけてもいいですか。…すみません、ちょっと さむいです。",
+      "ruby": "まどを あけてもいいですか。…すみません、ちょっと さむいです。",
+      "vi": "Tôi mở cửa sổ được không? … Xin lỗi, hơi lạnh ạ."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "ここに ＿＿もいいですか。",
+      "answer": "すわって",
+      "choices": [
+        "すわりて",
+        "すわって",
+        "すわんで",
+        "すわいて"
+      ],
+      "vi": "Tôi ngồi đây được không?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "しゃしんを ＿＿もいいですか。",
+      "answer": "とって",
+      "choices": [
+        "とりて",
+        "とんで",
+        "とって",
+        "といて"
+      ],
+      "vi": "Tôi chụp ảnh được không?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "この ペンを ＿＿もいいですか。",
+      "answer": "つかって",
+      "choices": [
+        "つかいて",
+        "つかんで",
+        "つかりて",
+        "つかって"
+      ],
+      "vi": "Tôi dùng cây bút này được không?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "しゅくだいは あした だして＿＿。",
+      "answer": "もいいです",
+      "choices": [
+        "もいいです",
+        "はいけません",
+        "ください",
+        "います"
+      ],
+      "vi": "Bài tập nộp vào ngày mai cũng được."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "まどを あけても ＿＿か。",
+      "answer": "いいです",
+      "choices": [
+        "いけません",
+        "いいです",
+        "ください",
+        "あります"
+      ],
+      "vi": "Tôi mở cửa sổ được không?"
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

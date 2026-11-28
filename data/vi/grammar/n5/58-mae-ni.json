@@ -1,0 +1,107 @@
+{
+  "id": "n5-mae-ni",
+  "level": "N5",
+  "order": 58,
+  "title": "V る／N の まえに",
+  "pattern": "V(thể từ điển) まえに ／ N の まえに",
+  "meaning_vi": "Trước khi V / Trước N",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Thể từ điển + まえに, danh từ + の + まえに, hoặc khoảng thời gian + まえに: ねる まえに はを みがきます (Trước khi ngủ tôi đánh răng), ごはんの まえに (trước bữa cơm), さんねん まえに (3 năm trước)."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Động từ trước まえに luôn ở thể từ điển, kể cả khi cả câu nói về quá khứ: にほんへ くる まえに、べんきょうしました. Không nói “きた まえに”. Danh từ phải có の."
+    }
+  ],
+  "notes": [
+    "Đối lập với ～たあとで (bài sau)."
+  ],
+  "examples": [
+    {
+      "ja": "ねる 前に はを みがきます。",
+      "ruby": "ねる 前[まえ]に はを みがきます。",
+      "vi": "Trước khi ngủ tôi đánh răng."
+    },
+    {
+      "ja": "ごはんの 前に てを あらいます。",
+      "ruby": "ごはんの 前[まえ]に てを あらいます。",
+      "vi": "Trước bữa cơm tôi rửa tay."
+    },
+    {
+      "ja": "日本へ 来る 前に、日本語を べんきょうしました。",
+      "ruby": "日本[にほん]へ 来[く]る 前[まえ]に、日本語[にほんご]を べんきょうしました。",
+      "vi": "Trước khi đến Nhật, tôi đã học tiếng Nhật."
+    },
+    {
+      "ja": "三年 前に けっこんしました。",
+      "ruby": "三年[さんねん] 前[まえ]に けっこんしました。",
+      "vi": "Tôi đã kết hôn ba năm trước."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "＿＿ まえに はを みがきます。",
+      "answer": "ねる",
+      "choices": [
+        "ねて",
+        "ねた",
+        "ねる",
+        "ねます"
+      ],
+      "vi": "Trước khi ngủ tôi đánh răng."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ごはん＿＿ まえに てを あらいます。",
+      "answer": "の",
+      "choices": [
+        "を",
+        "が",
+        "に",
+        "の"
+      ],
+      "vi": "Trước bữa cơm tôi rửa tay."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "にほんへ ＿＿ まえに、にほんごを べんきょうしました。",
+      "answer": "くる",
+      "choices": [
+        "くる",
+        "きた",
+        "きて",
+        "こる"
+      ],
+      "vi": "Trước khi đến Nhật, tôi đã học tiếng Nhật."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "さんねん ＿＿に けっこんしました。",
+      "answer": "まえ",
+      "choices": [
+        "あと",
+        "まえ",
+        "うえ",
+        "なか"
+      ],
+      "vi": "Tôi đã kết hôn ba năm trước."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "でかける ＿＿に まどを しめます。",
+      "answer": "まえ",
+      "choices": [
+        "あと",
+        "うしろ",
+        "まえ",
+        "なか"
+      ],
+      "vi": "Trước khi ra ngoài tôi đóng cửa sổ."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

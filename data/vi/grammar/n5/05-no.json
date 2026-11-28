@@ -1,0 +1,107 @@
+{
+  "id": "n5-no",
+  "level": "N5",
+  "order": 5,
+  "title": "～の～",
+  "pattern": "N1 の N2",
+  "meaning_vi": "N2 của N1 / N2 (thuộc về) N1",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "の nối hai danh từ, N1 bổ nghĩa cho N2: sở hữu (わたしの なまえ: tên của tôi), lĩnh vực (にほんごの せんせい: giáo viên tiếng Nhật), nơi thuộc về (だいがくの せんせい: giảng viên đại học)…"
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Trật tự ngược với tiếng Việt: “tên của tôi” thành わたしの なまえ (tôi – của – tên). Danh từ chính luôn đứng SAU の. Người Việt hay nói ngược thành “なまえの わたし”."
+    }
+  ],
+  "notes": [
+    "Khi đã rõ danh từ, có thể lược: それは わたしのです (Cái đó là của tôi)."
+  ],
+  "examples": [
+    {
+      "ja": "リンさんは 日本語の 先生です。",
+      "ruby": "リンさんは 日本語[にほんご]の 先生[せんせい]です。",
+      "vi": "Chị Linh là giáo viên tiếng Nhật."
+    },
+    {
+      "ja": "わたしの 名前は ナムです。",
+      "ruby": "わたしの 名前[なまえ]は ナムです。",
+      "vi": "Tên tôi là Nam."
+    },
+    {
+      "ja": "たなかさんは わたしの 友だちです。",
+      "ruby": "たなかさんは わたしの 友[とも]だちです。",
+      "vi": "Anh Tanaka là bạn của tôi."
+    },
+    {
+      "ja": "やまださんは 大学の 先生です。",
+      "ruby": "やまださんは 大学[だいがく]の 先生[せんせい]です。",
+      "vi": "Ông Yamada là giảng viên đại học."
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "わたし＿＿ なまえは ナムです。",
+      "answer": "の",
+      "choices": [
+        "は",
+        "の",
+        "を",
+        "も"
+      ],
+      "vi": "Tên tôi là Nam."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "リンさんは にほんご＿＿ せんせいです。",
+      "answer": "の",
+      "choices": [
+        "と",
+        "を",
+        "の",
+        "で"
+      ],
+      "vi": "Chị Linh là giáo viên tiếng Nhật."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "たなかさんは わたし＿＿ ともだちです。",
+      "answer": "の",
+      "choices": [
+        "を",
+        "に",
+        "へ",
+        "の"
+      ],
+      "vi": "Anh Tanaka là bạn của tôi."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "あなた＿＿ かさですか。",
+      "answer": "の",
+      "choices": [
+        "の",
+        "で",
+        "を",
+        "に"
+      ],
+      "vi": "Đây là ô của bạn à?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "やまださんは だいがく＿＿ せんせいです。",
+      "answer": "の",
+      "choices": [
+        "を",
+        "の",
+        "に",
+        "へ"
+      ],
+      "vi": "Ông Yamada là giảng viên đại học."
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}

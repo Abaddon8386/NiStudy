@@ -1,0 +1,108 @@
+{
+  "id": "n5-ka",
+  "level": "N5",
+  "order": 3,
+  "title": "～か",
+  "pattern": "Câu ＋ か",
+  "meaning_vi": "Câu hỏi: … không? / … phải không?",
+  "explanation": [
+    {
+      "heading": "Cách dùng",
+      "body": "Thêm か vào cuối câu để biến câu kể thành câu hỏi, không cần đổi trật tự từ, giống “không?” cuối câu tiếng Việt. Trả lời: はい、～です hoặc いいえ、～じゃありません."
+    },
+    {
+      "heading": "Lưu ý",
+      "body": "Câu hỏi có か thường kết thúc bằng dấu 。 chứ không phải ？. Khi trả lời いいえ, dùng じゃありません, đừng lặp lại です."
+    }
+  ],
+  "notes": [
+    "Câu hỏi có từ để hỏi (なん, だれ…) cũng đặt か ở cuối.",
+    "Lên giọng nhẹ ở か khi hỏi."
+  ],
+  "examples": [
+    {
+      "ja": "あなたは 学生ですか。",
+      "ruby": "あなたは 学生[がくせい]ですか。",
+      "vi": "Bạn là học sinh phải không?"
+    },
+    {
+      "ja": "はい、学生です。",
+      "ruby": "はい、学生[がくせい]です。",
+      "vi": "Vâng, tôi là học sinh."
+    },
+    {
+      "ja": "たなかさんは 先生ですか。…いいえ、先生じゃありません。",
+      "ruby": "たなかさんは 先生[せんせい]ですか。…いいえ、先生[せんせい]じゃありません。",
+      "vi": "Anh Tanaka là giáo viên à? … Không, không phải."
+    },
+    {
+      "ja": "リンさんは ベトナム人ですか。",
+      "ruby": "リンさんは ベトナム人[じん]ですか。",
+      "vi": "Chị Linh là người Việt Nam phải không?"
+    }
+  ],
+  "exercises": [
+    {
+      "type": "cloze",
+      "prompt_ja": "あなたは がくせいです＿＿。",
+      "answer": "か",
+      "choices": [
+        "は",
+        "を",
+        "も",
+        "か"
+      ],
+      "vi": "Bạn là học sinh phải không?"
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "たなかさんは せんせいですか。…＿＿、せんせいです。",
+      "answer": "はい",
+      "choices": [
+        "はい",
+        "いいえ",
+        "だれ",
+        "なん"
+      ],
+      "vi": "Anh Tanaka là giáo viên à? … Vâng, là giáo viên."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "やまださんは いしゃですか。…いいえ、いしゃ＿＿。",
+      "answer": "じゃありません",
+      "choices": [
+        "です",
+        "じゃありません",
+        "ですか",
+        "か"
+      ],
+      "vi": "Ông Yamada là bác sĩ à? … Không, không phải bác sĩ."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "ナムさんは にほんじんですか。…＿＿、ベトナムじんです。",
+      "answer": "いいえ",
+      "choices": [
+        "はい",
+        "ええ",
+        "いいえ",
+        "どうぞ"
+      ],
+      "vi": "Anh Nam là người Nhật à? … Không, anh ấy là người Việt Nam."
+    },
+    {
+      "type": "cloze",
+      "prompt_ja": "リンさんは りゅうがくせい＿＿か。",
+      "answer": "です",
+      "choices": [
+        "ます",
+        "を",
+        "が",
+        "です"
+      ],
+      "vi": "Chị Linh là du học sinh phải không?"
+    }
+  ],
+  "trang_thai": "nhap",
+  "nguoi_bien_soan": "nháp tự động, chờ tác giả duyệt"
+}
