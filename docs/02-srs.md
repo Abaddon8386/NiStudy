@@ -1,8 +1,8 @@
 # Đặc tả yêu cầu phần mềm (SRS) — Nihongo MVP
 
-Trạng thái: Đã review, chốt quyết định — 17/11/2026; sửa FR-13 và thêm mục 10 (yêu cầu dự kiến) — 19/11/2026
+Trạng thái: Đã review, chốt quyết định — 17/11/2026; sửa FR-13 và thêm mục 10 (yêu cầu dự kiến) — 19/11/2026; thêm ngữ pháp (FR-31..FR-35, US-17, sửa FR-13) theo ADR-0009 — 28/11/2026
 
-Phiên bản: 0.3
+Phiên bản: 0.4
 
 Tài liệu này thuộc giai đoạn 1 (Yêu cầu và SRS) của `docs/00-plan.md`.
 
@@ -140,7 +140,7 @@ Cột "Nguồn" chỉ persona (Minh, Lan, Hùng) hoặc mục trong `docs/01-vis
 | Mã | Tên | Mô tả | Ưu tiên | Nguồn |
 |---|---|---|---|---|
 | FR-12 | Thẻ từ vựng | Hệ thống phải hiển thị thẻ từ vựng gồm: từ, cách đọc bằng kana, nghĩa tiếng Việt, và câu ví dụ nếu có dữ liệu (câu Tatoeba chỉ dùng nếu được đưa vào dữ liệu). Thẻ phải thuộc đúng cấp N5 hoặc N4 theo danh sách tanos. | Phải có | Lan, V7, V10 |
-| FR-13 | Giới thiệu thẻ mới | Hệ thống phải đưa thẻ mới vào hôm nay theo mục tiêu hằng ngày ở FR-08. Hệ thống không được đưa quá số thẻ mới đã đặt trong một ngày học. Thẻ kana mới tính vào mục tiêu này. Thứ tự (sửa 19/11/2026, xem mục 9 điểm 24): nếu người học chưa biết kana thì giai đoạn đầu chỉ đưa thẻ hiragana cơ bản (46 chữ), chưa đưa kanji hay từ vựng; học hết 46 thẻ này thì sang giai đoạn xen kẽ. Giai đoạn xen kẽ: lặp theo vòng 1 kana : 1 kanji : 2 từ vựng, mỗi loại theo thứ tự trong bộ thẻ (kana: các thẻ kana còn lại theo thứ tự bảng; kanji và từ vựng: theo thứ tự danh sách nguồn trong cấp). Nếu người học đã biết kana (FR-07) thì không có giai đoạn đầu và không có thẻ kana mới; xen kẽ 1 kanji : 2 từ vựng. Khi một loại thẻ mới đã hết thì hệ thống lấy các loại còn lại, giữ tỉ lệ tương đối giữa chúng. Học thẻ mới là lượt ôn đầu tiên của thẻ: người học chấm 4 mức như thẻ khác, hệ thống khởi tạo trạng thái FSRS, ghi log và cộng +1 XP. Khi đạt mục tiêu, hệ thống phải thông báo đã xong mục tiêu thẻ mới. Ghi chú: bảng kana có 208 thẻ. Giai đoạn đầu (46 hiragana cơ bản) với mục tiêu 10 mất khoảng 5 ngày; người học có thể nâng mục tiêu lên đến 30. Phần kana còn lại học xen kẽ nên kéo dài hơn so với học liền một mạch. | Phải có | Lan, Minh |
+| FR-13 | Giới thiệu thẻ mới | Hệ thống phải đưa thẻ mới vào hôm nay theo mục tiêu hằng ngày ở FR-08. Hệ thống không được đưa quá số thẻ mới đã đặt trong một ngày học. Thẻ kana mới tính vào mục tiêu này. Thứ tự (sửa 19/11/2026, xem mục 9 điểm 24): nếu người học chưa biết kana thì giai đoạn đầu chỉ đưa thẻ hiragana cơ bản (46 chữ), chưa đưa kanji hay từ vựng; học hết 46 thẻ này thì sang giai đoạn xen kẽ. Giai đoạn xen kẽ: lặp theo vòng 1 kana : 1 kanji : 2 từ vựng : 1 ngữ pháp (sửa 28/11/2026, ADR-0009), mỗi loại theo thứ tự trong bộ thẻ (kana: các thẻ kana còn lại theo thứ tự bảng; kanji và từ vựng: theo thứ tự danh sách nguồn trong cấp; ngữ pháp: theo `level` của người học và `sort`). Nếu người học đã biết kana (FR-07) thì không có giai đoạn đầu và không có thẻ kana mới; xen kẽ 1 kanji : 2 từ vựng : 1 ngữ pháp. Khi một loại thẻ mới đã hết thì hệ thống lấy các loại còn lại, giữ tỉ lệ tương đối giữa chúng. Học thẻ mới là lượt ôn đầu tiên của thẻ: người học chấm 4 mức như thẻ khác, hệ thống khởi tạo trạng thái FSRS, ghi log và cộng +1 XP. Khi đạt mục tiêu, hệ thống phải thông báo đã xong mục tiêu thẻ mới. Ghi chú: bảng kana có 208 thẻ. Giai đoạn đầu (46 hiragana cơ bản) với mục tiêu 10 mất khoảng 5 ngày; người học có thể nâng mục tiêu lên đến 30. Phần kana còn lại học xen kẽ nên kéo dài hơn so với học liền một mạch. | Phải có | Lan, Minh |
 
 ### 3.5 Kanji
 
@@ -189,7 +189,19 @@ Cột "Nguồn" chỉ persona (Minh, Lan, Hùng) hoặc mục trong `docs/01-vis
 |---|---|---|---|---|
 | FR-29 | Trang nguồn dữ liệu | Hệ thống phải có trang "Nguồn dữ liệu và giấy phép", mở được từ menu mà không cần đăng nhập. Trang chỉ liệt kê nguồn thực sự dùng: JMdict và KANJIDIC2 (EDRDG, CC BY-SA), danh sách từ vựng của Jonathan Waller tại tanos.co.uk (CC BY theo nguồn thứ cấp, chưa đọc được trang gốc), câu ví dụ Tatoeba (CC BY, chỉ khi được đưa vào dữ liệu), nghĩa tiếng Việt do dự án tự biên soạn, kèm ngày tải dữ liệu. Trang phải nêu rõ dữ liệu dẫn xuất từ JMdict/KANJIDIC2 theo CC BY-SA, tách khỏi giấy phép MIT của mã nguồn. | Phải có | V7, V10 |
 
-Tổng cộng 30 yêu cầu chức năng.
+### 3.11 Ngữ pháp
+
+Thêm 28/11/2026 theo ADR-0009 (`docs/adr/0009-ngu-phap.md`). Chuyển từ mã tạm FR-D1..D5 (mục 10).
+
+| Mã | Tên | Mô tả | Ưu tiên | Nguồn |
+|---|---|---|---|---|
+| FR-31 | Bài học ngữ pháp | (Mã tạm cũ FR-D1, FR-D2.) Hệ thống phải có trang `/ngu-phap` liệt kê điểm ngữ pháp theo cấp (N5 trước; N4 ở đợt sau), kèm trạng thái đã học/chưa học theo `card_states` của người dùng, và trang `/ngu-phap/[id]` cho từng điểm gồm: giải thích bằng tiếng Việt, mẫu câu, nghĩa, ghi chú, ví dụ có furigana (cú pháp `漢字[かな]` trong dữ liệu) và nút phát âm (giai đoạn C). Ví dụ do tác giả tự soạn, chỉ dùng từ vựng trong danh sách N5 ở đợt này. Nội dung đọc từ CSDL lúc chạy nên cần mạng; khi mất mạng hệ thống báo theo FR-26. | Phải có | Lan, `docs/00-plan.md` GĐ D |
+| FR-32 | Luyện tập chọn đáp án | (Mã tạm cũ FR-D3.) Trang bài học phải có phần luyện tập điền chỗ trống: câu có "＿＿", 4 lựa chọn, đúng 1 đáp án; sau mỗi câu cho biết đúng hay sai, đáp án đúng và nghĩa tiếng Việt của câu. Phần luyện tập này không đổi trạng thái FSRS, không ghi log ôn và không cộng XP (ở lượt này). | Phải có | `docs/00-plan.md` GĐ D |
+| FR-33 | Thẻ ngữ pháp trong lịch ôn | (Mã tạm cũ FR-D4.) Mỗi điểm ngữ pháp là MỘT thẻ FSRS (loại `grammar`, `card_id = grammar:<id>`), không phải mỗi câu bài tập. Mỗi lần ôn hiển thị một câu điền chỗ trống chọn ngẫu nhiên từ kho bài tập của điểm đó; người học tự chấm 4 mức như thẻ khác (FR-15, FR-18), không gõ đáp án. Thẻ mới lần đầu hiện bài học ngắn (mẫu câu, nghĩa, một ví dụ) trước câu bài tập. Thẻ ngữ pháp được đưa vào thẻ mới theo thứ tự ở FR-13 và tuân theo FR-16, FR-17, FR-23 như mọi thẻ. | Phải có | `docs/00-plan.md` GĐ D |
+| FR-34 | Trạng thái nháp/đã duyệt | (Mã tạm cũ FR-D5.) Mỗi điểm ngữ pháp có trạng thái `nhap` hoặc `duyet`. Môi trường dev hiển thị cả hai; môi trường prod chỉ hiển thị và chỉ đưa vào hàng đợi thẻ mới các điểm `duyet`. | Phải có | `docs/00-plan.md` GĐ D |
+| FR-35 | Nguồn và bản quyền nội dung ngữ pháp | Nội dung ngữ pháp tự soạn, giấy phép CC BY-SA 4.0 như phần `data/` khác; không chép giáo trình có bản quyền (ví dụ Minna no Nihongo) hay đề JLPT thật. Trang FR-29 phải nêu nguồn nội dung ngữ pháp là do dự án tự biên soạn. | Phải có | NFR-23, `docs/01-vision.md` |
+
+Tổng cộng 35 yêu cầu chức năng (30 của MVP cộng 5 của giai đoạn D).
 
 ## 4. Yêu cầu phi chức năng
 
@@ -328,7 +340,7 @@ Tác nhân chung là "Người học". Mọi use case, trừ UC-01 và phần đ
 - Luồng thay thế và ngoại lệ:
   - 2a. Kanji thiếu âm Hán Việt: hệ thống hiển thị "Đang bổ sung" và đánh dấu thiếu dữ liệu theo FR-14. Kanji không có từ ví dụ: hiển thị "Chưa có từ ví dụ".
   - 2b. Mất mạng: hệ thống không tải thẻ mới và báo rõ (FR-28).
-  - 1a. Thẻ mới được đưa theo thứ tự FR-13: người chưa biết kana học 46 hiragana cơ bản trước (chưa có kanji); sau đó vòng 1 kana : 1 kanji : 2 từ vựng; người đã biết kana thì 1 kanji : 2 từ vựng. Thẻ kanji mới xuất hiện đúng lượt của nó trong vòng này.
+  - 1a. Thẻ mới được đưa theo thứ tự FR-13: người chưa biết kana học 46 hiragana cơ bản trước (chưa có kanji); sau đó vòng 1 kana : 1 kanji : 2 từ vựng : 1 ngữ pháp; người đã biết kana thì 1 kanji : 2 từ vựng : 1 ngữ pháp. Thẻ kanji mới xuất hiện đúng lượt của nó trong vòng này.
   - 5a. Đã hết thẻ kanji mới trong cấp: hệ thống lấy các loại thẻ mới còn lại (FR-13). Hết thẻ mới mọi loại: hệ thống báo đã học hết nội dung hiện có và đề nghị chuyển cấp (FR-06).
 - Hậu điều kiện: thẻ kanji mới có lịch ôn; tiến độ thẻ mới tăng.
 - FR liên quan: FR-06, FR-13, FR-14, FR-15, FR-17, FR-18, FR-23, FR-28.
@@ -591,7 +603,22 @@ Tiêu chí chấp nhận:
 
 FR liên quan: FR-29. Ưu tiên: Phải có.
 
-Tổng cộng 16 user story.
+### US-17 Học ngữ pháp N5
+
+Là Hùng, tôi muốn đọc bài giải thích ngắn bằng tiếng Việt cho từng điểm ngữ pháp N5, luyện tập ngay và được ôn lại theo lịch, để nói và viết được câu đúng mẫu.
+
+Tiêu chí chấp nhận:
+- Given tôi đã đăng nhập và có mạng, When tôi mở `/ngu-phap`, Then tôi thấy danh sách điểm ngữ pháp N5 theo thứ tự, mỗi điểm có nhãn đã học hoặc chưa học theo dữ liệu của tôi.
+- Given tôi ở danh sách, When tôi mở một điểm, Then tôi thấy giải thích tiếng Việt, mẫu câu, nghĩa, ví dụ có furigana và nút phát âm (khi thiết bị có giọng `ja-JP`).
+- Given tôi ở trang bài học, When tôi trả lời một câu điền chỗ trống trong phần luyện tập, Then hệ thống cho biết đúng hay sai, đáp án đúng và nghĩa câu; trạng thái FSRS, log ôn và XP của tôi không đổi.
+- Given tôi học thẻ mới theo hàng đợi và đến lượt một thẻ ngữ pháp mới, When thẻ hiện ra, Then tôi thấy bài học ngắn (mẫu câu, nghĩa, một ví dụ) rồi một câu điền chỗ trống, và tự chấm 4 mức như thẻ khác.
+- Given tôi đã chấm một thẻ ngữ pháp, When đến ngày đến hạn, Then thẻ xuất hiện trong hàng đợi ôn với một câu điền chỗ trống chọn ngẫu nhiên từ kho bài tập của điểm đó.
+- Given nội dung một điểm có trạng thái `nhap`, When tôi dùng bản prod, Then điểm đó không xuất hiện ở danh sách, trang bài học hay hàng đợi; trên dev thì xuất hiện.
+- Given tôi mất mạng, When tôi mở `/ngu-phap`, Then hệ thống báo cần mạng theo FR-26.
+
+FR liên quan: FR-31, FR-32, FR-33, FR-34, FR-35, FR-13. Ưu tiên: Phải có.
+
+Tổng cộng 17 user story (16 của MVP cộng US-17 của giai đoạn D).
 
 ## 7. Ma trận truy vết
 
@@ -611,7 +638,7 @@ Bảng này nối mỗi yêu cầu chức năng với user story và use case. D
 | FR-10 | US-04 | UC-01 |
 | FR-11 | US-03, US-04 | UC-01 |
 | FR-12 | US-06 | UC-01, UC-02 |
-| FR-13 | US-04, US-05, US-08 | UC-01, UC-02, UC-03 |
+| FR-13 | US-04, US-05, US-08, US-17 | UC-01, UC-02, UC-03 |
 | FR-14 | US-08 | UC-03 |
 | FR-15 | US-04, US-06 | UC-02, UC-03 |
 | FR-16 | US-06, US-07 | UC-02 |
@@ -629,6 +656,11 @@ Bảng này nối mỗi yêu cầu chức năng với user story và use case. D
 | FR-28 | US-14 | UC-03, UC-05 |
 | FR-29 | US-16 | — |
 | FR-30 | US-14, US-15 | UC-05, UC-06 |
+| FR-31 | US-17 | — |
+| FR-32 | US-17 | — |
+| FR-33 | US-17 | UC-02, UC-03 |
+| FR-34 | US-17 | — |
+| FR-35 | US-17 | — |
 
 Ghi chú: FR-04, FR-24, FR-25 và FR-29 chưa có use case riêng vì luồng đủ đơn giản, được bao bởi user story và tiêu chí chấp nhận. FR-04 có thể thêm thành luồng thay thế của UC-01 khi thiết kế chi tiết.
 
@@ -684,11 +716,13 @@ Các điểm mở khi viết bản nháp đã được chốt và đưa vào yê
 
 24. **Thứ tự thẻ mới mới (19/11/2026):** thay điểm 2. Chưa biết kana: giai đoạn đầu chỉ 46 hiragana cơ bản; sau đó vòng 1 kana : 1 kanji : 2 từ vựng. Đã biết kana: 1 kanji : 2 từ vựng. Loại nào hết thì lấy các loại còn lại (FR-13, FR-06, UC-03). Xem `docs/01-vision.md` mục 10, quyết định 14.
 
+25. **Ngữ pháp (28/11/2026, ADR-0009):** nội dung tự soạn trong `data/vi/grammar/`, lưu bảng `grammar_details`; một thẻ FSRS cho mỗi điểm; luyện tập trong trang bài học không vào FSRS và không cộng XP; vòng thẻ mới thêm 1 ngữ pháp (FR-13, FR-31..FR-35, US-17).
+
 Không còn điểm CẦN QUYẾT cho phạm vi MVP. Các yêu cầu dự kiến sau MVP nằm ở mục 10, chưa chốt.
 
 ## 10. Yêu cầu dự kiến (chưa chốt)
 
-Thêm 19/11/2026 theo `docs/00-plan.md` mục "Mở rộng phạm vi" và `docs/01-vision.md` mục 10 (quyết định 12–16). Mã `FR-C1`, `FR-D1`… là mã tạm theo giai đoạn. Chưa có tiêu chí chấp nhận, chưa vào ma trận truy vết (mục 7), chưa tính vào 30 FR của MVP. Khi chốt sẽ đánh mã `FR-xx` chính thức.
+Thêm 19/11/2026 theo `docs/00-plan.md` mục "Mở rộng phạm vi" và `docs/01-vision.md` mục 10 (quyết định 12–16). Mã `FR-C1`, `FR-D1`… là mã tạm theo giai đoạn. Chưa có tiêu chí chấp nhận, chưa vào ma trận truy vết (mục 7), chưa tính vào 30 FR của MVP. Khi chốt sẽ đánh mã `FR-xx` chính thức. Giai đoạn D đã chốt 28/11/2026 và chuyển thành FR-31..FR-35 (mục 3.11, US-17); bảng FR-D dưới đây giữ để đối chiếu mã cũ.
 
 ### Giai đoạn C: âm thanh
 
@@ -713,11 +747,13 @@ Trạng thái triển khai 23/11/2026 (nhánh `feature/am-thanh`): FR-C1..C4 đ�
 
 | Mã tạm | Yêu cầu dự kiến |
 |---|---|
-| FR-D1 | Mỗi điểm ngữ pháp N5/N4 có bài giải thích bằng tiếng Việt. |
-| FR-D2 | Mỗi điểm có mẫu câu và ví dụ (tự soạn, hoặc Tatoeba CC BY nếu đưa vào dữ liệu). |
-| FR-D3 | Bài tập điền/chọn cho mỗi điểm ngữ pháp. |
-| FR-D4 | Bài tập ngữ pháp được đưa vào lịch ôn FSRS như một loại thẻ mới. |
-| FR-D5 | Nội dung ngữ pháp có trạng thái "nháp" hoặc "đã duyệt"; chỉ hiển thị nội dung đã được tác giả duyệt. |
+| FR-D1 | Đã chốt 28/11/2026, thành FR-31 (mục 3.11). |
+| FR-D2 | Đã chốt 28/11/2026, thành FR-31 (ví dụ tự soạn; không dùng Tatoeba ở đợt này). |
+| FR-D3 | Đã chốt 28/11/2026, thành FR-32 (luyện tập chọn đáp án, không vào FSRS). |
+| FR-D4 | Đã chốt 28/11/2026, thành FR-33 (một thẻ FSRS cho mỗi điểm, không phải mỗi câu). |
+| FR-D5 | Đã chốt 28/11/2026, thành FR-34. |
+
+FR-35 (nguồn và bản quyền nội dung) là yêu cầu mới, không có mã tạm. Chi tiết: `docs/adr/0009-ngu-phap.md`.
 
 ### Giai đoạn E: đọc
 

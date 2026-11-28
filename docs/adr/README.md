@@ -14,6 +14,7 @@ ADR (Architecture Decision Record) ghi lại một quyết định kiến trúc:
 | [0006](0006-xoa-tai-khoan-route-handler.md) | Xóa tài khoản qua Route Handler dùng service role | Đã chấp nhận, 18/11/2026 |
 | [0007](0007-hai-project-supabase.md) | Hai project Supabase (dev, prod), migration bằng CLI | Đã chấp nhận, 18/11/2026 |
 | [0008](0008-am-thanh-va-giong-noi.md) | Âm thanh và giọng nói: `speechSynthesis` + MediaRecorder cục bộ | Đã chấp nhận, 19/11/2026 |
+| [0009](0009-ngu-phap.md) | Ngữ pháp: nội dung tự soạn trong repo, lưu CSDL, một thẻ FSRS cho mỗi điểm | Đã chấp nhận, 28/11/2026 |
 
 ## Mẫu
 

@@ -164,6 +164,7 @@ erDiagram
     CARDS ||--o| KANA_DETAILS : "chi tiết"
     CARDS ||--o| VOCAB_DETAILS : "chi tiết"
     CARDS ||--o| KANJI_DETAILS : "chi tiết"
+    CARDS ||--o| GRAMMAR_DETAILS : "chi tiết"
     CARDS ||--o{ CARD_STATES : "trạng thái"
     CARDS ||--o{ REVIEW_LOGS : "lượt ôn"
 
@@ -200,6 +201,19 @@ erDiagram
         text meaning_vi
         text_array on_readings
         text_array kun_readings
+    }
+    GRAMMAR_DETAILS {
+        text card_id PK
+        text point_id
+        text level
+        int sort
+        text title
+        text pattern
+        text meaning_vi
+        jsonb explanation
+        jsonb notes
+        jsonb examples
+        jsonb exercises
     }
     DATA_SOURCES {
         int id PK
@@ -271,7 +285,7 @@ RLS cho `anon` và `authenticated` chỉ có `SELECT`. Không ai ghi được t�
 | Cột | Kiểu | Mô tả |
 |---|---|---|
 | `id` | text PK | Mã ổn định: `kana:hira:ka`, `vocab:<jmdict_seq>`, `kanji:学` |
-| `kind` | text | `check in ('kana','vocab','kanji')` |
+| `kind` | text | `check in ('kana','vocab','kanji','grammar')` (`grammar` thêm 28/11/2026) |
 | `level` | text null | `check in ('N5','N4')`; kana để null |
 | `sort_order` | int | Thứ tự trong danh sách nguồn |
 | `published` | bool | Chỉ thẻ đã đủ nghĩa tiếng Việt mới vào hàng đợi thẻ mới |
@@ -281,6 +295,8 @@ RLS cho `anon` và `authenticated` chỉ có `SELECT`. Không ai ghi được t�
 **`vocab_details`**: `card_id` PK + FK; `jmdict_seq` int; `word`; `reading`; `meaning_vi`; `example_ja` null; `example_vi` null; `tatoeba_id` int null.
 
 **`kanji_details`**: `card_id` PK + FK; `kanji`; `han_viet_main` text null; `han_viet_other` text[]; `han_viet_source` (`'kanjidic2'` hoặc `'manual'`); `meaning_vi`; `on_readings` text[]; `kun_readings` text[].
+
+**`grammar_details`** (thêm 28/11/2026, ADR-0009): `card_id` PK + FK tới `cards`; `point_id` text unique; `level`; `sort` int; `title`; `pattern`; `meaning_vi`; `explanation` jsonb (mảng `{heading?, body}`); `notes` jsonb (mảng chuỗi); `examples` jsonb (mảng `{ja, ruby, vi}`, `ruby` dùng cú pháp `漢字[かな]`); `exercises` jsonb (mảng `{type:'cloze', prompt_ja, answer, choices[4], vi}`). RLS `SELECT` cho `anon` và `authenticated`, `service_role` ghi. Nguồn là file `data/vi/grammar/<level>/<NN>-<slug>.json`, pipeline build ra `data/build/grammar_details.json` và thêm thẻ `kind = 'grammar'`, `card_id = grammar:<id>` vào `cards.json`. Cột `cards.kind` mở rộng thêm `'grammar'`; trạng thái `nhap`/`duyet` ánh xạ vào `cards.published` như vocab và kanji (nháp chỉ import lên dev).
 
 - Từ ví dụ của kanji suy ra bằng truy vấn trên `vocab_details` có chứa chữ đó (FR-14), không lưu riêng.
 - `han_viet_main` null thì giao diện hiện "Đang bổ sung" (FR-14).
@@ -375,8 +391,9 @@ Quy tắc chung cho mọi RPC:
 
 - `due`: thẻ có `due < p_day_end`, sắp `due` tăng dần (quá hạn lâu nhất trước), giới hạn `review_limit`, kèm nội dung thẻ và trạng thái.
 - `new_done_today`: số lượt `is_new` trong `p_study_date`.
-- `new_candidates`: tối đa `new_per_day` thẻ chưa học cho mỗi loại: kana (nếu chưa biết kana); kanji và vocab theo `level` và `sort_order`, chỉ thẻ `published`.
-- Thứ tự thẻ mới theo FR-13 (sửa 19/11/2026) làm ở client trong `queue.ts` (hàm thuần, test được). Chưa biết kana: giai đoạn đầu chỉ lấy hiragana cơ bản (46 thẻ) cho đến khi học hết; sau đó lặp vòng 1 kana : 1 kanji : 2 từ vựng. Đã biết kana: 1 kanji : 2 từ vựng. Loại nào hết thì lấy các loại còn lại. Client nhận ra giai đoạn đầu qua `details.script = 'hira'` và `details.grp = 'basic'` của thẻ kana đầu tiên trong `new_candidates` (cột có sẵn trong `kana_details`, `card_payload` đã trả về). Client cũng cắt số thẻ mới còn lại = `new_per_day` − `new_done_today`.
+- `new_candidates`: tối đa `new_per_day` thẻ chưa học cho mỗi loại: kana (nếu chưa biết kana); kanji, vocab và grammar theo `level` và `sort_order`, chỉ thẻ `published`.
+- `card_payload` (hàm dựng nội dung thẻ cho `due` và `new_candidates`) có thêm loại `grammar` (28/11/2026, ADR-0009): trả `details` lấy từ `grammar_details` (tiêu đề, mẫu câu, nghĩa, một ví dụ, và kho `exercises`). Client chọn ngẫu nhiên một bài tập mỗi lần ôn; việc chọn không đổi dữ liệu máy chủ.
+- Thứ tự thẻ mới theo FR-13 (sửa 19/11/2026, thêm ngữ pháp 28/11/2026) làm ở client trong `queue.ts` (hàm thuần, test được). Chưa biết kana: giai đoạn đầu chỉ lấy hiragana cơ bản (46 thẻ) cho đến khi học hết; sau đó lặp vòng 1 kana : 1 kanji : 2 từ vựng : 1 ngữ pháp. Đã biết kana: 1 kanji : 2 từ vựng : 1 ngữ pháp. Loại nào hết thì bỏ qua và lấy các loại còn lại. Ngữ pháp theo `level` của người học và `sort`. Client nhận ra giai đoạn đầu qua `details.script = 'hira'` và `details.grp = 'basic'` của thẻ kana đầu tiên trong `new_candidates` (cột có sẵn trong `kana_details`, `card_payload` đã trả về). Client cũng cắt số thẻ mới còn lại = `new_per_day` − `new_done_today`.
 - `p_study_date` và `p_day_end` do client tính theo giờ thiết bị (FR-09). Máy chủ không biết múi giờ người dùng.
 
 **`get_dashboard(p_study_date date, p_day_end timestamptz) returns jsonb`** (chữ ký mới 19/11/2026)
@@ -415,7 +432,7 @@ Trả `'accepted'` hoặc `'duplicate'`. `p_correct` trong khoảng 0..10. `p_st
 | FR-09 | `study-day.ts`; cột `study_date`; tham số của RPC |
 | FR-10, FR-11 | `cards`, `kana_details`; `profiles.knows_kana`; `get_today_queue` |
 | FR-12 | `vocab_details` |
-| FR-13 | `get_today_queue` + `queue.ts` |
+| FR-13 | `get_today_queue` + `queue.ts` (vòng thẻ mới gồm cả ngữ pháp) |
 | FR-14 | `kanji_details` + truy vấn `vocab_details` |
 | FR-15 | `fsrs.ts` (`ts-fsrs`); `card_states` |
 | FR-16 | `get_today_queue` |
@@ -430,6 +447,11 @@ Trả `'accepted'` hoặc `'duplicate'`. `p_correct` trong khoảng 0..10. `p_st
 | FR-26, FR-27, FR-28 | `src/lib/offline/`; `submit_reviews` |
 | FR-29 | `data_sources`; trang `/nguon-du-lieu` |
 | FR-30 | `src/lib/offline/` (gắn `user_id`, xóa khi đăng xuất) |
+| FR-31 | `grammar_details`; trang `/ngu-phap`, `/ngu-phap/[id]` |
+| FR-32 | `grammar_details.exercises`; client (không ghi `card_states`, `review_logs`) |
+| FR-33 | `cards` (`kind='grammar'`) + `card_payload`, `get_today_queue`, `queue.ts` |
+| FR-34 | `cards.published` (nháp chỉ import lên dev) |
+| FR-35 | `data/LICENSE.md`, `data_sources` (trang FR-29) |
 
 ## 7. Luồng chính
 
@@ -683,5 +705,6 @@ Các điểm gốc:
    Kết quả 18/11/2026: `nihongo-dev` (vùng Singapore) bật xác nhận email (`mailer_autoconfirm: false`), chỉ bật nhà cung cấp email. Đăng ký thử bằng địa chỉ `@example.com` bị từ chối `email_address_invalid` nên chưa đo được phản hồi email trùng. SMTP mặc định của Supabase chỉ gửi tới địa chỉ thành viên tổ chức và giới hạn số thư mỗi giờ, nên trước khi có người dùng thật cần SMTP riêng. **Chưa kết luận.**
 11. **Tham số `ts-fsrs` và tên cột.** Cột `learning_steps` khớp phiên bản `ts-fsrs` có trường này. Khi ghim phiên bản phải đối chiếu tên trường của đối tượng thẻ với cột `card_states`.
 12. **Lược đồ dữ liệu cho ngữ pháp và bài đọc (thêm 19/11/2026).** Giai đoạn D–F (`docs/00-plan.md` mục "Mở rộng phạm vi") cần bảng/nguồn nội dung cho điểm ngữ pháp, bài tập, đoạn đọc, kịch bản nghe, và loại thẻ mới trong `card_states`/log ôn (hiện thiết kế cho kana, kanji, từ vựng). Chưa thiết kế. Cần quyết định trước giai đoạn D: nội dung nằm trong CSDL hay file tĩnh trong repo, và cách ghi trạng thái "nháp/đã duyệt".
+    - **Đã quyết cho ngữ pháp (giai đoạn D) 28/11/2026, ADR-0009:** nguồn là file JSON tự soạn trong `data/vi/grammar/`, lưu bảng `grammar_details` (mục 5.2), một thẻ FSRS cho mỗi điểm (`cards.kind = 'grammar'`), trạng thái `nhap`/`duyet` như vocab/kanji. Bài đọc (giai đoạn E) và kịch bản nghe (giai đoạn F) vẫn chưa thiết kế.
 13. **Giọng `ja-JP` trên các nền tảng (thêm 19/11/2026).** ADR-0008 dựa vào giọng `ja-JP` có sẵn của hệ điều hành. Chưa kiểm giọng này có sẵn và chất lượng chấp nhận được trên Windows, Android, iOS (Safari), kể cả hành vi phát âm cần thao tác bấm và danh sách giọng nạp chậm. Cần thử trên máy thật trước giai đoạn C.
     - Kết quả 23/11/2026: giai đoạn C đã triển khai (`src/lib/speech/`, `src/ui/SpeakButton.tsx`), có xử lý giọng nạp chậm (chờ `voiceschanged` tối đa 1,5 giây) và giọng không cục bộ (xem ADR-0008, mục "Cập nhật 23/11/2026"). Việc kiểm giọng trên Windows, Android, iOS (Safari) bằng máy thật vẫn còn mở; e2e chỉ dùng `speechSynthesis` giả.
